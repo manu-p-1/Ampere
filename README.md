@@ -1,28 +1,28 @@
 ﻿<p align="center">
-  <a href="https://github.com/manu-p-1/PowerPlug/" target="_blank">
-    <img src="https://github.com/manu-p-1/PowerPlug/blob/volt/assets/VoltLogo.png" alt="Volt Logo">
+  <a href="https://github.com/manu-p-1/Ampere/" target="_blank">
+    <img src="https://github.com/manu-p-1/Ampere/blob/main/assets/AmpereLogo.png" alt="Ampere Logo">
   </a>
   <br>
 </p>
 <p align="center">
   
-   <a href="https://github.com/manu-p-1/PowerPlug/graphs/contributors" alt="Contributors">
-      <img src="https://img.shields.io/github/contributors/manu-p-1/PowerPlug?color=%20%230099ff"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/graphs/contributors" alt="Contributors">
+      <img src="https://img.shields.io/github/contributors/manu-p-1/Ampere?color=%20%230099ff"/></a>
     
-   <a href="https://github.com/manu-p-1/PowerPlug/pulse" alt="Activity">
-      <img src="https://img.shields.io/github/commit-activity/m/manu-p-1/PowerPlug?color=%20%230099ff"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/pulse" alt="Activity">
+      <img src="https://img.shields.io/github/commit-activity/m/manu-p-1/Ampere?color=%20%230099ff"/></a>
         
-   <a href="https://github.com/manu-p-1/PowerPlug/issues" alt="Open Issues">
-      <img src="https://img.shields.io/github/issues/manu-p-1/PowerPlug"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/issues" alt="Open Issues">
+      <img src="https://img.shields.io/github/issues/manu-p-1/Ampere"/></a>
       
-   <a href="https://github.com/manu-p-1/PowerPlug/releases" alt="Latest Release">
-      <img src="https://img.shields.io/github/v/release/manu-p-1/PowerPlug?include_prereleases"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/releases" alt="Latest Release">
+      <img src="https://img.shields.io/github/v/release/manu-p-1/Ampere?include_prereleases"/></a>
         
    <a href="#" alt="Repo Size">
-      <img src="https://img.shields.io/github/repo-size/manu-p-1/PowerPlug?label=size&color=informational"/></a>
+      <img src="https://img.shields.io/github/repo-size/manu-p-1/Ampere?label=size&color=informational"/></a>
         
-   <a href="https://github.com/manu-p-1/PowerPlug/blob/master/LICENSE" alt="License">
-      <img src="https://img.shields.io/github/license/manu-p-1/PowerPlug?color=informational"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/blob/main/LICENSE" alt="License">
+      <img src="https://img.shields.io/github/license/manu-p-1/Ampere?color=informational"/></a>
 </p>
 
 ## Introduction
