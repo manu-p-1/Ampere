@@ -1,9 +1,7 @@
 - name: Ampere
-  href: api/Ampere/
-- name: PowerPlug
-  href: api/PowerPlug/
-- name: Volt Articles
+  href: api/
+- name: Ampere Articles
   href: articles/
   homepage: articles/AmpereReleases.md
 - name: GitHub
-  href: https://github.com/manu-p-1/PowerPlug/
+  href: https://github.com/manu-p-1/Ampere/

@@ -1,0 +1,2396 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Ampere.Base
+  name: Ampere.Base
+  href: api/Ampere.Base.html
+  commentId: N:Ampere.Base
+  fullName: Ampere.Base
+  nameWithType: Ampere.Base
+- uid: Ampere.Base.IIndexable`2
+  name: IIndexable<TKey, TVal>
+  href: api/Ampere.Base.IIndexable-2.html
+  commentId: T:Ampere.Base.IIndexable`2
+  name.vb: IIndexable(Of TKey, TVal)
+  fullName: Ampere.Base.IIndexable<TKey, TVal>
+  fullName.vb: Ampere.Base.IIndexable(Of TKey, TVal)
+  nameWithType: IIndexable<TKey, TVal>
+  nameWithType.vb: IIndexable(Of TKey, TVal)
+- uid: Ampere.Base.IIndexable`2.Item(`0)
+  name: Item[TKey]
+  href: api/Ampere.Base.IIndexable-2.html#Ampere_Base_IIndexable_2_Item__0_
+  commentId: P:Ampere.Base.IIndexable`2.Item(`0)
+  name.vb: Item(TKey)
+  fullName: Ampere.Base.IIndexable<TKey, TVal>.Item[TKey]
+  fullName.vb: Ampere.Base.IIndexable(Of TKey, TVal).Item(TKey)
+  nameWithType: IIndexable<TKey, TVal>.Item[TKey]
+  nameWithType.vb: IIndexable(Of TKey, TVal).Item(TKey)
+- uid: Ampere.Base.IIndexable`2.Item*
+  name: Item
+  href: api/Ampere.Base.IIndexable-2.html#Ampere_Base_IIndexable_2_Item_
+  commentId: Overload:Ampere.Base.IIndexable`2.Item
+  isSpec: "True"
+  fullName: Ampere.Base.IIndexable<TKey, TVal>.Item
+  fullName.vb: Ampere.Base.IIndexable(Of TKey, TVal).Item
+  nameWithType: IIndexable<TKey, TVal>.Item
+  nameWithType.vb: IIndexable(Of TKey, TVal).Item
+- uid: Ampere.Base.IIndexableDouble`2
+  name: IIndexableDouble<TKey, TVal>
+  href: api/Ampere.Base.IIndexableDouble-2.html
+  commentId: T:Ampere.Base.IIndexableDouble`2
+  name.vb: IIndexableDouble(Of TKey, TVal)
+  fullName: Ampere.Base.IIndexableDouble<TKey, TVal>
+  fullName.vb: Ampere.Base.IIndexableDouble(Of TKey, TVal)
+  nameWithType: IIndexableDouble<TKey, TVal>
+  nameWithType.vb: IIndexableDouble(Of TKey, TVal)
+- uid: Ampere.Base.IIndexableDouble`2.Item(`0,`0)
+  name: Item[TKey, TKey]
+  href: api/Ampere.Base.IIndexableDouble-2.html#Ampere_Base_IIndexableDouble_2_Item__0__0_
+  commentId: P:Ampere.Base.IIndexableDouble`2.Item(`0,`0)
+  name.vb: Item(TKey, TKey)
+  fullName: Ampere.Base.IIndexableDouble<TKey, TVal>.Item[TKey, TKey]
+  fullName.vb: Ampere.Base.IIndexableDouble(Of TKey, TVal).Item(TKey, TKey)
+  nameWithType: IIndexableDouble<TKey, TVal>.Item[TKey, TKey]
+  nameWithType.vb: IIndexableDouble(Of TKey, TVal).Item(TKey, TKey)
+- uid: Ampere.Base.IIndexableDouble`2.Item*
+  name: Item
+  href: api/Ampere.Base.IIndexableDouble-2.html#Ampere_Base_IIndexableDouble_2_Item_
+  commentId: Overload:Ampere.Base.IIndexableDouble`2.Item
+  isSpec: "True"
+  fullName: Ampere.Base.IIndexableDouble<TKey, TVal>.Item
+  fullName.vb: Ampere.Base.IIndexableDouble(Of TKey, TVal).Item
+  nameWithType: IIndexableDouble<TKey, TVal>.Item
+  nameWithType.vb: IIndexableDouble(Of TKey, TVal).Item
+- uid: Ampere.Base.IIndexableDoubleReadOnly`2
+  name: IIndexableDoubleReadOnly<TKey, TVal>
+  href: api/Ampere.Base.IIndexableDoubleReadOnly-2.html
+  commentId: T:Ampere.Base.IIndexableDoubleReadOnly`2
+  name.vb: IIndexableDoubleReadOnly(Of TKey, TVal)
+  fullName: Ampere.Base.IIndexableDoubleReadOnly<TKey, TVal>
+  fullName.vb: Ampere.Base.IIndexableDoubleReadOnly(Of TKey, TVal)
+  nameWithType: IIndexableDoubleReadOnly<TKey, TVal>
+  nameWithType.vb: IIndexableDoubleReadOnly(Of TKey, TVal)
+- uid: Ampere.Base.IIndexableDoubleReadOnly`2.Item(`0,`0)
+  name: Item[TKey, TKey]
+  href: api/Ampere.Base.IIndexableDoubleReadOnly-2.html#Ampere_Base_IIndexableDoubleReadOnly_2_Item__0__0_
+  commentId: P:Ampere.Base.IIndexableDoubleReadOnly`2.Item(`0,`0)
+  name.vb: Item(TKey, TKey)
+  fullName: Ampere.Base.IIndexableDoubleReadOnly<TKey, TVal>.Item[TKey, TKey]
+  fullName.vb: Ampere.Base.IIndexableDoubleReadOnly(Of TKey, TVal).Item(TKey, TKey)
+  nameWithType: IIndexableDoubleReadOnly<TKey, TVal>.Item[TKey, TKey]
+  nameWithType.vb: IIndexableDoubleReadOnly(Of TKey, TVal).Item(TKey, TKey)
+- uid: Ampere.Base.IIndexableDoubleReadOnly`2.Item*
+  name: Item
+  href: api/Ampere.Base.IIndexableDoubleReadOnly-2.html#Ampere_Base_IIndexableDoubleReadOnly_2_Item_
+  commentId: Overload:Ampere.Base.IIndexableDoubleReadOnly`2.Item
+  isSpec: "True"
+  fullName: Ampere.Base.IIndexableDoubleReadOnly<TKey, TVal>.Item
+  fullName.vb: Ampere.Base.IIndexableDoubleReadOnly(Of TKey, TVal).Item
+  nameWithType: IIndexableDoubleReadOnly<TKey, TVal>.Item
+  nameWithType.vb: IIndexableDoubleReadOnly(Of TKey, TVal).Item
+- uid: Ampere.Base.IIndexableReadOnly`2
+  name: IIndexableReadOnly<TKey, TVal>
+  href: api/Ampere.Base.IIndexableReadOnly-2.html
+  commentId: T:Ampere.Base.IIndexableReadOnly`2
+  name.vb: IIndexableReadOnly(Of TKey, TVal)
+  fullName: Ampere.Base.IIndexableReadOnly<TKey, TVal>
+  fullName.vb: Ampere.Base.IIndexableReadOnly(Of TKey, TVal)
+  nameWithType: IIndexableReadOnly<TKey, TVal>
+  nameWithType.vb: IIndexableReadOnly(Of TKey, TVal)
+- uid: Ampere.Base.IIndexableReadOnly`2.Item(`0)
+  name: Item[TKey]
+  href: api/Ampere.Base.IIndexableReadOnly-2.html#Ampere_Base_IIndexableReadOnly_2_Item__0_
+  commentId: P:Ampere.Base.IIndexableReadOnly`2.Item(`0)
+  name.vb: Item(TKey)
+  fullName: Ampere.Base.IIndexableReadOnly<TKey, TVal>.Item[TKey]
+  fullName.vb: Ampere.Base.IIndexableReadOnly(Of TKey, TVal).Item(TKey)
+  nameWithType: IIndexableReadOnly<TKey, TVal>.Item[TKey]
+  nameWithType.vb: IIndexableReadOnly(Of TKey, TVal).Item(TKey)
+- uid: Ampere.Base.IIndexableReadOnly`2.Item*
+  name: Item
+  href: api/Ampere.Base.IIndexableReadOnly-2.html#Ampere_Base_IIndexableReadOnly_2_Item_
+  commentId: Overload:Ampere.Base.IIndexableReadOnly`2.Item
+  isSpec: "True"
+  fullName: Ampere.Base.IIndexableReadOnly<TKey, TVal>.Item
+  fullName.vb: Ampere.Base.IIndexableReadOnly(Of TKey, TVal).Item
+  nameWithType: IIndexableReadOnly<TKey, TVal>.Item
+  nameWithType.vb: IIndexableReadOnly(Of TKey, TVal).Item
+- uid: Ampere.Base.IIndexableTriple`2
+  name: IIndexableTriple<TKey, TVal>
+  href: api/Ampere.Base.IIndexableTriple-2.html
+  commentId: T:Ampere.Base.IIndexableTriple`2
+  name.vb: IIndexableTriple(Of TKey, TVal)
+  fullName: Ampere.Base.IIndexableTriple<TKey, TVal>
+  fullName.vb: Ampere.Base.IIndexableTriple(Of TKey, TVal)
+  nameWithType: IIndexableTriple<TKey, TVal>
+  nameWithType.vb: IIndexableTriple(Of TKey, TVal)
+- uid: Ampere.Base.IIndexableTriple`2.Item(`0,`0,`0)
+  name: Item[TKey, TKey, TKey]
+  href: api/Ampere.Base.IIndexableTriple-2.html#Ampere_Base_IIndexableTriple_2_Item__0__0__0_
+  commentId: P:Ampere.Base.IIndexableTriple`2.Item(`0,`0,`0)
+  name.vb: Item(TKey, TKey, TKey)
+  fullName: Ampere.Base.IIndexableTriple<TKey, TVal>.Item[TKey, TKey, TKey]
+  fullName.vb: Ampere.Base.IIndexableTriple(Of TKey, TVal).Item(TKey, TKey, TKey)
+  nameWithType: IIndexableTriple<TKey, TVal>.Item[TKey, TKey, TKey]
+  nameWithType.vb: IIndexableTriple(Of TKey, TVal).Item(TKey, TKey, TKey)
+- uid: Ampere.Base.IIndexableTriple`2.Item*
+  name: Item
+  href: api/Ampere.Base.IIndexableTriple-2.html#Ampere_Base_IIndexableTriple_2_Item_
+  commentId: Overload:Ampere.Base.IIndexableTriple`2.Item
+  isSpec: "True"
+  fullName: Ampere.Base.IIndexableTriple<TKey, TVal>.Item
+  fullName.vb: Ampere.Base.IIndexableTriple(Of TKey, TVal).Item
+  nameWithType: IIndexableTriple<TKey, TVal>.Item
+  nameWithType.vb: IIndexableTriple(Of TKey, TVal).Item
+- uid: Ampere.Base.IIndexableTripleReadOnly`2
+  name: IIndexableTripleReadOnly<TKey, TVal>
+  href: api/Ampere.Base.IIndexableTripleReadOnly-2.html
+  commentId: T:Ampere.Base.IIndexableTripleReadOnly`2
+  name.vb: IIndexableTripleReadOnly(Of TKey, TVal)
+  fullName: Ampere.Base.IIndexableTripleReadOnly<TKey, TVal>
+  fullName.vb: Ampere.Base.IIndexableTripleReadOnly(Of TKey, TVal)
+  nameWithType: IIndexableTripleReadOnly<TKey, TVal>
+  nameWithType.vb: IIndexableTripleReadOnly(Of TKey, TVal)
+- uid: Ampere.Base.IIndexableTripleReadOnly`2.Item(`0,`0,`0)
+  name: Item[TKey, TKey, TKey]
+  href: api/Ampere.Base.IIndexableTripleReadOnly-2.html#Ampere_Base_IIndexableTripleReadOnly_2_Item__0__0__0_
+  commentId: P:Ampere.Base.IIndexableTripleReadOnly`2.Item(`0,`0,`0)
+  name.vb: Item(TKey, TKey, TKey)
+  fullName: Ampere.Base.IIndexableTripleReadOnly<TKey, TVal>.Item[TKey, TKey, TKey]
+  fullName.vb: Ampere.Base.IIndexableTripleReadOnly(Of TKey, TVal).Item(TKey, TKey, TKey)
+  nameWithType: IIndexableTripleReadOnly<TKey, TVal>.Item[TKey, TKey, TKey]
+  nameWithType.vb: IIndexableTripleReadOnly(Of TKey, TVal).Item(TKey, TKey, TKey)
+- uid: Ampere.Base.IIndexableTripleReadOnly`2.Item*
+  name: Item
+  href: api/Ampere.Base.IIndexableTripleReadOnly-2.html#Ampere_Base_IIndexableTripleReadOnly_2_Item_
+  commentId: Overload:Ampere.Base.IIndexableTripleReadOnly`2.Item
+  isSpec: "True"
+  fullName: Ampere.Base.IIndexableTripleReadOnly<TKey, TVal>.Item
+  fullName.vb: Ampere.Base.IIndexableTripleReadOnly(Of TKey, TVal).Item
+  nameWithType: IIndexableTripleReadOnly<TKey, TVal>.Item
+  nameWithType.vb: IIndexableTripleReadOnly(Of TKey, TVal).Item
+- uid: Ampere.Base.ImmutableRange`1
+  name: ImmutableRange<T>
+  href: api/Ampere.Base.ImmutableRange-1.html
+  commentId: T:Ampere.Base.ImmutableRange`1
+  name.vb: ImmutableRange(Of T)
+  fullName: Ampere.Base.ImmutableRange<T>
+  fullName.vb: Ampere.Base.ImmutableRange(Of T)
+  nameWithType: ImmutableRange<T>
+  nameWithType.vb: ImmutableRange(Of T)
+- uid: Ampere.Base.ImmutableRange`1.#ctor(`0,`0)
+  name: ImmutableRange(T, T)
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1__ctor__0__0_
+  commentId: M:Ampere.Base.ImmutableRange`1.#ctor(`0,`0)
+  fullName: Ampere.Base.ImmutableRange<T>.ImmutableRange(T, T)
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).ImmutableRange(T, T)
+  nameWithType: ImmutableRange<T>.ImmutableRange(T, T)
+  nameWithType.vb: ImmutableRange(Of T).ImmutableRange(T, T)
+- uid: Ampere.Base.ImmutableRange`1.#ctor*
+  name: ImmutableRange
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1__ctor_
+  commentId: Overload:Ampere.Base.ImmutableRange`1.#ctor
+  isSpec: "True"
+  fullName: Ampere.Base.ImmutableRange<T>.ImmutableRange
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).ImmutableRange
+  nameWithType: ImmutableRange<T>.ImmutableRange
+  nameWithType.vb: ImmutableRange(Of T).ImmutableRange
+- uid: Ampere.Base.ImmutableRange`1.ContainsRange(Ampere.Base.IRangify{`0})
+  name: ContainsRange(IRangify<T>)
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_ContainsRange_Ampere_Base_IRangify__0__
+  commentId: M:Ampere.Base.ImmutableRange`1.ContainsRange(Ampere.Base.IRangify{`0})
+  name.vb: ContainsRange(IRangify(Of T))
+  fullName: Ampere.Base.ImmutableRange<T>.ContainsRange(Ampere.Base.IRangify<T>)
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).ContainsRange(Ampere.Base.IRangify(Of T))
+  nameWithType: ImmutableRange<T>.ContainsRange(IRangify<T>)
+  nameWithType.vb: ImmutableRange(Of T).ContainsRange(IRangify(Of T))
+- uid: Ampere.Base.ImmutableRange`1.ContainsRange*
+  name: ContainsRange
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_ContainsRange_
+  commentId: Overload:Ampere.Base.ImmutableRange`1.ContainsRange
+  isSpec: "True"
+  fullName: Ampere.Base.ImmutableRange<T>.ContainsRange
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).ContainsRange
+  nameWithType: ImmutableRange<T>.ContainsRange
+  nameWithType.vb: ImmutableRange(Of T).ContainsRange
+- uid: Ampere.Base.ImmutableRange`1.ContainsValue(`0)
+  name: ContainsValue(T)
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_ContainsValue__0_
+  commentId: M:Ampere.Base.ImmutableRange`1.ContainsValue(`0)
+  fullName: Ampere.Base.ImmutableRange<T>.ContainsValue(T)
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).ContainsValue(T)
+  nameWithType: ImmutableRange<T>.ContainsValue(T)
+  nameWithType.vb: ImmutableRange(Of T).ContainsValue(T)
+- uid: Ampere.Base.ImmutableRange`1.ContainsValue*
+  name: ContainsValue
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_ContainsValue_
+  commentId: Overload:Ampere.Base.ImmutableRange`1.ContainsValue
+  isSpec: "True"
+  fullName: Ampere.Base.ImmutableRange<T>.ContainsValue
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).ContainsValue
+  nameWithType: ImmutableRange<T>.ContainsValue
+  nameWithType.vb: ImmutableRange(Of T).ContainsValue
+- uid: Ampere.Base.ImmutableRange`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name: IsInsideRange(IRangify<T>)
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_IsInsideRange_Ampere_Base_IRangify__0__
+  commentId: M:Ampere.Base.ImmutableRange`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name.vb: IsInsideRange(IRangify(Of T))
+  fullName: Ampere.Base.ImmutableRange<T>.IsInsideRange(Ampere.Base.IRangify<T>)
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).IsInsideRange(Ampere.Base.IRangify(Of T))
+  nameWithType: ImmutableRange<T>.IsInsideRange(IRangify<T>)
+  nameWithType.vb: ImmutableRange(Of T).IsInsideRange(IRangify(Of T))
+- uid: Ampere.Base.ImmutableRange`1.IsInsideRange*
+  name: IsInsideRange
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_IsInsideRange_
+  commentId: Overload:Ampere.Base.ImmutableRange`1.IsInsideRange
+  isSpec: "True"
+  fullName: Ampere.Base.ImmutableRange<T>.IsInsideRange
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).IsInsideRange
+  nameWithType: ImmutableRange<T>.IsInsideRange
+  nameWithType.vb: ImmutableRange(Of T).IsInsideRange
+- uid: Ampere.Base.ImmutableRange`1.IsValid
+  name: IsValid()
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_IsValid
+  commentId: M:Ampere.Base.ImmutableRange`1.IsValid
+  fullName: Ampere.Base.ImmutableRange<T>.IsValid()
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).IsValid()
+  nameWithType: ImmutableRange<T>.IsValid()
+  nameWithType.vb: ImmutableRange(Of T).IsValid()
+- uid: Ampere.Base.ImmutableRange`1.IsValid*
+  name: IsValid
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_IsValid_
+  commentId: Overload:Ampere.Base.ImmutableRange`1.IsValid
+  isSpec: "True"
+  fullName: Ampere.Base.ImmutableRange<T>.IsValid
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).IsValid
+  nameWithType: ImmutableRange<T>.IsValid
+  nameWithType.vb: ImmutableRange(Of T).IsValid
+- uid: Ampere.Base.ImmutableRange`1.Maximum
+  name: Maximum
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_Maximum
+  commentId: P:Ampere.Base.ImmutableRange`1.Maximum
+  fullName: Ampere.Base.ImmutableRange<T>.Maximum
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).Maximum
+  nameWithType: ImmutableRange<T>.Maximum
+  nameWithType.vb: ImmutableRange(Of T).Maximum
+- uid: Ampere.Base.ImmutableRange`1.Maximum*
+  name: Maximum
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_Maximum_
+  commentId: Overload:Ampere.Base.ImmutableRange`1.Maximum
+  isSpec: "True"
+  fullName: Ampere.Base.ImmutableRange<T>.Maximum
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).Maximum
+  nameWithType: ImmutableRange<T>.Maximum
+  nameWithType.vb: ImmutableRange(Of T).Maximum
+- uid: Ampere.Base.ImmutableRange`1.Minimum
+  name: Minimum
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_Minimum
+  commentId: P:Ampere.Base.ImmutableRange`1.Minimum
+  fullName: Ampere.Base.ImmutableRange<T>.Minimum
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).Minimum
+  nameWithType: ImmutableRange<T>.Minimum
+  nameWithType.vb: ImmutableRange(Of T).Minimum
+- uid: Ampere.Base.ImmutableRange`1.Minimum*
+  name: Minimum
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_Minimum_
+  commentId: Overload:Ampere.Base.ImmutableRange`1.Minimum
+  isSpec: "True"
+  fullName: Ampere.Base.ImmutableRange<T>.Minimum
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).Minimum
+  nameWithType: ImmutableRange<T>.Minimum
+  nameWithType.vb: ImmutableRange(Of T).Minimum
+- uid: Ampere.Base.ImmutableRange`1.ToString
+  name: ToString()
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_ToString
+  commentId: M:Ampere.Base.ImmutableRange`1.ToString
+  fullName: Ampere.Base.ImmutableRange<T>.ToString()
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).ToString()
+  nameWithType: ImmutableRange<T>.ToString()
+  nameWithType.vb: ImmutableRange(Of T).ToString()
+- uid: Ampere.Base.ImmutableRange`1.ToString*
+  name: ToString
+  href: api/Ampere.Base.ImmutableRange-1.html#Ampere_Base_ImmutableRange_1_ToString_
+  commentId: Overload:Ampere.Base.ImmutableRange`1.ToString
+  isSpec: "True"
+  fullName: Ampere.Base.ImmutableRange<T>.ToString
+  fullName.vb: Ampere.Base.ImmutableRange(Of T).ToString
+  nameWithType: ImmutableRange<T>.ToString
+  nameWithType.vb: ImmutableRange(Of T).ToString
+- uid: Ampere.Base.IntRange
+  name: IntRange
+  href: api/Ampere.Base.IntRange.html
+  commentId: T:Ampere.Base.IntRange
+  fullName: Ampere.Base.IntRange
+  nameWithType: IntRange
+- uid: Ampere.Base.IntRange.#ctor(System.Int32,System.Int32)
+  name: IntRange(Int32, Int32)
+  href: api/Ampere.Base.IntRange.html#Ampere_Base_IntRange__ctor_System_Int32_System_Int32_
+  commentId: M:Ampere.Base.IntRange.#ctor(System.Int32,System.Int32)
+  fullName: Ampere.Base.IntRange.IntRange(System.Int32, System.Int32)
+  nameWithType: IntRange.IntRange(Int32, Int32)
+- uid: Ampere.Base.IntRange.#ctor*
+  name: IntRange
+  href: api/Ampere.Base.IntRange.html#Ampere_Base_IntRange__ctor_
+  commentId: Overload:Ampere.Base.IntRange.#ctor
+  isSpec: "True"
+  fullName: Ampere.Base.IntRange.IntRange
+  nameWithType: IntRange.IntRange
+- uid: Ampere.Base.IntRange.GetEnumerator
+  name: GetEnumerator()
+  href: api/Ampere.Base.IntRange.html#Ampere_Base_IntRange_GetEnumerator
+  commentId: M:Ampere.Base.IntRange.GetEnumerator
+  fullName: Ampere.Base.IntRange.GetEnumerator()
+  nameWithType: IntRange.GetEnumerator()
+- uid: Ampere.Base.IntRange.GetEnumerator*
+  name: GetEnumerator
+  href: api/Ampere.Base.IntRange.html#Ampere_Base_IntRange_GetEnumerator_
+  commentId: Overload:Ampere.Base.IntRange.GetEnumerator
+  isSpec: "True"
+  fullName: Ampere.Base.IntRange.GetEnumerator
+  nameWithType: IntRange.GetEnumerator
+- uid: Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/Ampere.Base.IntRange.html#Ampere_Base_IntRange_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Ampere.Base.IntRange.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: IntRange.IEnumerable.GetEnumerator()
+  nameWithType.vb: IntRange.System.Collections.IEnumerable.GetEnumerator()
+- uid: Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/Ampere.Base.IntRange.html#Ampere_Base_IntRange_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Ampere.Base.IntRange.System.Collections.IEnumerable.GetEnumerator
+  nameWithType: IntRange.IEnumerable.GetEnumerator
+  nameWithType.vb: IntRange.System.Collections.IEnumerable.GetEnumerator
+- uid: Ampere.Base.IRangify`1
+  name: IRangify<T>
+  href: api/Ampere.Base.IRangify-1.html
+  commentId: T:Ampere.Base.IRangify`1
+  name.vb: IRangify(Of T)
+  fullName: Ampere.Base.IRangify<T>
+  fullName.vb: Ampere.Base.IRangify(Of T)
+  nameWithType: IRangify<T>
+  nameWithType.vb: IRangify(Of T)
+- uid: Ampere.Base.IRangify`1.ContainsValue(`0)
+  name: ContainsValue(T)
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_ContainsValue__0_
+  commentId: M:Ampere.Base.IRangify`1.ContainsValue(`0)
+  fullName: Ampere.Base.IRangify<T>.ContainsValue(T)
+  fullName.vb: Ampere.Base.IRangify(Of T).ContainsValue(T)
+  nameWithType: IRangify<T>.ContainsValue(T)
+  nameWithType.vb: IRangify(Of T).ContainsValue(T)
+- uid: Ampere.Base.IRangify`1.ContainsValue*
+  name: ContainsValue
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_ContainsValue_
+  commentId: Overload:Ampere.Base.IRangify`1.ContainsValue
+  isSpec: "True"
+  fullName: Ampere.Base.IRangify<T>.ContainsValue
+  fullName.vb: Ampere.Base.IRangify(Of T).ContainsValue
+  nameWithType: IRangify<T>.ContainsValue
+  nameWithType.vb: IRangify(Of T).ContainsValue
+- uid: Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name: IsInsideRange(IRangify<T>)
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_IsInsideRange_Ampere_Base_IRangify__0__
+  commentId: M:Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name.vb: IsInsideRange(IRangify(Of T))
+  fullName: Ampere.Base.IRangify<T>.IsInsideRange(Ampere.Base.IRangify<T>)
+  fullName.vb: Ampere.Base.IRangify(Of T).IsInsideRange(Ampere.Base.IRangify(Of T))
+  nameWithType: IRangify<T>.IsInsideRange(IRangify<T>)
+  nameWithType.vb: IRangify(Of T).IsInsideRange(IRangify(Of T))
+- uid: Ampere.Base.IRangify`1.IsInsideRange*
+  name: IsInsideRange
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_IsInsideRange_
+  commentId: Overload:Ampere.Base.IRangify`1.IsInsideRange
+  isSpec: "True"
+  fullName: Ampere.Base.IRangify<T>.IsInsideRange
+  fullName.vb: Ampere.Base.IRangify(Of T).IsInsideRange
+  nameWithType: IRangify<T>.IsInsideRange
+  nameWithType.vb: IRangify(Of T).IsInsideRange
+- uid: Ampere.Base.IRangify`1.IsValid
+  name: IsValid()
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_IsValid
+  commentId: M:Ampere.Base.IRangify`1.IsValid
+  fullName: Ampere.Base.IRangify<T>.IsValid()
+  fullName.vb: Ampere.Base.IRangify(Of T).IsValid()
+  nameWithType: IRangify<T>.IsValid()
+  nameWithType.vb: IRangify(Of T).IsValid()
+- uid: Ampere.Base.IRangify`1.IsValid*
+  name: IsValid
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_IsValid_
+  commentId: Overload:Ampere.Base.IRangify`1.IsValid
+  isSpec: "True"
+  fullName: Ampere.Base.IRangify<T>.IsValid
+  fullName.vb: Ampere.Base.IRangify(Of T).IsValid
+  nameWithType: IRangify<T>.IsValid
+  nameWithType.vb: IRangify(Of T).IsValid
+- uid: Ampere.Base.IRangify`1.Maximum
+  name: Maximum
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_Maximum
+  commentId: P:Ampere.Base.IRangify`1.Maximum
+  fullName: Ampere.Base.IRangify<T>.Maximum
+  fullName.vb: Ampere.Base.IRangify(Of T).Maximum
+  nameWithType: IRangify<T>.Maximum
+  nameWithType.vb: IRangify(Of T).Maximum
+- uid: Ampere.Base.IRangify`1.Maximum*
+  name: Maximum
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_Maximum_
+  commentId: Overload:Ampere.Base.IRangify`1.Maximum
+  isSpec: "True"
+  fullName: Ampere.Base.IRangify<T>.Maximum
+  fullName.vb: Ampere.Base.IRangify(Of T).Maximum
+  nameWithType: IRangify<T>.Maximum
+  nameWithType.vb: IRangify(Of T).Maximum
+- uid: Ampere.Base.IRangify`1.Minimum
+  name: Minimum
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_Minimum
+  commentId: P:Ampere.Base.IRangify`1.Minimum
+  fullName: Ampere.Base.IRangify<T>.Minimum
+  fullName.vb: Ampere.Base.IRangify(Of T).Minimum
+  nameWithType: IRangify<T>.Minimum
+  nameWithType.vb: IRangify(Of T).Minimum
+- uid: Ampere.Base.IRangify`1.Minimum*
+  name: Minimum
+  href: api/Ampere.Base.IRangify-1.html#Ampere_Base_IRangify_1_Minimum_
+  commentId: Overload:Ampere.Base.IRangify`1.Minimum
+  isSpec: "True"
+  fullName: Ampere.Base.IRangify<T>.Minimum
+  fullName.vb: Ampere.Base.IRangify(Of T).Minimum
+  nameWithType: IRangify<T>.Minimum
+  nameWithType.vb: IRangify(Of T).Minimum
+- uid: Ampere.Base.Range`1
+  name: Range<T>
+  href: api/Ampere.Base.Range-1.html
+  commentId: T:Ampere.Base.Range`1
+  name.vb: Range(Of T)
+  fullName: Ampere.Base.Range<T>
+  fullName.vb: Ampere.Base.Range(Of T)
+  nameWithType: Range<T>
+  nameWithType.vb: Range(Of T)
+- uid: Ampere.Base.Range`1.#ctor(`0,`0)
+  name: Range(T, T)
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1__ctor__0__0_
+  commentId: M:Ampere.Base.Range`1.#ctor(`0,`0)
+  fullName: Ampere.Base.Range<T>.Range(T, T)
+  fullName.vb: Ampere.Base.Range(Of T).Range(T, T)
+  nameWithType: Range<T>.Range(T, T)
+  nameWithType.vb: Range(Of T).Range(T, T)
+- uid: Ampere.Base.Range`1.#ctor*
+  name: Range
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1__ctor_
+  commentId: Overload:Ampere.Base.Range`1.#ctor
+  isSpec: "True"
+  fullName: Ampere.Base.Range<T>.Range
+  fullName.vb: Ampere.Base.Range(Of T).Range
+  nameWithType: Range<T>.Range
+  nameWithType.vb: Range(Of T).Range
+- uid: Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+  name: ContainsRange(IRangify<T>)
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_ContainsRange_Ampere_Base_IRangify__0__
+  commentId: M:Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+  name.vb: ContainsRange(IRangify(Of T))
+  fullName: Ampere.Base.Range<T>.ContainsRange(Ampere.Base.IRangify<T>)
+  fullName.vb: Ampere.Base.Range(Of T).ContainsRange(Ampere.Base.IRangify(Of T))
+  nameWithType: Range<T>.ContainsRange(IRangify<T>)
+  nameWithType.vb: Range(Of T).ContainsRange(IRangify(Of T))
+- uid: Ampere.Base.Range`1.ContainsRange*
+  name: ContainsRange
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_ContainsRange_
+  commentId: Overload:Ampere.Base.Range`1.ContainsRange
+  isSpec: "True"
+  fullName: Ampere.Base.Range<T>.ContainsRange
+  fullName.vb: Ampere.Base.Range(Of T).ContainsRange
+  nameWithType: Range<T>.ContainsRange
+  nameWithType.vb: Range(Of T).ContainsRange
+- uid: Ampere.Base.Range`1.ContainsValue(`0)
+  name: ContainsValue(T)
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_ContainsValue__0_
+  commentId: M:Ampere.Base.Range`1.ContainsValue(`0)
+  fullName: Ampere.Base.Range<T>.ContainsValue(T)
+  fullName.vb: Ampere.Base.Range(Of T).ContainsValue(T)
+  nameWithType: Range<T>.ContainsValue(T)
+  nameWithType.vb: Range(Of T).ContainsValue(T)
+- uid: Ampere.Base.Range`1.ContainsValue*
+  name: ContainsValue
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_ContainsValue_
+  commentId: Overload:Ampere.Base.Range`1.ContainsValue
+  isSpec: "True"
+  fullName: Ampere.Base.Range<T>.ContainsValue
+  fullName.vb: Ampere.Base.Range(Of T).ContainsValue
+  nameWithType: Range<T>.ContainsValue
+  nameWithType.vb: Range(Of T).ContainsValue
+- uid: Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name: IsInsideRange(IRangify<T>)
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_IsInsideRange_Ampere_Base_IRangify__0__
+  commentId: M:Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name.vb: IsInsideRange(IRangify(Of T))
+  fullName: Ampere.Base.Range<T>.IsInsideRange(Ampere.Base.IRangify<T>)
+  fullName.vb: Ampere.Base.Range(Of T).IsInsideRange(Ampere.Base.IRangify(Of T))
+  nameWithType: Range<T>.IsInsideRange(IRangify<T>)
+  nameWithType.vb: Range(Of T).IsInsideRange(IRangify(Of T))
+- uid: Ampere.Base.Range`1.IsInsideRange*
+  name: IsInsideRange
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_IsInsideRange_
+  commentId: Overload:Ampere.Base.Range`1.IsInsideRange
+  isSpec: "True"
+  fullName: Ampere.Base.Range<T>.IsInsideRange
+  fullName.vb: Ampere.Base.Range(Of T).IsInsideRange
+  nameWithType: Range<T>.IsInsideRange
+  nameWithType.vb: Range(Of T).IsInsideRange
+- uid: Ampere.Base.Range`1.IsValid
+  name: IsValid()
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_IsValid
+  commentId: M:Ampere.Base.Range`1.IsValid
+  fullName: Ampere.Base.Range<T>.IsValid()
+  fullName.vb: Ampere.Base.Range(Of T).IsValid()
+  nameWithType: Range<T>.IsValid()
+  nameWithType.vb: Range(Of T).IsValid()
+- uid: Ampere.Base.Range`1.IsValid*
+  name: IsValid
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_IsValid_
+  commentId: Overload:Ampere.Base.Range`1.IsValid
+  isSpec: "True"
+  fullName: Ampere.Base.Range<T>.IsValid
+  fullName.vb: Ampere.Base.Range(Of T).IsValid
+  nameWithType: Range<T>.IsValid
+  nameWithType.vb: Range(Of T).IsValid
+- uid: Ampere.Base.Range`1.Maximum
+  name: Maximum
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_Maximum
+  commentId: P:Ampere.Base.Range`1.Maximum
+  fullName: Ampere.Base.Range<T>.Maximum
+  fullName.vb: Ampere.Base.Range(Of T).Maximum
+  nameWithType: Range<T>.Maximum
+  nameWithType.vb: Range(Of T).Maximum
+- uid: Ampere.Base.Range`1.Maximum*
+  name: Maximum
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_Maximum_
+  commentId: Overload:Ampere.Base.Range`1.Maximum
+  isSpec: "True"
+  fullName: Ampere.Base.Range<T>.Maximum
+  fullName.vb: Ampere.Base.Range(Of T).Maximum
+  nameWithType: Range<T>.Maximum
+  nameWithType.vb: Range(Of T).Maximum
+- uid: Ampere.Base.Range`1.Minimum
+  name: Minimum
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_Minimum
+  commentId: P:Ampere.Base.Range`1.Minimum
+  fullName: Ampere.Base.Range<T>.Minimum
+  fullName.vb: Ampere.Base.Range(Of T).Minimum
+  nameWithType: Range<T>.Minimum
+  nameWithType.vb: Range(Of T).Minimum
+- uid: Ampere.Base.Range`1.Minimum*
+  name: Minimum
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_Minimum_
+  commentId: Overload:Ampere.Base.Range`1.Minimum
+  isSpec: "True"
+  fullName: Ampere.Base.Range<T>.Minimum
+  fullName.vb: Ampere.Base.Range(Of T).Minimum
+  nameWithType: Range<T>.Minimum
+  nameWithType.vb: Range(Of T).Minimum
+- uid: Ampere.Base.Range`1.ToString
+  name: ToString()
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_ToString
+  commentId: M:Ampere.Base.Range`1.ToString
+  fullName: Ampere.Base.Range<T>.ToString()
+  fullName.vb: Ampere.Base.Range(Of T).ToString()
+  nameWithType: Range<T>.ToString()
+  nameWithType.vb: Range(Of T).ToString()
+- uid: Ampere.Base.Range`1.ToString*
+  name: ToString
+  href: api/Ampere.Base.Range-1.html#Ampere_Base_Range_1_ToString_
+  commentId: Overload:Ampere.Base.Range`1.ToString
+  isSpec: "True"
+  fullName: Ampere.Base.Range<T>.ToString
+  fullName.vb: Ampere.Base.Range(Of T).ToString
+  nameWithType: Range<T>.ToString
+  nameWithType.vb: Range(Of T).ToString
+- uid: Ampere.EnumerableUtils
+  name: Ampere.EnumerableUtils
+  href: api/Ampere.EnumerableUtils.html
+  commentId: N:Ampere.EnumerableUtils
+  fullName: Ampere.EnumerableUtils
+  nameWithType: Ampere.EnumerableUtils
+- uid: Ampere.EnumerableUtils.EnumerableUtils
+  name: EnumerableUtils
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html
+  commentId: T:Ampere.EnumerableUtils.EnumerableUtils
+  fullName: Ampere.EnumerableUtils.EnumerableUtils
+  nameWithType: EnumerableUtils
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Concat*
+  name: Concat
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Concat_
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Concat
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Concat
+  nameWithType: EnumerableUtils.Concat
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Concat``1(System.Collections.Generic.IEnumerable{``0}[])
+  name: Concat<T>(IEnumerable<T>[])
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Concat__1_System_Collections_Generic_IEnumerable___0____
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Concat``1(System.Collections.Generic.IEnumerable{``0}[])
+  name.vb: Concat(Of T)(IEnumerable(Of T)())
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Concat<T>(System.Collections.Generic.IEnumerable<T>[])
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Concat(Of T)(System.Collections.Generic.IEnumerable(Of T)())
+  nameWithType: EnumerableUtils.Concat<T>(IEnumerable<T>[])
+  nameWithType.vb: EnumerableUtils.Concat(Of T)(IEnumerable(Of T)())
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert*
+  name: Insert
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Insert_
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Insert
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Insert
+  nameWithType: EnumerableUtils.Insert
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  name: Insert<T>(ref IEnumerable<T>, Int32, Int32, T[])
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0___
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  name.vb: Insert(Of T)(ByRef IEnumerable(Of T), Int32, Int32, T())
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Insert<T>(ref System.Collections.Generic.IEnumerable<T>, System.Int32, System.Int32, T[])
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Insert(Of T)(ByRef System.Collections.Generic.IEnumerable(Of T), System.Int32, System.Int32, T())
+  nameWithType: EnumerableUtils.Insert<T>(ref IEnumerable<T>, Int32, Int32, T[])
+  nameWithType.vb: EnumerableUtils.Insert(Of T)(ByRef IEnumerable(Of T), Int32, Int32, T())
+- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty*
+  name: IsNullOrEmpty
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_IsNullOrEmpty_
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty
+  nameWithType: EnumerableUtils.IsNullOrEmpty
+- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  name: IsNullOrEmpty<T>(IEnumerable<T>)
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_IsNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: IsNullOrEmpty(Of T)(IEnumerable(Of T))
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: EnumerableUtils.IsNullOrEmpty<T>(IEnumerable<T>)
+  nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of T)(IEnumerable(Of T))
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
+  name: Range(Int32, Int32)
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Range_System_Int32_System_Int32_
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32, System.Int32)
+  nameWithType: EnumerableUtils.Range(Int32, Int32)
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Range*
+  name: Range
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Range_
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Range
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Range
+  nameWithType: EnumerableUtils.Range
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle*
+  name: Shuffle
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Shuffle_
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Shuffle
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle
+  nameWithType: EnumerableUtils.Shuffle
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  name: Shuffle<T>(IEnumerable<T>)
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Shuffle__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: Shuffle(Of T)(IEnumerable(Of T))
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: EnumerableUtils.Shuffle<T>(IEnumerable<T>)
+  nameWithType.vb: EnumerableUtils.Shuffle(Of T)(IEnumerable(Of T))
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32,System.Int32)
+  name: Span(Int32, Int32)
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Span_System_Int32_System_Int32_
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32,System.Int32)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32, System.Int32)
+  nameWithType: EnumerableUtils.Span(Int32, Int32)
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Span*
+  name: Span
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Span_
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Span
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Span
+  nameWithType: EnumerableUtils.Span
+- uid: Ampere.EnumerableUtils.EnumerableUtils.ToString*
+  name: ToString
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_ToString_
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.ToString
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString
+  nameWithType: EnumerableUtils.ToString
+- uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  name: ToString<T>(IEnumerable<T>, String, Boolean)
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean_
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  name.vb: ToString(Of T)(IEnumerable(Of T), String, Boolean)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
+  nameWithType: EnumerableUtils.ToString<T>(IEnumerable<T>, String, Boolean)
+  nameWithType.vb: EnumerableUtils.ToString(Of T)(IEnumerable(Of T), String, Boolean)
+- uid: Ampere.FileUtils
+  name: Ampere.FileUtils
+  href: api/Ampere.FileUtils.html
+  commentId: N:Ampere.FileUtils
+  fullName: Ampere.FileUtils
+  nameWithType: Ampere.FileUtils
+- uid: Ampere.FileUtils.FileUtils
+  name: FileUtils
+  href: api/Ampere.FileUtils.FileUtils.html
+  commentId: T:Ampere.FileUtils.FileUtils
+  fullName: Ampere.FileUtils.FileUtils
+  nameWithType: FileUtils
+- uid: Ampere.FileUtils.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
+  name: FindInFile(FileInfo, Func<String, Boolean>)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_FindInFile_System_IO_FileInfo_System_Func_System_String_System_Boolean__
+  commentId: M:Ampere.FileUtils.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
+  name.vb: FindInFile(FileInfo, Func(Of String, Boolean))
+  fullName: Ampere.FileUtils.FileUtils.FindInFile(System.IO.FileInfo, System.Func<System.String, System.Boolean>)
+  fullName.vb: Ampere.FileUtils.FileUtils.FindInFile(System.IO.FileInfo, System.Func(Of System.String, System.Boolean))
+  nameWithType: FileUtils.FindInFile(FileInfo, Func<String, Boolean>)
+  nameWithType.vb: FileUtils.FindInFile(FileInfo, Func(Of String, Boolean))
+- uid: Ampere.FileUtils.FileUtils.FindInFile*
+  name: FindInFile
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_FindInFile_
+  commentId: Overload:Ampere.FileUtils.FileUtils.FindInFile
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.FindInFile
+  nameWithType: FileUtils.FindInFile
+- uid: Ampere.FileUtils.FileUtils.GetDirectorySize(System.String)
+  name: GetDirectorySize(String)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetDirectorySize_System_String_
+  commentId: M:Ampere.FileUtils.FileUtils.GetDirectorySize(System.String)
+  fullName: Ampere.FileUtils.FileUtils.GetDirectorySize(System.String)
+  nameWithType: FileUtils.GetDirectorySize(String)
+- uid: Ampere.FileUtils.FileUtils.GetDirectorySize*
+  name: GetDirectorySize
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetDirectorySize_
+  commentId: Overload:Ampere.FileUtils.FileUtils.GetDirectorySize
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.GetDirectorySize
+  nameWithType: FileUtils.GetDirectorySize
+- uid: Ampere.FileUtils.FileUtils.GetFileSize(System.String)
+  name: GetFileSize(String)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetFileSize_System_String_
+  commentId: M:Ampere.FileUtils.FileUtils.GetFileSize(System.String)
+  fullName: Ampere.FileUtils.FileUtils.GetFileSize(System.String)
+  nameWithType: FileUtils.GetFileSize(String)
+- uid: Ampere.FileUtils.FileUtils.GetFileSize*
+  name: GetFileSize
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetFileSize_
+  commentId: Overload:Ampere.FileUtils.FileUtils.GetFileSize
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.GetFileSize
+  nameWithType: FileUtils.GetFileSize
+- uid: Ampere.FileUtils.FileUtils.GetRootPath
+  name: GetRootPath()
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetRootPath
+  commentId: M:Ampere.FileUtils.FileUtils.GetRootPath
+  fullName: Ampere.FileUtils.FileUtils.GetRootPath()
+  nameWithType: FileUtils.GetRootPath()
+- uid: Ampere.FileUtils.FileUtils.GetRootPath*
+  name: GetRootPath
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetRootPath_
+  commentId: Overload:Ampere.FileUtils.FileUtils.GetRootPath
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.GetRootPath
+  nameWithType: FileUtils.GetRootPath
+- uid: Ampere.FileUtils.FileUtils.GetUserPath
+  name: GetUserPath()
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetUserPath
+  commentId: M:Ampere.FileUtils.FileUtils.GetUserPath
+  fullName: Ampere.FileUtils.FileUtils.GetUserPath()
+  nameWithType: FileUtils.GetUserPath()
+- uid: Ampere.FileUtils.FileUtils.GetUserPath*
+  name: GetUserPath
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetUserPath_
+  commentId: Overload:Ampere.FileUtils.FileUtils.GetUserPath
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.GetUserPath
+  nameWithType: FileUtils.GetUserPath
+- uid: Ampere.FileUtils.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
+  name: GetValueAtLine(FileInfo, Int32)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetValueAtLine_System_IO_FileInfo_System_Int32_
+  commentId: M:Ampere.FileUtils.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
+  fullName: Ampere.FileUtils.FileUtils.GetValueAtLine(System.IO.FileInfo, System.Int32)
+  nameWithType: FileUtils.GetValueAtLine(FileInfo, Int32)
+- uid: Ampere.FileUtils.FileUtils.GetValueAtLine*
+  name: GetValueAtLine
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_GetValueAtLine_
+  commentId: Overload:Ampere.FileUtils.FileUtils.GetValueAtLine
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.GetValueAtLine
+  nameWithType: FileUtils.GetValueAtLine
+- uid: Ampere.FileUtils.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
+  name: RemoveFromEachLine(FileInfo, String)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_RemoveFromEachLine_System_IO_FileInfo_System_String_
+  commentId: M:Ampere.FileUtils.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
+  fullName: Ampere.FileUtils.FileUtils.RemoveFromEachLine(System.IO.FileInfo, System.String)
+  nameWithType: FileUtils.RemoveFromEachLine(FileInfo, String)
+- uid: Ampere.FileUtils.FileUtils.RemoveFromEachLine*
+  name: RemoveFromEachLine
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_RemoveFromEachLine_
+  commentId: Overload:Ampere.FileUtils.FileUtils.RemoveFromEachLine
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.RemoveFromEachLine
+  nameWithType: FileUtils.RemoveFromEachLine
+- uid: Ampere.FileUtils.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
+  name: RemoveLine(FileInfo, Int32)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_RemoveLine_System_IO_FileInfo_System_Int32_
+  commentId: M:Ampere.FileUtils.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
+  fullName: Ampere.FileUtils.FileUtils.RemoveLine(System.IO.FileInfo, System.Int32)
+  nameWithType: FileUtils.RemoveLine(FileInfo, Int32)
+- uid: Ampere.FileUtils.FileUtils.RemoveLine*
+  name: RemoveLine
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_RemoveLine_
+  commentId: Overload:Ampere.FileUtils.FileUtils.RemoveLine
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.RemoveLine
+  nameWithType: FileUtils.RemoveLine
+- uid: Ampere.FileUtils.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
+  name: RemoveLines(FileInfo, Int32[])
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_RemoveLines_System_IO_FileInfo_System_Int32___
+  commentId: M:Ampere.FileUtils.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
+  name.vb: RemoveLines(FileInfo, Int32())
+  fullName: Ampere.FileUtils.FileUtils.RemoveLines(System.IO.FileInfo, System.Int32[])
+  fullName.vb: Ampere.FileUtils.FileUtils.RemoveLines(System.IO.FileInfo, System.Int32())
+  nameWithType: FileUtils.RemoveLines(FileInfo, Int32[])
+  nameWithType.vb: FileUtils.RemoveLines(FileInfo, Int32())
+- uid: Ampere.FileUtils.FileUtils.RemoveLines*
+  name: RemoveLines
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_RemoveLines_
+  commentId: Overload:Ampere.FileUtils.FileUtils.RemoveLines
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.RemoveLines
+  nameWithType: FileUtils.RemoveLines
+- uid: Ampere.FileUtils.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
+  name: ReplaceAll(FileInfo, String, String)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceAll_System_IO_FileInfo_System_String_System_String_
+  commentId: M:Ampere.FileUtils.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
+  fullName: Ampere.FileUtils.FileUtils.ReplaceAll(System.IO.FileInfo, System.String, System.String)
+  nameWithType: FileUtils.ReplaceAll(FileInfo, String, String)
+- uid: Ampere.FileUtils.FileUtils.ReplaceAll*
+  name: ReplaceAll
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceAll_
+  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceAll
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.ReplaceAll
+  nameWithType: FileUtils.ReplaceAll
+- uid: Ampere.FileUtils.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
+  name: ReplaceAllByLine(FileInfo, String, String)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceAllByLine_System_IO_FileInfo_System_String_System_String_
+  commentId: M:Ampere.FileUtils.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
+  fullName: Ampere.FileUtils.FileUtils.ReplaceAllByLine(System.IO.FileInfo, System.String, System.String)
+  nameWithType: FileUtils.ReplaceAllByLine(FileInfo, String, String)
+- uid: Ampere.FileUtils.FileUtils.ReplaceAllByLine*
+  name: ReplaceAllByLine
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceAllByLine_
+  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceAllByLine
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.ReplaceAllByLine
+  nameWithType: FileUtils.ReplaceAllByLine
+- uid: Ampere.FileUtils.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
+  name: ReplaceAllInLine(FileInfo, String, String, Int32)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceAllInLine_System_IO_FileInfo_System_String_System_String_System_Int32_
+  commentId: M:Ampere.FileUtils.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
+  fullName: Ampere.FileUtils.FileUtils.ReplaceAllInLine(System.IO.FileInfo, System.String, System.String, System.Int32)
+  nameWithType: FileUtils.ReplaceAllInLine(FileInfo, String, String, Int32)
+- uid: Ampere.FileUtils.FileUtils.ReplaceAllInLine*
+  name: ReplaceAllInLine
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceAllInLine_
+  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceAllInLine
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.ReplaceAllInLine
+  nameWithType: FileUtils.ReplaceAllInLine
+- uid: Ampere.FileUtils.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
+  name: ReplaceInLines(FileInfo, Dictionary<KeyValuePair<String, String>, Int32>)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceInLines_System_IO_FileInfo_System_Collections_Generic_Dictionary_System_Collections_Generic_KeyValuePair_System_String_System_String__System_Int32__
+  commentId: M:Ampere.FileUtils.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
+  name.vb: ReplaceInLines(FileInfo, Dictionary(Of KeyValuePair(Of String, String), Int32))
+  fullName: Ampere.FileUtils.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<System.Collections.Generic.KeyValuePair<System.String, System.String>, System.Int32>)
+  fullName.vb: Ampere.FileUtils.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String), System.Int32))
+  nameWithType: FileUtils.ReplaceInLines(FileInfo, Dictionary<KeyValuePair<String, String>, Int32>)
+  nameWithType.vb: FileUtils.ReplaceInLines(FileInfo, Dictionary(Of KeyValuePair(Of String, String), Int32))
+- uid: Ampere.FileUtils.FileUtils.ReplaceInLines*
+  name: ReplaceInLines
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceInLines_
+  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceInLines
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.ReplaceInLines
+  nameWithType: FileUtils.ReplaceInLines
+- uid: Ampere.FileUtils.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
+  name: ReplaceLine(FileInfo, String, Int32)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceLine_System_IO_FileInfo_System_String_System_Int32_
+  commentId: M:Ampere.FileUtils.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
+  fullName: Ampere.FileUtils.FileUtils.ReplaceLine(System.IO.FileInfo, System.String, System.Int32)
+  nameWithType: FileUtils.ReplaceLine(FileInfo, String, Int32)
+- uid: Ampere.FileUtils.FileUtils.ReplaceLine*
+  name: ReplaceLine
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceLine_
+  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceLine
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.ReplaceLine
+  nameWithType: FileUtils.ReplaceLine
+- uid: Ampere.FileUtils.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
+  name: ReplaceLines(FileInfo, Dictionary<String, Int32>)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceLines_System_IO_FileInfo_System_Collections_Generic_Dictionary_System_String_System_Int32__
+  commentId: M:Ampere.FileUtils.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
+  name.vb: ReplaceLines(FileInfo, Dictionary(Of String, Int32))
+  fullName: Ampere.FileUtils.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<System.String, System.Int32>)
+  fullName.vb: Ampere.FileUtils.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of System.String, System.Int32))
+  nameWithType: FileUtils.ReplaceLines(FileInfo, Dictionary<String, Int32>)
+  nameWithType.vb: FileUtils.ReplaceLines(FileInfo, Dictionary(Of String, Int32))
+- uid: Ampere.FileUtils.FileUtils.ReplaceLines*
+  name: ReplaceLines
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_ReplaceLines_
+  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceLines
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.ReplaceLines
+  nameWithType: FileUtils.ReplaceLines
+- uid: Ampere.FileUtils.FileUtils.WriteLine(System.IO.FileInfo,System.String)
+  name: WriteLine(FileInfo, String)
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_WriteLine_System_IO_FileInfo_System_String_
+  commentId: M:Ampere.FileUtils.FileUtils.WriteLine(System.IO.FileInfo,System.String)
+  fullName: Ampere.FileUtils.FileUtils.WriteLine(System.IO.FileInfo, System.String)
+  nameWithType: FileUtils.WriteLine(FileInfo, String)
+- uid: Ampere.FileUtils.FileUtils.WriteLine*
+  name: WriteLine
+  href: api/Ampere.FileUtils.FileUtils.html#Ampere_FileUtils_FileUtils_WriteLine_
+  commentId: Overload:Ampere.FileUtils.FileUtils.WriteLine
+  isSpec: "True"
+  fullName: Ampere.FileUtils.FileUtils.WriteLine
+  nameWithType: FileUtils.WriteLine
+- uid: Ampere.MathUtils
+  name: Ampere.MathUtils
+  href: api/Ampere.MathUtils.html
+  commentId: N:Ampere.MathUtils
+  fullName: Ampere.MathUtils
+  nameWithType: Ampere.MathUtils
+- uid: Ampere.MathUtils.IMatrixer`1
+  name: IMatrixer<T>
+  href: api/Ampere.MathUtils.IMatrixer-1.html
+  commentId: T:Ampere.MathUtils.IMatrixer`1
+  name.vb: IMatrixer(Of T)
+  fullName: Ampere.MathUtils.IMatrixer<T>
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T)
+  nameWithType: IMatrixer<T>
+  nameWithType.vb: IMatrixer(Of T)
+- uid: Ampere.MathUtils.IMatrixer`1.Cols
+  name: Cols
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Cols
+  commentId: P:Ampere.MathUtils.IMatrixer`1.Cols
+  fullName: Ampere.MathUtils.IMatrixer<T>.Cols
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Cols
+  nameWithType: IMatrixer<T>.Cols
+  nameWithType.vb: IMatrixer(Of T).Cols
+- uid: Ampere.MathUtils.IMatrixer`1.Cols*
+  name: Cols
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Cols_
+  commentId: Overload:Ampere.MathUtils.IMatrixer`1.Cols
+  isSpec: "True"
+  fullName: Ampere.MathUtils.IMatrixer<T>.Cols
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Cols
+  nameWithType: IMatrixer<T>.Cols
+  nameWithType.vb: IMatrixer(Of T).Cols
+- uid: Ampere.MathUtils.IMatrixer`1.Rows
+  name: Rows
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Rows
+  commentId: P:Ampere.MathUtils.IMatrixer`1.Rows
+  fullName: Ampere.MathUtils.IMatrixer<T>.Rows
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Rows
+  nameWithType: IMatrixer<T>.Rows
+  nameWithType.vb: IMatrixer(Of T).Rows
+- uid: Ampere.MathUtils.IMatrixer`1.Rows*
+  name: Rows
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Rows_
+  commentId: Overload:Ampere.MathUtils.IMatrixer`1.Rows
+  isSpec: "True"
+  fullName: Ampere.MathUtils.IMatrixer<T>.Rows
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Rows
+  nameWithType: IMatrixer<T>.Rows
+  nameWithType.vb: IMatrixer(Of T).Rows
+- uid: Ampere.MathUtils.IMatrixer`1.ToString
+  name: ToString()
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_ToString
+  commentId: M:Ampere.MathUtils.IMatrixer`1.ToString
+  fullName: Ampere.MathUtils.IMatrixer<T>.ToString()
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).ToString()
+  nameWithType: IMatrixer<T>.ToString()
+  nameWithType.vb: IMatrixer(Of T).ToString()
+- uid: Ampere.MathUtils.IMatrixer`1.ToString*
+  name: ToString
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_ToString_
+  commentId: Overload:Ampere.MathUtils.IMatrixer`1.ToString
+  isSpec: "True"
+  fullName: Ampere.MathUtils.IMatrixer<T>.ToString
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).ToString
+  nameWithType: IMatrixer<T>.ToString
+  nameWithType.vb: IMatrixer(Of T).ToString
+- uid: Ampere.MathUtils.IMatrixer`1.Transpose
+  name: Transpose()
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Transpose
+  commentId: M:Ampere.MathUtils.IMatrixer`1.Transpose
+  fullName: Ampere.MathUtils.IMatrixer<T>.Transpose()
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Transpose()
+  nameWithType: IMatrixer<T>.Transpose()
+  nameWithType.vb: IMatrixer(Of T).Transpose()
+- uid: Ampere.MathUtils.IMatrixer`1.Transpose*
+  name: Transpose
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Transpose_
+  commentId: Overload:Ampere.MathUtils.IMatrixer`1.Transpose
+  isSpec: "True"
+  fullName: Ampere.MathUtils.IMatrixer<T>.Transpose
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Transpose
+  nameWithType: IMatrixer<T>.Transpose
+  nameWithType.vb: IMatrixer(Of T).Transpose
+- uid: Ampere.MathUtils.IMatrixer`1.Values
+  name: Values
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Values
+  commentId: P:Ampere.MathUtils.IMatrixer`1.Values
+  fullName: Ampere.MathUtils.IMatrixer<T>.Values
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Values
+  nameWithType: IMatrixer<T>.Values
+  nameWithType.vb: IMatrixer(Of T).Values
+- uid: Ampere.MathUtils.IMatrixer`1.Values*
+  name: Values
+  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Values_
+  commentId: Overload:Ampere.MathUtils.IMatrixer`1.Values
+  isSpec: "True"
+  fullName: Ampere.MathUtils.IMatrixer<T>.Values
+  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Values
+  nameWithType: IMatrixer<T>.Values
+  nameWithType.vb: IMatrixer(Of T).Values
+- uid: Ampere.MathUtils.Matrix
+  name: Matrix
+  href: api/Ampere.MathUtils.Matrix.html
+  commentId: T:Ampere.MathUtils.Matrix
+  fullName: Ampere.MathUtils.Matrix
+  nameWithType: Matrix
+- uid: Ampere.MathUtils.Matrix.#ctor(System.Double[0:,0:])
+  name: Matrix(Double[,])
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix__ctor_System_Double_0__0___
+  commentId: M:Ampere.MathUtils.Matrix.#ctor(System.Double[0:,0:])
+  name.vb: Matrix(Double(,))
+  fullName: Ampere.MathUtils.Matrix.Matrix(System.Double[,])
+  fullName.vb: Ampere.MathUtils.Matrix.Matrix(System.Double(,))
+  nameWithType: Matrix.Matrix(Double[,])
+  nameWithType.vb: Matrix.Matrix(Double(,))
+- uid: Ampere.MathUtils.Matrix.#ctor(System.Int32,System.Int32)
+  name: Matrix(Int32, Int32)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix__ctor_System_Int32_System_Int32_
+  commentId: M:Ampere.MathUtils.Matrix.#ctor(System.Int32,System.Int32)
+  fullName: Ampere.MathUtils.Matrix.Matrix(System.Int32, System.Int32)
+  nameWithType: Matrix.Matrix(Int32, Int32)
+- uid: Ampere.MathUtils.Matrix.#ctor*
+  name: Matrix
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix__ctor_
+  commentId: Overload:Ampere.MathUtils.Matrix.#ctor
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Matrix
+  nameWithType: Matrix.Matrix
+- uid: Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  name: Add(Matrix, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Add_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Add(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,System.Double)
+  name: Add(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Add_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Add(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.Add*
+  name: Add
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Add_
+  commentId: Overload:Ampere.MathUtils.Matrix.Add
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Add
+  nameWithType: Matrix.Add
+- uid: Ampere.MathUtils.Matrix.Cols
+  name: Cols
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Cols
+  commentId: P:Ampere.MathUtils.Matrix.Cols
+  fullName: Ampere.MathUtils.Matrix.Cols
+  nameWithType: Matrix.Cols
+- uid: Ampere.MathUtils.Matrix.Cols*
+  name: Cols
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Cols_
+  commentId: Overload:Ampere.MathUtils.Matrix.Cols
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Cols
+  nameWithType: Matrix.Cols
+- uid: Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix,System.Double)
+  name: Divide(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Divide_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Divide(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.Divide*
+  name: Divide
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Divide_
+  commentId: Overload:Ampere.MathUtils.Matrix.Divide
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Divide
+  nameWithType: Matrix.Divide
+- uid: Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  name: DotProduct(Matrix, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_DotProduct_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.DotProduct(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.DotProduct*
+  name: DotProduct
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_DotProduct_
+  commentId: Overload:Ampere.MathUtils.Matrix.DotProduct
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.DotProduct
+  nameWithType: Matrix.DotProduct
+- uid: Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  name: EqualDimension(Matrix, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_EqualDimension_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.EqualDimension(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.EqualDimension*
+  name: EqualDimension
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_EqualDimension_
+  commentId: Overload:Ampere.MathUtils.Matrix.EqualDimension
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.EqualDimension
+  nameWithType: Matrix.EqualDimension
+- uid: Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)
+  name: Equals(Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Equals_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Equals(Matrix)
+- uid: Ampere.MathUtils.Matrix.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Equals_System_Object_
+  commentId: M:Ampere.MathUtils.Matrix.Equals(System.Object)
+  fullName: Ampere.MathUtils.Matrix.Equals(System.Object)
+  nameWithType: Matrix.Equals(Object)
+- uid: Ampere.MathUtils.Matrix.Equals*
+  name: Equals
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Equals_
+  commentId: Overload:Ampere.MathUtils.Matrix.Equals
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Equals
+  nameWithType: Matrix.Equals
+- uid: Ampere.MathUtils.Matrix.GetEnumerator
+  name: GetEnumerator()
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_GetEnumerator
+  commentId: M:Ampere.MathUtils.Matrix.GetEnumerator
+  fullName: Ampere.MathUtils.Matrix.GetEnumerator()
+  nameWithType: Matrix.GetEnumerator()
+- uid: Ampere.MathUtils.Matrix.GetEnumerator*
+  name: GetEnumerator
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_GetEnumerator_
+  commentId: Overload:Ampere.MathUtils.Matrix.GetEnumerator
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.GetEnumerator
+  nameWithType: Matrix.GetEnumerator
+- uid: Ampere.MathUtils.Matrix.GetHashCode
+  name: GetHashCode()
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_GetHashCode
+  commentId: M:Ampere.MathUtils.Matrix.GetHashCode
+  fullName: Ampere.MathUtils.Matrix.GetHashCode()
+  nameWithType: Matrix.GetHashCode()
+- uid: Ampere.MathUtils.Matrix.GetHashCode*
+  name: GetHashCode
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_GetHashCode_
+  commentId: Overload:Ampere.MathUtils.Matrix.GetHashCode
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.GetHashCode
+  nameWithType: Matrix.GetHashCode
+- uid: Ampere.MathUtils.Matrix.IsColumnVector
+  name: IsColumnVector()
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_IsColumnVector
+  commentId: M:Ampere.MathUtils.Matrix.IsColumnVector
+  fullName: Ampere.MathUtils.Matrix.IsColumnVector()
+  nameWithType: Matrix.IsColumnVector()
+- uid: Ampere.MathUtils.Matrix.IsColumnVector*
+  name: IsColumnVector
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_IsColumnVector_
+  commentId: Overload:Ampere.MathUtils.Matrix.IsColumnVector
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.IsColumnVector
+  nameWithType: Matrix.IsColumnVector
+- uid: Ampere.MathUtils.Matrix.IsRowVector
+  name: IsRowVector()
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_IsRowVector
+  commentId: M:Ampere.MathUtils.Matrix.IsRowVector
+  fullName: Ampere.MathUtils.Matrix.IsRowVector()
+  nameWithType: Matrix.IsRowVector()
+- uid: Ampere.MathUtils.Matrix.IsRowVector*
+  name: IsRowVector
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_IsRowVector_
+  commentId: Overload:Ampere.MathUtils.Matrix.IsRowVector
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.IsRowVector
+  nameWithType: Matrix.IsRowVector
+- uid: Ampere.MathUtils.Matrix.IsSquareVector
+  name: IsSquareVector()
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_IsSquareVector
+  commentId: M:Ampere.MathUtils.Matrix.IsSquareVector
+  fullName: Ampere.MathUtils.Matrix.IsSquareVector()
+  nameWithType: Matrix.IsSquareVector()
+- uid: Ampere.MathUtils.Matrix.IsSquareVector*
+  name: IsSquareVector
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_IsSquareVector_
+  commentId: Overload:Ampere.MathUtils.Matrix.IsSquareVector
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.IsSquareVector
+  nameWithType: Matrix.IsSquareVector
+- uid: Ampere.MathUtils.Matrix.Item(System.Int32,System.Int32)
+  name: Item[Int32, Int32]
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Item_System_Int32_System_Int32_
+  commentId: P:Ampere.MathUtils.Matrix.Item(System.Int32,System.Int32)
+  name.vb: Item(Int32, Int32)
+  fullName: Ampere.MathUtils.Matrix.Item[System.Int32, System.Int32]
+  fullName.vb: Ampere.MathUtils.Matrix.Item(System.Int32, System.Int32)
+  nameWithType: Matrix.Item[Int32, Int32]
+  nameWithType.vb: Matrix.Item(Int32, Int32)
+- uid: Ampere.MathUtils.Matrix.Item*
+  name: Item
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Item_
+  commentId: Overload:Ampere.MathUtils.Matrix.Item
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Item
+  nameWithType: Matrix.Item
+- uid: Ampere.MathUtils.Matrix.Mod(Ampere.MathUtils.Matrix,System.Double)
+  name: Mod(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Mod_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.Mod(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Mod(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Mod(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.Mod*
+  name: Mod
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Mod_
+  commentId: Overload:Ampere.MathUtils.Matrix.Mod
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Mod
+  nameWithType: Matrix.Mod
+- uid: Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix,System.Double)
+  name: Multiply(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Multiply_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Multiply(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.Multiply*
+  name: Multiply
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Multiply_
+  commentId: Overload:Ampere.MathUtils.Matrix.Multiply
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Multiply
+  nameWithType: Matrix.Multiply
+- uid: Ampere.MathUtils.Matrix.Negate(Ampere.MathUtils.Matrix)
+  name: Negate(Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Negate_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.Negate(Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Negate(Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Negate(Matrix)
+- uid: Ampere.MathUtils.Matrix.Negate*
+  name: Negate
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Negate_
+  commentId: Overload:Ampere.MathUtils.Matrix.Negate
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Negate
+  nameWithType: Matrix.Negate
+- uid: Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  name: Addition(Matrix, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Addition_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Addition(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Addition(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,System.Double)
+  name: Addition(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Addition_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Addition(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Addition(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.op_Addition(System.Double,Ampere.MathUtils.Matrix)
+  name: Addition(Double, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Addition_System_Double_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Addition(System.Double,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Addition(System.Double, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Addition(Double, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Addition*
+  name: Addition
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Addition_
+  commentId: Overload:Ampere.MathUtils.Matrix.op_Addition
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Addition
+  nameWithType: Matrix.Addition
+- uid: Ampere.MathUtils.Matrix.op_Division(Ampere.MathUtils.Matrix,System.Double)
+  name: Division(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Division_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.op_Division(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Division(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Division(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.op_Division(System.Double,Ampere.MathUtils.Matrix)
+  name: Division(Double, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Division_System_Double_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Division(System.Double,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Division(System.Double, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Division(Double, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Division*
+  name: Division
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Division_
+  commentId: Overload:Ampere.MathUtils.Matrix.op_Division
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Division
+  nameWithType: Matrix.Division
+- uid: Ampere.MathUtils.Matrix.op_Equality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  name: Equality(Matrix, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Equality_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Equality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Equality(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Equality(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Equality*
+  name: Equality
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Equality_
+  commentId: Overload:Ampere.MathUtils.Matrix.op_Equality
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Equality
+  nameWithType: Matrix.Equality
+- uid: Ampere.MathUtils.Matrix.op_Inequality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  name: Inequality(Matrix, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Inequality_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Inequality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Inequality(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Inequality(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Inequality*
+  name: Inequality
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Inequality_
+  commentId: Overload:Ampere.MathUtils.Matrix.op_Inequality
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Inequality
+  nameWithType: Matrix.Inequality
+- uid: Ampere.MathUtils.Matrix.op_LogicalNot(Ampere.MathUtils.Matrix)
+  name: LogicalNot(Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_LogicalNot_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_LogicalNot(Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.LogicalNot(Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.LogicalNot(Matrix)
+- uid: Ampere.MathUtils.Matrix.op_LogicalNot*
+  name: LogicalNot
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_LogicalNot_
+  commentId: Overload:Ampere.MathUtils.Matrix.op_LogicalNot
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.LogicalNot
+  nameWithType: Matrix.LogicalNot
+- uid: Ampere.MathUtils.Matrix.op_Modulus(Ampere.MathUtils.Matrix,System.Double)
+  name: Modulus(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Modulus_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.op_Modulus(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Modulus(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Modulus(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.op_Modulus(System.Double,Ampere.MathUtils.Matrix)
+  name: Modulus(Double, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Modulus_System_Double_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Modulus(System.Double,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Modulus(System.Double, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Modulus(Double, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Modulus*
+  name: Modulus
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Modulus_
+  commentId: Overload:Ampere.MathUtils.Matrix.op_Modulus
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Modulus
+  nameWithType: Matrix.Modulus
+- uid: Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  name: Multiply(Matrix, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Multiply_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Multiply(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,System.Double)
+  name: Multiply(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Multiply_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Multiply(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.op_Multiply(System.Double,Ampere.MathUtils.Matrix)
+  name: Multiply(Double, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Multiply_System_Double_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Multiply(System.Double,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Multiply(System.Double, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Multiply(Double, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Multiply*
+  name: Multiply
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Multiply_
+  commentId: Overload:Ampere.MathUtils.Matrix.op_Multiply
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Multiply
+  nameWithType: Matrix.Multiply
+- uid: Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  name: Subtraction(Matrix, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Subtraction_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Subtraction(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Subtraction(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,System.Double)
+  name: Subtraction(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Subtraction_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Subtraction(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Subtraction(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.op_Subtraction(System.Double,Ampere.MathUtils.Matrix)
+  name: Subtraction(Double, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Subtraction_System_Double_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.op_Subtraction(System.Double,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Subtraction(System.Double, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Subtraction(Double, Matrix)
+- uid: Ampere.MathUtils.Matrix.op_Subtraction*
+  name: Subtraction
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_op_Subtraction_
+  commentId: Overload:Ampere.MathUtils.Matrix.op_Subtraction
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Subtraction
+  nameWithType: Matrix.Subtraction
+- uid: Ampere.MathUtils.Matrix.Rows
+  name: Rows
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Rows
+  commentId: P:Ampere.MathUtils.Matrix.Rows
+  fullName: Ampere.MathUtils.Matrix.Rows
+  nameWithType: Matrix.Rows
+- uid: Ampere.MathUtils.Matrix.Rows*
+  name: Rows
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Rows_
+  commentId: Overload:Ampere.MathUtils.Matrix.Rows
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Rows
+  nameWithType: Matrix.Rows
+- uid: Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  name: Subtract(Matrix, Matrix)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Subtract_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
+  commentId: M:Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
+  fullName: Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  nameWithType: Matrix.Subtract(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,System.Double)
+  name: Subtract(Matrix, Double)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Subtract_Ampere_MathUtils_Matrix_System_Double_
+  commentId: M:Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,System.Double)
+  fullName: Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix, System.Double)
+  nameWithType: Matrix.Subtract(Matrix, Double)
+- uid: Ampere.MathUtils.Matrix.Subtract*
+  name: Subtract
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Subtract_
+  commentId: Overload:Ampere.MathUtils.Matrix.Subtract
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Subtract
+  nameWithType: Matrix.Subtract
+- uid: Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Ampere.MathUtils.Matrix.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: Matrix.IEnumerable.GetEnumerator()
+  nameWithType.vb: Matrix.System.Collections.IEnumerable.GetEnumerator()
+- uid: Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Ampere.MathUtils.Matrix.System.Collections.IEnumerable.GetEnumerator
+  nameWithType: Matrix.IEnumerable.GetEnumerator
+  nameWithType.vb: Matrix.System.Collections.IEnumerable.GetEnumerator
+- uid: Ampere.MathUtils.Matrix.ToString
+  name: ToString()
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_ToString
+  commentId: M:Ampere.MathUtils.Matrix.ToString
+  fullName: Ampere.MathUtils.Matrix.ToString()
+  nameWithType: Matrix.ToString()
+- uid: Ampere.MathUtils.Matrix.ToString*
+  name: ToString
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_ToString_
+  commentId: Overload:Ampere.MathUtils.Matrix.ToString
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.ToString
+  nameWithType: Matrix.ToString
+- uid: Ampere.MathUtils.Matrix.Transpose
+  name: Transpose()
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Transpose
+  commentId: M:Ampere.MathUtils.Matrix.Transpose
+  fullName: Ampere.MathUtils.Matrix.Transpose()
+  nameWithType: Matrix.Transpose()
+- uid: Ampere.MathUtils.Matrix.Transpose*
+  name: Transpose
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Transpose_
+  commentId: Overload:Ampere.MathUtils.Matrix.Transpose
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Transpose
+  nameWithType: Matrix.Transpose
+- uid: Ampere.MathUtils.Matrix.Values
+  name: Values
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Values
+  commentId: P:Ampere.MathUtils.Matrix.Values
+  fullName: Ampere.MathUtils.Matrix.Values
+  nameWithType: Matrix.Values
+- uid: Ampere.MathUtils.Matrix.Values*
+  name: Values
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Values_
+  commentId: Overload:Ampere.MathUtils.Matrix.Values
+  isSpec: "True"
+  fullName: Ampere.MathUtils.Matrix.Values
+  nameWithType: Matrix.Values
+- uid: Ampere.MathUtils.MatrixPropertyException
+  name: MatrixPropertyException
+  href: api/Ampere.MathUtils.MatrixPropertyException.html
+  commentId: T:Ampere.MathUtils.MatrixPropertyException
+  fullName: Ampere.MathUtils.MatrixPropertyException
+  nameWithType: MatrixPropertyException
+- uid: Ampere.MathUtils.MatrixPropertyException.#ctor
+  name: MatrixPropertyException()
+  href: api/Ampere.MathUtils.MatrixPropertyException.html#Ampere_MathUtils_MatrixPropertyException__ctor
+  commentId: M:Ampere.MathUtils.MatrixPropertyException.#ctor
+  fullName: Ampere.MathUtils.MatrixPropertyException.MatrixPropertyException()
+  nameWithType: MatrixPropertyException.MatrixPropertyException()
+- uid: Ampere.MathUtils.MatrixPropertyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: MatrixPropertyException(SerializationInfo, StreamingContext)
+  href: api/Ampere.MathUtils.MatrixPropertyException.html#Ampere_MathUtils_MatrixPropertyException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Ampere.MathUtils.MatrixPropertyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Ampere.MathUtils.MatrixPropertyException.MatrixPropertyException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: MatrixPropertyException.MatrixPropertyException(SerializationInfo, StreamingContext)
+- uid: Ampere.MathUtils.MatrixPropertyException.#ctor(System.String)
+  name: MatrixPropertyException(String)
+  href: api/Ampere.MathUtils.MatrixPropertyException.html#Ampere_MathUtils_MatrixPropertyException__ctor_System_String_
+  commentId: M:Ampere.MathUtils.MatrixPropertyException.#ctor(System.String)
+  fullName: Ampere.MathUtils.MatrixPropertyException.MatrixPropertyException(System.String)
+  nameWithType: MatrixPropertyException.MatrixPropertyException(String)
+- uid: Ampere.MathUtils.MatrixPropertyException.#ctor(System.String,System.Exception)
+  name: MatrixPropertyException(String, Exception)
+  href: api/Ampere.MathUtils.MatrixPropertyException.html#Ampere_MathUtils_MatrixPropertyException__ctor_System_String_System_Exception_
+  commentId: M:Ampere.MathUtils.MatrixPropertyException.#ctor(System.String,System.Exception)
+  fullName: Ampere.MathUtils.MatrixPropertyException.MatrixPropertyException(System.String, System.Exception)
+  nameWithType: MatrixPropertyException.MatrixPropertyException(String, Exception)
+- uid: Ampere.MathUtils.MatrixPropertyException.#ctor*
+  name: MatrixPropertyException
+  href: api/Ampere.MathUtils.MatrixPropertyException.html#Ampere_MathUtils_MatrixPropertyException__ctor_
+  commentId: Overload:Ampere.MathUtils.MatrixPropertyException.#ctor
+  isSpec: "True"
+  fullName: Ampere.MathUtils.MatrixPropertyException.MatrixPropertyException
+  nameWithType: MatrixPropertyException.MatrixPropertyException
+- uid: Ampere.Statistics
+  name: Ampere.Statistics
+  href: api/Ampere.Statistics.html
+  commentId: N:Ampere.Statistics
+  fullName: Ampere.Statistics
+  nameWithType: Ampere.Statistics
+- uid: Ampere.Statistics.EnumerableStats
+  name: EnumerableStats
+  href: api/Ampere.Statistics.EnumerableStats.html
+  commentId: T:Ampere.Statistics.EnumerableStats
+  fullName: Ampere.Statistics.EnumerableStats
+  nameWithType: EnumerableStats
+- uid: Ampere.Statistics.EnumerableStats.ConstructTValue(System.Double,System.Double,System.Double,System.Double)
+  name: ConstructTValue(Double, Double, Double, Double)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_ConstructTValue_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:Ampere.Statistics.EnumerableStats.ConstructTValue(System.Double,System.Double,System.Double,System.Double)
+  fullName: Ampere.Statistics.EnumerableStats.ConstructTValue(System.Double, System.Double, System.Double, System.Double)
+  nameWithType: EnumerableStats.ConstructTValue(Double, Double, Double, Double)
+- uid: Ampere.Statistics.EnumerableStats.ConstructTValue*
+  name: ConstructTValue
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_ConstructTValue_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.ConstructTValue
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.ConstructTValue
+  nameWithType: EnumerableStats.ConstructTValue
+- uid: Ampere.Statistics.EnumerableStats.CreateConfidenceInterval(System.Double,System.Double,System.Double)
+  name: CreateConfidenceInterval(Double, Double, Double)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_CreateConfidenceInterval_System_Double_System_Double_System_Double_
+  commentId: M:Ampere.Statistics.EnumerableStats.CreateConfidenceInterval(System.Double,System.Double,System.Double)
+  fullName: Ampere.Statistics.EnumerableStats.CreateConfidenceInterval(System.Double, System.Double, System.Double)
+  nameWithType: EnumerableStats.CreateConfidenceInterval(Double, Double, Double)
+- uid: Ampere.Statistics.EnumerableStats.CreateConfidenceInterval*
+  name: CreateConfidenceInterval
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_CreateConfidenceInterval_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.CreateConfidenceInterval
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.CreateConfidenceInterval
+  nameWithType: EnumerableStats.CreateConfidenceInterval
+- uid: Ampere.Statistics.EnumerableStats.InterQuartileRange(System.Collections.Generic.IEnumerable{System.Double})
+  name: InterQuartileRange(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_InterQuartileRange_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.InterQuartileRange(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: InterQuartileRange(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.InterQuartileRange(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.InterQuartileRange(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.InterQuartileRange(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.InterQuartileRange(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.InterQuartileRange*
+  name: InterQuartileRange
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_InterQuartileRange_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.InterQuartileRange
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.InterQuartileRange
+  nameWithType: EnumerableStats.InterQuartileRange
+- uid: Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: InterQuartileRange<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_InterQuartileRange__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: InterQuartileRange(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.InterQuartileRange<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.InterQuartileRange(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.InterQuartileRange<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.InterQuartileRange(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.IsNormalMean(System.Collections.Generic.IEnumerable{System.Double})
+  name: IsNormalMean(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalMean_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.IsNormalMean(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: IsNormalMean(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalMean(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.IsNormalMean(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.IsNormalMean(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.IsNormalMean(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.IsNormalMean*
+  name: IsNormalMean
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalMean_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.IsNormalMean
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalMean
+  nameWithType: EnumerableStats.IsNormalMean
+- uid: Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: IsNormalMean<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalMean__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: IsNormalMean(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalMean<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.IsNormalMean(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.IsNormalMean<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.IsNormalMean(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.IsNormalProportion(System.Collections.Generic.IEnumerable{System.Double},System.Double)
+  name: IsNormalProportion(IEnumerable<Double>, Double)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalProportion_System_Collections_Generic_IEnumerable_System_Double__System_Double_
+  commentId: M:Ampere.Statistics.EnumerableStats.IsNormalProportion(System.Collections.Generic.IEnumerable{System.Double},System.Double)
+  name.vb: IsNormalProportion(IEnumerable(Of Double), Double)
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalProportion(System.Collections.Generic.IEnumerable<System.Double>, System.Double)
+  fullName.vb: Ampere.Statistics.EnumerableStats.IsNormalProportion(System.Collections.Generic.IEnumerable(Of System.Double), System.Double)
+  nameWithType: EnumerableStats.IsNormalProportion(IEnumerable<Double>, Double)
+  nameWithType.vb: EnumerableStats.IsNormalProportion(IEnumerable(Of Double), Double)
+- uid: Ampere.Statistics.EnumerableStats.IsNormalProportion*
+  name: IsNormalProportion
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalProportion_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.IsNormalProportion
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalProportion
+  nameWithType: EnumerableStats.IsNormalProportion
+- uid: Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  name: IsNormalProportion<T>(IEnumerable<T>, Func<T, Double>, Double)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalProportion__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__System_Double_
+  commentId: M:Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  name.vb: IsNormalProportion(Of T)(IEnumerable(Of T), Func(Of T, Double), Double)
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalProportion<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>, System.Double)
+  fullName.vb: Ampere.Statistics.EnumerableStats.IsNormalProportion(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double), System.Double)
+  nameWithType: EnumerableStats.IsNormalProportion<T>(IEnumerable<T>, Func<T, Double>, Double)
+  nameWithType.vb: EnumerableStats.IsNormalProportion(Of T)(IEnumerable(Of T), Func(Of T, Double), Double)
+- uid: Ampere.Statistics.EnumerableStats.LowerQuartile(System.Collections.Generic.IEnumerable{System.Double})
+  name: LowerQuartile(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_LowerQuartile_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.LowerQuartile(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: LowerQuartile(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.LowerQuartile(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.LowerQuartile(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.LowerQuartile(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.LowerQuartile(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.LowerQuartile*
+  name: LowerQuartile
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_LowerQuartile_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.LowerQuartile
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.LowerQuartile
+  nameWithType: EnumerableStats.LowerQuartile
+- uid: Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: LowerQuartile<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_LowerQuartile__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: LowerQuartile(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.LowerQuartile<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.LowerQuartile(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.LowerQuartile<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.LowerQuartile(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.Mean*
+  name: Mean
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Mean_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.Mean
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.Mean
+  nameWithType: EnumerableStats.Mean
+- uid: Ampere.Statistics.EnumerableStats.Mean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: Mean<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Mean__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.Mean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: Mean(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.Mean<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.Mean(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.Mean<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.Mean(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.Median*
+  name: Median
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Median_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.Median
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.Median
+  nameWithType: EnumerableStats.Median
+- uid: Ampere.Statistics.EnumerableStats.Median``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: Median<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Median__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.Median``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: Median(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.Median<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.Median(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.Median<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.Median(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.Mode(System.Collections.Generic.IEnumerable{System.Double})
+  name: Mode(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Mode_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.Mode(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: Mode(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.Mode(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.Mode(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.Mode(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.Mode(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.Mode*
+  name: Mode
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Mode_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.Mode
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.Mode
+  nameWithType: EnumerableStats.Mode
+- uid: Ampere.Statistics.EnumerableStats.Mode``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: Mode<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Mode__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.Mode``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: Mode(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.Mode<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.Mode(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.Mode<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.Mode(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})
+  name: PopulationStandardDeviation(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_PopulationStandardDeviation_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: PopulationStandardDeviation(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.PopulationStandardDeviation(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.PopulationStandardDeviation(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation*
+  name: PopulationStandardDeviation
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_PopulationStandardDeviation_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.PopulationStandardDeviation
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation
+  nameWithType: EnumerableStats.PopulationStandardDeviation
+- uid: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: PopulationStandardDeviation<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_PopulationStandardDeviation__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: PopulationStandardDeviation(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.PopulationStandardDeviation<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.PopulationStandardDeviation(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.PopulationVariance(System.Collections.Generic.IEnumerable{System.Double})
+  name: PopulationVariance(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_PopulationVariance_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.PopulationVariance(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: PopulationVariance(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.PopulationVariance(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.PopulationVariance(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.PopulationVariance(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.PopulationVariance(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.PopulationVariance*
+  name: PopulationVariance
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_PopulationVariance_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.PopulationVariance
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.PopulationVariance
+  nameWithType: EnumerableStats.PopulationVariance
+- uid: Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: PopulationVariance<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_PopulationVariance__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: PopulationVariance(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.PopulationVariance<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.PopulationVariance(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.PopulationVariance<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.PopulationVariance(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.Range(System.Collections.Generic.IEnumerable{System.Double})
+  name: Range(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Range_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.Range(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: Range(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.Range(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.Range(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.Range(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.Range(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.Range*
+  name: Range
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Range_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.Range
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.Range
+  nameWithType: EnumerableStats.Range
+- uid: Ampere.Statistics.EnumerableStats.Range``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: Range<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Range__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.Range``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: Range(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.Range<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.Range(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.Range<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.Range(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.SampleStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})
+  name: SampleStandardDeviation(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SampleStandardDeviation_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.SampleStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: SampleStandardDeviation(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.SampleStandardDeviation(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.SampleStandardDeviation(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.SampleStandardDeviation(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.SampleStandardDeviation(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.SampleStandardDeviation*
+  name: SampleStandardDeviation
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SampleStandardDeviation_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.SampleStandardDeviation
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.SampleStandardDeviation
+  nameWithType: EnumerableStats.SampleStandardDeviation
+- uid: Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: SampleStandardDeviation<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SampleStandardDeviation__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: SampleStandardDeviation(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.SampleStandardDeviation<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.SampleStandardDeviation(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.SampleStandardDeviation<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.SampleStandardDeviation(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.SampleVariance(System.Collections.Generic.IEnumerable{System.Double})
+  name: SampleVariance(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SampleVariance_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.SampleVariance(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: SampleVariance(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.SampleVariance(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.SampleVariance(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.SampleVariance(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.SampleVariance(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.SampleVariance*
+  name: SampleVariance
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SampleVariance_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.SampleVariance
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.SampleVariance
+  nameWithType: EnumerableStats.SampleVariance
+- uid: Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: SampleVariance<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SampleVariance__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: SampleVariance(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.SampleVariance<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.SampleVariance(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.SampleVariance<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.SampleVariance(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.EnumerableStats.StandardizedScore(System.Collections.Generic.IEnumerable{System.Double},System.Double)
+  name: StandardizedScore(IEnumerable<Double>, Double)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_StandardizedScore_System_Collections_Generic_IEnumerable_System_Double__System_Double_
+  commentId: M:Ampere.Statistics.EnumerableStats.StandardizedScore(System.Collections.Generic.IEnumerable{System.Double},System.Double)
+  name.vb: StandardizedScore(IEnumerable(Of Double), Double)
+  fullName: Ampere.Statistics.EnumerableStats.StandardizedScore(System.Collections.Generic.IEnumerable<System.Double>, System.Double)
+  fullName.vb: Ampere.Statistics.EnumerableStats.StandardizedScore(System.Collections.Generic.IEnumerable(Of System.Double), System.Double)
+  nameWithType: EnumerableStats.StandardizedScore(IEnumerable<Double>, Double)
+  nameWithType.vb: EnumerableStats.StandardizedScore(IEnumerable(Of Double), Double)
+- uid: Ampere.Statistics.EnumerableStats.StandardizedScore*
+  name: StandardizedScore
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_StandardizedScore_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.StandardizedScore
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.StandardizedScore
+  nameWithType: EnumerableStats.StandardizedScore
+- uid: Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  name: StandardizedScore<T>(IEnumerable<T>, Func<T, Double>, Double)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_StandardizedScore__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__System_Double_
+  commentId: M:Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  name.vb: StandardizedScore(Of T)(IEnumerable(Of T), Func(Of T, Double), Double)
+  fullName: Ampere.Statistics.EnumerableStats.StandardizedScore<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>, System.Double)
+  fullName.vb: Ampere.Statistics.EnumerableStats.StandardizedScore(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double), System.Double)
+  nameWithType: EnumerableStats.StandardizedScore<T>(IEnumerable<T>, Func<T, Double>, Double)
+  nameWithType.vb: EnumerableStats.StandardizedScore(Of T)(IEnumerable(Of T), Func(Of T, Double), Double)
+- uid: Ampere.Statistics.EnumerableStats.UpperQuartile(System.Collections.Generic.IEnumerable{System.Double})
+  name: UpperQuartile(IEnumerable<Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_UpperQuartile_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.UpperQuartile(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: UpperQuartile(IEnumerable(Of Double))
+  fullName: Ampere.Statistics.EnumerableStats.UpperQuartile(System.Collections.Generic.IEnumerable<System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.UpperQuartile(System.Collections.Generic.IEnumerable(Of System.Double))
+  nameWithType: EnumerableStats.UpperQuartile(IEnumerable<Double>)
+  nameWithType.vb: EnumerableStats.UpperQuartile(IEnumerable(Of Double))
+- uid: Ampere.Statistics.EnumerableStats.UpperQuartile*
+  name: UpperQuartile
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_UpperQuartile_
+  commentId: Overload:Ampere.Statistics.EnumerableStats.UpperQuartile
+  isSpec: "True"
+  fullName: Ampere.Statistics.EnumerableStats.UpperQuartile
+  nameWithType: EnumerableStats.UpperQuartile
+- uid: Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: UpperQuartile<T>(IEnumerable<T>, Func<T, Double>)
+  href: api/Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_UpperQuartile__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__
+  commentId: M:Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name.vb: UpperQuartile(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName: Ampere.Statistics.EnumerableStats.UpperQuartile<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  fullName.vb: Ampere.Statistics.EnumerableStats.UpperQuartile(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  nameWithType: EnumerableStats.UpperQuartile<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType.vb: EnumerableStats.UpperQuartile(Of T)(IEnumerable(Of T), Func(Of T, Double))
+- uid: Ampere.Statistics.InsufficientDataSetException
+  name: InsufficientDataSetException
+  href: api/Ampere.Statistics.InsufficientDataSetException.html
+  commentId: T:Ampere.Statistics.InsufficientDataSetException
+  fullName: Ampere.Statistics.InsufficientDataSetException
+  nameWithType: InsufficientDataSetException
+- uid: Ampere.Statistics.InsufficientDataSetException.#ctor
+  name: InsufficientDataSetException()
+  href: api/Ampere.Statistics.InsufficientDataSetException.html#Ampere_Statistics_InsufficientDataSetException__ctor
+  commentId: M:Ampere.Statistics.InsufficientDataSetException.#ctor
+  fullName: Ampere.Statistics.InsufficientDataSetException.InsufficientDataSetException()
+  nameWithType: InsufficientDataSetException.InsufficientDataSetException()
+- uid: Ampere.Statistics.InsufficientDataSetException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: InsufficientDataSetException(SerializationInfo, StreamingContext)
+  href: api/Ampere.Statistics.InsufficientDataSetException.html#Ampere_Statistics_InsufficientDataSetException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Ampere.Statistics.InsufficientDataSetException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Ampere.Statistics.InsufficientDataSetException.InsufficientDataSetException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: InsufficientDataSetException.InsufficientDataSetException(SerializationInfo, StreamingContext)
+- uid: Ampere.Statistics.InsufficientDataSetException.#ctor(System.String)
+  name: InsufficientDataSetException(String)
+  href: api/Ampere.Statistics.InsufficientDataSetException.html#Ampere_Statistics_InsufficientDataSetException__ctor_System_String_
+  commentId: M:Ampere.Statistics.InsufficientDataSetException.#ctor(System.String)
+  fullName: Ampere.Statistics.InsufficientDataSetException.InsufficientDataSetException(System.String)
+  nameWithType: InsufficientDataSetException.InsufficientDataSetException(String)
+- uid: Ampere.Statistics.InsufficientDataSetException.#ctor(System.String,System.Exception)
+  name: InsufficientDataSetException(String, Exception)
+  href: api/Ampere.Statistics.InsufficientDataSetException.html#Ampere_Statistics_InsufficientDataSetException__ctor_System_String_System_Exception_
+  commentId: M:Ampere.Statistics.InsufficientDataSetException.#ctor(System.String,System.Exception)
+  fullName: Ampere.Statistics.InsufficientDataSetException.InsufficientDataSetException(System.String, System.Exception)
+  nameWithType: InsufficientDataSetException.InsufficientDataSetException(String, Exception)
+- uid: Ampere.Statistics.InsufficientDataSetException.#ctor*
+  name: InsufficientDataSetException
+  href: api/Ampere.Statistics.InsufficientDataSetException.html#Ampere_Statistics_InsufficientDataSetException__ctor_
+  commentId: Overload:Ampere.Statistics.InsufficientDataSetException.#ctor
+  isSpec: "True"
+  fullName: Ampere.Statistics.InsufficientDataSetException.InsufficientDataSetException
+  nameWithType: InsufficientDataSetException.InsufficientDataSetException
+- uid: Ampere.Statistics.NoModeException
+  name: NoModeException
+  href: api/Ampere.Statistics.NoModeException.html
+  commentId: T:Ampere.Statistics.NoModeException
+  fullName: Ampere.Statistics.NoModeException
+  nameWithType: NoModeException
+- uid: Ampere.Statistics.NoModeException.#ctor
+  name: NoModeException()
+  href: api/Ampere.Statistics.NoModeException.html#Ampere_Statistics_NoModeException__ctor
+  commentId: M:Ampere.Statistics.NoModeException.#ctor
+  fullName: Ampere.Statistics.NoModeException.NoModeException()
+  nameWithType: NoModeException.NoModeException()
+- uid: Ampere.Statistics.NoModeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: NoModeException(SerializationInfo, StreamingContext)
+  href: api/Ampere.Statistics.NoModeException.html#Ampere_Statistics_NoModeException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Ampere.Statistics.NoModeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Ampere.Statistics.NoModeException.NoModeException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: NoModeException.NoModeException(SerializationInfo, StreamingContext)
+- uid: Ampere.Statistics.NoModeException.#ctor(System.String)
+  name: NoModeException(String)
+  href: api/Ampere.Statistics.NoModeException.html#Ampere_Statistics_NoModeException__ctor_System_String_
+  commentId: M:Ampere.Statistics.NoModeException.#ctor(System.String)
+  fullName: Ampere.Statistics.NoModeException.NoModeException(System.String)
+  nameWithType: NoModeException.NoModeException(String)
+- uid: Ampere.Statistics.NoModeException.#ctor(System.String,System.Exception)
+  name: NoModeException(String, Exception)
+  href: api/Ampere.Statistics.NoModeException.html#Ampere_Statistics_NoModeException__ctor_System_String_System_Exception_
+  commentId: M:Ampere.Statistics.NoModeException.#ctor(System.String,System.Exception)
+  fullName: Ampere.Statistics.NoModeException.NoModeException(System.String, System.Exception)
+  nameWithType: NoModeException.NoModeException(String, Exception)
+- uid: Ampere.Statistics.NoModeException.#ctor*
+  name: NoModeException
+  href: api/Ampere.Statistics.NoModeException.html#Ampere_Statistics_NoModeException__ctor_
+  commentId: Overload:Ampere.Statistics.NoModeException.#ctor
+  isSpec: "True"
+  fullName: Ampere.Statistics.NoModeException.NoModeException
+  nameWithType: NoModeException.NoModeException
+- uid: Ampere.StringUtils
+  name: Ampere.StringUtils
+  href: api/Ampere.StringUtils.html
+  commentId: N:Ampere.StringUtils
+  fullName: Ampere.StringUtils
+  nameWithType: Ampere.StringUtils
+- uid: Ampere.StringUtils.StringUtils
+  name: StringUtils
+  href: api/Ampere.StringUtils.StringUtils.html
+  commentId: T:Ampere.StringUtils.StringUtils
+  fullName: Ampere.StringUtils.StringUtils
+  nameWithType: StringUtils
+- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  name: AppendFromEnumerable(StringBuilder, IEnumerable<String>)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
+  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: StringUtils.AppendFromEnumerable(StringBuilder, IEnumerable<String>)
+  nameWithType.vb: StringUtils.AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
+- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable*
+  name: AppendFromEnumerable
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendFromEnumerable_
+  commentId: Overload:Ampere.StringUtils.StringUtils.AppendFromEnumerable
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable
+  nameWithType: StringUtils.AppendFromEnumerable
+- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  name: AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__
+  commentId: M:Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  name.vb: AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
+  fullName.vb: Ampere.StringUtils.StringUtils.AppendFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
+  nameWithType: StringUtils.AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  nameWithType.vb: StringUtils.AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+- uid: Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
+  name: AppendIf(StringBuilder, String, Boolean)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendIf_System_Text_StringBuilder_System_String_System_Boolean_
+  commentId: M:Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
+  fullName: Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder, System.String, System.Boolean)
+  nameWithType: StringUtils.AppendIf(StringBuilder, String, Boolean)
+- uid: Ampere.StringUtils.StringUtils.AppendIf*
+  name: AppendIf
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendIf_
+  commentId: Overload:Ampere.StringUtils.StringUtils.AppendIf
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.AppendIf
+  nameWithType: StringUtils.AppendIf
+- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  name: AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendLineFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
+  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: StringUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
+  nameWithType.vb: StringUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
+- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*
+  name: AppendLineFromEnumerable
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendLineFromEnumerable_
+  commentId: Overload:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable
+  nameWithType: StringUtils.AppendLineFromEnumerable
+- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  name: AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendLineFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__
+  commentId: M:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  name.vb: AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
+  fullName.vb: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
+  nameWithType: StringUtils.AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  nameWithType.vb: StringUtils.AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+- uid: Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})
+  name: CharToString(IEnumerable<Char>)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_CharToString_System_Collections_Generic_IEnumerable_System_Char__
+  commentId: M:Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})
+  name.vb: CharToString(IEnumerable(Of Char))
+  fullName: Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable<System.Char>)
+  fullName.vb: Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable(Of System.Char))
+  nameWithType: StringUtils.CharToString(IEnumerable<Char>)
+  nameWithType.vb: StringUtils.CharToString(IEnumerable(Of Char))
+- uid: Ampere.StringUtils.StringUtils.CharToString*
+  name: CharToString
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_CharToString_
+  commentId: Overload:Ampere.StringUtils.StringUtils.CharToString
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.CharToString
+  nameWithType: StringUtils.CharToString
+- uid: Ampere.StringUtils.StringUtils.Chomp(System.String)
+  name: Chomp(String)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Chomp_System_String_
+  commentId: M:Ampere.StringUtils.StringUtils.Chomp(System.String)
+  fullName: Ampere.StringUtils.StringUtils.Chomp(System.String)
+  nameWithType: StringUtils.Chomp(String)
+- uid: Ampere.StringUtils.StringUtils.Chomp*
+  name: Chomp
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Chomp_
+  commentId: Overload:Ampere.StringUtils.StringUtils.Chomp
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.Chomp
+  nameWithType: StringUtils.Chomp
+- uid: Ampere.StringUtils.StringUtils.ChompAfter(System.String,System.Int32)
+  name: ChompAfter(String, Int32)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ChompAfter_System_String_System_Int32_
+  commentId: M:Ampere.StringUtils.StringUtils.ChompAfter(System.String,System.Int32)
+  fullName: Ampere.StringUtils.StringUtils.ChompAfter(System.String, System.Int32)
+  nameWithType: StringUtils.ChompAfter(String, Int32)
+- uid: Ampere.StringUtils.StringUtils.ChompAfter*
+  name: ChompAfter
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ChompAfter_
+  commentId: Overload:Ampere.StringUtils.StringUtils.ChompAfter
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.ChompAfter
+  nameWithType: StringUtils.ChompAfter
+- uid: Ampere.StringUtils.StringUtils.ContainsDigits(System.String)
+  name: ContainsDigits(String)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ContainsDigits_System_String_
+  commentId: M:Ampere.StringUtils.StringUtils.ContainsDigits(System.String)
+  fullName: Ampere.StringUtils.StringUtils.ContainsDigits(System.String)
+  nameWithType: StringUtils.ContainsDigits(String)
+- uid: Ampere.StringUtils.StringUtils.ContainsDigits*
+  name: ContainsDigits
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ContainsDigits_
+  commentId: Overload:Ampere.StringUtils.StringUtils.ContainsDigits
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.ContainsDigits
+  nameWithType: StringUtils.ContainsDigits
+- uid: Ampere.StringUtils.StringUtils.ContainsDuplicateChars(System.String)
+  name: ContainsDuplicateChars(String)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ContainsDuplicateChars_System_String_
+  commentId: M:Ampere.StringUtils.StringUtils.ContainsDuplicateChars(System.String)
+  fullName: Ampere.StringUtils.StringUtils.ContainsDuplicateChars(System.String)
+  nameWithType: StringUtils.ContainsDuplicateChars(String)
+- uid: Ampere.StringUtils.StringUtils.ContainsDuplicateChars*
+  name: ContainsDuplicateChars
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ContainsDuplicateChars_
+  commentId: Overload:Ampere.StringUtils.StringUtils.ContainsDuplicateChars
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.ContainsDuplicateChars
+  nameWithType: StringUtils.ContainsDuplicateChars
+- uid: Ampere.StringUtils.StringUtils.ContainsDuplicateStrings(System.String,System.String)
+  name: ContainsDuplicateStrings(String, String)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ContainsDuplicateStrings_System_String_System_String_
+  commentId: M:Ampere.StringUtils.StringUtils.ContainsDuplicateStrings(System.String,System.String)
+  fullName: Ampere.StringUtils.StringUtils.ContainsDuplicateStrings(System.String, System.String)
+  nameWithType: StringUtils.ContainsDuplicateStrings(String, String)
+- uid: Ampere.StringUtils.StringUtils.ContainsDuplicateStrings*
+  name: ContainsDuplicateStrings
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ContainsDuplicateStrings_
+  commentId: Overload:Ampere.StringUtils.StringUtils.ContainsDuplicateStrings
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.ContainsDuplicateStrings
+  nameWithType: StringUtils.ContainsDuplicateStrings
+- uid: Ampere.StringUtils.StringUtils.CountLetters(System.String,System.Char)
+  name: CountLetters(String, Char)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_CountLetters_System_String_System_Char_
+  commentId: M:Ampere.StringUtils.StringUtils.CountLetters(System.String,System.Char)
+  fullName: Ampere.StringUtils.StringUtils.CountLetters(System.String, System.Char)
+  nameWithType: StringUtils.CountLetters(String, Char)
+- uid: Ampere.StringUtils.StringUtils.CountLetters*
+  name: CountLetters
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_CountLetters_
+  commentId: Overload:Ampere.StringUtils.StringUtils.CountLetters
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.CountLetters
+  nameWithType: StringUtils.CountLetters
+- uid: Ampere.StringUtils.StringUtils.CountWords(System.String)
+  name: CountWords(String)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_CountWords_System_String_
+  commentId: M:Ampere.StringUtils.StringUtils.CountWords(System.String)
+  fullName: Ampere.StringUtils.StringUtils.CountWords(System.String)
+  nameWithType: StringUtils.CountWords(String)
+- uid: Ampere.StringUtils.StringUtils.CountWords*
+  name: CountWords
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_CountWords_
+  commentId: Overload:Ampere.StringUtils.StringUtils.CountWords
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.CountWords
+  nameWithType: StringUtils.CountWords
+- uid: Ampere.StringUtils.StringUtils.IsPalindrome(System.String,System.Boolean)
+  name: IsPalindrome(String, Boolean)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsPalindrome_System_String_System_Boolean_
+  commentId: M:Ampere.StringUtils.StringUtils.IsPalindrome(System.String,System.Boolean)
+  fullName: Ampere.StringUtils.StringUtils.IsPalindrome(System.String, System.Boolean)
+  nameWithType: StringUtils.IsPalindrome(String, Boolean)
+- uid: Ampere.StringUtils.StringUtils.IsPalindrome*
+  name: IsPalindrome
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsPalindrome_
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsPalindrome
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.IsPalindrome
+  nameWithType: StringUtils.IsPalindrome
+- uid: Ampere.StringUtils.StringUtils.IsStrictlyDecreasing(System.String,System.Boolean)
+  name: IsStrictlyDecreasing(String, Boolean)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsStrictlyDecreasing_System_String_System_Boolean_
+  commentId: M:Ampere.StringUtils.StringUtils.IsStrictlyDecreasing(System.String,System.Boolean)
+  fullName: Ampere.StringUtils.StringUtils.IsStrictlyDecreasing(System.String, System.Boolean)
+  nameWithType: StringUtils.IsStrictlyDecreasing(String, Boolean)
+- uid: Ampere.StringUtils.StringUtils.IsStrictlyDecreasing*
+  name: IsStrictlyDecreasing
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsStrictlyDecreasing_
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsStrictlyDecreasing
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.IsStrictlyDecreasing
+  nameWithType: StringUtils.IsStrictlyDecreasing
+- uid: Ampere.StringUtils.StringUtils.IsStrictlyIncreasing(System.String,System.Boolean)
+  name: IsStrictlyIncreasing(String, Boolean)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsStrictlyIncreasing_System_String_System_Boolean_
+  commentId: M:Ampere.StringUtils.StringUtils.IsStrictlyIncreasing(System.String,System.Boolean)
+  fullName: Ampere.StringUtils.StringUtils.IsStrictlyIncreasing(System.String, System.Boolean)
+  nameWithType: StringUtils.IsStrictlyIncreasing(String, Boolean)
+- uid: Ampere.StringUtils.StringUtils.IsStrictlyIncreasing*
+  name: IsStrictlyIncreasing
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsStrictlyIncreasing_
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsStrictlyIncreasing
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.IsStrictlyIncreasing
+  nameWithType: StringUtils.IsStrictlyIncreasing
+- uid: Ampere.StringUtils.StringUtils.IsSystemDateTime(System.String,System.String)
+  name: IsSystemDateTime(String, String)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsSystemDateTime_System_String_System_String_
+  commentId: M:Ampere.StringUtils.StringUtils.IsSystemDateTime(System.String,System.String)
+  fullName: Ampere.StringUtils.StringUtils.IsSystemDateTime(System.String, System.String)
+  nameWithType: StringUtils.IsSystemDateTime(String, String)
+- uid: Ampere.StringUtils.StringUtils.IsSystemDateTime*
+  name: IsSystemDateTime
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsSystemDateTime_
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsSystemDateTime
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.IsSystemDateTime
+  nameWithType: StringUtils.IsSystemDateTime
+- uid: Ampere.StringUtils.StringUtils.IsValidUri(System.String)
+  name: IsValidUri(String)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsValidUri_System_String_
+  commentId: M:Ampere.StringUtils.StringUtils.IsValidUri(System.String)
+  fullName: Ampere.StringUtils.StringUtils.IsValidUri(System.String)
+  nameWithType: StringUtils.IsValidUri(String)
+- uid: Ampere.StringUtils.StringUtils.IsValidUri*
+  name: IsValidUri
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsValidUri_
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsValidUri
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.IsValidUri
+  nameWithType: StringUtils.IsValidUri
+- uid: Ampere.StringUtils.StringUtils.IsWellFormed(System.String)
+  name: IsWellFormed(String)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsWellFormed_System_String_
+  commentId: M:Ampere.StringUtils.StringUtils.IsWellFormed(System.String)
+  fullName: Ampere.StringUtils.StringUtils.IsWellFormed(System.String)
+  nameWithType: StringUtils.IsWellFormed(String)
+- uid: Ampere.StringUtils.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})
+  name: IsWellFormed(String, Dictionary<Char, Char>)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsWellFormed_System_String_System_Collections_Generic_Dictionary_System_Char_System_Char__
+  commentId: M:Ampere.StringUtils.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})
+  name.vb: IsWellFormed(String, Dictionary(Of Char, Char))
+  fullName: Ampere.StringUtils.StringUtils.IsWellFormed(System.String, System.Collections.Generic.Dictionary<System.Char, System.Char>)
+  fullName.vb: Ampere.StringUtils.StringUtils.IsWellFormed(System.String, System.Collections.Generic.Dictionary(Of System.Char, System.Char))
+  nameWithType: StringUtils.IsWellFormed(String, Dictionary<Char, Char>)
+  nameWithType.vb: StringUtils.IsWellFormed(String, Dictionary(Of Char, Char))
+- uid: Ampere.StringUtils.StringUtils.IsWellFormed*
+  name: IsWellFormed
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_IsWellFormed_
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsWellFormed
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.IsWellFormed
+  nameWithType: StringUtils.IsWellFormed
+- uid: Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  name: LongestCommonPrefix(IEnumerable<String>, Boolean)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_LongestCommonPrefix_System_Collections_Generic_IEnumerable_System_String__System_Boolean_
+  commentId: M:Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  name.vb: LongestCommonPrefix(IEnumerable(Of String), Boolean)
+  fullName: Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable<System.String>, System.Boolean)
+  fullName.vb: Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable(Of System.String), System.Boolean)
+  nameWithType: StringUtils.LongestCommonPrefix(IEnumerable<String>, Boolean)
+  nameWithType.vb: StringUtils.LongestCommonPrefix(IEnumerable(Of String), Boolean)
+- uid: Ampere.StringUtils.StringUtils.LongestCommonPrefix*
+  name: LongestCommonPrefix
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_LongestCommonPrefix_
+  commentId: Overload:Ampere.StringUtils.StringUtils.LongestCommonPrefix
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.LongestCommonPrefix
+  nameWithType: StringUtils.LongestCommonPrefix
+- uid: Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable{System.String})
+  name: OrderByLength(IEnumerable<String>)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_OrderByLength_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: OrderByLength(IEnumerable(Of String))
+  fullName: Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: StringUtils.OrderByLength(IEnumerable<String>)
+  nameWithType.vb: StringUtils.OrderByLength(IEnumerable(Of String))
+- uid: Ampere.StringUtils.StringUtils.OrderByLength*
+  name: OrderByLength
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_OrderByLength_
+  commentId: Overload:Ampere.StringUtils.StringUtils.OrderByLength
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.OrderByLength
+  nameWithType: StringUtils.OrderByLength
+- uid: Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])
+  name: RemoveAll(String, Boolean, IEnumerable<Char>[])
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_RemoveAll_System_String_System_Boolean_System_Collections_Generic_IEnumerable_System_Char____
+  commentId: M:Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])
+  name.vb: RemoveAll(String, Boolean, IEnumerable(Of Char)())
+  fullName: Ampere.StringUtils.StringUtils.RemoveAll(System.String, System.Boolean, System.Collections.Generic.IEnumerable<System.Char>[])
+  fullName.vb: Ampere.StringUtils.StringUtils.RemoveAll(System.String, System.Boolean, System.Collections.Generic.IEnumerable(Of System.Char)())
+  nameWithType: StringUtils.RemoveAll(String, Boolean, IEnumerable<Char>[])
+  nameWithType.vb: StringUtils.RemoveAll(String, Boolean, IEnumerable(Of Char)())
+- uid: Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String}[])
+  name: RemoveAll(String, Boolean, IEnumerable<String>[])
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_RemoveAll_System_String_System_Boolean_System_Collections_Generic_IEnumerable_System_String____
+  commentId: M:Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String}[])
+  name.vb: RemoveAll(String, Boolean, IEnumerable(Of String)())
+  fullName: Ampere.StringUtils.StringUtils.RemoveAll(System.String, System.Boolean, System.Collections.Generic.IEnumerable<System.String>[])
+  fullName.vb: Ampere.StringUtils.StringUtils.RemoveAll(System.String, System.Boolean, System.Collections.Generic.IEnumerable(Of System.String)())
+  nameWithType: StringUtils.RemoveAll(String, Boolean, IEnumerable<String>[])
+  nameWithType.vb: StringUtils.RemoveAll(String, Boolean, IEnumerable(Of String)())
+- uid: Ampere.StringUtils.StringUtils.RemoveAll*
+  name: RemoveAll
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_RemoveAll_
+  commentId: Overload:Ampere.StringUtils.StringUtils.RemoveAll
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.RemoveAll
+  nameWithType: StringUtils.RemoveAll
+- uid: Ampere.StringUtils.StringUtils.ReplaceAt(System.String,System.Int32,System.Char)
+  name: ReplaceAt(String, Int32, Char)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceAt_System_String_System_Int32_System_Char_
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceAt(System.String,System.Int32,System.Char)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceAt(System.String, System.Int32, System.Char)
+  nameWithType: StringUtils.ReplaceAt(String, Int32, Char)
+- uid: Ampere.StringUtils.StringUtils.ReplaceAt*
+  name: ReplaceAt
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceAt_
+  commentId: Overload:Ampere.StringUtils.StringUtils.ReplaceAt
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.ReplaceAt
+  nameWithType: StringUtils.ReplaceAt
+- uid: Ampere.StringUtils.StringUtils.Reverse(System.String)
+  name: Reverse(String)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Reverse_System_String_
+  commentId: M:Ampere.StringUtils.StringUtils.Reverse(System.String)
+  fullName: Ampere.StringUtils.StringUtils.Reverse(System.String)
+  nameWithType: StringUtils.Reverse(String)
+- uid: Ampere.StringUtils.StringUtils.Reverse*
+  name: Reverse
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Reverse_
+  commentId: Overload:Ampere.StringUtils.StringUtils.Reverse
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.Reverse
+  nameWithType: StringUtils.Reverse
+- uid: Ampere.StringUtils.StringUtils.Shuffle(System.String,System.Boolean)
+  name: Shuffle(String, Boolean)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Shuffle_System_String_System_Boolean_
+  commentId: M:Ampere.StringUtils.StringUtils.Shuffle(System.String,System.Boolean)
+  fullName: Ampere.StringUtils.StringUtils.Shuffle(System.String, System.Boolean)
+  nameWithType: StringUtils.Shuffle(String, Boolean)
+- uid: Ampere.StringUtils.StringUtils.Shuffle*
+  name: Shuffle
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Shuffle_
+  commentId: Overload:Ampere.StringUtils.StringUtils.Shuffle
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.Shuffle
+  nameWithType: StringUtils.Shuffle
+- uid: Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
+  name: Substring(String, Int32, Int32)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Substring_System_String_System_Int32_System_Int32_
+  commentId: M:Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
+  fullName: Ampere.StringUtils.StringUtils.Substring(System.String, System.Int32, System.Int32)
+  nameWithType: StringUtils.Substring(String, Int32, Int32)
+- uid: Ampere.StringUtils.StringUtils.Substring*
+  name: Substring
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Substring_
+  commentId: Overload:Ampere.StringUtils.StringUtils.Substring
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.Substring
+  nameWithType: StringUtils.Substring

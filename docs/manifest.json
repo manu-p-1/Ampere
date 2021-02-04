@@ -1,0 +1,423 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Manu/source/repos/Ampere/DocFx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.IIndexable-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.IIndexable-2.html",
+          "hash": "K7QNJOy1WRG4qYViL5XOGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.IIndexableDouble-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.IIndexableDouble-2.html",
+          "hash": "lBdE8dTUCrO0lhfGuP9Kbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.IIndexableDoubleReadOnly-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.IIndexableDoubleReadOnly-2.html",
+          "hash": "M13Vv/Ap2/0rRegVmOQgDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.IIndexableReadOnly-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.IIndexableReadOnly-2.html",
+          "hash": "7eGEmrimAVZ2Da4vsLv+iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.IIndexableTriple-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.IIndexableTriple-2.html",
+          "hash": "i46KnXdz9UE7I9ovL1ZDSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.IIndexableTripleReadOnly-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.IIndexableTripleReadOnly-2.html",
+          "hash": "LjE2/fwA9e4BZ9gXmJ3LOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.IRangify-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.IRangify-1.html",
+          "hash": "uh3Nm7VCDgSMEP5yJEMzWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.ImmutableRange-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.ImmutableRange-1.html",
+          "hash": "t5aFpQ6OECbakaDMqWTsZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.IntRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.IntRange.html",
+          "hash": "Y7YfDrZLL470CVljHldUZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.Range-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.Range-1.html",
+          "hash": "iU9EysHNFd3jnepckim96A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.html",
+          "hash": "3HhAKyDeT4T3R2TZbAFQtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.EnumerableUtils.EnumerableUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.EnumerableUtils.EnumerableUtils.html",
+          "hash": "dY4qneeDyfFPQ6adOUjU+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.EnumerableUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.EnumerableUtils.html",
+          "hash": "hsbbr9yCcTIcjbYxTKRZFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.FileUtils.FileUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.FileUtils.FileUtils.html",
+          "hash": "TO2B6Mcj7SzJAsxTKGKZRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.FileUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.FileUtils.html",
+          "hash": "T+j8b0oKsQDaH/4qgAAEsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.MathUtils.IMatrixer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.MathUtils.IMatrixer-1.html",
+          "hash": "f2Taz043CetPmhFsHA6wSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.MathUtils.Matrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.MathUtils.Matrix.html",
+          "hash": "EvAptKQVdbonegE+iM1+MA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.MathUtils.MatrixPropertyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.MathUtils.MatrixPropertyException.html",
+          "hash": "1ouqsl4j50d9BuIrs4/Haw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.MathUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.MathUtils.html",
+          "hash": "Ja2kNm0N9k9oPzcyZxNGlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Statistics.EnumerableStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Statistics.EnumerableStats.html",
+          "hash": "KFZ4CyQLQWPm74BIVTFkUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Statistics.InsufficientDataSetException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Statistics.InsufficientDataSetException.html",
+          "hash": "WGO/a/Y6z13TW/quxCDKzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Statistics.NoModeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Statistics.NoModeException.html",
+          "hash": "fDPP8POvTnAiYwBQxNaBJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Statistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Statistics.html",
+          "hash": "iiRlwBjxicEhO5opb0XByw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.StringUtils.StringUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.StringUtils.StringUtils.html",
+          "hash": "mBT2w7QodtaJ66pUPIV+GA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.StringUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.StringUtils.html",
+          "hash": "7nVBGSKGxxYJyK3Vwhwryw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "1L42SNY4BMMFrL9qj79z5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/AmpereReleases.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/AmpereReleases.html",
+          "hash": "AhDkuxL56C54ap81DFXPig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "I3SXtzfX32iyB6+xyIpKfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "1ur8ThABUi2XegLontIpQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "/x1jgKYafnSGZ2lIxx5RAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 25,
+          "skipped_file_count": 25
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

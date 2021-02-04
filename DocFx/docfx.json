@@ -13,7 +13,7 @@
                     "src":".."
                 }
             ],
-            "dest":"api/Ampere",
+            "dest":"api",
             "disableGitFeatures":false,
             "disableDefaultFilter":false
         }

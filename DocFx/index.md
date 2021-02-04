@@ -1,79 +1,72 @@
 ﻿<p align="center">
-  <a href="https://github.com/manu-p-1/PowerPlug/" target="_blank">
-    <img src="https://raw.githubusercontent.com/manu-p-1/PowerPlug/master/assets/PowerPlugLogoAlt.png" alt="PowerPlug Logo">
+  <a href="https://github.com/manu-p-1/Ampere/" target="_blank">
+    <img src="https://github.com/manu-p-1/Ampere/blob/main/assets/AmpereLogo.png" alt="Ampere Logo">
   </a>
   <br>
 </p>
 <p align="center">
   
-   <a href="https://github.com/manu-p-1/PowerPlug/graphs/contributors" alt="Contributors">
-      <img src="https://img.shields.io/github/contributors/manu-p-1/PowerPlug?color=%20%230099ff"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/graphs/contributors" alt="Contributors">
+      <img src="https://img.shields.io/github/contributors/manu-p-1/Ampere?color=%20%230099ff"/></a>
     
-   <a href="https://github.com/manu-p-1/PowerPlug/pulse" alt="Activity">
-      <img src="https://img.shields.io/github/commit-activity/m/manu-p-1/PowerPlug?color=%20%230099ff"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/pulse" alt="Activity">
+      <img src="https://img.shields.io/github/commit-activity/m/manu-p-1/Ampere?color=%20%230099ff"/></a>
         
-   <a href="https://github.com/manu-p-1/PowerPlug/issues" alt="Open Issues">
-      <img src="https://img.shields.io/github/issues/manu-p-1/PowerPlug"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/issues" alt="Open Issues">
+      <img src="https://img.shields.io/github/issues/manu-p-1/Ampere"/></a>
       
-   <a href="https://github.com/manu-p-1/PowerPlug/releases" alt="Latest Release">
-      <img src="https://img.shields.io/github/v/release/manu-p-1/PowerPlug?include_prereleases"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/releases" alt="Latest Release">
+      <img src="https://img.shields.io/github/v/release/manu-p-1/Ampere?include_prereleases"/></a>
         
    <a href="#" alt="Repo Size">
-      <img src="https://img.shields.io/github/repo-size/manu-p-1/PowerPlug?label=size&color=informational"/></a>
+      <img src="https://img.shields.io/github/repo-size/manu-p-1/Ampere?label=size&color=informational"/></a>
         
-   <a href="https://github.com/manu-p-1/PowerPlug/blob/master/LICENSE" alt="License">
-      <img src="https://img.shields.io/github/license/manu-p-1/PowerPlug?color=informational"/></a>
+   <a href="https://github.com/manu-p-1/Ampere/blob/main/LICENSE" alt="License">
+      <img src="https://img.shields.io/github/license/manu-p-1/Ampere?color=informational"/></a>
 </p>
 
-## PowerPlug Docs
-PowerPlug is a PowerShell 7 cmdlet library. The main mission of PowerPlug is to make PowerShell development faster and eaiser. PowerPlug is run through C# `PSCmdlet` classes from the PowerShell Standard Library. 
-The site is useful for version changelogs, latest releases, and cmdlet documentation.
+## Introduction
+Ampere is a robust .NET utility library written in C#. It's main purpose is to make developement more productive and easier.
 
 ## Execution
-### Install from PS Gallery
-The latest release can be found at [PowerPlug Releases](https://www.powershellgallery.com/packages/PowerPlug/). You can install the prerelease to PowerShell by running:
+### Add the dependency to your project with NuGet
+You can install the latest release to PowerShell 7 by running:
 
-```powershell
-Install-Module -Name PowerPlug
-```
+
 ### Install from GitHub Releases
-The latest zip release can be found under the [GitHub Releases Page](https://github.com/manu-p-1/PowerPlug/releases). You can use the `PowerPlug.dll` binary and place it within any other directory, but conventionally in `$env:PSModulePath`. 
+The latest zip release can be found under the [Github Releases Page](https://github.com/manu-p-1/Ampere/releases). You can use the `Ampere.dll` binary and add it as a dependency within your Visual Studio project. 
 
-### Importing into session
-To import the dll for the session, you can run: `ipmo PowerPlug` **or** `Import-Module PowerPlug`. You can use the previous commands within the `$PROFILE` to load the library on PowerShell startup. Run `Get-Module PowerPlug` to confirm the import ran successfully.
 
 ## Contributing
-We are actively looking for contributors to work on all aspects of the code base ― from documentation to C# Cmdlet utilities. For more information onn how to contribute, view our [CONTRIBUTING.md](https://github.com/manu-p-1/PowerPlug/blob/master/CONTRIBUTING.md)
+We are actively looking for contributors to work on all aspects of the code base ― from documentation to building a variety of utilities. For more information onn how to contribute, view our [CONTRIBUTING.md](https://github.com/manu-p-1/Ampere/blob/master/CONTRIBUTING.md)
 
-### Building PowerPlug
+### Building Ampere
 Prerequisites:
-- PowerShell 7.0 or Later
 - Visual Studio 2017 or Later OR VSCode
-- .NET 5
+- .NET 5 (with .NET Core)
 
-The default language setting for this project is C# 9.0. The project can be built using `dotnet build` and the output will display the `AssemblyPath`. PowerShell 7 can be set as the startup item on Visual Studio to dynamically debug PowerPlug.
+The default language setting for this project is C# 9.0. The project can be built using `dotnet build` and the output will display the `AssemblyPath`.
 
 ### Documentation
-There are three components to PowerPlug documentation:
+There are two components to Ampere documentation:
 
 1. Assembly Documentation
-2. PowerShell Help File Documentation
 3. Miscellaneous Documentation (README.md, Wiki's, Discussions, etc...)
 
-All PowerPlug methods are documented using .NET XML documentation. This is compiled using [DocFX](https://dotnet.github.io/docfx/) with the `docfx.json` file under the [DocFX folder](https://github.com/manu-p-1/PowerPlug/tree/master/DocFx). DocFX creates static
-HTML pages which are used by <https://powerplug.me>. THe `PowerPlug.dll-Help.xml` file is the MAML file that is used to generate the `Get-Help` documentation for PowerPlug cmdlets. Lastly, as a fluid repository, many files change and constantly need to be documented and updated.
+All Ampere methods are documented using .NET XML documentation. This is compiled using [DocFX](https://dotnet.github.io/docfx/) with the `docfx.json` file under the [DocFX folder](https://github.com/manu-p-1/Ampere/tree/master/DocFx). DocFX creates static
+HTML pages which are used by <https://powerplug.me>. Lastly, as a fluid repository, many files change and constantly need to be documented and updated.
 
 ## Roadmap
 There are two planned releases - the latest being by **July 2021**:
 
-- 0.2.6 - First full release of PowerPlug
-- 0.3.0 - Full release with a statistics cmdlets in its own library, comprehensive documentation in the code-base and PowerShell, robust cmdlets
+- 0.1.0 - First full release of Ampere
+- 0.2.0 - Full release with with more statistics oriented classes to analyze data.
 
 ## State
-PowerPlug is a very fluid project and you may encounter issues during execution, especially for preleases. To report an issue visit, [PowerPlug Issues](https://github.com/manu-p-1/PowerPlug/issues), or to contribute, view the contribution guidelines.
+Ampere is a very fluid project and you may encounter issues during execution, especially for preleases. To report an issue visit, [Ampere Issues](https://github.com/manu-p-1/Ampere/issues), or to contribute, view the contribution guidelines.
 
 ## Licensing
-PowerPlug is licensed under the [**GNU General Public License v3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html). The GNU General Public License is a free, copyleft license for software and other kinds of works.
+Ampere is licensed under the [**GNU General Public License v3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html). The GNU General Public License is a free, copyleft license for software and other kinds of works.
 
 ## Acknowledgements
 Thanks especially to my fellow friends and contributors

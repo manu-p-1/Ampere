@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Base.IIndexableTriple`2
+  commentId: T:Ampere.Base.IIndexableTriple`2
+  id: IIndexableTriple`2
+  parent: Ampere.Base
+  children:
+  - Ampere.Base.IIndexableTriple`2.Item(`0,`0,`0)
+  langs:
+  - csharp
+  - vb
+  name: IIndexableTriple<TKey, TVal>
+  nameWithType: IIndexableTriple<TKey, TVal>
+  fullName: Ampere.Base.IIndexableTriple<TKey, TVal>
+  type: Interface
+  source:
+    remote:
+      path: Ampere/Base/IIndexable.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere
+    id: IIndexableTriple
+    path: ../Ampere/Base/IIndexable.cs
+    startLine: 69
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nSpecifies an indexer with three dimensions.\n"
+  example: []
+  syntax:
+    content: public interface IIndexableTriple<in TKey, TVal>
+    typeParameters:
+    - id: TKey
+      description: The element type of the key
+    - id: TVal
+      description: The element type of the value
+    content.vb: Public Interface IIndexableTriple(Of In TKey, TVal)
+  nameWithType.vb: IIndexableTriple(Of TKey, TVal)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Ampere.Base.IIndexableTriple(Of TKey, TVal)
+  name.vb: IIndexableTriple(Of TKey, TVal)
+- uid: Ampere.Base.IIndexableTriple`2.Item(`0,`0,`0)
+  commentId: P:Ampere.Base.IIndexableTriple`2.Item(`0,`0,`0)
+  id: Item(`0,`0,`0)
+  parent: Ampere.Base.IIndexableTriple`2
+  langs:
+  - csharp
+  - vb
+  name: Item[TKey, TKey, TKey]
+  nameWithType: IIndexableTriple<TKey, TVal>.Item[TKey, TKey, TKey]
+  fullName: Ampere.Base.IIndexableTriple<TKey, TVal>.Item[TKey, TKey, TKey]
+  type: Property
+  source:
+    remote:
+      path: Ampere/Base/IIndexable.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere
+    id: this[]
+    path: ../Ampere/Base/IIndexable.cs
+    startLine: 78
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nThe two dimension read/write indexer.\n"
+  example: []
+  syntax:
+    content: TVal this[TKey key, TKey key2, TKey key3] { get; set; }
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The first key to assign to the indexer
+    - id: key2
+      type: '{TKey}'
+      description: The second key to assign to the indexer
+    - id: key3
+      type: '{TKey}'
+      description: The third key to assign to the indexer
+    return:
+      type: '{TVal}'
+      description: The TVal generic type
+    content.vb: Property Item(key As TKey, key2 As TKey, key3 As TKey) As TVal
+  overload: Ampere.Base.IIndexableTriple`2.Item*
+  nameWithType.vb: IIndexableTriple(Of TKey, TVal).Item(TKey, TKey, TKey)
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: Ampere.Base.IIndexableTriple(Of TKey, TVal).Item(TKey, TKey, TKey)
+  name.vb: Item(TKey, TKey, TKey)
+references:
+- uid: Ampere.Base
+  commentId: N:Ampere.Base
+  name: Ampere.Base
+  nameWithType: Ampere.Base
+  fullName: Ampere.Base
+- uid: Ampere.Base.IIndexableTriple`2.Item*
+  commentId: Overload:Ampere.Base.IIndexableTriple`2.Item
+  name: Item
+  nameWithType: IIndexableTriple<TKey, TVal>.Item
+  fullName: Ampere.Base.IIndexableTriple<TKey, TVal>.Item
+  nameWithType.vb: IIndexableTriple(Of TKey, TVal).Item
+  fullName.vb: Ampere.Base.IIndexableTriple(Of TKey, TVal).Item
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: '{TVal}'
+  commentId: '!:TVal'
+  definition: TVal
+  name: TVal
+  nameWithType: TVal
+  fullName: TVal
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TVal
+  name: TVal
+  nameWithType: TVal
+  fullName: TVal
