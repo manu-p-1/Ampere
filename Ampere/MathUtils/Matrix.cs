@@ -13,17 +13,17 @@ namespace Ampere.MathUtils
     /// class includes mathematical matrix operations to manipulate it.
     /// </summary>
     [Beta]
-    public class Matrix : IMatrixer<double>, IIndexableDouble<int, double>
+    public class Matrix : IMatrixer, IIndexableDouble<int, double>
     {
         private const double Tolerance = 0.000000000001;
 
-        /// <inheritdoc cref="IMatrixer{T}"/>
+        /// <inheritdoc cref="IMatrixer"/>
         public double[,] Values { get; }
 
-        /// <inheritdoc cref="IMatrixer{T}"/>
+        /// <inheritdoc cref="IMatrixer"/>
         public int Rows { get; }
 
-        /// <inheritdoc cref="IMatrixer{T}"/>
+        /// <inheritdoc cref="IMatrixer"/>
         public int Cols { get; }
 
         /// <summary>
@@ -51,19 +51,18 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
-        /// 
+        /// The indexer to add values for each row and column.
         /// </summary>
-        /// <param name="row"></param>
-        /// <param name="col"></param>
+        /// <param name="row">The row to insert the value</param>
+        /// <param name="col">The column to insert the value</param>
         /// <returns></returns>
         public double this[int row, int col]
         {
             get => Values[row, col];
-  
             set => Values[row, col] = value;
         }
 
-        /// <inheritdoc cref="IMatrixer{T}"/>
+        /// <inheritdoc cref="IMatrixer"/>
         public Matrix Transpose()
         {
             var cp = new Matrix(Cols, Rows);
@@ -79,23 +78,22 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
-        /// 
+        /// Returns whether two <see cref="Matrix"/> instances are of the same dimension.
+        /// Same dimension means that the rows and the columns of both instances are the same. This
+        /// overload is an instance method of the Matrix class.
         /// </summary>
-        /// <param name="one"></param>
-        /// <param name="two"></param>
+        /// <param name="otherMatrix"></param>
         /// <returns></returns>
-        public static bool EqualDimension(Matrix one, Matrix two)
+        public bool EqualDimension(IMatrixer otherMatrix)
         {
-            one = one ?? throw new ArgumentNullException(nameof(one));
-            two = two ?? throw new ArgumentNullException(nameof(two));
-            return one.Rows == two.Rows && one.Cols == two.Cols;
+            return this.Rows == otherMatrix.Rows && this.Cols == otherMatrix.Cols;
         }
 
         private protected static Matrix DoTwoMatrixScalar(Matrix one, Matrix two, Func<double, double, double> action)
         {
             var n = new Matrix(one.Rows, two.Cols);
 
-            if (!EqualDimension(one, two))
+            if (!IMatrixer.EqualDimension(one, two))
             {
                 throw new MatrixPropertyException("Both matrices must be of equal dimensions");
             }
@@ -123,98 +121,100 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
-        /// 
+        /// An operator method to add a matrix instance with a scalar.
         /// </summary>
-        /// <param name="m"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator +(Matrix m, double scalar) => DoScalar(m, scalar, (val, sc) => val + (double)sc);
 
         /// <summary>
-        /// 
+        /// An operator method to add a matrix instance with a scalar.
         /// </summary>
-        /// <param name="scalar"></param>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator +(double scalar, Matrix m) => DoScalar(m, scalar, (val, sc) => val + (double)sc);
 
         /// <summary>
-        /// 
+        /// An operator method to subtract a matrix instance with a scalar.
         /// </summary>
-        /// <param name="m"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator -(Matrix m, double scalar) => DoScalar(m, scalar, (val, sc) => val - (double)sc);
 
         /// <summary>
-        /// 
+        /// An operator method to subtract a matrix instance with a scalar.
         /// </summary>
-        /// <param name="scalar"></param>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator -(double scalar, Matrix m) => DoScalar(m, scalar, (val, sc) => val - (double)sc);
 
         /// <summary>
-        /// 
+        /// An operator method to multiply a matrix instance with a scalar.
         /// </summary>
-        /// <param name="m"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator *(Matrix m, double scalar) => DoScalar(m, scalar, (val, sc) => val * (double)sc);
 
         /// <summary>
-        /// 
+        /// An operator method to multiply a matrix instance with a scalar.
         /// </summary>
-        /// <param name="scalar"></param>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator *(double scalar, Matrix m) => DoScalar(m, scalar, (val, sc) => val * (double)sc);
 
         /// <summary>
-        /// 
+        /// An operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception
+        /// if the matrix contains a value of 0.
         /// </summary>
-        /// <param name="m"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator /(Matrix m, double scalar) => DoScalar(m, scalar, (val, sc) => val / (double)sc);
 
         /// <summary>
-        /// 
+        /// An operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception
+        /// if the matrix contains a value of 0.
         /// </summary>
-        /// <param name="scalar"></param>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator /(double scalar, Matrix m) => DoScalar(m, scalar, (sc, val) => sc / (double)val);
 
         /// <summary>
-        /// 
+        /// An operator method to mod a matrix instance with a scalar.
         /// </summary>
-        /// <param name="m"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator %(Matrix m, double scalar) => DoScalar(m, scalar, (val, sc) => val % (double)sc);
 
         /// <summary>
-        /// 
+        /// An operator method to mod a matrix instance with a scalar.
         /// </summary>
-        /// <param name="scalar"></param>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator %(double scalar, Matrix m) => DoScalar(m, scalar, (sc, val) => sc % (double)val);
 
         /// <summary>
-        /// 
+        /// An operator method to negate a matrix. Every value in the Matrix provided will be negated.
         /// </summary>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix operator !(Matrix m) => DoScalar(m, null, (val, sc) => val - (val * 2));
 
         /// <summary>
-        /// 
+        /// An operator method to add two Matrix instances.
         /// </summary>
-        /// <param name="one"></param>
-        /// <param name="two"></param>
-        /// <returns></returns>
+        /// <param name="one">The first Matrix instance</param>
+        /// <param name="two">The second Matrix instance</param>
+        /// <returns>A new Matrix instance containing the added values</returns>
         public static Matrix operator +(Matrix one, Matrix two)
         {
             one = one ?? throw new ArgumentNullException(nameof(one));
@@ -224,11 +224,11 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
-        /// 
+        /// An operator method to subtract two Matrix instances.
         /// </summary>
-        /// <param name="one"></param>
-        /// <param name="two"></param>
-        /// <returns></returns>
+        /// <param name="one">The first Matrix instance</param>
+        /// <param name="two">The second Matrix instance</param>
+        /// <returns>A new Matrix instance containing the added values</returns>
         public static Matrix operator -(Matrix one, Matrix two)
         {
             one = one ?? throw new ArgumentNullException(nameof(one));
@@ -238,11 +238,11 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
-        /// 
+        /// An operator method to compute the dot product of two Matrix instances.
         /// </summary>
-        /// <param name="one"></param>
-        /// <param name="two"></param>
-        /// <returns></returns>
+        /// <param name="one">The first Matrix instance</param>
+        /// <param name="two">The second Matrix instance</param>
+        /// <returns>A new Matrix instance containing dot product</returns>
         public static Matrix operator *(Matrix one, Matrix two)
         {
             one = one ?? throw new ArgumentNullException(nameof(one));
@@ -268,20 +268,21 @@ namespace Ampere.MathUtils
             }
             return cp;
         }
-        
+
         /// <summary>
-        /// 
+        /// An operator method to compare two Matrix instances for equality. Equality is defined by structure and values, meaning that
+        /// both matrices must have an equal dimension and every value in both matrices must be equal.
         /// </summary>
-        /// <param name="one"></param>
-        /// <param name="two"></param>
-        /// <returns></returns>
+        /// <param name="one">The first Matrix instance</param>
+        /// <param name="two">The second Matrix instance</param>
+        /// <returns>A bool representing whether the two Matrix instances are equal</returns>
         public static bool operator ==(Matrix one, Matrix two)
         {
             if(one is null || two is null)
             {
                 return false;
             }
-            if (!EqualDimension(one, two))
+            if (!IMatrixer.EqualDimension(one, two))
                 return false;
 
             for(var i = 0; i < one.Rows; i++)
@@ -296,18 +297,19 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
-        /// 
+        /// An operator method to compare two Matrix instances for equality. Equality is defined by structure and values, meaning that
+        /// both matrices must have an equal dimension and every value in both matrices must be equal.
         /// </summary>
-        /// <param name="one"></param>
-        /// <param name="two"></param>
-        /// <returns></returns>
+        /// <param name="one">The first Matrix instance</param>
+        /// <param name="two">The second Matrix instance</param>
+        /// <returns>A new Matrix instance containing the added values</returns>
         public static bool operator !=(Matrix one, Matrix two)
         {
             if (one is null || two is null)
             {
                 return true;
             }
-            if (!EqualDimension(one, two))
+            if (!IMatrixer.EqualDimension(one, two))
                 return true;
 
             for (var i = 0; i < one.Rows; i++)
@@ -322,90 +324,92 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
-        /// 
+        /// A wrapper for the operator method to add a matrix instance with a scalar.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
-        public static Matrix Add(Matrix left, double scalar)
-           => left + scalar;
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
+        public static Matrix Add(Matrix m, double scalar)
+           => m + scalar;
 
         /// <summary>
-        /// 
+        /// A wrapper for the operator method to add two Matrix instances.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
-        public static Matrix Add(Matrix left, Matrix right)
-           => left + right;
+        /// <param name="one">The first Matrix instance</param>
+        /// <param name="two">The second Matrix instance</param>
+        /// <returns>A new Matrix instance containing the added values</returns>
+        public static Matrix Add(Matrix one, Matrix two)
+           => one + two;
 
         /// <summary>
-        /// 
+        /// A wrapper for the operator method to subtract a matrix instance with a scalar.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
-        public static Matrix Subtract(Matrix left, double scalar)
-            => left + scalar;
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
+        public static Matrix Subtract(Matrix m, double scalar)
+            => m - scalar;
 
         /// <summary>
-        /// 
+        /// A wrapper for the operator method to subtract two Matrix instances.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
-        public static Matrix Subtract(Matrix left, Matrix right)
-            => left + right;
+        /// <param name="one">The first Matrix instance</param>
+        /// <param name="two">The second Matrix instance</param>
+        /// <returns>A new Matrix instance containing the added values</returns>
+        public static Matrix Subtract(Matrix one, Matrix two)
+            => one - two;
 
         /// <summary>
-        /// 
+        /// A wrapper for the operator method to multiply a matrix instance with a scalar.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
-        public static Matrix Multiply(Matrix left, double scalar)
-            => left * scalar;
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
+        public static Matrix Multiply(Matrix m, double scalar)
+            => m * scalar;
 
         /// <summary>
-        /// 
+        /// A wrapper for the operator method to compute the dot product of two Matrix instances.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
-        public static Matrix DotProduct(Matrix left, Matrix right)
-            => left * right;
+        /// <param name="one">The first Matrix instance</param>
+        /// <param name="two">The second Matrix instance</param>
+        /// <returns>A new Matrix instance containing dot product</returns>
+        public static Matrix DotProduct(Matrix one, Matrix two)
+            => one * two;
 
         /// <summary>
-        /// 
+        /// A wrapper for the operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception
+        /// if the matrix contains a value of 0.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
-        public static Matrix Divide(Matrix left, double scalar)
-            => left / scalar;
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
+        public static Matrix Divide(Matrix m, double scalar)
+            => m / scalar;
 
         /// <summary>
-        /// 
+        /// A wrapper for the operator method to mod a matrix instance with a scalar.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="scalar"></param>
-        /// <returns></returns>
-        public static Matrix Mod(Matrix left, double scalar)
-            => left % scalar;
+        /// <param name="m">The Matrix instance</param>
+        /// <param name="scalar">The scalar value</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
+        public static Matrix Mod(Matrix m, double scalar)
+            => m % scalar;
 
         /// <summary>
-        /// 
+        /// A wrapper for the operator method to negate a matrix. Every value in the Matrix provided will be negated.
         /// </summary>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="m">The Matrix instance</param>
+        /// <returns>The Matrix after the scalar has been applied</returns>
         public static Matrix Negate(Matrix m)
             => !m;
 
         /// <summary>
-        /// 
+        /// Compares an object to a Matrix instance. This will check for type first then calls the
+        /// <see cref="Equals(Matrix)"/> method.
         /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
+        /// <param name="obj">The object to compare</param>
+        /// <returns>A bool representing whether the object is equal</returns>
         public override bool Equals(object obj)
         {
             if (obj is null) return false;
@@ -414,46 +418,44 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
-        /// 
+        /// A wrapper method for operator== method.
         /// </summary>
-        /// <param name="other"></param>
-        /// <returns></returns>
-        protected bool Equals(Matrix other)
+        /// <param name="other">The Matrix instance to check for equality</param>
+        /// <returns>A bool representing whether the Matrix instance is equal</returns>
+        public bool Equals(Matrix other)
         {
             return this == other;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
+        /// <inheritdoc cref="Object"/>
         public override int GetHashCode()
         {
             return HashCode.Combine(Values, Rows, Cols);
         }
 
         /// <summary>
-        /// 
+        /// Returns whether the number of Rows equals 1
         /// </summary>
-        /// <returns></returns>
+        /// <returns>A bool specifying whether the number of Rows equals 1</returns>
         public bool IsRowVector() => Rows == 1;
-        
+
         /// <summary>
-        /// 
+        /// Returns whether the number of Columns equals 1.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>A bool specifying whether the number of Columns equals 1</returns>
         public bool IsColumnVector() => Cols == 1;
 
         /// <summary>
-        /// 
+        /// Returns whether the number of Rows equals the number of Columns.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>A bool specifying whether the number of Rows equals the number of columns</returns>
         public bool IsSquareVector() => Rows == Cols;
 
         /// <summary>
-        /// 
+        /// Returns an enumerator this Matrix containing every value. The iteration occurs through each row
+        /// in the matrix.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>An <see cref="IEnumerator{T}"/> instance for the Matrix</returns>
         public IEnumerator<double> GetEnumerator()
         {
             for (var r = 0; r < Rows; r++)
@@ -466,15 +468,16 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
-        /// 
+        /// Returns the non-generic Enumerator for the Matrix. This returns the generic <see cref="GetEnumerator"/> method
+        /// under the hood.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>An <see cref="IEnumerator"/> instance for the Matrix</returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
 
-        /// <inheritdoc cref="IMatrixer{T}"/>
+        /// <inheritdoc cref="IMatrixer"/>
         public override string ToString()
         {
             var sb = new StringBuilder();
