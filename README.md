@@ -32,8 +32,8 @@ Ampere is a robust .NET utility library written in C#. It's main purpose is to m
 ### Add the dependency to your project with NuGet
 You can install the latest release with NuGet by clicking `Managing NuGet Packages...` under your Visual Studio project name. Browse for the project by typing `Ampere`, view the information, and choose the version you would like to install.
 
-### Install from GitHub Releases
-The latest zip release can be found under the [GitHub Releases Page](https://github.com/manu-p-1/Ampere/releases). You can use the `Ampere.dll` binary and add it as a dependency within your Visual Studio project. 
+### Install from GitHub Packages
+The latest NuGet release can be found under the [GitHub Releases Page](https://github.com/manu-p-1/Ampere/packages/). You can use the instructions to install from the command line. 
 
 ## Contributing
 We are actively looking for contributors to work on all aspects of the code base ― from documentation to building a variety of utilities. For more information on how to contribute, view our [CONTRIBUTING.md](https://github.com/manu-p-1/Ampere/blob/master/CONTRIBUTING.md)
