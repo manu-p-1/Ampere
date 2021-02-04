@@ -26,19 +26,17 @@
 </p>
 
 ## Introduction
-Ampere is a robust .NET utility library written in C#. It's main purpose is to make developement more productive and easier.
+Ampere is a robust .NET utility library written in C#. It's main purpose is to make development more productive and easier. The Ampere docs can be found at <https://powerplug.me>
 
 ## Execution
 ### Add the dependency to your project with NuGet
-You can install the latest release with NuGet by running:
+You can install the latest release with NuGet by clicking `Managing NuGet Packages...` under your Visual Studio project name. Browse for the project by typing `Ampere`, view the information, and choose the version you would like to install.
 
-
-### Install from GitHub Releases
-The latest zip release can be found under the [Github Releases Page](https://github.com/manu-p-1/Ampere/releases). You can use the `Ampere.dll` binary and add it as a dependency within your Visual Studio project. 
-
+### Install from GitHub Packages
+The latest NuGet release can be found under the [GitHub Releases Page](https://github.com/manu-p-1/Ampere/packages/). You can use the instructions to install from the command line. 
 
 ## Contributing
-We are actively looking for contributors to work on all aspects of the code base ― from documentation to building a variety of utilities. For more information onn how to contribute, view our [CONTRIBUTING.md](https://github.com/manu-p-1/Ampere/blob/master/CONTRIBUTING.md)
+We are actively looking for contributors to work on all aspects of the code base ― from documentation to building a variety of utilities. For more information on how to contribute, view our [CONTRIBUTING.md](https://github.com/manu-p-1/Ampere/blob/master/CONTRIBUTING.md)
 
 ### Building Ampere
 Prerequisites:
@@ -60,7 +58,7 @@ HTML pages which are used by <https://powerplug.me>. Lastly, as a fluid reposito
 There are two planned releases - the latest being by **July 2021**:
 
 - 0.1.0 - First full release of Ampere
-- 0.2.0 - Full release with with more statistics oriented classes to analyze data.
+- 0.2.0 - Additional statistics data analysis tools.
 
 ## State
 Ampere is a very fluid project and you may encounter issues during execution, especially for preleases. To report an issue visit, [Ampere Issues](https://github.com/manu-p-1/Ampere/issues), or to contribute, view the contribution guidelines.
