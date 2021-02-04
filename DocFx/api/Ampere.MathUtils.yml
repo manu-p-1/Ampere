@@ -4,7 +4,7 @@ items:
   commentId: N:Ampere.MathUtils
   id: Ampere.MathUtils
   children:
-  - Ampere.MathUtils.IMatrixer`1
+  - Ampere.MathUtils.IMatrixer
   - Ampere.MathUtils.Matrix
   - Ampere.MathUtils.MatrixPropertyException
   langs:
@@ -17,42 +17,12 @@ items:
   assemblies:
   - Ampere
 references:
-- uid: Ampere.MathUtils.IMatrixer`1
-  commentId: T:Ampere.MathUtils.IMatrixer`1
-  name: IMatrixer<T>
-  nameWithType: IMatrixer<T>
-  fullName: Ampere.MathUtils.IMatrixer<T>
-  nameWithType.vb: IMatrixer(Of T)
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T)
-  name.vb: IMatrixer(Of T)
-  spec.csharp:
-  - uid: Ampere.MathUtils.IMatrixer`1
-    name: IMatrixer
-    nameWithType: IMatrixer
-    fullName: Ampere.MathUtils.IMatrixer
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: Ampere.MathUtils.IMatrixer`1
-    name: IMatrixer
-    nameWithType: IMatrixer
-    fullName: Ampere.MathUtils.IMatrixer
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
+- uid: Ampere.MathUtils.IMatrixer
+  commentId: T:Ampere.MathUtils.IMatrixer
+  parent: Ampere.MathUtils
+  name: IMatrixer
+  nameWithType: IMatrixer
+  fullName: Ampere.MathUtils.IMatrixer
 - uid: Ampere.MathUtils.Matrix
   commentId: T:Ampere.MathUtils.Matrix
   parent: Ampere.MathUtils

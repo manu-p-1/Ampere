@@ -963,100 +963,135 @@ references:
   commentId: N:Ampere.MathUtils
   fullName: Ampere.MathUtils
   nameWithType: Ampere.MathUtils
-- uid: Ampere.MathUtils.IMatrixer`1
-  name: IMatrixer<T>
-  href: api/Ampere.MathUtils.IMatrixer-1.html
-  commentId: T:Ampere.MathUtils.IMatrixer`1
-  name.vb: IMatrixer(Of T)
-  fullName: Ampere.MathUtils.IMatrixer<T>
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T)
-  nameWithType: IMatrixer<T>
-  nameWithType.vb: IMatrixer(Of T)
-- uid: Ampere.MathUtils.IMatrixer`1.Cols
+- uid: Ampere.MathUtils.IMatrixer
+  name: IMatrixer
+  href: api/Ampere.MathUtils.IMatrixer.html
+  commentId: T:Ampere.MathUtils.IMatrixer
+  fullName: Ampere.MathUtils.IMatrixer
+  nameWithType: IMatrixer
+- uid: Ampere.MathUtils.IMatrixer.Cols
   name: Cols
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Cols
-  commentId: P:Ampere.MathUtils.IMatrixer`1.Cols
-  fullName: Ampere.MathUtils.IMatrixer<T>.Cols
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Cols
-  nameWithType: IMatrixer<T>.Cols
-  nameWithType.vb: IMatrixer(Of T).Cols
-- uid: Ampere.MathUtils.IMatrixer`1.Cols*
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_Cols
+  commentId: P:Ampere.MathUtils.IMatrixer.Cols
+  fullName: Ampere.MathUtils.IMatrixer.Cols
+  nameWithType: IMatrixer.Cols
+- uid: Ampere.MathUtils.IMatrixer.Cols*
   name: Cols
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Cols_
-  commentId: Overload:Ampere.MathUtils.IMatrixer`1.Cols
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_Cols_
+  commentId: Overload:Ampere.MathUtils.IMatrixer.Cols
   isSpec: "True"
-  fullName: Ampere.MathUtils.IMatrixer<T>.Cols
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Cols
-  nameWithType: IMatrixer<T>.Cols
-  nameWithType.vb: IMatrixer(Of T).Cols
-- uid: Ampere.MathUtils.IMatrixer`1.Rows
-  name: Rows
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Rows
-  commentId: P:Ampere.MathUtils.IMatrixer`1.Rows
-  fullName: Ampere.MathUtils.IMatrixer<T>.Rows
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Rows
-  nameWithType: IMatrixer<T>.Rows
-  nameWithType.vb: IMatrixer(Of T).Rows
-- uid: Ampere.MathUtils.IMatrixer`1.Rows*
-  name: Rows
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Rows_
-  commentId: Overload:Ampere.MathUtils.IMatrixer`1.Rows
+  fullName: Ampere.MathUtils.IMatrixer.Cols
+  nameWithType: IMatrixer.Cols
+- uid: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
+  name: EqualDimension(IMatrixer)
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_EqualDimension_Ampere_MathUtils_IMatrixer_
+  commentId: M:Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
+  fullName: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
+  nameWithType: IMatrixer.EqualDimension(IMatrixer)
+- uid: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer,Ampere.MathUtils.IMatrixer)
+  name: EqualDimension(IMatrixer, IMatrixer)
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_EqualDimension_Ampere_MathUtils_IMatrixer_Ampere_MathUtils_IMatrixer_
+  commentId: M:Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer,Ampere.MathUtils.IMatrixer)
+  fullName: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer, Ampere.MathUtils.IMatrixer)
+  nameWithType: IMatrixer.EqualDimension(IMatrixer, IMatrixer)
+- uid: Ampere.MathUtils.IMatrixer.EqualDimension*
+  name: EqualDimension
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_EqualDimension_
+  commentId: Overload:Ampere.MathUtils.IMatrixer.EqualDimension
   isSpec: "True"
-  fullName: Ampere.MathUtils.IMatrixer<T>.Rows
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Rows
-  nameWithType: IMatrixer<T>.Rows
-  nameWithType.vb: IMatrixer(Of T).Rows
-- uid: Ampere.MathUtils.IMatrixer`1.ToString
+  fullName: Ampere.MathUtils.IMatrixer.EqualDimension
+  nameWithType: IMatrixer.EqualDimension
+- uid: Ampere.MathUtils.IMatrixer.IsColumnVector
+  name: IsColumnVector()
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_IsColumnVector
+  commentId: M:Ampere.MathUtils.IMatrixer.IsColumnVector
+  fullName: Ampere.MathUtils.IMatrixer.IsColumnVector()
+  nameWithType: IMatrixer.IsColumnVector()
+- uid: Ampere.MathUtils.IMatrixer.IsColumnVector*
+  name: IsColumnVector
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_IsColumnVector_
+  commentId: Overload:Ampere.MathUtils.IMatrixer.IsColumnVector
+  isSpec: "True"
+  fullName: Ampere.MathUtils.IMatrixer.IsColumnVector
+  nameWithType: IMatrixer.IsColumnVector
+- uid: Ampere.MathUtils.IMatrixer.IsRowVector
+  name: IsRowVector()
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_IsRowVector
+  commentId: M:Ampere.MathUtils.IMatrixer.IsRowVector
+  fullName: Ampere.MathUtils.IMatrixer.IsRowVector()
+  nameWithType: IMatrixer.IsRowVector()
+- uid: Ampere.MathUtils.IMatrixer.IsRowVector*
+  name: IsRowVector
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_IsRowVector_
+  commentId: Overload:Ampere.MathUtils.IMatrixer.IsRowVector
+  isSpec: "True"
+  fullName: Ampere.MathUtils.IMatrixer.IsRowVector
+  nameWithType: IMatrixer.IsRowVector
+- uid: Ampere.MathUtils.IMatrixer.IsSquareVector
+  name: IsSquareVector()
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_IsSquareVector
+  commentId: M:Ampere.MathUtils.IMatrixer.IsSquareVector
+  fullName: Ampere.MathUtils.IMatrixer.IsSquareVector()
+  nameWithType: IMatrixer.IsSquareVector()
+- uid: Ampere.MathUtils.IMatrixer.IsSquareVector*
+  name: IsSquareVector
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_IsSquareVector_
+  commentId: Overload:Ampere.MathUtils.IMatrixer.IsSquareVector
+  isSpec: "True"
+  fullName: Ampere.MathUtils.IMatrixer.IsSquareVector
+  nameWithType: IMatrixer.IsSquareVector
+- uid: Ampere.MathUtils.IMatrixer.Rows
+  name: Rows
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_Rows
+  commentId: P:Ampere.MathUtils.IMatrixer.Rows
+  fullName: Ampere.MathUtils.IMatrixer.Rows
+  nameWithType: IMatrixer.Rows
+- uid: Ampere.MathUtils.IMatrixer.Rows*
+  name: Rows
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_Rows_
+  commentId: Overload:Ampere.MathUtils.IMatrixer.Rows
+  isSpec: "True"
+  fullName: Ampere.MathUtils.IMatrixer.Rows
+  nameWithType: IMatrixer.Rows
+- uid: Ampere.MathUtils.IMatrixer.ToString
   name: ToString()
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_ToString
-  commentId: M:Ampere.MathUtils.IMatrixer`1.ToString
-  fullName: Ampere.MathUtils.IMatrixer<T>.ToString()
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).ToString()
-  nameWithType: IMatrixer<T>.ToString()
-  nameWithType.vb: IMatrixer(Of T).ToString()
-- uid: Ampere.MathUtils.IMatrixer`1.ToString*
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_ToString
+  commentId: M:Ampere.MathUtils.IMatrixer.ToString
+  fullName: Ampere.MathUtils.IMatrixer.ToString()
+  nameWithType: IMatrixer.ToString()
+- uid: Ampere.MathUtils.IMatrixer.ToString*
   name: ToString
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_ToString_
-  commentId: Overload:Ampere.MathUtils.IMatrixer`1.ToString
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_ToString_
+  commentId: Overload:Ampere.MathUtils.IMatrixer.ToString
   isSpec: "True"
-  fullName: Ampere.MathUtils.IMatrixer<T>.ToString
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).ToString
-  nameWithType: IMatrixer<T>.ToString
-  nameWithType.vb: IMatrixer(Of T).ToString
-- uid: Ampere.MathUtils.IMatrixer`1.Transpose
+  fullName: Ampere.MathUtils.IMatrixer.ToString
+  nameWithType: IMatrixer.ToString
+- uid: Ampere.MathUtils.IMatrixer.Transpose
   name: Transpose()
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Transpose
-  commentId: M:Ampere.MathUtils.IMatrixer`1.Transpose
-  fullName: Ampere.MathUtils.IMatrixer<T>.Transpose()
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Transpose()
-  nameWithType: IMatrixer<T>.Transpose()
-  nameWithType.vb: IMatrixer(Of T).Transpose()
-- uid: Ampere.MathUtils.IMatrixer`1.Transpose*
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_Transpose
+  commentId: M:Ampere.MathUtils.IMatrixer.Transpose
+  fullName: Ampere.MathUtils.IMatrixer.Transpose()
+  nameWithType: IMatrixer.Transpose()
+- uid: Ampere.MathUtils.IMatrixer.Transpose*
   name: Transpose
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Transpose_
-  commentId: Overload:Ampere.MathUtils.IMatrixer`1.Transpose
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_Transpose_
+  commentId: Overload:Ampere.MathUtils.IMatrixer.Transpose
   isSpec: "True"
-  fullName: Ampere.MathUtils.IMatrixer<T>.Transpose
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Transpose
-  nameWithType: IMatrixer<T>.Transpose
-  nameWithType.vb: IMatrixer(Of T).Transpose
-- uid: Ampere.MathUtils.IMatrixer`1.Values
+  fullName: Ampere.MathUtils.IMatrixer.Transpose
+  nameWithType: IMatrixer.Transpose
+- uid: Ampere.MathUtils.IMatrixer.Values
   name: Values
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Values
-  commentId: P:Ampere.MathUtils.IMatrixer`1.Values
-  fullName: Ampere.MathUtils.IMatrixer<T>.Values
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Values
-  nameWithType: IMatrixer<T>.Values
-  nameWithType.vb: IMatrixer(Of T).Values
-- uid: Ampere.MathUtils.IMatrixer`1.Values*
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_Values
+  commentId: P:Ampere.MathUtils.IMatrixer.Values
+  fullName: Ampere.MathUtils.IMatrixer.Values
+  nameWithType: IMatrixer.Values
+- uid: Ampere.MathUtils.IMatrixer.Values*
   name: Values
-  href: api/Ampere.MathUtils.IMatrixer-1.html#Ampere_MathUtils_IMatrixer_1_Values_
-  commentId: Overload:Ampere.MathUtils.IMatrixer`1.Values
+  href: api/Ampere.MathUtils.IMatrixer.html#Ampere_MathUtils_IMatrixer_Values_
+  commentId: Overload:Ampere.MathUtils.IMatrixer.Values
   isSpec: "True"
-  fullName: Ampere.MathUtils.IMatrixer<T>.Values
-  fullName.vb: Ampere.MathUtils.IMatrixer(Of T).Values
-  nameWithType: IMatrixer<T>.Values
-  nameWithType.vb: IMatrixer(Of T).Values
+  fullName: Ampere.MathUtils.IMatrixer.Values
+  nameWithType: IMatrixer.Values
 - uid: Ampere.MathUtils.Matrix
   name: Matrix
   href: api/Ampere.MathUtils.Matrix.html
@@ -1143,12 +1178,12 @@ references:
   isSpec: "True"
   fullName: Ampere.MathUtils.Matrix.DotProduct
   nameWithType: Matrix.DotProduct
-- uid: Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  name: EqualDimension(Matrix, Matrix)
-  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_EqualDimension_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_
-  commentId: M:Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  fullName: Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
-  nameWithType: Matrix.EqualDimension(Matrix, Matrix)
+- uid: Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.IMatrixer)
+  name: EqualDimension(IMatrixer)
+  href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_EqualDimension_Ampere_MathUtils_IMatrixer_
+  commentId: M:Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.IMatrixer)
+  fullName: Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.IMatrixer)
+  nameWithType: Matrix.EqualDimension(IMatrixer)
 - uid: Ampere.MathUtils.Matrix.EqualDimension*
   name: EqualDimension
   href: api/Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_EqualDimension_

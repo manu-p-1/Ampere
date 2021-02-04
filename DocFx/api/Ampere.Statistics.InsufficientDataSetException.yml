@@ -38,9 +38,7 @@ items:
       <Serializable>
 
       Public Class InsufficientDataSetException
-
           Inherits Exception
-
           Implements ISerializable
   inheritance:
   - System.Object
@@ -137,7 +135,7 @@ items:
     parameters:
     - id: message
       type: System.String
-      description: ''
+      description: The message of this exception type
     content.vb: Public Sub New(message As String)
   overload: Ampere.Statistics.InsufficientDataSetException.#ctor*
   modifiers.csharp:

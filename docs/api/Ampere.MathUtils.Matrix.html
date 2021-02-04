@@ -95,7 +95,7 @@ class includes mathematical matrix operations to manipulate it.</p>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Ampere.MathUtils.IMatrixer-1.html">IMatrixer</a>&lt;<span class="xref">System.Double</span>&gt;</div>
+    <div><a class="xref" href="Ampere.MathUtils.IMatrixer.html">IMatrixer</a></div>
     <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
     <div><a class="xref" href="Ampere.Base.IIndexableDouble-2.html">IIndexableDouble</a>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Double</span>&gt;</div>
@@ -119,7 +119,7 @@ class includes mathematical matrix operations to manipulate it.</p>
   <h6><strong>Assembly</strong>: Ampere.dll</h6>
   <h5 id="Ampere_MathUtils_Matrix_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Matrix : IMatrixer&lt;double&gt;, IEnumerable&lt;double&gt;, IEnumerable, IIndexableDouble&lt;int, double&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class Matrix : IMatrixer, IEnumerable&lt;double&gt;, IEnumerable, IIndexableDouble&lt;int, double&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -208,7 +208,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_Cols_" data-uid="Ampere.MathUtils.Matrix.Cols*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Cols" data-uid="Ampere.MathUtils.Matrix.Cols">Cols</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the minimum requirements to create a Matrix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -238,7 +239,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_Item_" data-uid="Ampere.MathUtils.Matrix.Item*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Item_System_Int32_System_Int32_" data-uid="Ampere.MathUtils.Matrix.Item(System.Int32,System.Int32)">Item[Int32, Int32]</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The indexer to add values for each row and column.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -257,12 +259,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">row</span></td>
-        <td></td>
+        <td><p>The row to insert the value</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">col</span></td>
-        <td></td>
+        <td><p>The column to insert the value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +294,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_Rows_" data-uid="Ampere.MathUtils.Matrix.Rows*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Rows" data-uid="Ampere.MathUtils.Matrix.Rows">Rows</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the minimum requirements to create a Matrix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +325,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_Values_" data-uid="Ampere.MathUtils.Matrix.Values*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Values" data-uid="Ampere.MathUtils.Matrix.Values">Values</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the minimum requirements to create a Matrix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -348,223 +354,16 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Add_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L339">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L341">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_Add_" data-uid="Ampere.MathUtils.Matrix.Add*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Add_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">Add(Matrix, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A wrapper for the operator method to add two Matrix instances.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Matrix Add(Matrix left, Matrix right)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">right</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Add_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L330">View Source</a>
-  </span>
-  <a id="Ampere_MathUtils_Matrix_Add_" data-uid="Ampere.MathUtils.Matrix.Add*"></a>
-  <h4 id="Ampere_MathUtils_Matrix_Add_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,System.Double)">Add(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Matrix Add(Matrix left, double scalar)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">scalar</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Divide_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L384">View Source</a>
-  </span>
-  <a id="Ampere_MathUtils_Matrix_Divide_" data-uid="Ampere.MathUtils.Matrix.Divide*"></a>
-  <h4 id="Ampere_MathUtils_Matrix_Divide_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix,System.Double)">Divide(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Matrix Divide(Matrix left, double scalar)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">scalar</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_DotProduct_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L375">View Source</a>
-  </span>
-  <a id="Ampere_MathUtils_Matrix_DotProduct_" data-uid="Ampere.MathUtils.Matrix.DotProduct*"></a>
-  <h4 id="Ampere_MathUtils_Matrix_DotProduct_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">DotProduct(Matrix, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Matrix DotProduct(Matrix left, Matrix right)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">right</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_EqualDimension_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.Matrix%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L87">View Source</a>
-  </span>
-  <a id="Ampere_MathUtils_Matrix_EqualDimension_" data-uid="Ampere.MathUtils.Matrix.EqualDimension*"></a>
-  <h4 id="Ampere_MathUtils_Matrix_EqualDimension_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">EqualDimension(Matrix, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool EqualDimension(Matrix one, Matrix two)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Matrix Add(Matrix one, Matrix two)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -579,11 +378,233 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">one</span></td>
-        <td></td>
+        <td><p>The first Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">two</span></td>
+        <td><p>The second Matrix instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
+        <td><p>A new Matrix instance containing the added values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Add_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L332">View Source</a>
+  </span>
+  <a id="Ampere_MathUtils_Matrix_Add_" data-uid="Ampere.MathUtils.Matrix.Add*"></a>
+  <h4 id="Ampere_MathUtils_Matrix_Add_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,System.Double)">Add(Matrix, Double)</h4>
+  <div class="markdown level1 summary"><p>A wrapper for the operator method to add a matrix instance with a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix Add(Matrix m, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The Matrix instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>The scalar value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Divide_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L387">View Source</a>
+  </span>
+  <a id="Ampere_MathUtils_Matrix_Divide_" data-uid="Ampere.MathUtils.Matrix.Divide*"></a>
+  <h4 id="Ampere_MathUtils_Matrix_Divide_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix,System.Double)">Divide(Matrix, Double)</h4>
+  <div class="markdown level1 summary"><p>A wrapper for the operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception
+if the matrix contains a value of 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix Divide(Matrix m, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The Matrix instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>The scalar value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_DotProduct_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L377">View Source</a>
+  </span>
+  <a id="Ampere_MathUtils_Matrix_DotProduct_" data-uid="Ampere.MathUtils.Matrix.DotProduct*"></a>
+  <h4 id="Ampere_MathUtils_Matrix_DotProduct_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">DotProduct(Matrix, Matrix)</h4>
+  <div class="markdown level1 summary"><p>A wrapper for the operator method to compute the dot product of two Matrix instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix DotProduct(Matrix one, Matrix two)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">one</span></td>
+        <td><p>The first Matrix instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">two</span></td>
+        <td><p>The second Matrix instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
+        <td><p>A new Matrix instance containing dot product</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_EqualDimension_Ampere_MathUtils_IMatrixer_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.IMatrixer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L87">View Source</a>
+  </span>
+  <a id="Ampere_MathUtils_Matrix_EqualDimension_" data-uid="Ampere.MathUtils.Matrix.EqualDimension*"></a>
+  <h4 id="Ampere_MathUtils_Matrix_EqualDimension_Ampere_MathUtils_IMatrixer_" data-uid="Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.IMatrixer)">EqualDimension(IMatrixer)</h4>
+  <div class="markdown level1 summary"><p>Returns whether two <a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a> instances are of the same dimension.
+Same dimension means that the rows and the columns of both instances are the same. This
+overload is an instance method of the Matrix class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EqualDimension(IMatrixer otherMatrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ampere.MathUtils.IMatrixer.html">IMatrixer</a></td>
+        <td><span class="parametername">otherMatrix</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -608,15 +629,16 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Equals_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L421">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L425">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_Equals_" data-uid="Ampere.MathUtils.Matrix.Equals*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Equals_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)">Equals(Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A wrapper method for operator== method.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool Equals(Matrix other)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Equals(Matrix other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -631,7 +653,8 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
+        <td><p>The Matrix instance to check for equality</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -646,7 +669,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>A bool representing whether the Matrix instance is equal</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -655,11 +679,13 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L409">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L413">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_Equals_" data-uid="Ampere.MathUtils.Matrix.Equals*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Equals_System_Object_" data-uid="Ampere.MathUtils.Matrix.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compares an object to a Matrix instance. This will check for type first then calls the
+<a class="xref" href="Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_Equals_Ampere_MathUtils_Matrix_">Equals(Matrix)</a> method.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -678,7 +704,8 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The object to compare</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -693,7 +720,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>A bool representing whether the object is equal</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -704,11 +732,13 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_GetEnumerator.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L457">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L450">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_GetEnumerator_" data-uid="Ampere.MathUtils.Matrix.GetEnumerator*"></a>
   <h4 id="Ampere_MathUtils_Matrix_GetEnumerator" data-uid="Ampere.MathUtils.Matrix.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns an enumerator this Matrix containing every value. The iteration occurs through each row
+in the matrix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -725,7 +755,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<span class="xref">System.Double</span>&gt;</td>
-        <td></td>
+        <td><p>An <span class="xref">System.Collections.Generic.IEnumerator&lt;T&gt;</span> instance for the Matrix</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -734,7 +765,7 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_GetHashCode.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L430">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L431">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_GetHashCode_" data-uid="Ampere.MathUtils.Matrix.GetHashCode*"></a>
   <h4 id="Ampere_MathUtils_Matrix_GetHashCode" data-uid="Ampere.MathUtils.Matrix.GetHashCode">GetHashCode()</h4>
@@ -766,11 +797,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_IsColumnVector.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.IsColumnVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L445">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L440">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_IsColumnVector_" data-uid="Ampere.MathUtils.Matrix.IsColumnVector*"></a>
   <h4 id="Ampere_MathUtils_Matrix_IsColumnVector" data-uid="Ampere.MathUtils.Matrix.IsColumnVector">IsColumnVector()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the minimum requirements to create a Matrix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -787,7 +819,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>A bool specifying whether the number of Columns equals 1</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -796,11 +829,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_IsRowVector.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.IsRowVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L439">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L437">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_IsRowVector_" data-uid="Ampere.MathUtils.Matrix.IsRowVector*"></a>
   <h4 id="Ampere_MathUtils_Matrix_IsRowVector" data-uid="Ampere.MathUtils.Matrix.IsRowVector">IsRowVector()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the minimum requirements to create a Matrix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -817,7 +851,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>A bool specifying whether the number of Rows equals 1</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -826,11 +861,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_IsSquareVector.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.IsSquareVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L451">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L443">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_IsSquareVector_" data-uid="Ampere.MathUtils.Matrix.IsSquareVector*"></a>
   <h4 id="Ampere_MathUtils_Matrix_IsSquareVector" data-uid="Ampere.MathUtils.Matrix.IsSquareVector">IsSquareVector()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the minimum requirements to create a Matrix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -847,7 +883,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>A bool specifying whether the number of Rows equals the number of columns</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -856,15 +893,16 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Mod_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Mod(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L393">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L396">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_Mod_" data-uid="Ampere.MathUtils.Matrix.Mod*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Mod_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.Mod(Ampere.MathUtils.Matrix,System.Double)">Mod(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A wrapper for the operator method to mod a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Matrix Mod(Matrix left, double scalar)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Matrix Mod(Matrix m, double scalar)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -878,13 +916,15 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -899,7 +939,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -908,15 +949,16 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Multiply_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L366">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L368">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_Multiply_" data-uid="Ampere.MathUtils.Matrix.Multiply*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Multiply_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix,System.Double)">Multiply(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A wrapper for the operator method to multiply a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Matrix Multiply(Matrix left, double scalar)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Matrix Multiply(Matrix m, double scalar)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -930,13 +972,15 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -951,7 +995,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -960,11 +1005,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Negate_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Negate(Ampere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L401">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L404">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_Negate_" data-uid="Ampere.MathUtils.Matrix.Negate*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Negate_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.Negate(Ampere.MathUtils.Matrix)">Negate(Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A wrapper for the operator method to negate a matrix. Every value in the Matrix provided will be negated.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -983,7 +1029,8 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -998,7 +1045,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1007,15 +1055,16 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Subtract_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L357">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L359">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_Subtract_" data-uid="Ampere.MathUtils.Matrix.Subtract*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Subtract_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">Subtract(Matrix, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A wrapper for the operator method to subtract two Matrix instances.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Matrix Subtract(Matrix left, Matrix right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Matrix Subtract(Matrix one, Matrix two)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1029,13 +1078,15 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
+        <td><span class="parametername">one</span></td>
+        <td><p>The first Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">right</span></td>
-        <td></td>
+        <td><span class="parametername">two</span></td>
+        <td><p>The second Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1050,7 +1101,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>A new Matrix instance containing the added values</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1059,15 +1111,16 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Subtract_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L348">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L350">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_Subtract_" data-uid="Ampere.MathUtils.Matrix.Subtract*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Subtract_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,System.Double)">Subtract(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A wrapper for the operator method to subtract a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Matrix Subtract(Matrix left, double scalar)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Matrix Subtract(Matrix m, double scalar)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1081,13 +1134,15 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1102,7 +1157,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1111,11 +1167,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_ToString.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L478">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L472">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_ToString_" data-uid="Ampere.MathUtils.Matrix.ToString*"></a>
   <h4 id="Ampere_MathUtils_Matrix_ToString" data-uid="Ampere.MathUtils.Matrix.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the minimum requirements to create a Matrix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1132,7 +1189,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>A string representation of the IMatrixer</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1143,11 +1201,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_Transpose.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.Transpose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L67">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L66">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_Transpose_" data-uid="Ampere.MathUtils.Matrix.Transpose*"></a>
   <h4 id="Ampere_MathUtils_Matrix_Transpose" data-uid="Ampere.MathUtils.Matrix.Transpose">Transpose()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the minimum requirements to create a Matrix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1164,7 +1223,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>A new Matrix containing the transposed version of the original</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1179,7 +1239,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Addition_" data-uid="Ampere.MathUtils.Matrix.op_Addition*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Addition_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">Addition(Matrix, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to add two Matrix instances.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1198,12 +1259,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">one</span></td>
-        <td></td>
+        <td><p>The first Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">two</span></td>
-        <td></td>
+        <td><p>The second Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1218,7 +1281,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>A new Matrix instance containing the added values</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1227,11 +1291,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_op_Addition_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L131">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L129">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Addition_" data-uid="Ampere.MathUtils.Matrix.op_Addition*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Addition_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,System.Double)">Addition(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to add a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1250,12 +1315,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1270,7 +1337,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1279,11 +1347,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_op_Addition_System_Double_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.op_Addition(System.Double%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L139">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L137">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Addition_" data-uid="Ampere.MathUtils.Matrix.op_Addition*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Addition_System_Double_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Addition(System.Double,Ampere.MathUtils.Matrix)">Addition(Double, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to add a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1302,12 +1371,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1322,7 +1393,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1331,11 +1403,13 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_op_Division_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.op_Division(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L179">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L178">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Division_" data-uid="Ampere.MathUtils.Matrix.op_Division*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Division_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.op_Division(Ampere.MathUtils.Matrix,System.Double)">Division(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception
+if the matrix contains a value of 0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1354,12 +1428,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1374,7 +1450,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1387,7 +1464,9 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Division_" data-uid="Ampere.MathUtils.Matrix.op_Division*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Division_System_Double_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Division(System.Double,Ampere.MathUtils.Matrix)">Division(Double, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception
+if the matrix contains a value of 0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1406,12 +1485,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1426,7 +1507,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1435,11 +1517,13 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_op_Equality_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.op_Equality(Ampere.MathUtils.Matrix%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L278">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L279">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Equality_" data-uid="Ampere.MathUtils.Matrix.op_Equality*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Equality_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Equality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">Equality(Matrix, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to compare two Matrix instances for equality. Equality is defined by structure and values, meaning that
+both matrices must have an equal dimension and every value in both matrices must be equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1458,12 +1542,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">one</span></td>
-        <td></td>
+        <td><p>The first Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">two</span></td>
-        <td></td>
+        <td><p>The second Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1478,7 +1564,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>A bool representing whether the two Matrix instances are equal</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1487,11 +1574,13 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_op_Inequality_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.op_Inequality(Ampere.MathUtils.Matrix%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L304">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L306">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Inequality_" data-uid="Ampere.MathUtils.Matrix.op_Inequality*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Inequality_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Inequality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">Inequality(Matrix, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to compare two Matrix instances for equality. Equality is defined by structure and values, meaning that
+both matrices must have an equal dimension and every value in both matrices must be equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1510,12 +1599,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">one</span></td>
-        <td></td>
+        <td><p>The first Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">two</span></td>
-        <td></td>
+        <td><p>The second Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1530,7 +1621,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>A new Matrix instance containing the added values</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1543,7 +1635,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_LogicalNot_" data-uid="Ampere.MathUtils.Matrix.op_LogicalNot*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_LogicalNot_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_LogicalNot(Ampere.MathUtils.Matrix)">LogicalNot(Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to negate a matrix. Every value in the Matrix provided will be negated.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1562,7 +1655,8 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1577,7 +1671,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1590,7 +1685,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Modulus_" data-uid="Ampere.MathUtils.Matrix.op_Modulus*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Modulus_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.op_Modulus(Ampere.MathUtils.Matrix,System.Double)">Modulus(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to mod a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1609,12 +1705,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1629,7 +1727,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1642,7 +1741,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Modulus_" data-uid="Ampere.MathUtils.Matrix.op_Modulus*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Modulus_System_Double_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Modulus(System.Double,Ampere.MathUtils.Matrix)">Modulus(Double, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to mod a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1661,12 +1761,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1681,7 +1783,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1694,7 +1797,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Multiply_" data-uid="Ampere.MathUtils.Matrix.op_Multiply*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Multiply_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">Multiply(Matrix, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to compute the dot product of two Matrix instances.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1713,12 +1817,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">one</span></td>
-        <td></td>
+        <td><p>The first Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">two</span></td>
-        <td></td>
+        <td><p>The second Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1733,7 +1839,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>A new Matrix instance containing dot product</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1742,11 +1849,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_op_Multiply_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L163">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L161">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Multiply_" data-uid="Ampere.MathUtils.Matrix.op_Multiply*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Multiply_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,System.Double)">Multiply(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to multiply a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1765,12 +1873,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1785,7 +1895,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1794,11 +1905,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_op_Multiply_System_Double_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.op_Multiply(System.Double%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L171">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L169">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Multiply_" data-uid="Ampere.MathUtils.Matrix.op_Multiply*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Multiply_System_Double_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Multiply(System.Double,Ampere.MathUtils.Matrix)">Multiply(Double, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to multiply a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1817,12 +1929,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1837,7 +1951,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1850,7 +1965,8 @@ class includes mathematical matrix operations to manipulate it.</p>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Subtraction_" data-uid="Ampere.MathUtils.Matrix.op_Subtraction*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Subtraction_Ampere_MathUtils_Matrix_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)">Subtraction(Matrix, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to subtract two Matrix instances.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1869,12 +1985,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">one</span></td>
-        <td></td>
+        <td><p>The first Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">two</span></td>
-        <td></td>
+        <td><p>The second Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1889,7 +2007,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>A new Matrix instance containing the added values</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1898,11 +2017,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_op_Subtraction_Ampere_MathUtils_Matrix_System_Double_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L147">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L145">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Subtraction_" data-uid="Ampere.MathUtils.Matrix.op_Subtraction*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Subtraction_Ampere_MathUtils_Matrix_System_Double_" data-uid="Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,System.Double)">Subtraction(Matrix, Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to subtract a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1921,12 +2041,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1941,7 +2063,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1950,11 +2073,12 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_op_Subtraction_System_Double_Ampere_MathUtils_Matrix_.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.op_Subtraction(System.Double%2CAmpere.MathUtils.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L155">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L153">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_op_Subtraction_" data-uid="Ampere.MathUtils.Matrix.op_Subtraction*"></a>
   <h4 id="Ampere_MathUtils_Matrix_op_Subtraction_System_Double_Ampere_MathUtils_Matrix_" data-uid="Ampere.MathUtils.Matrix.op_Subtraction(System.Double,Ampere.MathUtils.Matrix)">Subtraction(Double, Matrix)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An operator method to subtract a matrix instance with a scalar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1973,12 +2097,14 @@ class includes mathematical matrix operations to manipulate it.</p>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">scalar</span></td>
-        <td></td>
+        <td><p>The scalar value</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
         <td><span class="parametername">m</span></td>
-        <td></td>
+        <td><p>The Matrix instance</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1993,7 +2119,8 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Ampere.MathUtils.Matrix.html">Matrix</a></td>
-        <td></td>
+        <td><p>The Matrix after the scalar has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2004,11 +2131,13 @@ class includes mathematical matrix operations to manipulate it.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_MathUtils_Matrix_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20Ampere.MathUtils.Matrix.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L472">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/MathUtils/Matrix.cs/#L466">View Source</a>
   </span>
   <a id="Ampere_MathUtils_Matrix_System_Collections_IEnumerable_GetEnumerator_" data-uid="Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator*"></a>
   <h4 id="Ampere_MathUtils_Matrix_System_Collections_IEnumerable_GetEnumerator" data-uid="Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the non-generic Enumerator for the Matrix. This returns the generic <a class="xref" href="Ampere.MathUtils.Matrix.html#Ampere_MathUtils_Matrix_GetEnumerator">GetEnumerator()</a> method
+under the hood.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2025,13 +2154,14 @@ class includes mathematical matrix operations to manipulate it.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.IEnumerator</span></td>
-        <td></td>
+        <td><p>An <span class="xref">System.Collections.IEnumerator</span> instance for the Matrix</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Ampere.MathUtils.IMatrixer-1.html">IMatrixer&lt;T&gt;</a>
+      <a class="xref" href="Ampere.MathUtils.IMatrixer.html">IMatrixer</a>
   </div>
   <div>
       <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>

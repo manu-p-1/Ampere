@@ -44,9 +44,8 @@
 - uid: Ampere.MathUtils
   name: Ampere.MathUtils
   items:
-  - uid: Ampere.MathUtils.IMatrixer`1
-    name: IMatrixer<T>
-    name.vb: IMatrixer(Of T)
+  - uid: Ampere.MathUtils.IMatrixer
+    name: IMatrixer
   - uid: Ampere.MathUtils.Matrix
     name: Matrix
   - uid: Ampere.MathUtils.MatrixPropertyException

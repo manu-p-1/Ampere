@@ -38,9 +38,7 @@ items:
       <Serializable>
 
       Public Class MatrixPropertyException
-
           Inherits Exception
-
           Implements ISerializable
   inheritance:
   - System.Object

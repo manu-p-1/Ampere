@@ -32,9 +32,7 @@ items:
     content: 'public class IntRange : Range<int>, IRangify<int>, IEnumerable<int>, IEnumerable'
     content.vb: >-
       Public Class IntRange
-
           Inherits Range(Of Integer)
-
           Implements IRangify(Of Integer), IEnumerable(Of Integer), IEnumerable
   inheritance:
   - System.Object

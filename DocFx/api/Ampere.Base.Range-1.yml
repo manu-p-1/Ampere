@@ -31,14 +31,20 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
+  summary: >
+    The range class represents a range of values of a generic type.
+
+    The Range class which was modified from user @drharris on StackOverflow.
+
+    By convention, both sides of the range should be inclusive values.
   example: []
   syntax:
     content: 'public class Range<T> : IRangify<T> where T : IComparable<T>'
     typeParameters:
     - id: T
+      description: The generic parameter
     content.vb: >-
       Public Class Range(Of T As IComparable(Of T))
-
           Implements IRangify(Of T)
   inheritance:
   - System.Object
@@ -84,6 +90,12 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
+  summary: >
+    The range class represents a range of values of a generic type.
+
+    The Range class which was modified from user @drharris on StackOverflow.
+
+    By convention, both sides of the range should be inclusive values.
   example: []
   syntax:
     content: public T Minimum { get; set; }
@@ -124,6 +136,12 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
+  summary: >
+    The range class represents a range of values of a generic type.
+
+    The Range class which was modified from user @drharris on StackOverflow.
+
+    By convention, both sides of the range should be inclusive values.
   example: []
   syntax:
     content: public T Maximum { get; set; }
@@ -205,6 +223,12 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
+  summary: >
+    The range class represents a range of values of a generic type.
+
+    The Range class which was modified from user @drharris on StackOverflow.
+
+    By convention, both sides of the range should be inclusive values.
   example: []
   syntax:
     content: public override string ToString()
@@ -243,11 +267,18 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
+  summary: >
+    The range class represents a range of values of a generic type.
+
+    The Range class which was modified from user @drharris on StackOverflow.
+
+    By convention, both sides of the range should be inclusive values.
   example: []
   syntax:
     content: public bool IsValid()
     return:
       type: System.Boolean
+      description: True if range is valid, else false
     content.vb: Public Function IsValid As Boolean
   overload: Ampere.Base.Range`1.IsValid*
   implements:
@@ -280,14 +311,22 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
+  summary: >
+    The range class represents a range of values of a generic type.
+
+    The Range class which was modified from user @drharris on StackOverflow.
+
+    By convention, both sides of the range should be inclusive values.
   example: []
   syntax:
     content: public bool ContainsValue(T value)
     parameters:
     - id: value
       type: '{T}'
+      description: The value to test
     return:
       type: System.Boolean
+      description: True if the value is inside Range, else false
     content.vb: Public Function ContainsValue(value As T) As Boolean
   overload: Ampere.Base.Range`1.ContainsValue*
   implements:
@@ -320,6 +359,12 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
+  summary: >
+    The range class represents a range of values of a generic type.
+
+    The Range class which was modified from user @drharris on StackOverflow.
+
+    By convention, both sides of the range should be inclusive values.
   example: []
   syntax:
     content: public bool IsInsideRange(IRangify<T> range)
@@ -328,6 +373,7 @@ items:
       type: Ampere.Base.IRangify{{T}}
     return:
       type: System.Boolean
+      description: True if range is inclusive, else false
     content.vb: Public Function IsInsideRange(range As IRangify(Of T)) As Boolean
   overload: Ampere.Base.Range`1.IsInsideRange*
   implements:
@@ -361,6 +407,12 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
+  summary: >
+    The range class represents a range of values of a generic type.
+
+    The Range class which was modified from user @drharris on StackOverflow.
+
+    By convention, both sides of the range should be inclusive values.
   example: []
   syntax:
     content: public bool ContainsRange(IRangify<T> range)

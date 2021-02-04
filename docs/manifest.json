@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.Base.IRangify-1.html",
-          "hash": "lPMZPfi+PZSlllVhbkT37g=="
+          "hash": "Xs+xxNvx3e0MVvmiaVaRDQ=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.Base.ImmutableRange-1.html",
-          "hash": "F7ePjViP8y6gPT+tKx2hNA=="
+          "hash": "lXp0dDCqNJzBzT2otVSNyA=="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.Base.Range-1.html",
-          "hash": "E4ZzxZB08cpkdT5XRhSTWA=="
+          "hash": "Rhe2XMWM/PAD8i0VutfPfA=="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.Base.html",
-          "hash": "dIOmQMoGdziUlyW98hkqNQ=="
+          "hash": "rq8iyISzW2Ry48pKqbxT7Q=="
         }
       },
       "is_incremental": false,
@@ -194,11 +194,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.MathUtils.IMatrixer-1.yml",
+      "source_relative_path": "api/Ampere.MathUtils.IMatrixer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.MathUtils.IMatrixer-1.html",
-          "hash": "mZ81BWLCAmwqtjpVH5aqZw=="
+          "relative_path": "api/Ampere.MathUtils.IMatrixer.html",
+          "hash": "k1Ksg72WdzEC8Cge4qN2TA=="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.MathUtils.Matrix.html",
-          "hash": "BOOWvMdasNKANu72GJkQsw=="
+          "hash": "GWaMhcHBg2l09dvhtvN3cg=="
         }
       },
       "is_incremental": false,
@@ -234,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.MathUtils.html",
-          "hash": "3lOTQf39JuxnZZ0oVGmFZA=="
+          "hash": "HTZMbZciSEv/qcGnJa17sw=="
         }
       },
       "is_incremental": false,
@@ -258,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.Statistics.InsufficientDataSetException.html",
-          "hash": "/hPajj0AFNGfHQ7PmU5/1Q=="
+          "hash": "m3SkA874g0gLGb9H8o8Y0w=="
         }
       },
       "is_incremental": false,
@@ -270,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.Statistics.NoModeException.html",
-          "hash": "FAPU/zIIvsUs7zeTU/4MaA=="
+          "hash": "auXRbKK7hAXJmrwCLnC7WA=="
         }
       },
       "is_incremental": false,
@@ -282,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.Statistics.html",
-          "hash": "zbUt8chhbfk8CexIRFBcJA=="
+          "hash": "fTxh1s2GeIInxHuFj+FyJA=="
         }
       },
       "is_incremental": false,
@@ -318,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "1L42SNY4BMMFrL9qj79z5A=="
+          "hash": "a+uhaZD87nu1Rp75D29KCQ=="
         }
       },
       "is_incremental": false,

@@ -27,7 +27,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Statistics
-  summary: "\n\n"
+  summary: "\nAn exception that is thrown when no Mode exists in the data set.\n"
   example: []
   syntax:
     content: >-
@@ -38,9 +38,7 @@ items:
       <Serializable>
 
       Public Class NoModeException
-
           Inherits Exception
-
           Implements ISerializable
   inheritance:
   - System.Object
@@ -98,7 +96,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Statistics
-  summary: "\n\n"
+  summary: "\nCreates a new NoModeException.\n"
   example: []
   syntax:
     content: public NoModeException()
@@ -130,14 +128,14 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Statistics
-  summary: "\n\n"
+  summary: "\nCreates a new overloaded NoModeException containing a message.\n"
   example: []
   syntax:
     content: public NoModeException(string message)
     parameters:
     - id: message
       type: System.String
-      description: ''
+      description: The message of this exception type
     content.vb: Public Sub New(message As String)
   overload: Ampere.Statistics.NoModeException.#ctor*
   modifiers.csharp:
@@ -166,17 +164,17 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Statistics
-  summary: "\n\n"
+  summary: "\nCreates a new overloaded NoModeException containing a message and an inner Exception.\n"
   example: []
   syntax:
     content: public NoModeException(string message, Exception inner)
     parameters:
     - id: message
       type: System.String
-      description: ''
+      description: The message of this exception type
     - id: inner
       type: System.Exception
-      description: ''
+      description: The inner Exception
     content.vb: Public Sub New(message As String, inner As Exception)
   overload: Ampere.Statistics.NoModeException.#ctor*
   modifiers.csharp:
@@ -201,21 +199,21 @@ items:
       repo: https://github.com/manu-p-1/Ampere
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - Ampere
   namespace: Ampere.Statistics
-  summary: "\n\n"
+  summary: "\nCreates a new overloaded NoModeException containing a <xref href=\"System.Runtime.Serialization.SerializationInfo\" data-throw-if-not-resolved=\"false\"></xref> instance\nand a <xref href=\"System.Runtime.Serialization.StreamingContext\" data-throw-if-not-resolved=\"false\"></xref> instance.\n"
   example: []
   syntax:
     content: protected NoModeException(SerializationInfo info, StreamingContext context)
     parameters:
     - id: info
       type: System.Runtime.Serialization.SerializationInfo
-      description: ''
+      description: The SerializationInfo instance
     - id: context
       type: System.Runtime.Serialization.StreamingContext
-      description: ''
+      description: The StreamingContext instance
     content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
   overload: Ampere.Statistics.NoModeException.#ctor*
   modifiers.csharp:
