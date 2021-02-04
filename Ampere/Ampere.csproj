@@ -2,15 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Version>0.2.6</Version>
+    <Version>0.1.0</Version>
     <Company />
-    <Description>PowerShell 7 utility cmdlets</Description>
+    <Description>A robust library of .NET utilities</Description>
     <Copyright>Copyright © Manu Puduvalli 2021</Copyright>
-    <PackageProjectUrl>https://github.com/manu-p-1/PowerPlug</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/manu-p-1/PowerPlug</RepositoryUrl>
-    <FileVersion>0.2.6</FileVersion>
-    <AssemblyVersion>0.2.6</AssemblyVersion>
-    <ApplicationIcon>PowerPlugIcon.ico</ApplicationIcon>
+    <PackageProjectUrl>https://github.com/manu-p-1/Ampere</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/manu-p-1/Ampere</RepositoryUrl>
+    <FileVersion>0.1.0</FileVersion>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <ApplicationIcon></ApplicationIcon>
+    <Authors>The Ampere Authors</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
