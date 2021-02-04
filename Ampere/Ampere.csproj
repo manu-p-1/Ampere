@@ -10,9 +10,10 @@
     <RepositoryUrl>https://github.com/manu-p-1/Ampere</RepositoryUrl>
     <FileVersion>0.1.0</FileVersion>
     <AssemblyVersion>0.1.0</AssemblyVersion>
-    <ApplicationIcon></ApplicationIcon>
+    <ApplicationIcon>C:\Users\Manu\source\repos\Ampere\assets\AmpereIcon.ico</ApplicationIcon>
     <Authors>The Ampere Authors</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>AmpereIcon.ico</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -28,6 +29,13 @@
 
   <ItemGroup>
     <Folder Include="assets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\assets\AmpereIcon.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
