@@ -40,8 +40,8 @@ namespace Ampere.MathUtils
         /// Returns whether two <see cref="Matrix"/> instances are of the same dimension.
         /// Same dimension means that the rows and the columns of both instances are the same.
         /// </summary>
-        /// <param name="one"></param>
-        /// <param name="two"></param>
+        /// <param name="one">The first IMatrixer instance</param>
+        /// <param name="two">The second IMatrixer instance</param>
         /// <returns></returns>
         public static bool EqualDimension(IMatrixer one, IMatrixer two)
         {
@@ -51,9 +51,27 @@ namespace Ampere.MathUtils
         }
 
         /// <summary>
+        /// Returns whether the number of Rows equals 1
+        /// </summary>
+        /// <returns>A bool specifying whether the number of Rows equals 1</returns>
+        public bool IsRowVector();
+
+        /// <summary>
+        /// Returns whether the number of Columns equals 1.
+        /// </summary>
+        /// <returns>A bool specifying whether the number of Columns equals 1</returns>
+        public bool IsColumnVector();
+
+        /// <summary>
+        /// Returns whether the number of Rows equals the number of Columns.
+        /// </summary>
+        /// <returns>A bool specifying whether the number of Rows equals the number of columns</returns>
+        public bool IsSquareVector();
+
+        /// <summary>
         /// Returns a string representation of an IMatrixer.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>A string representation of the IMatrixer</returns>
         public string ToString();
     }
 }

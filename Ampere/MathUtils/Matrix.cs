@@ -427,28 +427,19 @@ namespace Ampere.MathUtils
             return this == other;
         }
 
-        /// <inheritdoc cref="Object"/>
+        /// <inheritdoc cref="object"/>
         public override int GetHashCode()
         {
             return HashCode.Combine(Values, Rows, Cols);
         }
 
-        /// <summary>
-        /// Returns whether the number of Rows equals 1
-        /// </summary>
-        /// <returns>A bool specifying whether the number of Rows equals 1</returns>
+        /// <inheritdoc cref="IMatrixer"/>
         public bool IsRowVector() => Rows == 1;
 
-        /// <summary>
-        /// Returns whether the number of Columns equals 1.
-        /// </summary>
-        /// <returns>A bool specifying whether the number of Columns equals 1</returns>
+        /// <inheritdoc cref="IMatrixer"/>
         public bool IsColumnVector() => Cols == 1;
 
-        /// <summary>
-        /// Returns whether the number of Rows equals the number of Columns.
-        /// </summary>
-        /// <returns>A bool specifying whether the number of Rows equals the number of columns</returns>
+        /// <inheritdoc cref="IMatrixer"/>
         public bool IsSquareVector() => Rows == Cols;
 
         /// <summary>
