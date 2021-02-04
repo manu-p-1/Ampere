@@ -30,7 +30,7 @@ Ampere is a robust .NET utility library written in C#. It's main purpose is to m
 
 ## Execution
 ### Add the dependency to your project with NuGet
-You can install the latest release to PowerShell 7 by running:
+You can install the latest release with NuGet by running:
 
 
 ### Install from GitHub Releases
