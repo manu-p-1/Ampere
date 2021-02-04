@@ -60,7 +60,7 @@ HTML pages which are used by <https://powerplug.me>. Lastly, as a fluid reposito
 There are two planned releases - the latest being by **July 2021**:
 
 - 0.1.0 - First full release of Ampere
-- 0.2.0 - Full release with with more statistics oriented classes to analyze data.
+- 0.2.0 - Additional statistics data analysis tools.
 
 ## State
 Ampere is a very fluid project and you may encounter issues during execution, especially for preleases. To report an issue visit, [Ampere Issues](https://github.com/manu-p-1/Ampere/issues), or to contribute, view the contribution guidelines.
