@@ -3,8 +3,8 @@
 namespace Ampere.Base.Attributes
 {
     /// <summary>
-    /// The BetaCmdlet attribute represents any cmdlets which are functional, but may result in unintended behavior due
-    /// to its "beta" state.
+    /// The BetaCmdlet attribute represents any Classes, Structs, Methods, Interfaces, or Enums which are functional,
+    /// but may result in unintended behavior do to its "beta" state.
     /// </summary>
     [System.AttributeUsage(System.AttributeTargets.Class |
                            System.AttributeTargets.Struct |
