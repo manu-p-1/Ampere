@@ -26,7 +26,7 @@
 </p>
 
 ## Introduction
-Ampere is a robust .NET utility library written in C#. It's main purpose is to make developement more productive and easier. The Ampere docs can be found at <https://powerplug.me>
+Ampere is a robust .NET utility library written in C#. It's main purpose is to make development more productive and easier. The Ampere docs can be found at <https://powerplug.me>
 
 ## Execution
 ### Add the dependency to your project with NuGet
