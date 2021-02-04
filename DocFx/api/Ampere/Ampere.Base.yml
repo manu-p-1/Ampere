@@ -1,0 +1,433 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Base
+  commentId: N:Ampere.Base
+  id: Ampere.Base
+  children:
+  - Ampere.Base.IIndexable`2
+  - Ampere.Base.IIndexableDouble`2
+  - Ampere.Base.IIndexableDoubleReadOnly`2
+  - Ampere.Base.IIndexableReadOnly`2
+  - Ampere.Base.IIndexableTriple`2
+  - Ampere.Base.IIndexableTripleReadOnly`2
+  - Ampere.Base.ImmutableRange`1
+  - Ampere.Base.IntRange
+  - Ampere.Base.IRangify`1
+  - Ampere.Base.Range`1
+  langs:
+  - csharp
+  - vb
+  name: Ampere.Base
+  nameWithType: Ampere.Base
+  fullName: Ampere.Base
+  type: Namespace
+  assemblies:
+  - Ampere
+references:
+- uid: Ampere.Base.IIndexable`2
+  commentId: T:Ampere.Base.IIndexable`2
+  name: IIndexable<TKey, TVal>
+  nameWithType: IIndexable<TKey, TVal>
+  fullName: Ampere.Base.IIndexable<TKey, TVal>
+  nameWithType.vb: IIndexable(Of TKey, TVal)
+  fullName.vb: Ampere.Base.IIndexable(Of TKey, TVal)
+  name.vb: IIndexable(Of TKey, TVal)
+  spec.csharp:
+  - uid: Ampere.Base.IIndexable`2
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: Ampere.Base.IIndexable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IIndexable`2
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: Ampere.Base.IIndexable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IIndexableReadOnly`2
+  commentId: T:Ampere.Base.IIndexableReadOnly`2
+  name: IIndexableReadOnly<TKey, TVal>
+  nameWithType: IIndexableReadOnly<TKey, TVal>
+  fullName: Ampere.Base.IIndexableReadOnly<TKey, TVal>
+  nameWithType.vb: IIndexableReadOnly(Of TKey, TVal)
+  fullName.vb: Ampere.Base.IIndexableReadOnly(Of TKey, TVal)
+  name.vb: IIndexableReadOnly(Of TKey, TVal)
+  spec.csharp:
+  - uid: Ampere.Base.IIndexableReadOnly`2
+    name: IIndexableReadOnly
+    nameWithType: IIndexableReadOnly
+    fullName: Ampere.Base.IIndexableReadOnly
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IIndexableReadOnly`2
+    name: IIndexableReadOnly
+    nameWithType: IIndexableReadOnly
+    fullName: Ampere.Base.IIndexableReadOnly
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IIndexableDouble`2
+  commentId: T:Ampere.Base.IIndexableDouble`2
+  name: IIndexableDouble<TKey, TVal>
+  nameWithType: IIndexableDouble<TKey, TVal>
+  fullName: Ampere.Base.IIndexableDouble<TKey, TVal>
+  nameWithType.vb: IIndexableDouble(Of TKey, TVal)
+  fullName.vb: Ampere.Base.IIndexableDouble(Of TKey, TVal)
+  name.vb: IIndexableDouble(Of TKey, TVal)
+  spec.csharp:
+  - uid: Ampere.Base.IIndexableDouble`2
+    name: IIndexableDouble
+    nameWithType: IIndexableDouble
+    fullName: Ampere.Base.IIndexableDouble
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IIndexableDouble`2
+    name: IIndexableDouble
+    nameWithType: IIndexableDouble
+    fullName: Ampere.Base.IIndexableDouble
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IIndexableDoubleReadOnly`2
+  commentId: T:Ampere.Base.IIndexableDoubleReadOnly`2
+  name: IIndexableDoubleReadOnly<TKey, TVal>
+  nameWithType: IIndexableDoubleReadOnly<TKey, TVal>
+  fullName: Ampere.Base.IIndexableDoubleReadOnly<TKey, TVal>
+  nameWithType.vb: IIndexableDoubleReadOnly(Of TKey, TVal)
+  fullName.vb: Ampere.Base.IIndexableDoubleReadOnly(Of TKey, TVal)
+  name.vb: IIndexableDoubleReadOnly(Of TKey, TVal)
+  spec.csharp:
+  - uid: Ampere.Base.IIndexableDoubleReadOnly`2
+    name: IIndexableDoubleReadOnly
+    nameWithType: IIndexableDoubleReadOnly
+    fullName: Ampere.Base.IIndexableDoubleReadOnly
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IIndexableDoubleReadOnly`2
+    name: IIndexableDoubleReadOnly
+    nameWithType: IIndexableDoubleReadOnly
+    fullName: Ampere.Base.IIndexableDoubleReadOnly
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IIndexableTriple`2
+  commentId: T:Ampere.Base.IIndexableTriple`2
+  name: IIndexableTriple<TKey, TVal>
+  nameWithType: IIndexableTriple<TKey, TVal>
+  fullName: Ampere.Base.IIndexableTriple<TKey, TVal>
+  nameWithType.vb: IIndexableTriple(Of TKey, TVal)
+  fullName.vb: Ampere.Base.IIndexableTriple(Of TKey, TVal)
+  name.vb: IIndexableTriple(Of TKey, TVal)
+  spec.csharp:
+  - uid: Ampere.Base.IIndexableTriple`2
+    name: IIndexableTriple
+    nameWithType: IIndexableTriple
+    fullName: Ampere.Base.IIndexableTriple
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IIndexableTriple`2
+    name: IIndexableTriple
+    nameWithType: IIndexableTriple
+    fullName: Ampere.Base.IIndexableTriple
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IIndexableTripleReadOnly`2
+  commentId: T:Ampere.Base.IIndexableTripleReadOnly`2
+  name: IIndexableTripleReadOnly<TKey, TVal>
+  nameWithType: IIndexableTripleReadOnly<TKey, TVal>
+  fullName: Ampere.Base.IIndexableTripleReadOnly<TKey, TVal>
+  nameWithType.vb: IIndexableTripleReadOnly(Of TKey, TVal)
+  fullName.vb: Ampere.Base.IIndexableTripleReadOnly(Of TKey, TVal)
+  name.vb: IIndexableTripleReadOnly(Of TKey, TVal)
+  spec.csharp:
+  - uid: Ampere.Base.IIndexableTripleReadOnly`2
+    name: IIndexableTripleReadOnly
+    nameWithType: IIndexableTripleReadOnly
+    fullName: Ampere.Base.IIndexableTripleReadOnly
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IIndexableTripleReadOnly`2
+    name: IIndexableTripleReadOnly
+    nameWithType: IIndexableTripleReadOnly
+    fullName: Ampere.Base.IIndexableTripleReadOnly
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TVal
+    nameWithType: TVal
+    fullName: TVal
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.ImmutableRange`1
+  commentId: T:Ampere.Base.ImmutableRange`1
+  name: ImmutableRange<T>
+  nameWithType: ImmutableRange<T>
+  fullName: Ampere.Base.ImmutableRange<T>
+  nameWithType.vb: ImmutableRange(Of T)
+  fullName.vb: Ampere.Base.ImmutableRange(Of T)
+  name.vb: ImmutableRange(Of T)
+  spec.csharp:
+  - uid: Ampere.Base.ImmutableRange`1
+    name: ImmutableRange
+    nameWithType: ImmutableRange
+    fullName: Ampere.Base.ImmutableRange
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.ImmutableRange`1
+    name: ImmutableRange
+    nameWithType: ImmutableRange
+    fullName: Ampere.Base.ImmutableRange
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IntRange
+  commentId: T:Ampere.Base.IntRange
+  name: IntRange
+  nameWithType: IntRange
+  fullName: Ampere.Base.IntRange
+- uid: Ampere.Base.IRangify`1
+  commentId: T:Ampere.Base.IRangify`1
+  parent: Ampere.Base
+  name: IRangify<T>
+  nameWithType: IRangify<T>
+  fullName: Ampere.Base.IRangify<T>
+  nameWithType.vb: IRangify(Of T)
+  fullName.vb: Ampere.Base.IRangify(Of T)
+  name.vb: IRangify(Of T)
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1
+  commentId: T:Ampere.Base.Range`1
+  name: Range<T>
+  nameWithType: Range<T>
+  fullName: Ampere.Base.Range<T>
+  nameWithType.vb: Range(Of T)
+  fullName.vb: Ampere.Base.Range(Of T)
+  name.vb: Range(Of T)
+  spec.csharp:
+  - uid: Ampere.Base.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Ampere.Base.Range
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Ampere.Base.Range
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base
+  commentId: N:Ampere.Base
+  name: Ampere.Base
+  nameWithType: Ampere.Base
+  fullName: Ampere.Base

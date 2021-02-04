@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.EnumerableUtils
+  commentId: N:Ampere.EnumerableUtils
+  id: Ampere.EnumerableUtils
+  children:
+  - Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: Ampere.EnumerableUtils
+  nameWithType: Ampere.EnumerableUtils
+  fullName: Ampere.EnumerableUtils
+  type: Namespace
+  assemblies:
+  - Ampere
+references:
+- uid: Ampere.EnumerableUtils.EnumerableUtils
+  commentId: T:Ampere.EnumerableUtils.EnumerableUtils
+  parent: Ampere.EnumerableUtils
+  name: EnumerableUtils
+  nameWithType: EnumerableUtils
+  fullName: Ampere.EnumerableUtils.EnumerableUtils
+- uid: Ampere.EnumerableUtils
+  commentId: N:Ampere.EnumerableUtils
+  name: Ampere.EnumerableUtils
+  nameWithType: Ampere.EnumerableUtils
+  fullName: Ampere.EnumerableUtils

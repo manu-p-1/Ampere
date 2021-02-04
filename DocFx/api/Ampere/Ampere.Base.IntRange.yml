@@ -1,0 +1,4458 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Base.IntRange
+  commentId: T:Ampere.Base.IntRange
+  id: IntRange
+  parent: Ampere.Base
+  children:
+  - Ampere.Base.IntRange.#ctor(System.Int32,System.Int32)
+  - Ampere.Base.IntRange.GetEnumerator
+  - Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: IntRange
+  nameWithType: IntRange
+  fullName: Ampere.Base.IntRange
+  type: Class
+  source:
+    remote:
+      path: Ampere/Base/IntRange.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IntRange
+    path: ../Ampere/Base/IntRange.cs
+    startLine: 11
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nThe range class represents a range of int values. Unlike other <xref href=\"Ampere.Base.IRangify%601\" data-throw-if-not-resolved=\"false\"></xref> implementing classes,\nIntRange contains an <xref href=\"System.Collections.Generic.IEnumerator%601\" data-throw-if-not-resolved=\"false\"></xref> of type int to enumerate through all of the values between\nthe minimum and maximum ranges. By convention, both sides of the range should be inclusive values.\n"
+  example: []
+  syntax:
+    content: 'public class IntRange : Range<int>, IRangify<int>, IEnumerable<int>, IEnumerable'
+    content.vb: >-
+      Public Class IntRange
+
+          Inherits Range(Of Integer)
+
+          Implements IRangify(Of Integer), IEnumerable(Of Integer), IEnumerable
+  inheritance:
+  - System.Object
+  - Ampere.Base.Range{System.Int32}
+  implements:
+  - Ampere.Base.IRangify{System.Int32}
+  - System.Collections.Generic.IEnumerable{System.Int32}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - Ampere.Base.Range{System.Int32}.Minimum
+  - Ampere.Base.Range{System.Int32}.Maximum
+  - Ampere.Base.Range{System.Int32}.ToString
+  - Ampere.Base.Range{System.Int32}.IsValid
+  - Ampere.Base.Range{System.Int32}.ContainsValue(System.Int32)
+  - Ampere.Base.Range{System.Int32}.IsInsideRange(Ampere.Base.IRangify{System.Int32})
+  - Ampere.Base.Range{System.Int32}.ContainsRange(Ampere.Base.IRangify{System.Int32})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Mean``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Median``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Mode``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Range``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Func{System.Int32,System.Double},System.Double)
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Func{System.Int32,System.Double})
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Func{System.Int32,System.Double},System.Double)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Ampere.Base.IntRange.#ctor(System.Int32,System.Int32)
+  commentId: M:Ampere.Base.IntRange.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: Ampere.Base.IntRange
+  langs:
+  - csharp
+  - vb
+  name: IntRange(Int32, Int32)
+  nameWithType: IntRange.IntRange(Int32, Int32)
+  fullName: Ampere.Base.IntRange.IntRange(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: Ampere/Base/IntRange.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: .ctor
+    path: ../Ampere/Base/IntRange.cs
+    startLine: 18
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nCreates a new instance of IntRange, specifying the minimum and maximum values.\n"
+  example: []
+  syntax:
+    content: public IntRange(int minimum, int maximum)
+    parameters:
+    - id: minimum
+      type: System.Int32
+      description: ''
+    - id: maximum
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(minimum As Integer, maximum As Integer)
+  overload: Ampere.Base.IntRange.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Ampere.Base.IntRange.GetEnumerator
+  commentId: M:Ampere.Base.IntRange.GetEnumerator
+  id: GetEnumerator
+  parent: Ampere.Base.IntRange
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: IntRange.GetEnumerator()
+  fullName: Ampere.Base.IntRange.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/IntRange.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: GetEnumerator
+    path: ../Ampere/Base/IntRange.cs
+    startLine: 25
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nReturns an instance of the IntRangeEnumerator that&apos;s used to enumerate through the range\nvalues of this instance.\n"
+  example: []
+  syntax:
+    content: public IEnumerator<int> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Int32}
+      description: An instance of the IntRangeEnumerator class
+    content.vb: Public Function GetEnumerator As IEnumerator(Of Integer)
+  overload: Ampere.Base.IntRange.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Int32}.GetEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: Ampere.Base.IntRange
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  nameWithType: IntRange.IEnumerable.GetEnumerator()
+  fullName: Ampere.Base.IntRange.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/IntRange.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: ../Ampere/Base/IntRange.cs
+    startLine: 32
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nReturns an instance of the IntRangeEnumerator that&apos;s used to enumerate through the range\nvalues of this instance.\n"
+  example: []
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+      description: An instance of the IntRangeEnumerator class
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+  overload: Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: IntRange.System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+references:
+- uid: Ampere.Base.IRangify`1
+  commentId: T:Ampere.Base.IRangify`1
+  parent: Ampere.Base
+  name: IRangify<T>
+  nameWithType: IRangify<T>
+  fullName: Ampere.Base.IRangify<T>
+  nameWithType.vb: IRangify(Of T)
+  fullName.vb: Ampere.Base.IRangify(Of T)
+  name.vb: IRangify(Of T)
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base
+  commentId: N:Ampere.Base
+  name: Ampere.Base
+  nameWithType: Ampere.Base
+  fullName: Ampere.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Ampere.Base.Range{System.Int32}
+  commentId: T:Ampere.Base.Range{System.Int32}
+  parent: Ampere.Base
+  definition: Ampere.Base.Range`1
+  name: Range<Int32>
+  nameWithType: Range<Int32>
+  fullName: Ampere.Base.Range<System.Int32>
+  nameWithType.vb: Range(Of Int32)
+  fullName.vb: Ampere.Base.Range(Of System.Int32)
+  name.vb: Range(Of Int32)
+  spec.csharp:
+  - uid: Ampere.Base.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Ampere.Base.Range
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Ampere.Base.Range
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IRangify{System.Int32}
+  commentId: T:Ampere.Base.IRangify{System.Int32}
+  parent: Ampere.Base
+  definition: Ampere.Base.IRangify`1
+  name: IRangify<Int32>
+  nameWithType: IRangify<Int32>
+  fullName: Ampere.Base.IRangify<System.Int32>
+  nameWithType.vb: IRangify(Of Int32)
+  fullName.vb: Ampere.Base.IRangify(Of System.Int32)
+  name.vb: IRangify(Of Int32)
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Int32>
+  nameWithType: IEnumerable<Int32>
+  fullName: System.Collections.Generic.IEnumerable<System.Int32>
+  nameWithType.vb: IEnumerable(Of Int32)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Int32)
+  name.vb: IEnumerable(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: Ampere.Base.Range{System.Int32}.Minimum
+  commentId: P:Ampere.Base.Range{System.Int32}.Minimum
+  parent: Ampere.Base.Range{System.Int32}
+  definition: Ampere.Base.Range`1.Minimum
+  name: Minimum
+  nameWithType: Range<Int32>.Minimum
+  fullName: Ampere.Base.Range<System.Int32>.Minimum
+  nameWithType.vb: Range(Of Int32).Minimum
+  fullName.vb: Ampere.Base.Range(Of System.Int32).Minimum
+- uid: Ampere.Base.Range{System.Int32}.Maximum
+  commentId: P:Ampere.Base.Range{System.Int32}.Maximum
+  parent: Ampere.Base.Range{System.Int32}
+  definition: Ampere.Base.Range`1.Maximum
+  name: Maximum
+  nameWithType: Range<Int32>.Maximum
+  fullName: Ampere.Base.Range<System.Int32>.Maximum
+  nameWithType.vb: Range(Of Int32).Maximum
+  fullName.vb: Ampere.Base.Range(Of System.Int32).Maximum
+- uid: Ampere.Base.Range{System.Int32}.ToString
+  commentId: M:Ampere.Base.Range{System.Int32}.ToString
+  parent: Ampere.Base.Range{System.Int32}
+  definition: Ampere.Base.Range`1.ToString
+  name: ToString()
+  nameWithType: Range<Int32>.ToString()
+  fullName: Ampere.Base.Range<System.Int32>.ToString()
+  nameWithType.vb: Range(Of Int32).ToString()
+  fullName.vb: Ampere.Base.Range(Of System.Int32).ToString()
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.ToString
+    name: ToString
+    nameWithType: Range<Int32>.ToString
+    fullName: Ampere.Base.Range<System.Int32>.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.ToString
+    name: ToString
+    nameWithType: Range(Of Int32).ToString
+    fullName: Ampere.Base.Range(Of System.Int32).ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range{System.Int32}.IsValid
+  commentId: M:Ampere.Base.Range{System.Int32}.IsValid
+  parent: Ampere.Base.Range{System.Int32}
+  definition: Ampere.Base.Range`1.IsValid
+  name: IsValid()
+  nameWithType: Range<Int32>.IsValid()
+  fullName: Ampere.Base.Range<System.Int32>.IsValid()
+  nameWithType.vb: Range(Of Int32).IsValid()
+  fullName.vb: Ampere.Base.Range(Of System.Int32).IsValid()
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.IsValid
+    name: IsValid
+    nameWithType: Range<Int32>.IsValid
+    fullName: Ampere.Base.Range<System.Int32>.IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.IsValid
+    name: IsValid
+    nameWithType: Range(Of Int32).IsValid
+    fullName: Ampere.Base.Range(Of System.Int32).IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range{System.Int32}.ContainsValue(System.Int32)
+  commentId: M:Ampere.Base.Range{System.Int32}.ContainsValue(System.Int32)
+  parent: Ampere.Base.Range{System.Int32}
+  definition: Ampere.Base.Range`1.ContainsValue(`0)
+  name: ContainsValue(Int32)
+  nameWithType: Range<Int32>.ContainsValue(Int32)
+  fullName: Ampere.Base.Range<System.Int32>.ContainsValue(System.Int32)
+  nameWithType.vb: Range(Of Int32).ContainsValue(Int32)
+  fullName.vb: Ampere.Base.Range(Of System.Int32).ContainsValue(System.Int32)
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.ContainsValue(`0)
+    name: ContainsValue
+    nameWithType: Range<Int32>.ContainsValue
+    fullName: Ampere.Base.Range<System.Int32>.ContainsValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.ContainsValue(`0)
+    name: ContainsValue
+    nameWithType: Range(Of Int32).ContainsValue
+    fullName: Ampere.Base.Range(Of System.Int32).ContainsValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range{System.Int32}.IsInsideRange(Ampere.Base.IRangify{System.Int32})
+  commentId: M:Ampere.Base.Range{System.Int32}.IsInsideRange(Ampere.Base.IRangify{System.Int32})
+  parent: Ampere.Base.Range{System.Int32}
+  definition: Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name: IsInsideRange(IRangify<Int32>)
+  nameWithType: Range<Int32>.IsInsideRange(IRangify<Int32>)
+  fullName: Ampere.Base.Range<System.Int32>.IsInsideRange(Ampere.Base.IRangify<System.Int32>)
+  nameWithType.vb: Range(Of Int32).IsInsideRange(IRangify(Of Int32))
+  fullName.vb: Ampere.Base.Range(Of System.Int32).IsInsideRange(Ampere.Base.IRangify(Of System.Int32))
+  name.vb: IsInsideRange(IRangify(Of Int32))
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+    name: IsInsideRange
+    nameWithType: Range<Int32>.IsInsideRange
+    fullName: Ampere.Base.Range<System.Int32>.IsInsideRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+    name: IsInsideRange
+    nameWithType: Range(Of Int32).IsInsideRange
+    fullName: Ampere.Base.Range(Of System.Int32).IsInsideRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range{System.Int32}.ContainsRange(Ampere.Base.IRangify{System.Int32})
+  commentId: M:Ampere.Base.Range{System.Int32}.ContainsRange(Ampere.Base.IRangify{System.Int32})
+  parent: Ampere.Base.Range{System.Int32}
+  definition: Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+  name: ContainsRange(IRangify<Int32>)
+  nameWithType: Range<Int32>.ContainsRange(IRangify<Int32>)
+  fullName: Ampere.Base.Range<System.Int32>.ContainsRange(Ampere.Base.IRangify<System.Int32>)
+  nameWithType.vb: Range(Of Int32).ContainsRange(IRangify(Of Int32))
+  fullName.vb: Ampere.Base.Range(Of System.Int32).ContainsRange(Ampere.Base.IRangify(Of System.Int32))
+  name.vb: ContainsRange(IRangify(Of Int32))
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+    name: ContainsRange
+    nameWithType: Range<Int32>.ContainsRange
+    fullName: Ampere.Base.Range<System.Int32>.ContainsRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+    name: ContainsRange
+    nameWithType: Range(Of Int32).ContainsRange
+    fullName: Ampere.Base.Range(Of System.Int32).ContainsRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  definition: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  name: IsNullOrEmpty<Int32>()
+  nameWithType: EnumerableUtils.IsNullOrEmpty<Int32>()
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<System.Int32>()
+  nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of Int32)()
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of System.Int32)()
+  name.vb: IsNullOrEmpty(Of Int32)()
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+    name: IsNullOrEmpty<Int32>
+    nameWithType: EnumerableUtils.IsNullOrEmpty<Int32>
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+    name: IsNullOrEmpty(Of Int32)
+    nameWithType: EnumerableUtils.IsNullOrEmpty(Of Int32)
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  definition: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  name: Shuffle<Int32>()
+  nameWithType: EnumerableUtils.Shuffle<Int32>()
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<System.Int32>()
+  nameWithType.vb: EnumerableUtils.Shuffle(Of Int32)()
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of System.Int32)()
+  name.vb: Shuffle(Of Int32)()
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+    name: Shuffle<Int32>
+    nameWithType: EnumerableUtils.Shuffle<Int32>
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+    name: Shuffle(Of Int32)
+    nameWithType: EnumerableUtils.Shuffle(Of Int32)
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  definition: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  name: ToString<Int32>(String, Boolean)
+  nameWithType: EnumerableUtils.ToString<Int32>(String, Boolean)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<System.Int32>(System.String, System.Boolean)
+  nameWithType.vb: EnumerableUtils.ToString(Of Int32)(String, Boolean)
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of System.Int32)(System.String, System.Boolean)
+  name.vb: ToString(Of Int32)(String, Boolean)
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+    name: ToString<Int32>
+    nameWithType: EnumerableUtils.ToString<Int32>
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+    name: ToString(Of Int32)
+    nameWithType: EnumerableUtils.ToString(Of Int32)
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Mean``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.Mean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.Mean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: Mean<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.Mean<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.Mean<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.Mean(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.Mean(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: Mean(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.Mean``1(System.Func{``0,System.Double})
+    name: Mean<Int32>
+    nameWithType: EnumerableStats.Mean<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.Mean<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.Mean``1(System.Func{``0,System.Double})
+    name: Mean(Of Int32)
+    nameWithType: EnumerableStats.Mean(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.Mean(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Median``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.Median``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.Median``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: Median<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.Median<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.Median<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.Median(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.Median(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: Median(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.Median``1(System.Func{``0,System.Double})
+    name: Median<Int32>
+    nameWithType: EnumerableStats.Median<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.Median<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.Median``1(System.Func{``0,System.Double})
+    name: Median(Of Int32)
+    nameWithType: EnumerableStats.Median(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.Median(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Mode``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.Mode``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.Mode``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: Mode<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.Mode<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.Mode<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.Mode(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.Mode(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: Mode(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.Mode``1(System.Func{``0,System.Double})
+    name: Mode<Int32>
+    nameWithType: EnumerableStats.Mode<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.Mode<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.Mode``1(System.Func{``0,System.Double})
+    name: Mode(Of Int32)
+    nameWithType: EnumerableStats.Mode(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.Mode(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: SampleVariance<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.SampleVariance<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.SampleVariance<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.SampleVariance(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.SampleVariance(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: SampleVariance(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Func{``0,System.Double})
+    name: SampleVariance<Int32>
+    nameWithType: EnumerableStats.SampleVariance<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.SampleVariance<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Func{``0,System.Double})
+    name: SampleVariance(Of Int32)
+    nameWithType: EnumerableStats.SampleVariance(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.SampleVariance(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: PopulationVariance<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.PopulationVariance<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.PopulationVariance<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.PopulationVariance(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.PopulationVariance(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: PopulationVariance(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Func{``0,System.Double})
+    name: PopulationVariance<Int32>
+    nameWithType: EnumerableStats.PopulationVariance<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.PopulationVariance<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Func{``0,System.Double})
+    name: PopulationVariance(Of Int32)
+    nameWithType: EnumerableStats.PopulationVariance(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.PopulationVariance(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: SampleStandardDeviation<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.SampleStandardDeviation<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.SampleStandardDeviation<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.SampleStandardDeviation(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.SampleStandardDeviation(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: SampleStandardDeviation(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Func{``0,System.Double})
+    name: SampleStandardDeviation<Int32>
+    nameWithType: EnumerableStats.SampleStandardDeviation<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.SampleStandardDeviation<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Func{``0,System.Double})
+    name: SampleStandardDeviation(Of Int32)
+    nameWithType: EnumerableStats.SampleStandardDeviation(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.SampleStandardDeviation(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: PopulationStandardDeviation<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.PopulationStandardDeviation<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.PopulationStandardDeviation(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: PopulationStandardDeviation(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Func{``0,System.Double})
+    name: PopulationStandardDeviation<Int32>
+    nameWithType: EnumerableStats.PopulationStandardDeviation<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Func{``0,System.Double})
+    name: PopulationStandardDeviation(Of Int32)
+    nameWithType: EnumerableStats.PopulationStandardDeviation(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Range``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.Range``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.Range``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: Range<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.Range<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.Range<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.Range(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.Range(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: Range(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.Range``1(System.Func{``0,System.Double})
+    name: Range<Int32>
+    nameWithType: EnumerableStats.Range<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.Range<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.Range``1(System.Func{``0,System.Double})
+    name: Range(Of Int32)
+    nameWithType: EnumerableStats.Range(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.Range(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: LowerQuartile<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.LowerQuartile<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.LowerQuartile<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.LowerQuartile(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.LowerQuartile(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: LowerQuartile(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Func{``0,System.Double})
+    name: LowerQuartile<Int32>
+    nameWithType: EnumerableStats.LowerQuartile<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.LowerQuartile<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Func{``0,System.Double})
+    name: LowerQuartile(Of Int32)
+    nameWithType: EnumerableStats.LowerQuartile(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.LowerQuartile(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: UpperQuartile<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.UpperQuartile<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.UpperQuartile<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.UpperQuartile(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.UpperQuartile(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: UpperQuartile(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Func{``0,System.Double})
+    name: UpperQuartile<Int32>
+    nameWithType: EnumerableStats.UpperQuartile<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.UpperQuartile<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Func{``0,System.Double})
+    name: UpperQuartile(Of Int32)
+    nameWithType: EnumerableStats.UpperQuartile(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.UpperQuartile(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: InterQuartileRange<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.InterQuartileRange<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.InterQuartileRange<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.InterQuartileRange(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.InterQuartileRange(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: InterQuartileRange(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Func{``0,System.Double})
+    name: InterQuartileRange<Int32>
+    nameWithType: EnumerableStats.InterQuartileRange<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.InterQuartileRange<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Func{``0,System.Double})
+    name: InterQuartileRange(Of Int32)
+    nameWithType: EnumerableStats.InterQuartileRange(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.InterQuartileRange(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Func{System.Int32,System.Double},System.Double)
+  commentId: M:Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  name: IsNormalProportion<Int32>(Func<Int32, Double>, Double)
+  nameWithType: EnumerableStats.IsNormalProportion<Int32>(Func<Int32, Double>, Double)
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalProportion<System.Int32>(System.Func<System.Int32, System.Double>, System.Double)
+  nameWithType.vb: EnumerableStats.IsNormalProportion(Of Int32)(Func(Of Int32, Double), Double)
+  fullName.vb: Ampere.Statistics.EnumerableStats.IsNormalProportion(Of System.Int32)(System.Func(Of System.Int32, System.Double), System.Double)
+  name.vb: IsNormalProportion(Of Int32)(Func(Of Int32, Double), Double)
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Func{``0,System.Double},System.Double)
+    name: IsNormalProportion<Int32>
+    nameWithType: EnumerableStats.IsNormalProportion<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.IsNormalProportion<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Func{``0,System.Double},System.Double)
+    name: IsNormalProportion(Of Int32)
+    nameWithType: EnumerableStats.IsNormalProportion(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.IsNormalProportion(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Func{System.Int32,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  name: IsNormalMean<Int32>(Func<Int32, Double>)
+  nameWithType: EnumerableStats.IsNormalMean<Int32>(Func<Int32, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalMean<System.Int32>(System.Func<System.Int32, System.Double>)
+  nameWithType.vb: EnumerableStats.IsNormalMean(Of Int32)(Func(Of Int32, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.IsNormalMean(Of System.Int32)(System.Func(Of System.Int32, System.Double))
+  name.vb: IsNormalMean(Of Int32)(Func(Of Int32, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Func{``0,System.Double})
+    name: IsNormalMean<Int32>
+    nameWithType: EnumerableStats.IsNormalMean<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.IsNormalMean<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Func{``0,System.Double})
+    name: IsNormalMean(Of Int32)
+    nameWithType: EnumerableStats.IsNormalMean(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.IsNormalMean(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Func{System.Int32,System.Double},System.Double)
+  commentId: M:Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  parent: Ampere.Statistics.EnumerableStats
+  definition: Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  name: StandardizedScore<Int32>(Func<Int32, Double>, Double)
+  nameWithType: EnumerableStats.StandardizedScore<Int32>(Func<Int32, Double>, Double)
+  fullName: Ampere.Statistics.EnumerableStats.StandardizedScore<System.Int32>(System.Func<System.Int32, System.Double>, System.Double)
+  nameWithType.vb: EnumerableStats.StandardizedScore(Of Int32)(Func(Of Int32, Double), Double)
+  fullName.vb: Ampere.Statistics.EnumerableStats.StandardizedScore(Of System.Int32)(System.Func(Of System.Int32, System.Double), System.Double)
+  name.vb: StandardizedScore(Of Int32)(Func(Of Int32, Double), Double)
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Func{``0,System.Double},System.Double)
+    name: StandardizedScore<Int32>
+    nameWithType: EnumerableStats.StandardizedScore<Int32>
+    fullName: Ampere.Statistics.EnumerableStats.StandardizedScore<System.Int32>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Func{``0,System.Double},System.Double)
+    name: StandardizedScore(Of Int32)
+    nameWithType: EnumerableStats.StandardizedScore(Of Int32)
+    fullName: Ampere.Statistics.EnumerableStats.StandardizedScore(Of System.Int32)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Ampere.Base.Range`1
+  commentId: T:Ampere.Base.Range`1
+  name: Range<T>
+  nameWithType: Range<T>
+  fullName: Ampere.Base.Range<T>
+  nameWithType.vb: Range(Of T)
+  fullName.vb: Ampere.Base.Range(Of T)
+  name.vb: Range(Of T)
+  spec.csharp:
+  - uid: Ampere.Base.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Ampere.Base.Range
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.Range`1
+    name: Range
+    nameWithType: Range
+    fullName: Ampere.Base.Range
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Ampere.Base.Range`1.Minimum
+  commentId: P:Ampere.Base.Range`1.Minimum
+  name: Minimum
+  nameWithType: Range<T>.Minimum
+  fullName: Ampere.Base.Range<T>.Minimum
+  nameWithType.vb: Range(Of T).Minimum
+  fullName.vb: Ampere.Base.Range(Of T).Minimum
+- uid: Ampere.Base.Range`1.Maximum
+  commentId: P:Ampere.Base.Range`1.Maximum
+  name: Maximum
+  nameWithType: Range<T>.Maximum
+  fullName: Ampere.Base.Range<T>.Maximum
+  nameWithType.vb: Range(Of T).Maximum
+  fullName.vb: Ampere.Base.Range(Of T).Maximum
+- uid: Ampere.Base.Range`1.ToString
+  commentId: M:Ampere.Base.Range`1.ToString
+  name: ToString()
+  nameWithType: Range<T>.ToString()
+  fullName: Ampere.Base.Range<T>.ToString()
+  nameWithType.vb: Range(Of T).ToString()
+  fullName.vb: Ampere.Base.Range(Of T).ToString()
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.ToString
+    name: ToString
+    nameWithType: Range<T>.ToString
+    fullName: Ampere.Base.Range<T>.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.ToString
+    name: ToString
+    nameWithType: Range(Of T).ToString
+    fullName: Ampere.Base.Range(Of T).ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1.IsValid
+  commentId: M:Ampere.Base.Range`1.IsValid
+  name: IsValid()
+  nameWithType: Range<T>.IsValid()
+  fullName: Ampere.Base.Range<T>.IsValid()
+  nameWithType.vb: Range(Of T).IsValid()
+  fullName.vb: Ampere.Base.Range(Of T).IsValid()
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.IsValid
+    name: IsValid
+    nameWithType: Range<T>.IsValid
+    fullName: Ampere.Base.Range<T>.IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.IsValid
+    name: IsValid
+    nameWithType: Range(Of T).IsValid
+    fullName: Ampere.Base.Range(Of T).IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1.ContainsValue(`0)
+  commentId: M:Ampere.Base.Range`1.ContainsValue(`0)
+  name: ContainsValue(T)
+  nameWithType: Range<T>.ContainsValue(T)
+  fullName: Ampere.Base.Range<T>.ContainsValue(T)
+  nameWithType.vb: Range(Of T).ContainsValue(T)
+  fullName.vb: Ampere.Base.Range(Of T).ContainsValue(T)
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.ContainsValue(`0)
+    name: ContainsValue
+    nameWithType: Range<T>.ContainsValue
+    fullName: Ampere.Base.Range<T>.ContainsValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.ContainsValue(`0)
+    name: ContainsValue
+    nameWithType: Range(Of T).ContainsValue
+    fullName: Ampere.Base.Range(Of T).ContainsValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  commentId: M:Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name: IsInsideRange(IRangify<T>)
+  nameWithType: Range<T>.IsInsideRange(IRangify<T>)
+  fullName: Ampere.Base.Range<T>.IsInsideRange(Ampere.Base.IRangify<T>)
+  nameWithType.vb: Range(Of T).IsInsideRange(IRangify(Of T))
+  fullName.vb: Ampere.Base.Range(Of T).IsInsideRange(Ampere.Base.IRangify(Of T))
+  name.vb: IsInsideRange(IRangify(Of T))
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+    name: IsInsideRange
+    nameWithType: Range<T>.IsInsideRange
+    fullName: Ampere.Base.Range<T>.IsInsideRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+    name: IsInsideRange
+    nameWithType: Range(Of T).IsInsideRange
+    fullName: Ampere.Base.Range(Of T).IsInsideRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+  commentId: M:Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+  name: ContainsRange(IRangify<T>)
+  nameWithType: Range<T>.ContainsRange(IRangify<T>)
+  fullName: Ampere.Base.Range<T>.ContainsRange(Ampere.Base.IRangify<T>)
+  nameWithType.vb: Range(Of T).ContainsRange(IRangify(Of T))
+  fullName.vb: Ampere.Base.Range(Of T).ContainsRange(Ampere.Base.IRangify(Of T))
+  name.vb: ContainsRange(IRangify(Of T))
+  spec.csharp:
+  - uid: Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+    name: ContainsRange
+    nameWithType: Range<T>.ContainsRange
+    fullName: Ampere.Base.Range<T>.ContainsRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+    name: ContainsRange
+    nameWithType: Range(Of T).ContainsRange
+    fullName: Ampere.Base.Range(Of T).ContainsRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  name: IsNullOrEmpty<T>(IEnumerable<T>)
+  nameWithType: EnumerableUtils.IsNullOrEmpty<T>(IEnumerable<T>)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of T)(IEnumerable(Of T))
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsNullOrEmpty(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+    name: IsNullOrEmpty<T>
+    nameWithType: EnumerableUtils.IsNullOrEmpty<T>
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+    name: IsNullOrEmpty(Of T)
+    nameWithType: EnumerableUtils.IsNullOrEmpty(Of T)
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.EnumerableUtils.EnumerableUtils
+  commentId: T:Ampere.EnumerableUtils.EnumerableUtils
+  parent: Ampere.EnumerableUtils
+  name: EnumerableUtils
+  nameWithType: EnumerableUtils
+  fullName: Ampere.EnumerableUtils.EnumerableUtils
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  name: Shuffle<T>(IEnumerable<T>)
+  nameWithType: EnumerableUtils.Shuffle<T>(IEnumerable<T>)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: EnumerableUtils.Shuffle(Of T)(IEnumerable(Of T))
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Shuffle(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+    name: Shuffle<T>
+    nameWithType: EnumerableUtils.Shuffle<T>
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+    name: Shuffle(Of T)
+    nameWithType: EnumerableUtils.Shuffle(Of T)
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  isExternal: true
+  name: ToString<T>(IEnumerable<T>, String, Boolean)
+  nameWithType: EnumerableUtils.ToString<T>(IEnumerable<T>, String, Boolean)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
+  nameWithType.vb: EnumerableUtils.ToString(Of T)(IEnumerable(Of T), String, Boolean)
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
+  name.vb: ToString(Of T)(IEnumerable(Of T), String, Boolean)
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+    name: ToString<T>
+    nameWithType: EnumerableUtils.ToString<T>
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+    name: ToString(Of T)
+    nameWithType: EnumerableUtils.ToString(Of T)
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.Mean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.Mean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: Mean<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.Mean<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.Mean<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.Mean(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.Mean(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: Mean(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.Mean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: Mean<T>
+    nameWithType: EnumerableStats.Mean<T>
+    fullName: Ampere.Statistics.EnumerableStats.Mean<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.Mean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: Mean(Of T)
+    nameWithType: EnumerableStats.Mean(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.Mean(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats
+  commentId: T:Ampere.Statistics.EnumerableStats
+  parent: Ampere.Statistics
+  name: EnumerableStats
+  nameWithType: EnumerableStats
+  fullName: Ampere.Statistics.EnumerableStats
+- uid: Ampere.Statistics.EnumerableStats.Median``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.Median``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: Median<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.Median<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.Median<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.Median(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.Median(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: Median(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.Median``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: Median<T>
+    nameWithType: EnumerableStats.Median<T>
+    fullName: Ampere.Statistics.EnumerableStats.Median<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.Median``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: Median(Of T)
+    nameWithType: EnumerableStats.Median(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.Median(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.Mode``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.Mode``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: Mode<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.Mode<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.Mode<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.Mode(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.Mode(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: Mode(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.Mode``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: Mode<T>
+    nameWithType: EnumerableStats.Mode<T>
+    fullName: Ampere.Statistics.EnumerableStats.Mode<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.Mode``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: Mode(Of T)
+    nameWithType: EnumerableStats.Mode(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.Mode(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: SampleVariance<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.SampleVariance<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.SampleVariance<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.SampleVariance(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.SampleVariance(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: SampleVariance(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: SampleVariance<T>
+    nameWithType: EnumerableStats.SampleVariance<T>
+    fullName: Ampere.Statistics.EnumerableStats.SampleVariance<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: SampleVariance(Of T)
+    nameWithType: EnumerableStats.SampleVariance(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.SampleVariance(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: PopulationVariance<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.PopulationVariance<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.PopulationVariance<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.PopulationVariance(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.PopulationVariance(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: PopulationVariance(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: PopulationVariance<T>
+    nameWithType: EnumerableStats.PopulationVariance<T>
+    fullName: Ampere.Statistics.EnumerableStats.PopulationVariance<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: PopulationVariance(Of T)
+    nameWithType: EnumerableStats.PopulationVariance(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.PopulationVariance(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: SampleStandardDeviation<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.SampleStandardDeviation<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.SampleStandardDeviation<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.SampleStandardDeviation(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.SampleStandardDeviation(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: SampleStandardDeviation(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: SampleStandardDeviation<T>
+    nameWithType: EnumerableStats.SampleStandardDeviation<T>
+    fullName: Ampere.Statistics.EnumerableStats.SampleStandardDeviation<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: SampleStandardDeviation(Of T)
+    nameWithType: EnumerableStats.SampleStandardDeviation(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.SampleStandardDeviation(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: PopulationStandardDeviation<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.PopulationStandardDeviation<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.PopulationStandardDeviation(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: PopulationStandardDeviation(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: PopulationStandardDeviation<T>
+    nameWithType: EnumerableStats.PopulationStandardDeviation<T>
+    fullName: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: PopulationStandardDeviation(Of T)
+    nameWithType: EnumerableStats.PopulationStandardDeviation(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.Range``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.Range``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: Range<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.Range<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.Range<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.Range(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.Range(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: Range(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.Range``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: Range<T>
+    nameWithType: EnumerableStats.Range<T>
+    fullName: Ampere.Statistics.EnumerableStats.Range<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.Range``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: Range(Of T)
+    nameWithType: EnumerableStats.Range(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.Range(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: LowerQuartile<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.LowerQuartile<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.LowerQuartile<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.LowerQuartile(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.LowerQuartile(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: LowerQuartile(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: LowerQuartile<T>
+    nameWithType: EnumerableStats.LowerQuartile<T>
+    fullName: Ampere.Statistics.EnumerableStats.LowerQuartile<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: LowerQuartile(Of T)
+    nameWithType: EnumerableStats.LowerQuartile(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.LowerQuartile(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: UpperQuartile<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.UpperQuartile<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.UpperQuartile<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.UpperQuartile(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.UpperQuartile(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: UpperQuartile(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: UpperQuartile<T>
+    nameWithType: EnumerableStats.UpperQuartile<T>
+    fullName: Ampere.Statistics.EnumerableStats.UpperQuartile<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: UpperQuartile(Of T)
+    nameWithType: EnumerableStats.UpperQuartile(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.UpperQuartile(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: InterQuartileRange<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.InterQuartileRange<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.InterQuartileRange<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.InterQuartileRange(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.InterQuartileRange(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: InterQuartileRange(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: InterQuartileRange<T>
+    nameWithType: EnumerableStats.InterQuartileRange<T>
+    fullName: Ampere.Statistics.EnumerableStats.InterQuartileRange<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: InterQuartileRange(Of T)
+    nameWithType: EnumerableStats.InterQuartileRange(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.InterQuartileRange(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  commentId: M:Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  isExternal: true
+  name: IsNormalProportion<T>(IEnumerable<T>, Func<T, Double>, Double)
+  nameWithType: EnumerableStats.IsNormalProportion<T>(IEnumerable<T>, Func<T, Double>, Double)
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalProportion<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>, System.Double)
+  nameWithType.vb: EnumerableStats.IsNormalProportion(Of T)(IEnumerable(Of T), Func(Of T, Double), Double)
+  fullName.vb: Ampere.Statistics.EnumerableStats.IsNormalProportion(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double), System.Double)
+  name.vb: IsNormalProportion(Of T)(IEnumerable(Of T), Func(Of T, Double), Double)
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+    name: IsNormalProportion<T>
+    nameWithType: EnumerableStats.IsNormalProportion<T>
+    fullName: Ampere.Statistics.EnumerableStats.IsNormalProportion<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+    name: IsNormalProportion(Of T)
+    nameWithType: EnumerableStats.IsNormalProportion(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.IsNormalProportion(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  commentId: M:Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+  isExternal: true
+  name: IsNormalMean<T>(IEnumerable<T>, Func<T, Double>)
+  nameWithType: EnumerableStats.IsNormalMean<T>(IEnumerable<T>, Func<T, Double>)
+  fullName: Ampere.Statistics.EnumerableStats.IsNormalMean<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>)
+  nameWithType.vb: EnumerableStats.IsNormalMean(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  fullName.vb: Ampere.Statistics.EnumerableStats.IsNormalMean(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double))
+  name.vb: IsNormalMean(Of T)(IEnumerable(Of T), Func(Of T, Double))
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: IsNormalMean<T>
+    nameWithType: EnumerableStats.IsNormalMean<T>
+    fullName: Ampere.Statistics.EnumerableStats.IsNormalMean<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})
+    name: IsNormalMean(Of T)
+    nameWithType: EnumerableStats.IsNormalMean(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.IsNormalMean(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  commentId: M:Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+  isExternal: true
+  name: StandardizedScore<T>(IEnumerable<T>, Func<T, Double>, Double)
+  nameWithType: EnumerableStats.StandardizedScore<T>(IEnumerable<T>, Func<T, Double>, Double)
+  fullName: Ampere.Statistics.EnumerableStats.StandardizedScore<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Double>, System.Double)
+  nameWithType.vb: EnumerableStats.StandardizedScore(Of T)(IEnumerable(Of T), Func(Of T, Double), Double)
+  fullName.vb: Ampere.Statistics.EnumerableStats.StandardizedScore(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Double), System.Double)
+  name.vb: StandardizedScore(Of T)(IEnumerable(Of T), Func(Of T, Double), Double)
+  spec.csharp:
+  - uid: Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+    name: StandardizedScore<T>
+    nameWithType: EnumerableStats.StandardizedScore<T>
+    fullName: Ampere.Statistics.EnumerableStats.StandardizedScore<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)
+    name: StandardizedScore(Of T)
+    nameWithType: EnumerableStats.StandardizedScore(Of T)
+    fullName: Ampere.Statistics.EnumerableStats.StandardizedScore(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.EnumerableUtils
+  commentId: N:Ampere.EnumerableUtils
+  name: Ampere.EnumerableUtils
+  nameWithType: Ampere.EnumerableUtils
+  fullName: Ampere.EnumerableUtils
+- uid: Ampere.Statistics
+  commentId: N:Ampere.Statistics
+  name: Ampere.Statistics
+  nameWithType: Ampere.Statistics
+  fullName: Ampere.Statistics
+- uid: Ampere.Base.IntRange.#ctor*
+  commentId: Overload:Ampere.Base.IntRange.#ctor
+  name: IntRange
+  nameWithType: IntRange.IntRange
+  fullName: Ampere.Base.IntRange.IntRange
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Ampere.Base.IntRange.GetEnumerator*
+  commentId: Overload:Ampere.Base.IntRange.GetEnumerator
+  name: GetEnumerator
+  nameWithType: IntRange.GetEnumerator
+  fullName: Ampere.Base.IntRange.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{System.Int32}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{System.Int32}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<Int32>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<System.Int32>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Int32).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Int32).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<Int32>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<System.Int32>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of Int32).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of System.Int32).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerator{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<Int32>
+  nameWithType: IEnumerator<Int32>
+  fullName: System.Collections.Generic.IEnumerator<System.Int32>
+  nameWithType.vb: IEnumerator(Of Int32)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Int32)
+  name.vb: IEnumerator(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator
+  nameWithType: IntRange.IEnumerable.GetEnumerator
+  fullName: Ampere.Base.IntRange.System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: IntRange.System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator

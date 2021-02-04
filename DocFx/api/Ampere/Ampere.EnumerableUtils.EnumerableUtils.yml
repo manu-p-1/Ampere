@@ -1,0 +1,1094 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.EnumerableUtils.EnumerableUtils
+  commentId: T:Ampere.EnumerableUtils.EnumerableUtils
+  id: EnumerableUtils
+  parent: Ampere.EnumerableUtils
+  children:
+  - Ampere.EnumerableUtils.EnumerableUtils.Concat``1(System.Collections.Generic.IEnumerable{``0}[])
+  - Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  - Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  - Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
+  - Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32,System.Int32)
+  - Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: EnumerableUtils
+  nameWithType: EnumerableUtils
+  fullName: Ampere.EnumerableUtils.EnumerableUtils
+  type: Class
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: EnumerableUtils
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 11
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nA static utility class for .NET <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static class EnumerableUtils
+    content.vb: Public Module EnumerableUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Concat``1(System.Collections.Generic.IEnumerable{``0}[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Concat``1(System.Collections.Generic.IEnumerable{``0}[])
+  id: Concat``1(System.Collections.Generic.IEnumerable{``0}[])
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: Concat<T>(IEnumerable<T>[])
+  nameWithType: EnumerableUtils.Concat<T>(IEnumerable<T>[])
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Concat<T>(System.Collections.Generic.IEnumerable<T>[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Concat
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 40
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nConcatenates all IEnumerables which are specified in in the parameter. The\nconcatenation occurs in the order specified in the parameter.\n"
+  example:
+  - This simple example shows how to call the <xref href="Ampere.EnumerableUtils.EnumerableUtils.Concat%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d%5b%5d)" data-throw-if-not-resolved="false"></xref> method.
+  syntax:
+    content: public static IEnumerable<T> Concat<T>(params IEnumerable<T>[] ie)
+    parameters:
+    - id: ie
+      type: System.Collections.Generic.IEnumerable{{T}}[]
+      description: An enumerable of all one dimensional arrays to be concatenated
+    typeParameters:
+    - id: T
+      description: The enumerable type to be used
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: A single enumerable with all of the concatenated elements
+    content.vb: Public Shared Function Concat(Of T)(ParamArray ie As IEnumerable(Of T)()) As IEnumerable(Of T)
+  overload: Ampere.EnumerableUtils.EnumerableUtils.Concat*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Is thrown if any enumerable, which is a candidate to be concatenated, is null
+  nameWithType.vb: EnumerableUtils.Concat(Of T)(IEnumerable(Of T)())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Concat(Of T)(System.Collections.Generic.IEnumerable(Of T)())
+  name.vb: Concat(Of T)(IEnumerable(Of T)())
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  id: Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: Insert<T>(ref IEnumerable<T>, Int32, Int32, T[])
+  nameWithType: EnumerableUtils.Insert<T>(ref IEnumerable<T>, Int32, Int32, T[])
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Insert<T>(ref System.Collections.Generic.IEnumerable<T>, System.Int32, System.Int32, T[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Insert
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 97
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nInserts the specified element at the specified index in the enumerable (modifying the original enumerable).\nIf element at that position exits, If shifts that element and any subsequent elements to the right,\nadding one to their indices. The method also allows for inserting more than one element into\nthe enumerable at one time given that they are specified. This Insert method is functionally similar\nto the Insert method of the List class. <xref href=\"System.Collections.IList.Insert(System.Int32%2cSystem.Object)\" data-throw-if-not-resolved=\"false\"></xref>\nfor information about the add method of the List class.\n"
+  example:
+  - This sample shows how to call the <xref href="Ampere.EnumerableUtils.EnumerableUtils.Insert%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d%40%2cSystem.Int32%2cSystem.Int32%2c%60%600%5b%5d)" data-throw-if-not-resolved="false"></xref> method.
+  syntax:
+    content: public static IEnumerable<T> Insert<T>(ref IEnumerable<T> src, int startIdx, int amtToIns, params T[] valuesToIns)
+    parameters:
+    - id: src
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The IEnumerable to be used
+    - id: startIdx
+      type: System.Int32
+      description: The index to start insertion
+    - id: amtToIns
+      type: System.Int32
+      description: The amount of elements to insert into the enumerable
+    - id: valuesToIns
+      type: '{T}[]'
+      description: Optionally, the values to insert into the empty indices of the new enumerable
+    typeParameters:
+    - id: T
+      description: The type of the enumerable
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An enumerable of the elements inserted into the enumerable, if any
+    content.vb: Public Shared Function Insert(Of T)(ByRef src As IEnumerable(Of T), startIdx As Integer, amtToIns As Integer, ParamArray valuesToIns As T()) As IEnumerable(Of T)
+  overload: Ampere.EnumerableUtils.EnumerableUtils.Insert*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Thrown when the valuesToIns enumerable does not match the amount to insert (if it is greater than 0)
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Thrown when the amtToIns or the startIdx is less than 0
+  seealso:
+  - linkId: System.Collections.IList.Insert(System.Int32,System.Object)
+    commentId: M:System.Collections.IList.Insert(System.Int32,System.Object)
+  nameWithType.vb: EnumerableUtils.Insert(Of T)(ByRef IEnumerable(Of T), Int32, Int32, T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Insert(Of T)(ByRef System.Collections.Generic.IEnumerable(Of T), System.Int32, System.Int32, T())
+  name.vb: Insert(Of T)(ByRef IEnumerable(Of T), Int32, Int32, T())
+- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  id: IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrEmpty<T>(IEnumerable<T>)
+  nameWithType: EnumerableUtils.IsNullOrEmpty<T>(IEnumerable<T>)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsNullOrEmpty
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 144
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nReturns whether an IEnumerable is null or empty\n"
+  example: []
+  syntax:
+    content: public static bool IsNullOrEmpty<T>(this IEnumerable<T> ie)
+    parameters:
+    - id: ie
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The IEnumerable to be used
+    typeParameters:
+    - id: T
+      description: The type of the IEnumerable
+    return:
+      type: System.Boolean
+      description: The truth
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsNullOrEmpty(Of T)(ie As IEnumerable(Of T)) As Boolean
+  overload: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty*
+  nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of T)(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsNullOrEmpty(Of T)(IEnumerable(Of T))
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
+  id: Range(System.Int32,System.Int32)
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: Range(Int32, Int32)
+  nameWithType: EnumerableUtils.Range(Int32, Int32)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Range
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 182
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nEnables python style for-loop for easier readability. This loop begins\nat the starting value and loops until the end - 1,\n"
+  example:
+  - This example shows how to use the <xref href="Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>method.
+  syntax:
+    content: public static IEnumerable<int> Range(int start, int end)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: The starting counter for the loop (inclusive)
+    - id: end
+      type: System.Int32
+      description: The ending counter for the loop (exclusive)
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+      description: An IEnumerable representing the current index
+    content.vb: Public Shared Function Range(start As Integer, end As Integer) As IEnumerable(Of Integer)
+  overload: Ampere.EnumerableUtils.EnumerableUtils.Range*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  id: Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<T>(IEnumerable<T>)
+  nameWithType: EnumerableUtils.Shuffle<T>(IEnumerable<T>)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Shuffle
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 194
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nCryptographically shuffles an enumerable. \n"
+  example: []
+  syntax:
+    content: public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> src)
+    parameters:
+    - id: src
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The IEnumerable
+    typeParameters:
+    - id: T
+      description: The element type of the IEnumerable
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The Shuffled IEnumerable
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Shuffle(Of T)(src As IEnumerable(Of T)) As IEnumerable(Of T)
+  overload: Ampere.EnumerableUtils.EnumerableUtils.Shuffle*
+  nameWithType.vb: EnumerableUtils.Shuffle(Of T)(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Shuffle(Of T)(IEnumerable(Of T))
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32,System.Int32)
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32,System.Int32)
+  id: Span(System.Int32,System.Int32)
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: Span(Int32, Int32)
+  nameWithType: EnumerableUtils.Span(Int32, Int32)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Span
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 228
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nEnables python style for-loop for easier readability. This loop begins\nat the starting value and loops until the end.\n"
+  example:
+  - This example shows how to use the <xref href="Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>method.
+  syntax:
+    content: public static IEnumerable<int> Span(int start, int end)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: The starting counter for the loop (inclusive)
+    - id: end
+      type: System.Int32
+      description: The ending counter for the loop (inclusive)
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+      description: An IEnumerable representing the current index
+    content.vb: Public Shared Function Span(start As Integer, end As Integer) As IEnumerable(Of Integer)
+  overload: Ampere.EnumerableUtils.EnumerableUtils.Span*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  id: ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: ToString<T>(IEnumerable<T>, String, Boolean)
+  nameWithType: EnumerableUtils.ToString<T>(IEnumerable<T>, String, Boolean)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ToString
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 277
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nPrints a string representation of an enumerable. There are 4 supported lengths for the fmtExp. The\ndefault length is 0 and the default behavior depends on the type of the enumerable. If the type is primitive\n(based on the System.IsPrimitive property) including decimal and string, then it prints the enumerable with a space\nas a separator between each element. If the enumerable is not primitive, it prints the enumerable with no separator.\nA fmtExp of length 1 specifies a character to separate each element. The enumerable is printed out, following\na default behavior, except with the specified separator rather than the default separator. A fmtExp\nof length 2 specifies a two characters to mark the left and right outer bounds of the enumerable, A fmtExp\nof length 3 specifies a character for the left outer bound of the enumerable, followed by a separator character,\nfollowed by a character for the right outer bound of the enumerable. If no separator is desired, the &quot;/0+&quot; expression\ncan be specified.The evenlySpacedSeparator parameter specifies whether an even number of spaces should be on\nboth sides of the separator. This parameter ignores Object type enumerables excluding decimal and string.\n"
+  example:
+  - This sample shows how to call the <xref href="Ampere.EnumerableUtils.EnumerableUtils.ToString%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d%2cSystem.String%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> method.
+  syntax:
+    content: public static string ToString<T>(this IEnumerable<T> src, string fmtExp = "", bool evenlySpacedSeparator = false)
+    parameters:
+    - id: src
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The IEnumerable to be used
+    - id: fmtExp
+      type: System.String
+      description: The defined expression to be optionally used
+    - id: evenlySpacedSeparator
+      type: System.Boolean
+      description: Determines whether the spacing between each element should be the same
+    typeParameters:
+    - id: T
+      description: The type of the enumerable
+    return:
+      type: System.String
+      description: The string representation of the enumerable
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToString(Of T)(src As IEnumerable(Of T), fmtExp As String = "", evenlySpacedSeparator As Boolean = False) As String
+  overload: Ampere.EnumerableUtils.EnumerableUtils.ToString*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If arr is null
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: If the formatting expression length is neither 0 or 3
+  nameWithType.vb: EnumerableUtils.ToString(Of T)(IEnumerable(Of T), String, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
+  name.vb: ToString(Of T)(IEnumerable(Of T), String, Boolean)
+references:
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.EnumerableUtils
+  commentId: N:Ampere.EnumerableUtils
+  name: Ampere.EnumerableUtils
+  nameWithType: Ampere.EnumerableUtils
+  fullName: Ampere.EnumerableUtils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Concat``1(System.Collections.Generic.IEnumerable{``0}[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Concat``1(System.Collections.Generic.IEnumerable{``0}[])
+  isExternal: true
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Concat*
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Concat
+  name: Concat
+  nameWithType: EnumerableUtils.Concat
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Concat
+- uid: System.Collections.Generic.IEnumerable{{T}}[]
+  isExternal: true
+  name: IEnumerable<T>[]
+  nameWithType: IEnumerable<T>[]
+  fullName: System.Collections.Generic.IEnumerable<T>[]
+  nameWithType.vb: IEnumerable(Of T)()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)()
+  name.vb: IEnumerable(Of T)()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.IList.Insert(System.Int32,System.Object)
+  commentId: M:System.Collections.IList.Insert(System.Int32,System.Object)
+  isExternal: true
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  isExternal: true
+- uid: System.IndexOutOfRangeException
+  commentId: T:System.IndexOutOfRangeException
+  isExternal: true
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert*
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Insert
+  name: Insert
+  nameWithType: EnumerableUtils.Insert
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Insert
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty*
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty
+  name: IsNullOrEmpty
+  nameWithType: EnumerableUtils.IsNullOrEmpty
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
+  isExternal: true
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Range*
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Range
+  name: Range
+  nameWithType: EnumerableUtils.Range
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Range
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Int32>
+  nameWithType: IEnumerable<Int32>
+  fullName: System.Collections.Generic.IEnumerable<System.Int32>
+  nameWithType.vb: IEnumerable(Of Int32)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Int32)
+  name.vb: IEnumerable(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle*
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Shuffle
+  name: Shuffle
+  nameWithType: EnumerableUtils.Shuffle
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32,System.Int32)
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32,System.Int32)
+  isExternal: true
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Span*
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.Span
+  name: Span
+  nameWithType: EnumerableUtils.Span
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Span
+- uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  isExternal: true
+  name: ToString<T>(IEnumerable<T>, String, Boolean)
+  nameWithType: EnumerableUtils.ToString<T>(IEnumerable<T>, String, Boolean)
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
+  nameWithType.vb: EnumerableUtils.ToString(Of T)(IEnumerable(Of T), String, Boolean)
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
+  name.vb: ToString(Of T)(IEnumerable(Of T), String, Boolean)
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+    name: ToString<T>
+    nameWithType: EnumerableUtils.ToString<T>
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+    name: ToString(Of T)
+    nameWithType: EnumerableUtils.ToString(Of T)
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.FormatException
+  commentId: T:System.FormatException
+  isExternal: true
+- uid: Ampere.EnumerableUtils.EnumerableUtils.ToString*
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.ToString
+  name: ToString
+  nameWithType: EnumerableUtils.ToString
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

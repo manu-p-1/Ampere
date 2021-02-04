@@ -1,0 +1,2495 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.StringUtils.StringUtils
+  commentId: T:Ampere.StringUtils.StringUtils
+  id: StringUtils
+  parent: Ampere.StringUtils
+  children:
+  - Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  - Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  - Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
+  - Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  - Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  - Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})
+  - Ampere.StringUtils.StringUtils.Chomp(System.String)
+  - Ampere.StringUtils.StringUtils.ChompAfter(System.String,System.Int32)
+  - Ampere.StringUtils.StringUtils.ContainsDigits(System.String)
+  - Ampere.StringUtils.StringUtils.ContainsDuplicateChars(System.String)
+  - Ampere.StringUtils.StringUtils.ContainsDuplicateStrings(System.String,System.String)
+  - Ampere.StringUtils.StringUtils.CountLetters(System.String,System.Char)
+  - Ampere.StringUtils.StringUtils.CountWords(System.String)
+  - Ampere.StringUtils.StringUtils.IsPalindrome(System.String,System.Boolean)
+  - Ampere.StringUtils.StringUtils.IsStrictlyDecreasing(System.String,System.Boolean)
+  - Ampere.StringUtils.StringUtils.IsStrictlyIncreasing(System.String,System.Boolean)
+  - Ampere.StringUtils.StringUtils.IsSystemDateTime(System.String,System.String)
+  - Ampere.StringUtils.StringUtils.IsValidUri(System.String)
+  - Ampere.StringUtils.StringUtils.IsWellFormed(System.String)
+  - Ampere.StringUtils.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})
+  - Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  - Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable{System.String})
+  - Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])
+  - Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String}[])
+  - Ampere.StringUtils.StringUtils.ReplaceAt(System.String,System.Int32,System.Char)
+  - Ampere.StringUtils.StringUtils.Reverse(System.String)
+  - Ampere.StringUtils.StringUtils.Shuffle(System.String,System.Boolean)
+  - Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: StringUtils
+  nameWithType: StringUtils
+  fullName: Ampere.StringUtils.StringUtils
+  type: Class
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: StringUtils
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 14
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nA static utility class for string extension methods including other string manipulation classes such as\nStringBuilder and StringBuffer.\n"
+  example: []
+  syntax:
+    content: public static class StringUtils
+    content.vb: Public Module StringUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})
+  commentId: M:Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})
+  id: CharToString(System.Collections.Generic.IEnumerable{System.Char})
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: CharToString(IEnumerable<Char>)
+  nameWithType: StringUtils.CharToString(IEnumerable<Char>)
+  fullName: Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable<System.Char>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: CharToString
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 27
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nConverts a <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref> to a string\n"
+  example: []
+  syntax:
+    content: public static string CharToString(IEnumerable<char> charEnumerable)
+    parameters:
+    - id: charEnumerable
+      type: System.Collections.Generic.IEnumerable{System.Char}
+      description: The <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.String
+      description: The converted string
+    content.vb: Public Shared Function CharToString(charEnumerable As IEnumerable(Of Char)) As String
+  overload: Ampere.StringUtils.StringUtils.CharToString*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">charEnumerable</code> is null
+  nameWithType.vb: StringUtils.CharToString(IEnumerable(Of Char))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable(Of System.Char))
+  name.vb: CharToString(IEnumerable(Of Char))
+- uid: Ampere.StringUtils.StringUtils.Chomp(System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.Chomp(System.String)
+  id: Chomp(System.String)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: Chomp(String)
+  nameWithType: StringUtils.Chomp(String)
+  fullName: Ampere.StringUtils.StringUtils.Chomp(System.String)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Chomp
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 39
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nCreates a string from the first character of the string to the first whitespace.\n"
+  example: []
+  syntax:
+    content: public static string Chomp(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be chomped
+    return:
+      type: System.String
+      description: The string retaining the first word
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Chomp(str As String) As String
+  overload: Ampere.StringUtils.StringUtils.Chomp*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.ChompAfter(System.String,System.Int32)
+  commentId: M:Ampere.StringUtils.StringUtils.ChompAfter(System.String,System.Int32)
+  id: ChompAfter(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ChompAfter(String, Int32)
+  nameWithType: StringUtils.ChompAfter(String, Int32)
+  fullName: Ampere.StringUtils.StringUtils.ChompAfter(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ChompAfter
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 59
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nCreates a string from the first character of the string to the nth whitespace that is specified.\n"
+  example: []
+  syntax:
+    content: public static string ChompAfter(this string str, int spaces)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be chomped
+    - id: spaces
+      type: System.Int32
+      description: The amount of white space to chomp after
+    return:
+      type: System.String
+      description: The string retaining the chomped word
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ChompAfter(str As String, spaces As Integer) As String
+  overload: Ampere.StringUtils.StringUtils.ChompAfter*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.ContainsDigits(System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.ContainsDigits(System.String)
+  id: ContainsDigits(System.String)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ContainsDigits(String)
+  nameWithType: StringUtils.ContainsDigits(String)
+  fullName: Ampere.StringUtils.StringUtils.ContainsDigits(System.String)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ContainsDigits
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 92
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks if a given string contains any digits.\n"
+  example: []
+  syntax:
+    content: public static bool ContainsDigits(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    return:
+      type: System.Boolean
+      description: True if the string contains any digits, false otherwise
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ContainsDigits(str As String) As Boolean
+  overload: Ampere.StringUtils.StringUtils.ContainsDigits*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.ContainsDuplicateChars(System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.ContainsDuplicateChars(System.String)
+  id: ContainsDuplicateChars(System.String)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ContainsDuplicateChars(String)
+  nameWithType: StringUtils.ContainsDuplicateChars(String)
+  fullName: Ampere.StringUtils.StringUtils.ContainsDuplicateChars(System.String)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ContainsDuplicateChars
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 109
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks whether a string contains duplicate characters.\n"
+  example: []
+  syntax:
+    content: public static bool ContainsDuplicateChars(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    return:
+      type: System.Boolean
+      description: True if their are duplicate characters. False, otherwise
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ContainsDuplicateChars(str As String) As Boolean
+  overload: Ampere.StringUtils.StringUtils.ContainsDuplicateChars*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.ContainsDuplicateStrings(System.String,System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.ContainsDuplicateStrings(System.String,System.String)
+  id: ContainsDuplicateStrings(System.String,System.String)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ContainsDuplicateStrings(String, String)
+  nameWithType: StringUtils.ContainsDuplicateStrings(String, String)
+  fullName: Ampere.StringUtils.StringUtils.ContainsDuplicateStrings(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ContainsDuplicateStrings
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 130
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks whether a string contains duplicate inner strings.\n"
+  example: []
+  syntax:
+    content: public static bool ContainsDuplicateStrings(this string str, string arg)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    - id: arg
+      type: System.String
+      description: The inner string to search for duplicates
+    return:
+      type: System.Boolean
+      description: True if their are duplicate inner strings. False, otherwise
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ContainsDuplicateStrings(str As String, arg As String) As Boolean
+  overload: Ampere.StringUtils.StringUtils.ContainsDuplicateStrings*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">arg</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.CountLetters(System.String,System.Char)
+  commentId: M:Ampere.StringUtils.StringUtils.CountLetters(System.String,System.Char)
+  id: CountLetters(System.String,System.Char)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: CountLetters(String, Char)
+  nameWithType: StringUtils.CountLetters(String, Char)
+  fullName: Ampere.StringUtils.StringUtils.CountLetters(System.String, System.Char)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: CountLetters
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 158
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nCounts how many times a given letter appears in a string.\n"
+  example: []
+  syntax:
+    content: public static int CountLetters(this string str, char letter)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    - id: letter
+      type: System.Char
+      description: The specific letter to search
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CountLetters(str As String, letter As Char) As Integer
+  overload: Ampere.StringUtils.StringUtils.CountLetters*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.CountWords(System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.CountWords(System.String)
+  id: CountWords(System.String)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: CountWords(String)
+  nameWithType: StringUtils.CountWords(String)
+  fullName: Ampere.StringUtils.StringUtils.CountWords(System.String)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: CountWords
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 170
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nCounts the number of words in a string.\n"
+  example: []
+  syntax:
+    content: public static int CountWords(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    return:
+      type: System.Int32
+      description: The number of words in the string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CountWords(str As String) As Integer
+  overload: Ampere.StringUtils.StringUtils.CountWords*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.IsPalindrome(System.String,System.Boolean)
+  commentId: M:Ampere.StringUtils.StringUtils.IsPalindrome(System.String,System.Boolean)
+  id: IsPalindrome(System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: IsPalindrome(String, Boolean)
+  nameWithType: StringUtils.IsPalindrome(String, Boolean)
+  fullName: Ampere.StringUtils.StringUtils.IsPalindrome(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsPalindrome
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 189
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks if a given string is a palindrome.\n"
+  example: []
+  syntax:
+    content: public static bool IsPalindrome(this string str, bool ignoreCase = false)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    - id: ignoreCase
+      type: System.Boolean
+      description: Whether case should be ignored
+    return:
+      type: System.Boolean
+      description: True if the string is a palindrome
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsPalindrome(str As String, ignoreCase As Boolean = False) As Boolean
+  overload: Ampere.StringUtils.StringUtils.IsPalindrome*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.IsStrictlyDecreasing(System.String,System.Boolean)
+  commentId: M:Ampere.StringUtils.StringUtils.IsStrictlyDecreasing(System.String,System.Boolean)
+  id: IsStrictlyDecreasing(System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: IsStrictlyDecreasing(String, Boolean)
+  nameWithType: StringUtils.IsStrictlyDecreasing(String, Boolean)
+  fullName: Ampere.StringUtils.StringUtils.IsStrictlyDecreasing(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsStrictlyDecreasing
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 221
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks if each character in a string is lexicographically smaller than the previous character.\n"
+  example: []
+  syntax:
+    content: public static bool IsStrictlyDecreasing(this string str, bool ignoreCase = false)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    - id: ignoreCase
+      type: System.Boolean
+      description: Whether case should be ignored
+    return:
+      type: System.Boolean
+      description: True if the string strictly increases
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsStrictlyDecreasing(str As String, ignoreCase As Boolean = False) As Boolean
+  overload: Ampere.StringUtils.StringUtils.IsStrictlyDecreasing*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.IsStrictlyIncreasing(System.String,System.Boolean)
+  commentId: M:Ampere.StringUtils.StringUtils.IsStrictlyIncreasing(System.String,System.Boolean)
+  id: IsStrictlyIncreasing(System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: IsStrictlyIncreasing(String, Boolean)
+  nameWithType: StringUtils.IsStrictlyIncreasing(String, Boolean)
+  fullName: Ampere.StringUtils.StringUtils.IsStrictlyIncreasing(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsStrictlyIncreasing
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 249
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks if each character in a string is lexicographically greater than the previous character.\n"
+  example: []
+  syntax:
+    content: public static bool IsStrictlyIncreasing(this string str, bool ignoreCase = false)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    - id: ignoreCase
+      type: System.Boolean
+      description: Whether case should be ignored
+    return:
+      type: System.Boolean
+      description: True if the string strictly increases
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsStrictlyIncreasing(str As String, ignoreCase As Boolean = False) As Boolean
+  overload: Ampere.StringUtils.StringUtils.IsStrictlyIncreasing*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.IsSystemDateTime(System.String,System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.IsSystemDateTime(System.String,System.String)
+  id: IsSystemDateTime(System.String,System.String)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: IsSystemDateTime(String, String)
+  nameWithType: StringUtils.IsSystemDateTime(String, String)
+  fullName: Ampere.StringUtils.StringUtils.IsSystemDateTime(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsSystemDateTime
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 278
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks if a given string is a valid date used by System.DateTime\n"
+  example: []
+  syntax:
+    content: public static bool IsSystemDateTime(this string date, string formattingRegex)
+    parameters:
+    - id: date
+      type: System.String
+      description: The string to be used
+    - id: formattingRegex
+      type: System.String
+      description: The date format regex
+    return:
+      type: System.Boolean
+      description: True if the string is a valid date recognized by System.DateTime
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsSystemDateTime(date As String, formattingRegex As String) As Boolean
+  overload: Ampere.StringUtils.StringUtils.IsSystemDateTime*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">date</code> is null
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">formattingRegex</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.IsValidUri(System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.IsValidUri(System.String)
+  id: IsValidUri(System.String)
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: IsValidUri(String)
+  nameWithType: StringUtils.IsValidUri(String)
+  fullName: Ampere.StringUtils.StringUtils.IsValidUri(System.String)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsValidUri
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 297
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks if a given string is a valid URI. This checks both HTTP and HTTPS URLs.\n"
+  example: []
+  syntax:
+    content: public static bool IsValidUri(string uri)
+    parameters:
+    - id: uri
+      type: System.String
+      description: The string to be used
+    return:
+      type: System.Boolean
+      description: True if the URI is valid
+    content.vb: Public Shared Function IsValidUri(uri As String) As Boolean
+  overload: Ampere.StringUtils.StringUtils.IsValidUri*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">uri</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.IsWellFormed(System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.IsWellFormed(System.String)
+  id: IsWellFormed(System.String)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: IsWellFormed(String)
+  nameWithType: StringUtils.IsWellFormed(String)
+  fullName: Ampere.StringUtils.StringUtils.IsWellFormed(System.String)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsWellFormed
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 331
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks if a string is well formed. A string is well formed if\nfor every alphabet-recognized character, there is an appropriate\nclosing character. For every inner string, with the exception\nof characters not defined in the alphabet, in between an opening\nand closing character, if that string were to be split in half,\neach half would be a mirror image of each other. A well formed\nstring consists of the default alphabet consists of the following\ncharacters: &apos;(&apos;,&apos;)&apos;,&apos;{&apos;,&apos;}&apos;,&apos;[&apos;,&apos;]&apos;,&apos;&lt;&apos;,&apos;>&apos;.\n"
+  example:
+  - The following demonstrates how to use the <xref href="Ampere.StringUtils.StringUtils.IsWellFormed(System.String)" data-throw-if-not-resolved="false"></xref> method.
+  syntax:
+    content: public static bool IsWellFormed(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: the string to check
+    return:
+      type: System.Boolean
+      description: whether the string is well formed
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsWellFormed(str As String) As Boolean
+  overload: Ampere.StringUtils.StringUtils.IsWellFormed*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})
+  commentId: M:Ampere.StringUtils.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})
+  id: IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: IsWellFormed(String, Dictionary<Char, Char>)
+  nameWithType: StringUtils.IsWellFormed(String, Dictionary<Char, Char>)
+  fullName: Ampere.StringUtils.StringUtils.IsWellFormed(System.String, System.Collections.Generic.Dictionary<System.Char, System.Char>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsWellFormed
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 373
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nChecks if a string is well formed. A string is well formed if\nfor every alphabet-recognized character, there is an appropriate\nclosing character. For every inner string, with the exception\nof characters not defined in the alphabet, in between an opening\nand closing character, if that string were to be split in half,\neach half would be a mirror image of each other. A well formed\nstring consists of the user specified Dictionary of key-value\npairs, where the key is the opening character and the value\nis the closing character.\n"
+  example:
+  - >-
+    The following demonstrates how to use the
+
+    <xref href="Ampere.StringUtils.StringUtils.IsWellFormed(System.String%2cSystem.Collections.Generic.Dictionary%7bSystem.Char%2cSystem.Char%7d)" data-throw-if-not-resolved="false"></xref> method.
+  syntax:
+    content: public static bool IsWellFormed(this string str, Dictionary<char, char> alphabet)
+    parameters:
+    - id: str
+      type: System.String
+      description: the string to check
+    - id: alphabet
+      type: System.Collections.Generic.Dictionary{System.Char,System.Char}
+      description: >-
+        the dictionary of key value pairs - where the key
+
+        represents the opening character and the value represents the closing character
+    return:
+      type: System.Boolean
+      description: whether the string is well formed
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsWellFormed(str As String, alphabet As Dictionary(Of Char, Char)) As Boolean
+  overload: Ampere.StringUtils.StringUtils.IsWellFormed*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  nameWithType.vb: StringUtils.IsWellFormed(String, Dictionary(Of Char, Char))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.IsWellFormed(System.String, System.Collections.Generic.Dictionary(Of System.Char, System.Char))
+  name.vb: IsWellFormed(String, Dictionary(Of Char, Char))
+- uid: Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  commentId: M:Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  id: LongestCommonPrefix(System.Collections.Generic.IEnumerable{System.String},System.Boolean)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: LongestCommonPrefix(IEnumerable<String>, Boolean)
+  nameWithType: StringUtils.LongestCommonPrefix(IEnumerable<String>, Boolean)
+  fullName: Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable<System.String>, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: LongestCommonPrefix
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 392
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nFinds the longest common prefix of a group of strings of type \n<xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string LongestCommonPrefix(this IEnumerable<string> strs, bool ignoreCase = false)
+    parameters:
+    - id: strs
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: A group of strings to find the common prefix
+    - id: ignoreCase
+      type: System.Boolean
+      description: A flag whether to ignore case
+    return:
+      type: System.String
+      description: The longest common prefix
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LongestCommonPrefix(strs As IEnumerable(Of String), ignoreCase As Boolean = False) As String
+  overload: Ampere.StringUtils.StringUtils.LongestCommonPrefix*
+  nameWithType.vb: StringUtils.LongestCommonPrefix(IEnumerable(Of String), Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable(Of System.String), System.Boolean)
+  name.vb: LongestCommonPrefix(IEnumerable(Of String), Boolean)
+- uid: Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable{System.String})
+  id: OrderByLength(System.Collections.Generic.IEnumerable{System.String})
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: OrderByLength(IEnumerable<String>)
+  nameWithType: StringUtils.OrderByLength(IEnumerable<String>)
+  fullName: Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: OrderByLength
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 467
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nOrders an enumerable by its length in ascending order (natural order).\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<string> OrderByLength(this IEnumerable<string> si)
+    parameters:
+    - id: si
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> si
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: An ordered enumerable
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OrderByLength(si As IEnumerable(Of String)) As IEnumerable(Of String)
+  overload: Ampere.StringUtils.StringUtils.OrderByLength*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">si</code> is null
+  nameWithType.vb: StringUtils.OrderByLength(IEnumerable(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: OrderByLength(IEnumerable(Of String))
+- uid: Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])
+  commentId: M:Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])
+  id: RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: RemoveAll(String, Boolean, IEnumerable<Char>[])
+  nameWithType: StringUtils.RemoveAll(String, Boolean, IEnumerable<Char>[])
+  fullName: Ampere.StringUtils.StringUtils.RemoveAll(System.String, System.Boolean, System.Collections.Generic.IEnumerable<System.Char>[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: RemoveAll
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 482
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nRemoves all instances of any number of characters from a specified string.\n"
+  example: []
+  syntax:
+    content: public static string RemoveAll(this string str, bool ignoreCase = false, params IEnumerable<char>[] args)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    - id: ignoreCase
+      type: System.Boolean
+      description: Whether case should be ignored
+    - id: args
+      type: System.Collections.Generic.IEnumerable{System.Char}[]
+      description: The characters which will be removed
+    return:
+      type: System.String
+      description: The string with all characters in args removed
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveAll(str As String, ignoreCase As Boolean = False, ParamArray args As IEnumerable(Of Char)()) As String
+  overload: Ampere.StringUtils.StringUtils.RemoveAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">args</code> is null
+  nameWithType.vb: StringUtils.RemoveAll(String, Boolean, IEnumerable(Of Char)())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.RemoveAll(System.String, System.Boolean, System.Collections.Generic.IEnumerable(Of System.Char)())
+  name.vb: RemoveAll(String, Boolean, IEnumerable(Of Char)())
+- uid: Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String}[])
+  commentId: M:Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String}[])
+  id: RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String}[])
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: RemoveAll(String, Boolean, IEnumerable<String>[])
+  nameWithType: StringUtils.RemoveAll(String, Boolean, IEnumerable<String>[])
+  fullName: Ampere.StringUtils.StringUtils.RemoveAll(System.String, System.Boolean, System.Collections.Generic.IEnumerable<System.String>[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: RemoveAll
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 511
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nRemoves all instances of any number of strings from a specified string.\n"
+  example: []
+  syntax:
+    content: public static string RemoveAll(this string str, bool ignoreCase = false, params IEnumerable<string>[] args)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    - id: ignoreCase
+      type: System.Boolean
+      description: Whether case should be ignored
+    - id: args
+      type: System.Collections.Generic.IEnumerable{System.String}[]
+      description: The characters which will be removed
+    return:
+      type: System.String
+      description: The string with all characters in args removed
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveAll(str As String, ignoreCase As Boolean = False, ParamArray args As IEnumerable(Of String)()) As String
+  overload: Ampere.StringUtils.StringUtils.RemoveAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">args</code> is null
+  nameWithType.vb: StringUtils.RemoveAll(String, Boolean, IEnumerable(Of String)())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.RemoveAll(System.String, System.Boolean, System.Collections.Generic.IEnumerable(Of System.String)())
+  name.vb: RemoveAll(String, Boolean, IEnumerable(Of String)())
+- uid: Ampere.StringUtils.StringUtils.ReplaceAt(System.String,System.Int32,System.Char)
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceAt(System.String,System.Int32,System.Char)
+  id: ReplaceAt(System.String,System.Int32,System.Char)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ReplaceAt(String, Int32, Char)
+  nameWithType: StringUtils.ReplaceAt(String, Int32, Char)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceAt(System.String, System.Int32, System.Char)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ReplaceAt
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 548
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nReplaces a character at a specific index in a string, only once.\n"
+  example: []
+  syntax:
+    content: public static string ReplaceAt(this string str, int index, char c)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be used
+    - id: index
+      type: System.Int32
+      description: The index to replace <code data-dev-comment-type="paramref" class="paramref">c</code>
+    - id: c
+      type: System.Char
+      description: The character to replace
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReplaceAt(str As String, index As Integer, c As Char) As String
+  overload: Ampere.StringUtils.StringUtils.ReplaceAt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.Reverse(System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.Reverse(System.String)
+  id: Reverse(System.String)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: Reverse(String)
+  nameWithType: StringUtils.Reverse(String)
+  fullName: Ampere.StringUtils.StringUtils.Reverse(System.String)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Reverse
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 560
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nReverses a string from left to right order while maintaining case sensitivity.\n"
+  example: []
+  syntax:
+    content: public static string Reverse(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be reversed
+    return:
+      type: System.String
+      description: The reversed string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Reverse(str As String) As String
+  overload: Ampere.StringUtils.StringUtils.Reverse*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.Shuffle(System.String,System.Boolean)
+  commentId: M:Ampere.StringUtils.StringUtils.Shuffle(System.String,System.Boolean)
+  id: Shuffle(System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: Shuffle(String, Boolean)
+  nameWithType: StringUtils.Shuffle(String, Boolean)
+  fullName: Ampere.StringUtils.StringUtils.Shuffle(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Shuffle
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 584
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nShuffle&apos;s characters in a string. The methodology used to generate random\nindices used for shuffling is cryptographically strong. Due to this nature,\nthere is no guarantee that the return string will be entirely different\nthan the original.\n"
+  example: []
+  syntax:
+    content: public static string Shuffle(this string str, bool preserveSpaces = false)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to be shuffled
+    - id: preserveSpaces
+      type: System.Boolean
+      description: Determines whether to shuffle spaces or not
+    return:
+      type: System.String
+      description: The shuffled string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Shuffle(str As String, preserveSpaces As Boolean = False) As String
+  overload: Ampere.StringUtils.StringUtils.Shuffle*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
+  commentId: M:Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
+  id: Substring(System.String,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: Substring(String, Int32, Int32)
+  nameWithType: StringUtils.Substring(String, Int32, Int32)
+  fullName: Ampere.StringUtils.StringUtils.Substring(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Substring
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 621
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nPerforms a Substring given a starting and ending index, similar to Java.\nThe operation is performed mathematically as [startIndex, endIndex).\n"
+  example: []
+  syntax:
+    content: public static string Substring(this string str, int startIndex, int endIndex)
+    parameters:
+    - id: str
+      type: System.String
+      description: The given string
+    - id: startIndex
+      type: System.Int32
+      description: The inclusive starting index of <code data-dev-comment-type="paramref" class="paramref">str</code>
+    - id: endIndex
+      type: System.Int32
+      description: The exclusive ending index of <code data-dev-comment-type="paramref" class="paramref">str</code>
+    return:
+      type: System.String
+      description: "A string that is equivalent to the substring that begins at startIndex in this \ninstance, or Empty if startIndex is equal to the length of this instance."
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Substring(str As String, startIndex As Integer, endIndex As Integer) As String
+  overload: Ampere.StringUtils.StringUtils.Substring*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
+  commentId: M:Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
+  id: AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: AppendIf(StringBuilder, String, Boolean)
+  nameWithType: StringUtils.AppendIf(StringBuilder, String, Boolean)
+  fullName: Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: AppendIf
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 703
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nA StringBuilder extension to append to the StringBuilder if and only if a condition is met.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendIf(this StringBuilder sb, string str, bool condition)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    - id: str
+      type: System.String
+      description: The string to append
+    - id: condition
+      type: System.Boolean
+      description: The condition to meet in order for the append to occur
+    return:
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendIf(sb As StringBuilder, str As String, condition As Boolean) As StringBuilder
+  overload: Ampere.StringUtils.StringUtils.AppendIf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  commentId: M:Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  id: AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  nameWithType: StringUtils.AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: AppendFromEnumerable
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 722
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nAppends the contents of an enumerable of generic objects provided a delegate to identify the string property.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendFromEnumerable<T>(this StringBuilder sb, IEnumerable<T> enumerable, Func<T, string> func)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The enumerable to append from
+    - id: func
+      type: System.Func{{T},System.String}
+      description: The function specifying what item should be appended
+    typeParameters:
+    - id: T
+      description: The type of the enumerable
+    return:
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendFromEnumerable(Of T)(sb As StringBuilder, enumerable As IEnumerable(Of T), func As Func(Of T, String)) As StringBuilder
+  overload: Ampere.StringUtils.StringUtils.AppendFromEnumerable*
+  nameWithType.vb: StringUtils.AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.AppendFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
+  name.vb: AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  id: AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: AppendFromEnumerable(StringBuilder, IEnumerable<String>)
+  nameWithType: StringUtils.AppendFromEnumerable(StringBuilder, IEnumerable<String>)
+  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: AppendFromEnumerable
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 732
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nAppends the contents of a string enumerable. \n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendFromEnumerable(this StringBuilder sb, IEnumerable<string> enumerable)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The enumerable to append from
+    return:
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendFromEnumerable(sb As StringBuilder, enumerable As IEnumerable(Of String)) As StringBuilder
+  overload: Ampere.StringUtils.StringUtils.AppendFromEnumerable*
+  nameWithType.vb: StringUtils.AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
+- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  commentId: M:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  id: AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  nameWithType: StringUtils.AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: AppendLineFromEnumerable
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 744
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nAppends the contents of an enumerable of generic objects provided a delegate to identify the string property. This function also\nadds the appropriate line terminator at the end of the StringBuilder instance.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendLineFromEnumerable<T>(this StringBuilder sb, IEnumerable<T> enumerable, Func<T, string> func)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The enumerable to append from
+    - id: func
+      type: System.Func{{T},System.String}
+      description: The function specifying what item should be appended
+    typeParameters:
+    - id: T
+      description: The type of the enumerable
+    return:
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendLineFromEnumerable(Of T)(sb As StringBuilder, enumerable As IEnumerable(Of T), func As Func(Of T, String)) As StringBuilder
+  overload: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*
+  nameWithType.vb: StringUtils.AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
+  name.vb: AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  id: AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
+  nameWithType: StringUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
+  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: AppendLineFromEnumerable
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 755
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nAppends the contents of a string enumerable. This function also\nadds the appropriate line terminator at the end of the StringBuilder instance.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendLineFromEnumerable(this StringBuilder sb, IEnumerable<string> enumerable)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    - id: enumerable
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The enumerable to append from
+    return:
+      type: System.Text.StringBuilder
+      description: The StringBuilder instance
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendLineFromEnumerable(sb As StringBuilder, enumerable As IEnumerable(Of String)) As StringBuilder
+  overload: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*
+  nameWithType.vb: StringUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
+references:
+- uid: Ampere.StringUtils
+  commentId: N:Ampere.StringUtils
+  name: Ampere.StringUtils
+  nameWithType: Ampere.StringUtils
+  fullName: Ampere.StringUtils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: Ampere.StringUtils.StringUtils.CharToString*
+  commentId: Overload:Ampere.StringUtils.StringUtils.CharToString
+  name: CharToString
+  nameWithType: StringUtils.CharToString
+  fullName: Ampere.StringUtils.StringUtils.CharToString
+- uid: System.Collections.Generic.IEnumerable{System.Char}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Char}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Char>
+  nameWithType: IEnumerable<Char>
+  fullName: System.Collections.Generic.IEnumerable<System.Char>
+  nameWithType.vb: IEnumerable(Of Char)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Char)
+  name.vb: IEnumerable(Of Char)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Ampere.StringUtils.StringUtils.Chomp*
+  commentId: Overload:Ampere.StringUtils.StringUtils.Chomp
+  name: Chomp
+  nameWithType: StringUtils.Chomp
+  fullName: Ampere.StringUtils.StringUtils.Chomp
+- uid: Ampere.StringUtils.StringUtils.ChompAfter*
+  commentId: Overload:Ampere.StringUtils.StringUtils.ChompAfter
+  name: ChompAfter
+  nameWithType: StringUtils.ChompAfter
+  fullName: Ampere.StringUtils.StringUtils.ChompAfter
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Ampere.StringUtils.StringUtils.ContainsDigits*
+  commentId: Overload:Ampere.StringUtils.StringUtils.ContainsDigits
+  name: ContainsDigits
+  nameWithType: StringUtils.ContainsDigits
+  fullName: Ampere.StringUtils.StringUtils.ContainsDigits
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Ampere.StringUtils.StringUtils.ContainsDuplicateChars*
+  commentId: Overload:Ampere.StringUtils.StringUtils.ContainsDuplicateChars
+  name: ContainsDuplicateChars
+  nameWithType: StringUtils.ContainsDuplicateChars
+  fullName: Ampere.StringUtils.StringUtils.ContainsDuplicateChars
+- uid: Ampere.StringUtils.StringUtils.ContainsDuplicateStrings*
+  commentId: Overload:Ampere.StringUtils.StringUtils.ContainsDuplicateStrings
+  name: ContainsDuplicateStrings
+  nameWithType: StringUtils.ContainsDuplicateStrings
+  fullName: Ampere.StringUtils.StringUtils.ContainsDuplicateStrings
+- uid: Ampere.StringUtils.StringUtils.CountLetters*
+  commentId: Overload:Ampere.StringUtils.StringUtils.CountLetters
+  name: CountLetters
+  nameWithType: StringUtils.CountLetters
+  fullName: Ampere.StringUtils.StringUtils.CountLetters
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: Ampere.StringUtils.StringUtils.CountWords*
+  commentId: Overload:Ampere.StringUtils.StringUtils.CountWords
+  name: CountWords
+  nameWithType: StringUtils.CountWords
+  fullName: Ampere.StringUtils.StringUtils.CountWords
+- uid: Ampere.StringUtils.StringUtils.IsPalindrome*
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsPalindrome
+  name: IsPalindrome
+  nameWithType: StringUtils.IsPalindrome
+  fullName: Ampere.StringUtils.StringUtils.IsPalindrome
+- uid: Ampere.StringUtils.StringUtils.IsStrictlyDecreasing*
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsStrictlyDecreasing
+  name: IsStrictlyDecreasing
+  nameWithType: StringUtils.IsStrictlyDecreasing
+  fullName: Ampere.StringUtils.StringUtils.IsStrictlyDecreasing
+- uid: Ampere.StringUtils.StringUtils.IsStrictlyIncreasing*
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsStrictlyIncreasing
+  name: IsStrictlyIncreasing
+  nameWithType: StringUtils.IsStrictlyIncreasing
+  fullName: Ampere.StringUtils.StringUtils.IsStrictlyIncreasing
+- uid: Ampere.StringUtils.StringUtils.IsSystemDateTime*
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsSystemDateTime
+  name: IsSystemDateTime
+  nameWithType: StringUtils.IsSystemDateTime
+  fullName: Ampere.StringUtils.StringUtils.IsSystemDateTime
+- uid: Ampere.StringUtils.StringUtils.IsValidUri*
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsValidUri
+  name: IsValidUri
+  nameWithType: StringUtils.IsValidUri
+  fullName: Ampere.StringUtils.StringUtils.IsValidUri
+- uid: Ampere.StringUtils.StringUtils.IsWellFormed(System.String)
+  commentId: M:Ampere.StringUtils.StringUtils.IsWellFormed(System.String)
+  isExternal: true
+- uid: Ampere.StringUtils.StringUtils.IsWellFormed*
+  commentId: Overload:Ampere.StringUtils.StringUtils.IsWellFormed
+  name: IsWellFormed
+  nameWithType: StringUtils.IsWellFormed
+  fullName: Ampere.StringUtils.StringUtils.IsWellFormed
+- uid: Ampere.StringUtils.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})
+  commentId: M:Ampere.StringUtils.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})
+  isExternal: true
+- uid: System.Collections.Generic.Dictionary{System.Char,System.Char}
+  commentId: T:System.Collections.Generic.Dictionary{System.Char,System.Char}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Char, Char>
+  nameWithType: Dictionary<Char, Char>
+  fullName: System.Collections.Generic.Dictionary<System.Char, System.Char>
+  nameWithType.vb: Dictionary(Of Char, Char)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Char, System.Char)
+  name.vb: Dictionary(Of Char, Char)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.StringUtils.StringUtils.LongestCommonPrefix*
+  commentId: Overload:Ampere.StringUtils.StringUtils.LongestCommonPrefix
+  name: LongestCommonPrefix
+  nameWithType: StringUtils.LongestCommonPrefix
+  fullName: Ampere.StringUtils.StringUtils.LongestCommonPrefix
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.StringUtils.StringUtils.OrderByLength*
+  commentId: Overload:Ampere.StringUtils.StringUtils.OrderByLength
+  name: OrderByLength
+  nameWithType: StringUtils.OrderByLength
+  fullName: Ampere.StringUtils.StringUtils.OrderByLength
+- uid: Ampere.StringUtils.StringUtils.RemoveAll*
+  commentId: Overload:Ampere.StringUtils.StringUtils.RemoveAll
+  name: RemoveAll
+  nameWithType: StringUtils.RemoveAll
+  fullName: Ampere.StringUtils.StringUtils.RemoveAll
+- uid: System.Collections.Generic.IEnumerable{System.Char}[]
+  isExternal: true
+  name: IEnumerable<Char>[]
+  nameWithType: IEnumerable<Char>[]
+  fullName: System.Collections.Generic.IEnumerable<System.Char>[]
+  nameWithType.vb: IEnumerable(Of Char)()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Char)()
+  name.vb: IEnumerable(Of Char)()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.IEnumerable{System.String}[]
+  isExternal: true
+  name: IEnumerable<String>[]
+  nameWithType: IEnumerable<String>[]
+  fullName: System.Collections.Generic.IEnumerable<System.String>[]
+  nameWithType.vb: IEnumerable(Of String)()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)()
+  name.vb: IEnumerable(Of String)()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Ampere.StringUtils.StringUtils.ReplaceAt*
+  commentId: Overload:Ampere.StringUtils.StringUtils.ReplaceAt
+  name: ReplaceAt
+  nameWithType: StringUtils.ReplaceAt
+  fullName: Ampere.StringUtils.StringUtils.ReplaceAt
+- uid: Ampere.StringUtils.StringUtils.Reverse*
+  commentId: Overload:Ampere.StringUtils.StringUtils.Reverse
+  name: Reverse
+  nameWithType: StringUtils.Reverse
+  fullName: Ampere.StringUtils.StringUtils.Reverse
+- uid: Ampere.StringUtils.StringUtils.Shuffle*
+  commentId: Overload:Ampere.StringUtils.StringUtils.Shuffle
+  name: Shuffle
+  nameWithType: StringUtils.Shuffle
+  fullName: Ampere.StringUtils.StringUtils.Shuffle
+- uid: Ampere.StringUtils.StringUtils.Substring*
+  commentId: Overload:Ampere.StringUtils.StringUtils.Substring
+  name: Substring
+  nameWithType: StringUtils.Substring
+  fullName: Ampere.StringUtils.StringUtils.Substring
+- uid: Ampere.StringUtils.StringUtils.AppendIf*
+  commentId: Overload:Ampere.StringUtils.StringUtils.AppendIf
+  name: AppendIf
+  nameWithType: StringUtils.AppendIf
+  fullName: Ampere.StringUtils.StringUtils.AppendIf
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable*
+  commentId: Overload:Ampere.StringUtils.StringUtils.AppendFromEnumerable
+  name: AppendFromEnumerable
+  nameWithType: StringUtils.AppendFromEnumerable
+  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{{T},System.String}
+  commentId: T:System.Func{``0,System.String}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, String>
+  nameWithType: Func<T, String>
+  fullName: System.Func<T, System.String>
+  nameWithType.vb: Func(Of T, String)
+  fullName.vb: System.Func(Of T, System.String)
+  name.vb: Func(Of T, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*
+  commentId: Overload:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable
+  name: AppendLineFromEnumerable
+  nameWithType: StringUtils.AppendLineFromEnumerable
+  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable

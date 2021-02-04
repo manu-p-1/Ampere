@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Statistics
+  commentId: N:Ampere.Statistics
+  id: Ampere.Statistics
+  children:
+  - Ampere.Statistics.EnumerableStats
+  - Ampere.Statistics.InsufficientDataSetException
+  - Ampere.Statistics.NoModeException
+  langs:
+  - csharp
+  - vb
+  name: Ampere.Statistics
+  nameWithType: Ampere.Statistics
+  fullName: Ampere.Statistics
+  type: Namespace
+  assemblies:
+  - Ampere
+references:
+- uid: Ampere.Statistics.EnumerableStats
+  commentId: T:Ampere.Statistics.EnumerableStats
+  parent: Ampere.Statistics
+  name: EnumerableStats
+  nameWithType: EnumerableStats
+  fullName: Ampere.Statistics.EnumerableStats
+- uid: Ampere.Statistics.InsufficientDataSetException
+  commentId: T:Ampere.Statistics.InsufficientDataSetException
+  name: InsufficientDataSetException
+  nameWithType: InsufficientDataSetException
+  fullName: Ampere.Statistics.InsufficientDataSetException
+- uid: Ampere.Statistics.NoModeException
+  commentId: T:Ampere.Statistics.NoModeException
+  name: NoModeException
+  nameWithType: NoModeException
+  fullName: Ampere.Statistics.NoModeException
+- uid: Ampere.Statistics
+  commentId: N:Ampere.Statistics
+  name: Ampere.Statistics
+  nameWithType: Ampere.Statistics
+  fullName: Ampere.Statistics

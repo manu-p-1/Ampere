@@ -1,0 +1,338 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Base.IRangify`1
+  commentId: T:Ampere.Base.IRangify`1
+  id: IRangify`1
+  parent: Ampere.Base
+  children:
+  - Ampere.Base.IRangify`1.ContainsValue(`0)
+  - Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  - Ampere.Base.IRangify`1.IsValid
+  - Ampere.Base.IRangify`1.Maximum
+  - Ampere.Base.IRangify`1.Minimum
+  langs:
+  - csharp
+  - vb
+  name: IRangify<T>
+  nameWithType: IRangify<T>
+  fullName: Ampere.Base.IRangify<T>
+  type: Interface
+  source:
+    remote:
+      path: Ampere/Base/IRangify.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IRangify
+    path: ../Ampere/Base/IRangify.cs
+    startLine: 9
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: >
+    The range class represents a range of values of a generic type.
+
+    The Range class which was modified from user @drharris on StackOverflow.
+
+    By convention, both sides of the range should be inclusive values.
+  example: []
+  syntax:
+    content: >-
+      public interface IRangify<T>
+
+          where T : IComparable<T>
+    typeParameters:
+    - id: T
+      description: The generic parameter
+    content.vb: Public Interface IRangify(Of T As IComparable(Of T))
+  nameWithType.vb: IRangify(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Ampere.Base.IRangify(Of T)
+  name.vb: IRangify(Of T)
+- uid: Ampere.Base.IRangify`1.Minimum
+  commentId: P:Ampere.Base.IRangify`1.Minimum
+  id: Minimum
+  parent: Ampere.Base.IRangify`1
+  langs:
+  - csharp
+  - vb
+  name: Minimum
+  nameWithType: IRangify<T>.Minimum
+  fullName: Ampere.Base.IRangify<T>.Minimum
+  type: Property
+  source:
+    remote:
+      path: Ampere/Base/IRangify.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Minimum
+    path: ../Ampere/Base/IRangify.cs
+    startLine: 14
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nThe minimum value of this range\n"
+  example: []
+  syntax:
+    content: T Minimum { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: ReadOnly Property Minimum As T
+  overload: Ampere.Base.IRangify`1.Minimum*
+  nameWithType.vb: IRangify(Of T).Minimum
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Ampere.Base.IRangify(Of T).Minimum
+- uid: Ampere.Base.IRangify`1.Maximum
+  commentId: P:Ampere.Base.IRangify`1.Maximum
+  id: Maximum
+  parent: Ampere.Base.IRangify`1
+  langs:
+  - csharp
+  - vb
+  name: Maximum
+  nameWithType: IRangify<T>.Maximum
+  fullName: Ampere.Base.IRangify<T>.Maximum
+  type: Property
+  source:
+    remote:
+      path: Ampere/Base/IRangify.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Maximum
+    path: ../Ampere/Base/IRangify.cs
+    startLine: 19
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nThe maximum value of this range\n"
+  example: []
+  syntax:
+    content: T Maximum { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: ReadOnly Property Maximum As T
+  overload: Ampere.Base.IRangify`1.Maximum*
+  nameWithType.vb: IRangify(Of T).Maximum
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Ampere.Base.IRangify(Of T).Maximum
+- uid: Ampere.Base.IRangify`1.IsValid
+  commentId: M:Ampere.Base.IRangify`1.IsValid
+  id: IsValid
+  parent: Ampere.Base.IRangify`1
+  langs:
+  - csharp
+  - vb
+  name: IsValid()
+  nameWithType: IRangify<T>.IsValid()
+  fullName: Ampere.Base.IRangify<T>.IsValid()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/IRangify.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsValid
+    path: ../Ampere/Base/IRangify.cs
+    startLine: 25
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nDetermines if the range is valid.\n"
+  example: []
+  syntax:
+    content: bool IsValid()
+    return:
+      type: System.Boolean
+      description: True if range is valid, else false
+    content.vb: Function IsValid As Boolean
+  overload: Ampere.Base.IRangify`1.IsValid*
+  nameWithType.vb: IRangify(Of T).IsValid()
+  fullName.vb: Ampere.Base.IRangify(Of T).IsValid()
+- uid: Ampere.Base.IRangify`1.ContainsValue(`0)
+  commentId: M:Ampere.Base.IRangify`1.ContainsValue(`0)
+  id: ContainsValue(`0)
+  parent: Ampere.Base.IRangify`1
+  langs:
+  - csharp
+  - vb
+  name: ContainsValue(T)
+  nameWithType: IRangify<T>.ContainsValue(T)
+  fullName: Ampere.Base.IRangify<T>.ContainsValue(T)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/IRangify.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ContainsValue
+    path: ../Ampere/Base/IRangify.cs
+    startLine: 32
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nDetermines if the provided value is inside the range.\n"
+  example: []
+  syntax:
+    content: bool ContainsValue(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value to test
+    return:
+      type: System.Boolean
+      description: True if the value is inside Range, else false
+    content.vb: Function ContainsValue(value As T) As Boolean
+  overload: Ampere.Base.IRangify`1.ContainsValue*
+  nameWithType.vb: IRangify(Of T).ContainsValue(T)
+  fullName.vb: Ampere.Base.IRangify(Of T).ContainsValue(T)
+- uid: Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  commentId: M:Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  id: IsInsideRange(Ampere.Base.IRangify{`0})
+  parent: Ampere.Base.IRangify`1
+  langs:
+  - csharp
+  - vb
+  name: IsInsideRange(IRangify<T>)
+  nameWithType: IRangify<T>.IsInsideRange(IRangify<T>)
+  fullName: Ampere.Base.IRangify<T>.IsInsideRange(Ampere.Base.IRangify<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/IRangify.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsInsideRange
+    path: ../Ampere/Base/IRangify.cs
+    startLine: 39
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nDetermines if this Range is inside the bounds of another range.\n"
+  example: []
+  syntax:
+    content: bool IsInsideRange(IRangify<T> range)
+    parameters:
+    - id: range
+      type: Ampere.Base.IRangify`1
+      description: The parent range to test on
+    return:
+      type: System.Boolean
+      description: True if range is inclusive, else false
+    content.vb: Function IsInsideRange(range As IRangify(Of T)) As Boolean
+  overload: Ampere.Base.IRangify`1.IsInsideRange*
+  nameWithType.vb: IRangify(Of T).IsInsideRange(IRangify(Of T))
+  fullName.vb: Ampere.Base.IRangify(Of T).IsInsideRange(Ampere.Base.IRangify(Of T))
+  name.vb: IsInsideRange(IRangify(Of T))
+references:
+- uid: Ampere.Base
+  commentId: N:Ampere.Base
+  name: Ampere.Base
+  nameWithType: Ampere.Base
+  fullName: Ampere.Base
+- uid: Ampere.Base.IRangify`1.Minimum*
+  commentId: Overload:Ampere.Base.IRangify`1.Minimum
+  name: Minimum
+  nameWithType: IRangify<T>.Minimum
+  fullName: Ampere.Base.IRangify<T>.Minimum
+  nameWithType.vb: IRangify(Of T).Minimum
+  fullName.vb: Ampere.Base.IRangify(Of T).Minimum
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Ampere.Base.IRangify`1.Maximum*
+  commentId: Overload:Ampere.Base.IRangify`1.Maximum
+  name: Maximum
+  nameWithType: IRangify<T>.Maximum
+  fullName: Ampere.Base.IRangify<T>.Maximum
+  nameWithType.vb: IRangify(Of T).Maximum
+  fullName.vb: Ampere.Base.IRangify(Of T).Maximum
+- uid: Ampere.Base.IRangify`1.IsValid*
+  commentId: Overload:Ampere.Base.IRangify`1.IsValid
+  name: IsValid
+  nameWithType: IRangify<T>.IsValid
+  fullName: Ampere.Base.IRangify<T>.IsValid
+  nameWithType.vb: IRangify(Of T).IsValid
+  fullName.vb: Ampere.Base.IRangify(Of T).IsValid
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Ampere.Base.IRangify`1.ContainsValue*
+  commentId: Overload:Ampere.Base.IRangify`1.ContainsValue
+  name: ContainsValue
+  nameWithType: IRangify<T>.ContainsValue
+  fullName: Ampere.Base.IRangify<T>.ContainsValue
+  nameWithType.vb: IRangify(Of T).ContainsValue
+  fullName.vb: Ampere.Base.IRangify(Of T).ContainsValue
+- uid: Ampere.Base.IRangify`1.IsInsideRange*
+  commentId: Overload:Ampere.Base.IRangify`1.IsInsideRange
+  name: IsInsideRange
+  nameWithType: IRangify<T>.IsInsideRange
+  fullName: Ampere.Base.IRangify<T>.IsInsideRange
+  nameWithType.vb: IRangify(Of T).IsInsideRange
+  fullName.vb: Ampere.Base.IRangify(Of T).IsInsideRange
+- uid: Ampere.Base.IRangify`1
+  commentId: T:Ampere.Base.IRangify`1
+  parent: Ampere.Base
+  name: IRangify<T>
+  nameWithType: IRangify<T>
+  fullName: Ampere.Base.IRangify<T>
+  nameWithType.vb: IRangify(Of T)
+  fullName.vb: Ampere.Base.IRangify(Of T)
+  name.vb: IRangify(Of T)
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

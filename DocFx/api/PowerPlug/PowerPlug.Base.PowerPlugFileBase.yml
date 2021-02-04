@@ -1,0 +1,540 @@
+### YamlMime:ManagedReference
+items:
+- uid: PowerPlug.Base.PowerPlugFileBase
+  commentId: T:PowerPlug.Base.PowerPlugFileBase
+  id: PowerPlugFileBase
+  parent: PowerPlug.Base
+  children:
+  - PowerPlug.Base.PowerPlugFileBase.#ctor(System.IO.FileInfo)
+  - PowerPlug.Base.PowerPlugFileBase.#ctor(System.String)
+  - PowerPlug.Base.PowerPlugFileBase.FileInfo
+  - PowerPlug.Base.PowerPlugFileBase.FileParentDir
+  langs:
+  - csharp
+  - vb
+  name: PowerPlugFileBase
+  nameWithType: PowerPlugFileBase
+  fullName: PowerPlug.Base.PowerPlugFileBase
+  type: Class
+  source:
+    remote:
+      path: PowerPlug/Base/PowerPlugFileBase.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: PowerPlugFileBase
+    path: ../PowerPlug/Base/PowerPlugFileBase.cs
+    startLine: 8
+  assemblies:
+  - PowerPlug
+  namespace: PowerPlug.Base
+  summary: "\nThe base class for any PowerPlug file abstraction. Representations of PowerShell entities such as\na user&apos;s profile should inherit this class for abstraction.\n"
+  example: []
+  syntax:
+    content: public abstract class PowerPlugFileBase
+    content.vb: Public MustInherit Class PowerPlugFileBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PowerPlug.Base.Profile
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: PowerPlug.Base.PowerPlugFileBase.FileInfo
+  commentId: P:PowerPlug.Base.PowerPlugFileBase.FileInfo
+  id: FileInfo
+  parent: PowerPlug.Base.PowerPlugFileBase
+  langs:
+  - csharp
+  - vb
+  name: FileInfo
+  nameWithType: PowerPlugFileBase.FileInfo
+  fullName: PowerPlug.Base.PowerPlugFileBase.FileInfo
+  type: Property
+  source:
+    remote:
+      path: PowerPlug/Base/PowerPlugFileBase.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: FileInfo
+    path: ../PowerPlug/Base/PowerPlugFileBase.cs
+    startLine: 13
+  assemblies:
+  - PowerPlug
+  namespace: PowerPlug.Base
+  summary: "\nThe FileInfo of the path provided\n"
+  example: []
+  syntax:
+    content: public FileInfo FileInfo { get; }
+    parameters: []
+    return:
+      type: System.IO.FileInfo
+    content.vb: Public ReadOnly Property FileInfo As FileInfo
+  overload: PowerPlug.Base.PowerPlugFileBase.FileInfo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: PowerPlug.Base.PowerPlugFileBase.FileParentDir
+  commentId: P:PowerPlug.Base.PowerPlugFileBase.FileParentDir
+  id: FileParentDir
+  parent: PowerPlug.Base.PowerPlugFileBase
+  langs:
+  - csharp
+  - vb
+  name: FileParentDir
+  nameWithType: PowerPlugFileBase.FileParentDir
+  fullName: PowerPlug.Base.PowerPlugFileBase.FileParentDir
+  type: Property
+  source:
+    remote:
+      path: PowerPlug/Base/PowerPlugFileBase.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: FileParentDir
+    path: ../PowerPlug/Base/PowerPlugFileBase.cs
+    startLine: 18
+  assemblies:
+  - PowerPlug
+  namespace: PowerPlug.Base
+  summary: "\nThe DirectoryInfo of the parent folder of the path provided\n"
+  example: []
+  syntax:
+    content: public DirectoryInfo FileParentDir { get; }
+    parameters: []
+    return:
+      type: System.IO.DirectoryInfo
+    content.vb: Public ReadOnly Property FileParentDir As DirectoryInfo
+  overload: PowerPlug.Base.PowerPlugFileBase.FileParentDir*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: PowerPlug.Base.PowerPlugFileBase.#ctor(System.String)
+  commentId: M:PowerPlug.Base.PowerPlugFileBase.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: PowerPlug.Base.PowerPlugFileBase
+  langs:
+  - csharp
+  - vb
+  name: PowerPlugFileBase(String)
+  nameWithType: PowerPlugFileBase.PowerPlugFileBase(String)
+  fullName: PowerPlug.Base.PowerPlugFileBase.PowerPlugFileBase(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: PowerPlug/Base/PowerPlugFileBase.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: .ctor
+    path: ../PowerPlug/Base/PowerPlugFileBase.cs
+    startLine: 24
+  assemblies:
+  - PowerPlug
+  namespace: PowerPlug.Base
+  summary: "\nSets initial variables given a pathname\n"
+  example: []
+  syntax:
+    content: protected PowerPlugFileBase(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The pathname in order to create a PowerPlug file
+    content.vb: Protected Sub New(path As String)
+  overload: PowerPlug.Base.PowerPlugFileBase.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: PowerPlug.Base.PowerPlugFileBase.#ctor(System.IO.FileInfo)
+  commentId: M:PowerPlug.Base.PowerPlugFileBase.#ctor(System.IO.FileInfo)
+  id: '#ctor(System.IO.FileInfo)'
+  parent: PowerPlug.Base.PowerPlugFileBase
+  langs:
+  - csharp
+  - vb
+  name: PowerPlugFileBase(FileInfo)
+  nameWithType: PowerPlugFileBase.PowerPlugFileBase(FileInfo)
+  fullName: PowerPlug.Base.PowerPlugFileBase.PowerPlugFileBase(System.IO.FileInfo)
+  type: Constructor
+  source:
+    remote:
+      path: PowerPlug/Base/PowerPlugFileBase.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: .ctor
+    path: ../PowerPlug/Base/PowerPlugFileBase.cs
+    startLine: 34
+  assemblies:
+  - PowerPlug
+  namespace: PowerPlug.Base
+  summary: "\nSets initial variables given a FileInfo\n"
+  example: []
+  syntax:
+    content: protected PowerPlugFileBase(FileInfo fileInfo)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance in order to create a PowerPlug file
+    content.vb: Protected Sub New(fileInfo As FileInfo)
+  overload: PowerPlug.Base.PowerPlugFileBase.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: PowerPlug.Base
+  commentId: N:PowerPlug.Base
+  name: PowerPlug.Base
+  nameWithType: PowerPlug.Base
+  fullName: PowerPlug.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PowerPlug.Base.PowerPlugFileBase.FileInfo*
+  commentId: Overload:PowerPlug.Base.PowerPlugFileBase.FileInfo
+  name: FileInfo
+  nameWithType: PowerPlugFileBase.FileInfo
+  fullName: PowerPlug.Base.PowerPlugFileBase.FileInfo
+- uid: System.IO.FileInfo
+  commentId: T:System.IO.FileInfo
+  parent: System.IO
+  isExternal: true
+  name: FileInfo
+  nameWithType: FileInfo
+  fullName: System.IO.FileInfo
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: PowerPlug.Base.PowerPlugFileBase.FileParentDir*
+  commentId: Overload:PowerPlug.Base.PowerPlugFileBase.FileParentDir
+  name: FileParentDir
+  nameWithType: PowerPlugFileBase.FileParentDir
+  fullName: PowerPlug.Base.PowerPlugFileBase.FileParentDir
+- uid: System.IO.DirectoryInfo
+  commentId: T:System.IO.DirectoryInfo
+  parent: System.IO
+  isExternal: true
+  name: DirectoryInfo
+  nameWithType: DirectoryInfo
+  fullName: System.IO.DirectoryInfo
+- uid: PowerPlug.Base.PowerPlugFileBase.#ctor*
+  commentId: Overload:PowerPlug.Base.PowerPlugFileBase.#ctor
+  name: PowerPlugFileBase
+  nameWithType: PowerPlugFileBase.PowerPlugFileBase
+  fullName: PowerPlug.Base.PowerPlugFileBase.PowerPlugFileBase
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,1147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Base.Range`1
+  commentId: T:Ampere.Base.Range`1
+  id: Range`1
+  parent: Ampere.Base
+  children:
+  - Ampere.Base.Range`1.#ctor(`0,`0)
+  - Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+  - Ampere.Base.Range`1.ContainsValue(`0)
+  - Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  - Ampere.Base.Range`1.IsValid
+  - Ampere.Base.Range`1.Maximum
+  - Ampere.Base.Range`1.Minimum
+  - Ampere.Base.Range`1.ToString
+  langs:
+  - csharp
+  - vb
+  name: Range<T>
+  nameWithType: Range<T>
+  fullName: Ampere.Base.Range<T>
+  type: Class
+  source:
+    remote:
+      path: Ampere/Base/Range.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Range
+    path: ../Ampere/Base/Range.cs
+    startLine: 3
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  example: []
+  syntax:
+    content: 'public class Range<T> : IRangify<T> where T : IComparable<T>'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class Range(Of T As IComparable(Of T))
+
+          Implements IRangify(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Ampere.Base.IntRange
+  implements:
+  - Ampere.Base.IRangify{{T}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: Range(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Ampere.Base.Range(Of T)
+  name.vb: Range(Of T)
+- uid: Ampere.Base.Range`1.Minimum
+  commentId: P:Ampere.Base.Range`1.Minimum
+  id: Minimum
+  parent: Ampere.Base.Range`1
+  langs:
+  - csharp
+  - vb
+  name: Minimum
+  nameWithType: Range<T>.Minimum
+  fullName: Ampere.Base.Range<T>.Minimum
+  type: Property
+  source:
+    remote:
+      path: Ampere/Base/Range.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Minimum
+    path: ../Ampere/Base/Range.cs
+    startLine: 6
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  example: []
+  syntax:
+    content: public T Minimum { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property Minimum As T
+  overload: Ampere.Base.Range`1.Minimum*
+  implements:
+  - Ampere.Base.IRangify{{T}}.Minimum
+  nameWithType.vb: Range(Of T).Minimum
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Ampere.Base.Range(Of T).Minimum
+- uid: Ampere.Base.Range`1.Maximum
+  commentId: P:Ampere.Base.Range`1.Maximum
+  id: Maximum
+  parent: Ampere.Base.Range`1
+  langs:
+  - csharp
+  - vb
+  name: Maximum
+  nameWithType: Range<T>.Maximum
+  fullName: Ampere.Base.Range<T>.Maximum
+  type: Property
+  source:
+    remote:
+      path: Ampere/Base/Range.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: Maximum
+    path: ../Ampere/Base/Range.cs
+    startLine: 9
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  example: []
+  syntax:
+    content: public T Maximum { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property Maximum As T
+  overload: Ampere.Base.Range`1.Maximum*
+  implements:
+  - Ampere.Base.IRangify{{T}}.Maximum
+  nameWithType.vb: Range(Of T).Maximum
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Ampere.Base.Range(Of T).Maximum
+- uid: Ampere.Base.Range`1.#ctor(`0,`0)
+  commentId: M:Ampere.Base.Range`1.#ctor(`0,`0)
+  id: '#ctor(`0,`0)'
+  parent: Ampere.Base.Range`1
+  langs:
+  - csharp
+  - vb
+  name: Range(T, T)
+  nameWithType: Range<T>.Range(T, T)
+  fullName: Ampere.Base.Range<T>.Range(T, T)
+  type: Constructor
+  source:
+    remote:
+      path: Ampere/Base/Range.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: .ctor
+    path: ../Ampere/Base/Range.cs
+    startLine: 17
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: "\nCreates a new instance of the Range class. This class is mutable - for the immutable\nversion, see <xref href=\"Ampere.Base.ImmutableRange%601\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: protected Range(T minimum, T maximum)
+    parameters:
+    - id: minimum
+      type: '{T}'
+      description: The minimum value
+    - id: maximum
+      type: '{T}'
+      description: The maximum value
+    content.vb: Protected Sub New(minimum As T, maximum As T)
+  overload: Ampere.Base.Range`1.#ctor*
+  nameWithType.vb: Range(Of T).Range(T, T)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Ampere.Base.Range(Of T).Range(T, T)
+- uid: Ampere.Base.Range`1.ToString
+  commentId: M:Ampere.Base.Range`1.ToString
+  id: ToString
+  parent: Ampere.Base.Range`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Range<T>.ToString()
+  fullName: Ampere.Base.Range<T>.ToString()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Range.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ToString
+    path: ../Ampere/Base/Range.cs
+    startLine: 24
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Ampere.Base.Range`1.ToString*
+  nameWithType.vb: Range(Of T).ToString()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Ampere.Base.Range(Of T).ToString()
+- uid: Ampere.Base.Range`1.IsValid
+  commentId: M:Ampere.Base.Range`1.IsValid
+  id: IsValid
+  parent: Ampere.Base.Range`1
+  langs:
+  - csharp
+  - vb
+  name: IsValid()
+  nameWithType: Range<T>.IsValid()
+  fullName: Ampere.Base.Range<T>.IsValid()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Range.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsValid
+    path: ../Ampere/Base/Range.cs
+    startLine: 27
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  example: []
+  syntax:
+    content: public bool IsValid()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsValid As Boolean
+  overload: Ampere.Base.Range`1.IsValid*
+  implements:
+  - Ampere.Base.IRangify{{T}}.IsValid
+  nameWithType.vb: Range(Of T).IsValid()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Ampere.Base.Range(Of T).IsValid()
+- uid: Ampere.Base.Range`1.ContainsValue(`0)
+  commentId: M:Ampere.Base.Range`1.ContainsValue(`0)
+  id: ContainsValue(`0)
+  parent: Ampere.Base.Range`1
+  langs:
+  - csharp
+  - vb
+  name: ContainsValue(T)
+  nameWithType: Range<T>.ContainsValue(T)
+  fullName: Ampere.Base.Range<T>.ContainsValue(T)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Range.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ContainsValue
+    path: ../Ampere/Base/Range.cs
+    startLine: 30
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  example: []
+  syntax:
+    content: public bool ContainsValue(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function ContainsValue(value As T) As Boolean
+  overload: Ampere.Base.Range`1.ContainsValue*
+  implements:
+  - Ampere.Base.IRangify{{T}}.ContainsValue({T})
+  nameWithType.vb: Range(Of T).ContainsValue(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Ampere.Base.Range(Of T).ContainsValue(T)
+- uid: Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  commentId: M:Ampere.Base.Range`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  id: IsInsideRange(Ampere.Base.IRangify{`0})
+  parent: Ampere.Base.Range`1
+  langs:
+  - csharp
+  - vb
+  name: IsInsideRange(IRangify<T>)
+  nameWithType: Range<T>.IsInsideRange(IRangify<T>)
+  fullName: Ampere.Base.Range<T>.IsInsideRange(Ampere.Base.IRangify<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Range.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: IsInsideRange
+    path: ../Ampere/Base/Range.cs
+    startLine: 33
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  example: []
+  syntax:
+    content: public bool IsInsideRange(IRangify<T> range)
+    parameters:
+    - id: range
+      type: Ampere.Base.IRangify{{T}}
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsInsideRange(range As IRangify(Of T)) As Boolean
+  overload: Ampere.Base.Range`1.IsInsideRange*
+  implements:
+  - Ampere.Base.IRangify{{T}}.IsInsideRange(Ampere.Base.IRangify{{T}})
+  nameWithType.vb: Range(Of T).IsInsideRange(IRangify(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Ampere.Base.Range(Of T).IsInsideRange(Ampere.Base.IRangify(Of T))
+  name.vb: IsInsideRange(IRangify(Of T))
+- uid: Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+  commentId: M:Ampere.Base.Range`1.ContainsRange(Ampere.Base.IRangify{`0})
+  id: ContainsRange(Ampere.Base.IRangify{`0})
+  parent: Ampere.Base.Range`1
+  langs:
+  - csharp
+  - vb
+  name: ContainsRange(IRangify<T>)
+  nameWithType: Range<T>.ContainsRange(IRangify<T>)
+  fullName: Ampere.Base.Range<T>.ContainsRange(Ampere.Base.IRangify<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Range.cs
+      branch: volt
+      repo: https://github.com/manu-p-1/PowerShell-Cmdlet-Utils.git
+    id: ContainsRange
+    path: ../Ampere/Base/Range.cs
+    startLine: 37
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  example: []
+  syntax:
+    content: public bool ContainsRange(IRangify<T> range)
+    parameters:
+    - id: range
+      type: Ampere.Base.IRangify{{T}}
+    return:
+      type: System.Boolean
+    content.vb: Public Function ContainsRange(range As IRangify(Of T)) As Boolean
+  overload: Ampere.Base.Range`1.ContainsRange*
+  nameWithType.vb: Range(Of T).ContainsRange(IRangify(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Ampere.Base.Range(Of T).ContainsRange(Ampere.Base.IRangify(Of T))
+  name.vb: ContainsRange(IRangify(Of T))
+references:
+- uid: Ampere.Base.IRangify`1
+  commentId: T:Ampere.Base.IRangify`1
+  parent: Ampere.Base
+  name: IRangify<T>
+  nameWithType: IRangify<T>
+  fullName: Ampere.Base.IRangify<T>
+  nameWithType.vb: IRangify(Of T)
+  fullName.vb: Ampere.Base.IRangify(Of T)
+  name.vb: IRangify(Of T)
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base
+  commentId: N:Ampere.Base
+  name: Ampere.Base
+  nameWithType: Ampere.Base
+  fullName: Ampere.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Ampere.Base.IRangify{{T}}
+  commentId: T:Ampere.Base.IRangify{`0}
+  parent: Ampere.Base
+  definition: Ampere.Base.IRangify`1
+  name: IRangify<T>
+  nameWithType: IRangify<T>
+  fullName: Ampere.Base.IRangify<T>
+  nameWithType.vb: IRangify(Of T)
+  fullName.vb: Ampere.Base.IRangify(Of T)
+  name.vb: IRangify(Of T)
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Ampere.Base.Range`1.Minimum*
+  commentId: Overload:Ampere.Base.Range`1.Minimum
+  name: Minimum
+  nameWithType: Range<T>.Minimum
+  fullName: Ampere.Base.Range<T>.Minimum
+  nameWithType.vb: Range(Of T).Minimum
+  fullName.vb: Ampere.Base.Range(Of T).Minimum
+- uid: Ampere.Base.IRangify{{T}}.Minimum
+  commentId: P:Ampere.Base.IRangify{`0}.Minimum
+  parent: Ampere.Base.IRangify{{T}}
+  definition: Ampere.Base.IRangify`1.Minimum
+  name: Minimum
+  nameWithType: IRangify<T>.Minimum
+  fullName: Ampere.Base.IRangify<T>.Minimum
+  nameWithType.vb: IRangify(Of T).Minimum
+  fullName.vb: Ampere.Base.IRangify(Of T).Minimum
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Ampere.Base.IRangify`1.Minimum
+  commentId: P:Ampere.Base.IRangify`1.Minimum
+  name: Minimum
+  nameWithType: IRangify<T>.Minimum
+  fullName: Ampere.Base.IRangify<T>.Minimum
+  nameWithType.vb: IRangify(Of T).Minimum
+  fullName.vb: Ampere.Base.IRangify(Of T).Minimum
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Ampere.Base.Range`1.Maximum*
+  commentId: Overload:Ampere.Base.Range`1.Maximum
+  name: Maximum
+  nameWithType: Range<T>.Maximum
+  fullName: Ampere.Base.Range<T>.Maximum
+  nameWithType.vb: Range(Of T).Maximum
+  fullName.vb: Ampere.Base.Range(Of T).Maximum
+- uid: Ampere.Base.IRangify{{T}}.Maximum
+  commentId: P:Ampere.Base.IRangify{`0}.Maximum
+  parent: Ampere.Base.IRangify{{T}}
+  definition: Ampere.Base.IRangify`1.Maximum
+  name: Maximum
+  nameWithType: IRangify<T>.Maximum
+  fullName: Ampere.Base.IRangify<T>.Maximum
+  nameWithType.vb: IRangify(Of T).Maximum
+  fullName.vb: Ampere.Base.IRangify(Of T).Maximum
+- uid: Ampere.Base.IRangify`1.Maximum
+  commentId: P:Ampere.Base.IRangify`1.Maximum
+  name: Maximum
+  nameWithType: IRangify<T>.Maximum
+  fullName: Ampere.Base.IRangify<T>.Maximum
+  nameWithType.vb: IRangify(Of T).Maximum
+  fullName.vb: Ampere.Base.IRangify(Of T).Maximum
+- uid: Ampere.Base.ImmutableRange`1
+  commentId: T:Ampere.Base.ImmutableRange`1
+  name: ImmutableRange<T>
+  nameWithType: ImmutableRange<T>
+  fullName: Ampere.Base.ImmutableRange<T>
+  nameWithType.vb: ImmutableRange(Of T)
+  fullName.vb: Ampere.Base.ImmutableRange(Of T)
+  name.vb: ImmutableRange(Of T)
+  spec.csharp:
+  - uid: Ampere.Base.ImmutableRange`1
+    name: ImmutableRange
+    nameWithType: ImmutableRange
+    fullName: Ampere.Base.ImmutableRange
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Base.ImmutableRange`1
+    name: ImmutableRange
+    nameWithType: ImmutableRange
+    fullName: Ampere.Base.ImmutableRange
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1.#ctor*
+  commentId: Overload:Ampere.Base.Range`1.#ctor
+  name: Range
+  nameWithType: Range<T>.Range
+  fullName: Ampere.Base.Range<T>.Range
+  nameWithType.vb: Range(Of T).Range
+  fullName.vb: Ampere.Base.Range(Of T).Range
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1.ToString*
+  commentId: Overload:Ampere.Base.Range`1.ToString
+  name: ToString
+  nameWithType: Range<T>.ToString
+  fullName: Ampere.Base.Range<T>.ToString
+  nameWithType.vb: Range(Of T).ToString
+  fullName.vb: Ampere.Base.Range(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Ampere.Base.Range`1.IsValid*
+  commentId: Overload:Ampere.Base.Range`1.IsValid
+  name: IsValid
+  nameWithType: Range<T>.IsValid
+  fullName: Ampere.Base.Range<T>.IsValid
+  nameWithType.vb: Range(Of T).IsValid
+  fullName.vb: Ampere.Base.Range(Of T).IsValid
+- uid: Ampere.Base.IRangify{{T}}.IsValid
+  commentId: M:Ampere.Base.IRangify{`0}.IsValid
+  parent: Ampere.Base.IRangify{{T}}
+  definition: Ampere.Base.IRangify`1.IsValid
+  name: IsValid()
+  nameWithType: IRangify<T>.IsValid()
+  fullName: Ampere.Base.IRangify<T>.IsValid()
+  nameWithType.vb: IRangify(Of T).IsValid()
+  fullName.vb: Ampere.Base.IRangify(Of T).IsValid()
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1.IsValid
+    name: IsValid
+    nameWithType: IRangify<T>.IsValid
+    fullName: Ampere.Base.IRangify<T>.IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1.IsValid
+    name: IsValid
+    nameWithType: IRangify(Of T).IsValid
+    fullName: Ampere.Base.IRangify(Of T).IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Ampere.Base.IRangify`1.IsValid
+  commentId: M:Ampere.Base.IRangify`1.IsValid
+  name: IsValid()
+  nameWithType: IRangify<T>.IsValid()
+  fullName: Ampere.Base.IRangify<T>.IsValid()
+  nameWithType.vb: IRangify(Of T).IsValid()
+  fullName.vb: Ampere.Base.IRangify(Of T).IsValid()
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1.IsValid
+    name: IsValid
+    nameWithType: IRangify<T>.IsValid
+    fullName: Ampere.Base.IRangify<T>.IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1.IsValid
+    name: IsValid
+    nameWithType: IRangify(Of T).IsValid
+    fullName: Ampere.Base.IRangify(Of T).IsValid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1.ContainsValue*
+  commentId: Overload:Ampere.Base.Range`1.ContainsValue
+  name: ContainsValue
+  nameWithType: Range<T>.ContainsValue
+  fullName: Ampere.Base.Range<T>.ContainsValue
+  nameWithType.vb: Range(Of T).ContainsValue
+  fullName.vb: Ampere.Base.Range(Of T).ContainsValue
+- uid: Ampere.Base.IRangify{{T}}.ContainsValue({T})
+  commentId: M:Ampere.Base.IRangify{`0}.ContainsValue(`0)
+  parent: Ampere.Base.IRangify{{T}}
+  definition: Ampere.Base.IRangify`1.ContainsValue(`0)
+  name: ContainsValue(T)
+  nameWithType: IRangify<T>.ContainsValue(T)
+  fullName: Ampere.Base.IRangify<T>.ContainsValue(T)
+  nameWithType.vb: IRangify(Of T).ContainsValue(T)
+  fullName.vb: Ampere.Base.IRangify(Of T).ContainsValue(T)
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1.ContainsValue(`0)
+    name: ContainsValue
+    nameWithType: IRangify<T>.ContainsValue
+    fullName: Ampere.Base.IRangify<T>.ContainsValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1.ContainsValue(`0)
+    name: ContainsValue
+    nameWithType: IRangify(Of T).ContainsValue
+    fullName: Ampere.Base.IRangify(Of T).ContainsValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IRangify`1.ContainsValue(`0)
+  commentId: M:Ampere.Base.IRangify`1.ContainsValue(`0)
+  name: ContainsValue(T)
+  nameWithType: IRangify<T>.ContainsValue(T)
+  fullName: Ampere.Base.IRangify<T>.ContainsValue(T)
+  nameWithType.vb: IRangify(Of T).ContainsValue(T)
+  fullName.vb: Ampere.Base.IRangify(Of T).ContainsValue(T)
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1.ContainsValue(`0)
+    name: ContainsValue
+    nameWithType: IRangify<T>.ContainsValue
+    fullName: Ampere.Base.IRangify<T>.ContainsValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1.ContainsValue(`0)
+    name: ContainsValue
+    nameWithType: IRangify(Of T).ContainsValue
+    fullName: Ampere.Base.IRangify(Of T).ContainsValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1.IsInsideRange*
+  commentId: Overload:Ampere.Base.Range`1.IsInsideRange
+  name: IsInsideRange
+  nameWithType: Range<T>.IsInsideRange
+  fullName: Ampere.Base.Range<T>.IsInsideRange
+  nameWithType.vb: Range(Of T).IsInsideRange
+  fullName.vb: Ampere.Base.Range(Of T).IsInsideRange
+- uid: Ampere.Base.IRangify{{T}}.IsInsideRange(Ampere.Base.IRangify{{T}})
+  commentId: M:Ampere.Base.IRangify{`0}.IsInsideRange(Ampere.Base.IRangify{`0})
+  parent: Ampere.Base.IRangify{{T}}
+  definition: Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name: IsInsideRange(IRangify<T>)
+  nameWithType: IRangify<T>.IsInsideRange(IRangify<T>)
+  fullName: Ampere.Base.IRangify<T>.IsInsideRange(Ampere.Base.IRangify<T>)
+  nameWithType.vb: IRangify(Of T).IsInsideRange(IRangify(Of T))
+  fullName.vb: Ampere.Base.IRangify(Of T).IsInsideRange(Ampere.Base.IRangify(Of T))
+  name.vb: IsInsideRange(IRangify(Of T))
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+    name: IsInsideRange
+    nameWithType: IRangify<T>.IsInsideRange
+    fullName: Ampere.Base.IRangify<T>.IsInsideRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+    name: IsInsideRange
+    nameWithType: IRangify(Of T).IsInsideRange
+    fullName: Ampere.Base.IRangify(Of T).IsInsideRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  commentId: M:Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+  name: IsInsideRange(IRangify<T>)
+  nameWithType: IRangify<T>.IsInsideRange(IRangify<T>)
+  fullName: Ampere.Base.IRangify<T>.IsInsideRange(Ampere.Base.IRangify<T>)
+  nameWithType.vb: IRangify(Of T).IsInsideRange(IRangify(Of T))
+  fullName.vb: Ampere.Base.IRangify(Of T).IsInsideRange(Ampere.Base.IRangify(Of T))
+  name.vb: IsInsideRange(IRangify(Of T))
+  spec.csharp:
+  - uid: Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+    name: IsInsideRange
+    nameWithType: IRangify<T>.IsInsideRange
+    fullName: Ampere.Base.IRangify<T>.IsInsideRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.Base.IRangify`1.IsInsideRange(Ampere.Base.IRangify{`0})
+    name: IsInsideRange
+    nameWithType: IRangify(Of T).IsInsideRange
+    fullName: Ampere.Base.IRangify(Of T).IsInsideRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify
+    nameWithType: IRangify
+    fullName: Ampere.Base.IRangify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Base.Range`1.ContainsRange*
+  commentId: Overload:Ampere.Base.Range`1.ContainsRange
+  name: ContainsRange
+  nameWithType: Range<T>.ContainsRange
+  fullName: Ampere.Base.Range<T>.ContainsRange
+  nameWithType.vb: Range(Of T).ContainsRange
+  fullName.vb: Ampere.Base.Range(Of T).ContainsRange

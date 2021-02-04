@@ -1,0 +1,67 @@
+### YamlMime:TableOfContent
+- uid: Ampere.Base
+  name: Ampere.Base
+  items:
+  - uid: Ampere.Base.IIndexable`2
+    name: IIndexable<TKey, TVal>
+    name.vb: IIndexable(Of TKey, TVal)
+  - uid: Ampere.Base.IIndexableDouble`2
+    name: IIndexableDouble<TKey, TVal>
+    name.vb: IIndexableDouble(Of TKey, TVal)
+  - uid: Ampere.Base.IIndexableDoubleReadOnly`2
+    name: IIndexableDoubleReadOnly<TKey, TVal>
+    name.vb: IIndexableDoubleReadOnly(Of TKey, TVal)
+  - uid: Ampere.Base.IIndexableReadOnly`2
+    name: IIndexableReadOnly<TKey, TVal>
+    name.vb: IIndexableReadOnly(Of TKey, TVal)
+  - uid: Ampere.Base.IIndexableTriple`2
+    name: IIndexableTriple<TKey, TVal>
+    name.vb: IIndexableTriple(Of TKey, TVal)
+  - uid: Ampere.Base.IIndexableTripleReadOnly`2
+    name: IIndexableTripleReadOnly<TKey, TVal>
+    name.vb: IIndexableTripleReadOnly(Of TKey, TVal)
+  - uid: Ampere.Base.ImmutableRange`1
+    name: ImmutableRange<T>
+    name.vb: ImmutableRange(Of T)
+  - uid: Ampere.Base.IntRange
+    name: IntRange
+  - uid: Ampere.Base.IRangify`1
+    name: IRangify<T>
+    name.vb: IRangify(Of T)
+  - uid: Ampere.Base.Range`1
+    name: Range<T>
+    name.vb: Range(Of T)
+- uid: Ampere.EnumerableUtils
+  name: Ampere.EnumerableUtils
+  items:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils
+    name: EnumerableUtils
+- uid: Ampere.FileUtils
+  name: Ampere.FileUtils
+  items:
+  - uid: Ampere.FileUtils.FileUtils
+    name: FileUtils
+- uid: Ampere.MathUtils
+  name: Ampere.MathUtils
+  items:
+  - uid: Ampere.MathUtils.IMatrixer`1
+    name: IMatrixer<T>
+    name.vb: IMatrixer(Of T)
+  - uid: Ampere.MathUtils.Matrix
+    name: Matrix
+  - uid: Ampere.MathUtils.MatrixPropertyException
+    name: MatrixPropertyException
+- uid: Ampere.Statistics
+  name: Ampere.Statistics
+  items:
+  - uid: Ampere.Statistics.EnumerableStats
+    name: EnumerableStats
+  - uid: Ampere.Statistics.InsufficientDataSetException
+    name: InsufficientDataSetException
+  - uid: Ampere.Statistics.NoModeException
+    name: NoModeException
+- uid: Ampere.StringUtils
+  name: Ampere.StringUtils
+  items:
+  - uid: Ampere.StringUtils.StringUtils
+    name: StringUtils
