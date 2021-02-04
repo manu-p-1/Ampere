@@ -1,6 +1,6 @@
 ﻿<p align="center">
   <a href="https://github.com/manu-p-1/Ampere/" target="_blank">
-    <img src="https://github.com/manu-p-1/Ampere/blob/main/assets/AmpereLogo.png" alt="Ampere Logo">
+    <img src="https://raw.githubusercontent.com/manu-p-1/Ampere/main/assets/AmpereLogo.png" alt="Ampere Logo">
   </a>
   <br>
 </p>
@@ -30,7 +30,7 @@ Ampere is a robust .NET utility library written in C#. It's main purpose is to m
 
 ## Execution
 ### Add the dependency to your project with NuGet
-You can install the latest release to PowerShell 7 by running:
+You can install the latest release with NuGet by running:
 
 
 ### Install from GitHub Releases
