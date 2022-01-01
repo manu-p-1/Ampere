@@ -59,46 +59,10 @@ namespace Ampere.EnumerableUtils
             }
             return z;
         }
-        /// <summary>
-        /// Inserts the specified element at the specified index in the enumerable (modifying the original enumerable).
-        /// If element at that position exits, If shifts that element and any subsequent elements to the right,
-        /// adding one to their indices. The method also allows for inserting more than one element into
-        /// the enumerable at one time given that they are specified. This Insert method is functionally similar
-        /// to the Insert method of the List class. <see cref="System.Collections.IList.Insert(int, object)"/>
-        /// for information about the add method of the List class.
-        /// </summary>
-        /// <typeparam name="T">The type of the enumerable</typeparam>
-        /// <param name="src">The IEnumerable to be used</param>
-        /// <param name="startIdx">The index to start insertion</param>
-        /// <param name="amtToIns">The amount of elements to insert into the enumerable</param>
-        /// <param name="valuesToIns">Optionally, the values to insert into the empty indices of the new enumerable</param>
-        /// <returns>An enumerable of the elements inserted into the enumerable, if any</returns>
-        /// <exception cref="IndexOutOfRangeException">Thrown when the valuesToIns enumerable does not match the amount to insert (if it is greater than 0)</exception>
-        /// <exception cref="IndexOutOfRangeException">Thrown when the amtToIns or the startIdx is less than 0</exception>
-        /// <example>This sample shows how to call the <see cref="Insert{T}"/> method.</example>
-        /// <seealso cref="System.Collections.IList.Insert(int, object)"/>
-        /// <code>
-        ///
-        /// using static Utilities.EnumerableUtils;
-        ///
-        /// class TestClass
-        /// {
-        ///     static void Main(string[] args)
-        ///     {
-        ///         var w = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10}.AsEnumerable();
-        ///         Insert(ref w, 1, 3);
-        ///         //Printing out 'w' results in: 2, 0, 0, 0, 3, 4, 5, 6, 7, 8, 9, 10
-        ///
-        ///         var y = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10}.AsEnumerable();
-        ///         Insert(ref y, 1, 3, 250, 350, 450);
-        ///         //Printing out 'y' results in: 2, 250, 350, 450, 3, 4, 5, 6, 7, 8, 9, 10
-        ///     }
-        /// }
-        /// </code>
-        public static IEnumerable<T> Insert<T>(ref IEnumerable<T> src, int startIdx, int amtToIns, params T[] valuesToIns)
+
+        private static T[] InsertHelper<T>(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)
         {
-            var enumerable = src as T[] ?? src.ToArray();
-            var len = enumerable.Length;
+            var len = src.Length;
 
             if (src is null)
             {
@@ -122,18 +86,98 @@ namespace Ampere.EnumerableUtils
             {
                 if (startIdx == len - 1)
                 {
-                    Array.ConstrainedCopy(enumerable.ToArray(), 0, arrManaged, 0, len);
+                    Array.ConstrainedCopy(src, 0, arrManaged, 0, len);
                     Array.ConstrainedCopy(valuesToIns, 0, arrManaged, startIdx + 1, valuesToIns.Length);
                 }
                 else
                 {
-                    Array.ConstrainedCopy(enumerable.ToArray(), 0, arrManaged, 0, startIdx);
+                    Array.ConstrainedCopy(src, 0, arrManaged, 0, startIdx);
                     Array.ConstrainedCopy(valuesToIns, 0, arrManaged, startIdx, valuesToIns.Length);
-                    Array.ConstrainedCopy(enumerable.ToArray(), startIdx, arrManaged, startIdx + amtToIns, len - startIdx);
+                    Array.ConstrainedCopy(src, startIdx, arrManaged, startIdx + amtToIns, len - startIdx);
                 }
             }
-            src = arrManaged;
-            return valuesToIns;
+            return arrManaged;
+        }
+
+        /// <summary>
+        /// Inserts the specified element at the specified index in the generic array (modifying the original array).
+        /// If element at that position exits, If shifts that element and any subsequent elements to the right,
+        /// adding one to their indices. The method also allows for inserting more than one element into
+        /// the array at one time given that they are specified. This Insert method is functionally similar
+        /// to the Insert method of the IList interface. <see cref="System.Collections.IList.Insert(int, object)"/>
+        /// for information about the add method of the IList interface. This function also has an enumerable overload.
+        /// </summary>
+        /// <typeparam name="T">The type of the array</typeparam>
+        /// <param name="src">The generic array to be used</param>
+        /// <param name="startIdx">The index to start insertion</param>
+        /// <param name="amtToIns">The amount of elements to insert into the array</param>
+        /// <param name="valuesToIns">Optionally, the values to insert into the empty indices of the new array</param>
+        /// <exception cref="IndexOutOfRangeException">Thrown when the valuesToIns array does not match the amount to insert (if it is greater than 0)</exception>
+        /// <exception cref="IndexOutOfRangeException">Thrown when the amtToIns or the startIdx is less than 0</exception>
+        /// <example>This sample shows how to call the <see cref="Insert{T}(ref T[], int, int, T[])"/> method.</example>
+        /// <seealso cref="System.Collections.IList.Insert(int, object)"/>
+        /// <code>
+        ///
+        /// using static Utilities.EnumerableUtils;
+        ///
+        /// class TestClass
+        /// {
+        ///     static void Main(string[] args)
+        ///     {
+        ///         var w = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10};
+        ///         Insert(ref w, 1, 3);
+        ///         //Printing out 'w' results in: 2, 0, 0, 0, 3, 4, 5, 6, 7, 8, 9, 10
+        ///
+        ///         var y = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10};
+        ///         Insert(ref y, 1, 3, 250, 350, 450);
+        ///         //Printing out 'y' results in: 2, 250, 350, 450, 3, 4, 5, 6, 7, 8, 9, 10
+        ///     }
+        /// }
+        /// </code>
+        public static void Insert<T>(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)
+        {
+            src = InsertHelper(ref src, startIdx, amtToIns, valuesToIns);
+        }
+
+        /// <summary>
+        /// Inserts the specified element at the specified index in the enumerable (modifying the original enumerable).
+        /// If element at that position exits, If shifts that element and any subsequent elements to the right,
+        /// adding one to their indices. The method also allows for inserting more than one element into
+        /// the enumerable at one time given that they are specified. This Insert method is functionally similar
+        /// to the Insert method of the IList interface. <see cref="System.Collections.IList.Insert(int, object)"/>
+        /// for information about the add method of the IList interface. This function also has an generic array overload.
+        /// </summary>
+        /// <typeparam name="T">The type of the enumerable</typeparam>
+        /// <param name="src">The IEnumerable to be used</param>
+        /// <param name="startIdx">The index to start insertion</param>
+        /// <param name="amtToIns">The amount of elements to insert into the enumerable</param>
+        /// <param name="valuesToIns">Optionally, the values to insert into the empty indices of the new enumerable</param>
+        /// <exception cref="IndexOutOfRangeException">Thrown when the valuesToIns enumerable does not match the amount to insert (if it is greater than 0)</exception>
+        /// <exception cref="IndexOutOfRangeException">Thrown when the amtToIns or the startIdx is less than 0</exception>
+        /// <example>This sample shows how to call the <see cref="Insert{T}(ref IEnumerable{T}, int, int, T[])"/> method.</example>
+        /// <seealso cref="System.Collections.IList.Insert(int, object)"/>
+        /// <code>
+        ///
+        /// using static Utilities.EnumerableUtils;
+        ///
+        /// class TestClass
+        /// {
+        ///     static void Main(string[] args)
+        ///     {
+        ///         var w = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10}.AsEnumerable();
+        ///         Insert(ref w, 1, 3);
+        ///         //Printing out 'w' results in: 2, 0, 0, 0, 3, 4, 5, 6, 7, 8, 9, 10
+        ///
+        ///         var y = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10}.AsEnumerable();
+        ///         Insert(ref y, 1, 3, 250, 350, 450);
+        ///         //Printing out 'y' results in: 2, 250, 350, 450, 3, 4, 5, 6, 7, 8, 9, 10
+        ///     }
+        /// }
+        /// </code>
+        public static void Insert<T>(ref IEnumerable<T> src, int startIdx, int amtToIns, params T[] valuesToIns)
+        {
+            var enumerable = src as T[] ?? src.ToArray();
+            src = InsertHelper(ref enumerable, startIdx, amtToIns, valuesToIns);
         }
 
         /// <summary>

@@ -29,7 +29,7 @@ namespace Ampere.EnumerableUtils
         private readonly IEnumerable<T>[] otherArrays;
 
         /// <summary>
-        /// The IEnumerable that was 
+        /// The IEnumerable that violated the condition
         /// </summary>
         private IEnumerable<T> violatedEnumerable;
 
@@ -37,6 +37,7 @@ namespace Ampere.EnumerableUtils
         /// The Constructor to create a new instance of the InnerContainsProgram
         /// </summary>
         /// <param name="baseArray">The IEnumberable to check against</param>
+        /// <param name="isAll">Indicates whether to check whether all values are intersected or partially intersected</param>
         /// <param name="otherArrays">The list of IEnumberables to check against the baseArray</param>
         public InnerContainsProgram(IEnumerable<T> baseArray, bool isAll, params IEnumerable<T>[] otherArrays)
         {
@@ -57,7 +58,7 @@ namespace Ampere.EnumerableUtils
         {
             if (isAll)
             {
-                foreach (IEnumerable<T> x in otherArrays)
+                foreach (var x in otherArrays)
                 {
                     if (x.Intersect(baseArray).Count() != x.Count())
                     {
@@ -69,7 +70,7 @@ namespace Ampere.EnumerableUtils
             }
             else
             {
-                foreach (IEnumerable<T> x in otherArrays)
+                foreach (var x in otherArrays)
                 {
                     if (!x.Intersect(baseArray).Any())
                     {
