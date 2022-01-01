@@ -60,45 +60,6 @@ namespace Ampere.EnumerableUtils
             return z;
         }
 
-        private static void InsertHelper<T>(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)
-        {
-            var len = src.Length;
-
-            if (src is null)
-            {
-                throw new ArgumentNullException(nameof(src));
-            }
-            if (valuesToIns is null)
-            {
-                throw new ArgumentNullException(nameof(valuesToIns));
-            }
-            if (startIdx < 0 || startIdx >= len || amtToIns < 0)
-            {
-                throw new IndexOutOfRangeException();
-            }
-            if (amtToIns != valuesToIns.Length && valuesToIns.Length != 0)
-            {
-                throw new IndexOutOfRangeException("offset amount should equal the number of values to be filled");
-            }
-            var arrManaged = new T[len + amtToIns];
-
-            if (amtToIns != 0)
-            {
-                if (startIdx == len - 1)
-                {
-                    Array.ConstrainedCopy(src, 0, arrManaged, 0, len);
-                    Array.ConstrainedCopy(valuesToIns, 0, arrManaged, startIdx + 1, valuesToIns.Length);
-                }
-                else
-                {
-                    Array.ConstrainedCopy(src, 0, arrManaged, 0, startIdx);
-                    Array.ConstrainedCopy(valuesToIns, 0, arrManaged, startIdx, valuesToIns.Length);
-                    Array.ConstrainedCopy(src, startIdx, arrManaged, startIdx + amtToIns, len - startIdx);
-                }
-            }
-            src = arrManaged;
-        }
-
         /// <summary>
         /// Inserts the specified element at the specified index in the generic array (modifying the original array).
         /// If element at that position exits, If shifts that element and any subsequent elements to the right,
@@ -136,7 +97,41 @@ namespace Ampere.EnumerableUtils
         /// </code>
         public static void Insert<T>(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)
         {
-            InsertHelper(ref src, startIdx, amtToIns, valuesToIns);
+            var len = src.Length;
+
+            if (src is null)
+            {
+                throw new ArgumentNullException(nameof(src));
+            }
+            if (valuesToIns is null)
+            {
+                throw new ArgumentNullException(nameof(valuesToIns));
+            }
+            if (startIdx < 0 || startIdx >= len || amtToIns < 0)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            if (amtToIns != valuesToIns.Length && valuesToIns.Length != 0)
+            {
+                throw new IndexOutOfRangeException("offset amount should equal the number of values to be filled");
+            }
+            var arrManaged = new T[len + amtToIns];
+
+            if (amtToIns != 0)
+            {
+                if (startIdx == len - 1)
+                {
+                    Array.ConstrainedCopy(src, 0, arrManaged, 0, len);
+                    Array.ConstrainedCopy(valuesToIns, 0, arrManaged, startIdx + 1, valuesToIns.Length);
+                }
+                else
+                {
+                    Array.ConstrainedCopy(src, 0, arrManaged, 0, startIdx);
+                    Array.ConstrainedCopy(valuesToIns, 0, arrManaged, startIdx, valuesToIns.Length);
+                    Array.ConstrainedCopy(src, startIdx, arrManaged, startIdx + amtToIns, len - startIdx);
+                }
+            }
+            src = arrManaged;
         }
 
         /// <summary>
@@ -177,7 +172,7 @@ namespace Ampere.EnumerableUtils
         public static void Insert<T>(ref IEnumerable<T> src, int startIdx, int amtToIns, params T[] valuesToIns)
         {
             var enumerable = src as T[] ?? src.ToArray();
-            InsertHelper(ref enumerable, startIdx, amtToIns, valuesToIns);
+            Insert(ref enumerable, startIdx, amtToIns, valuesToIns);
         }
 
         /// <summary>
