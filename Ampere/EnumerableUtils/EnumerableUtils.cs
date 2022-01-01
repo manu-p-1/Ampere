@@ -137,6 +137,18 @@ namespace Ampere.EnumerableUtils
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="ie"></param>
+        /// <param name="otherArrays"></param>
+        /// <returns></returns>
+        public static InnerContainsProgram<T> InnerContains<T>(this IEnumerable<T> ie, params IEnumerable<T>[] otherArrays)
+        {
+            return new InnerContainsProgram<T>(ie, otherArrays);
+        }
+
+        /// <summary>
         /// Returns whether an IEnumerable is null or empty
         /// </summary>
         /// <typeparam name="T">The type of the IEnumerable</typeparam>

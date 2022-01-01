@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using static Ampere.FileUtils.FileUtils;
 //USE THIS NAMESPACE FOR TESTING METHODS
-namespace PowerPlugMSTest
+namespace AmpereMSTest
 {
     [TestClass]
     public class FileUtilsTest

@@ -3,7 +3,7 @@ using System.Text;
 using Ampere.StringUtils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace PowerPlugMSTest
+namespace AmpereMSTest
 {
     [TestClass]
     public class StringUtilsTest
