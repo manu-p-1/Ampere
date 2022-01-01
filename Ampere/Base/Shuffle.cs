@@ -24,16 +24,16 @@ namespace Ampere.Base
      * iteration. The example uses an array of characters
      *   
      * -- Assume the char array 
-     *      -> "[T,h,i,s,c,a,n,b,e,a,r,e,a,l,l,y,l,o,n,g,s,t,r,i,n,g]"
+     *      -> "[T, h, i, s, c, a, n, b, e, a, r, e, a, l, l, y, l, o, n, g, s, t, r, i, n, g]"
      *   
      * -- loop begins:
      *   
      * -- Four indices (w, x, y, z) are chosen at random: [3, 10, 7, 20]
      *   
-     * -- Two more random values (a, b) are chosen in the range of [1,4]
+     * -- Two more random values (a, b) are chosen in the range of [1, 4]
      *   where each value represents one of the four index values.
      * 
-     * -- Given every possible combination of [1,4] with combination size 's'
+     * -- Given every possible combination of [1, 4] with combination size 's'
      * where 's' equals 2, the random values 'a' and 'b' match a possible
      * combination and perform two swaps.
      *   
@@ -55,7 +55,7 @@ namespace Ampere.Base
      *      for the edge cases (if 'a' or 'b' holds the value 1 or 4).
      *   
      * -- The current state of the char array is 
-     *      -> "[T,h,i,b,c,a,n,s,e,a,s,e,a,l,l,y,l,o,n,g,r,t,r,i,n,g]
+     *      -> "[T, h, i, b, c, a, n, s, e, a, s, e, a, l, l, y, l, o, n, g, r, t, r, i, n, g]
      *   
      * -- Loop 'n' times where 'n' is the size of the array
      *   
