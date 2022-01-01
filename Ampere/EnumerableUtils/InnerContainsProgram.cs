@@ -19,6 +19,11 @@ namespace Ampere.EnumerableUtils
         private readonly IEnumerable<T> baseArray;
 
         /// <summary>
+        /// Indicates whether to check whether all values are intersected or partially intersected
+        /// </summary>
+        private readonly bool isAll;
+
+        /// <summary>
         /// A list of IEnumberables to hold constructor params
         /// </summary>
         private readonly IEnumerable<T>[] otherArrays;
@@ -33,10 +38,11 @@ namespace Ampere.EnumerableUtils
         /// </summary>
         /// <param name="baseArray">The IEnumberable to check against</param>
         /// <param name="otherArrays">The list of IEnumberables to check against the baseArray</param>
-        public InnerContainsProgram(IEnumerable<T> baseArray, params IEnumerable<T>[] otherArrays)
+        public InnerContainsProgram(IEnumerable<T> baseArray, bool isAll, params IEnumerable<T>[] otherArrays)
         {
             this.baseArray = baseArray;
             this.otherArrays = otherArrays;
+            this.isAll = isAll;
         }
 
         /// <summary>
@@ -49,12 +55,28 @@ namespace Ampere.EnumerableUtils
         /// <returns>True if each enumerable is contained in the base and false otherwise.</returns>
         public bool CheckContains()
         {
-            foreach (IEnumerable<T> x in otherArrays)
+            if (isAll)
             {
-                if (x.Intersect(baseArray).Count() != x.Count())
+                foreach (IEnumerable<T> x in otherArrays)
                 {
-                    this.violatedEnumerable = x;
-                    return false;
+                    if (x.Intersect(baseArray).Count() != x.Count())
+                    {
+                        this.violatedEnumerable = x;
+                        return false;
+                    }
+
+                }
+            }
+            else
+            {
+                foreach (IEnumerable<T> x in otherArrays)
+                {
+                    if (!x.Intersect(baseArray).Any())
+                    {
+                        this.violatedEnumerable = x;
+                        return false;
+                    }
+
                 }
             }
             return true;

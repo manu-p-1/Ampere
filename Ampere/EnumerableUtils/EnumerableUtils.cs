@@ -142,11 +142,12 @@ namespace Ampere.EnumerableUtils
         /// </summary>
         /// <typeparam name="T">The type of the IEnumerable</typeparam>
         /// <param name="ie">The primary IEnumerable to check against</param>
+        /// <param name="isAll">Indicates whether to check whether all values are intersected or partially intersected</param>
         /// <param name="otherArrays">An array of Enumerable's to test against the primary enumerable</param>
         /// <returns>An instance of the <see cref="InnerContainsProgram{T}"/> to verify the result and violating enumerables</returns>
-        public static InnerContainsProgram<T> InnerContains<T>(this IEnumerable<T> ie, params IEnumerable<T>[] otherArrays)
+        public static InnerContainsProgram<T> InnerContains<T>(this IEnumerable<T> ie, bool isAll, params IEnumerable<T>[] otherArrays)
         {
-            return new InnerContainsProgram<T>(ie, otherArrays);
+            return new InnerContainsProgram<T>(ie, isAll, otherArrays);
         }
 
         /// <summary>
