@@ -600,14 +600,14 @@ namespace Ampere.StringUtils
                     {
                         if (!spaceSplit[i].IsZeroOrOne())
                         {
-                            var shuffleUtil = new Shuffle<char>(spaceSplit[i].ToCharArray());
-                            spaceSplit[i] = new string(shuffleUtil.ShuffleThis());
+                            var shuffleUtil = new Shuffler<char>(spaceSplit[i].ToCharArray());
+                            spaceSplit[i] = new string(shuffleUtil.Shuffle());
                         }
                     }
                     return string.Join(" ", spaceSplit);
                 }
             }
-            return new string(new Shuffle<char>(str.ToCharArray()).ShuffleThis());
+            return new string(new Shuffler<char>(str.ToCharArray()).Shuffle());
         }
 
         /// <summary>

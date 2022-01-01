@@ -67,7 +67,7 @@ namespace Ampere.Base
     /// A utility to shuffle an enumerable
     /// </summary>
     /// <typeparam name="T">The element type of the array</typeparam>
-    internal sealed class Shuffle<T>
+    internal sealed class Shuffler<T>
     {
        /*
         * Holds the array
@@ -78,7 +78,7 @@ namespace Ampere.Base
         /// The constructor for the shuffle utility.
         /// </summary>
         /// <param name="data">The generic array to be shuffled</param>
-        public Shuffle(T[] data)
+        public Shuffler(T[] data)
         {
             this._data = data;
         }
@@ -88,7 +88,7 @@ namespace Ampere.Base
         /// view the implementation note for this class. 
         /// </summary>
         /// <returns>The shuffled array</returns>
-        public T[] ShuffleThis()
+        public T[] Shuffle()
         {
             using var rngcsp = new System.Security.Cryptography.RNGCryptoServiceProvider();
             var len = _data.Length;

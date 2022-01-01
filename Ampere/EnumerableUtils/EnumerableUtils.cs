@@ -266,8 +266,8 @@ namespace Ampere.EnumerableUtils
             }
 
             return src.GetType() == typeof(Array)
-                ? new Shuffle<T>((T[]) src).ShuffleThis()
-                : new Shuffle<T>(enumerable.ToArray()).ShuffleThis();
+                ? new Shuffler<T>((T[]) src).Shuffle()
+                : new Shuffler<T>(enumerable.ToArray()).Shuffle();
         }
 
         /// <summary>
