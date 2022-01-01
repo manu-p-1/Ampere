@@ -147,6 +147,16 @@ namespace Ampere.EnumerableUtils
         /// <returns>An instance of the <see cref="InnerContainsProgram{T}"/> to verify the result and violating enumerables</returns>
         public static InnerContainsProgram<T> InnerContains<T>(this IEnumerable<T> ie, bool isAll, params IEnumerable<T>[] otherArrays)
         {
+            if (ie is null)
+            {
+                throw new ArgumentNullException(nameof(ie));
+            }
+
+            if (otherArrays is null)
+            {
+                throw new ArgumentNullException(nameof(otherArrays));
+            }
+
             return new InnerContainsProgram<T>(ie, isAll, otherArrays);
         }
 
