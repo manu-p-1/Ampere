@@ -399,66 +399,6 @@ namespace Ampere.StringUtils
                 : new LcpFinder(enumerable, ignoreCase).Find();
         }
 
-        private class LcpFinder
-        {
-            private IEnumerable<string> Strs { get; }
-            private bool IgnoreCase { get; }
-
-            public LcpFinder(IEnumerable<string> strs, bool ignoreCase = false)
-            {
-                this.Strs = strs;
-                this.IgnoreCase = ignoreCase;
-            }
-
-            public string Find()
-            {
-                int minLength = FindMin();
-                var sb = new StringBuilder();
-                string mainWord = Strs.ElementAt(0);
-
-                int low = 0, high = minLength - 1;
-                while (low <= high)
-                {
-                    var mid = low + (high - low) / 2;
-                    if (CheckContain(mainWord, low, mid))
-                    {
-                        sb.Append(mainWord[low..(mid + 1)]);
-                        low = mid + 1;
-                    }
-                    else
-                    {
-                        high = mid - 1;
-                    }
-                }
-                return sb.ToString();
-            }
-
-            private int FindMin()
-            {
-                var min = Strs.ElementAt(0).Length;
-                return Strs.Select(s => s.Length).Prepend(min).Min();
-            }
-
-            private bool CheckContain(string str, int st, int end)
-            {
-                for (var i = 0; i < Strs.Count(); i++)
-                {
-                    string word = Strs.ElementAt(i);
-                    if (IgnoreCase)
-                    {
-                        word = word.ToUpperInvariant();
-                        str = str.ToUpperInvariant();
-                    }
-                    for (int j = st; j <= end; j++)
-                    {
-                        if (word[j] != str[j])
-                            return false;
-                    }
-                }
-                return true;
-            }
-        }
-
         /// <summary>
         /// Orders an enumerable by its length in ascending order (natural order).
         /// </summary>
@@ -633,66 +573,6 @@ namespace Ampere.StringUtils
         /// <returns>True if the length of the string is zero or one</returns>
         [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
         internal static bool IsZeroOrOne(this string str) => str.Length == 0 || str.Length == 1;
-
-        
-        /// <summary>
-        /// A utility class that contains functions to determine
-        /// whether a string is a well formed string.
-        /// </summary>
-        private class WellFormedUtility
-        {
-            /// <summary>
-            /// An instance of the Dictionary containing this alphabet.
-            /// </summary>
-            private Dictionary<char, char> Alphabet { get; }
-
-            /// <summary>
-            /// constructor that sets up the alphabet
-            /// </summary>
-            /// <param name="dct">A dictionary representing an alphabet</param>
-            public WellFormedUtility(Dictionary<char, char> dct)
-            {
-                Alphabet = dct ?? throw new ArgumentNullException(nameof(dct));
-            }
-
-            /// <summary>
-            /// The default alphabet
-            /// </summary>
-            public static Dictionary<char, char> DefaultAlphabet { get; }
-                = new(4)
-            {
-                { '(', ')' },
-                { '{', '}' },
-                { '[', ']' },
-                { '<', '>' },
-            };
-
-            /// <summary>
-            /// Verifies if the string is well formed by using
-            /// a stack data structure to measure the balance of the string.
-            /// </summary>
-            /// <param name="inp">The input string</param>
-            /// <returns></returns>
-            public bool Run(string inp)
-            {
-                var stk = new Stack<char>(10);
-                try
-                {
-                    foreach (var c in inp.Where(c => Alphabet.ContainsKey(c) || Alphabet.ContainsValue(c)))
-                    {
-                        if (Alphabet.ContainsKey(c)) stk.Push(c);
-                        else if (Alphabet[stk.Pop()] != c)
-                            return false;
-                    }
-                }
-                catch (Exception ex) when (ex is InvalidOperationException ||
-                                           ex is NullReferenceException)
-                {
-                    return false;
-                }
-                return true;
-            }
-        } //WellFormedUtilities
 
         /// <summary>
         /// A StringBuilder extension to append to the StringBuilder if and only if a condition is met.
