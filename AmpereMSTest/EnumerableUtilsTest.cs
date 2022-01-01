@@ -20,7 +20,7 @@ namespace AmpereMSTest
 
             var icp = x.InnerContains(y, z);
             Assert.AreEqual(icp.CheckContains(), false);
-            Assert.AreEqual(icp.StruckEnumberable, z);
+            Assert.AreEqual(icp.ViolatedEnumerable, z);
         }
     }
 }

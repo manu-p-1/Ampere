@@ -137,12 +137,13 @@ namespace Ampere.EnumerableUtils
         }
 
         /// <summary>
-        /// 
+        /// Given a primary enumerable to check against and one or more test enumerable's, InnerContains executes an intersection
+        /// of the primary and test enumerables to verify if all values in the test are contained within the primary enumerable.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="ie"></param>
-        /// <param name="otherArrays"></param>
-        /// <returns></returns>
+        /// <typeparam name="T">The type of the IEnumerable</typeparam>
+        /// <param name="ie">The primary IEnumerable to check against</param>
+        /// <param name="otherArrays">An array of Enumerable's to test against the primary enumerable</param>
+        /// <returns>An instance of the <see cref="InnerContainsProgram{T}"/> to verify the result and violating enumerables</returns>
         public static InnerContainsProgram<T> InnerContains<T>(this IEnumerable<T> ie, params IEnumerable<T>[] otherArrays)
         {
             return new InnerContainsProgram<T>(ie, otherArrays);

@@ -7,20 +7,32 @@ using System.Threading.Tasks;
 namespace Ampere.EnumerableUtils
 {
     /// <summary>
-    /// 
+    /// Program to check whether all values in one or more enumerables's are included in a
+    /// specified enumerable.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T">The type of the IEnumerable</typeparam>
     public class InnerContainsProgram<T>
     {
+        /// <summary>
+        /// The IEnumerable to check against
+        /// </summary>
         private readonly IEnumerable<T> baseArray;
-        private readonly IEnumerable<T>[] otherArrays;
-        private IEnumerable<T> struckEnumerable;
 
         /// <summary>
-        /// 
+        /// A list of IEnumberables to hold constructor params
         /// </summary>
-        /// <param name="baseArray"></param>
-        /// <param name="otherArrays"></param>
+        private readonly IEnumerable<T>[] otherArrays;
+
+        /// <summary>
+        /// The IEnumerable that was 
+        /// </summary>
+        private IEnumerable<T> violatedEnumerable;
+
+        /// <summary>
+        /// The Constructor to create a new instance of the InnerContainsProgram
+        /// </summary>
+        /// <param name="baseArray">The IEnumberable to check against</param>
+        /// <param name="otherArrays">The list of IEnumberables to check against the baseArray</param>
         public InnerContainsProgram(IEnumerable<T> baseArray, params IEnumerable<T>[] otherArrays)
         {
             this.baseArray = baseArray;
@@ -28,16 +40,20 @@ namespace Ampere.EnumerableUtils
         }
 
         /// <summary>
-        /// 
+        /// Checks whether each array specified in otherArrays is completely contained in the
+        /// base array. Each value in each array must be contained in the base array for this
+        /// method to return true, otherwise, false is returned and the ViolatedEnumerable property
+        /// is set with the enumerable that violated the condition. This function runs a LINQ intersection
+        /// between each enumerable.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>True if each enumerable is contained in the base and false otherwise.</returns>
         public bool CheckContains()
         {
             foreach (IEnumerable<T> x in otherArrays)
             {
                 if (x.Intersect(baseArray).Count() != x.Count())
                 {
-                    this.struckEnumerable = x;
+                    this.violatedEnumerable = x;
                     return false;
                 }
             }
@@ -45,8 +61,9 @@ namespace Ampere.EnumerableUtils
         }
 
         /// <summary>
-        /// 
+        /// A property to identify which enumerable violated the containing condition. This method
+        /// returns null unless <see cref="CheckContains"/> is executed.
         /// </summary>
-        public IEnumerable<T> StruckEnumberable { get => struckEnumerable; }
+        public IEnumerable<T> ViolatedEnumerable { get => violatedEnumerable; }
     }
 }
