@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ampere", "Ampere\Ampere.csproj", "{60CA8095-7A96-4DA5-8496-1604F5E95EDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ampere", "Ampere\Ampere.csproj", "{60CA8095-7A96-4DA5-8496-1604F5E95EDC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC6FE309-53FC-4BB8-9F91-3F3413F094BF}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmpereMSTest", "AmpereMSTest\AmpereMSTest.csproj", "{6D2BC46A-6087-4426-B546-5E23E222542D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{60CA8095-7A96-4DA5-8496-1604F5E95EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60CA8095-7A96-4DA5-8496-1604F5E95EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60CA8095-7A96-4DA5-8496-1604F5E95EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D2BC46A-6087-4426-B546-5E23E222542D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D2BC46A-6087-4426-B546-5E23E222542D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D2BC46A-6087-4426-B546-5E23E222542D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D2BC46A-6087-4426-B546-5E23E222542D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
