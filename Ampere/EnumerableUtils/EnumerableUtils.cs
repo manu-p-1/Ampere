@@ -60,7 +60,7 @@ namespace Ampere.EnumerableUtils
             return z;
         }
 
-        private static T[] InsertHelper<T>(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)
+        private static void InsertHelper<T>(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)
         {
             var len = src.Length;
 
@@ -96,7 +96,7 @@ namespace Ampere.EnumerableUtils
                     Array.ConstrainedCopy(src, startIdx, arrManaged, startIdx + amtToIns, len - startIdx);
                 }
             }
-            return arrManaged;
+            src = arrManaged;
         }
 
         /// <summary>
@@ -136,7 +136,7 @@ namespace Ampere.EnumerableUtils
         /// </code>
         public static void Insert<T>(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)
         {
-            src = InsertHelper(ref src, startIdx, amtToIns, valuesToIns);
+            InsertHelper(ref src, startIdx, amtToIns, valuesToIns);
         }
 
         /// <summary>
@@ -177,7 +177,7 @@ namespace Ampere.EnumerableUtils
         public static void Insert<T>(ref IEnumerable<T> src, int startIdx, int amtToIns, params T[] valuesToIns)
         {
             var enumerable = src as T[] ?? src.ToArray();
-            src = InsertHelper(ref enumerable, startIdx, amtToIns, valuesToIns);
+            InsertHelper(ref enumerable, startIdx, amtToIns, valuesToIns);
         }
 
         /// <summary>
