@@ -6,6 +6,8 @@ items:
   parent: Ampere.EnumerableUtils
   children:
   - Ampere.EnumerableUtils.EnumerableUtils.Concat``1(System.Collections.Generic.IEnumerable{``0}[])
+  - Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - Ampere.EnumerableUtils.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])
   - Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
   - Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   - Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
@@ -23,7 +25,7 @@ items:
     remote:
       path: Ampere/EnumerableUtils/EnumerableUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: EnumerableUtils
     path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
     startLine: 11
@@ -67,7 +69,7 @@ items:
     remote:
       path: Ampere/EnumerableUtils/EnumerableUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Concat
     path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
     startLine: 40
@@ -104,6 +106,70 @@ items:
   - Shared
   fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Concat(Of T)(System.Collections.Generic.IEnumerable(Of T)())
   name.vb: Concat(Of T)(IEnumerable(Of T)())
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])
+  id: Insert``1(``0[]@,System.Int32,System.Int32,``0[])
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: Insert<T>(ref T[], Int32, Int32, T[])
+  nameWithType: EnumerableUtils.Insert<T>(ref T[], Int32, Int32, T[])
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Insert<T>(ref T[], System.Int32, System.Int32, T[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Insert
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 97
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nInserts the specified element at the specified index in the generic array (modifying the original array).\nIf element at that position exits, If shifts that element and any subsequent elements to the right,\nadding one to their indices. The method also allows for inserting more than one element into\nthe array at one time given that they are specified. This Insert method is functionally similar\nto the Insert method of the IList interface. <xref href=\"System.Collections.IList.Insert(System.Int32%2cSystem.Object)\" data-throw-if-not-resolved=\"false\"></xref>\nfor information about the add method of the IList interface. This function also has an enumerable overload.\n"
+  example:
+  - This sample shows how to call the <xref href="Ampere.EnumerableUtils.EnumerableUtils.Insert%60%601(%60%600%5b%5d%40%2cSystem.Int32%2cSystem.Int32%2c%60%600%5b%5d)" data-throw-if-not-resolved="false"></xref> method.
+  syntax:
+    content: public static void Insert<T>(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)
+    parameters:
+    - id: src
+      type: '{T}[]'
+      description: The generic array to be used
+    - id: startIdx
+      type: System.Int32
+      description: The index to start insertion
+    - id: amtToIns
+      type: System.Int32
+      description: The amount of elements to insert into the array
+    - id: valuesToIns
+      type: '{T}[]'
+      description: Optionally, the values to insert into the empty indices of the new array
+    typeParameters:
+    - id: T
+      description: The type of the array
+    content.vb: Public Shared Sub Insert(Of T)(ByRef src As T(), startIdx As Integer, amtToIns As Integer, ParamArray valuesToIns As T())
+  overload: Ampere.EnumerableUtils.EnumerableUtils.Insert*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Thrown when the valuesToIns array does not match the amount to insert (if it is greater than 0)
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: Thrown when the amtToIns or the startIdx is less than 0
+  seealso:
+  - linkId: System.Collections.IList.Insert(System.Int32,System.Object)
+    commentId: M:System.Collections.IList.Insert(System.Int32,System.Object)
+  nameWithType.vb: EnumerableUtils.Insert(Of T)(ByRef T(), Int32, Int32, T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Insert(Of T)(ByRef T(), System.Int32, System.Int32, T())
+  name.vb: Insert(Of T)(ByRef T(), Int32, Int32, T())
 - uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
   commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
   id: Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
@@ -119,18 +185,18 @@ items:
     remote:
       path: Ampere/EnumerableUtils/EnumerableUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Insert
     path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
-    startLine: 97
+    startLine: 171
   assemblies:
   - Ampere
   namespace: Ampere.EnumerableUtils
-  summary: "\nInserts the specified element at the specified index in the enumerable (modifying the original enumerable).\nIf element at that position exits, If shifts that element and any subsequent elements to the right,\nadding one to their indices. The method also allows for inserting more than one element into\nthe enumerable at one time given that they are specified. This Insert method is functionally similar\nto the Insert method of the List class. <xref href=\"System.Collections.IList.Insert(System.Int32%2cSystem.Object)\" data-throw-if-not-resolved=\"false\"></xref>\nfor information about the add method of the List class.\n"
+  summary: "\nInserts the specified element at the specified index in the enumerable (modifying the original enumerable).\nIf element at that position exits, If shifts that element and any subsequent elements to the right,\nadding one to their indices. The method also allows for inserting more than one element into\nthe enumerable at one time given that they are specified. This Insert method is functionally similar\nto the Insert method of the IList interface. <xref href=\"System.Collections.IList.Insert(System.Int32%2cSystem.Object)\" data-throw-if-not-resolved=\"false\"></xref>\nfor information about the add method of the IList interface. This function also has an generic array overload.\n"
   example:
   - This sample shows how to call the <xref href="Ampere.EnumerableUtils.EnumerableUtils.Insert%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d%40%2cSystem.Int32%2cSystem.Int32%2c%60%600%5b%5d)" data-throw-if-not-resolved="false"></xref> method.
   syntax:
-    content: public static IEnumerable<T> Insert<T>(ref IEnumerable<T> src, int startIdx, int amtToIns, params T[] valuesToIns)
+    content: public static void Insert<T>(ref IEnumerable<T> src, int startIdx, int amtToIns, params T[] valuesToIns)
     parameters:
     - id: src
       type: System.Collections.Generic.IEnumerable{{T}}
@@ -147,10 +213,7 @@ items:
     typeParameters:
     - id: T
       description: The type of the enumerable
-    return:
-      type: System.Collections.Generic.IEnumerable{{T}}
-      description: An enumerable of the elements inserted into the enumerable, if any
-    content.vb: Public Shared Function Insert(Of T)(ByRef src As IEnumerable(Of T), startIdx As Integer, amtToIns As Integer, ParamArray valuesToIns As T()) As IEnumerable(Of T)
+    content.vb: Public Shared Sub Insert(Of T)(ByRef src As IEnumerable(Of T), startIdx As Integer, amtToIns As Integer, ParamArray valuesToIns As T())
   overload: Ampere.EnumerableUtils.EnumerableUtils.Insert*
   exceptions:
   - type: System.IndexOutOfRangeException
@@ -171,6 +234,63 @@ items:
   - Shared
   fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Insert(Of T)(ByRef System.Collections.Generic.IEnumerable(Of T), System.Int32, System.Int32, T())
   name.vb: Insert(Of T)(ByRef IEnumerable(Of T), Int32, Int32, T())
+- uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  id: InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  isExtensionMethod: true
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  langs:
+  - csharp
+  - vb
+  name: InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
+  nameWithType: EnumerableUtils.InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/EnumerableUtils.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: InnerContains
+    path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
+    startLine: 186
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nGiven a primary enumerable to check against and one or more test enumerable&apos;s, InnerContains executes an intersection\nof the primary and test enumerables to verify if all values in the test are contained within the primary enumerable.\n"
+  example: []
+  syntax:
+    content: public static InnerContainsProgram<T> InnerContains<T>(this IEnumerable<T> ie, bool isAll, params IEnumerable<T>[] otherArrays)
+    parameters:
+    - id: ie
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The primary IEnumerable to check against
+    - id: isAll
+      type: System.Boolean
+      description: Indicates whether to check whether all values are intersected or partially intersected
+    - id: otherArrays
+      type: System.Collections.Generic.IEnumerable{{T}}[]
+      description: An array of Enumerable&apos;s to test against the primary enumerable
+    typeParameters:
+    - id: T
+      description: The type of the IEnumerable
+    return:
+      type: Ampere.EnumerableUtils.InnerContainsProgram{{T}}
+      description: An instance of the <xref href="Ampere.EnumerableUtils.InnerContainsProgram%601" data-throw-if-not-resolved="false"></xref> to verify the result and violating enumerables
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function InnerContains(Of T)(ie As IEnumerable(Of T), isAll As Boolean, ParamArray otherArrays As IEnumerable(Of T)()) As InnerContainsProgram(Of T)
+  overload: Ampere.EnumerableUtils.EnumerableUtils.InnerContains*
+  nameWithType.vb: EnumerableUtils.InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
+  name.vb: InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
 - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   id: IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
@@ -187,10 +307,10 @@ items:
     remote:
       path: Ampere/EnumerableUtils/EnumerableUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsNullOrEmpty
     path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
-    startLine: 144
+    startLine: 207
   assemblies:
   - Ampere
   namespace: Ampere.EnumerableUtils
@@ -237,10 +357,10 @@ items:
     remote:
       path: Ampere/EnumerableUtils/EnumerableUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Range
     path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
-    startLine: 182
+    startLine: 245
   assemblies:
   - Ampere
   namespace: Ampere.EnumerableUtils
@@ -283,10 +403,10 @@ items:
     remote:
       path: Ampere/EnumerableUtils/EnumerableUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffle
     path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
-    startLine: 194
+    startLine: 257
   assemblies:
   - Ampere
   namespace: Ampere.EnumerableUtils
@@ -333,10 +453,10 @@ items:
     remote:
       path: Ampere/EnumerableUtils/EnumerableUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Span
     path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
-    startLine: 228
+    startLine: 291
   assemblies:
   - Ampere
   namespace: Ampere.EnumerableUtils
@@ -379,10 +499,10 @@ items:
     remote:
       path: Ampere/EnumerableUtils/EnumerableUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
     path: ../Ampere/EnumerableUtils/EnumerableUtils.cs
-    startLine: 277
+    startLine: 340
   assemblies:
   - Ampere
   namespace: Ampere.EnumerableUtils
@@ -869,8 +989,8 @@ references:
 - uid: System.Collections.IList.Insert(System.Int32,System.Object)
   commentId: M:System.Collections.IList.Insert(System.Int32,System.Object)
   isExternal: true
-- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])
   isExternal: true
 - uid: System.IndexOutOfRangeException
   commentId: T:System.IndexOutOfRangeException
@@ -880,13 +1000,6 @@ references:
   name: Insert
   nameWithType: EnumerableUtils.Insert
   fullName: Ampere.EnumerableUtils.EnumerableUtils.Insert
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
 - uid: '{T}[]'
   isExternal: true
   name: T[]
@@ -909,11 +1022,57 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty*
-  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty
-  name: IsNullOrEmpty
-  nameWithType: EnumerableUtils.IsNullOrEmpty
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
+  isExternal: true
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1
+  commentId: T:Ampere.EnumerableUtils.InnerContainsProgram`1
+  name: InnerContainsProgram<T>
+  nameWithType: InnerContainsProgram<T>
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>
+  nameWithType.vb: InnerContainsProgram(Of T)
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T)
+  name.vb: InnerContainsProgram(Of T)
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.InnerContainsProgram`1
+    name: InnerContainsProgram
+    nameWithType: InnerContainsProgram
+    fullName: Ampere.EnumerableUtils.InnerContainsProgram
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.InnerContainsProgram`1
+    name: InnerContainsProgram
+    nameWithType: InnerContainsProgram
+    fullName: Ampere.EnumerableUtils.InnerContainsProgram
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains*
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.InnerContains
+  name: InnerContains
+  nameWithType: EnumerableUtils.InnerContains
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -921,6 +1080,49 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: Ampere.EnumerableUtils.InnerContainsProgram{{T}}
+  commentId: T:Ampere.EnumerableUtils.InnerContainsProgram{``0}
+  parent: Ampere.EnumerableUtils
+  definition: Ampere.EnumerableUtils.InnerContainsProgram`1
+  name: InnerContainsProgram<T>
+  nameWithType: InnerContainsProgram<T>
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>
+  nameWithType.vb: InnerContainsProgram(Of T)
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T)
+  name.vb: InnerContainsProgram(Of T)
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.InnerContainsProgram`1
+    name: InnerContainsProgram
+    nameWithType: InnerContainsProgram
+    fullName: Ampere.EnumerableUtils.InnerContainsProgram
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.InnerContainsProgram`1
+    name: InnerContainsProgram
+    nameWithType: InnerContainsProgram
+    fullName: Ampere.EnumerableUtils.InnerContainsProgram
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty*
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty
+  name: IsNullOrEmpty
+  nameWithType: EnumerableUtils.IsNullOrEmpty
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty
 - uid: Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
   commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)
   isExternal: true

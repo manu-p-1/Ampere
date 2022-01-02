@@ -26,7 +26,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IMatrixer
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 8
@@ -43,6 +43,7 @@ items:
   inheritedMembers:
   - System.Collections.Generic.IEnumerable{System.Double}.GetEnumerator
   extensionMethods:
+  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
   - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
   - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
   - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
@@ -93,7 +94,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Values
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 13
@@ -128,7 +129,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Rows
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 18
@@ -163,7 +164,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Cols
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 23
@@ -198,7 +199,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Transpose
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 29
@@ -229,7 +230,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: EqualDimension
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 36
@@ -263,7 +264,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: EqualDimension
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 45
@@ -301,7 +302,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsRowVector
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 56
@@ -332,7 +333,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsColumnVector
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 62
@@ -363,7 +364,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsSquareVector
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 68
@@ -394,7 +395,7 @@ items:
     remote:
       path: Ampere/MathUtils/IMatrixer.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
     path: ../Ampere/MathUtils/IMatrixer.cs
     startLine: 74
@@ -446,6 +447,92 @@ references:
   - name: (
     nameWithType: (
     fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  parent: Ampere.EnumerableUtils.EnumerableUtils
+  definition: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  name: InnerContains<Double>(Boolean, IEnumerable<Double>[])
+  nameWithType: EnumerableUtils.InnerContains<Double>(Boolean, IEnumerable<Double>[])
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<System.Double>(System.Boolean, System.Collections.Generic.IEnumerable<System.Double>[])
+  nameWithType.vb: EnumerableUtils.InnerContains(Of Double)(Boolean, IEnumerable(Of Double)())
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of System.Double)(System.Boolean, System.Collections.Generic.IEnumerable(Of System.Double)())
+  name.vb: InnerContains(Of Double)(Boolean, IEnumerable(Of Double)())
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+    name: InnerContains<Double>
+    nameWithType: EnumerableUtils.InnerContains<Double>
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<System.Double>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+    name: InnerContains(Of Double)
+    nameWithType: EnumerableUtils.InnerContains(Of Double)
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of System.Double)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
   - name: )
     nameWithType: )
     fullName: )
@@ -2167,6 +2254,127 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  isExternal: true
+  name: InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
+  nameWithType: EnumerableUtils.InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
+  nameWithType.vb: EnumerableUtils.InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
+  name.vb: InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
+  spec.csharp:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+    name: InnerContains<T>
+    nameWithType: EnumerableUtils.InnerContains<T>
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+    name: InnerContains(Of T)
+    nameWithType: EnumerableUtils.InnerContains(Of T)
+    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.EnumerableUtils.EnumerableUtils
+  commentId: T:Ampere.EnumerableUtils.EnumerableUtils
+  parent: Ampere.EnumerableUtils
+  name: EnumerableUtils
+  nameWithType: EnumerableUtils
+  fullName: Ampere.EnumerableUtils.EnumerableUtils
 - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   isExternal: true
@@ -2226,12 +2434,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils
-  commentId: T:Ampere.EnumerableUtils.EnumerableUtils
-  parent: Ampere.EnumerableUtils
-  name: EnumerableUtils
-  nameWithType: EnumerableUtils
-  fullName: Ampere.EnumerableUtils.EnumerableUtils
 - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   isExternal: true

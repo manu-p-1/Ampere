@@ -20,7 +20,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: NoModeException
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 43
@@ -89,7 +89,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 49
@@ -121,7 +121,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 56
@@ -157,7 +157,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 63
@@ -196,7 +196,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 71

@@ -32,7 +32,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: FileUtils
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 11
@@ -76,7 +76,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: WriteLine
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 18
@@ -117,7 +117,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAll
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 37
@@ -161,7 +161,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllByLine
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 51
@@ -205,7 +205,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllInLine
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 66
@@ -252,7 +252,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInLines
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 86
@@ -296,7 +296,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLine
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 103
@@ -340,7 +340,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLines
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 114
@@ -384,7 +384,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveFromEachLine
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 129
@@ -425,7 +425,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLine
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 142
@@ -466,7 +466,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLines
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 152
@@ -510,7 +510,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: FindInFile
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 169
@@ -557,7 +557,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: GetValueAtLine
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 193
@@ -602,7 +602,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: GetDirectorySize
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 201
@@ -647,7 +647,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: GetFileSize
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 218
@@ -691,7 +691,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: GetRootPath
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 225
@@ -728,7 +728,7 @@ items:
     remote:
       path: Ampere/FileUtils/FileUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: GetUserPath
     path: ../Ampere/FileUtils/FileUtils.cs
     startLine: 232

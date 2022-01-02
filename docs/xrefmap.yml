@@ -635,6 +635,22 @@ references:
   fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Concat(Of T)(System.Collections.Generic.IEnumerable(Of T)())
   nameWithType: EnumerableUtils.Concat<T>(IEnumerable<T>[])
   nameWithType.vb: EnumerableUtils.Concat(Of T)(IEnumerable(Of T)())
+- uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains*
+  name: InnerContains
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_InnerContains_
+  commentId: Overload:Ampere.EnumerableUtils.EnumerableUtils.InnerContains
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains
+  nameWithType: EnumerableUtils.InnerContains
+- uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  name: InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_InnerContains__1_System_Collections_Generic_IEnumerable___0__System_Boolean_System_Collections_Generic_IEnumerable___0____
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  name.vb: InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
+  nameWithType: EnumerableUtils.InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
+  nameWithType.vb: EnumerableUtils.InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
 - uid: Ampere.EnumerableUtils.EnumerableUtils.Insert*
   name: Insert
   href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Insert_
@@ -642,6 +658,15 @@ references:
   isSpec: "True"
   fullName: Ampere.EnumerableUtils.EnumerableUtils.Insert
   nameWithType: EnumerableUtils.Insert
+- uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])
+  name: Insert<T>(ref T[], Int32, Int32, T[])
+  href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Insert__1___0____System_Int32_System_Int32___0___
+  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])
+  name.vb: Insert(Of T)(ByRef T(), Int32, Int32, T())
+  fullName: Ampere.EnumerableUtils.EnumerableUtils.Insert<T>(ref T[], System.Int32, System.Int32, T[])
+  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Insert(Of T)(ByRef T(), System.Int32, System.Int32, T())
+  nameWithType: EnumerableUtils.Insert<T>(ref T[], Int32, Int32, T[])
+  nameWithType.vb: EnumerableUtils.Insert(Of T)(ByRef T(), Int32, Int32, T())
 - uid: Ampere.EnumerableUtils.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])
   name: Insert<T>(ref IEnumerable<T>, Int32, Int32, T[])
   href: api/Ampere.EnumerableUtils.EnumerableUtils.html#Ampere_EnumerableUtils_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0___
@@ -725,6 +750,67 @@ references:
   fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
   nameWithType: EnumerableUtils.ToString<T>(IEnumerable<T>, String, Boolean)
   nameWithType.vb: EnumerableUtils.ToString(Of T)(IEnumerable(Of T), String, Boolean)
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1
+  name: InnerContainsProgram<T>
+  href: api/Ampere.EnumerableUtils.InnerContainsProgram-1.html
+  commentId: T:Ampere.EnumerableUtils.InnerContainsProgram`1
+  name.vb: InnerContainsProgram(Of T)
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T)
+  nameWithType: InnerContainsProgram<T>
+  nameWithType.vb: InnerContainsProgram(Of T)
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean,System.Collections.Generic.IEnumerable{`0}[])
+  name: InnerContainsProgram(IEnumerable<T>, Boolean, IEnumerable<T>[])
+  href: api/Ampere.EnumerableUtils.InnerContainsProgram-1.html#Ampere_EnumerableUtils_InnerContainsProgram_1__ctor_System_Collections_Generic_IEnumerable__0__System_Boolean_System_Collections_Generic_IEnumerable__0____
+  commentId: M:Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean,System.Collections.Generic.IEnumerable{`0}[])
+  name.vb: InnerContainsProgram(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.InnerContainsProgram(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).InnerContainsProgram(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
+  nameWithType: InnerContainsProgram<T>.InnerContainsProgram(IEnumerable<T>, Boolean, IEnumerable<T>[])
+  nameWithType.vb: InnerContainsProgram(Of T).InnerContainsProgram(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor*
+  name: InnerContainsProgram
+  href: api/Ampere.EnumerableUtils.InnerContainsProgram-1.html#Ampere_EnumerableUtils_InnerContainsProgram_1__ctor_
+  commentId: Overload:Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.InnerContainsProgram
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).InnerContainsProgram
+  nameWithType: InnerContainsProgram<T>.InnerContainsProgram
+  nameWithType.vb: InnerContainsProgram(Of T).InnerContainsProgram
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains
+  name: CheckContains()
+  href: api/Ampere.EnumerableUtils.InnerContainsProgram-1.html#Ampere_EnumerableUtils_InnerContainsProgram_1_CheckContains
+  commentId: M:Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.CheckContains()
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).CheckContains()
+  nameWithType: InnerContainsProgram<T>.CheckContains()
+  nameWithType.vb: InnerContainsProgram(Of T).CheckContains()
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains*
+  name: CheckContains
+  href: api/Ampere.EnumerableUtils.InnerContainsProgram-1.html#Ampere_EnumerableUtils_InnerContainsProgram_1_CheckContains_
+  commentId: Overload:Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.CheckContains
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).CheckContains
+  nameWithType: InnerContainsProgram<T>.CheckContains
+  nameWithType.vb: InnerContainsProgram(Of T).CheckContains
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable
+  name: ViolatedEnumerable
+  href: api/Ampere.EnumerableUtils.InnerContainsProgram-1.html#Ampere_EnumerableUtils_InnerContainsProgram_1_ViolatedEnumerable
+  commentId: P:Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.ViolatedEnumerable
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).ViolatedEnumerable
+  nameWithType: InnerContainsProgram<T>.ViolatedEnumerable
+  nameWithType.vb: InnerContainsProgram(Of T).ViolatedEnumerable
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable*
+  name: ViolatedEnumerable
+  href: api/Ampere.EnumerableUtils.InnerContainsProgram-1.html#Ampere_EnumerableUtils_InnerContainsProgram_1_ViolatedEnumerable_
+  commentId: Overload:Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable
+  isSpec: "True"
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.ViolatedEnumerable
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).ViolatedEnumerable
+  nameWithType: InnerContainsProgram<T>.ViolatedEnumerable
+  nameWithType.vb: InnerContainsProgram(Of T).ViolatedEnumerable
 - uid: Ampere.FileUtils
   name: Ampere.FileUtils
   href: api/Ampere.FileUtils.html

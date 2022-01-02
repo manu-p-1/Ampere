@@ -17,7 +17,7 @@ items:
     remote:
       path: Ampere/Base/IIndexable.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IIndexable
     path: ../Ampere/Base/IIndexable.cs
     startLine: 7
@@ -58,7 +58,7 @@ items:
     remote:
       path: Ampere/Base/IIndexable.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: this[]
     path: ../Ampere/Base/IIndexable.cs
     startLine: 14

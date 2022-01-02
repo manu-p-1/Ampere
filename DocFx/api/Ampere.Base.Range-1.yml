@@ -24,7 +24,7 @@ items:
     remote:
       path: Ampere/Base/Range.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Range
     path: ../Ampere/Base/Range.cs
     startLine: 3
@@ -83,7 +83,7 @@ items:
     remote:
       path: Ampere/Base/Range.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Minimum
     path: ../Ampere/Base/Range.cs
     startLine: 6
@@ -129,7 +129,7 @@ items:
     remote:
       path: Ampere/Base/Range.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Maximum
     path: ../Ampere/Base/Range.cs
     startLine: 9
@@ -175,7 +175,7 @@ items:
     remote:
       path: Ampere/Base/Range.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Base/Range.cs
     startLine: 17
@@ -216,7 +216,7 @@ items:
     remote:
       path: Ampere/Base/Range.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
     path: ../Ampere/Base/Range.cs
     startLine: 24
@@ -260,7 +260,7 @@ items:
     remote:
       path: Ampere/Base/Range.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsValid
     path: ../Ampere/Base/Range.cs
     startLine: 27
@@ -304,7 +304,7 @@ items:
     remote:
       path: Ampere/Base/Range.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsValue
     path: ../Ampere/Base/Range.cs
     startLine: 30
@@ -352,7 +352,7 @@ items:
     remote:
       path: Ampere/Base/Range.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsInsideRange
     path: ../Ampere/Base/Range.cs
     startLine: 33
@@ -400,7 +400,7 @@ items:
     remote:
       path: Ampere/Base/Range.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsRange
     path: ../Ampere/Base/Range.cs
     startLine: 37

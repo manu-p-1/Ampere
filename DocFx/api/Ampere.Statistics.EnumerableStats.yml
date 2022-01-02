@@ -44,7 +44,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: EnumerableStats
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 12
@@ -89,7 +89,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Mean
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 48
@@ -143,7 +143,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Median
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 94
@@ -197,7 +197,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Mode
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 107
@@ -255,7 +255,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Mode
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 161
@@ -309,7 +309,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: SampleVariance
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 173
@@ -364,7 +364,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: SampleVariance
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 201
@@ -418,7 +418,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: PopulationVariance
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 213
@@ -473,7 +473,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: PopulationVariance
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 240
@@ -527,7 +527,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: SampleStandardDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 252
@@ -582,7 +582,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: SampleStandardDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 270
@@ -636,7 +636,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: PopulationStandardDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 282
@@ -691,7 +691,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: PopulationStandardDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 300
@@ -745,7 +745,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Range
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 312
@@ -800,7 +800,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Range
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 339
@@ -854,7 +854,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: LowerQuartile
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 352
@@ -912,7 +912,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: LowerQuartile
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 379
@@ -966,7 +966,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: UpperQuartile
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 392
@@ -1024,7 +1024,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: UpperQuartile
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 418
@@ -1078,7 +1078,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: InterQuartileRange
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 430
@@ -1133,7 +1133,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: InterQuartileRange
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 450
@@ -1187,7 +1187,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsNormalProportion
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 463
@@ -1245,7 +1245,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsNormalProportion
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 483
@@ -1302,7 +1302,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsNormalMean
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 495
@@ -1357,7 +1357,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsNormalMean
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 512
@@ -1411,7 +1411,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: StandardizedScore
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 525
@@ -1469,7 +1469,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: StandardizedScore
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 543
@@ -1525,7 +1525,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: CreateConfidenceInterval
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 555
@@ -1572,7 +1572,7 @@ items:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ConstructTValue
     path: ../Ampere/Statistics/EnumerableStats.cs
     startLine: 573

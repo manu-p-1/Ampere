@@ -20,7 +20,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: InsufficientDataSetException
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 8
@@ -89,7 +89,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 14
@@ -121,7 +121,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 21
@@ -157,7 +157,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 28
@@ -196,7 +196,7 @@ items:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
     startLine: 36

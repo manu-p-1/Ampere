@@ -36,6 +36,9 @@
   items:
   - uid: Ampere.EnumerableUtils.EnumerableUtils
     name: EnumerableUtils
+  - uid: Ampere.EnumerableUtils.InnerContainsProgram`1
+    name: InnerContainsProgram<T>
+    name.vb: InnerContainsProgram(Of T)
 - uid: Ampere.FileUtils
   name: Ampere.FileUtils
   items:

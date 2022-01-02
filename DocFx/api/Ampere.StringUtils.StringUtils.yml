@@ -44,7 +44,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: StringUtils
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 14
@@ -88,7 +88,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: CharToString
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 27
@@ -137,7 +137,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Chomp
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 39
@@ -186,7 +186,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ChompAfter
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 59
@@ -238,7 +238,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsDigits
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 92
@@ -287,7 +287,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsDuplicateChars
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 109
@@ -336,7 +336,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsDuplicateStrings
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 130
@@ -391,7 +391,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: CountLetters
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 158
@@ -443,7 +443,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: CountWords
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 170
@@ -492,7 +492,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsPalindrome
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 189
@@ -544,7 +544,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsStrictlyDecreasing
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 221
@@ -596,7 +596,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsStrictlyIncreasing
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 249
@@ -648,7 +648,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsSystemDateTime
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 278
@@ -702,7 +702,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsValidUri
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 297
@@ -748,7 +748,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsWellFormed
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 331
@@ -798,7 +798,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: IsWellFormed
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 373
@@ -860,7 +860,7 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: LongestCommonPrefix
     path: ../Ampere/StringUtils/StringUtils.cs
     startLine: 392
@@ -911,10 +911,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: OrderByLength
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 467
+    startLine: 407
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -963,10 +963,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveAll
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 482
+    startLine: 422
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1024,10 +1024,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveAll
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 511
+    startLine: 451
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1085,10 +1085,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAt
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 548
+    startLine: 488
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1135,10 +1135,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Reverse
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 560
+    startLine: 500
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1184,10 +1184,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffle
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 584
+    startLine: 524
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1236,10 +1236,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: Substring
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 621
+    startLine: 561
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1287,10 +1287,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: AppendIf
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 703
+    startLine: 583
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1338,10 +1338,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: AppendFromEnumerable
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 722
+    startLine: 602
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1395,10 +1395,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: AppendFromEnumerable
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 732
+    startLine: 612
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1446,10 +1446,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: AppendLineFromEnumerable
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 744
+    startLine: 624
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1503,10 +1503,10 @@ items:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
-      repo: https://github.com/manu-p-1/Ampere
+      repo: https://github.com/manu-p-1/Ampere.git
     id: AppendLineFromEnumerable
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 755
+    startLine: 635
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
