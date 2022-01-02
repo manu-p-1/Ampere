@@ -58,7 +58,7 @@
         "_appTitle": "Ampere Docs",
         "_enableSearch": true,
         "_enableNewTab": true,
-        "_appFooter": "<span>Copyright &copy; Manu Puduvalli<br>Generated with <strong>DocFX</strong></span>",
+        "_appFooter": "<span>Copyright &copy; Manu Puduvalli<br>Generated with <strong><a href='https://github.com/dotnet/docfx'>DocFX</a></strong></span>",
         "_gitContribute": {
           "repo": "https://github.com/manu-p-1/Ampere"
         },
