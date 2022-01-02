@@ -54,16 +54,17 @@
             }
         ],
         "dest":"../docs",
-        "globalMetadata": {
-          "_appTitle":  "Ampere Docs",
-          "_enableSearch": true,
-          "_enableNewTab": true,
-          "_appFooter": "<span>Copyright &copy; Manu Puduvalli<br>Generated with <strong>DocFX</strong></span>",
-          "_gitContribute": {
-            "repo": "https://github.com/manu-p-1/Ampere"
-          },
-          "_gitUrlPattern": "github"
+      "globalMetadata": {
+        "_appLogoPath": "AmpereIcon.png",
+        "_appTitle": "Ampere Docs",
+        "_enableSearch": true,
+        "_enableNewTab": true,
+        "_appFooter": "<span>Copyright &copy; Manu Puduvalli</span>",
+        "_gitContribute": {
+          "repo": "https://github.com/manu-p-1/Ampere"
         },
+        "_gitUrlPattern": "github"
+      },
         "globalMetadataFiles":[
             
         ],
