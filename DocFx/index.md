@@ -5,7 +5,9 @@
   <br>
 </p>
 <p align="center">
-  
+   <a href="https://github.com/manu-p-1/Ampere/releases" alt="License">
+      <img src="https://img.shields.io/nuget/dt/Ampere"/></a>
+
    <a href="https://github.com/manu-p-1/Ampere/graphs/contributors" alt="Contributors">
       <img src="https://img.shields.io/github/contributors/manu-p-1/Ampere?color=%20%230099ff"/></a>
     
