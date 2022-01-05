@@ -22,20 +22,20 @@
         }
 
         ///<inheritdoc cref="IRangify{T}"/>
-        public override string ToString() => $"[{this.Minimum} - {this.Maximum}]";
+        public override string ToString() => $"[{Minimum} - {Maximum}]";
 
         ///<inheritdoc cref="IRangify{T}"/>
-        public bool IsValid() => this.Minimum.CompareTo(this.Maximum) <= 0;
+        public bool IsValid() => Minimum.CompareTo(Maximum) <= 0;
 
         ///<inheritdoc cref="IRangify{T}"/>
-        public bool ContainsValue(T value) => this.Minimum.CompareTo(value) <= 0 && value.CompareTo(this.Maximum) <= 0;
+        public bool ContainsValue(T value) => Minimum.CompareTo(value) <= 0 && value.CompareTo(Maximum) <= 0;
 
         ///<inheritdoc cref="IRangify{T}"/>
         public bool IsInsideRange(IRangify<T> range) =>
-            this.IsValid() && range.IsValid() && range.ContainsValue(this.Minimum) && range.ContainsValue(this.Maximum);
+            IsValid() && range.IsValid() && range.ContainsValue(Minimum) && range.ContainsValue(Maximum);
 
         ///<inheritdoc cref="IRangify{T}"/>
         public bool ContainsRange(IRangify<T> range) =>
-            this.IsValid() && range.IsValid() && this.ContainsValue(range.Minimum) && this.ContainsValue(range.Maximum);
+            IsValid() && range.IsValid() && ContainsValue(range.Minimum) && ContainsValue(range.Maximum);
     }
 }

@@ -40,9 +40,9 @@ namespace Ampere.Base
 
             public IntRangeEnumerator(int minimum, int maximum)
             {
-                this._minimum = minimum;
-                this._maximum = maximum;
-                this._position = minimum;
+                _minimum = minimum;
+                _maximum = maximum;
+                _position = minimum;
             }
 
             public bool MoveNext()
