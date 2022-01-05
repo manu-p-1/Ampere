@@ -6,7 +6,7 @@ namespace Ampere.Base.Attributes
     /// The BetaCmdlet attribute represents any Classes, Structs, Methods, Interfaces, or Enums which are functional,
     /// but may result in unintended behavior do to its "beta" state.
     /// </summary>
-    [System.AttributeUsage(System.AttributeTargets.Class |
+    [AttributeUsage(System.AttributeTargets.Class |
                            System.AttributeTargets.Struct |
                            System.AttributeTargets.Method |
                            System.AttributeTargets.Interface |
@@ -34,7 +34,7 @@ namespace Ampere.Base.Attributes
         /// <param name="msg">A message specifying or representing the state of the cmdlet</param>
         internal Beta(string msg)
         {
-            this.Msg = msg;
+            Msg = msg;
         }
     }
 }
