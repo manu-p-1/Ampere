@@ -46,8 +46,8 @@ namespace Ampere.StringUtils
                 return str;
             }
 
-            int idx = str.IndexOf(string.Empty, StringComparison.InvariantCulture);
-            return idx >= 0 ? str.Substring(0, idx) : str;
+            var idx = str.IndexOf(string.Empty, StringComparison.InvariantCulture);
+            return idx >= 0 ? str[..idx] : str;
         }
 
         /// <summary>
@@ -71,12 +71,11 @@ namespace Ampere.StringUtils
                 {
                     if (char.IsWhiteSpace(str[i]))
                     {
-                        int indexOfSpace = i;
                         matchingNumSpaces++;
 
                         if (spaces == matchingNumSpaces)
                         {
-                            return str.Substring(0, indexOfSpace);
+                            return str[..i];
                         }
                     }
                 }
@@ -94,11 +93,7 @@ namespace Ampere.StringUtils
         {
             str = str ?? throw new ArgumentNullException(nameof(str));
             Contract.EndContractBlock();
-            if (str.Length == 0)
-            {
-                return false;
-            }
-            return str.Any(char.IsDigit);
+            return str.Length != 0 && str.Any(char.IsDigit);
         }
 
         /// <summary>
@@ -572,7 +567,7 @@ namespace Ampere.StringUtils
         /// <param name="str">The string to be used</param>
         /// <returns>True if the length of the string is zero or one</returns>
         [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-        internal static bool IsZeroOrOne(this string str) => str.Length == 0 || str.Length == 1;
+        internal static bool IsZeroOrOne(this string str) => str.Length is 0 or 1;
 
         /// <summary>
         /// A StringBuilder extension to append to the StringBuilder if and only if a condition is met.
