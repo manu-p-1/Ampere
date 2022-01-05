@@ -185,15 +185,11 @@ namespace Ampere.Base
 
             if (indexOne != indexTwo)
             {
-                var tmp = _data[indexOne];
-                _data[indexOne] = _data[indexTwo];
-                _data[indexTwo] = tmp;
+                (_data[indexOne], _data[indexTwo]) = (_data[indexTwo], _data[indexOne]);
             }
             if (indexThree != indexFour)
             {
-                var tmp2 = _data[indexThree];
-                _data[indexThree] = _data[indexFour];
-                _data[indexFour] = tmp2;
+                (_data[indexThree], _data[indexFour]) = (_data[indexFour], _data[indexThree]);
             }
         } 
     } //ShuffleUtil
