@@ -221,7 +221,7 @@ namespace Ampere.EnumerableUtils
         {
             ie = ie ?? throw new ArgumentNullException(nameof(ie));
             var cnt = ie.Count();
-            return cnt == 0 || cnt == 1;
+            return cnt is 0 or 1;
         }
 
         /// <summary>
@@ -345,7 +345,7 @@ namespace Ampere.EnumerableUtils
 
             src = src ?? throw new ArgumentNullException(nameof(src));
 
-            if (frl < 0 || frl > 3)
+            if (frl is 0 or > 3)
             {
                 throw new FormatException("Unsupported Expression");
             }
@@ -398,7 +398,6 @@ namespace Ampere.EnumerableUtils
                 }
                 else switch (frl)
                 {
-                    case 0:
                     case 2:
                     case 3:
                         defBehavior:
