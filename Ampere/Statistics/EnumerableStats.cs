@@ -27,8 +27,8 @@ namespace Ampere.Statistics
         private static double Mean(this IEnumerable<double> src)
         {
             src = src ?? throw new ArgumentNullException(nameof(src));
-            var enumerable = src as double[] ?? src.ToArray();
-            var len = enumerable.Length;
+            double[] enumerable = src as double[] ?? src.ToArray();
+            int len = enumerable.Length;
 
             if (len == 0)
             {
@@ -63,8 +63,8 @@ namespace Ampere.Statistics
         {
             src = src ?? throw new ArgumentNullException(nameof(src));
 
-            var enumerable = src as double[] ?? src.ToArray();
-            var len = enumerable.Length;
+            double[] enumerable = src as double[] ?? src.ToArray();
+            int len = enumerable.Length;
 
             switch (len)
             {
@@ -75,8 +75,8 @@ namespace Ampere.Statistics
             }
 
             var sorted = from num in enumerable orderby num select num;
-            var sortedCnt = sorted.Count();
-            var itemIndex = sortedCnt / 2;
+            int sortedCnt = sorted.Count();
+            int itemIndex = sortedCnt / 2;
 
             if (sortedCnt % 2 == 0)
                 return (sorted.ElementAt(itemIndex) + sorted.ElementAt(itemIndex - 1)) / 2;
@@ -109,8 +109,8 @@ namespace Ampere.Statistics
         {
             src = src ?? throw new ArgumentNullException(nameof(src));
 
-            var enumerable = src as double[] ?? src.ToArray();
-            var len = enumerable.Length;
+            double[] enumerable = src as double[] ?? src.ToArray();
+            int len = enumerable.Length;
 
             switch (len)
             {
@@ -123,16 +123,16 @@ namespace Ampere.Statistics
             var sorted = from num in enumerable orderby num select num;
 
             var hash = new Dictionary<double, int>();
-            foreach (var t in sorted)
+            foreach (double t in sorted)
             {
                 if (hash.ContainsKey(t)) hash[t] += 1;
                 else hash.Add(t, 1);
             }
 
-            var keysInDict = hash.Keys.ToArray();
-            var numOfMode = hash.Values.ToArray();
+            double[] keysInDict = hash.Keys.ToArray();
+            int[] numOfMode = hash.Values.ToArray();
 
-            var max = numOfMode[0];
+            int max = numOfMode[0];
             var index = 0;
             var allEqual = 0;
 
