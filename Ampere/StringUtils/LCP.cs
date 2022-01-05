@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Ampere.StringUtils
 {
@@ -13,8 +11,8 @@ namespace Ampere.StringUtils
 
         public LcpFinder(IEnumerable<string> strs, bool ignoreCase = false)
         {
-            this.Strs = strs;
-            this.IgnoreCase = ignoreCase;
+            Strs = strs;
+            IgnoreCase = ignoreCase;
         }
 
         public string Find()
