@@ -369,8 +369,8 @@
              Enables python style for-loop for easier readability. This loop begins
              at the starting value and loops until the end - 1,
              </summary>
-             <param name="start">The starting counter for the loop (inclusive)</param>
-             <param name="end">The ending counter for the loop (exclusive)</param>
+             <param name="start">The starting val for the loop (inclusive)</param>
+             <param name="end">The ending val for the loop (exclusive)</param>
              <returns>An IEnumerable representing the current index</returns>
              <example>This example shows how to use the <see cref="M:Ampere.EnumerableUtils.EnumerableUtils.Range(System.Int32,System.Int32)"/>method.</example>
              <code>
@@ -398,8 +398,8 @@
              Enables python style for-loop for easier readability. This loop begins
              at the starting value and loops until the end.
              </summary>
-             <param name="start">The starting counter for the loop (inclusive)</param>
-             <param name="end">The ending counter for the loop (inclusive)</param>
+             <param name="start">The starting val for the loop (inclusive)</param>
+             <param name="end">The ending val for the loop (inclusive)</param>
              <returns>An IEnumerable representing the current index</returns>
              <example>This example shows how to use the <see cref="M:Ampere.EnumerableUtils.EnumerableUtils.Span(System.Int32,System.Int32)"/>method.</example>
              <code>
