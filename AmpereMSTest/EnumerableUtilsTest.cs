@@ -1,11 +1,7 @@
 ﻿using Ampere.EnumerableUtils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AmpereMSTest
 {
@@ -41,14 +37,14 @@ namespace AmpereMSTest
         {
 
             var watch2 = Stopwatch.StartNew();
-            var y = new int[] { 1, 2, 3, 5, 6, 7 }.AsEnumerable();
+            var y = new[] { 1, 2, 3, 5, 6, 7 }.AsEnumerable();
             y.ToList().Insert(3, 4);
             watch2.Stop();
 
             Trace.WriteLine("ToList(): " + watch2.Elapsed);
 
             var watch = Stopwatch.StartNew();
-            var x = new int[] { 1, 2, 3, 5, 6, 7 };
+            var x = new[] { 1, 2, 3, 5, 6, 7 };
             EnumerableUtils.Insert(ref x, 3, 1, 4);
             watch.Stop();
 
