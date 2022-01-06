@@ -345,7 +345,7 @@ namespace Ampere.EnumerableUtils
 
             src = src ?? throw new ArgumentNullException(nameof(src));
 
-            if (frl is 0 or > 3)
+            if (frl > 3)
             {
                 throw new FormatException("Unsupported Expression");
             }
@@ -398,6 +398,7 @@ namespace Ampere.EnumerableUtils
                 }
                 else switch (frl)
                 {
+                    case 0:
                     case 2:
                     case 3:
                         defBehavior:
