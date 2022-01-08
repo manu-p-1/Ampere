@@ -6,11 +6,11 @@ namespace Ampere.Base.Attributes
     /// The BetaCmdlet attribute represents any Classes, Structs, Methods, Interfaces, or Enums which are functional,
     /// but may result in unintended behavior do to its "beta" state.
     /// </summary>
-    [AttributeUsage(System.AttributeTargets.Class |
-                           System.AttributeTargets.Struct |
-                           System.AttributeTargets.Method |
-                           System.AttributeTargets.Interface |
-                           System.AttributeTargets.Enum)]
+    [AttributeUsage(AttributeTargets.Class |
+                           AttributeTargets.Struct |
+                           AttributeTargets.Method |
+                           AttributeTargets.Interface |
+                           AttributeTargets.Enum)]
     internal class Beta : Attribute
     {
         /// <summary>
