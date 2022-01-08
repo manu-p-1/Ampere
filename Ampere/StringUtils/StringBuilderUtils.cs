@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Ampere.Base.Attributes;
 
 namespace Ampere.StringUtils
 {
@@ -97,6 +98,7 @@ namespace Ampere.StringUtils
         /// <param name="count"></param>
         /// <param name="comparisonType"></param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta("Evaluating Performance versus StringBuilder.ToString().IndexOf()")]
         public static int IndexOf(this StringBuilder sb, string value, int startIndex, int count, StringComparison comparisonType)
         {
             if (value == null)
@@ -147,6 +149,7 @@ namespace Ampere.StringUtils
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
         /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta]
         public static int IndexOf(this StringBuilder sb, string value, int startIndex, StringComparison comparisonType)
         {
             return IndexOf(sb, value, startIndex, sb.Length - startIndex, comparisonType);
@@ -161,6 +164,7 @@ namespace Ampere.StringUtils
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
         /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta]
         public static int IndexOf(this StringBuilder sb, char value, int startIndex, StringComparison comparisonType)
         {
             return IndexOf(sb, value.ToString(), startIndex, comparisonType);
@@ -174,6 +178,7 @@ namespace Ampere.StringUtils
         /// <param name="value">The string to find</param>
         /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta]
         public static int IndexOf(this StringBuilder sb, string value, StringComparison comparisonType)
         {
             return IndexOf(sb, value, 0, sb.Length, comparisonType);
@@ -188,6 +193,7 @@ namespace Ampere.StringUtils
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
         /// <param name="count">The number of character positions to examine.</param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta]
         public static int IndexOf(this StringBuilder sb, string value, int startIndex, int count)
         {
             return IndexOf(sb, value, startIndex, count, StringComparison.CurrentCulture);
@@ -201,6 +207,7 @@ namespace Ampere.StringUtils
         /// <param name="value">The character to find</param>
         /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta]
         public static int IndexOf(this StringBuilder sb, char value, StringComparison comparisonType)
         {
             return IndexOf(sb, value.ToString(), comparisonType);
@@ -214,6 +221,7 @@ namespace Ampere.StringUtils
         /// <param name="value">The character to find</param>
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta]
         public static int IndexOf(this StringBuilder sb, char value, int startIndex)
         {
             return IndexOf(sb, value.ToString(), startIndex);
@@ -226,6 +234,7 @@ namespace Ampere.StringUtils
         /// <param name="sb">The StringBuilder instance</param>
         /// <param name="value">The string to find</param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta]
         public static int IndexOf(this StringBuilder sb, string value)
         {
             return IndexOf(sb, value, StringComparison.CurrentCulture);
@@ -238,6 +247,7 @@ namespace Ampere.StringUtils
         /// <param name="sb">The StringBuilder instance</param>
         /// <param name="value">The character to find</param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta]
         public static int IndexOf(this StringBuilder sb, char value)
         {
             return IndexOf(sb, value.ToString());
@@ -251,6 +261,7 @@ namespace Ampere.StringUtils
         /// <param name="value">The string to find</param>
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
         /// <returns>The index if found and -1 otherwise</returns>
+        [Beta]
         public static int IndexOf(this StringBuilder sb, string value, int startIndex)
         {
             return IndexOf(sb, value, startIndex, StringComparison.CurrentCulture);
@@ -263,6 +274,7 @@ namespace Ampere.StringUtils
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <param name="n"></param>
+        [Beta]
         public static StringBuilder ReplaceNth(this StringBuilder sb, string from, string to, int n)
         {
             int index = sb.IndexOf(from, 0);
