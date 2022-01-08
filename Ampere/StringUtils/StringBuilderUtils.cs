@@ -92,103 +92,42 @@ namespace Ampere.StringUtils
         /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
         /// </summary>
         /// <param name="sb">The StringBuilder instance</param>
-        /// <param name="value">The character to find</param>
-        /// <param name="ignoreCase">if set to <c>true</c> it will ignore case</param>
-        /// <returns>The index if found and -1 otherwise</returns>
-        public static int IndexOf(this StringBuilder sb, char value, bool ignoreCase = true)
-        {
-            return IndexOf(sb, new [] {value}, 0, ignoreCase);
-        }
-
-        /// <summary>
-        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
-        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
-        /// </summary>
-        /// <param name="sb">The StringBuilder instance</param>
-        /// <param name="value">The string to find</param>
-        /// <param name="startIndex">The starting index of where to search, inclusive</param>
-        /// <param name="ignoreCase">if set to <c>true</c> it will ignore case</param>
-        /// <returns>The index if found and -1 otherwise</returns>
-        public static int IndexOf(this StringBuilder sb, char value, int startIndex, bool ignoreCase = true)
-        {
-            return IndexOf(sb, new[] { value }, startIndex, ignoreCase);
-        }
-
-        /// <summary>
-        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
-        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
-        /// </summary>
-        /// <param name="sb">The StringBuilder instance</param>
-        /// <param name="value">The string to find</param>
-        /// <param name="ignoreCase">if set to <c>true</c> it will ignore case</param>
-        /// <returns>The index if found and -1 otherwise</returns>
-        public static int IndexOf(this StringBuilder sb, string value, bool ignoreCase = true)
-        {
-            return IndexOf(sb, value, 0, ignoreCase);
-        }
-
-        /// <summary>
-        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
-        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
-        /// </summary>
-        /// <param name="sb">The StringBuilder instance</param>
-        /// <param name="value">The string to find</param>
-        /// <param name="startIndex">The starting index of where to search, inclusive</param>
-        /// <param name="ignoreCase">if set to <c>true</c> it will ignore case</param>
-        /// <returns>The index if found and -1 otherwise</returns>
-        public static int IndexOf(this StringBuilder sb, string value, int startIndex, bool ignoreCase = true)
-        {
-            return IndexOf(sb, value.ToCharArray(), startIndex, ignoreCase);
-        }
-
-        /// <summary>
-        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
-        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
-        /// </summary>
-        /// <param name="sb">The StringBuilder instance</param>
         /// <param name="value">The string to find as a character array</param>
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
-        /// <param name="ignoreCase">if set to <c>true</c> it will ignore case</param>
+        /// <param name="count"></param>
+        /// <param name="comparisonType"></param>
         /// <returns>The index if found and -1 otherwise</returns>
-        public static int IndexOf(this StringBuilder sb, char[] value, int startIndex, bool ignoreCase=true)
+        public static int IndexOf(this StringBuilder sb, string value, int startIndex, int count, StringComparison comparisonType)
         {
+            if (value == null)
+                throw new ArgumentNullException(nameof(value));
+
+            if (startIndex < 0 || startIndex > sb.Length)
+                throw new ArgumentOutOfRangeException(nameof(startIndex));
+
+            if (count < 0 || startIndex > sb.Length - count)
+                throw new ArgumentOutOfRangeException(nameof(count));
+
             if (value.Length == 0 && startIndex == 0)
             {
                 return 0;
             }
 
-            if (startIndex < 0 || value.Length > sb.Length || startIndex >= sb.Length)
+            if (value.Length > sb.Length)
             {
                 return -1;
             }
 
+            
             int index;
             int length = value.Length;
-            int maxSearchLength = (sb.Length - length) + 1;
             
-            if (ignoreCase)
-            {
-                for (int i = startIndex; i < maxSearchLength; ++i)
-                {
-                    if (char.ToLower(sb[i]) == char.ToLower(value[0]))
-                    {
-                        index = 1;
-                        while ((index < length) && (char.ToLower(sb[i + index]) == char.ToLower(value[index])))
-                            ++index;
-
-                        if (index == length)
-                            return i;
-                    }
-                }
-                return -1;
-            }
-
-            for (int i = startIndex; i < maxSearchLength; ++i)
+            for (int i = startIndex; i < count + startIndex; ++i)
             {
                 if (sb[i] == value[0])
                 {
                     index = 1;
-                    while ((index < length) && (sb[i + index] == value[index]))
+                    while (index < length && string.Equals(sb[i + index].ToString(), value[index].ToString(), comparisonType))
                         ++index;
 
                     if (index == length)
@@ -200,21 +139,145 @@ namespace Ampere.StringUtils
         }
 
         /// <summary>
+        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="value">The string to find</param>
+        /// <param name="startIndex">The starting index of where to search, inclusive</param>
+        /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
+        /// <returns>The index if found and -1 otherwise</returns>
+        public static int IndexOf(this StringBuilder sb, string value, int startIndex, StringComparison comparisonType)
+        {
+            return IndexOf(sb, value, startIndex, sb.Length - startIndex, comparisonType);
+        }
+
+        /// <summary>
+        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="value">The character to find</param>
+        /// <param name="startIndex">The starting index of where to search, inclusive</param>
+        /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
+        /// <returns>The index if found and -1 otherwise</returns>
+        public static int IndexOf(this StringBuilder sb, char value, int startIndex, StringComparison comparisonType)
+        {
+            return IndexOf(sb, value.ToString(), startIndex, comparisonType);
+        }
+
+        /// <summary>
+        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="value">The string to find</param>
+        /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
+        /// <returns>The index if found and -1 otherwise</returns>
+        public static int IndexOf(this StringBuilder sb, string value, StringComparison comparisonType)
+        {
+            return IndexOf(sb, value, 0, sb.Length, comparisonType);
+        }
+
+        /// <summary>
+        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="value">The string to find</param>
+        /// <param name="startIndex">The starting index of where to search, inclusive</param>
+        /// <param name="count">The number of character positions to examine.</param>
+        /// <returns>The index if found and -1 otherwise</returns>
+        public static int IndexOf(this StringBuilder sb, string value, int startIndex, int count)
+        {
+            return IndexOf(sb, value, startIndex, count, StringComparison.CurrentCulture);
+        }
+
+        /// <summary>
+        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="value">The character to find</param>
+        /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
+        /// <returns>The index if found and -1 otherwise</returns>
+        public static int IndexOf(this StringBuilder sb, char value, StringComparison comparisonType)
+        {
+            return IndexOf(sb, value.ToString(), comparisonType);
+        }
+
+        /// <summary>
+        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="value">The character to find</param>
+        /// <param name="startIndex">The starting index of where to search, inclusive</param>
+        /// <returns>The index if found and -1 otherwise</returns>
+        public static int IndexOf(this StringBuilder sb, char value, int startIndex)
+        {
+            return IndexOf(sb, value.ToString(), startIndex);
+        }
+
+        /// <summary>
+        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="value">The string to find</param>
+        /// <returns>The index if found and -1 otherwise</returns>
+        public static int IndexOf(this StringBuilder sb, string value)
+        {
+            return IndexOf(sb, value, StringComparison.CurrentCulture);
+        }
+
+        /// <summary>
+        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="value">The character to find</param>
+        /// <returns>The index if found and -1 otherwise</returns>
+        public static int IndexOf(this StringBuilder sb, char value)
+        {
+            return IndexOf(sb, value.ToString());
+        }
+
+        /// <summary>
+        /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+        /// The method returns -1 if the string is not found in this instance. A new string is not created during the search.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="value">The string to find</param>
+        /// <param name="startIndex">The starting index of where to search, inclusive</param>
+        /// <returns>The index if found and -1 otherwise</returns>
+        public static int IndexOf(this StringBuilder sb, string value, int startIndex)
+        {
+            return IndexOf(sb, value, startIndex, StringComparison.CurrentCulture);
+        }
+
+        /// <summary>
         /// 
         /// </summary>
         /// <param name="sb"></param>
         /// <param name="from"></param>
         /// <param name="to"></param>
-        public static StringBuilder ReplaceAll(this StringBuilder sb, string from, string to)
+        /// <param name="n"></param>
+        public static StringBuilder ReplaceNth(this StringBuilder sb, string from, string to, int n)
         {
             int index = sb.IndexOf(from, 0);
+            var cnt = 1; // Start at 1 because we assume above index found a value
             while (index != -1)
             {
-                sb.Replace(from, to);
+                if (cnt == n)
+                {
+                    sb.Replace(from, to, index, from.Length);
+                    break;
+                }
                 index += to.Length; // Move to the end of the replacement
                 index = sb.IndexOf(from, index);
+                cnt++;
             }
-
             return sb;
         }
     }
