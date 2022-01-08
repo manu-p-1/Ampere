@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Diagnostics;
+using System.IO;
 using System.Text;
 using Ampere.StringUtils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AmpereMSTest
+namespace AmpereMSTest.String
 {
     [TestClass]
     public class StringBuilderUtilsTest
@@ -80,6 +82,36 @@ namespace AmpereMSTest
         {
             var sb = new StringBuilder("");
             sb.IndexOf("", 3);
+        }
+
+        [TestMethod]
+        public void IndexOf_Test_ExecutionTime()
+        {
+            var sb = new StringBuilder(File.ReadAllText(@"..\..\..\String\Blob\IpsumLoremParagraph.txt"));
+            var stopwatch = new Stopwatch();
+
+            stopwatch.Start();
+            sb.IndexOf("Manu");
+            stopwatch.Stop();
+
+            var ts = stopwatch.ElapsedMilliseconds;
+
+            Trace.WriteLine($"Elapsed Time is {ts}ms");
+        }
+
+        [TestMethod]
+        public void IndexOfBuiltIn_Test_ExecutionTime()
+        {
+            var sb = File.ReadAllText(@"..\..\..\String\Blob\IpsumLoremParagraph.txt");
+            var stopwatch = new Stopwatch();
+
+            stopwatch.Start();
+            sb.IndexOf("Manu");
+            stopwatch.Stop();
+
+            var ts = stopwatch.ElapsedMilliseconds;
+
+            Trace.WriteLine($"Elapsed Time is {ts}ms");
         }
 
         [TestMethod]
