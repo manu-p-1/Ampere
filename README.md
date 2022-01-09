@@ -16,7 +16,10 @@
         
    <a href="https://github.com/manu-p-1/Ampere/issues" alt="Open Issues">
       <img src="https://img.shields.io/github/issues/manu-p-1/Ampere"/></a>
-      
+  
+   <a href="https://github.com/manu-p-1/Ampere/actions/workflows/codeql-analysis.yml" alt="CodeQL">
+      <img src="https://github.com/manu-p-1/Ampere/actions/workflows/codeql-analysis.yml/badge.svg"/></a>
+  
    <a href="https://github.com/manu-p-1/Ampere/releases" alt="Latest Release">
       <img src="https://img.shields.io/github/v/release/manu-p-1/Ampere?include_prereleases"/></a>
         
