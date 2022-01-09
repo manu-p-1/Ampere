@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Ampere.Base.Attributes;
@@ -150,10 +151,7 @@ namespace Ampere.StringUtils
         /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta]
-        public static int IndexOf(this StringBuilder sb, string value, int startIndex, StringComparison comparisonType)
-        {
-            return IndexOf(sb, value, startIndex, sb.Length - startIndex, comparisonType);
-        }
+        public static int IndexOf(this StringBuilder sb, string value, int startIndex, StringComparison comparisonType) => IndexOf(sb, value, startIndex, sb.Length - startIndex, comparisonType);
 
         /// <summary>
         /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
@@ -165,10 +163,7 @@ namespace Ampere.StringUtils
         /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta]
-        public static int IndexOf(this StringBuilder sb, char value, int startIndex, StringComparison comparisonType)
-        {
-            return IndexOf(sb, value.ToString(), startIndex, comparisonType);
-        }
+        public static int IndexOf(this StringBuilder sb, char value, int startIndex, StringComparison comparisonType) => IndexOf(sb, value.ToString(), startIndex, comparisonType);
 
         /// <summary>
         /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
@@ -179,10 +174,7 @@ namespace Ampere.StringUtils
         /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta]
-        public static int IndexOf(this StringBuilder sb, string value, StringComparison comparisonType)
-        {
-            return IndexOf(sb, value, 0, sb.Length, comparisonType);
-        }
+        public static int IndexOf(this StringBuilder sb, string value, StringComparison comparisonType) => IndexOf(sb, value, 0, sb.Length, comparisonType);
 
         /// <summary>
         /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
@@ -194,10 +186,7 @@ namespace Ampere.StringUtils
         /// <param name="count">The number of character positions to examine.</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta]
-        public static int IndexOf(this StringBuilder sb, string value, int startIndex, int count)
-        {
-            return IndexOf(sb, value, startIndex, count, StringComparison.CurrentCulture);
-        }
+        public static int IndexOf(this StringBuilder sb, string value, int startIndex, int count) => IndexOf(sb, value, startIndex, count, StringComparison.CurrentCulture);
 
         /// <summary>
         /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
@@ -208,10 +197,7 @@ namespace Ampere.StringUtils
         /// <param name="comparisonType">The <see cref="StringComparison"/> instance to specify culture and case rules</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta]
-        public static int IndexOf(this StringBuilder sb, char value, StringComparison comparisonType)
-        {
-            return IndexOf(sb, value.ToString(), comparisonType);
-        }
+        public static int IndexOf(this StringBuilder sb, char value, StringComparison comparisonType) => IndexOf(sb, value.ToString(), comparisonType);
 
         /// <summary>
         /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
@@ -222,10 +208,7 @@ namespace Ampere.StringUtils
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta]
-        public static int IndexOf(this StringBuilder sb, char value, int startIndex)
-        {
-            return IndexOf(sb, value.ToString(), startIndex);
-        }
+        public static int IndexOf(this StringBuilder sb, char value, int startIndex) => IndexOf(sb, value.ToString(), startIndex);
 
         /// <summary>
         /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
@@ -235,10 +218,7 @@ namespace Ampere.StringUtils
         /// <param name="value">The string to find</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta]
-        public static int IndexOf(this StringBuilder sb, string value)
-        {
-            return IndexOf(sb, value, StringComparison.CurrentCulture);
-        }
+        public static int IndexOf(this StringBuilder sb, string value) => IndexOf(sb, value, StringComparison.CurrentCulture);
 
         /// <summary>
         /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
@@ -248,10 +228,7 @@ namespace Ampere.StringUtils
         /// <param name="value">The character to find</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta]
-        public static int IndexOf(this StringBuilder sb, char value)
-        {
-            return IndexOf(sb, value.ToString());
-        }
+        public static int IndexOf(this StringBuilder sb, char value) => IndexOf(sb, value.ToString());
 
         /// <summary>
         /// Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
@@ -262,35 +239,93 @@ namespace Ampere.StringUtils
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta]
-        public static int IndexOf(this StringBuilder sb, string value, int startIndex)
-        {
-            return IndexOf(sb, value, startIndex, StringComparison.CurrentCulture);
-        }
+        public static int IndexOf(this StringBuilder sb, string value, int startIndex) => IndexOf(sb, value, startIndex, StringComparison.CurrentCulture);
 
         /// <summary>
-        /// 
+        /// Returns true if the length of the string is zero or one.
         /// </summary>
-        /// <param name="sb"></param>
-        /// <param name="from"></param>
-        /// <param name="to"></param>
-        /// <param name="n"></param>
+        /// <param name="sb">The string to be used</param>
+        /// <returns>True if the length of the string is zero or one</returns>
+        [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        internal static bool IsZeroOrOne(this StringBuilder sb) => sb.Length is 0 or 1;
+
+        /// <summary>
+        /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string. 
+        /// </summary>
+        /// <example>
+        /// Given a string that says, "Hello my good good good friend", StringBuilder.ReplaceOccurrence("good", "very good", 3) would
+        /// result in, "Hello my good good very good friend".
+        /// </example>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
         [Beta]
-        public static StringBuilder ReplaceNth(this StringBuilder sb, string from, string to, int n)
+        public static StringBuilder ReplaceOccurrence(this StringBuilder sb, string oldValue, string? newValue, int occurrence) => ReplaceOccurrence(sb, oldValue, newValue, occurrence, StringComparison.CurrentCulture);
+
+        /// <summary>
+        /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string. 
+        /// </summary>
+        /// <example>
+        /// Given a string that says, "Hello my good good good friend", StringBuilder.ReplaceOccurrence("good", "very good", 3) would
+        /// result in, "Hello my good good very good friend".
+        /// </example>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
+        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
+        [Beta]
+        public static StringBuilder ReplaceOccurrence(this StringBuilder sb, string oldValue, string? newValue, int occurrence, StringComparison comparisonType)
         {
-            int index = sb.IndexOf(from, 0);
+            switch (occurrence)
+            {
+                case < 0:
+                    throw new ArgumentOutOfRangeException(nameof(occurrence));
+                case 0:
+                    return sb;
+            }
+
+            newValue ??= string.Empty;
+
+            int index = sb.IndexOf(oldValue, 0, comparisonType);
             var cnt = 1; // Start at 1 because we assume above index found a value
             while (index != -1)
             {
-                if (cnt == n)
+                if (cnt++ == occurrence)
                 {
-                    sb.Replace(from, to, index, from.Length);
+                    sb.Replace(oldValue, newValue, index, oldValue.Length);
                     break;
                 }
-                index += to.Length; // Move to the end of the replacement
-                index = sb.IndexOf(from, index);
-                cnt++;
+                index += oldValue.Length; // Move to the end of the replacement
+                index = sb.IndexOf(oldValue, index, comparisonType);
             }
+
             return sb;
+        }
+
+        //[Beta]
+        //public static StringBuilder ReplaceN(this StringBuilder sb, string from, string to, int n)
+        //{
+        //    return null;
+        //}
+
+        /// <summary>
+        /// Performs a Substring given a starting and ending index, similar to Java.
+        /// The operation is performed mathematically as [startIndex, endIndex).
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="startIndex">The inclusive starting index of <paramref name="sb"/></param>
+        /// <param name="endIndex">The exclusive ending index of <paramref name="sb"/></param>
+        /// <returns>A string that is equivalent to the substring that begins at startIndex in this 
+        /// instance, or Empty if startIndex is equal to the length of this instance.</returns>
+        [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        public static string Slice(this StringBuilder sb, int startIndex, int endIndex)
+        { 
+            sb = sb ?? throw new ArgumentNullException(nameof(sb));
+            return sb.ToString(startIndex, (endIndex - startIndex) + 1);
         }
     }
 }

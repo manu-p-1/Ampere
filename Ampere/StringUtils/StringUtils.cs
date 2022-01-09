@@ -1,10 +1,12 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 using Ampere.Base;
+using Ampere.Base.Attributes;
 
 namespace Ampere.StringUtils
 {
@@ -127,11 +129,6 @@ namespace Ampere.StringUtils
             str = str ?? throw new ArgumentNullException(nameof(str));
 
             if (IsZeroOrOne(str))
-            {
-                return false;
-            }
-
-            if (arg is null)
             {
                 return false;
             }
@@ -369,12 +366,7 @@ namespace Ampere.StringUtils
         {
             str = str ?? throw new ArgumentNullException(nameof(str));
 
-            if (IsZeroOrOne(str))
-            {
-                return false;
-            }
-
-            return alphabet is null ? IsWellFormed(str) : new WellFormedUtility(alphabet).Run(str);
+            return !IsZeroOrOne(str) && new WellFormedUtility(alphabet).Run(str);
         }
 
         /// <summary>
@@ -544,6 +536,49 @@ namespace Ampere.StringUtils
             return new string(new Shuffler<char>(str.ToCharArray()).Shuffle());
         }
 
+        //[Beta]
+        //public static StringBuilder Replace(string oldValue, string newValue, int startIndex, int count)
+        //{
+        //    return null;
+        //}
+
+        /// <summary>
+        /// Returns a new string in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string. 
+        /// </summary>
+        /// <example>
+        /// Given a string that says, "Hello my good good good friend", StringBuilder.ReplaceOccurrence("good", "very good", 3) would
+        /// result in, "Hello my good good very good friend".
+        /// </example>
+        /// <param name="str">The string instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
+        [Beta]
+        public static string ReplaceOccurrence(this string str, string oldValue, string? newValue, int occurrence)
+            => new StringBuilder(str)
+                .ReplaceOccurrence(oldValue, newValue, occurrence, StringComparison.CurrentCulture) //Using the Ampere Repalce
+                .ToString();
+
+
+        /// <summary>
+        /// Returns a new string in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string. 
+        /// </summary>
+        /// <example>
+        /// Given a string that says, "Hello my good good good friend", StringBuilder.ReplaceOccurrence("good", "very good", 3) would
+        /// result in, "Hello my good good very good friend".
+        /// </example>
+        /// <param name="str">The string instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
+        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
+        [Beta]
+        public static string ReplaceOccurrence(this string str, string oldValue, string? newValue, int occurrence, StringComparison comparisonType) => new StringBuilder(str)
+                .ReplaceOccurrence(oldValue, newValue, occurrence, comparisonType) //Using the Ampere Repalce
+                .ToString();
+
         /// <summary>
         /// Performs a Substring given a starting and ending index, similar to Java.
         /// The operation is performed mathematically as [startIndex, endIndex).
@@ -554,7 +589,7 @@ namespace Ampere.StringUtils
         /// <returns>A string that is equivalent to the substring that begins at startIndex in this 
         /// instance, or Empty if startIndex is equal to the length of this instance.</returns>
         [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-        public static string Substring(this string str, int startIndex, int endIndex)
+        public static string Slice(this string str, int startIndex, int endIndex)
         {
             str = str ?? throw new ArgumentNullException(nameof(str));
             return str.Substring(startIndex, (endIndex - startIndex) + 1);
