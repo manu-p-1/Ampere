@@ -65,5 +65,7 @@
 - uid: Ampere.StringUtils
   name: Ampere.StringUtils
   items:
+  - uid: Ampere.StringUtils.StringBuilderUtils
+    name: StringBuilderUtils
   - uid: Ampere.StringUtils.StringUtils
     name: StringUtils

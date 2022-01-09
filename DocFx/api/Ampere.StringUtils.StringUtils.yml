@@ -5,11 +5,6 @@ items:
   id: StringUtils
   parent: Ampere.StringUtils
   children:
-  - Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  - Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  - Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
-  - Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  - Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
   - Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})
   - Ampere.StringUtils.StringUtils.Chomp(System.String)
   - Ampere.StringUtils.StringUtils.ChompAfter(System.String,System.Int32)
@@ -30,9 +25,15 @@ items:
   - Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])
   - Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String}[])
   - Ampere.StringUtils.StringUtils.ReplaceAt(System.String,System.Int32,System.Char)
+  - Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32)
+  - Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32)
+  - Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  - Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  - Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32)
+  - Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32,System.StringComparison)
   - Ampere.StringUtils.StringUtils.Reverse(System.String)
   - Ampere.StringUtils.StringUtils.Shuffle(System.String,System.Boolean)
-  - Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
+  - Ampere.StringUtils.StringUtils.Slice(System.String,System.Int32,System.Int32)
   langs:
   - csharp
   - vb
@@ -47,11 +48,11 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: StringUtils
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
-  summary: "\nA static utility class for string extension methods including other string manipulation classes such as\nStringBuilder and StringBuffer.\n"
+  summary: "\nA static utility class for string extension methods.\n"
   example: []
   syntax:
     content: public static class StringUtils
@@ -91,7 +92,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: CharToString
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -140,7 +141,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: Chomp
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 39
+    startLine: 40
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -189,7 +190,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ChompAfter
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -241,7 +242,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsDigits
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 92
+    startLine: 94
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -290,7 +291,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsDuplicateChars
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 109
+    startLine: 107
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -339,7 +340,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsDuplicateStrings
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 130
+    startLine: 128
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -394,7 +395,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: CountLetters
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 158
+    startLine: 151
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -446,7 +447,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: CountWords
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 170
+    startLine: 163
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -495,7 +496,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsPalindrome
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 189
+    startLine: 182
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -547,7 +548,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsStrictlyDecreasing
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 221
+    startLine: 215
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -599,7 +600,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsStrictlyIncreasing
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 249
+    startLine: 244
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -651,7 +652,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsSystemDateTime
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 278
+    startLine: 274
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -705,7 +706,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsValidUri
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 297
+    startLine: 294
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -751,7 +752,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsWellFormed
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 331
+    startLine: 328
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -801,7 +802,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsWellFormed
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 373
+    startLine: 370
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -863,7 +864,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: LongestCommonPrefix
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 392
+    startLine: 384
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -914,7 +915,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: OrderByLength
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 407
+    startLine: 399
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -966,7 +967,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveAll
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 422
+    startLine: 414
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1027,7 +1028,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveAll
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 451
+    startLine: 446
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1088,7 +1089,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAt
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 488
+    startLine: 486
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1138,7 +1139,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: Reverse
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 500
+    startLine: 498
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1187,7 +1188,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffle
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 524
+    startLine: 522
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
@@ -1220,33 +1221,372 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
-  commentId: M:Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
-  id: Substring(System.String,System.Int32,System.Int32)
+- uid: Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32)
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32)
+  id: ReplaceOccurrence(System.String,System.String,System.String,System.Int32)
   isExtensionMethod: true
   parent: Ampere.StringUtils.StringUtils
   langs:
   - csharp
   - vb
-  name: Substring(String, Int32, Int32)
-  nameWithType: StringUtils.Substring(String, Int32, Int32)
-  fullName: Ampere.StringUtils.StringUtils.Substring(System.String, System.Int32, System.Int32)
+  name: ReplaceOccurrence(String, String, String, Int32)
+  nameWithType: StringUtils.ReplaceOccurrence(String, String, String, Int32)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String, System.String, System.String, System.Int32)
   type: Method
   source:
     remote:
       path: Ampere/StringUtils/StringUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
-    id: Substring
+    id: ReplaceOccurrence
     path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 561
+    startLine: 570
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nReturns a new string in which a specific occurrence of a specified string in the current instance\nis replaced another specified string. \n"
+  example:
+  - "\nGiven a string that says, &quot;Hello my good good good friend&quot;, StringBuilder.ReplaceOccurrence(&quot;good&quot;, &quot;very good&quot;, 3) would\nresult in, &quot;Hello my good good very good friend&quot;.\n"
+  syntax:
+    content: public static string ReplaceOccurrence(this string str, string oldValue, string newValue, int occurrence)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string instance
+    - id: oldValue
+      type: System.String
+      description: The string to be replaced
+    - id: newValue
+      type: System.String
+      description: The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>
+    - id: occurrence
+      type: System.Int32
+      description: The nth occurrence of the <code data-dev-comment-type="paramref" class="paramref">oldValue</code> to replace
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReplaceOccurrence(str As String, oldValue As String, newValue As String, occurrence As Integer) As String
+  overload: Ampere.StringUtils.StringUtils.ReplaceOccurrence*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  id: ReplaceOccurrence(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ReplaceOccurrence(String, String, String, Int32, StringComparison)
+  nameWithType: StringUtils.ReplaceOccurrence(String, String, String, Int32, StringComparison)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String, System.String, System.String, System.Int32, System.StringComparison)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ReplaceOccurrence
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 591
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nReturns a new string in which a specific occurrence of a specified string in the current instance\nis replaced another specified string. \n"
+  example:
+  - "\nGiven a string that says, &quot;Hello my good good good friend&quot;, StringBuilder.ReplaceOccurrence(&quot;good&quot;, &quot;very good&quot;, 3) would\nresult in, &quot;Hello my good good very good friend&quot;.\n"
+  syntax:
+    content: public static string ReplaceOccurrence(this string str, string oldValue, string newValue, int occurrence, StringComparison comparisonType)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string instance
+    - id: oldValue
+      type: System.String
+      description: The string to be replaced
+    - id: newValue
+      type: System.String
+      description: The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>
+    - id: occurrence
+      type: System.Int32
+      description: The nth occurrence of the <code data-dev-comment-type="paramref" class="paramref">oldValue</code> to replace
+    - id: comparisonType
+      type: System.StringComparison
+      description: One of the enumeration values that determines how <code data-dev-comment-type="paramref" class="paramref">oldValue</code> is searched within this instance
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReplaceOccurrence(str As String, oldValue As String, newValue As String, occurrence As Integer, comparisonType As StringComparison) As String
+  overload: Ampere.StringUtils.StringUtils.ReplaceOccurrence*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32)
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32)
+  id: ReplaceInterval(System.String,System.String,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInterval(String, String, String, Int32)
+  nameWithType: StringUtils.ReplaceInterval(String, String, String, Int32)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ReplaceInterval
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 618
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nReturns a new string in which a specific occurrence of a specified string in the current instance\nis replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text\nup to a predefined stop count. This is an overload of <xref href=\"Ampere.StringUtils.StringUtils.ReplaceInterval(System.String%2cSystem.String%2cSystem.String%2cSystem.Int32%2cSystem.Int32%2cSystem.StringComparison)\" data-throw-if-not-resolved=\"false\"></xref>\n<example>\nGiven the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, sb.Length, StringComparison.CurrentCulture)\nwill replace every second &quot;very&quot; with the word &quot;happy&quot; until the very end of the string. The result would be:\n&quot;very happy very happy very happy very&quot;\n</example>\n<example>\nGiven the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, 3)\nwill replace every second &quot;very&quot; with the word &quot;happy&quot; until the third occurrence of &quot;very&quot;. The result would be:\n&quot;very happy very very very very very&quot;\n</example>\n"
+  example: []
+  syntax:
+    content: public static string ReplaceInterval(this string str, string oldValue, string newValue, int every)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string Instance
+    - id: oldValue
+      type: System.String
+      description: The string to be replaced
+    - id: newValue
+      type: System.String
+      description: The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>
+    - id: every
+      type: System.Int32
+      description: The interval the replacement should follow - read as, &quot;Replace every nth occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>&quot;
+    return:
+      type: System.String
+      description: A new string containing the replacement
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReplaceInterval(str As String, oldValue As String, newValue As String, every As Integer) As String
+  overload: Ampere.StringUtils.StringUtils.ReplaceInterval*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  id: ReplaceInterval(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInterval(String, String, String, Int32, StringComparison)
+  nameWithType: StringUtils.ReplaceInterval(String, String, String, Int32, StringComparison)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String, System.String, System.String, System.Int32, System.StringComparison)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ReplaceInterval
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 645
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nReturns a new string in which a specific occurrence of a specified string in the current instance\nis replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text\nup to a predefined stop count.\n<example>\nGiven the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, sb.Length, StringComparison.CurrentCulture)\nwill replace every second &quot;very&quot; with the word &quot;happy&quot; until the very end of the string. The result would be:\n&quot;very happy very happy very happy very&quot;\n</example>\n<example>\nGiven the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, 3)\nwill replace every second &quot;very&quot; with the word &quot;happy&quot; until the third occurrence of &quot;very&quot;. The result would be:\n&quot;very happy very very very very very&quot;\n</example>\n"
+  example: []
+  syntax:
+    content: public static string ReplaceInterval(this string str, string oldValue, string newValue, int every, StringComparison comparisonType)
+    parameters:
+    - id: str
+      type: System.String
+      description: The StringBuilder Instance
+    - id: oldValue
+      type: System.String
+      description: The string to be replaced
+    - id: newValue
+      type: System.String
+      description: The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>
+    - id: every
+      type: System.Int32
+      description: The interval the replacement should follow - read as, &quot;Replace every nth occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>&quot;
+    - id: comparisonType
+      type: System.StringComparison
+      description: One of the enumeration values that determines how <code data-dev-comment-type="paramref" class="paramref">oldValue</code> is searched within this instance
+    return:
+      type: System.String
+      description: A new string containing the replacement
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReplaceInterval(str As String, oldValue As String, newValue As String, every As Integer, comparisonType As StringComparison) As String
+  overload: Ampere.StringUtils.StringUtils.ReplaceInterval*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32)
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32)
+  id: ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInterval(String, String, String, Int32, Int32)
+  nameWithType: StringUtils.ReplaceInterval(String, String, String, Int32, Int32)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String, System.String, System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ReplaceInterval
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 671
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nReturns a new string in which a specific occurrence of a specified string in the current instance\nis replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text\nup to a predefined stop count.\n<example>\nGiven the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, sb.Length, StringComparison.CurrentCulture)\nwill replace every second &quot;very&quot; with the word &quot;happy&quot; until the very end of the string. The result would be:\n&quot;very happy very happy very happy very&quot;\n</example>\n<example>\nGiven the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, 3)\nwill replace every second &quot;very&quot; with the word &quot;happy&quot; until the third occurrence of &quot;very&quot;. The result would be:\n&quot;very happy very very very very very&quot;\n</example>\n"
+  example: []
+  syntax:
+    content: public static string ReplaceInterval(this string str, string oldValue, string newValue, int every, int stop)
+    parameters:
+    - id: str
+      type: System.String
+      description: The StringBuilder Instance
+    - id: oldValue
+      type: System.String
+      description: The string to be replaced
+    - id: newValue
+      type: System.String
+      description: The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>
+    - id: every
+      type: System.Int32
+      description: The interval the replacement should follow - read as, &quot;Replace every nth occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>&quot;
+    - id: stop
+      type: System.Int32
+      description: The number of found instances of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>
+    return:
+      type: System.String
+      description: A new string containing the replacement
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReplaceInterval(str As String, oldValue As String, newValue As String, every As Integer, stop As Integer) As String
+  overload: Ampere.StringUtils.StringUtils.ReplaceInterval*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  id: ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInterval(String, String, String, Int32, Int32, StringComparison)
+  nameWithType: StringUtils.ReplaceInterval(String, String, String, Int32, Int32, StringComparison)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String, System.String, System.String, System.Int32, System.Int32, System.StringComparison)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ReplaceInterval
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 699
+  assemblies:
+  - Ampere
+  namespace: Ampere.StringUtils
+  summary: "\nReturns a new string in which a specific occurrence of a specified string in the current instance\nis replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text\nup to a predefined stop count.\n<example>\nGiven the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, sb.Length, StringComparison.CurrentCulture)\nwill replace every second &quot;very&quot; with the word &quot;happy&quot; until the very end of the string. The result would be:\n&quot;very happy very happy very happy very&quot;\n</example>\n<example>\nGiven the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, 3)\nwill replace every second &quot;very&quot; with the word &quot;happy&quot; until the third occurrence of &quot;very&quot;. The result would be:\n&quot;very happy very very very very very&quot;\n</example>\n"
+  example: []
+  syntax:
+    content: public static string ReplaceInterval(this string str, string oldValue, string newValue, int every, int stop, StringComparison comparisonType)
+    parameters:
+    - id: str
+      type: System.String
+      description: The StringBuilder Instance
+    - id: oldValue
+      type: System.String
+      description: The string to be replaced
+    - id: newValue
+      type: System.String
+      description: The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>
+    - id: every
+      type: System.Int32
+      description: The interval the replacement should follow - read as, &quot;Replace every nth occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>&quot;
+    - id: stop
+      type: System.Int32
+      description: The number of found instances of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>
+    - id: comparisonType
+      type: System.StringComparison
+      description: One of the enumeration values that determines how <code data-dev-comment-type="paramref" class="paramref">oldValue</code> is searched within this instance
+    return:
+      type: System.String
+      description: A new string containing the replacement
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReplaceInterval(str As String, oldValue As String, newValue As String, every As Integer, stop As Integer, comparisonType As StringComparison) As String
+  overload: Ampere.StringUtils.StringUtils.ReplaceInterval*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Ampere.StringUtils.StringUtils.Slice(System.String,System.Int32,System.Int32)
+  commentId: M:Ampere.StringUtils.StringUtils.Slice(System.String,System.Int32,System.Int32)
+  id: Slice(System.String,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Ampere.StringUtils.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: Slice(String, Int32, Int32)
+  nameWithType: StringUtils.Slice(String, Int32, Int32)
+  fullName: Ampere.StringUtils.StringUtils.Slice(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Ampere/StringUtils/StringUtils.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Slice
+    path: ../Ampere/StringUtils/StringUtils.cs
+    startLine: 715
   assemblies:
   - Ampere
   namespace: Ampere.StringUtils
   summary: "\nPerforms a Substring given a starting and ending index, similar to Java.\nThe operation is performed mathematically as [startIndex, endIndex).\n"
   example: []
   syntax:
-    content: public static string Substring(this string str, int startIndex, int endIndex)
+    content: public static string Slice(this string str, int startIndex, int endIndex)
     parameters:
     - id: str
       type: System.String
@@ -1263,281 +1603,14 @@ items:
     content.vb: >-
       <ExtensionAttribute>
 
-      Public Shared Function Substring(str As String, startIndex As Integer, endIndex As Integer) As String
-  overload: Ampere.StringUtils.StringUtils.Substring*
+      Public Shared Function Slice(str As String, startIndex As Integer, endIndex As Integer) As String
+  overload: Ampere.StringUtils.StringUtils.Slice*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
-  commentId: M:Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
-  id: AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
-  isExtensionMethod: true
-  parent: Ampere.StringUtils.StringUtils
-  langs:
-  - csharp
-  - vb
-  name: AppendIf(StringBuilder, String, Boolean)
-  nameWithType: StringUtils.AppendIf(StringBuilder, String, Boolean)
-  fullName: Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder, System.String, System.Boolean)
-  type: Method
-  source:
-    remote:
-      path: Ampere/StringUtils/StringUtils.cs
-      branch: main
-      repo: https://github.com/manu-p-1/Ampere.git
-    id: AppendIf
-    path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 583
-  assemblies:
-  - Ampere
-  namespace: Ampere.StringUtils
-  summary: "\nA StringBuilder extension to append to the StringBuilder if and only if a condition is met.\n"
-  example: []
-  syntax:
-    content: public static StringBuilder AppendIf(this StringBuilder sb, string str, bool condition)
-    parameters:
-    - id: sb
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    - id: str
-      type: System.String
-      description: The string to append
-    - id: condition
-      type: System.Boolean
-      description: The condition to meet in order for the append to occur
-    return:
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function AppendIf(sb As StringBuilder, str As String, condition As Boolean) As StringBuilder
-  overload: Ampere.StringUtils.StringUtils.AppendIf*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  commentId: M:Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  id: AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  isExtensionMethod: true
-  parent: Ampere.StringUtils.StringUtils
-  langs:
-  - csharp
-  - vb
-  name: AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
-  nameWithType: StringUtils.AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
-  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
-  type: Method
-  source:
-    remote:
-      path: Ampere/StringUtils/StringUtils.cs
-      branch: main
-      repo: https://github.com/manu-p-1/Ampere.git
-    id: AppendFromEnumerable
-    path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 602
-  assemblies:
-  - Ampere
-  namespace: Ampere.StringUtils
-  summary: "\nAppends the contents of an enumerable of generic objects provided a delegate to identify the string property.\n"
-  example: []
-  syntax:
-    content: public static StringBuilder AppendFromEnumerable<T>(this StringBuilder sb, IEnumerable<T> enumerable, Func<T, string> func)
-    parameters:
-    - id: sb
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    - id: enumerable
-      type: System.Collections.Generic.IEnumerable{{T}}
-      description: The enumerable to append from
-    - id: func
-      type: System.Func{{T},System.String}
-      description: The function specifying what item should be appended
-    typeParameters:
-    - id: T
-      description: The type of the enumerable
-    return:
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function AppendFromEnumerable(Of T)(sb As StringBuilder, enumerable As IEnumerable(Of T), func As Func(Of T, String)) As StringBuilder
-  overload: Ampere.StringUtils.StringUtils.AppendFromEnumerable*
-  nameWithType.vb: StringUtils.AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: Ampere.StringUtils.StringUtils.AppendFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
-  name.vb: AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
-- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  commentId: M:Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  id: AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  isExtensionMethod: true
-  parent: Ampere.StringUtils.StringUtils
-  langs:
-  - csharp
-  - vb
-  name: AppendFromEnumerable(StringBuilder, IEnumerable<String>)
-  nameWithType: StringUtils.AppendFromEnumerable(StringBuilder, IEnumerable<String>)
-  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
-  type: Method
-  source:
-    remote:
-      path: Ampere/StringUtils/StringUtils.cs
-      branch: main
-      repo: https://github.com/manu-p-1/Ampere.git
-    id: AppendFromEnumerable
-    path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 612
-  assemblies:
-  - Ampere
-  namespace: Ampere.StringUtils
-  summary: "\nAppends the contents of a string enumerable. \n"
-  example: []
-  syntax:
-    content: public static StringBuilder AppendFromEnumerable(this StringBuilder sb, IEnumerable<string> enumerable)
-    parameters:
-    - id: sb
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    - id: enumerable
-      type: System.Collections.Generic.IEnumerable{System.String}
-      description: The enumerable to append from
-    return:
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function AppendFromEnumerable(sb As StringBuilder, enumerable As IEnumerable(Of String)) As StringBuilder
-  overload: Ampere.StringUtils.StringUtils.AppendFromEnumerable*
-  nameWithType.vb: StringUtils.AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
-  name.vb: AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
-- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  commentId: M:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  id: AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  isExtensionMethod: true
-  parent: Ampere.StringUtils.StringUtils
-  langs:
-  - csharp
-  - vb
-  name: AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
-  nameWithType: StringUtils.AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
-  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
-  type: Method
-  source:
-    remote:
-      path: Ampere/StringUtils/StringUtils.cs
-      branch: main
-      repo: https://github.com/manu-p-1/Ampere.git
-    id: AppendLineFromEnumerable
-    path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 624
-  assemblies:
-  - Ampere
-  namespace: Ampere.StringUtils
-  summary: "\nAppends the contents of an enumerable of generic objects provided a delegate to identify the string property. This function also\nadds the appropriate line terminator at the end of the StringBuilder instance.\n"
-  example: []
-  syntax:
-    content: public static StringBuilder AppendLineFromEnumerable<T>(this StringBuilder sb, IEnumerable<T> enumerable, Func<T, string> func)
-    parameters:
-    - id: sb
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    - id: enumerable
-      type: System.Collections.Generic.IEnumerable{{T}}
-      description: The enumerable to append from
-    - id: func
-      type: System.Func{{T},System.String}
-      description: The function specifying what item should be appended
-    typeParameters:
-    - id: T
-      description: The type of the enumerable
-    return:
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function AppendLineFromEnumerable(Of T)(sb As StringBuilder, enumerable As IEnumerable(Of T), func As Func(Of T, String)) As StringBuilder
-  overload: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*
-  nameWithType.vb: StringUtils.AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
-  name.vb: AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
-- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  commentId: M:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  id: AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  isExtensionMethod: true
-  parent: Ampere.StringUtils.StringUtils
-  langs:
-  - csharp
-  - vb
-  name: AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
-  nameWithType: StringUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
-  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
-  type: Method
-  source:
-    remote:
-      path: Ampere/StringUtils/StringUtils.cs
-      branch: main
-      repo: https://github.com/manu-p-1/Ampere.git
-    id: AppendLineFromEnumerable
-    path: ../Ampere/StringUtils/StringUtils.cs
-    startLine: 635
-  assemblies:
-  - Ampere
-  namespace: Ampere.StringUtils
-  summary: "\nAppends the contents of a string enumerable. This function also\nadds the appropriate line terminator at the end of the StringBuilder instance.\n"
-  example: []
-  syntax:
-    content: public static StringBuilder AppendLineFromEnumerable(this StringBuilder sb, IEnumerable<string> enumerable)
-    parameters:
-    - id: sb
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    - id: enumerable
-      type: System.Collections.Generic.IEnumerable{System.String}
-      description: The enumerable to append from
-    return:
-      type: System.Text.StringBuilder
-      description: The StringBuilder instance
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function AppendLineFromEnumerable(sb As StringBuilder, enumerable As IEnumerable(Of String)) As StringBuilder
-  overload: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*
-  nameWithType.vb: StringUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
-  name.vb: AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
 references:
 - uid: Ampere.StringUtils
   commentId: N:Ampere.StringUtils
@@ -2313,183 +2386,28 @@ references:
   name: Shuffle
   nameWithType: StringUtils.Shuffle
   fullName: Ampere.StringUtils.StringUtils.Shuffle
-- uid: Ampere.StringUtils.StringUtils.Substring*
-  commentId: Overload:Ampere.StringUtils.StringUtils.Substring
-  name: Substring
-  nameWithType: StringUtils.Substring
-  fullName: Ampere.StringUtils.StringUtils.Substring
-- uid: Ampere.StringUtils.StringUtils.AppendIf*
-  commentId: Overload:Ampere.StringUtils.StringUtils.AppendIf
-  name: AppendIf
-  nameWithType: StringUtils.AppendIf
-  fullName: Ampere.StringUtils.StringUtils.AppendIf
-- uid: System.Text.StringBuilder
-  commentId: T:System.Text.StringBuilder
-  parent: System.Text
-  isExternal: true
-  name: StringBuilder
-  nameWithType: StringBuilder
-  fullName: System.Text.StringBuilder
-- uid: System.Text
-  commentId: N:System.Text
-  isExternal: true
-  name: System.Text
-  nameWithType: System.Text
-  fullName: System.Text
-- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable*
-  commentId: Overload:Ampere.StringUtils.StringUtils.AppendFromEnumerable
-  name: AppendFromEnumerable
-  nameWithType: StringUtils.AppendFromEnumerable
-  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable
-- uid: System.Collections.Generic.IEnumerable{{T}}
-  commentId: T:System.Collections.Generic.IEnumerable{``0}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Func{{T},System.String}
-  commentId: T:System.Func{``0,System.String}
+- uid: Ampere.StringUtils.StringUtils.ReplaceOccurrence*
+  commentId: Overload:Ampere.StringUtils.StringUtils.ReplaceOccurrence
+  name: ReplaceOccurrence
+  nameWithType: StringUtils.ReplaceOccurrence
+  fullName: Ampere.StringUtils.StringUtils.ReplaceOccurrence
+- uid: System.StringComparison
+  commentId: T:System.StringComparison
   parent: System
-  definition: System.Func`2
-  name: Func<T, String>
-  nameWithType: Func<T, String>
-  fullName: System.Func<T, System.String>
-  nameWithType.vb: Func(Of T, String)
-  fullName.vb: System.Func(Of T, System.String)
-  name.vb: Func(Of T, String)
-  spec.csharp:
-  - uid: System.Func`2
-    name: Func
-    nameWithType: Func
-    fullName: System.Func
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Func`2
-    name: Func
-    nameWithType: Func
-    fullName: System.Func
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Func`2
-  commentId: T:System.Func`2
   isExternal: true
-  name: Func<T, TResult>
-  nameWithType: Func<T, TResult>
-  fullName: System.Func<T, TResult>
-  nameWithType.vb: Func(Of T, TResult)
-  fullName.vb: System.Func(Of T, TResult)
-  name.vb: Func(Of T, TResult)
-  spec.csharp:
-  - uid: System.Func`2
-    name: Func
-    nameWithType: Func
-    fullName: System.Func
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Func`2
-    name: Func
-    nameWithType: Func
-    fullName: System.Func
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*
-  commentId: Overload:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable
-  name: AppendLineFromEnumerable
-  nameWithType: StringUtils.AppendLineFromEnumerable
-  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable
+  name: StringComparison
+  nameWithType: StringComparison
+  fullName: System.StringComparison
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  isExternal: true
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval*
+  commentId: Overload:Ampere.StringUtils.StringUtils.ReplaceInterval
+  name: ReplaceInterval
+  nameWithType: StringUtils.ReplaceInterval
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval
+- uid: Ampere.StringUtils.StringUtils.Slice*
+  commentId: Overload:Ampere.StringUtils.StringUtils.Slice
+  name: Slice
+  nameWithType: StringUtils.Slice
+  fullName: Ampere.StringUtils.StringUtils.Slice

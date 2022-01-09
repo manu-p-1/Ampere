@@ -2143,75 +2143,211 @@ references:
   commentId: N:Ampere.StringUtils
   fullName: Ampere.StringUtils
   nameWithType: Ampere.StringUtils
+- uid: Ampere.StringUtils.StringBuilderUtils
+  name: StringBuilderUtils
+  href: api/Ampere.StringUtils.StringBuilderUtils.html
+  commentId: T:Ampere.StringUtils.StringBuilderUtils
+  fullName: Ampere.StringUtils.StringBuilderUtils
+  nameWithType: StringBuilderUtils
+- uid: Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  name: AppendFromEnumerable(StringBuilder, IEnumerable<String>)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_AppendFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
+  fullName: Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: StringBuilderUtils.AppendFromEnumerable(StringBuilder, IEnumerable<String>)
+  nameWithType.vb: StringBuilderUtils.AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
+- uid: Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable*
+  name: AppendFromEnumerable
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_AppendFromEnumerable_
+  commentId: Overload:Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable
+  nameWithType: StringBuilderUtils.AppendFromEnumerable
+- uid: Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  name: AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_AppendFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  name.vb: AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+  fullName: Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
+  fullName.vb: Ampere.StringUtils.StringBuilderUtils.AppendFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
+  nameWithType: StringBuilderUtils.AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  nameWithType.vb: StringBuilderUtils.AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+- uid: Ampere.StringUtils.StringBuilderUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
+  name: AppendIf(StringBuilder, String, Boolean)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_AppendIf_System_Text_StringBuilder_System_String_System_Boolean_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
+  fullName: Ampere.StringUtils.StringBuilderUtils.AppendIf(System.Text.StringBuilder, System.String, System.Boolean)
+  nameWithType: StringBuilderUtils.AppendIf(StringBuilder, String, Boolean)
+- uid: Ampere.StringUtils.StringBuilderUtils.AppendIf*
+  name: AppendIf
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_AppendIf_
+  commentId: Overload:Ampere.StringUtils.StringBuilderUtils.AppendIf
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringBuilderUtils.AppendIf
+  nameWithType: StringBuilderUtils.AppendIf
+- uid: Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  name: AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_AppendLineFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
+  fullName: Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: StringBuilderUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
+  nameWithType.vb: StringBuilderUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
+- uid: Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable*
+  name: AppendLineFromEnumerable
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_AppendLineFromEnumerable_
+  commentId: Overload:Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable
+  nameWithType: StringBuilderUtils.AppendLineFromEnumerable
+- uid: Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  name: AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_AppendLineFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
+  name.vb: AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+  fullName: Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
+  fullName.vb: Ampere.StringUtils.StringBuilderUtils.AppendLineFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
+  nameWithType: StringBuilderUtils.AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
+  nameWithType.vb: StringBuilderUtils.AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char)
+  name: IndexOf(StringBuilder, Char)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_Char_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.Char)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, Char)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char,System.Int32)
+  name: IndexOf(StringBuilder, Char, Int32)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_Char_System_Int32_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char,System.Int32)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.Char, System.Int32)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, Char, Int32)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char,System.Int32,System.StringComparison)
+  name: IndexOf(StringBuilder, Char, Int32, StringComparison)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_Char_System_Int32_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char,System.Int32,System.StringComparison)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.Char, System.Int32, System.StringComparison)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, Char, Int32, StringComparison)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char,System.StringComparison)
+  name: IndexOf(StringBuilder, Char, StringComparison)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_Char_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char,System.StringComparison)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.Char, System.StringComparison)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, Char, StringComparison)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String)
+  name: IndexOf(StringBuilder, String)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_String_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.String)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, String)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  name: IndexOf(StringBuilder, String, Int32)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_String_System_Int32_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.String, System.Int32)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, String, Int32)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32,System.Int32)
+  name: IndexOf(StringBuilder, String, Int32, Int32)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_String_System_Int32_System_Int32_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32,System.Int32)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.String, System.Int32, System.Int32)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, String, Int32, Int32)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32,System.Int32,System.StringComparison)
+  name: IndexOf(StringBuilder, String, Int32, Int32, StringComparison)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_String_System_Int32_System_Int32_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32,System.Int32,System.StringComparison)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.String, System.Int32, System.Int32, System.StringComparison)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, String, Int32, Int32, StringComparison)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32,System.StringComparison)
+  name: IndexOf(StringBuilder, String, Int32, StringComparison)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_String_System_Int32_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32,System.StringComparison)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.String, System.Int32, System.StringComparison)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, String, Int32, StringComparison)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.StringComparison)
+  name: IndexOf(StringBuilder, String, StringComparison)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_System_Text_StringBuilder_System_String_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.StringComparison)
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf(System.Text.StringBuilder, System.String, System.StringComparison)
+  nameWithType: StringBuilderUtils.IndexOf(StringBuilder, String, StringComparison)
+- uid: Ampere.StringUtils.StringBuilderUtils.IndexOf*
+  name: IndexOf
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_IndexOf_
+  commentId: Overload:Ampere.StringUtils.StringBuilderUtils.IndexOf
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringBuilderUtils.IndexOf
+  nameWithType: StringBuilderUtils.IndexOf
+- uid: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder,System.String,System.String,System.Int32)
+  name: ReplaceInterval(StringBuilder, String, String, Int32)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_ReplaceInterval_System_Text_StringBuilder_System_String_System_String_System_Int32_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder,System.String,System.String,System.Int32)
+  fullName: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder, System.String, System.String, System.Int32)
+  nameWithType: StringBuilderUtils.ReplaceInterval(StringBuilder, String, String, Int32)
+- uid: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder,System.String,System.String,System.Int32,System.Int32)
+  name: ReplaceInterval(StringBuilder, String, String, Int32, Int32)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_ReplaceInterval_System_Text_StringBuilder_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder,System.String,System.String,System.Int32,System.Int32)
+  fullName: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder, System.String, System.String, System.Int32, System.Int32)
+  nameWithType: StringBuilderUtils.ReplaceInterval(StringBuilder, String, String, Int32, Int32)
+- uid: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  name: ReplaceInterval(StringBuilder, String, String, Int32, Int32, StringComparison)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_ReplaceInterval_System_Text_StringBuilder_System_String_System_String_System_Int32_System_Int32_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  fullName: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder, System.String, System.String, System.Int32, System.Int32, System.StringComparison)
+  nameWithType: StringBuilderUtils.ReplaceInterval(StringBuilder, String, String, Int32, Int32, StringComparison)
+- uid: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder,System.String,System.String,System.Int32,System.StringComparison)
+  name: ReplaceInterval(StringBuilder, String, String, Int32, StringComparison)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_ReplaceInterval_System_Text_StringBuilder_System_String_System_String_System_Int32_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder,System.String,System.String,System.Int32,System.StringComparison)
+  fullName: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder, System.String, System.String, System.Int32, System.StringComparison)
+  nameWithType: StringBuilderUtils.ReplaceInterval(StringBuilder, String, String, Int32, StringComparison)
+- uid: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval*
+  name: ReplaceInterval
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_ReplaceInterval_
+  commentId: Overload:Ampere.StringUtils.StringBuilderUtils.ReplaceInterval
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringBuilderUtils.ReplaceInterval
+  nameWithType: StringBuilderUtils.ReplaceInterval
+- uid: Ampere.StringUtils.StringBuilderUtils.ReplaceOccurrence(System.Text.StringBuilder,System.String,System.String,System.Int32)
+  name: ReplaceOccurrence(StringBuilder, String, String, Int32)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_ReplaceOccurrence_System_Text_StringBuilder_System_String_System_String_System_Int32_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.ReplaceOccurrence(System.Text.StringBuilder,System.String,System.String,System.Int32)
+  fullName: Ampere.StringUtils.StringBuilderUtils.ReplaceOccurrence(System.Text.StringBuilder, System.String, System.String, System.Int32)
+  nameWithType: StringBuilderUtils.ReplaceOccurrence(StringBuilder, String, String, Int32)
+- uid: Ampere.StringUtils.StringBuilderUtils.ReplaceOccurrence(System.Text.StringBuilder,System.String,System.String,System.Int32,System.StringComparison)
+  name: ReplaceOccurrence(StringBuilder, String, String, Int32, StringComparison)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_ReplaceOccurrence_System_Text_StringBuilder_System_String_System_String_System_Int32_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.ReplaceOccurrence(System.Text.StringBuilder,System.String,System.String,System.Int32,System.StringComparison)
+  fullName: Ampere.StringUtils.StringBuilderUtils.ReplaceOccurrence(System.Text.StringBuilder, System.String, System.String, System.Int32, System.StringComparison)
+  nameWithType: StringBuilderUtils.ReplaceOccurrence(StringBuilder, String, String, Int32, StringComparison)
+- uid: Ampere.StringUtils.StringBuilderUtils.ReplaceOccurrence*
+  name: ReplaceOccurrence
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_ReplaceOccurrence_
+  commentId: Overload:Ampere.StringUtils.StringBuilderUtils.ReplaceOccurrence
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringBuilderUtils.ReplaceOccurrence
+  nameWithType: StringBuilderUtils.ReplaceOccurrence
+- uid: Ampere.StringUtils.StringBuilderUtils.Slice(System.Text.StringBuilder,System.Int32,System.Int32)
+  name: Slice(StringBuilder, Int32, Int32)
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_Slice_System_Text_StringBuilder_System_Int32_System_Int32_
+  commentId: M:Ampere.StringUtils.StringBuilderUtils.Slice(System.Text.StringBuilder,System.Int32,System.Int32)
+  fullName: Ampere.StringUtils.StringBuilderUtils.Slice(System.Text.StringBuilder, System.Int32, System.Int32)
+  nameWithType: StringBuilderUtils.Slice(StringBuilder, Int32, Int32)
+- uid: Ampere.StringUtils.StringBuilderUtils.Slice*
+  name: Slice
+  href: api/Ampere.StringUtils.StringBuilderUtils.html#Ampere_StringUtils_StringBuilderUtils_Slice_
+  commentId: Overload:Ampere.StringUtils.StringBuilderUtils.Slice
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringBuilderUtils.Slice
+  nameWithType: StringBuilderUtils.Slice
 - uid: Ampere.StringUtils.StringUtils
   name: StringUtils
   href: api/Ampere.StringUtils.StringUtils.html
   commentId: T:Ampere.StringUtils.StringUtils
   fullName: Ampere.StringUtils.StringUtils
   nameWithType: StringUtils
-- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  name: AppendFromEnumerable(StringBuilder, IEnumerable<String>)
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__
-  commentId: M:Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  name.vb: AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
-  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
-  fullName.vb: Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
-  nameWithType: StringUtils.AppendFromEnumerable(StringBuilder, IEnumerable<String>)
-  nameWithType.vb: StringUtils.AppendFromEnumerable(StringBuilder, IEnumerable(Of String))
-- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable*
-  name: AppendFromEnumerable
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendFromEnumerable_
-  commentId: Overload:Ampere.StringUtils.StringUtils.AppendFromEnumerable
-  isSpec: "True"
-  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable
-  nameWithType: StringUtils.AppendFromEnumerable
-- uid: Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  name: AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__
-  commentId: M:Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  name.vb: AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
-  fullName: Ampere.StringUtils.StringUtils.AppendFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
-  fullName.vb: Ampere.StringUtils.StringUtils.AppendFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
-  nameWithType: StringUtils.AppendFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
-  nameWithType.vb: StringUtils.AppendFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
-- uid: Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
-  name: AppendIf(StringBuilder, String, Boolean)
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendIf_System_Text_StringBuilder_System_String_System_Boolean_
-  commentId: M:Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)
-  fullName: Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder, System.String, System.Boolean)
-  nameWithType: StringUtils.AppendIf(StringBuilder, String, Boolean)
-- uid: Ampere.StringUtils.StringUtils.AppendIf*
-  name: AppendIf
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendIf_
-  commentId: Overload:Ampere.StringUtils.StringUtils.AppendIf
-  isSpec: "True"
-  fullName: Ampere.StringUtils.StringUtils.AppendIf
-  nameWithType: StringUtils.AppendIf
-- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  name: AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendLineFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__
-  commentId: M:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})
-  name.vb: AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
-  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<System.String>)
-  fullName.vb: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of System.String))
-  nameWithType: StringUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable<String>)
-  nameWithType.vb: StringUtils.AppendLineFromEnumerable(StringBuilder, IEnumerable(Of String))
-- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*
-  name: AppendLineFromEnumerable
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendLineFromEnumerable_
-  commentId: Overload:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable
-  isSpec: "True"
-  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable
-  nameWithType: StringUtils.AppendLineFromEnumerable
-- uid: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  name: AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_AppendLineFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__
-  commentId: M:Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})
-  name.vb: AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
-  fullName: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable<T>(System.Text.StringBuilder, System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>)
-  fullName.vb: Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(Of T)(System.Text.StringBuilder, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String))
-  nameWithType: StringUtils.AppendLineFromEnumerable<T>(StringBuilder, IEnumerable<T>, Func<T, String>)
-  nameWithType.vb: StringUtils.AppendLineFromEnumerable(Of T)(StringBuilder, IEnumerable(Of T), Func(Of T, String))
 - uid: Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})
   name: CharToString(IEnumerable<Char>)
   href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_CharToString_System_Collections_Generic_IEnumerable_System_Char__
@@ -2476,6 +2612,56 @@ references:
   isSpec: "True"
   fullName: Ampere.StringUtils.StringUtils.ReplaceAt
   nameWithType: StringUtils.ReplaceAt
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32)
+  name: ReplaceInterval(String, String, String, Int32)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String, System.String, System.String, System.Int32)
+  nameWithType: StringUtils.ReplaceInterval(String, String, String, Int32)
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32)
+  name: ReplaceInterval(String, String, String, Int32, Int32)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String, System.String, System.String, System.Int32, System.Int32)
+  nameWithType: StringUtils.ReplaceInterval(String, String, String, Int32, Int32)
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  name: ReplaceInterval(String, String, String, Int32, Int32, StringComparison)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_Int32_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32,System.StringComparison)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String, System.String, System.String, System.Int32, System.Int32, System.StringComparison)
+  nameWithType: StringUtils.ReplaceInterval(String, String, String, Int32, Int32, StringComparison)
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  name: ReplaceInterval(String, String, String, Int32, StringComparison)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval(System.String, System.String, System.String, System.Int32, System.StringComparison)
+  nameWithType: StringUtils.ReplaceInterval(String, String, String, Int32, StringComparison)
+- uid: Ampere.StringUtils.StringUtils.ReplaceInterval*
+  name: ReplaceInterval
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceInterval_
+  commentId: Overload:Ampere.StringUtils.StringUtils.ReplaceInterval
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.ReplaceInterval
+  nameWithType: StringUtils.ReplaceInterval
+- uid: Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32)
+  name: ReplaceOccurrence(String, String, String, Int32)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceOccurrence_System_String_System_String_System_String_System_Int32_
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String, System.String, System.String, System.Int32)
+  nameWithType: StringUtils.ReplaceOccurrence(String, String, String, Int32)
+- uid: Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  name: ReplaceOccurrence(String, String, String, Int32, StringComparison)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceOccurrence_System_String_System_String_System_String_System_Int32_System_StringComparison_
+  commentId: M:Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32,System.StringComparison)
+  fullName: Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String, System.String, System.String, System.Int32, System.StringComparison)
+  nameWithType: StringUtils.ReplaceOccurrence(String, String, String, Int32, StringComparison)
+- uid: Ampere.StringUtils.StringUtils.ReplaceOccurrence*
+  name: ReplaceOccurrence
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceOccurrence_
+  commentId: Overload:Ampere.StringUtils.StringUtils.ReplaceOccurrence
+  isSpec: "True"
+  fullName: Ampere.StringUtils.StringUtils.ReplaceOccurrence
+  nameWithType: StringUtils.ReplaceOccurrence
 - uid: Ampere.StringUtils.StringUtils.Reverse(System.String)
   name: Reverse(String)
   href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Reverse_System_String_
@@ -2502,16 +2688,16 @@ references:
   isSpec: "True"
   fullName: Ampere.StringUtils.StringUtils.Shuffle
   nameWithType: StringUtils.Shuffle
-- uid: Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
-  name: Substring(String, Int32, Int32)
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Substring_System_String_System_Int32_System_Int32_
-  commentId: M:Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)
-  fullName: Ampere.StringUtils.StringUtils.Substring(System.String, System.Int32, System.Int32)
-  nameWithType: StringUtils.Substring(String, Int32, Int32)
-- uid: Ampere.StringUtils.StringUtils.Substring*
-  name: Substring
-  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Substring_
-  commentId: Overload:Ampere.StringUtils.StringUtils.Substring
+- uid: Ampere.StringUtils.StringUtils.Slice(System.String,System.Int32,System.Int32)
+  name: Slice(String, Int32, Int32)
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Slice_System_String_System_Int32_System_Int32_
+  commentId: M:Ampere.StringUtils.StringUtils.Slice(System.String,System.Int32,System.Int32)
+  fullName: Ampere.StringUtils.StringUtils.Slice(System.String, System.Int32, System.Int32)
+  nameWithType: StringUtils.Slice(String, Int32, Int32)
+- uid: Ampere.StringUtils.StringUtils.Slice*
+  name: Slice
+  href: api/Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_Slice_
+  commentId: Overload:Ampere.StringUtils.StringUtils.Slice
   isSpec: "True"
-  fullName: Ampere.StringUtils.StringUtils.Substring
-  nameWithType: StringUtils.Substring
+  fullName: Ampere.StringUtils.StringUtils.Slice
+  nameWithType: StringUtils.Slice

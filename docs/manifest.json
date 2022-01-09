@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.EnumerableUtils.InnerContainsProgram-1.html",
-          "hash": "HRl55Kpq7vJfSuT3vqHLPwPfWF0D2TvXpaeqiVk0K0A="
+          "hash": "GVE+bTehNShWMI6AWsUMQMH8k964enD+R8psVvjjkKo="
         }
       },
       "is_incremental": false,
@@ -302,11 +302,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.StringUtils.StringBuilderUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.StringUtils.StringBuilderUtils.html",
+          "hash": "weS8nX3hPmfKDpFV7Icwbky6BwTXreAScbK7M6YHESo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ampere.StringUtils.StringUtils.yml",
       "output": {
         ".html": {
           "relative_path": "api/Ampere.StringUtils.StringUtils.html",
-          "hash": "E78KzF/YFJIrqYbppzNUSh0UWTaMyan0i41MYB8xm94="
+          "hash": "D/Qy0MqQB9mBcp7xc5rdF+p4xY8g9dgWYjtfmihlBdk="
         }
       },
       "is_incremental": false,
@@ -318,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.StringUtils.html",
-          "hash": "Miml5cVexUfEI2n6H2bmcsF7y62LCOsYyZA7OfK9iOY="
+          "hash": "jCgCssvO2Y6E/PVBCtiMgCVdxhMYv078Tttn22rbaZE="
         }
       },
       "is_incremental": false,
@@ -330,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "+k3O/OYjhuCjZo0oQ7BmULzCfsG3EoE9tSZsDMnLSdU="
+          "hash": "vJXLsVC3ORlUe68DfRIc3HOCFYA5AdBvsk5RlGgNRuE="
         }
       },
       "is_incremental": false,
@@ -403,8 +415,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 26,
-          "skipped_file_count": 26
+          "total_file_count": 27,
+          "skipped_file_count": 23
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

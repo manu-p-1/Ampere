@@ -53,6 +53,45 @@ items:
   - Class
   fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T)
   name.vb: InnerContainsProgram(Of T)
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable
+  commentId: P:Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable
+  id: ViolatedEnumerable
+  parent: Ampere.EnumerableUtils.InnerContainsProgram`1
+  langs:
+  - csharp
+  - vb
+  name: ViolatedEnumerable
+  nameWithType: InnerContainsProgram<T>.ViolatedEnumerable
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.ViolatedEnumerable
+  type: Property
+  source:
+    remote:
+      path: Ampere/EnumerableUtils/InnerContainsProgram.cs
+      branch: main
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ViolatedEnumerable
+    path: ../Ampere/EnumerableUtils/InnerContainsProgram.cs
+    startLine: 34
+  assemblies:
+  - Ampere
+  namespace: Ampere.EnumerableUtils
+  summary: "\nA property to identify which enumerable violated the containing condition. This method\nreturns null unless <xref href=\"Ampere.EnumerableUtils.InnerContainsProgram%601.CheckContains\" data-throw-if-not-resolved=\"false\"></xref> is executed.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<T> ViolatedEnumerable { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Public ReadOnly Property ViolatedEnumerable As IEnumerable(Of T)
+  overload: Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable*
+  nameWithType.vb: InnerContainsProgram(Of T).ViolatedEnumerable
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).ViolatedEnumerable
 - uid: Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean,System.Collections.Generic.IEnumerable{`0}[])
   commentId: M:Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean,System.Collections.Generic.IEnumerable{`0}[])
   id: '#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean,System.Collections.Generic.IEnumerable{`0}[])'
@@ -71,7 +110,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/EnumerableUtils/InnerContainsProgram.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - Ampere
   namespace: Ampere.EnumerableUtils
@@ -116,7 +155,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: CheckContains
     path: ../Ampere/EnumerableUtils/InnerContainsProgram.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - Ampere
   namespace: Ampere.EnumerableUtils
@@ -135,45 +174,6 @@ items:
   modifiers.vb:
   - Public
   fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).CheckContains()
-- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable
-  commentId: P:Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable
-  id: ViolatedEnumerable
-  parent: Ampere.EnumerableUtils.InnerContainsProgram`1
-  langs:
-  - csharp
-  - vb
-  name: ViolatedEnumerable
-  nameWithType: InnerContainsProgram<T>.ViolatedEnumerable
-  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.ViolatedEnumerable
-  type: Property
-  source:
-    remote:
-      path: Ampere/EnumerableUtils/InnerContainsProgram.cs
-      branch: main
-      repo: https://github.com/manu-p-1/Ampere.git
-    id: ViolatedEnumerable
-    path: ../Ampere/EnumerableUtils/InnerContainsProgram.cs
-    startLine: 89
-  assemblies:
-  - Ampere
-  namespace: Ampere.EnumerableUtils
-  summary: "\nA property to identify which enumerable violated the containing condition. This method\nreturns null unless <xref href=\"Ampere.EnumerableUtils.InnerContainsProgram%601.CheckContains\" data-throw-if-not-resolved=\"false\"></xref> is executed.\n"
-  example: []
-  syntax:
-    content: public IEnumerable<T> ViolatedEnumerable { get; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.IEnumerable{{T}}
-    content.vb: Public ReadOnly Property ViolatedEnumerable As IEnumerable(Of T)
-  overload: Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable*
-  nameWithType.vb: InnerContainsProgram(Of T).ViolatedEnumerable
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).ViolatedEnumerable
 references:
 - uid: Ampere.EnumerableUtils
   commentId: N:Ampere.EnumerableUtils
@@ -472,13 +472,16 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor*
-  commentId: Overload:Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor
-  name: InnerContainsProgram
-  nameWithType: InnerContainsProgram<T>.InnerContainsProgram
-  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.InnerContainsProgram
-  nameWithType.vb: InnerContainsProgram(Of T).InnerContainsProgram
-  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).InnerContainsProgram
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains
+  commentId: M:Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains
+  isExternal: true
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable*
+  commentId: Overload:Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable
+  name: ViolatedEnumerable
+  nameWithType: InnerContainsProgram<T>.ViolatedEnumerable
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.ViolatedEnumerable
+  nameWithType.vb: InnerContainsProgram(Of T).ViolatedEnumerable
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).ViolatedEnumerable
 - uid: System.Collections.Generic.IEnumerable{{T}}
   commentId: T:System.Collections.Generic.IEnumerable{``0}
   parent: System.Collections.Generic
@@ -519,6 +522,58 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor*
+  commentId: Overload:Ampere.EnumerableUtils.InnerContainsProgram`1.#ctor
+  name: InnerContainsProgram
+  nameWithType: InnerContainsProgram<T>.InnerContainsProgram
+  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.InnerContainsProgram
+  nameWithType.vb: InnerContainsProgram(Of T).InnerContainsProgram
+  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).InnerContainsProgram
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -570,51 +625,6 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
-  isExternal: true
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
 - uid: Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains*
   commentId: Overload:Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains
   name: CheckContains
@@ -622,13 +632,3 @@ references:
   fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.CheckContains
   nameWithType.vb: InnerContainsProgram(Of T).CheckContains
   fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).CheckContains
-- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains
-  commentId: M:Ampere.EnumerableUtils.InnerContainsProgram`1.CheckContains
-  isExternal: true
-- uid: Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable*
-  commentId: Overload:Ampere.EnumerableUtils.InnerContainsProgram`1.ViolatedEnumerable
-  name: ViolatedEnumerable
-  nameWithType: InnerContainsProgram<T>.ViolatedEnumerable
-  fullName: Ampere.EnumerableUtils.InnerContainsProgram<T>.ViolatedEnumerable
-  nameWithType.vb: InnerContainsProgram(Of T).ViolatedEnumerable
-  fullName.vb: Ampere.EnumerableUtils.InnerContainsProgram(Of T).ViolatedEnumerable

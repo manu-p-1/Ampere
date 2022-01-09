@@ -83,8 +83,7 @@
   
   <h1 id="Ampere_StringUtils_StringUtils" data-uid="Ampere.StringUtils.StringUtils" class="text-break">Class StringUtils
   </h1>
-  <div class="markdown level0 summary"><p>A static utility class for string extension methods including other string manipulation classes such as
-StringBuilder and StringBuffer.</p>
+  <div class="markdown level0 summary"><p>A static utility class for string extension methods.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -126,342 +125,10 @@ StringBuilder and StringBuffer.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_AppendFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L613">View Source</a>
-  </span>
-  <a id="Ampere_StringUtils_StringUtils_AppendFromEnumerable_" data-uid="Ampere.StringUtils.StringUtils.AppendFromEnumerable*"></a>
-  <h4 id="Ampere_StringUtils_StringUtils_AppendFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__" data-uid="Ampere.StringUtils.StringUtils.AppendFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})">AppendFromEnumerable(StringBuilder, IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Appends the contents of a string enumerable.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static StringBuilder AppendFromEnumerable(this StringBuilder sb, IEnumerable&lt;string&gt; enumerable)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><span class="parametername">sb</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">enumerable</span></td>
-        <td><p>The enumerable to append from</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_AppendFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.AppendFromEnumerable%60%601(System.Text.StringBuilder%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L603">View Source</a>
-  </span>
-  <a id="Ampere_StringUtils_StringUtils_AppendFromEnumerable_" data-uid="Ampere.StringUtils.StringUtils.AppendFromEnumerable*"></a>
-  <h4 id="Ampere_StringUtils_StringUtils_AppendFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__" data-uid="Ampere.StringUtils.StringUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})">AppendFromEnumerable&lt;T&gt;(StringBuilder, IEnumerable&lt;T&gt;, Func&lt;T, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Appends the contents of an enumerable of generic objects provided a delegate to identify the string property.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static StringBuilder AppendFromEnumerable&lt;T&gt;(this StringBuilder sb, IEnumerable&lt;T&gt; enumerable, Func&lt;T, string&gt; func)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><span class="parametername">sb</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><span class="parametername">enumerable</span></td>
-        <td><p>The enumerable to append from</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">func</span></td>
-        <td><p>The function specifying what item should be appended</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the enumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_AppendIf_System_Text_StringBuilder_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L584">View Source</a>
-  </span>
-  <a id="Ampere_StringUtils_StringUtils_AppendIf_" data-uid="Ampere.StringUtils.StringUtils.AppendIf*"></a>
-  <h4 id="Ampere_StringUtils_StringUtils_AppendIf_System_Text_StringBuilder_System_String_System_Boolean_" data-uid="Ampere.StringUtils.StringUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)">AppendIf(StringBuilder, String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>A StringBuilder extension to append to the StringBuilder if and only if a condition is met.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static StringBuilder AppendIf(this StringBuilder sb, string str, bool condition)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><span class="parametername">sb</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">str</span></td>
-        <td><p>The string to append</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">condition</span></td>
-        <td><p>The condition to meet in order for the append to occur</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_AppendLineFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L636">View Source</a>
-  </span>
-  <a id="Ampere_StringUtils_StringUtils_AppendLineFromEnumerable_" data-uid="Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*"></a>
-  <h4 id="Ampere_StringUtils_StringUtils_AppendLineFromEnumerable_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__" data-uid="Ampere.StringUtils.StringUtils.AppendLineFromEnumerable(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{System.String})">AppendLineFromEnumerable(StringBuilder, IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Appends the contents of a string enumerable. This function also
-adds the appropriate line terminator at the end of the StringBuilder instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static StringBuilder AppendLineFromEnumerable(this StringBuilder sb, IEnumerable&lt;string&gt; enumerable)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><span class="parametername">sb</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">enumerable</span></td>
-        <td><p>The enumerable to append from</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_AppendLineFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.AppendLineFromEnumerable%60%601(System.Text.StringBuilder%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L625">View Source</a>
-  </span>
-  <a id="Ampere_StringUtils_StringUtils_AppendLineFromEnumerable_" data-uid="Ampere.StringUtils.StringUtils.AppendLineFromEnumerable*"></a>
-  <h4 id="Ampere_StringUtils_StringUtils_AppendLineFromEnumerable__1_System_Text_StringBuilder_System_Collections_Generic_IEnumerable___0__System_Func___0_System_String__" data-uid="Ampere.StringUtils.StringUtils.AppendLineFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})">AppendLineFromEnumerable&lt;T&gt;(StringBuilder, IEnumerable&lt;T&gt;, Func&lt;T, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Appends the contents of an enumerable of generic objects provided a delegate to identify the string property. This function also
-adds the appropriate line terminator at the end of the StringBuilder instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static StringBuilder AppendLineFromEnumerable&lt;T&gt;(this StringBuilder sb, IEnumerable&lt;T&gt; enumerable, Func&lt;T, string&gt; func)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><span class="parametername">sb</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><span class="parametername">enumerable</span></td>
-        <td><p>The enumerable to append from</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">func</span></td>
-        <td><p>The function specifying what item should be appended</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td><p>The StringBuilder instance</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the enumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_CharToString_System_Collections_Generic_IEnumerable_System_Char__.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable%7BSystem.Char%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L28">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L29">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_CharToString_" data-uid="Ampere.StringUtils.StringUtils.CharToString*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_CharToString_System_Collections_Generic_IEnumerable_System_Char__" data-uid="Ampere.StringUtils.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})">CharToString(IEnumerable&lt;Char&gt;)</h4>
@@ -527,7 +194,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_Chomp_System_String_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.Chomp(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L40">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L41">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_Chomp_" data-uid="Ampere.StringUtils.StringUtils.Chomp*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_Chomp_System_String_" data-uid="Ampere.StringUtils.StringUtils.Chomp(System.String)">Chomp(String)</h4>
@@ -593,7 +260,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ChompAfter_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ChompAfter(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L60">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L61">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_ChompAfter_" data-uid="Ampere.StringUtils.StringUtils.ChompAfter*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_ChompAfter_System_String_System_Int32_" data-uid="Ampere.StringUtils.StringUtils.ChompAfter(System.String,System.Int32)">ChompAfter(String, Int32)</h4>
@@ -665,7 +332,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ContainsDigits_System_String_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ContainsDigits(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L93">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L95">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_ContainsDigits_" data-uid="Ampere.StringUtils.StringUtils.ContainsDigits*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_ContainsDigits_System_String_" data-uid="Ampere.StringUtils.StringUtils.ContainsDigits(System.String)">ContainsDigits(String)</h4>
@@ -731,7 +398,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ContainsDuplicateChars_System_String_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ContainsDuplicateChars(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L110">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L108">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_ContainsDuplicateChars_" data-uid="Ampere.StringUtils.StringUtils.ContainsDuplicateChars*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_ContainsDuplicateChars_System_String_" data-uid="Ampere.StringUtils.StringUtils.ContainsDuplicateChars(System.String)">ContainsDuplicateChars(String)</h4>
@@ -797,7 +464,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ContainsDuplicateStrings_System_String_System_String_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ContainsDuplicateStrings(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L131">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L129">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_ContainsDuplicateStrings_" data-uid="Ampere.StringUtils.StringUtils.ContainsDuplicateStrings*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_ContainsDuplicateStrings_System_String_System_String_" data-uid="Ampere.StringUtils.StringUtils.ContainsDuplicateStrings(System.String,System.String)">ContainsDuplicateStrings(String, String)</h4>
@@ -874,7 +541,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_CountLetters_System_String_System_Char_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.CountLetters(System.String%2CSystem.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L159">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L152">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_CountLetters_" data-uid="Ampere.StringUtils.StringUtils.CountLetters*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_CountLetters_System_String_System_Char_" data-uid="Ampere.StringUtils.StringUtils.CountLetters(System.String,System.Char)">CountLetters(String, Char)</h4>
@@ -945,7 +612,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_CountWords_System_String_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.CountWords(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L171">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L164">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_CountWords_" data-uid="Ampere.StringUtils.StringUtils.CountWords*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_CountWords_System_String_" data-uid="Ampere.StringUtils.StringUtils.CountWords(System.String)">CountWords(String)</h4>
@@ -1011,7 +678,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_IsPalindrome_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.IsPalindrome(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L190">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L183">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_IsPalindrome_" data-uid="Ampere.StringUtils.StringUtils.IsPalindrome*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_IsPalindrome_System_String_System_Boolean_" data-uid="Ampere.StringUtils.StringUtils.IsPalindrome(System.String,System.Boolean)">IsPalindrome(String, Boolean)</h4>
@@ -1083,7 +750,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_IsStrictlyDecreasing_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.IsStrictlyDecreasing(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L222">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L216">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_IsStrictlyDecreasing_" data-uid="Ampere.StringUtils.StringUtils.IsStrictlyDecreasing*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_IsStrictlyDecreasing_System_String_System_Boolean_" data-uid="Ampere.StringUtils.StringUtils.IsStrictlyDecreasing(System.String,System.Boolean)">IsStrictlyDecreasing(String, Boolean)</h4>
@@ -1155,7 +822,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_IsStrictlyIncreasing_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.IsStrictlyIncreasing(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L250">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L245">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_IsStrictlyIncreasing_" data-uid="Ampere.StringUtils.StringUtils.IsStrictlyIncreasing*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_IsStrictlyIncreasing_System_String_System_Boolean_" data-uid="Ampere.StringUtils.StringUtils.IsStrictlyIncreasing(System.String,System.Boolean)">IsStrictlyIncreasing(String, Boolean)</h4>
@@ -1227,7 +894,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_IsSystemDateTime_System_String_System_String_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.IsSystemDateTime(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L279">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L275">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_IsSystemDateTime_" data-uid="Ampere.StringUtils.StringUtils.IsSystemDateTime*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_IsSystemDateTime_System_String_System_String_" data-uid="Ampere.StringUtils.StringUtils.IsSystemDateTime(System.String,System.String)">IsSystemDateTime(String, String)</h4>
@@ -1304,7 +971,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_IsValidUri_System_String_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.IsValidUri(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L298">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L295">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_IsValidUri_" data-uid="Ampere.StringUtils.StringUtils.IsValidUri*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_IsValidUri_System_String_" data-uid="Ampere.StringUtils.StringUtils.IsValidUri(System.String)">IsValidUri(String)</h4>
@@ -1370,7 +1037,7 @@ adds the appropriate line terminator at the end of the StringBuilder instance.</
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_IsWellFormed_System_String_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.IsWellFormed(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L332">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L329">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_IsWellFormed_" data-uid="Ampere.StringUtils.StringUtils.IsWellFormed*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_IsWellFormed_System_String_" data-uid="Ampere.StringUtils.StringUtils.IsWellFormed(System.String)">IsWellFormed(String)</h4>
@@ -1446,7 +1113,7 @@ characters: '(',')','{','}','[',']','&lt;','&gt;'.</p>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_IsWellFormed_System_String_System_Collections_Generic_Dictionary_System_Char_System_Char__.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.IsWellFormed(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.Char%2CSystem.Char%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L374">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L371">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_IsWellFormed_" data-uid="Ampere.StringUtils.StringUtils.IsWellFormed*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_IsWellFormed_System_String_System_Collections_Generic_Dictionary_System_Char_System_Char__" data-uid="Ampere.StringUtils.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})">IsWellFormed(String, Dictionary&lt;Char, Char&gt;)</h4>
@@ -1531,7 +1198,7 @@ represents the opening character and the value represents the closing character<
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_LongestCommonPrefix_System_Collections_Generic_IEnumerable_System_String__System_Boolean_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L393">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L385">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_LongestCommonPrefix_" data-uid="Ampere.StringUtils.StringUtils.LongestCommonPrefix*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_LongestCommonPrefix_System_Collections_Generic_IEnumerable_System_String__System_Boolean_" data-uid="Ampere.StringUtils.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">LongestCommonPrefix(IEnumerable&lt;String&gt;, Boolean)</h4>
@@ -1588,7 +1255,7 @@ represents the opening character and the value represents the closing character<
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_OrderByLength_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L408">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L400">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_OrderByLength_" data-uid="Ampere.StringUtils.StringUtils.OrderByLength*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_OrderByLength_System_Collections_Generic_IEnumerable_System_String__" data-uid="Ampere.StringUtils.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable{System.String})">OrderByLength(IEnumerable&lt;String&gt;)</h4>
@@ -1654,7 +1321,7 @@ represents the opening character and the value represents the closing character<
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_RemoveAll_System_String_System_Boolean_System_Collections_Generic_IEnumerable_System_Char____.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.RemoveAll(System.String%2CSystem.Boolean%2CSystem.Collections.Generic.IEnumerable%7BSystem.Char%7D%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L423">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L415">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_RemoveAll_" data-uid="Ampere.StringUtils.StringUtils.RemoveAll*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_RemoveAll_System_String_System_Boolean_System_Collections_Generic_IEnumerable_System_Char____" data-uid="Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])">RemoveAll(String, Boolean, IEnumerable&lt;Char&gt;[])</h4>
@@ -1737,7 +1404,7 @@ represents the opening character and the value represents the closing character<
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_RemoveAll_System_String_System_Boolean_System_Collections_Generic_IEnumerable_System_String____.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.RemoveAll(System.String%2CSystem.Boolean%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L452">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L447">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_RemoveAll_" data-uid="Ampere.StringUtils.StringUtils.RemoveAll*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_RemoveAll_System_String_System_Boolean_System_Collections_Generic_IEnumerable_System_String____" data-uid="Ampere.StringUtils.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String}[])">RemoveAll(String, Boolean, IEnumerable&lt;String&gt;[])</h4>
@@ -1820,7 +1487,7 @@ represents the opening character and the value represents the closing character<
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ReplaceAt_System_String_System_Int32_System_Char_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ReplaceAt(System.String%2CSystem.Int32%2CSystem.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L489">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L487">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_ReplaceAt_" data-uid="Ampere.StringUtils.StringUtils.ReplaceAt*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_ReplaceAt_System_String_System_Int32_System_Char_" data-uid="Ampere.StringUtils.StringUtils.ReplaceAt(System.String,System.Int32,System.Char)">ReplaceAt(String, Int32, Char)</h4>
@@ -1878,10 +1545,504 @@ represents the opening character and the value represents the closing character<
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ReplaceInterval(System.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L619">View Source</a>
+  </span>
+  <a id="Ampere_StringUtils_StringUtils_ReplaceInterval_" data-uid="Ampere.StringUtils.StringUtils.ReplaceInterval*"></a>
+  <h4 id="Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_" data-uid="Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32)">ReplaceInterval(String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a new string in which a specific occurrence of a specified string in the current instance
+is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+up to a predefined stop count. This is an overload of <a class="xref" href="Ampere.StringUtils.StringUtils.html#Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_Int32_System_StringComparison_">ReplaceInterval(String, String, String, Int32, Int32, StringComparison)</a>
+<example>
+Given the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, sb.Length, StringComparison.CurrentCulture)
+will replace every second &quot;very&quot; with the word &quot;happy&quot; until the very end of the string. The result would be:
+&quot;very happy very happy very happy very&quot;
+</example>
+<example>
+Given the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, 3)
+will replace every second &quot;very&quot; with the word &quot;happy&quot; until the third occurrence of &quot;very&quot;. The result would be:
+&quot;very happy very very very very very&quot;
+</example></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceInterval(this string str, string oldValue, string newValue, int every)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The string Instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The string to be replaced</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">every</span></td>
+        <td><p>The interval the replacement should follow - read as, &quot;Replace every nth occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>&quot;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A new string containing the replacement</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ReplaceInterval(System.String%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L672">View Source</a>
+  </span>
+  <a id="Ampere_StringUtils_StringUtils_ReplaceInterval_" data-uid="Ampere.StringUtils.StringUtils.ReplaceInterval*"></a>
+  <h4 id="Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_Int32_" data-uid="Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32)">ReplaceInterval(String, String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a new string in which a specific occurrence of a specified string in the current instance
+is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+up to a predefined stop count.
+<example>
+Given the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, sb.Length, StringComparison.CurrentCulture)
+will replace every second &quot;very&quot; with the word &quot;happy&quot; until the very end of the string. The result would be:
+&quot;very happy very happy very happy very&quot;
+</example>
+<example>
+Given the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, 3)
+will replace every second &quot;very&quot; with the word &quot;happy&quot; until the third occurrence of &quot;very&quot;. The result would be:
+&quot;very happy very very very very very&quot;
+</example></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceInterval(this string str, string oldValue, string newValue, int every, int stop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The StringBuilder Instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The string to be replaced</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">every</span></td>
+        <td><p>The interval the replacement should follow - read as, &quot;Replace every nth occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">stop</span></td>
+        <td><p>The number of found instances of <code data-dev-comment-type="paramref" class="paramref">oldValue</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A new string containing the replacement</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_Int32_System_StringComparison_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ReplaceInterval(System.String%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L700">View Source</a>
+  </span>
+  <a id="Ampere_StringUtils_StringUtils_ReplaceInterval_" data-uid="Ampere.StringUtils.StringUtils.ReplaceInterval*"></a>
+  <h4 id="Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_Int32_System_StringComparison_" data-uid="Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.Int32,System.StringComparison)">ReplaceInterval(String, String, String, Int32, Int32, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>Returns a new string in which a specific occurrence of a specified string in the current instance
+is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+up to a predefined stop count.
+<example>
+Given the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, sb.Length, StringComparison.CurrentCulture)
+will replace every second &quot;very&quot; with the word &quot;happy&quot; until the very end of the string. The result would be:
+&quot;very happy very happy very happy very&quot;
+</example>
+<example>
+Given the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, 3)
+will replace every second &quot;very&quot; with the word &quot;happy&quot; until the third occurrence of &quot;very&quot;. The result would be:
+&quot;very happy very very very very very&quot;
+</example></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceInterval(this string str, string oldValue, string newValue, int every, int stop, StringComparison comparisonType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The StringBuilder Instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The string to be replaced</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">every</span></td>
+        <td><p>The interval the replacement should follow - read as, &quot;Replace every nth occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">stop</span></td>
+        <td><p>The number of found instances of <code data-dev-comment-type="paramref" class="paramref">oldValue</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">comparisonType</span></td>
+        <td><p>One of the enumeration values that determines how <code data-dev-comment-type="paramref" class="paramref">oldValue</code> is searched within this instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A new string containing the replacement</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_StringComparison_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ReplaceInterval(System.String%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.StringComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L646">View Source</a>
+  </span>
+  <a id="Ampere_StringUtils_StringUtils_ReplaceInterval_" data-uid="Ampere.StringUtils.StringUtils.ReplaceInterval*"></a>
+  <h4 id="Ampere_StringUtils_StringUtils_ReplaceInterval_System_String_System_String_System_String_System_Int32_System_StringComparison_" data-uid="Ampere.StringUtils.StringUtils.ReplaceInterval(System.String,System.String,System.String,System.Int32,System.StringComparison)">ReplaceInterval(String, String, String, Int32, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>Returns a new string in which a specific occurrence of a specified string in the current instance
+is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+up to a predefined stop count.
+<example>
+Given the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, sb.Length, StringComparison.CurrentCulture)
+will replace every second &quot;very&quot; with the word &quot;happy&quot; until the very end of the string. The result would be:
+&quot;very happy very happy very happy very&quot;
+</example>
+<example>
+Given the following string, &quot;very very very very very very very&quot;, StringBuilder.ReplaceInterval(&quot;very&quot;, &quot;happy&quot;, 2, 3)
+will replace every second &quot;very&quot; with the word &quot;happy&quot; until the third occurrence of &quot;very&quot;. The result would be:
+&quot;very happy very very very very very&quot;
+</example></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceInterval(this string str, string oldValue, string newValue, int every, StringComparison comparisonType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The StringBuilder Instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The string to be replaced</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">every</span></td>
+        <td><p>The interval the replacement should follow - read as, &quot;Replace every nth occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code>&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">comparisonType</span></td>
+        <td><p>One of the enumeration values that determines how <code data-dev-comment-type="paramref" class="paramref">oldValue</code> is searched within this instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A new string containing the replacement</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ReplaceOccurrence_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L571">View Source</a>
+  </span>
+  <a id="Ampere_StringUtils_StringUtils_ReplaceOccurrence_" data-uid="Ampere.StringUtils.StringUtils.ReplaceOccurrence*"></a>
+  <h4 id="Ampere_StringUtils_StringUtils_ReplaceOccurrence_System_String_System_String_System_String_System_Int32_" data-uid="Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32)">ReplaceOccurrence(String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a new string in which a specific occurrence of a specified string in the current instance
+is replaced another specified string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceOccurrence(this string str, string oldValue, string newValue, int occurrence)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The string instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The string to be replaced</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">occurrence</span></td>
+        <td><p>The nth occurrence of the <code data-dev-comment-type="paramref" class="paramref">oldValue</code> to replace</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Ampere_StringUtils_StringUtils_ReplaceOccurrence_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>Given a string that says, &quot;Hello my good good good friend&quot;, StringBuilder.ReplaceOccurrence(&quot;good&quot;, &quot;very good&quot;, 3) would
+result in, &quot;Hello my good good very good friend&quot;.</p>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_ReplaceOccurrence_System_String_System_String_System_String_System_Int32_System_StringComparison_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.StringComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L592">View Source</a>
+  </span>
+  <a id="Ampere_StringUtils_StringUtils_ReplaceOccurrence_" data-uid="Ampere.StringUtils.StringUtils.ReplaceOccurrence*"></a>
+  <h4 id="Ampere_StringUtils_StringUtils_ReplaceOccurrence_System_String_System_String_System_String_System_Int32_System_StringComparison_" data-uid="Ampere.StringUtils.StringUtils.ReplaceOccurrence(System.String,System.String,System.String,System.Int32,System.StringComparison)">ReplaceOccurrence(String, String, String, Int32, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>Returns a new string in which a specific occurrence of a specified string in the current instance
+is replaced another specified string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceOccurrence(this string str, string oldValue, string newValue, int occurrence, StringComparison comparisonType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The string instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The string to be replaced</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The string to replace an occurrence of <code data-dev-comment-type="paramref" class="paramref">oldValue</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">occurrence</span></td>
+        <td><p>The nth occurrence of the <code data-dev-comment-type="paramref" class="paramref">oldValue</code> to replace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">comparisonType</span></td>
+        <td><p>One of the enumeration values that determines how <code data-dev-comment-type="paramref" class="paramref">oldValue</code> is searched within this instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Ampere_StringUtils_StringUtils_ReplaceOccurrence_System_String_System_String_System_String_System_Int32_System_StringComparison__examples">Examples</h5>
+  <p>Given a string that says, &quot;Hello my good good good friend&quot;, StringBuilder.ReplaceOccurrence(&quot;good&quot;, &quot;very good&quot;, 3) would
+result in, &quot;Hello my good good very good friend&quot;.</p>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_Reverse_System_String_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.Reverse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L501">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L499">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_Reverse_" data-uid="Ampere.StringUtils.StringUtils.Reverse*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_Reverse_System_String_" data-uid="Ampere.StringUtils.StringUtils.Reverse(System.String)">Reverse(String)</h4>
@@ -1947,7 +2108,7 @@ represents the opening character and the value represents the closing character<
     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_Shuffle_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.Shuffle(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L525">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L523">View Source</a>
   </span>
   <a id="Ampere_StringUtils_StringUtils_Shuffle_" data-uid="Ampere.StringUtils.StringUtils.Shuffle*"></a>
   <h4 id="Ampere_StringUtils_StringUtils_Shuffle_System_String_System_Boolean_" data-uid="Ampere.StringUtils.StringUtils.Shuffle(System.String,System.Boolean)">Shuffle(String, Boolean)</h4>
@@ -2019,20 +2180,20 @@ than the original.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_Substring_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.Substring(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils_Slice_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils.Slice(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L562">View Source</a>
+    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L716">View Source</a>
   </span>
-  <a id="Ampere_StringUtils_StringUtils_Substring_" data-uid="Ampere.StringUtils.StringUtils.Substring*"></a>
-  <h4 id="Ampere_StringUtils_StringUtils_Substring_System_String_System_Int32_System_Int32_" data-uid="Ampere.StringUtils.StringUtils.Substring(System.String,System.Int32,System.Int32)">Substring(String, Int32, Int32)</h4>
+  <a id="Ampere_StringUtils_StringUtils_Slice_" data-uid="Ampere.StringUtils.StringUtils.Slice*"></a>
+  <h4 id="Ampere_StringUtils_StringUtils_Slice_System_String_System_Int32_System_Int32_" data-uid="Ampere.StringUtils.StringUtils.Slice(System.String,System.Int32,System.Int32)">Slice(String, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Performs a Substring given a starting and ending index, similar to Java.
 The operation is performed mathematically as [startIndex, endIndex).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Substring(this string str, int startIndex, int endIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string Slice(this string str, int startIndex, int endIndex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2092,7 +2253,7 @@ instance, or Empty if startIndex is equal to the length of this instance.</p>
                     <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_StringUtils_StringUtils.md&amp;value=---%0Auid%3A%20Ampere.StringUtils.StringUtils%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/StringUtils/StringUtils.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
