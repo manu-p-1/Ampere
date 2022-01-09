@@ -54,8 +54,7 @@ namespace Ampere.StringUtils
                         return false;
                 }
             }
-            catch (Exception ex) when (ex is InvalidOperationException ||
-                                       ex is NullReferenceException)
+            catch (Exception ex) when (ex is InvalidOperationException or NullReferenceException)
             {
                 return false;
             }
