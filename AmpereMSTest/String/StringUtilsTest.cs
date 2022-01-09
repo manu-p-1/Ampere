@@ -3,7 +3,7 @@ using System.Text;
 using Ampere.StringUtils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AmpereMSTest
+namespace AmpereMSTest.String
 {
     [TestClass]
     public class StringUtilsTest
@@ -34,6 +34,15 @@ namespace AmpereMSTest
             var sb = new StringBuilder(5);
             sb.AppendLineFromEnumerable(ss);
             TestContext.WriteLine(sb.ToString());
+        }
+
+        [TestMethod]
+        public void ReplaceOccurrence_Test()
+        {
+            const string str = "Hello my good good good friend";
+            var repl = str.ReplaceOccurrence("good", "very good", 3);
+
+            Assert.AreEqual("Hello my good good very good friend", repl);
         }
     }
 }

@@ -4,6 +4,8 @@ using System.IO;
 using System.Text;
 using Ampere.StringUtils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+// ReSharper disable StringIndexOfIsCultureSpecific.1
+// ReSharper disable ReturnValueOfPureMethodIsNotUsed
 
 namespace AmpereMSTest.String
 {
@@ -115,18 +117,18 @@ namespace AmpereMSTest.String
         }
 
         [TestMethod]
-        public void ReplaceNth_Test()
+        public void ReplaceOccurrence_Test()
         {
             var sb = new StringBuilder("This is a very very very very long string");
-            sb.ReplaceNth("very", "wiki", 2);
+            sb.ReplaceOccurrence("very", "wiki", 2);
             Assert.AreEqual(sb.ToString(), "This is a very wiki very very long string");
         }
 
         [TestMethod]
-        public void ReplaceNth_Test_Numeric()
+        public void ReplaceOccurrence_Test_Numeric()
         {
             var sb = new StringBuilder("1, 2, 1, 1, 3, 4, 5, 6, 1, 1, 4, 5");
-            sb.ReplaceNth("1", "54", 4);
+            sb.ReplaceOccurrence("1", "54", 4);
             Assert.AreEqual(sb.ToString(), "1, 2, 1, 1, 3, 4, 5, 6, 54, 1, 4, 5");
         }
     }
