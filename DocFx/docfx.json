@@ -72,7 +72,7 @@
         ],
         "template":[
             "default",
-            "templates/discordfx"
+            "templates/material"
         ],
         "postProcessors":[
             "ExtractSearchIndex"
