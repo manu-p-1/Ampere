@@ -131,5 +131,13 @@ namespace AmpereMSTest.String
             sb.ReplaceOccurrence("1", "54", 4);
             Assert.AreEqual(sb.ToString(), "1, 2, 1, 1, 3, 4, 5, 6, 54, 1, 4, 5");
         }
+
+        [TestMethod]
+        public void ReplaceInterval_Test()
+        {
+            var sb = new StringBuilder("very very very very very very very");
+            sb.ReplaceInterval("very", "happy", 2, 3);
+            Assert.AreEqual(sb.ToString(), "very happy very very very very very");
+        }
     }
 }

@@ -18,7 +18,7 @@ namespace Ampere.StringUtils
         /// <summary>
         /// 
         /// </summary>
-        private const char CharSpace = (char)32;
+        private const char CharSpace = (char) 32;
 
         /// <summary>
         /// Converts a <see cref="IEnumerable{T}"/> to a string
@@ -28,7 +28,7 @@ namespace Ampere.StringUtils
         /// <returns>The converted string</returns>
         public static string CharToString(IEnumerable<char> charEnumerable)
         {
-            if(charEnumerable is null) throw new ArgumentNullException(nameof(charEnumerable));
+            if (charEnumerable is null) throw new ArgumentNullException(nameof(charEnumerable));
             return new string(charEnumerable as char[] ?? charEnumerable.ToArray());
         }
 
@@ -65,6 +65,7 @@ namespace Ampere.StringUtils
             {
                 return str;
             }
+
             if (spaces != 0)
             {
                 var matchingNumSpaces = 0;
@@ -81,6 +82,7 @@ namespace Ampere.StringUtils
                     }
                 }
             }
+
             return str;
         }
 
@@ -200,6 +202,7 @@ namespace Ampere.StringUtils
                     return false;
                 }
             }
+
             return true;
         }
 
@@ -228,6 +231,7 @@ namespace Ampere.StringUtils
             {
                 if (str[i] < str[i + 1]) return false;
             }
+
             return true;
         }
 
@@ -256,6 +260,7 @@ namespace Ampere.StringUtils
             {
                 if (str[i] > str[i + 1]) return false;
             }
+
             return true;
         }
 
@@ -277,7 +282,8 @@ namespace Ampere.StringUtils
                 return false;
             }
 
-            return DateTime.TryParseExact(date, formattingRegex, CultureInfo.InvariantCulture, DateTimeStyles.None, out _);
+            return DateTime.TryParseExact(date, formattingRegex, CultureInfo.InvariantCulture, DateTimeStyles.None,
+                out _);
         }
 
         /// <summary>
@@ -290,7 +296,7 @@ namespace Ampere.StringUtils
         {
             uri = uri ?? throw new ArgumentNullException(nameof(uri));
             return Uri.TryCreate(uri, UriKind.Absolute, out var uriResult)
-                && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
+                   && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
         }
 
         /// <summary>
@@ -380,8 +386,8 @@ namespace Ampere.StringUtils
         {
             if (strs is null) throw new ArgumentNullException(nameof(strs));
             var enumerable = strs as string[] ?? strs.ToArray();
-            return enumerable.Length == 1 
-                ? enumerable.ElementAt(0) 
+            return enumerable.Length == 1
+                ? enumerable.ElementAt(0)
                 : new LcpFinder(enumerable, ignoreCase).Find();
         }
 
@@ -414,15 +420,18 @@ namespace Ampere.StringUtils
             {
                 return str;
             }
+
             if (ignoreCase)
             {
                 str = str.ToUpperInvariant();
             }
+
             var sb = new StringBuilder(str);
             foreach (var t in args)
             {
                 sb.Replace(t.ToString() ?? string.Empty, string.Empty);
             }
+
             return sb.ToString();
         }
 
@@ -443,10 +452,12 @@ namespace Ampere.StringUtils
             {
                 return str;
             }
+
             if (ignoreCase)
             {
                 str = str.ToUpperInvariant();
             }
+
             var sb = new StringBuilder(str);
 
             for (var i = 0; i < str.Length; i++)
@@ -463,6 +474,7 @@ namespace Ampere.StringUtils
                     sb.Remove(idxOfWord, cnt);
                 }
             }
+
             return sb.ToString();
         }
 
@@ -530,9 +542,11 @@ namespace Ampere.StringUtils
                             spaceSplit[i] = new string(shuffleUtil.Shuffle());
                         }
                     }
+
                     return string.Join(" ", spaceSplit);
                 }
             }
+
             return new string(new Shuffler<char>(str.ToCharArray()).Shuffle());
         }
 
@@ -557,7 +571,8 @@ namespace Ampere.StringUtils
         [Beta]
         public static string ReplaceOccurrence(this string str, string oldValue, string? newValue, int occurrence)
             => new StringBuilder(str)
-                .ReplaceOccurrence(oldValue, newValue, occurrence, StringComparison.CurrentCulture) //Using the Ampere Repalce
+                .ReplaceOccurrence(oldValue, newValue, occurrence,
+                    StringComparison.CurrentCulture) //Using the Ampere Repalce
                 .ToString();
 
 
@@ -575,8 +590,118 @@ namespace Ampere.StringUtils
         /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
         /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
         [Beta]
-        public static string ReplaceOccurrence(this string str, string oldValue, string? newValue, int occurrence, StringComparison comparisonType) => new StringBuilder(str)
+        public static string ReplaceOccurrence(this string str, string oldValue, string? newValue, int occurrence,
+            StringComparison comparisonType)
+            => new StringBuilder(str)
                 .ReplaceOccurrence(oldValue, newValue, occurrence, comparisonType) //Using the Ampere Repalce
+                .ToString();
+
+        /// <summary>
+        /// Returns a new string in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(string,string,string?,int, int, StringComparison)"/>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
+        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
+        /// "very happy very happy very happy very"
+        /// </example>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
+        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
+        /// "very happy very very very very very"
+        /// </example>
+        /// </summary>
+        /// <param name="str">The string Instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
+        /// <returns>A new string containing the replacement</returns>
+        [Beta]
+        public static string ReplaceInterval(this string str, string oldValue, string? newValue, int every)
+            => new StringBuilder(str)
+                .ReplaceInterval(oldValue, newValue, every)
+                .ToString();
+
+        /// <summary>
+        /// Returns a new string in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+        /// up to a predefined stop count.
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
+        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
+        /// "very happy very happy very happy very"
+        /// </example>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
+        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
+        /// "very happy very very very very very"
+        /// </example>
+        /// </summary>
+        /// <param name="str">The StringBuilder Instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
+        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
+        /// <returns>A new string containing the replacement</returns>
+        [Beta]
+        public static string ReplaceInterval(this string str, string oldValue, string? newValue, int every,
+            StringComparison comparisonType)
+            => ReplaceInterval(str, oldValue, newValue, every, str.Length, comparisonType);
+
+        /// <summary>
+        /// Returns a new string in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+        /// up to a predefined stop count.
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
+        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
+        /// "very happy very happy very happy very"
+        /// </example>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
+        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
+        /// "very happy very very very very very"
+        /// </example>
+        /// </summary>
+        /// <param name="str">The StringBuilder Instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
+        /// <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
+        /// <returns>A new string containing the replacement</returns>
+        [Beta]
+        public static string ReplaceInterval(this string str, string oldValue, string? newValue, int every, int stop)
+            => new StringBuilder(str)
+                .ReplaceInterval(oldValue, newValue, every, stop)
+                .ToString();
+
+        /// <summary>
+        /// Returns a new string in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+        /// up to a predefined stop count.
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
+        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
+        /// "very happy very happy very happy very"
+        /// </example>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
+        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
+        /// "very happy very very very very very"
+        /// </example>
+        /// </summary>
+        /// <param name="str">The StringBuilder Instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
+        /// <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
+        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
+        /// <returns>A new string containing the replacement</returns>
+        [Beta]
+        public static string ReplaceInterval(this string str, string oldValue, string? newValue, int every, int stop,
+            StringComparison comparisonType)
+            => new StringBuilder(str)
+                .ReplaceInterval(oldValue, newValue, every, stop, comparisonType)
                 .ToString();
 
         /// <summary>
@@ -588,7 +713,8 @@ namespace Ampere.StringUtils
         /// <param name="endIndex">The exclusive ending index of <paramref name="str"/></param>
         /// <returns>A string that is equivalent to the substring that begins at startIndex in this 
         /// instance, or Empty if startIndex is equal to the length of this instance.</returns>
-        [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        [System.Runtime.CompilerServices.MethodImpl(
+            System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
         public static string Slice(this string str, int startIndex, int endIndex)
         {
             str = str ?? throw new ArgumentNullException(nameof(str));
@@ -600,7 +726,8 @@ namespace Ampere.StringUtils
         /// </summary>
         /// <param name="str">The string to be used</param>
         /// <returns>True if the length of the string is zero or one</returns>
-        [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        [System.Runtime.CompilerServices.MethodImpl(
+            System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
         internal static bool IsZeroOrOne(this string str) => str.Length is 0 or 1;
     } //StringUtils
 } //Note
