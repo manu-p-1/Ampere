@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 
-namespace Ampere.StringUtils
+namespace Ampere.Str
 {
     internal class LcpFinder
     {

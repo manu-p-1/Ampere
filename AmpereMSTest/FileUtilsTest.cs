@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using static Ampere.FileUtils.FileUtils;
+using static Ampere.AmpFile.FileUtils;
 //USE THIS NAMESPACE FOR TESTING METHODS
 namespace AmpereMSTest
 {

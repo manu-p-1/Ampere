@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Ampere.Base;
 
-namespace Ampere.EnumerableUtils
+namespace Ampere.Enumerable
 {
     /// <summary>
     /// A static utility class for .NET <see cref="IEnumerable{T}"/>

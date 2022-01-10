@@ -5,7 +5,7 @@ using System.Text;
 using Ampere.Base;
 using Ampere.Base.Attributes;
 
-namespace Ampere.MathUtils
+namespace Ampere.AmpMath
 {
     /// <summary>
     /// A class representing a mathematical Matrix. Creates a rectangular

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Ampere.MathUtils
+namespace Ampere.AmpMath
 {
     /// <summary>
     /// Represents the minimum requirements to create a Matrix.

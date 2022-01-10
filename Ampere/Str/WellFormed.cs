@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Ampere.StringUtils
+namespace Ampere.Str
 {
     /// <summary>
     /// A utility class that contains functions to determine

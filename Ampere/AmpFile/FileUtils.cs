@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Ampere.Base.Attributes;
 
-namespace Ampere.FileUtils
+namespace Ampere.AmpFile
 {
     /// <summary>
     /// A static class for File utility functions

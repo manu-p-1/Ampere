@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ampere.MathUtils
+namespace Ampere.AmpMath
 {
     /// <summary>
     /// An exception that occurs if a Matrix property is violated

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Ampere.EnumerableUtils
+namespace Ampere.Enumerable
 {
     /// <summary>
     /// Program to check whether all values in one or more enumerables's are included in a

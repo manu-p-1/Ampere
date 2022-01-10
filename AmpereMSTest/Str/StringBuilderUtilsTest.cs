@@ -2,12 +2,12 @@
 using System.Diagnostics;
 using System.IO;
 using System.Text;
-using Ampere.StringUtils;
+using Ampere.Str;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 // ReSharper disable StringIndexOfIsCultureSpecific.1
 // ReSharper disable ReturnValueOfPureMethodIsNotUsed
 
-namespace AmpereMSTest.String
+namespace AmpereMSTest.Str
 {
     [TestClass]
     public class StringBuilderUtilsTest

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using Ampere.StringUtils;
+using Ampere.Str;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AmpereMSTest.String
+namespace AmpereMSTest.Str
 {
     [TestClass]
     public class StringUtilsTest

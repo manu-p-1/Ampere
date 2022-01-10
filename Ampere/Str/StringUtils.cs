@@ -8,7 +8,7 @@ using System.Text;
 using Ampere.Base;
 using Ampere.Base.Attributes;
 
-namespace Ampere.StringUtils
+namespace Ampere.Str
 {
     /// <summary>
     /// A static utility class for string extension methods.

@@ -1,4 +1,4 @@
-﻿using Ampere.EnumerableUtils;
+﻿using Ampere.Enumerable;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Diagnostics;
 using System.Linq;
