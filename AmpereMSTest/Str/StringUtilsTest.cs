@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using Ampere.Str;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -43,6 +44,16 @@ namespace AmpereMSTest.Str
             var repl = str.ReplaceOccurrence("good", "very good", 3);
 
             Assert.AreEqual("Hello my good good very good friend", repl);
+        }
+
+        [TestMethod]
+        public void ReplaceOverload()
+        {
+            const string str = "Hello my good good good friend";
+            var repl = str.Replace("good", "nice", 0, str.Length, StringComparison.CurrentCulture);
+
+            Assert.AreEqual("Hello my nice nice nice friend", repl);
+            Assert.AreEqual("Hello my good good good friend", str);
         }
     }
 }
