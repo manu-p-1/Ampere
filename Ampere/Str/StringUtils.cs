@@ -549,6 +549,51 @@ namespace Ampere.Str
 
             return new string(new Shuffler<char>(str.ToCharArray()).Shuffle());
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="oldValue"></param>
+        /// <param name="newValue"></param>
+        /// <param name="startIndex"></param>
+        /// <returns></returns>
+        [Beta]
+        public static unsafe string ReplaceRange(this string str, string oldValue, string newValue, int startIndex)
+        {
+            return ReplaceRange(str, oldValue, newValue, startIndex, str.Length, StringComparison.CurrentCulture);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="oldValue"></param>
+        /// <param name="newValue"></param>
+        /// <param name="startIndex"></param>
+        /// <param name="comparisonType"></param>
+        /// <returns></returns>
+        [Beta]
+        public static unsafe string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, StringComparison comparisonType)
+        {
+            return ReplaceRange(str, oldValue, newValue, startIndex, str.Length, comparisonType);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="oldValue"></param>
+        /// <param name="newValue"></param>
+        /// <param name="startIndex"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
+        [Beta]
+        public static unsafe string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, int count)
+        {
+            return ReplaceRange(str, oldValue, newValue, startIndex, count, StringComparison.CurrentCulture);
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -560,7 +605,7 @@ namespace Ampere.Str
         /// <param name="comparisonType"></param>
         /// <returns></returns>
         [Beta]
-        public static unsafe string Replace(this string str, string oldValue, string newValue, int startIndex, int count, StringComparison comparisonType)
+        public static unsafe string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, int count, StringComparison comparisonType)
         {
             int index = str.IndexOf(oldValue, startIndex, comparisonType);
             int cnt = 1, mv = 0; // Start at 1 because we assume above index found a value

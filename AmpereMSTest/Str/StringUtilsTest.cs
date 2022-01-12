@@ -50,7 +50,7 @@ namespace AmpereMSTest.Str
         public void ReplaceOverload()
         {
             const string str = "Hello my good good good friend";
-            var repl = str.Replace("good", "nice", 0, str.Length, StringComparison.CurrentCulture);
+            var repl = str.ReplaceRange("good", "nice", 0, str.Length, StringComparison.CurrentCulture);
 
             Assert.AreEqual("Hello my nice nice nice friend", repl);
             Assert.AreEqual("Hello my good good good friend", str);
