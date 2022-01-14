@@ -434,5 +434,6 @@ namespace Ampere.Enumerable
             sb.Append(outerRight);
             return sb.ToString();
         }
+
     }
 }
