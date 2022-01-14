@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using Ampere.Base;
 using Ampere.Base.Attributes;
+using Ampere.Enumerable;
 
 namespace Ampere.Str
 {
@@ -559,7 +560,7 @@ namespace Ampere.Str
         /// <param name="startIndex"></param>
         /// <returns></returns>
         [Beta]
-        public static unsafe string ReplaceRange(this string str, string oldValue, string newValue, int startIndex)
+        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex)
         {
             return ReplaceRange(str, oldValue, newValue, startIndex, str.Length, StringComparison.CurrentCulture);
         }
@@ -574,7 +575,7 @@ namespace Ampere.Str
         /// <param name="comparisonType"></param>
         /// <returns></returns>
         [Beta]
-        public static unsafe string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, StringComparison comparisonType)
+        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, StringComparison comparisonType)
         {
             return ReplaceRange(str, oldValue, newValue, startIndex, str.Length, comparisonType);
         }
@@ -589,7 +590,7 @@ namespace Ampere.Str
         /// <param name="count"></param>
         /// <returns></returns>
         [Beta]
-        public static unsafe string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, int count)
+        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, int count)
         {
             return ReplaceRange(str, oldValue, newValue, startIndex, count, StringComparison.CurrentCulture);
         }
@@ -605,34 +606,13 @@ namespace Ampere.Str
         /// <param name="comparisonType"></param>
         /// <returns></returns>
         [Beta]
-        public static unsafe string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, int count, StringComparison comparisonType)
+        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex,
+            int count, StringComparison comparisonType)
         {
-            int index = str.IndexOf(oldValue, startIndex, comparisonType);
-            int cnt = 1, mv = 0; // Start at 1 because we assume above index found a value
-            fixed (char* pm = str)
-            {
-                char* pSourceCopy = pm;
-                while (index != -1)
-                {
-                    if (cnt++ == count)
-                    {
-                        break;
-                    }
-
-                    pSourceCopy += index - mv;
-                    foreach (char t in newValue)
-                    {
-                        *pSourceCopy++ = t;
-                    }
-
-                    mv = index + newValue.Length;
-                    index += oldValue.Length; // Move to the end of the replacement
-                    index = str.IndexOf(oldValue, index, comparisonType);
-                }
-
-                return new string(pSourceCopy - mv);
-            }
+            return new Replacer(str, oldValue, newValue, startIndex, count, comparisonType).ReplaceRange();
         }
+
+
 
         /// <summary>
         /// Returns a new string in which a specific occurrence of a specified string in the current instance

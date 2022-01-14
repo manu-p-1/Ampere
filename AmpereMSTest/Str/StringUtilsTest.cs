@@ -47,13 +47,22 @@ namespace AmpereMSTest.Str
         }
 
         [TestMethod]
-        public void ReplaceOverload()
+        public void ReplaceRange_Test1()
         {
             const string str = "Hello my good good good friend";
             var repl = str.ReplaceRange("good", "nice", 0, str.Length, StringComparison.CurrentCulture);
 
             Assert.AreEqual("Hello my nice nice nice friend", repl);
             Assert.AreEqual("Hello my good good good friend", str);
+        }
+
+        [TestMethod]
+        public void ReplaceRange_Test2()
+        {
+            const string str = "This is a happy binary tree that is happy";
+            var repl = str.ReplaceRange("happy", "excellent", 0);
+
+            Assert.AreEqual("This is a excellent binary tree that is excellent", repl);
         }
     }
 }
