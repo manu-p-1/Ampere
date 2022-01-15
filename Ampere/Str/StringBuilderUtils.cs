@@ -98,8 +98,8 @@ namespace Ampere.Str
         /// <param name="sb">The StringBuilder instance</param>
         /// <param name="value">The string to find as a character array</param>
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
-        /// <param name="count"></param>
-        /// <param name="comparisonType"></param>
+        /// <param name="count">The number of character positions to examine.</param>
+        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta("Evaluating Performance versus StringBuilder.ToString().IndexOf()")]
         public static int IndexOf(this StringBuilder sb, string value, int startIndex, int count,
