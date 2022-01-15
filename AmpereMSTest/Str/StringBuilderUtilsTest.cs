@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Ampere.Str;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
-using Ampere.Str;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 // ReSharper disable StringIndexOfIsCultureSpecific.1
 // ReSharper disable ReturnValueOfPureMethodIsNotUsed
 

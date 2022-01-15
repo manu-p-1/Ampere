@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Ampere.Str;
+﻿using Ampere.Str;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
 
 namespace AmpereMSTest.Str
 {
@@ -31,7 +32,7 @@ namespace AmpereMSTest.Str
         [TestMethod]
         public void AppendFromEnumerableTest()
         {
-            var ss = new List<string>(5) { "How", "Hello", "Are", "You","Doing" };
+            var ss = new List<string>(5) { "How", "Hello", "Are", "You", "Doing" };
             var sb = new StringBuilder(5);
             sb.AppendLineFromEnumerable(ss);
             TestContext.WriteLine(sb.ToString());
@@ -50,7 +51,7 @@ namespace AmpereMSTest.Str
         public void ReplaceRange_Test1()
         {
             const string str = "Hello my good good good friend";
-            var repl = str.ReplaceRange("good", "nice", 0, str.Length, StringComparison.CurrentCulture);
+            var repl = str.ReplaceRange("good", "nice", 0, str.Length);
 
             Assert.AreEqual("Hello my nice nice nice friend", repl);
             Assert.AreEqual("Hello my good good good friend", str);
@@ -81,6 +82,36 @@ namespace AmpereMSTest.Str
             var repl = str.ReplaceRange("china", "japan", 0);
 
             Assert.AreEqual("This is a happy binary tree", repl);
+        }
+
+        [TestMethod]
+        public void ReplaceRange_BuiltIn_Test()
+        {
+            var sb = new StringBuilder(File.ReadAllText(@"..\..\..\Str\Blob\IpsumLoremParagraph.txt"));
+            var stopwatch = new Stopwatch();
+
+            stopwatch.Start();
+            sb.Replace("ipsum", "manohar", 0, sb.Length);
+            stopwatch.Stop();
+
+            var ts = stopwatch.ElapsedMilliseconds;
+
+            Trace.WriteLine($"Replace Range Built-in Elapsed Time is: {ts}ms");
+        }
+
+        [TestMethod]
+        public void ReplaceRange_Ampere_Test()
+        {
+            var str = File.ReadAllText(@"..\..\..\Str\Blob\IpsumLoremParagraph.txt");
+            var stopwatch = new Stopwatch();
+
+            stopwatch.Start();
+            str.ReplaceRange("ipsum", "manohar", 0);
+            stopwatch.Stop();
+
+            var ts = stopwatch.ElapsedMilliseconds;
+
+            Trace.WriteLine($"Replace Range Ampere Elapsed Time is: {ts}ms");
         }
     }
 }
