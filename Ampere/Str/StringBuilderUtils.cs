@@ -742,10 +742,26 @@ namespace Ampere.Str
         /// instance, or Empty if startIndex is equal to the length of this instance.</returns>
         [System.Runtime.CompilerServices.MethodImpl(
             System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-        public static string Slice(this StringBuilder sb, int startIndex, int endIndex)
+        public static string SubstringRng(this StringBuilder sb, int startIndex, int endIndex)
         {
             sb = sb ?? throw new ArgumentNullException(nameof(sb));
             return sb.ToString(startIndex, (endIndex - startIndex) + 1);
+        }
+
+        /// <summary>
+        /// Performs a Substring given a starting and ending index, similar to Java.
+        /// The operation is performed mathematically as [startIndex, endIndex).
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="startIndex">The inclusive starting index of <paramref name="sb"/></param>
+        /// <returns>A string that is equivalent to the substring that begins at startIndex in this 
+        /// instance, or Empty if startIndex is equal to the length of this instance.</returns>
+        [System.Runtime.CompilerServices.MethodImpl(
+            System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        public static string SubstringRng(this StringBuilder sb, int startIndex)
+        {
+            sb = sb ?? throw new ArgumentNullException(nameof(sb));
+            return sb.ToString(startIndex, (sb.Length - 1 - startIndex) + 1);
         }
     }
 }
