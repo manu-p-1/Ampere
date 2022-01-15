@@ -64,5 +64,23 @@ namespace AmpereMSTest.Str
 
             Assert.AreEqual("This is a excellent binary tree that is excellent", repl);
         }
+
+        [TestMethod]
+        public void ReplaceRange_Test3()
+        {
+            const string str = "This is a happy binary tree";
+            var repl = str.ReplaceRange("happy", "supercalifragilisticexpialidociously amazing", 0);
+
+            Assert.AreEqual("This is a supercalifragilisticexpialidociously amazing binary tree", repl);
+        }
+
+        [TestMethod]
+        public void ReplaceRange_Test4()
+        {
+            const string str = "This is a happy binary tree";
+            var repl = str.ReplaceRange("china", "japan", 0);
+
+            Assert.AreEqual("This is a happy binary tree", repl);
+        }
     }
 }
