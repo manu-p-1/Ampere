@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Enumerable
+  commentId: N:Ampere.Enumerable
+  id: Ampere.Enumerable
+  children:
+  - Ampere.Enumerable.EnumerableUtils
+  - Ampere.Enumerable.InnerContainsProgram`1
+  langs:
+  - csharp
+  - vb
+  name: Ampere.Enumerable
+  nameWithType: Ampere.Enumerable
+  fullName: Ampere.Enumerable
+  type: Namespace
+  assemblies:
+  - Ampere
+references:
+- uid: Ampere.Enumerable.EnumerableUtils
+  commentId: T:Ampere.Enumerable.EnumerableUtils
+  parent: Ampere.Enumerable
+  name: EnumerableUtils
+  nameWithType: EnumerableUtils
+  fullName: Ampere.Enumerable.EnumerableUtils
+- uid: Ampere.Enumerable.InnerContainsProgram`1
+  commentId: T:Ampere.Enumerable.InnerContainsProgram`1
+  name: InnerContainsProgram<T>
+  nameWithType: InnerContainsProgram<T>
+  fullName: Ampere.Enumerable.InnerContainsProgram<T>
+  nameWithType.vb: InnerContainsProgram(Of T)
+  fullName.vb: Ampere.Enumerable.InnerContainsProgram(Of T)
+  name.vb: InnerContainsProgram(Of T)
+  spec.csharp:
+  - uid: Ampere.Enumerable.InnerContainsProgram`1
+    name: InnerContainsProgram
+    nameWithType: InnerContainsProgram
+    fullName: Ampere.Enumerable.InnerContainsProgram
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Ampere.Enumerable.InnerContainsProgram`1
+    name: InnerContainsProgram
+    nameWithType: InnerContainsProgram
+    fullName: Ampere.Enumerable.InnerContainsProgram
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Ampere.Enumerable
+  commentId: N:Ampere.Enumerable
+  name: Ampere.Enumerable
+  nameWithType: Ampere.Enumerable
+  fullName: Ampere.Enumerable

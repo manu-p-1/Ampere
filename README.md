@@ -28,8 +28,7 @@
 </p>
 
 ## Introduction
-Ampere is a robust .NET utility library written in C#. It's main purpose is to make development more productive and easier. The Ampere docs can be found at <https://powerplug.me>
-
+Ampere is a robust .NET utility library written in C#. It's main purpose is to make development more productive and easier. The Ampere docs can be found at [Ampere Docs](https://manu-p-1.github.io/Ampere/>).
 ## Execution
 ### Add the dependency to your project with NuGet
 You can install the latest release with NuGet by clicking `Managing NuGet Packages...` under your Visual Studio project name. Browse for the project by typing `Ampere`, view the information, and choose the version you would like to install.
@@ -38,7 +37,7 @@ You can install the latest release with NuGet by clicking `Managing NuGet Packag
 The latest NuGet release can be found under the [GitHub Releases Page](https://github.com/manu-p-1/Ampere/packages/). You can use the instructions to install from the command line. 
 
 ## Contributing
-We are actively looking for contributors to work on all aspects of the code base ― from documentation to building a variety of utilities. For more information on how to contribute, view our [CONTRIBUTING.md](https://github.com/manu-p-1/Ampere/blob/master/CONTRIBUTING.md)
+We are actively looking for contributors to work on all aspects of the code base ― from documentation to building a variety of utilities. For more information on how to contribute, view our [CONTRIBUTING.md](https://github.com/manu-p-1/Ampere/blob/master/CONTRIBUTING.md).
 
 ### Building Ampere
 Prerequisites:
@@ -54,7 +53,7 @@ There are two components to Ampere documentation:
 3. Miscellaneous Documentation (README.md, Wiki's, Discussions, etc...)
 
 All Ampere methods are documented using .NET XML documentation. This is compiled using [DocFX](https://dotnet.github.io/docfx/) with the `docfx.json` file under the [DocFX folder](https://github.com/manu-p-1/Ampere/tree/master/DocFx). DocFX creates static
-HTML pages which are used by <https://powerplug.me>. Lastly, as a fluid repository, many files change and constantly need to be documented and updated.
+HTML pages which are used by [Ampere Docs](https://manu-p-1.github.io/Ampere/>). Lastly, as a fluid repository, many files change and constantly need to be documented and updated.
 
 ## Roadmap
 There are two planned releases - the latest being by **July 2021**:

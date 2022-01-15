@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Str
+  commentId: N:Ampere.Str
+  id: Ampere.Str
+  children:
+  - Ampere.Str.StringBuilderUtils
+  - Ampere.Str.StringUtils
+  langs:
+  - csharp
+  - vb
+  name: Ampere.Str
+  nameWithType: Ampere.Str
+  fullName: Ampere.Str
+  type: Namespace
+  assemblies:
+  - Ampere
+references:
+- uid: Ampere.Str.StringBuilderUtils
+  commentId: T:Ampere.Str.StringBuilderUtils
+  name: StringBuilderUtils
+  nameWithType: StringBuilderUtils
+  fullName: Ampere.Str.StringBuilderUtils
+- uid: Ampere.Str.StringUtils
+  commentId: T:Ampere.Str.StringUtils
+  name: StringUtils
+  nameWithType: StringUtils
+  fullName: Ampere.Str.StringUtils

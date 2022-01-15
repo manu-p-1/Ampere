@@ -1,38 +1,38 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Ampere.MathUtils.IMatrixer
-  commentId: T:Ampere.MathUtils.IMatrixer
+- uid: Ampere.AmpMath.IMatrixer
+  commentId: T:Ampere.AmpMath.IMatrixer
   id: IMatrixer
-  parent: Ampere.MathUtils
+  parent: Ampere.AmpMath
   children:
-  - Ampere.MathUtils.IMatrixer.Cols
-  - Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
-  - Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer,Ampere.MathUtils.IMatrixer)
-  - Ampere.MathUtils.IMatrixer.IsColumnVector
-  - Ampere.MathUtils.IMatrixer.IsRowVector
-  - Ampere.MathUtils.IMatrixer.IsSquareVector
-  - Ampere.MathUtils.IMatrixer.Rows
-  - Ampere.MathUtils.IMatrixer.ToString
-  - Ampere.MathUtils.IMatrixer.Transpose
-  - Ampere.MathUtils.IMatrixer.Values
+  - Ampere.AmpMath.IMatrixer.Cols
+  - Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
+  - Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer,Ampere.AmpMath.IMatrixer)
+  - Ampere.AmpMath.IMatrixer.IsColumnVector
+  - Ampere.AmpMath.IMatrixer.IsRowVector
+  - Ampere.AmpMath.IMatrixer.IsSquareVector
+  - Ampere.AmpMath.IMatrixer.Rows
+  - Ampere.AmpMath.IMatrixer.ToString
+  - Ampere.AmpMath.IMatrixer.Transpose
+  - Ampere.AmpMath.IMatrixer.Values
   langs:
   - csharp
   - vb
   name: IMatrixer
   nameWithType: IMatrixer
-  fullName: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.IMatrixer
   type: Interface
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IMatrixer
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 8
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nRepresents the minimum requirements to create a Matrix.\n"
   example: []
   syntax:
@@ -43,10 +43,10 @@ items:
   inheritedMembers:
   - System.Collections.Generic.IEnumerable{System.Double}.GetEnumerator
   extensionMethods:
-  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
-  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
-  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
-  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
+  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
+  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.Shuffle``1
+  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
   - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Statistics.EnumerableStats.Mean``1(System.Func{System.Double,System.Double})
   - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Statistics.EnumerableStats.Median``1(System.Func{System.Double,System.Double})
   - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Statistics.EnumerableStats.Mode
@@ -79,28 +79,28 @@ items:
   modifiers.vb:
   - Public
   - Interface
-- uid: Ampere.MathUtils.IMatrixer.Values
-  commentId: P:Ampere.MathUtils.IMatrixer.Values
+- uid: Ampere.AmpMath.IMatrixer.Values
+  commentId: P:Ampere.AmpMath.IMatrixer.Values
   id: Values
-  parent: Ampere.MathUtils.IMatrixer
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: Values
   nameWithType: IMatrixer.Values
-  fullName: Ampere.MathUtils.IMatrixer.Values
+  fullName: Ampere.AmpMath.IMatrixer.Values
   type: Property
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Values
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 13
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nProperty representing the values of the IMatrixer as a generic 2D array.\n"
   example: []
   syntax:
@@ -109,33 +109,33 @@ items:
     return:
       type: System.Double[,]
     content.vb: ReadOnly Property Values As Double(,)
-  overload: Ampere.MathUtils.IMatrixer.Values*
+  overload: Ampere.AmpMath.IMatrixer.Values*
   modifiers.csharp:
   - get
   modifiers.vb:
   - ReadOnly
-- uid: Ampere.MathUtils.IMatrixer.Rows
-  commentId: P:Ampere.MathUtils.IMatrixer.Rows
+- uid: Ampere.AmpMath.IMatrixer.Rows
+  commentId: P:Ampere.AmpMath.IMatrixer.Rows
   id: Rows
-  parent: Ampere.MathUtils.IMatrixer
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: Rows
   nameWithType: IMatrixer.Rows
-  fullName: Ampere.MathUtils.IMatrixer.Rows
+  fullName: Ampere.AmpMath.IMatrixer.Rows
   type: Property
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Rows
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 18
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nProperty for the number of Rows in and IMatrixer.\n"
   example: []
   syntax:
@@ -144,33 +144,33 @@ items:
     return:
       type: System.Int32
     content.vb: ReadOnly Property Rows As Integer
-  overload: Ampere.MathUtils.IMatrixer.Rows*
+  overload: Ampere.AmpMath.IMatrixer.Rows*
   modifiers.csharp:
   - get
   modifiers.vb:
   - ReadOnly
-- uid: Ampere.MathUtils.IMatrixer.Cols
-  commentId: P:Ampere.MathUtils.IMatrixer.Cols
+- uid: Ampere.AmpMath.IMatrixer.Cols
+  commentId: P:Ampere.AmpMath.IMatrixer.Cols
   id: Cols
-  parent: Ampere.MathUtils.IMatrixer
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: Cols
   nameWithType: IMatrixer.Cols
-  fullName: Ampere.MathUtils.IMatrixer.Cols
+  fullName: Ampere.AmpMath.IMatrixer.Cols
   type: Property
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Cols
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 23
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nProperty for the number of columns in an IMatrixer.\n"
   example: []
   syntax:
@@ -179,136 +179,136 @@ items:
     return:
       type: System.Int32
     content.vb: ReadOnly Property Cols As Integer
-  overload: Ampere.MathUtils.IMatrixer.Cols*
+  overload: Ampere.AmpMath.IMatrixer.Cols*
   modifiers.csharp:
   - get
   modifiers.vb:
   - ReadOnly
-- uid: Ampere.MathUtils.IMatrixer.Transpose
-  commentId: M:Ampere.MathUtils.IMatrixer.Transpose
+- uid: Ampere.AmpMath.IMatrixer.Transpose
+  commentId: M:Ampere.AmpMath.IMatrixer.Transpose
   id: Transpose
-  parent: Ampere.MathUtils.IMatrixer
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: Transpose()
   nameWithType: IMatrixer.Transpose()
-  fullName: Ampere.MathUtils.IMatrixer.Transpose()
+  fullName: Ampere.AmpMath.IMatrixer.Transpose()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Transpose
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 29
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nTransposes the contents of the Matrix and returns a new Matrix.\n"
   example: []
   syntax:
     content: Matrix Transpose()
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: A new Matrix containing the transposed version of the original
     content.vb: Function Transpose As Matrix
-  overload: Ampere.MathUtils.IMatrixer.Transpose*
-- uid: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
-  commentId: M:Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
-  id: EqualDimension(Ampere.MathUtils.IMatrixer)
-  parent: Ampere.MathUtils.IMatrixer
+  overload: Ampere.AmpMath.IMatrixer.Transpose*
+- uid: Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
+  commentId: M:Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
+  id: EqualDimension(Ampere.AmpMath.IMatrixer)
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: EqualDimension(IMatrixer)
   nameWithType: IMatrixer.EqualDimension(IMatrixer)
-  fullName: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
+  fullName: Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EqualDimension
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 36
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nReturns whether this instance is the same dimension as another IMatrixer instance.\nSame dimension means that the rows and the columns of both instances are the same.\n"
   example: []
   syntax:
     content: bool EqualDimension(IMatrixer otherMatrix)
     parameters:
     - id: otherMatrix
-      type: Ampere.MathUtils.IMatrixer
+      type: Ampere.AmpMath.IMatrixer
     return:
       type: System.Boolean
       description: A new Matrix containing the transposed version of the original
     content.vb: Function EqualDimension(otherMatrix As IMatrixer) As Boolean
-  overload: Ampere.MathUtils.IMatrixer.EqualDimension*
-- uid: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer,Ampere.MathUtils.IMatrixer)
-  commentId: M:Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer,Ampere.MathUtils.IMatrixer)
-  id: EqualDimension(Ampere.MathUtils.IMatrixer,Ampere.MathUtils.IMatrixer)
-  parent: Ampere.MathUtils.IMatrixer
+  overload: Ampere.AmpMath.IMatrixer.EqualDimension*
+- uid: Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer,Ampere.AmpMath.IMatrixer)
+  commentId: M:Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer,Ampere.AmpMath.IMatrixer)
+  id: EqualDimension(Ampere.AmpMath.IMatrixer,Ampere.AmpMath.IMatrixer)
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: EqualDimension(IMatrixer, IMatrixer)
   nameWithType: IMatrixer.EqualDimension(IMatrixer, IMatrixer)
-  fullName: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer, Ampere.MathUtils.IMatrixer)
+  fullName: Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer, Ampere.AmpMath.IMatrixer)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EqualDimension
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 45
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
-  summary: "\nReturns whether two <xref href=\"Ampere.MathUtils.Matrix\" data-throw-if-not-resolved=\"false\"></xref> instances are of the same dimension.\nSame dimension means that the rows and the columns of both instances are the same.\n"
+  namespace: Ampere.AmpMath
+  summary: "\nReturns whether two <xref href=\"Ampere.AmpMath.Matrix\" data-throw-if-not-resolved=\"false\"></xref> instances are of the same dimension.\nSame dimension means that the rows and the columns of both instances are the same.\n"
   example: []
   syntax:
     content: static bool EqualDimension(IMatrixer one, IMatrixer two)
     parameters:
     - id: one
-      type: Ampere.MathUtils.IMatrixer
+      type: Ampere.AmpMath.IMatrixer
       description: The first IMatrixer instance
     - id: two
-      type: Ampere.MathUtils.IMatrixer
+      type: Ampere.AmpMath.IMatrixer
       description: The second IMatrixer instance
     return:
       type: System.Boolean
       description: ''
     content.vb: Shared Function EqualDimension(one As IMatrixer, two As IMatrixer) As Boolean
-  overload: Ampere.MathUtils.IMatrixer.EqualDimension*
-- uid: Ampere.MathUtils.IMatrixer.IsRowVector
-  commentId: M:Ampere.MathUtils.IMatrixer.IsRowVector
+  overload: Ampere.AmpMath.IMatrixer.EqualDimension*
+- uid: Ampere.AmpMath.IMatrixer.IsRowVector
+  commentId: M:Ampere.AmpMath.IMatrixer.IsRowVector
   id: IsRowVector
-  parent: Ampere.MathUtils.IMatrixer
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: IsRowVector()
   nameWithType: IMatrixer.IsRowVector()
-  fullName: Ampere.MathUtils.IMatrixer.IsRowVector()
+  fullName: Ampere.AmpMath.IMatrixer.IsRowVector()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsRowVector
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 56
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nReturns whether the number of Rows equals 1\n"
   example: []
   syntax:
@@ -317,29 +317,29 @@ items:
       type: System.Boolean
       description: A bool specifying whether the number of Rows equals 1
     content.vb: Function IsRowVector As Boolean
-  overload: Ampere.MathUtils.IMatrixer.IsRowVector*
-- uid: Ampere.MathUtils.IMatrixer.IsColumnVector
-  commentId: M:Ampere.MathUtils.IMatrixer.IsColumnVector
+  overload: Ampere.AmpMath.IMatrixer.IsRowVector*
+- uid: Ampere.AmpMath.IMatrixer.IsColumnVector
+  commentId: M:Ampere.AmpMath.IMatrixer.IsColumnVector
   id: IsColumnVector
-  parent: Ampere.MathUtils.IMatrixer
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: IsColumnVector()
   nameWithType: IMatrixer.IsColumnVector()
-  fullName: Ampere.MathUtils.IMatrixer.IsColumnVector()
+  fullName: Ampere.AmpMath.IMatrixer.IsColumnVector()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsColumnVector
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 62
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nReturns whether the number of Columns equals 1.\n"
   example: []
   syntax:
@@ -348,29 +348,29 @@ items:
       type: System.Boolean
       description: A bool specifying whether the number of Columns equals 1
     content.vb: Function IsColumnVector As Boolean
-  overload: Ampere.MathUtils.IMatrixer.IsColumnVector*
-- uid: Ampere.MathUtils.IMatrixer.IsSquareVector
-  commentId: M:Ampere.MathUtils.IMatrixer.IsSquareVector
+  overload: Ampere.AmpMath.IMatrixer.IsColumnVector*
+- uid: Ampere.AmpMath.IMatrixer.IsSquareVector
+  commentId: M:Ampere.AmpMath.IMatrixer.IsSquareVector
   id: IsSquareVector
-  parent: Ampere.MathUtils.IMatrixer
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: IsSquareVector()
   nameWithType: IMatrixer.IsSquareVector()
-  fullName: Ampere.MathUtils.IMatrixer.IsSquareVector()
+  fullName: Ampere.AmpMath.IMatrixer.IsSquareVector()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsSquareVector
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 68
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nReturns whether the number of Rows equals the number of Columns.\n"
   example: []
   syntax:
@@ -379,29 +379,29 @@ items:
       type: System.Boolean
       description: A bool specifying whether the number of Rows equals the number of columns
     content.vb: Function IsSquareVector As Boolean
-  overload: Ampere.MathUtils.IMatrixer.IsSquareVector*
-- uid: Ampere.MathUtils.IMatrixer.ToString
-  commentId: M:Ampere.MathUtils.IMatrixer.ToString
+  overload: Ampere.AmpMath.IMatrixer.IsSquareVector*
+- uid: Ampere.AmpMath.IMatrixer.ToString
+  commentId: M:Ampere.AmpMath.IMatrixer.ToString
   id: ToString
-  parent: Ampere.MathUtils.IMatrixer
+  parent: Ampere.AmpMath.IMatrixer
   langs:
   - csharp
   - vb
   name: ToString()
   nameWithType: IMatrixer.ToString()
-  fullName: Ampere.MathUtils.IMatrixer.ToString()
+  fullName: Ampere.AmpMath.IMatrixer.ToString()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/IMatrixer.cs
+      path: Ampere/AmpMath/IMatrixer.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
-    path: ../Ampere/MathUtils/IMatrixer.cs
+    path: ../Ampere/AmpMath/IMatrixer.cs
     startLine: 74
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nReturns a string representation of an IMatrixer.\n"
   example: []
   syntax:
@@ -410,13 +410,13 @@ items:
       type: System.String
       description: A string representation of the IMatrixer
     content.vb: Function ToString As String
-  overload: Ampere.MathUtils.IMatrixer.ToString*
+  overload: Ampere.AmpMath.IMatrixer.ToString*
 references:
-- uid: Ampere.MathUtils
-  commentId: N:Ampere.MathUtils
-  name: Ampere.MathUtils
-  nameWithType: Ampere.MathUtils
-  fullName: Ampere.MathUtils
+- uid: Ampere.AmpMath
+  commentId: N:Ampere.AmpMath
+  name: Ampere.AmpMath
+  nameWithType: Ampere.AmpMath
+  fullName: Ampere.AmpMath
 - uid: System.Collections.Generic.IEnumerable{System.Double}.GetEnumerator
   commentId: M:System.Collections.Generic.IEnumerable{System.Double}.GetEnumerator
   parent: System.Collections.Generic.IEnumerable{System.Double}
@@ -450,21 +450,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
+  commentId: M:Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
   name: InnerContains<Double>(Boolean, IEnumerable<Double>[])
   nameWithType: EnumerableUtils.InnerContains<Double>(Boolean, IEnumerable<Double>[])
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<System.Double>(System.Boolean, System.Collections.Generic.IEnumerable<System.Double>[])
+  fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<System.Double>(System.Boolean, System.Collections.Generic.IEnumerable<System.Double>[])
   nameWithType.vb: EnumerableUtils.InnerContains(Of Double)(Boolean, IEnumerable(Of Double)())
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of System.Double)(System.Boolean, System.Collections.Generic.IEnumerable(Of System.Double)())
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.InnerContains(Of System.Double)(System.Boolean, System.Collections.Generic.IEnumerable(Of System.Double)())
   name.vb: InnerContains(Of Double)(Boolean, IEnumerable(Of Double)())
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains<Double>
     nameWithType: EnumerableUtils.InnerContains<Double>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<System.Double>
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<System.Double>
   - name: (
     nameWithType: (
     fullName: (
@@ -499,10 +499,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains(Of Double)
     nameWithType: EnumerableUtils.InnerContains(Of Double)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of System.Double)
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains(Of System.Double)
   - name: (
     nameWithType: (
     fullName: (
@@ -536,21 +536,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
+  commentId: M:Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   name: IsNullOrEmpty<Double>()
   nameWithType: EnumerableUtils.IsNullOrEmpty<Double>()
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<System.Double>()
+  fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<System.Double>()
   nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of Double)()
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of System.Double)()
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of System.Double)()
   name.vb: IsNullOrEmpty(Of Double)()
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
     name: IsNullOrEmpty<Double>
     nameWithType: EnumerableUtils.IsNullOrEmpty<Double>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<System.Double>
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<System.Double>
   - name: (
     nameWithType: (
     fullName: (
@@ -558,31 +558,31 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
     name: IsNullOrEmpty(Of Double)
     nameWithType: EnumerableUtils.IsNullOrEmpty(Of Double)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of System.Double)
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of System.Double)
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.Shuffle``1
+  commentId: M:Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   name: Shuffle<Double>()
   nameWithType: EnumerableUtils.Shuffle<Double>()
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<System.Double>()
+  fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<System.Double>()
   nameWithType.vb: EnumerableUtils.Shuffle(Of Double)()
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of System.Double)()
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.Shuffle(Of System.Double)()
   name.vb: Shuffle(Of Double)()
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1
     name: Shuffle<Double>
     nameWithType: EnumerableUtils.Shuffle<Double>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<System.Double>
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<System.Double>
   - name: (
     nameWithType: (
     fullName: (
@@ -590,31 +590,31 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1
     name: Shuffle(Of Double)
     nameWithType: EnumerableUtils.Shuffle(Of Double)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of System.Double)
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle(Of System.Double)
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  commentId: M:Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
   name: ToString<Double>(String, Boolean)
   nameWithType: EnumerableUtils.ToString<Double>(String, Boolean)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<System.Double>(System.String, System.Boolean)
+  fullName: Ampere.Enumerable.EnumerableUtils.ToString<System.Double>(System.String, System.Boolean)
   nameWithType.vb: EnumerableUtils.ToString(Of Double)(String, Boolean)
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of System.Double)(System.String, System.Boolean)
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.ToString(Of System.Double)(System.String, System.Boolean)
   name.vb: ToString(Of Double)(String, Boolean)
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
     name: ToString<Double>
     nameWithType: EnumerableUtils.ToString<Double>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<System.Double>
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString<System.Double>
   - name: (
     nameWithType: (
     fullName: (
@@ -635,10 +635,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
     name: ToString(Of Double)
     nameWithType: EnumerableUtils.ToString(Of Double)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of System.Double)
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString(Of System.Double)
   - name: (
     nameWithType: (
     fullName: (
@@ -2254,20 +2254,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+- uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  commentId: M:Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
   isExternal: true
   name: InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
   nameWithType: EnumerableUtils.InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
+  fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
   nameWithType.vb: EnumerableUtils.InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.InnerContains(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
   name.vb: InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains<T>
     nameWithType: EnumerableUtils.InnerContains<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -2317,10 +2317,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains(Of T)
     nameWithType: EnumerableUtils.InnerContains(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -2369,26 +2369,26 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils
-  commentId: T:Ampere.EnumerableUtils.EnumerableUtils
-  parent: Ampere.EnumerableUtils
+- uid: Ampere.Enumerable.EnumerableUtils
+  commentId: T:Ampere.Enumerable.EnumerableUtils
+  parent: Ampere.Enumerable
   name: EnumerableUtils
   nameWithType: EnumerableUtils
-  fullName: Ampere.EnumerableUtils.EnumerableUtils
-- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  fullName: Ampere.Enumerable.EnumerableUtils
+- uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   isExternal: true
   name: IsNullOrEmpty<T>(IEnumerable<T>)
   nameWithType: EnumerableUtils.IsNullOrEmpty<T>(IEnumerable<T>)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
   nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of T)(IEnumerable(Of T))
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
   name.vb: IsNullOrEmpty(Of T)(IEnumerable(Of T))
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
     name: IsNullOrEmpty<T>
     nameWithType: EnumerableUtils.IsNullOrEmpty<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -2410,10 +2410,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
     name: IsNullOrEmpty(Of T)
     nameWithType: EnumerableUtils.IsNullOrEmpty(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -2434,20 +2434,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   isExternal: true
   name: Shuffle<T>(IEnumerable<T>)
   nameWithType: EnumerableUtils.Shuffle<T>(IEnumerable<T>)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
   nameWithType.vb: EnumerableUtils.Shuffle(Of T)(IEnumerable(Of T))
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
   name.vb: Shuffle(Of T)(IEnumerable(Of T))
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
     name: Shuffle<T>
     nameWithType: EnumerableUtils.Shuffle<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -2469,10 +2469,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
     name: Shuffle(Of T)
     nameWithType: EnumerableUtils.Shuffle(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -2493,20 +2493,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+- uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  commentId: M:Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
   isExternal: true
   name: ToString<T>(IEnumerable<T>, String, Boolean)
   nameWithType: EnumerableUtils.ToString<T>(IEnumerable<T>, String, Boolean)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
+  fullName: Ampere.Enumerable.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
   nameWithType.vb: EnumerableUtils.ToString(Of T)(IEnumerable(Of T), String, Boolean)
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
   name.vb: ToString(Of T)(IEnumerable(Of T), String, Boolean)
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
     name: ToString<T>
     nameWithType: EnumerableUtils.ToString<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -2544,10 +2544,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
     name: ToString(Of T)
     nameWithType: EnumerableUtils.ToString(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -4981,21 +4981,21 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: Ampere.EnumerableUtils
-  commentId: N:Ampere.EnumerableUtils
-  name: Ampere.EnumerableUtils
-  nameWithType: Ampere.EnumerableUtils
-  fullName: Ampere.EnumerableUtils
+- uid: Ampere.Enumerable
+  commentId: N:Ampere.Enumerable
+  name: Ampere.Enumerable
+  nameWithType: Ampere.Enumerable
+  fullName: Ampere.Enumerable
 - uid: Ampere.Statistics
   commentId: N:Ampere.Statistics
   name: Ampere.Statistics
   nameWithType: Ampere.Statistics
   fullName: Ampere.Statistics
-- uid: Ampere.MathUtils.IMatrixer.Values*
-  commentId: Overload:Ampere.MathUtils.IMatrixer.Values
+- uid: Ampere.AmpMath.IMatrixer.Values*
+  commentId: Overload:Ampere.AmpMath.IMatrixer.Values
   name: Values
   nameWithType: IMatrixer.Values
-  fullName: Ampere.MathUtils.IMatrixer.Values
+  fullName: Ampere.AmpMath.IMatrixer.Values
 - uid: System.Double[,]
   isExternal: true
   name: Double[,]
@@ -5022,11 +5022,11 @@ references:
   - name: (,)
     nameWithType: (,)
     fullName: (,)
-- uid: Ampere.MathUtils.IMatrixer.Rows*
-  commentId: Overload:Ampere.MathUtils.IMatrixer.Rows
+- uid: Ampere.AmpMath.IMatrixer.Rows*
+  commentId: Overload:Ampere.AmpMath.IMatrixer.Rows
   name: Rows
   nameWithType: IMatrixer.Rows
-  fullName: Ampere.MathUtils.IMatrixer.Rows
+  fullName: Ampere.AmpMath.IMatrixer.Rows
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -5040,33 +5040,33 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Ampere.MathUtils.IMatrixer.Cols*
-  commentId: Overload:Ampere.MathUtils.IMatrixer.Cols
+- uid: Ampere.AmpMath.IMatrixer.Cols*
+  commentId: Overload:Ampere.AmpMath.IMatrixer.Cols
   name: Cols
   nameWithType: IMatrixer.Cols
-  fullName: Ampere.MathUtils.IMatrixer.Cols
-- uid: Ampere.MathUtils.IMatrixer.Transpose*
-  commentId: Overload:Ampere.MathUtils.IMatrixer.Transpose
+  fullName: Ampere.AmpMath.IMatrixer.Cols
+- uid: Ampere.AmpMath.IMatrixer.Transpose*
+  commentId: Overload:Ampere.AmpMath.IMatrixer.Transpose
   name: Transpose
   nameWithType: IMatrixer.Transpose
-  fullName: Ampere.MathUtils.IMatrixer.Transpose
-- uid: Ampere.MathUtils.Matrix
-  commentId: T:Ampere.MathUtils.Matrix
-  parent: Ampere.MathUtils
+  fullName: Ampere.AmpMath.IMatrixer.Transpose
+- uid: Ampere.AmpMath.Matrix
+  commentId: T:Ampere.AmpMath.Matrix
+  parent: Ampere.AmpMath
   name: Matrix
   nameWithType: Matrix
-  fullName: Ampere.MathUtils.Matrix
-- uid: Ampere.MathUtils.IMatrixer.EqualDimension*
-  commentId: Overload:Ampere.MathUtils.IMatrixer.EqualDimension
+  fullName: Ampere.AmpMath.Matrix
+- uid: Ampere.AmpMath.IMatrixer.EqualDimension*
+  commentId: Overload:Ampere.AmpMath.IMatrixer.EqualDimension
   name: EqualDimension
   nameWithType: IMatrixer.EqualDimension
-  fullName: Ampere.MathUtils.IMatrixer.EqualDimension
-- uid: Ampere.MathUtils.IMatrixer
-  commentId: T:Ampere.MathUtils.IMatrixer
-  parent: Ampere.MathUtils
+  fullName: Ampere.AmpMath.IMatrixer.EqualDimension
+- uid: Ampere.AmpMath.IMatrixer
+  commentId: T:Ampere.AmpMath.IMatrixer
+  parent: Ampere.AmpMath
   name: IMatrixer
   nameWithType: IMatrixer
-  fullName: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.IMatrixer
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -5074,26 +5074,26 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: Ampere.MathUtils.IMatrixer.IsRowVector*
-  commentId: Overload:Ampere.MathUtils.IMatrixer.IsRowVector
+- uid: Ampere.AmpMath.IMatrixer.IsRowVector*
+  commentId: Overload:Ampere.AmpMath.IMatrixer.IsRowVector
   name: IsRowVector
   nameWithType: IMatrixer.IsRowVector
-  fullName: Ampere.MathUtils.IMatrixer.IsRowVector
-- uid: Ampere.MathUtils.IMatrixer.IsColumnVector*
-  commentId: Overload:Ampere.MathUtils.IMatrixer.IsColumnVector
+  fullName: Ampere.AmpMath.IMatrixer.IsRowVector
+- uid: Ampere.AmpMath.IMatrixer.IsColumnVector*
+  commentId: Overload:Ampere.AmpMath.IMatrixer.IsColumnVector
   name: IsColumnVector
   nameWithType: IMatrixer.IsColumnVector
-  fullName: Ampere.MathUtils.IMatrixer.IsColumnVector
-- uid: Ampere.MathUtils.IMatrixer.IsSquareVector*
-  commentId: Overload:Ampere.MathUtils.IMatrixer.IsSquareVector
+  fullName: Ampere.AmpMath.IMatrixer.IsColumnVector
+- uid: Ampere.AmpMath.IMatrixer.IsSquareVector*
+  commentId: Overload:Ampere.AmpMath.IMatrixer.IsSquareVector
   name: IsSquareVector
   nameWithType: IMatrixer.IsSquareVector
-  fullName: Ampere.MathUtils.IMatrixer.IsSquareVector
-- uid: Ampere.MathUtils.IMatrixer.ToString*
-  commentId: Overload:Ampere.MathUtils.IMatrixer.ToString
+  fullName: Ampere.AmpMath.IMatrixer.IsSquareVector
+- uid: Ampere.AmpMath.IMatrixer.ToString*
+  commentId: Overload:Ampere.AmpMath.IMatrixer.ToString
   name: ToString
   nameWithType: IMatrixer.ToString
-  fullName: Ampere.MathUtils.IMatrixer.ToString
+  fullName: Ampere.AmpMath.IMatrixer.ToString
 - uid: System.String
   commentId: T:System.String
   parent: System

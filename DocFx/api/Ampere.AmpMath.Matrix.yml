@@ -1,70 +1,70 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Ampere.MathUtils.Matrix
-  commentId: T:Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix
+  commentId: T:Ampere.AmpMath.Matrix
   id: Matrix
-  parent: Ampere.MathUtils
+  parent: Ampere.AmpMath
   children:
-  - Ampere.MathUtils.Matrix.#ctor(System.Double[0:,0:])
-  - Ampere.MathUtils.Matrix.#ctor(System.Int32,System.Int32)
-  - Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.Cols
-  - Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.IMatrixer)
-  - Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.Equals(System.Object)
-  - Ampere.MathUtils.Matrix.GetEnumerator
-  - Ampere.MathUtils.Matrix.GetHashCode
-  - Ampere.MathUtils.Matrix.IsColumnVector
-  - Ampere.MathUtils.Matrix.IsRowVector
-  - Ampere.MathUtils.Matrix.IsSquareVector
-  - Ampere.MathUtils.Matrix.Item(System.Int32,System.Int32)
-  - Ampere.MathUtils.Matrix.Mod(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.Negate(Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.op_Addition(System.Double,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Division(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.op_Division(System.Double,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Equality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Inequality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_LogicalNot(Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Modulus(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.op_Modulus(System.Double,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.op_Multiply(System.Double,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.op_Subtraction(System.Double,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.Rows
-  - Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  - Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,System.Double)
-  - Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator
-  - Ampere.MathUtils.Matrix.ToString
-  - Ampere.MathUtils.Matrix.Transpose
-  - Ampere.MathUtils.Matrix.Values
+  - Ampere.AmpMath.Matrix.#ctor(System.Double[0:,0:])
+  - Ampere.AmpMath.Matrix.#ctor(System.Int32,System.Int32)
+  - Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.Cols
+  - Ampere.AmpMath.Matrix.Divide(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.DotProduct(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.EqualDimension(Ampere.AmpMath.IMatrixer)
+  - Ampere.AmpMath.Matrix.Equals(Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.Equals(System.Object)
+  - Ampere.AmpMath.Matrix.GetEnumerator
+  - Ampere.AmpMath.Matrix.GetHashCode
+  - Ampere.AmpMath.Matrix.IsColumnVector
+  - Ampere.AmpMath.Matrix.IsRowVector
+  - Ampere.AmpMath.Matrix.IsSquareVector
+  - Ampere.AmpMath.Matrix.Item(System.Int32,System.Int32)
+  - Ampere.AmpMath.Matrix.Mod(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.Multiply(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.Negate(Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Addition(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Addition(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.op_Addition(System.Double,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Division(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.op_Division(System.Double,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Equality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Inequality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_LogicalNot(Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Modulus(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.op_Modulus(System.Double,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Multiply(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Multiply(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.op_Multiply(System.Double,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Subtraction(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.op_Subtraction(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.op_Subtraction(System.Double,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.Rows
+  - Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  - Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix,System.Double)
+  - Ampere.AmpMath.Matrix.System#Collections#IEnumerable#GetEnumerator
+  - Ampere.AmpMath.Matrix.ToString
+  - Ampere.AmpMath.Matrix.Transpose
+  - Ampere.AmpMath.Matrix.Values
   langs:
   - csharp
   - vb
   name: Matrix
   nameWithType: Matrix
-  fullName: Ampere.MathUtils.Matrix
+  fullName: Ampere.AmpMath.Matrix
   type: Class
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Matrix
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 14
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 15
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA class representing a mathematical Matrix. Creates a rectangular\narray of rows and columns with numbers as elements. The Matrix\nclass includes mathematical matrix operations to manipulate it.\n"
   example: []
   syntax:
@@ -75,7 +75,7 @@ items:
   inheritance:
   - System.Object
   implements:
-  - Ampere.MathUtils.IMatrixer
+  - Ampere.AmpMath.IMatrixer
   - System.Collections.Generic.IEnumerable{System.Double}
   - System.Collections.IEnumerable
   - Ampere.Base.IIndexableDouble{System.Int32,System.Double}
@@ -85,10 +85,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
-  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
-  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
-  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
-  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
+  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
+  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.Shuffle``1
+  - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
   - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Statistics.EnumerableStats.Mean``1(System.Func{System.Double,System.Double})
   - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Statistics.EnumerableStats.Median``1(System.Func{System.Double,System.Double})
   - System.Collections.Generic.IEnumerable{System.Double}.Ampere.Statistics.EnumerableStats.Mode
@@ -121,28 +121,28 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Ampere.MathUtils.Matrix.Values
-  commentId: P:Ampere.MathUtils.Matrix.Values
+- uid: Ampere.AmpMath.Matrix.Values
+  commentId: P:Ampere.AmpMath.Matrix.Values
   id: Values
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Values
   nameWithType: Matrix.Values
-  fullName: Ampere.MathUtils.Matrix.Values
+  fullName: Ampere.AmpMath.Matrix.Values
   type: Property
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Values
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 20
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 21
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nRepresents the minimum requirements to create a Matrix.\n"
   example: []
   syntax:
@@ -151,37 +151,37 @@ items:
     return:
       type: System.Double[,]
     content.vb: Public ReadOnly Property Values As Double(,)
-  overload: Ampere.MathUtils.Matrix.Values*
+  overload: Ampere.AmpMath.Matrix.Values*
   implements:
-  - Ampere.MathUtils.IMatrixer.Values
+  - Ampere.AmpMath.IMatrixer.Values
   modifiers.csharp:
   - public
   - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Ampere.MathUtils.Matrix.Rows
-  commentId: P:Ampere.MathUtils.Matrix.Rows
+- uid: Ampere.AmpMath.Matrix.Rows
+  commentId: P:Ampere.AmpMath.Matrix.Rows
   id: Rows
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Rows
   nameWithType: Matrix.Rows
-  fullName: Ampere.MathUtils.Matrix.Rows
+  fullName: Ampere.AmpMath.Matrix.Rows
   type: Property
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Rows
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 23
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 24
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nRepresents the minimum requirements to create a Matrix.\n"
   example: []
   syntax:
@@ -190,37 +190,37 @@ items:
     return:
       type: System.Int32
     content.vb: Public ReadOnly Property Rows As Integer
-  overload: Ampere.MathUtils.Matrix.Rows*
+  overload: Ampere.AmpMath.Matrix.Rows*
   implements:
-  - Ampere.MathUtils.IMatrixer.Rows
+  - Ampere.AmpMath.IMatrixer.Rows
   modifiers.csharp:
   - public
   - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Ampere.MathUtils.Matrix.Cols
-  commentId: P:Ampere.MathUtils.Matrix.Cols
+- uid: Ampere.AmpMath.Matrix.Cols
+  commentId: P:Ampere.AmpMath.Matrix.Cols
   id: Cols
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Cols
   nameWithType: Matrix.Cols
-  fullName: Ampere.MathUtils.Matrix.Cols
+  fullName: Ampere.AmpMath.Matrix.Cols
   type: Property
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Cols
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 26
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 27
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nRepresents the minimum requirements to create a Matrix.\n"
   example: []
   syntax:
@@ -229,37 +229,37 @@ items:
     return:
       type: System.Int32
     content.vb: Public ReadOnly Property Cols As Integer
-  overload: Ampere.MathUtils.Matrix.Cols*
+  overload: Ampere.AmpMath.Matrix.Cols*
   implements:
-  - Ampere.MathUtils.IMatrixer.Cols
+  - Ampere.AmpMath.IMatrixer.Cols
   modifiers.csharp:
   - public
   - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Ampere.MathUtils.Matrix.#ctor(System.Int32,System.Int32)
-  commentId: M:Ampere.MathUtils.Matrix.#ctor(System.Int32,System.Int32)
+- uid: Ampere.AmpMath.Matrix.#ctor(System.Int32,System.Int32)
+  commentId: M:Ampere.AmpMath.Matrix.#ctor(System.Int32,System.Int32)
   id: '#ctor(System.Int32,System.Int32)'
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Matrix(Int32, Int32)
   nameWithType: Matrix.Matrix(Int32, Int32)
-  fullName: Ampere.MathUtils.Matrix.Matrix(System.Int32, System.Int32)
+  fullName: Ampere.AmpMath.Matrix.Matrix(System.Int32, System.Int32)
   type: Constructor
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 33
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 34
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nCreates an instance of a Matrix given rows and columns.\n"
   example: []
   syntax:
@@ -272,33 +272,33 @@ items:
       type: System.Int32
       description: The number of columns in this Matrix
     content.vb: Public Sub New(rows As Integer, cols As Integer)
-  overload: Ampere.MathUtils.Matrix.#ctor*
+  overload: Ampere.AmpMath.Matrix.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Ampere.MathUtils.Matrix.#ctor(System.Double[0:,0:])
-  commentId: M:Ampere.MathUtils.Matrix.#ctor(System.Double[0:,0:])
+- uid: Ampere.AmpMath.Matrix.#ctor(System.Double[0:,0:])
+  commentId: M:Ampere.AmpMath.Matrix.#ctor(System.Double[0:,0:])
   id: '#ctor(System.Double[0:,0:])'
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Matrix(Double[,])
   nameWithType: Matrix.Matrix(Double[,])
-  fullName: Ampere.MathUtils.Matrix.Matrix(System.Double[,])
+  fullName: Ampere.AmpMath.Matrix.Matrix(System.Double[,])
   type: Constructor
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 44
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 45
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nCreates an instance of a Matrix given a 2D array. \n"
   example: []
   syntax:
@@ -308,36 +308,36 @@ items:
       type: System.Double[,]
       description: A 2D array of doubles
     content.vb: Public Sub New(matrix As Double(,))
-  overload: Ampere.MathUtils.Matrix.#ctor*
+  overload: Ampere.AmpMath.Matrix.#ctor*
   nameWithType.vb: Matrix.Matrix(Double(,))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Ampere.MathUtils.Matrix.Matrix(System.Double(,))
+  fullName.vb: Ampere.AmpMath.Matrix.Matrix(System.Double(,))
   name.vb: Matrix(Double(,))
-- uid: Ampere.MathUtils.Matrix.Item(System.Int32,System.Int32)
-  commentId: P:Ampere.MathUtils.Matrix.Item(System.Int32,System.Int32)
+- uid: Ampere.AmpMath.Matrix.Item(System.Int32,System.Int32)
+  commentId: P:Ampere.AmpMath.Matrix.Item(System.Int32,System.Int32)
   id: Item(System.Int32,System.Int32)
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Item[Int32, Int32]
   nameWithType: Matrix.Item[Int32, Int32]
-  fullName: Ampere.MathUtils.Matrix.Item[System.Int32, System.Int32]
+  fullName: Ampere.AmpMath.Matrix.Item[System.Int32, System.Int32]
   type: Property
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: this[]
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 58
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 59
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nThe indexer to add values for each row and column.\n"
   example: []
   syntax:
@@ -353,7 +353,7 @@ items:
       type: System.Double
       description: ''
     content.vb: Public Property Item(row As Integer, col As Integer) As Double
-  overload: Ampere.MathUtils.Matrix.Item*
+  overload: Ampere.AmpMath.Matrix.Item*
   implements:
   - Ampere.Base.IIndexableDouble{System.Int32,System.Double}.Item(System.Int32,System.Int32)
   nameWithType.vb: Matrix.Item(Int32, Int32)
@@ -363,152 +363,152 @@ items:
   - set
   modifiers.vb:
   - Public
-  fullName.vb: Ampere.MathUtils.Matrix.Item(System.Int32, System.Int32)
+  fullName.vb: Ampere.AmpMath.Matrix.Item(System.Int32, System.Int32)
   name.vb: Item(Int32, Int32)
-- uid: Ampere.MathUtils.Matrix.Transpose
-  commentId: M:Ampere.MathUtils.Matrix.Transpose
+- uid: Ampere.AmpMath.Matrix.Transpose
+  commentId: M:Ampere.AmpMath.Matrix.Transpose
   id: Transpose
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Transpose()
   nameWithType: Matrix.Transpose()
-  fullName: Ampere.MathUtils.Matrix.Transpose()
+  fullName: Ampere.AmpMath.Matrix.Transpose()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Transpose
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 65
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 66
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nRepresents the minimum requirements to create a Matrix.\n"
   example: []
   syntax:
     content: public Matrix Transpose()
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: A new Matrix containing the transposed version of the original
     content.vb: Public Function Transpose As Matrix
-  overload: Ampere.MathUtils.Matrix.Transpose*
+  overload: Ampere.AmpMath.Matrix.Transpose*
   implements:
-  - Ampere.MathUtils.IMatrixer.Transpose
+  - Ampere.AmpMath.IMatrixer.Transpose
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.IMatrixer)
-  commentId: M:Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.IMatrixer)
-  id: EqualDimension(Ampere.MathUtils.IMatrixer)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.EqualDimension(Ampere.AmpMath.IMatrixer)
+  commentId: M:Ampere.AmpMath.Matrix.EqualDimension(Ampere.AmpMath.IMatrixer)
+  id: EqualDimension(Ampere.AmpMath.IMatrixer)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: EqualDimension(IMatrixer)
   nameWithType: Matrix.EqualDimension(IMatrixer)
-  fullName: Ampere.MathUtils.Matrix.EqualDimension(Ampere.MathUtils.IMatrixer)
+  fullName: Ampere.AmpMath.Matrix.EqualDimension(Ampere.AmpMath.IMatrixer)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EqualDimension
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 86
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 87
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
-  summary: "\nReturns whether two <xref href=\"Ampere.MathUtils.Matrix\" data-throw-if-not-resolved=\"false\"></xref> instances are of the same dimension.\nSame dimension means that the rows and the columns of both instances are the same. This\noverload is an instance method of the Matrix class.\n"
+  namespace: Ampere.AmpMath
+  summary: "\nReturns whether two <xref href=\"Ampere.AmpMath.Matrix\" data-throw-if-not-resolved=\"false\"></xref> instances are of the same dimension.\nSame dimension means that the rows and the columns of both instances are the same. This\noverload is an instance method of the Matrix class.\n"
   example: []
   syntax:
     content: public bool EqualDimension(IMatrixer otherMatrix)
     parameters:
     - id: otherMatrix
-      type: Ampere.MathUtils.IMatrixer
+      type: Ampere.AmpMath.IMatrixer
       description: ''
     return:
       type: System.Boolean
       description: ''
     content.vb: Public Function EqualDimension(otherMatrix As IMatrixer) As Boolean
-  overload: Ampere.MathUtils.Matrix.EqualDimension*
+  overload: Ampere.AmpMath.Matrix.EqualDimension*
   implements:
-  - Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
+  - Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,System.Double)
-  id: op_Addition(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Addition(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.op_Addition(Ampere.AmpMath.Matrix,System.Double)
+  id: op_Addition(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Addition(Matrix, Double)
   nameWithType: Matrix.Addition(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Addition(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Addition(Ampere.AmpMath.Matrix, System.Double)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Addition
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 128
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 129
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to add a matrix instance with a scalar.\n"
   example: []
   syntax:
     content: public static Matrix operator +(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator +(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Addition*
+  overload: Ampere.AmpMath.Matrix.op_Addition*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Addition(System.Double,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Addition(System.Double,Ampere.MathUtils.Matrix)
-  id: op_Addition(System.Double,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Addition(System.Double,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Addition(System.Double,Ampere.AmpMath.Matrix)
+  id: op_Addition(System.Double,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Addition(Double, Matrix)
   nameWithType: Matrix.Addition(Double, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Addition(System.Double, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Addition(System.Double, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Addition
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 136
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 137
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to add a matrix instance with a scalar.\n"
   example: []
   syntax:
@@ -518,85 +518,85 @@ items:
       type: System.Double
       description: The scalar value
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator +(scalar As Double, m As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Addition*
+  overload: Ampere.AmpMath.Matrix.op_Addition*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,System.Double)
-  id: op_Subtraction(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Subtraction(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.op_Subtraction(Ampere.AmpMath.Matrix,System.Double)
+  id: op_Subtraction(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Subtraction(Matrix, Double)
   nameWithType: Matrix.Subtraction(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Subtraction(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Subtraction(Ampere.AmpMath.Matrix, System.Double)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Subtraction
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 144
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 145
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to subtract a matrix instance with a scalar.\n"
   example: []
   syntax:
     content: public static Matrix operator -(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator -(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Subtraction*
+  overload: Ampere.AmpMath.Matrix.op_Subtraction*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Subtraction(System.Double,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Subtraction(System.Double,Ampere.MathUtils.Matrix)
-  id: op_Subtraction(System.Double,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Subtraction(System.Double,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Subtraction(System.Double,Ampere.AmpMath.Matrix)
+  id: op_Subtraction(System.Double,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Subtraction(Double, Matrix)
   nameWithType: Matrix.Subtraction(Double, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Subtraction(System.Double, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Subtraction(System.Double, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Subtraction
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 152
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 153
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to subtract a matrix instance with a scalar.\n"
   example: []
   syntax:
@@ -606,85 +606,85 @@ items:
       type: System.Double
       description: The scalar value
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator -(scalar As Double, m As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Subtraction*
+  overload: Ampere.AmpMath.Matrix.op_Subtraction*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,System.Double)
-  id: op_Multiply(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Multiply(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.op_Multiply(Ampere.AmpMath.Matrix,System.Double)
+  id: op_Multiply(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Multiply(Matrix, Double)
   nameWithType: Matrix.Multiply(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Multiply(Ampere.AmpMath.Matrix, System.Double)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Multiply
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 160
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 161
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to multiply a matrix instance with a scalar.\n"
   example: []
   syntax:
     content: public static Matrix operator *(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator *(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Multiply*
+  overload: Ampere.AmpMath.Matrix.op_Multiply*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Multiply(System.Double,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Multiply(System.Double,Ampere.MathUtils.Matrix)
-  id: op_Multiply(System.Double,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Multiply(System.Double,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Multiply(System.Double,Ampere.AmpMath.Matrix)
+  id: op_Multiply(System.Double,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Multiply(Double, Matrix)
   nameWithType: Matrix.Multiply(Double, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Multiply(System.Double, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Multiply(System.Double, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Multiply
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 168
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 169
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to multiply a matrix instance with a scalar.\n"
   example: []
   syntax:
@@ -694,85 +694,85 @@ items:
       type: System.Double
       description: The scalar value
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator *(scalar As Double, m As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Multiply*
+  overload: Ampere.AmpMath.Matrix.op_Multiply*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Division(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.op_Division(Ampere.MathUtils.Matrix,System.Double)
-  id: op_Division(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Division(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.op_Division(Ampere.AmpMath.Matrix,System.Double)
+  id: op_Division(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Division(Matrix, Double)
   nameWithType: Matrix.Division(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Division(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Division(Ampere.AmpMath.Matrix, System.Double)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Division
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 177
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 178
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception\nif the matrix contains a value of 0.\n"
   example: []
   syntax:
     content: public static Matrix operator /(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator /(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Division*
+  overload: Ampere.AmpMath.Matrix.op_Division*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Division(System.Double,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Division(System.Double,Ampere.MathUtils.Matrix)
-  id: op_Division(System.Double,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Division(System.Double,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Division(System.Double,Ampere.AmpMath.Matrix)
+  id: op_Division(System.Double,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Division(Double, Matrix)
   nameWithType: Matrix.Division(Double, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Division(System.Double, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Division(System.Double, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Division
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 186
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 187
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception\nif the matrix contains a value of 0.\n"
   example: []
   syntax:
@@ -782,85 +782,85 @@ items:
       type: System.Double
       description: The scalar value
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator /(scalar As Double, m As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Division*
+  overload: Ampere.AmpMath.Matrix.op_Division*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Modulus(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.op_Modulus(Ampere.MathUtils.Matrix,System.Double)
-  id: op_Modulus(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Modulus(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.op_Modulus(Ampere.AmpMath.Matrix,System.Double)
+  id: op_Modulus(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Modulus(Matrix, Double)
   nameWithType: Matrix.Modulus(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Modulus(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Modulus(Ampere.AmpMath.Matrix, System.Double)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Modulus
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 194
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 195
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to mod a matrix instance with a scalar.\n"
   example: []
   syntax:
     content: public static Matrix operator %(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator Mod(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Modulus*
+  overload: Ampere.AmpMath.Matrix.op_Modulus*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Modulus(System.Double,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Modulus(System.Double,Ampere.MathUtils.Matrix)
-  id: op_Modulus(System.Double,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Modulus(System.Double,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Modulus(System.Double,Ampere.AmpMath.Matrix)
+  id: op_Modulus(System.Double,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Modulus(Double, Matrix)
   nameWithType: Matrix.Modulus(Double, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Modulus(System.Double, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Modulus(System.Double, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Modulus
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 202
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 203
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to mod a matrix instance with a scalar.\n"
   example: []
   syntax:
@@ -870,696 +870,696 @@ items:
       type: System.Double
       description: The scalar value
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Operator Mod(scalar As Double, m As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Modulus*
+  overload: Ampere.AmpMath.Matrix.op_Modulus*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_LogicalNot(Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_LogicalNot(Ampere.MathUtils.Matrix)
-  id: op_LogicalNot(Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_LogicalNot(Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_LogicalNot(Ampere.AmpMath.Matrix)
+  id: op_LogicalNot(Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: LogicalNot(Matrix)
   nameWithType: Matrix.LogicalNot(Matrix)
-  fullName: Ampere.MathUtils.Matrix.LogicalNot(Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.LogicalNot(Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_LogicalNot
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 209
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 210
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to negate a matrix. Every value in the Matrix provided will be negated.\n"
   example: []
   syntax:
     content: public static Matrix operator !(Matrix m)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: VB cannot support this operator.
-  overload: Ampere.MathUtils.Matrix.op_LogicalNot*
+  overload: Ampere.AmpMath.Matrix.op_LogicalNot*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Addition(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  id: op_Addition(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Addition(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Addition(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  id: op_Addition(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Addition(Matrix, Matrix)
   nameWithType: Matrix.Addition(Matrix, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Addition(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Addition(Ampere.AmpMath.Matrix, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Addition
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 217
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 218
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to add two Matrix instances.\n"
   example: []
   syntax:
     content: public static Matrix operator +(Matrix one, Matrix two)
     parameters:
     - id: one
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The first Matrix instance
     - id: two
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The second Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: A new Matrix instance containing the added values
     content.vb: Public Shared Operator +(one As Matrix, two As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Addition*
+  overload: Ampere.AmpMath.Matrix.op_Addition*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Subtraction(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  id: op_Subtraction(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Subtraction(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Subtraction(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  id: op_Subtraction(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Subtraction(Matrix, Matrix)
   nameWithType: Matrix.Subtraction(Matrix, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Subtraction(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Subtraction(Ampere.AmpMath.Matrix, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Subtraction
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 231
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 232
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to subtract two Matrix instances.\n"
   example: []
   syntax:
     content: public static Matrix operator -(Matrix one, Matrix two)
     parameters:
     - id: one
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The first Matrix instance
     - id: two
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The second Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: A new Matrix instance containing the added values
     content.vb: Public Shared Operator -(one As Matrix, two As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Subtraction*
+  overload: Ampere.AmpMath.Matrix.op_Subtraction*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Multiply(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  id: op_Multiply(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Multiply(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Multiply(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  id: op_Multiply(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Multiply(Matrix, Matrix)
   nameWithType: Matrix.Multiply(Matrix, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Multiply(Ampere.AmpMath.Matrix, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Multiply
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 245
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 246
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to compute the dot product of two Matrix instances.\n"
   example: []
   syntax:
     content: public static Matrix operator *(Matrix one, Matrix two)
     parameters:
     - id: one
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The first Matrix instance
     - id: two
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The second Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: A new Matrix instance containing dot product
     content.vb: Public Shared Operator *(one As Matrix, two As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.op_Multiply*
+  overload: Ampere.AmpMath.Matrix.op_Multiply*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Equality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Equality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  id: op_Equality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Equality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Equality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  id: op_Equality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Equality(Matrix, Matrix)
   nameWithType: Matrix.Equality(Matrix, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Equality(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Equality(Ampere.AmpMath.Matrix, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Equality
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 278
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 279
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to compare two Matrix instances for equality. Equality is defined by structure and values, meaning that\nboth matrices must have an equal dimension and every value in both matrices must be equal.\n"
   example: []
   syntax:
     content: public static bool operator ==(Matrix one, Matrix two)
     parameters:
     - id: one
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The first Matrix instance
     - id: two
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The second Matrix instance
     return:
       type: System.Boolean
       description: A bool representing whether the two Matrix instances are equal
     content.vb: Public Shared Operator =(one As Matrix, two As Matrix) As Boolean
-  overload: Ampere.MathUtils.Matrix.op_Equality*
+  overload: Ampere.AmpMath.Matrix.op_Equality*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.op_Inequality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.op_Inequality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  id: op_Inequality(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.op_Inequality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.op_Inequality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  id: op_Inequality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Inequality(Matrix, Matrix)
   nameWithType: Matrix.Inequality(Matrix, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Inequality(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Inequality(Ampere.AmpMath.Matrix, Ampere.AmpMath.Matrix)
   type: Operator
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Inequality
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 305
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 306
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nAn operator method to compare two Matrix instances for equality. Equality is defined by structure and values, meaning that\nboth matrices must have an equal dimension and every value in both matrices must be equal.\n"
   example: []
   syntax:
     content: public static bool operator !=(Matrix one, Matrix two)
     parameters:
     - id: one
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The first Matrix instance
     - id: two
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The second Matrix instance
     return:
       type: System.Boolean
       description: A new Matrix instance containing the added values
     content.vb: Public Shared Operator <>(one As Matrix, two As Matrix) As Boolean
-  overload: Ampere.MathUtils.Matrix.op_Inequality*
+  overload: Ampere.AmpMath.Matrix.op_Inequality*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,System.Double)
-  id: Add(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix,System.Double)
+  id: Add(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Add(Matrix, Double)
   nameWithType: Matrix.Add(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix, System.Double)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Add
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 331
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 332
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper for the operator method to add a matrix instance with a scalar.\n"
   example: []
   syntax:
     content: public static Matrix Add(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Function Add(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.Add*
+  overload: Ampere.AmpMath.Matrix.Add*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  id: Add(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  id: Add(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Add(Matrix, Matrix)
   nameWithType: Matrix.Add(Matrix, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Add(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix, Ampere.AmpMath.Matrix)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Add
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 340
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 341
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper for the operator method to add two Matrix instances.\n"
   example: []
   syntax:
     content: public static Matrix Add(Matrix one, Matrix two)
     parameters:
     - id: one
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The first Matrix instance
     - id: two
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The second Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: A new Matrix instance containing the added values
     content.vb: Public Shared Function Add(one As Matrix, two As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.Add*
+  overload: Ampere.AmpMath.Matrix.Add*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,System.Double)
-  id: Subtract(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix,System.Double)
+  id: Subtract(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Subtract(Matrix, Double)
   nameWithType: Matrix.Subtract(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix, System.Double)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Subtract
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 349
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 350
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper for the operator method to subtract a matrix instance with a scalar.\n"
   example: []
   syntax:
     content: public static Matrix Subtract(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Function Subtract(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.Subtract*
+  overload: Ampere.AmpMath.Matrix.Subtract*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  id: Subtract(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  id: Subtract(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Subtract(Matrix, Matrix)
   nameWithType: Matrix.Subtract(Matrix, Matrix)
-  fullName: Ampere.MathUtils.Matrix.Subtract(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix, Ampere.AmpMath.Matrix)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Subtract
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 358
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 359
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper for the operator method to subtract two Matrix instances.\n"
   example: []
   syntax:
     content: public static Matrix Subtract(Matrix one, Matrix two)
     parameters:
     - id: one
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The first Matrix instance
     - id: two
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The second Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: A new Matrix instance containing the added values
     content.vb: Public Shared Function Subtract(one As Matrix, two As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.Subtract*
+  overload: Ampere.AmpMath.Matrix.Subtract*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix,System.Double)
-  id: Multiply(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.Multiply(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.Multiply(Ampere.AmpMath.Matrix,System.Double)
+  id: Multiply(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Multiply(Matrix, Double)
   nameWithType: Matrix.Multiply(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Multiply(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Multiply(Ampere.AmpMath.Matrix, System.Double)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Multiply
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 367
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 368
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper for the operator method to multiply a matrix instance with a scalar.\n"
   example: []
   syntax:
     content: public static Matrix Multiply(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Function Multiply(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.Multiply*
+  overload: Ampere.AmpMath.Matrix.Multiply*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  id: DotProduct(Ampere.MathUtils.Matrix,Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.DotProduct(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.DotProduct(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  id: DotProduct(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: DotProduct(Matrix, Matrix)
   nameWithType: Matrix.DotProduct(Matrix, Matrix)
-  fullName: Ampere.MathUtils.Matrix.DotProduct(Ampere.MathUtils.Matrix, Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.DotProduct(Ampere.AmpMath.Matrix, Ampere.AmpMath.Matrix)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: DotProduct
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 376
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 377
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper for the operator method to compute the dot product of two Matrix instances.\n"
   example: []
   syntax:
     content: public static Matrix DotProduct(Matrix one, Matrix two)
     parameters:
     - id: one
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The first Matrix instance
     - id: two
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The second Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: A new Matrix instance containing dot product
     content.vb: Public Shared Function DotProduct(one As Matrix, two As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.DotProduct*
+  overload: Ampere.AmpMath.Matrix.DotProduct*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix,System.Double)
-  id: Divide(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.Divide(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.Divide(Ampere.AmpMath.Matrix,System.Double)
+  id: Divide(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Divide(Matrix, Double)
   nameWithType: Matrix.Divide(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Divide(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Divide(Ampere.AmpMath.Matrix, System.Double)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Divide
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 386
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 387
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper for the operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception\nif the matrix contains a value of 0.\n"
   example: []
   syntax:
     content: public static Matrix Divide(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Function Divide(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.Divide*
+  overload: Ampere.AmpMath.Matrix.Divide*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.Mod(Ampere.MathUtils.Matrix,System.Double)
-  commentId: M:Ampere.MathUtils.Matrix.Mod(Ampere.MathUtils.Matrix,System.Double)
-  id: Mod(Ampere.MathUtils.Matrix,System.Double)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.Mod(Ampere.AmpMath.Matrix,System.Double)
+  commentId: M:Ampere.AmpMath.Matrix.Mod(Ampere.AmpMath.Matrix,System.Double)
+  id: Mod(Ampere.AmpMath.Matrix,System.Double)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Mod(Matrix, Double)
   nameWithType: Matrix.Mod(Matrix, Double)
-  fullName: Ampere.MathUtils.Matrix.Mod(Ampere.MathUtils.Matrix, System.Double)
+  fullName: Ampere.AmpMath.Matrix.Mod(Ampere.AmpMath.Matrix, System.Double)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Mod
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 395
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 396
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper for the operator method to mod a matrix instance with a scalar.\n"
   example: []
   syntax:
     content: public static Matrix Mod(Matrix m, double scalar)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     - id: scalar
       type: System.Double
       description: The scalar value
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Function Mod(m As Matrix, scalar As Double) As Matrix
-  overload: Ampere.MathUtils.Matrix.Mod*
+  overload: Ampere.AmpMath.Matrix.Mod*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.Negate(Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.Negate(Ampere.MathUtils.Matrix)
-  id: Negate(Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.Negate(Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.Negate(Ampere.AmpMath.Matrix)
+  id: Negate(Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Negate(Matrix)
   nameWithType: Matrix.Negate(Matrix)
-  fullName: Ampere.MathUtils.Matrix.Negate(Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Negate(Ampere.AmpMath.Matrix)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Negate
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 403
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 404
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper for the operator method to negate a matrix. Every value in the Matrix provided will be negated.\n"
   example: []
   syntax:
     content: public static Matrix Negate(Matrix m)
     parameters:
     - id: m
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance
     return:
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix after the scalar has been applied
     content.vb: Public Shared Function Negate(m As Matrix) As Matrix
-  overload: Ampere.MathUtils.Matrix.Negate*
+  overload: Ampere.AmpMath.Matrix.Negate*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.MathUtils.Matrix.Equals(System.Object)
-  commentId: M:Ampere.MathUtils.Matrix.Equals(System.Object)
+- uid: Ampere.AmpMath.Matrix.Equals(System.Object)
+  commentId: M:Ampere.AmpMath.Matrix.Equals(System.Object)
   id: Equals(System.Object)
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Equals(Object)
   nameWithType: Matrix.Equals(Object)
-  fullName: Ampere.MathUtils.Matrix.Equals(System.Object)
+  fullName: Ampere.AmpMath.Matrix.Equals(System.Object)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Equals
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 412
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 413
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
-  summary: "\nCompares an object to a Matrix instance. This will check for type first then calls the\n<xref href=\"Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)\" data-throw-if-not-resolved=\"false\"></xref> method.\n"
+  namespace: Ampere.AmpMath
+  summary: "\nCompares an object to a Matrix instance. This will check for type first then calls the\n<xref href=\"Ampere.AmpMath.Matrix.Equals(Ampere.AmpMath.Matrix)\" data-throw-if-not-resolved=\"false\"></xref> method.\n"
   example: []
   syntax:
     content: public override bool Equals(object obj)
@@ -1572,74 +1572,74 @@ items:
       description: A bool representing whether the object is equal
     content.vb: Public Overrides Function Equals(obj As Object) As Boolean
   overridden: System.Object.Equals(System.Object)
-  overload: Ampere.MathUtils.Matrix.Equals*
+  overload: Ampere.AmpMath.Matrix.Equals*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)
-  id: Equals(Ampere.MathUtils.Matrix)
-  parent: Ampere.MathUtils.Matrix
+- uid: Ampere.AmpMath.Matrix.Equals(Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.Equals(Ampere.AmpMath.Matrix)
+  id: Equals(Ampere.AmpMath.Matrix)
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: Equals(Matrix)
   nameWithType: Matrix.Equals(Matrix)
-  fullName: Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Equals(Ampere.AmpMath.Matrix)
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Equals
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 424
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 425
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nA wrapper method for operator== method.\n"
   example: []
   syntax:
     content: public bool Equals(Matrix other)
     parameters:
     - id: other
-      type: Ampere.MathUtils.Matrix
+      type: Ampere.AmpMath.Matrix
       description: The Matrix instance to check for equality
     return:
       type: System.Boolean
       description: A bool representing whether the Matrix instance is equal
     content.vb: Public Function Equals(other As Matrix) As Boolean
-  overload: Ampere.MathUtils.Matrix.Equals*
+  overload: Ampere.AmpMath.Matrix.Equals*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Ampere.MathUtils.Matrix.GetHashCode
-  commentId: M:Ampere.MathUtils.Matrix.GetHashCode
+- uid: Ampere.AmpMath.Matrix.GetHashCode
+  commentId: M:Ampere.AmpMath.Matrix.GetHashCode
   id: GetHashCode
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: GetHashCode()
   nameWithType: Matrix.GetHashCode()
-  fullName: Ampere.MathUtils.Matrix.GetHashCode()
+  fullName: Ampere.AmpMath.Matrix.GetHashCode()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetHashCode
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 430
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 431
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   example: []
   syntax:
     content: public override int GetHashCode()
@@ -1647,35 +1647,35 @@ items:
       type: System.Int32
     content.vb: Public Overrides Function GetHashCode As Integer
   overridden: System.Object.GetHashCode
-  overload: Ampere.MathUtils.Matrix.GetHashCode*
+  overload: Ampere.AmpMath.Matrix.GetHashCode*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Ampere.MathUtils.Matrix.IsRowVector
-  commentId: M:Ampere.MathUtils.Matrix.IsRowVector
+- uid: Ampere.AmpMath.Matrix.IsRowVector
+  commentId: M:Ampere.AmpMath.Matrix.IsRowVector
   id: IsRowVector
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: IsRowVector()
   nameWithType: Matrix.IsRowVector()
-  fullName: Ampere.MathUtils.Matrix.IsRowVector()
+  fullName: Ampere.AmpMath.Matrix.IsRowVector()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsRowVector
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 436
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 437
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nRepresents the minimum requirements to create a Matrix.\n"
   example: []
   syntax:
@@ -1684,35 +1684,35 @@ items:
       type: System.Boolean
       description: A bool specifying whether the number of Rows equals 1
     content.vb: Public Function IsRowVector As Boolean
-  overload: Ampere.MathUtils.Matrix.IsRowVector*
+  overload: Ampere.AmpMath.Matrix.IsRowVector*
   implements:
-  - Ampere.MathUtils.IMatrixer.IsRowVector
+  - Ampere.AmpMath.IMatrixer.IsRowVector
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Ampere.MathUtils.Matrix.IsColumnVector
-  commentId: M:Ampere.MathUtils.Matrix.IsColumnVector
+- uid: Ampere.AmpMath.Matrix.IsColumnVector
+  commentId: M:Ampere.AmpMath.Matrix.IsColumnVector
   id: IsColumnVector
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: IsColumnVector()
   nameWithType: Matrix.IsColumnVector()
-  fullName: Ampere.MathUtils.Matrix.IsColumnVector()
+  fullName: Ampere.AmpMath.Matrix.IsColumnVector()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsColumnVector
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 439
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 440
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nRepresents the minimum requirements to create a Matrix.\n"
   example: []
   syntax:
@@ -1721,35 +1721,35 @@ items:
       type: System.Boolean
       description: A bool specifying whether the number of Columns equals 1
     content.vb: Public Function IsColumnVector As Boolean
-  overload: Ampere.MathUtils.Matrix.IsColumnVector*
+  overload: Ampere.AmpMath.Matrix.IsColumnVector*
   implements:
-  - Ampere.MathUtils.IMatrixer.IsColumnVector
+  - Ampere.AmpMath.IMatrixer.IsColumnVector
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Ampere.MathUtils.Matrix.IsSquareVector
-  commentId: M:Ampere.MathUtils.Matrix.IsSquareVector
+- uid: Ampere.AmpMath.Matrix.IsSquareVector
+  commentId: M:Ampere.AmpMath.Matrix.IsSquareVector
   id: IsSquareVector
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: IsSquareVector()
   nameWithType: Matrix.IsSquareVector()
-  fullName: Ampere.MathUtils.Matrix.IsSquareVector()
+  fullName: Ampere.AmpMath.Matrix.IsSquareVector()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsSquareVector
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 442
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 443
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nRepresents the minimum requirements to create a Matrix.\n"
   example: []
   syntax:
@@ -1758,35 +1758,35 @@ items:
       type: System.Boolean
       description: A bool specifying whether the number of Rows equals the number of columns
     content.vb: Public Function IsSquareVector As Boolean
-  overload: Ampere.MathUtils.Matrix.IsSquareVector*
+  overload: Ampere.AmpMath.Matrix.IsSquareVector*
   implements:
-  - Ampere.MathUtils.IMatrixer.IsSquareVector
+  - Ampere.AmpMath.IMatrixer.IsSquareVector
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Ampere.MathUtils.Matrix.GetEnumerator
-  commentId: M:Ampere.MathUtils.Matrix.GetEnumerator
+- uid: Ampere.AmpMath.Matrix.GetEnumerator
+  commentId: M:Ampere.AmpMath.Matrix.GetEnumerator
   id: GetEnumerator
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: GetEnumerator()
   nameWithType: Matrix.GetEnumerator()
-  fullName: Ampere.MathUtils.Matrix.GetEnumerator()
+  fullName: Ampere.AmpMath.Matrix.GetEnumerator()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetEnumerator
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 449
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 450
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nReturns an enumerator this Matrix containing every value. The iteration occurs through each row\nin the matrix.\n"
   example: []
   syntax:
@@ -1795,37 +1795,37 @@ items:
       type: System.Collections.Generic.IEnumerator{System.Double}
       description: An <xref href="System.Collections.Generic.IEnumerator%601" data-throw-if-not-resolved="false"></xref> instance for the Matrix
     content.vb: Public Function GetEnumerator As IEnumerator(Of Double)
-  overload: Ampere.MathUtils.Matrix.GetEnumerator*
+  overload: Ampere.AmpMath.Matrix.GetEnumerator*
   implements:
   - System.Collections.Generic.IEnumerable{System.Double}.GetEnumerator
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator
-  commentId: M:Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator
+- uid: Ampere.AmpMath.Matrix.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Ampere.AmpMath.Matrix.System#Collections#IEnumerable#GetEnumerator
   id: System#Collections#IEnumerable#GetEnumerator
   isEii: true
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: IEnumerable.GetEnumerator()
   nameWithType: Matrix.IEnumerable.GetEnumerator()
-  fullName: Ampere.MathUtils.Matrix.System.Collections.IEnumerable.GetEnumerator()
+  fullName: Ampere.AmpMath.Matrix.System.Collections.IEnumerable.GetEnumerator()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: System.Collections.IEnumerable.GetEnumerator
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 465
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 466
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
-  summary: "\nReturns the non-generic Enumerator for the Matrix. This returns the generic <xref href=\"Ampere.MathUtils.Matrix.GetEnumerator\" data-throw-if-not-resolved=\"false\"></xref> method\nunder the hood.\n"
+  namespace: Ampere.AmpMath
+  summary: "\nReturns the non-generic Enumerator for the Matrix. This returns the generic <xref href=\"Ampere.AmpMath.Matrix.GetEnumerator\" data-throw-if-not-resolved=\"false\"></xref> method\nunder the hood.\n"
   example: []
   syntax:
     content: IEnumerator IEnumerable.GetEnumerator()
@@ -1833,33 +1833,33 @@ items:
       type: System.Collections.IEnumerator
       description: An <xref href="System.Collections.IEnumerator" data-throw-if-not-resolved="false"></xref> instance for the Matrix
     content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
-  overload: Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator*
+  overload: Ampere.AmpMath.Matrix.System#Collections#IEnumerable#GetEnumerator*
   implements:
   - System.Collections.IEnumerable.GetEnumerator
   nameWithType.vb: Matrix.System.Collections.IEnumerable.GetEnumerator()
   name.vb: System.Collections.IEnumerable.GetEnumerator()
-- uid: Ampere.MathUtils.Matrix.ToString
-  commentId: M:Ampere.MathUtils.Matrix.ToString
+- uid: Ampere.AmpMath.Matrix.ToString
+  commentId: M:Ampere.AmpMath.Matrix.ToString
   id: ToString
-  parent: Ampere.MathUtils.Matrix
+  parent: Ampere.AmpMath.Matrix
   langs:
   - csharp
   - vb
   name: ToString()
   nameWithType: Matrix.ToString()
-  fullName: Ampere.MathUtils.Matrix.ToString()
+  fullName: Ampere.AmpMath.Matrix.ToString()
   type: Method
   source:
     remote:
-      path: Ampere/MathUtils/Matrix.cs
+      path: Ampere/AmpMath/Matrix.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
-    path: ../Ampere/MathUtils/Matrix.cs
-    startLine: 471
+    path: ../Ampere/AmpMath/Matrix.cs
+    startLine: 472
   assemblies:
   - Ampere
-  namespace: Ampere.MathUtils
+  namespace: Ampere.AmpMath
   summary: "\nRepresents the minimum requirements to create a Matrix.\n"
   example: []
   syntax:
@@ -1869,9 +1869,9 @@ items:
       description: A string representation of the IMatrixer
     content.vb: Public Overrides Function ToString As String
   overridden: System.Object.ToString
-  overload: Ampere.MathUtils.Matrix.ToString*
+  overload: Ampere.AmpMath.Matrix.ToString*
   implements:
-  - Ampere.MathUtils.IMatrixer.ToString
+  - Ampere.AmpMath.IMatrixer.ToString
   modifiers.csharp:
   - public
   - override
@@ -1879,11 +1879,11 @@ items:
   - Public
   - Overrides
 references:
-- uid: Ampere.MathUtils
-  commentId: N:Ampere.MathUtils
-  name: Ampere.MathUtils
-  nameWithType: Ampere.MathUtils
-  fullName: Ampere.MathUtils
+- uid: Ampere.AmpMath
+  commentId: N:Ampere.AmpMath
+  name: Ampere.AmpMath
+  nameWithType: Ampere.AmpMath
+  fullName: Ampere.AmpMath
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1891,12 +1891,12 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: Ampere.MathUtils.IMatrixer
-  commentId: T:Ampere.MathUtils.IMatrixer
-  parent: Ampere.MathUtils
+- uid: Ampere.AmpMath.IMatrixer
+  commentId: T:Ampere.AmpMath.IMatrixer
+  parent: Ampere.AmpMath
   name: IMatrixer
   nameWithType: IMatrixer
-  fullName: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.IMatrixer
 - uid: System.Collections.Generic.IEnumerable{System.Double}
   commentId: T:System.Collections.Generic.IEnumerable{System.Double}
   parent: System.Collections.Generic
@@ -2182,21 +2182,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Double}[])
+  commentId: M:Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
   name: InnerContains<Double>(Boolean, IEnumerable<Double>[])
   nameWithType: EnumerableUtils.InnerContains<Double>(Boolean, IEnumerable<Double>[])
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<System.Double>(System.Boolean, System.Collections.Generic.IEnumerable<System.Double>[])
+  fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<System.Double>(System.Boolean, System.Collections.Generic.IEnumerable<System.Double>[])
   nameWithType.vb: EnumerableUtils.InnerContains(Of Double)(Boolean, IEnumerable(Of Double)())
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of System.Double)(System.Boolean, System.Collections.Generic.IEnumerable(Of System.Double)())
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.InnerContains(Of System.Double)(System.Boolean, System.Collections.Generic.IEnumerable(Of System.Double)())
   name.vb: InnerContains(Of Double)(Boolean, IEnumerable(Of Double)())
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains<Double>
     nameWithType: EnumerableUtils.InnerContains<Double>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<System.Double>
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<System.Double>
   - name: (
     nameWithType: (
     fullName: (
@@ -2231,10 +2231,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains(Of Double)
     nameWithType: EnumerableUtils.InnerContains(Of Double)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of System.Double)
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains(Of System.Double)
   - name: (
     nameWithType: (
     fullName: (
@@ -2268,21 +2268,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
+  commentId: M:Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   name: IsNullOrEmpty<Double>()
   nameWithType: EnumerableUtils.IsNullOrEmpty<Double>()
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<System.Double>()
+  fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<System.Double>()
   nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of Double)()
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of System.Double)()
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of System.Double)()
   name.vb: IsNullOrEmpty(Of Double)()
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
     name: IsNullOrEmpty<Double>
     nameWithType: EnumerableUtils.IsNullOrEmpty<Double>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<System.Double>
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<System.Double>
   - name: (
     nameWithType: (
     fullName: (
@@ -2290,31 +2290,31 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
     name: IsNullOrEmpty(Of Double)
     nameWithType: EnumerableUtils.IsNullOrEmpty(Of Double)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of System.Double)
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of System.Double)
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.Shuffle``1
+  commentId: M:Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   name: Shuffle<Double>()
   nameWithType: EnumerableUtils.Shuffle<Double>()
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<System.Double>()
+  fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<System.Double>()
   nameWithType.vb: EnumerableUtils.Shuffle(Of Double)()
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of System.Double)()
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.Shuffle(Of System.Double)()
   name.vb: Shuffle(Of Double)()
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1
     name: Shuffle<Double>
     nameWithType: EnumerableUtils.Shuffle<Double>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<System.Double>
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<System.Double>
   - name: (
     nameWithType: (
     fullName: (
@@ -2322,31 +2322,31 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1
     name: Shuffle(Of Double)
     nameWithType: EnumerableUtils.Shuffle(Of Double)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of System.Double)
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle(Of System.Double)
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+- uid: System.Collections.Generic.IEnumerable{System.Double}.Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  commentId: M:Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
   name: ToString<Double>(String, Boolean)
   nameWithType: EnumerableUtils.ToString<Double>(String, Boolean)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<System.Double>(System.String, System.Boolean)
+  fullName: Ampere.Enumerable.EnumerableUtils.ToString<System.Double>(System.String, System.Boolean)
   nameWithType.vb: EnumerableUtils.ToString(Of Double)(String, Boolean)
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of System.Double)(System.String, System.Boolean)
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.ToString(Of System.Double)(System.String, System.Boolean)
   name.vb: ToString(Of Double)(String, Boolean)
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
     name: ToString<Double>
     nameWithType: EnumerableUtils.ToString<Double>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<System.Double>
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString<System.Double>
   - name: (
     nameWithType: (
     fullName: (
@@ -2367,10 +2367,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
     name: ToString(Of Double)
     nameWithType: EnumerableUtils.ToString(Of Double)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of System.Double)
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString(Of System.Double)
   - name: (
     nameWithType: (
     fullName: (
@@ -4020,20 +4020,20 @@ references:
   name: Ampere.Base
   nameWithType: Ampere.Base
   fullName: Ampere.Base
-- uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+- uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  commentId: M:Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
   isExternal: true
   name: InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
   nameWithType: EnumerableUtils.InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
+  fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
   nameWithType.vb: EnumerableUtils.InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.InnerContains(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
   name.vb: InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains<T>
     nameWithType: EnumerableUtils.InnerContains<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -4083,10 +4083,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains(Of T)
     nameWithType: EnumerableUtils.InnerContains(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -4135,26 +4135,26 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils
-  commentId: T:Ampere.EnumerableUtils.EnumerableUtils
-  parent: Ampere.EnumerableUtils
+- uid: Ampere.Enumerable.EnumerableUtils
+  commentId: T:Ampere.Enumerable.EnumerableUtils
+  parent: Ampere.Enumerable
   name: EnumerableUtils
   nameWithType: EnumerableUtils
-  fullName: Ampere.EnumerableUtils.EnumerableUtils
-- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  fullName: Ampere.Enumerable.EnumerableUtils
+- uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   isExternal: true
   name: IsNullOrEmpty<T>(IEnumerable<T>)
   nameWithType: EnumerableUtils.IsNullOrEmpty<T>(IEnumerable<T>)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
   nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of T)(IEnumerable(Of T))
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
   name.vb: IsNullOrEmpty(Of T)(IEnumerable(Of T))
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
     name: IsNullOrEmpty<T>
     nameWithType: EnumerableUtils.IsNullOrEmpty<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -4176,10 +4176,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
     name: IsNullOrEmpty(Of T)
     nameWithType: EnumerableUtils.IsNullOrEmpty(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -4200,20 +4200,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   isExternal: true
   name: Shuffle<T>(IEnumerable<T>)
   nameWithType: EnumerableUtils.Shuffle<T>(IEnumerable<T>)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
   nameWithType.vb: EnumerableUtils.Shuffle(Of T)(IEnumerable(Of T))
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
   name.vb: Shuffle(Of T)(IEnumerable(Of T))
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
     name: Shuffle<T>
     nameWithType: EnumerableUtils.Shuffle<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -4235,10 +4235,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
     name: Shuffle(Of T)
     nameWithType: EnumerableUtils.Shuffle(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -4259,20 +4259,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+- uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  commentId: M:Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
   isExternal: true
   name: ToString<T>(IEnumerable<T>, String, Boolean)
   nameWithType: EnumerableUtils.ToString<T>(IEnumerable<T>, String, Boolean)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
+  fullName: Ampere.Enumerable.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
   nameWithType.vb: EnumerableUtils.ToString(Of T)(IEnumerable(Of T), String, Boolean)
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
   name.vb: ToString(Of T)(IEnumerable(Of T), String, Boolean)
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
     name: ToString<T>
     nameWithType: EnumerableUtils.ToString<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -4310,10 +4310,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
     name: ToString(Of T)
     nameWithType: EnumerableUtils.ToString(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -6702,27 +6702,27 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils
-  commentId: N:Ampere.EnumerableUtils
-  name: Ampere.EnumerableUtils
-  nameWithType: Ampere.EnumerableUtils
-  fullName: Ampere.EnumerableUtils
+- uid: Ampere.Enumerable
+  commentId: N:Ampere.Enumerable
+  name: Ampere.Enumerable
+  nameWithType: Ampere.Enumerable
+  fullName: Ampere.Enumerable
 - uid: Ampere.Statistics
   commentId: N:Ampere.Statistics
   name: Ampere.Statistics
   nameWithType: Ampere.Statistics
   fullName: Ampere.Statistics
-- uid: Ampere.MathUtils.Matrix.Values*
-  commentId: Overload:Ampere.MathUtils.Matrix.Values
+- uid: Ampere.AmpMath.Matrix.Values*
+  commentId: Overload:Ampere.AmpMath.Matrix.Values
   name: Values
   nameWithType: Matrix.Values
-  fullName: Ampere.MathUtils.Matrix.Values
-- uid: Ampere.MathUtils.IMatrixer.Values
-  commentId: P:Ampere.MathUtils.IMatrixer.Values
-  parent: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.Matrix.Values
+- uid: Ampere.AmpMath.IMatrixer.Values
+  commentId: P:Ampere.AmpMath.IMatrixer.Values
+  parent: Ampere.AmpMath.IMatrixer
   name: Values
   nameWithType: IMatrixer.Values
-  fullName: Ampere.MathUtils.IMatrixer.Values
+  fullName: Ampere.AmpMath.IMatrixer.Values
 - uid: System.Double[,]
   isExternal: true
   name: Double[,]
@@ -6749,17 +6749,17 @@ references:
   - name: (,)
     nameWithType: (,)
     fullName: (,)
-- uid: Ampere.MathUtils.Matrix.Rows*
-  commentId: Overload:Ampere.MathUtils.Matrix.Rows
+- uid: Ampere.AmpMath.Matrix.Rows*
+  commentId: Overload:Ampere.AmpMath.Matrix.Rows
   name: Rows
   nameWithType: Matrix.Rows
-  fullName: Ampere.MathUtils.Matrix.Rows
-- uid: Ampere.MathUtils.IMatrixer.Rows
-  commentId: P:Ampere.MathUtils.IMatrixer.Rows
-  parent: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.Matrix.Rows
+- uid: Ampere.AmpMath.IMatrixer.Rows
+  commentId: P:Ampere.AmpMath.IMatrixer.Rows
+  parent: Ampere.AmpMath.IMatrixer
   name: Rows
   nameWithType: IMatrixer.Rows
-  fullName: Ampere.MathUtils.IMatrixer.Rows
+  fullName: Ampere.AmpMath.IMatrixer.Rows
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -6767,27 +6767,27 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: Ampere.MathUtils.Matrix.Cols*
-  commentId: Overload:Ampere.MathUtils.Matrix.Cols
+- uid: Ampere.AmpMath.Matrix.Cols*
+  commentId: Overload:Ampere.AmpMath.Matrix.Cols
   name: Cols
   nameWithType: Matrix.Cols
-  fullName: Ampere.MathUtils.Matrix.Cols
-- uid: Ampere.MathUtils.IMatrixer.Cols
-  commentId: P:Ampere.MathUtils.IMatrixer.Cols
-  parent: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.Matrix.Cols
+- uid: Ampere.AmpMath.IMatrixer.Cols
+  commentId: P:Ampere.AmpMath.IMatrixer.Cols
+  parent: Ampere.AmpMath.IMatrixer
   name: Cols
   nameWithType: IMatrixer.Cols
-  fullName: Ampere.MathUtils.IMatrixer.Cols
-- uid: Ampere.MathUtils.Matrix.#ctor*
-  commentId: Overload:Ampere.MathUtils.Matrix.#ctor
+  fullName: Ampere.AmpMath.IMatrixer.Cols
+- uid: Ampere.AmpMath.Matrix.#ctor*
+  commentId: Overload:Ampere.AmpMath.Matrix.#ctor
   name: Matrix
   nameWithType: Matrix.Matrix
-  fullName: Ampere.MathUtils.Matrix.Matrix
-- uid: Ampere.MathUtils.Matrix.Item*
-  commentId: Overload:Ampere.MathUtils.Matrix.Item
+  fullName: Ampere.AmpMath.Matrix.Matrix
+- uid: Ampere.AmpMath.Matrix.Item*
+  commentId: Overload:Ampere.AmpMath.Matrix.Item
   name: Item
   nameWithType: Matrix.Item
-  fullName: Ampere.MathUtils.Matrix.Item
+  fullName: Ampere.AmpMath.Matrix.Item
 - uid: Ampere.Base.IIndexableDouble{System.Int32,System.Double}.Item(System.Int32,System.Int32)
   commentId: P:Ampere.Base.IIndexableDouble{System.Int32,System.Double}.Item(System.Int32,System.Int32)
   parent: Ampere.Base.IIndexableDouble{System.Int32,System.Double}
@@ -6901,22 +6901,22 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.MathUtils.Matrix.Transpose*
-  commentId: Overload:Ampere.MathUtils.Matrix.Transpose
+- uid: Ampere.AmpMath.Matrix.Transpose*
+  commentId: Overload:Ampere.AmpMath.Matrix.Transpose
   name: Transpose
   nameWithType: Matrix.Transpose
-  fullName: Ampere.MathUtils.Matrix.Transpose
-- uid: Ampere.MathUtils.IMatrixer.Transpose
-  commentId: M:Ampere.MathUtils.IMatrixer.Transpose
-  parent: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.Matrix.Transpose
+- uid: Ampere.AmpMath.IMatrixer.Transpose
+  commentId: M:Ampere.AmpMath.IMatrixer.Transpose
+  parent: Ampere.AmpMath.IMatrixer
   name: Transpose()
   nameWithType: IMatrixer.Transpose()
-  fullName: Ampere.MathUtils.IMatrixer.Transpose()
+  fullName: Ampere.AmpMath.IMatrixer.Transpose()
   spec.csharp:
-  - uid: Ampere.MathUtils.IMatrixer.Transpose
+  - uid: Ampere.AmpMath.IMatrixer.Transpose
     name: Transpose
     nameWithType: IMatrixer.Transpose
-    fullName: Ampere.MathUtils.IMatrixer.Transpose
+    fullName: Ampere.AmpMath.IMatrixer.Transpose
   - name: (
     nameWithType: (
     fullName: (
@@ -6924,60 +6924,60 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.MathUtils.IMatrixer.Transpose
+  - uid: Ampere.AmpMath.IMatrixer.Transpose
     name: Transpose
     nameWithType: IMatrixer.Transpose
-    fullName: Ampere.MathUtils.IMatrixer.Transpose
+    fullName: Ampere.AmpMath.IMatrixer.Transpose
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.MathUtils.Matrix
-  commentId: T:Ampere.MathUtils.Matrix
-  parent: Ampere.MathUtils
+- uid: Ampere.AmpMath.Matrix
+  commentId: T:Ampere.AmpMath.Matrix
+  parent: Ampere.AmpMath
   name: Matrix
   nameWithType: Matrix
-  fullName: Ampere.MathUtils.Matrix
-- uid: Ampere.MathUtils.Matrix.EqualDimension*
-  commentId: Overload:Ampere.MathUtils.Matrix.EqualDimension
+  fullName: Ampere.AmpMath.Matrix
+- uid: Ampere.AmpMath.Matrix.EqualDimension*
+  commentId: Overload:Ampere.AmpMath.Matrix.EqualDimension
   name: EqualDimension
   nameWithType: Matrix.EqualDimension
-  fullName: Ampere.MathUtils.Matrix.EqualDimension
-- uid: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
-  commentId: M:Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
-  parent: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.Matrix.EqualDimension
+- uid: Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
+  commentId: M:Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
+  parent: Ampere.AmpMath.IMatrixer
   name: EqualDimension(IMatrixer)
   nameWithType: IMatrixer.EqualDimension(IMatrixer)
-  fullName: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
+  fullName: Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
   spec.csharp:
-  - uid: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
+  - uid: Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
     name: EqualDimension
     nameWithType: IMatrixer.EqualDimension
-    fullName: Ampere.MathUtils.IMatrixer.EqualDimension
+    fullName: Ampere.AmpMath.IMatrixer.EqualDimension
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Ampere.MathUtils.IMatrixer
+  - uid: Ampere.AmpMath.IMatrixer
     name: IMatrixer
     nameWithType: IMatrixer
-    fullName: Ampere.MathUtils.IMatrixer
+    fullName: Ampere.AmpMath.IMatrixer
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.MathUtils.IMatrixer.EqualDimension(Ampere.MathUtils.IMatrixer)
+  - uid: Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)
     name: EqualDimension
     nameWithType: IMatrixer.EqualDimension
-    fullName: Ampere.MathUtils.IMatrixer.EqualDimension
+    fullName: Ampere.AmpMath.IMatrixer.EqualDimension
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Ampere.MathUtils.IMatrixer
+  - uid: Ampere.AmpMath.IMatrixer
     name: IMatrixer
     nameWithType: IMatrixer
-    fullName: Ampere.MathUtils.IMatrixer
+    fullName: Ampere.AmpMath.IMatrixer
   - name: )
     nameWithType: )
     fullName: )
@@ -6988,83 +6988,83 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: Ampere.MathUtils.Matrix.op_Addition*
-  commentId: Overload:Ampere.MathUtils.Matrix.op_Addition
+- uid: Ampere.AmpMath.Matrix.op_Addition*
+  commentId: Overload:Ampere.AmpMath.Matrix.op_Addition
   name: Addition
   nameWithType: Matrix.Addition
-  fullName: Ampere.MathUtils.Matrix.Addition
-- uid: Ampere.MathUtils.Matrix.op_Subtraction*
-  commentId: Overload:Ampere.MathUtils.Matrix.op_Subtraction
+  fullName: Ampere.AmpMath.Matrix.Addition
+- uid: Ampere.AmpMath.Matrix.op_Subtraction*
+  commentId: Overload:Ampere.AmpMath.Matrix.op_Subtraction
   name: Subtraction
   nameWithType: Matrix.Subtraction
-  fullName: Ampere.MathUtils.Matrix.Subtraction
-- uid: Ampere.MathUtils.Matrix.op_Multiply*
-  commentId: Overload:Ampere.MathUtils.Matrix.op_Multiply
+  fullName: Ampere.AmpMath.Matrix.Subtraction
+- uid: Ampere.AmpMath.Matrix.op_Multiply*
+  commentId: Overload:Ampere.AmpMath.Matrix.op_Multiply
   name: Multiply
   nameWithType: Matrix.Multiply
-  fullName: Ampere.MathUtils.Matrix.Multiply
-- uid: Ampere.MathUtils.Matrix.op_Division*
-  commentId: Overload:Ampere.MathUtils.Matrix.op_Division
+  fullName: Ampere.AmpMath.Matrix.Multiply
+- uid: Ampere.AmpMath.Matrix.op_Division*
+  commentId: Overload:Ampere.AmpMath.Matrix.op_Division
   name: Division
   nameWithType: Matrix.Division
-  fullName: Ampere.MathUtils.Matrix.Division
-- uid: Ampere.MathUtils.Matrix.op_Modulus*
-  commentId: Overload:Ampere.MathUtils.Matrix.op_Modulus
+  fullName: Ampere.AmpMath.Matrix.Division
+- uid: Ampere.AmpMath.Matrix.op_Modulus*
+  commentId: Overload:Ampere.AmpMath.Matrix.op_Modulus
   name: Modulus
   nameWithType: Matrix.Modulus
-  fullName: Ampere.MathUtils.Matrix.Modulus
-- uid: Ampere.MathUtils.Matrix.op_LogicalNot*
-  commentId: Overload:Ampere.MathUtils.Matrix.op_LogicalNot
+  fullName: Ampere.AmpMath.Matrix.Modulus
+- uid: Ampere.AmpMath.Matrix.op_LogicalNot*
+  commentId: Overload:Ampere.AmpMath.Matrix.op_LogicalNot
   name: LogicalNot
   nameWithType: Matrix.LogicalNot
-  fullName: Ampere.MathUtils.Matrix.LogicalNot
-- uid: Ampere.MathUtils.Matrix.op_Equality*
-  commentId: Overload:Ampere.MathUtils.Matrix.op_Equality
+  fullName: Ampere.AmpMath.Matrix.LogicalNot
+- uid: Ampere.AmpMath.Matrix.op_Equality*
+  commentId: Overload:Ampere.AmpMath.Matrix.op_Equality
   name: Equality
   nameWithType: Matrix.Equality
-  fullName: Ampere.MathUtils.Matrix.Equality
-- uid: Ampere.MathUtils.Matrix.op_Inequality*
-  commentId: Overload:Ampere.MathUtils.Matrix.op_Inequality
+  fullName: Ampere.AmpMath.Matrix.Equality
+- uid: Ampere.AmpMath.Matrix.op_Inequality*
+  commentId: Overload:Ampere.AmpMath.Matrix.op_Inequality
   name: Inequality
   nameWithType: Matrix.Inequality
-  fullName: Ampere.MathUtils.Matrix.Inequality
-- uid: Ampere.MathUtils.Matrix.Add*
-  commentId: Overload:Ampere.MathUtils.Matrix.Add
+  fullName: Ampere.AmpMath.Matrix.Inequality
+- uid: Ampere.AmpMath.Matrix.Add*
+  commentId: Overload:Ampere.AmpMath.Matrix.Add
   name: Add
   nameWithType: Matrix.Add
-  fullName: Ampere.MathUtils.Matrix.Add
-- uid: Ampere.MathUtils.Matrix.Subtract*
-  commentId: Overload:Ampere.MathUtils.Matrix.Subtract
+  fullName: Ampere.AmpMath.Matrix.Add
+- uid: Ampere.AmpMath.Matrix.Subtract*
+  commentId: Overload:Ampere.AmpMath.Matrix.Subtract
   name: Subtract
   nameWithType: Matrix.Subtract
-  fullName: Ampere.MathUtils.Matrix.Subtract
-- uid: Ampere.MathUtils.Matrix.Multiply*
-  commentId: Overload:Ampere.MathUtils.Matrix.Multiply
+  fullName: Ampere.AmpMath.Matrix.Subtract
+- uid: Ampere.AmpMath.Matrix.Multiply*
+  commentId: Overload:Ampere.AmpMath.Matrix.Multiply
   name: Multiply
   nameWithType: Matrix.Multiply
-  fullName: Ampere.MathUtils.Matrix.Multiply
-- uid: Ampere.MathUtils.Matrix.DotProduct*
-  commentId: Overload:Ampere.MathUtils.Matrix.DotProduct
+  fullName: Ampere.AmpMath.Matrix.Multiply
+- uid: Ampere.AmpMath.Matrix.DotProduct*
+  commentId: Overload:Ampere.AmpMath.Matrix.DotProduct
   name: DotProduct
   nameWithType: Matrix.DotProduct
-  fullName: Ampere.MathUtils.Matrix.DotProduct
-- uid: Ampere.MathUtils.Matrix.Divide*
-  commentId: Overload:Ampere.MathUtils.Matrix.Divide
+  fullName: Ampere.AmpMath.Matrix.DotProduct
+- uid: Ampere.AmpMath.Matrix.Divide*
+  commentId: Overload:Ampere.AmpMath.Matrix.Divide
   name: Divide
   nameWithType: Matrix.Divide
-  fullName: Ampere.MathUtils.Matrix.Divide
-- uid: Ampere.MathUtils.Matrix.Mod*
-  commentId: Overload:Ampere.MathUtils.Matrix.Mod
+  fullName: Ampere.AmpMath.Matrix.Divide
+- uid: Ampere.AmpMath.Matrix.Mod*
+  commentId: Overload:Ampere.AmpMath.Matrix.Mod
   name: Mod
   nameWithType: Matrix.Mod
-  fullName: Ampere.MathUtils.Matrix.Mod
-- uid: Ampere.MathUtils.Matrix.Negate*
-  commentId: Overload:Ampere.MathUtils.Matrix.Negate
+  fullName: Ampere.AmpMath.Matrix.Mod
+- uid: Ampere.AmpMath.Matrix.Negate*
+  commentId: Overload:Ampere.AmpMath.Matrix.Negate
   name: Negate
   nameWithType: Matrix.Negate
-  fullName: Ampere.MathUtils.Matrix.Negate
-- uid: Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)
-  commentId: M:Ampere.MathUtils.Matrix.Equals(Ampere.MathUtils.Matrix)
+  fullName: Ampere.AmpMath.Matrix.Negate
+- uid: Ampere.AmpMath.Matrix.Equals(Ampere.AmpMath.Matrix)
+  commentId: M:Ampere.AmpMath.Matrix.Equals(Ampere.AmpMath.Matrix)
   isExternal: true
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
@@ -7107,11 +7107,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.MathUtils.Matrix.Equals*
-  commentId: Overload:Ampere.MathUtils.Matrix.Equals
+- uid: Ampere.AmpMath.Matrix.Equals*
+  commentId: Overload:Ampere.AmpMath.Matrix.Equals
   name: Equals
   nameWithType: Matrix.Equals
-  fullName: Ampere.MathUtils.Matrix.Equals
+  fullName: Ampere.AmpMath.Matrix.Equals
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
@@ -7143,27 +7143,27 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.MathUtils.Matrix.GetHashCode*
-  commentId: Overload:Ampere.MathUtils.Matrix.GetHashCode
+- uid: Ampere.AmpMath.Matrix.GetHashCode*
+  commentId: Overload:Ampere.AmpMath.Matrix.GetHashCode
   name: GetHashCode
   nameWithType: Matrix.GetHashCode
-  fullName: Ampere.MathUtils.Matrix.GetHashCode
-- uid: Ampere.MathUtils.Matrix.IsRowVector*
-  commentId: Overload:Ampere.MathUtils.Matrix.IsRowVector
+  fullName: Ampere.AmpMath.Matrix.GetHashCode
+- uid: Ampere.AmpMath.Matrix.IsRowVector*
+  commentId: Overload:Ampere.AmpMath.Matrix.IsRowVector
   name: IsRowVector
   nameWithType: Matrix.IsRowVector
-  fullName: Ampere.MathUtils.Matrix.IsRowVector
-- uid: Ampere.MathUtils.IMatrixer.IsRowVector
-  commentId: M:Ampere.MathUtils.IMatrixer.IsRowVector
-  parent: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.Matrix.IsRowVector
+- uid: Ampere.AmpMath.IMatrixer.IsRowVector
+  commentId: M:Ampere.AmpMath.IMatrixer.IsRowVector
+  parent: Ampere.AmpMath.IMatrixer
   name: IsRowVector()
   nameWithType: IMatrixer.IsRowVector()
-  fullName: Ampere.MathUtils.IMatrixer.IsRowVector()
+  fullName: Ampere.AmpMath.IMatrixer.IsRowVector()
   spec.csharp:
-  - uid: Ampere.MathUtils.IMatrixer.IsRowVector
+  - uid: Ampere.AmpMath.IMatrixer.IsRowVector
     name: IsRowVector
     nameWithType: IMatrixer.IsRowVector
-    fullName: Ampere.MathUtils.IMatrixer.IsRowVector
+    fullName: Ampere.AmpMath.IMatrixer.IsRowVector
   - name: (
     nameWithType: (
     fullName: (
@@ -7171,32 +7171,32 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.MathUtils.IMatrixer.IsRowVector
+  - uid: Ampere.AmpMath.IMatrixer.IsRowVector
     name: IsRowVector
     nameWithType: IMatrixer.IsRowVector
-    fullName: Ampere.MathUtils.IMatrixer.IsRowVector
+    fullName: Ampere.AmpMath.IMatrixer.IsRowVector
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.MathUtils.Matrix.IsColumnVector*
-  commentId: Overload:Ampere.MathUtils.Matrix.IsColumnVector
+- uid: Ampere.AmpMath.Matrix.IsColumnVector*
+  commentId: Overload:Ampere.AmpMath.Matrix.IsColumnVector
   name: IsColumnVector
   nameWithType: Matrix.IsColumnVector
-  fullName: Ampere.MathUtils.Matrix.IsColumnVector
-- uid: Ampere.MathUtils.IMatrixer.IsColumnVector
-  commentId: M:Ampere.MathUtils.IMatrixer.IsColumnVector
-  parent: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.Matrix.IsColumnVector
+- uid: Ampere.AmpMath.IMatrixer.IsColumnVector
+  commentId: M:Ampere.AmpMath.IMatrixer.IsColumnVector
+  parent: Ampere.AmpMath.IMatrixer
   name: IsColumnVector()
   nameWithType: IMatrixer.IsColumnVector()
-  fullName: Ampere.MathUtils.IMatrixer.IsColumnVector()
+  fullName: Ampere.AmpMath.IMatrixer.IsColumnVector()
   spec.csharp:
-  - uid: Ampere.MathUtils.IMatrixer.IsColumnVector
+  - uid: Ampere.AmpMath.IMatrixer.IsColumnVector
     name: IsColumnVector
     nameWithType: IMatrixer.IsColumnVector
-    fullName: Ampere.MathUtils.IMatrixer.IsColumnVector
+    fullName: Ampere.AmpMath.IMatrixer.IsColumnVector
   - name: (
     nameWithType: (
     fullName: (
@@ -7204,32 +7204,32 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.MathUtils.IMatrixer.IsColumnVector
+  - uid: Ampere.AmpMath.IMatrixer.IsColumnVector
     name: IsColumnVector
     nameWithType: IMatrixer.IsColumnVector
-    fullName: Ampere.MathUtils.IMatrixer.IsColumnVector
+    fullName: Ampere.AmpMath.IMatrixer.IsColumnVector
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.MathUtils.Matrix.IsSquareVector*
-  commentId: Overload:Ampere.MathUtils.Matrix.IsSquareVector
+- uid: Ampere.AmpMath.Matrix.IsSquareVector*
+  commentId: Overload:Ampere.AmpMath.Matrix.IsSquareVector
   name: IsSquareVector
   nameWithType: Matrix.IsSquareVector
-  fullName: Ampere.MathUtils.Matrix.IsSquareVector
-- uid: Ampere.MathUtils.IMatrixer.IsSquareVector
-  commentId: M:Ampere.MathUtils.IMatrixer.IsSquareVector
-  parent: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.Matrix.IsSquareVector
+- uid: Ampere.AmpMath.IMatrixer.IsSquareVector
+  commentId: M:Ampere.AmpMath.IMatrixer.IsSquareVector
+  parent: Ampere.AmpMath.IMatrixer
   name: IsSquareVector()
   nameWithType: IMatrixer.IsSquareVector()
-  fullName: Ampere.MathUtils.IMatrixer.IsSquareVector()
+  fullName: Ampere.AmpMath.IMatrixer.IsSquareVector()
   spec.csharp:
-  - uid: Ampere.MathUtils.IMatrixer.IsSquareVector
+  - uid: Ampere.AmpMath.IMatrixer.IsSquareVector
     name: IsSquareVector
     nameWithType: IMatrixer.IsSquareVector
-    fullName: Ampere.MathUtils.IMatrixer.IsSquareVector
+    fullName: Ampere.AmpMath.IMatrixer.IsSquareVector
   - name: (
     nameWithType: (
     fullName: (
@@ -7237,10 +7237,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.MathUtils.IMatrixer.IsSquareVector
+  - uid: Ampere.AmpMath.IMatrixer.IsSquareVector
     name: IsSquareVector
     nameWithType: IMatrixer.IsSquareVector
-    fullName: Ampere.MathUtils.IMatrixer.IsSquareVector
+    fullName: Ampere.AmpMath.IMatrixer.IsSquareVector
   - name: (
     nameWithType: (
     fullName: (
@@ -7286,11 +7286,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.MathUtils.Matrix.GetEnumerator*
-  commentId: Overload:Ampere.MathUtils.Matrix.GetEnumerator
+- uid: Ampere.AmpMath.Matrix.GetEnumerator*
+  commentId: Overload:Ampere.AmpMath.Matrix.GetEnumerator
   name: GetEnumerator
   nameWithType: Matrix.GetEnumerator
-  fullName: Ampere.MathUtils.Matrix.GetEnumerator
+  fullName: Ampere.AmpMath.Matrix.GetEnumerator
 - uid: System.Collections.Generic.IEnumerable{System.Double}.GetEnumerator
   commentId: M:System.Collections.Generic.IEnumerable{System.Double}.GetEnumerator
   parent: System.Collections.Generic.IEnumerable{System.Double}
@@ -7400,8 +7400,8 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.MathUtils.Matrix.GetEnumerator
-  commentId: M:Ampere.MathUtils.Matrix.GetEnumerator
+- uid: Ampere.AmpMath.Matrix.GetEnumerator
+  commentId: M:Ampere.AmpMath.Matrix.GetEnumerator
   isExternal: true
 - uid: System.Collections.IEnumerator
   commentId: T:System.Collections.IEnumerator
@@ -7410,11 +7410,11 @@ references:
   name: IEnumerator
   nameWithType: IEnumerator
   fullName: System.Collections.IEnumerator
-- uid: Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator*
-  commentId: Overload:Ampere.MathUtils.Matrix.System#Collections#IEnumerable#GetEnumerator
+- uid: Ampere.AmpMath.Matrix.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:Ampere.AmpMath.Matrix.System#Collections#IEnumerable#GetEnumerator
   name: IEnumerable.GetEnumerator
   nameWithType: Matrix.IEnumerable.GetEnumerator
-  fullName: Ampere.MathUtils.Matrix.System.Collections.IEnumerable.GetEnumerator
+  fullName: Ampere.AmpMath.Matrix.System.Collections.IEnumerable.GetEnumerator
   nameWithType.vb: Matrix.System.Collections.IEnumerable.GetEnumerator
   name.vb: System.Collections.IEnumerable.GetEnumerator
 - uid: System.Collections.IEnumerable.GetEnumerator
@@ -7479,22 +7479,22 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.MathUtils.Matrix.ToString*
-  commentId: Overload:Ampere.MathUtils.Matrix.ToString
+- uid: Ampere.AmpMath.Matrix.ToString*
+  commentId: Overload:Ampere.AmpMath.Matrix.ToString
   name: ToString
   nameWithType: Matrix.ToString
-  fullName: Ampere.MathUtils.Matrix.ToString
-- uid: Ampere.MathUtils.IMatrixer.ToString
-  commentId: M:Ampere.MathUtils.IMatrixer.ToString
-  parent: Ampere.MathUtils.IMatrixer
+  fullName: Ampere.AmpMath.Matrix.ToString
+- uid: Ampere.AmpMath.IMatrixer.ToString
+  commentId: M:Ampere.AmpMath.IMatrixer.ToString
+  parent: Ampere.AmpMath.IMatrixer
   name: ToString()
   nameWithType: IMatrixer.ToString()
-  fullName: Ampere.MathUtils.IMatrixer.ToString()
+  fullName: Ampere.AmpMath.IMatrixer.ToString()
   spec.csharp:
-  - uid: Ampere.MathUtils.IMatrixer.ToString
+  - uid: Ampere.AmpMath.IMatrixer.ToString
     name: ToString
     nameWithType: IMatrixer.ToString
-    fullName: Ampere.MathUtils.IMatrixer.ToString
+    fullName: Ampere.AmpMath.IMatrixer.ToString
   - name: (
     nameWithType: (
     fullName: (
@@ -7502,10 +7502,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.MathUtils.IMatrixer.ToString
+  - uid: Ampere.AmpMath.IMatrixer.ToString
     name: ToString
     nameWithType: IMatrixer.ToString
-    fullName: Ampere.MathUtils.IMatrixer.ToString
+    fullName: Ampere.AmpMath.IMatrixer.ToString
   - name: (
     nameWithType: (
     fullName: (

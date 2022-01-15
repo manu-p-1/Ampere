@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.AmpFile
+  commentId: N:Ampere.AmpFile
+  id: Ampere.AmpFile
+  children:
+  - Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: Ampere.AmpFile
+  nameWithType: Ampere.AmpFile
+  fullName: Ampere.AmpFile
+  type: Namespace
+  assemblies:
+  - Ampere
+references:
+- uid: Ampere.AmpFile.FileUtils
+  commentId: T:Ampere.AmpFile.FileUtils
+  name: FileUtils
+  nameWithType: FileUtils
+  fullName: Ampere.AmpFile.FileUtils

@@ -1,44 +1,44 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Ampere.FileUtils.FileUtils
-  commentId: T:Ampere.FileUtils.FileUtils
+- uid: Ampere.AmpFile.FileUtils
+  commentId: T:Ampere.AmpFile.FileUtils
   id: FileUtils
-  parent: Ampere.FileUtils
+  parent: Ampere.AmpFile
   children:
-  - Ampere.FileUtils.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
-  - Ampere.FileUtils.FileUtils.GetDirectorySize(System.String)
-  - Ampere.FileUtils.FileUtils.GetFileSize(System.String)
-  - Ampere.FileUtils.FileUtils.GetRootPath
-  - Ampere.FileUtils.FileUtils.GetUserPath
-  - Ampere.FileUtils.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
-  - Ampere.FileUtils.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
-  - Ampere.FileUtils.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
-  - Ampere.FileUtils.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
-  - Ampere.FileUtils.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
-  - Ampere.FileUtils.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
-  - Ampere.FileUtils.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
-  - Ampere.FileUtils.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
-  - Ampere.FileUtils.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
-  - Ampere.FileUtils.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
-  - Ampere.FileUtils.FileUtils.WriteLine(System.IO.FileInfo,System.String)
+  - Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
+  - Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
+  - Ampere.AmpFile.FileUtils.GetFileSize(System.String)
+  - Ampere.AmpFile.FileUtils.GetRootPath
+  - Ampere.AmpFile.FileUtils.GetUserPath
+  - Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
+  - Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
+  - Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
+  - Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
+  - Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
+  - Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
+  - Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
+  - Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
+  - Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
+  - Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
+  - Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo,System.String)
   langs:
   - csharp
   - vb
   name: FileUtils
   nameWithType: FileUtils
-  fullName: Ampere.FileUtils.FileUtils
+  fullName: Ampere.AmpFile.FileUtils
   type: Class
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: FileUtils
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 11
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nA static class for File utility functions\n"
   example: []
   syntax:
@@ -61,28 +61,28 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Ampere.FileUtils.FileUtils.WriteLine(System.IO.FileInfo,System.String)
-  commentId: M:Ampere.FileUtils.FileUtils.WriteLine(System.IO.FileInfo,System.String)
+- uid: Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo,System.String)
+  commentId: M:Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo,System.String)
   id: WriteLine(System.IO.FileInfo,System.String)
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: WriteLine(FileInfo, String)
   nameWithType: FileUtils.WriteLine(FileInfo, String)
-  fullName: Ampere.FileUtils.FileUtils.WriteLine(System.IO.FileInfo, System.String)
+  fullName: Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo, System.String)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WriteLine
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 18
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nAppends a string value into the file.\n"
   example: []
   syntax:
@@ -95,35 +95,35 @@ items:
       type: System.String
       description: The string value to write
     content.vb: Public Shared Sub WriteLine(fileInfo As FileInfo, value As String)
-  overload: Ampere.FileUtils.FileUtils.WriteLine*
+  overload: Ampere.AmpFile.FileUtils.WriteLine*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
-  commentId: M:Ampere.FileUtils.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
+- uid: Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
+  commentId: M:Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
   id: ReplaceAll(System.IO.FileInfo,System.String,System.String)
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: ReplaceAll(FileInfo, String, String)
   nameWithType: FileUtils.ReplaceAll(FileInfo, String, String)
-  fullName: Ampere.FileUtils.FileUtils.ReplaceAll(System.IO.FileInfo, System.String, System.String)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo, System.String, System.String)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAll
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 37
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReplaces all instances of a specific value from a file with another replacement value.\n"
   example: []
   syntax:
@@ -139,35 +139,35 @@ items:
       type: System.String
       description: The replacement value
     content.vb: Public Shared Sub ReplaceAll(fileInfo As FileInfo, oldValue As String, replacementValue As String)
-  overload: Ampere.FileUtils.FileUtils.ReplaceAll*
+  overload: Ampere.AmpFile.FileUtils.ReplaceAll*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
-  commentId: M:Ampere.FileUtils.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
+- uid: Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
+  commentId: M:Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
   id: ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: ReplaceAllByLine(FileInfo, String, String)
   nameWithType: FileUtils.ReplaceAllByLine(FileInfo, String, String)
-  fullName: Ampere.FileUtils.FileUtils.ReplaceAllByLine(System.IO.FileInfo, System.String, System.String)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo, System.String, System.String)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllByLine
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 51
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReplaces all instances of a specific value from a file with another replacement value if and only if\nthe old value is solely in one line.\n"
   example: []
   syntax:
@@ -183,35 +183,35 @@ items:
       type: System.String
       description: The replacement value
     content.vb: Public Shared Sub ReplaceAllByLine(fileInfo As FileInfo, oldValue As String, replacementValue As String)
-  overload: Ampere.FileUtils.FileUtils.ReplaceAllByLine*
+  overload: Ampere.AmpFile.FileUtils.ReplaceAllByLine*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
-  commentId: M:Ampere.FileUtils.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
+- uid: Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
+  commentId: M:Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
   id: ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: ReplaceAllInLine(FileInfo, String, String, Int32)
   nameWithType: FileUtils.ReplaceAllInLine(FileInfo, String, String, Int32)
-  fullName: Ampere.FileUtils.FileUtils.ReplaceAllInLine(System.IO.FileInfo, System.String, System.String, System.Int32)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo, System.String, System.String, System.Int32)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllInLine
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 66
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReplaces all instances of a specific value from a file with another replacement value from a specified line\n"
   example: []
   syntax:
@@ -230,35 +230,35 @@ items:
       type: System.Int32
       description: The line number to replace from
     content.vb: Public Shared Sub ReplaceAllInLine(fileInfo As FileInfo, oldValue As String, replacementValue As String, line As Integer)
-  overload: Ampere.FileUtils.FileUtils.ReplaceAllInLine*
+  overload: Ampere.AmpFile.FileUtils.ReplaceAllInLine*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
-  commentId: M:Ampere.FileUtils.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
+- uid: Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
+  commentId: M:Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
   id: ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: ReplaceInLines(FileInfo, Dictionary<KeyValuePair<String, String>, Int32>)
   nameWithType: FileUtils.ReplaceInLines(FileInfo, Dictionary<KeyValuePair<String, String>, Int32>)
-  fullName: Ampere.FileUtils.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<System.Collections.Generic.KeyValuePair<System.String, System.String>, System.Int32>)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<System.Collections.Generic.KeyValuePair<System.String, System.String>, System.Int32>)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInLines
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 86
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReplaces all instances of a specific value from a file with another replacement value from a specified line.\nThis overload facilitates the replacement through a Dictionary where the key&apos;s is an instance of\n<xref href=\"System.Collections.Generic.KeyValuePair%602\" data-throw-if-not-resolved=\"false\"></xref> and the value is an int. This allows for unique replacements to occur\nin more than one line\n"
   example: []
   syntax:
@@ -271,7 +271,7 @@ items:
       type: System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32}
       description: A Dictionary of replacement values and line numbers
     content.vb: Public Shared Sub ReplaceInLines(fileInfo As FileInfo, replacementDict As Dictionary(Of KeyValuePair(Of String, String), Integer))
-  overload: Ampere.FileUtils.FileUtils.ReplaceInLines*
+  overload: Ampere.AmpFile.FileUtils.ReplaceInLines*
   nameWithType.vb: FileUtils.ReplaceInLines(FileInfo, Dictionary(Of KeyValuePair(Of String, String), Int32))
   modifiers.csharp:
   - public
@@ -279,30 +279,30 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Ampere.FileUtils.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String), System.Int32))
+  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String), System.Int32))
   name.vb: ReplaceInLines(FileInfo, Dictionary(Of KeyValuePair(Of String, String), Int32))
-- uid: Ampere.FileUtils.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
-  commentId: M:Ampere.FileUtils.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
+- uid: Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
+  commentId: M:Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
   id: ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: ReplaceLine(FileInfo, String, Int32)
   nameWithType: FileUtils.ReplaceLine(FileInfo, String, Int32)
-  fullName: Ampere.FileUtils.FileUtils.ReplaceLine(System.IO.FileInfo, System.String, System.Int32)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo, System.String, System.Int32)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLine
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 103
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReplaces an entire line with a replacement value.\n"
   example: []
   syntax:
@@ -318,35 +318,35 @@ items:
       type: System.Int32
       description: The line number to replace from
     content.vb: Public Shared Sub ReplaceLine(fileInfo As FileInfo, replacementValue As String, line As Integer)
-  overload: Ampere.FileUtils.FileUtils.ReplaceLine*
+  overload: Ampere.AmpFile.FileUtils.ReplaceLine*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
-  commentId: M:Ampere.FileUtils.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
+- uid: Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
+  commentId: M:Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
   id: ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: ReplaceLines(FileInfo, Dictionary<String, Int32>)
   nameWithType: FileUtils.ReplaceLines(FileInfo, Dictionary<String, Int32>)
-  fullName: Ampere.FileUtils.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<System.String, System.Int32>)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<System.String, System.Int32>)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLines
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 114
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReplace an entire line with a replacement value. This overload uses a Dictionary of replacement values\nand line numbers to replace more than one line. \n"
   example: []
   syntax:
@@ -359,7 +359,7 @@ items:
       type: System.Collections.Generic.Dictionary{System.String,System.Int32}
       description: A Dictionary of replacement values and line number
     content.vb: Public Shared Sub ReplaceLines(fileInfo As FileInfo, replacementValueLine As Dictionary(Of String, Integer))
-  overload: Ampere.FileUtils.FileUtils.ReplaceLines*
+  overload: Ampere.AmpFile.FileUtils.ReplaceLines*
   nameWithType.vb: FileUtils.ReplaceLines(FileInfo, Dictionary(Of String, Int32))
   modifiers.csharp:
   - public
@@ -367,30 +367,30 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Ampere.FileUtils.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of System.String, System.Int32))
+  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of System.String, System.Int32))
   name.vb: ReplaceLines(FileInfo, Dictionary(Of String, Int32))
-- uid: Ampere.FileUtils.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
-  commentId: M:Ampere.FileUtils.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
+- uid: Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
+  commentId: M:Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
   id: RemoveFromEachLine(System.IO.FileInfo,System.String)
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: RemoveFromEachLine(FileInfo, String)
   nameWithType: FileUtils.RemoveFromEachLine(FileInfo, String)
-  fullName: Ampere.FileUtils.FileUtils.RemoveFromEachLine(System.IO.FileInfo, System.String)
+  fullName: Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo, System.String)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveFromEachLine
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 129
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nRemoves all instances of a specific value from a file if and only if the value is solely in one line.\n"
   example: []
   syntax:
@@ -403,35 +403,35 @@ items:
       type: System.String
       description: The value to remove
     content.vb: Public Shared Sub RemoveFromEachLine(fileInfo As FileInfo, valToRemove As String)
-  overload: Ampere.FileUtils.FileUtils.RemoveFromEachLine*
+  overload: Ampere.AmpFile.FileUtils.RemoveFromEachLine*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
-  commentId: M:Ampere.FileUtils.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
+- uid: Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
+  commentId: M:Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
   id: RemoveLine(System.IO.FileInfo,System.Int32)
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: RemoveLine(FileInfo, Int32)
   nameWithType: FileUtils.RemoveLine(FileInfo, Int32)
-  fullName: Ampere.FileUtils.FileUtils.RemoveLine(System.IO.FileInfo, System.Int32)
+  fullName: Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo, System.Int32)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLine
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 142
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nRemoves a specific line number from a file.\n"
   example: []
   syntax:
@@ -444,35 +444,35 @@ items:
       type: System.Int32
       description: The line number to remove
     content.vb: Public Shared Sub RemoveLine(fileInfo As FileInfo, line As Integer)
-  overload: Ampere.FileUtils.FileUtils.RemoveLine*
+  overload: Ampere.AmpFile.FileUtils.RemoveLine*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
-  commentId: M:Ampere.FileUtils.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
+- uid: Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
+  commentId: M:Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
   id: RemoveLines(System.IO.FileInfo,System.Int32[])
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: RemoveLines(FileInfo, Int32[])
   nameWithType: FileUtils.RemoveLines(FileInfo, Int32[])
-  fullName: Ampere.FileUtils.FileUtils.RemoveLines(System.IO.FileInfo, System.Int32[])
+  fullName: Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo, System.Int32[])
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLines
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 152
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nRemoves a variable argument number of lines from a file.\n"
   example: []
   syntax:
@@ -485,7 +485,7 @@ items:
       type: System.Int32[]
       description: The line numbers to remove
     content.vb: Public Shared Sub RemoveLines(fileInfo As FileInfo, ParamArray lines As Integer())
-  overload: Ampere.FileUtils.FileUtils.RemoveLines*
+  overload: Ampere.AmpFile.FileUtils.RemoveLines*
   nameWithType.vb: FileUtils.RemoveLines(FileInfo, Int32())
   modifiers.csharp:
   - public
@@ -493,30 +493,30 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Ampere.FileUtils.FileUtils.RemoveLines(System.IO.FileInfo, System.Int32())
+  fullName.vb: Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo, System.Int32())
   name.vb: RemoveLines(FileInfo, Int32())
-- uid: Ampere.FileUtils.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
-  commentId: M:Ampere.FileUtils.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
+- uid: Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
+  commentId: M:Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
   id: FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: FindInFile(FileInfo, Func<String, Boolean>)
   nameWithType: FileUtils.FindInFile(FileInfo, Func<String, Boolean>)
-  fullName: Ampere.FileUtils.FileUtils.FindInFile(System.IO.FileInfo, System.Func<System.String, System.Boolean>)
+  fullName: Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo, System.Func<System.String, System.Boolean>)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: FindInFile
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 169
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReturns the line of the matched predicate in the file. If the predicate is not found,\n-1 is returned.\n"
   example: []
   syntax:
@@ -532,7 +532,7 @@ items:
       type: System.Int32
       description: ''
     content.vb: Public Shared Function FindInFile(fileInfo As FileInfo, predicate As Func(Of String, Boolean)) As Integer
-  overload: Ampere.FileUtils.FileUtils.FindInFile*
+  overload: Ampere.AmpFile.FileUtils.FindInFile*
   nameWithType.vb: FileUtils.FindInFile(FileInfo, Func(Of String, Boolean))
   modifiers.csharp:
   - public
@@ -540,30 +540,30 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Ampere.FileUtils.FileUtils.FindInFile(System.IO.FileInfo, System.Func(Of System.String, System.Boolean))
+  fullName.vb: Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo, System.Func(Of System.String, System.Boolean))
   name.vb: FindInFile(FileInfo, Func(Of String, Boolean))
-- uid: Ampere.FileUtils.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
-  commentId: M:Ampere.FileUtils.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
+- uid: Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
+  commentId: M:Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
   id: GetValueAtLine(System.IO.FileInfo,System.Int32)
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: GetValueAtLine(FileInfo, Int32)
   nameWithType: FileUtils.GetValueAtLine(FileInfo, Int32)
-  fullName: Ampere.FileUtils.FileUtils.GetValueAtLine(System.IO.FileInfo, System.Int32)
+  fullName: Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo, System.Int32)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetValueAtLine
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 193
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReturns the value found at a line number.\n"
   example: []
   syntax:
@@ -579,36 +579,36 @@ items:
       type: System.String
       description: ''
     content.vb: Public Shared Function GetValueAtLine(fileInfo As FileInfo, line As Integer) As String
-  overload: Ampere.FileUtils.FileUtils.GetValueAtLine*
+  overload: Ampere.AmpFile.FileUtils.GetValueAtLine*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.GetDirectorySize(System.String)
-  commentId: M:Ampere.FileUtils.FileUtils.GetDirectorySize(System.String)
+- uid: Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
+  commentId: M:Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
   id: GetDirectorySize(System.String)
   isExtensionMethod: true
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: GetDirectorySize(String)
   nameWithType: FileUtils.GetDirectorySize(String)
-  fullName: Ampere.FileUtils.FileUtils.GetDirectorySize(System.String)
+  fullName: Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetDirectorySize
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 201
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReturns the size of a directory in bytes, given an abstract file path.\n"
   example: []
   syntax:
@@ -624,36 +624,36 @@ items:
       <ExtensionAttribute>
 
       Public Shared Function GetDirectorySize(dirPath As String) As Long
-  overload: Ampere.FileUtils.FileUtils.GetDirectorySize*
+  overload: Ampere.AmpFile.FileUtils.GetDirectorySize*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.GetFileSize(System.String)
-  commentId: M:Ampere.FileUtils.FileUtils.GetFileSize(System.String)
+- uid: Ampere.AmpFile.FileUtils.GetFileSize(System.String)
+  commentId: M:Ampere.AmpFile.FileUtils.GetFileSize(System.String)
   id: GetFileSize(System.String)
   isExtensionMethod: true
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: GetFileSize(String)
   nameWithType: FileUtils.GetFileSize(String)
-  fullName: Ampere.FileUtils.FileUtils.GetFileSize(System.String)
+  fullName: Ampere.AmpFile.FileUtils.GetFileSize(System.String)
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetFileSize
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 218
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReturns the size of file in bytes, given an abstract file path.\n"
   example: []
   syntax:
@@ -669,35 +669,35 @@ items:
       <ExtensionAttribute>
 
       Public Shared Function GetFileSize(filePath As String) As Long
-  overload: Ampere.FileUtils.FileUtils.GetFileSize*
+  overload: Ampere.AmpFile.FileUtils.GetFileSize*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.GetRootPath
-  commentId: M:Ampere.FileUtils.FileUtils.GetRootPath
+- uid: Ampere.AmpFile.FileUtils.GetRootPath
+  commentId: M:Ampere.AmpFile.FileUtils.GetRootPath
   id: GetRootPath
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: GetRootPath()
   nameWithType: FileUtils.GetRootPath()
-  fullName: Ampere.FileUtils.FileUtils.GetRootPath()
+  fullName: Ampere.AmpFile.FileUtils.GetRootPath()
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetRootPath
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 225
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReturns a pathname to the root directory of the System.\n"
   example: []
   syntax:
@@ -706,35 +706,35 @@ items:
       type: System.String
       description: A pathname to the root directory of the System
     content.vb: Public Shared Function GetRootPath As String
-  overload: Ampere.FileUtils.FileUtils.GetRootPath*
+  overload: Ampere.AmpFile.FileUtils.GetRootPath*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: Ampere.FileUtils.FileUtils.GetUserPath
-  commentId: M:Ampere.FileUtils.FileUtils.GetUserPath
+- uid: Ampere.AmpFile.FileUtils.GetUserPath
+  commentId: M:Ampere.AmpFile.FileUtils.GetUserPath
   id: GetUserPath
-  parent: Ampere.FileUtils.FileUtils
+  parent: Ampere.AmpFile.FileUtils
   langs:
   - csharp
   - vb
   name: GetUserPath()
   nameWithType: FileUtils.GetUserPath()
-  fullName: Ampere.FileUtils.FileUtils.GetUserPath()
+  fullName: Ampere.AmpFile.FileUtils.GetUserPath()
   type: Method
   source:
     remote:
-      path: Ampere/FileUtils/FileUtils.cs
+      path: Ampere/AmpFile/FileUtils.cs
       branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetUserPath
-    path: ../Ampere/FileUtils/FileUtils.cs
+    path: ../Ampere/AmpFile/FileUtils.cs
     startLine: 232
   assemblies:
   - Ampere
-  namespace: Ampere.FileUtils
+  namespace: Ampere.AmpFile
   summary: "\nReturns a pathname to the user&apos;s profile folder.\n"
   example: []
   syntax:
@@ -743,7 +743,7 @@ items:
       type: System.String
       description: A pathname to the user&apos;s profile folder
     content.vb: Public Shared Function GetUserPath As String
-  overload: Ampere.FileUtils.FileUtils.GetUserPath*
+  overload: Ampere.AmpFile.FileUtils.GetUserPath*
   modifiers.csharp:
   - public
   - static
@@ -751,11 +751,11 @@ items:
   - Public
   - Shared
 references:
-- uid: Ampere.FileUtils
-  commentId: N:Ampere.FileUtils
-  name: Ampere.FileUtils
-  nameWithType: Ampere.FileUtils
-  fullName: Ampere.FileUtils
+- uid: Ampere.AmpFile
+  commentId: N:Ampere.AmpFile
+  name: Ampere.AmpFile
+  nameWithType: Ampere.AmpFile
+  fullName: Ampere.AmpFile
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1048,11 +1048,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Ampere.FileUtils.FileUtils.WriteLine*
-  commentId: Overload:Ampere.FileUtils.FileUtils.WriteLine
+- uid: Ampere.AmpFile.FileUtils.WriteLine*
+  commentId: Overload:Ampere.AmpFile.FileUtils.WriteLine
   name: WriteLine
   nameWithType: FileUtils.WriteLine
-  fullName: Ampere.FileUtils.FileUtils.WriteLine
+  fullName: Ampere.AmpFile.FileUtils.WriteLine
 - uid: System.IO.FileInfo
   commentId: T:System.IO.FileInfo
   parent: System.IO
@@ -1073,21 +1073,21 @@ references:
   name: System.IO
   nameWithType: System.IO
   fullName: System.IO
-- uid: Ampere.FileUtils.FileUtils.ReplaceAll*
-  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceAll
+- uid: Ampere.AmpFile.FileUtils.ReplaceAll*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceAll
   name: ReplaceAll
   nameWithType: FileUtils.ReplaceAll
-  fullName: Ampere.FileUtils.FileUtils.ReplaceAll
-- uid: Ampere.FileUtils.FileUtils.ReplaceAllByLine*
-  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceAllByLine
+  fullName: Ampere.AmpFile.FileUtils.ReplaceAll
+- uid: Ampere.AmpFile.FileUtils.ReplaceAllByLine*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceAllByLine
   name: ReplaceAllByLine
   nameWithType: FileUtils.ReplaceAllByLine
-  fullName: Ampere.FileUtils.FileUtils.ReplaceAllByLine
-- uid: Ampere.FileUtils.FileUtils.ReplaceAllInLine*
-  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceAllInLine
+  fullName: Ampere.AmpFile.FileUtils.ReplaceAllByLine
+- uid: Ampere.AmpFile.FileUtils.ReplaceAllInLine*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceAllInLine
   name: ReplaceAllInLine
   nameWithType: FileUtils.ReplaceAllInLine
-  fullName: Ampere.FileUtils.FileUtils.ReplaceAllInLine
+  fullName: Ampere.AmpFile.FileUtils.ReplaceAllInLine
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -1098,11 +1098,11 @@ references:
 - uid: System.Collections.Generic.KeyValuePair`2
   commentId: T:System.Collections.Generic.KeyValuePair`2
   isExternal: true
-- uid: Ampere.FileUtils.FileUtils.ReplaceInLines*
-  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceInLines
+- uid: Ampere.AmpFile.FileUtils.ReplaceInLines*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceInLines
   name: ReplaceInLines
   nameWithType: FileUtils.ReplaceInLines
-  fullName: Ampere.FileUtils.FileUtils.ReplaceInLines
+  fullName: Ampere.AmpFile.FileUtils.ReplaceInLines
 - uid: System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32}
   commentId: T:System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32}
   parent: System.Collections.Generic
@@ -1258,16 +1258,16 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: Ampere.FileUtils.FileUtils.ReplaceLine*
-  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceLine
+- uid: Ampere.AmpFile.FileUtils.ReplaceLine*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceLine
   name: ReplaceLine
   nameWithType: FileUtils.ReplaceLine
-  fullName: Ampere.FileUtils.FileUtils.ReplaceLine
-- uid: Ampere.FileUtils.FileUtils.ReplaceLines*
-  commentId: Overload:Ampere.FileUtils.FileUtils.ReplaceLines
+  fullName: Ampere.AmpFile.FileUtils.ReplaceLine
+- uid: Ampere.AmpFile.FileUtils.ReplaceLines*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceLines
   name: ReplaceLines
   nameWithType: FileUtils.ReplaceLines
-  fullName: Ampere.FileUtils.FileUtils.ReplaceLines
+  fullName: Ampere.AmpFile.FileUtils.ReplaceLines
 - uid: System.Collections.Generic.Dictionary{System.String,System.Int32}
   commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
   parent: System.Collections.Generic
@@ -1328,21 +1328,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.FileUtils.FileUtils.RemoveFromEachLine*
-  commentId: Overload:Ampere.FileUtils.FileUtils.RemoveFromEachLine
+- uid: Ampere.AmpFile.FileUtils.RemoveFromEachLine*
+  commentId: Overload:Ampere.AmpFile.FileUtils.RemoveFromEachLine
   name: RemoveFromEachLine
   nameWithType: FileUtils.RemoveFromEachLine
-  fullName: Ampere.FileUtils.FileUtils.RemoveFromEachLine
-- uid: Ampere.FileUtils.FileUtils.RemoveLine*
-  commentId: Overload:Ampere.FileUtils.FileUtils.RemoveLine
+  fullName: Ampere.AmpFile.FileUtils.RemoveFromEachLine
+- uid: Ampere.AmpFile.FileUtils.RemoveLine*
+  commentId: Overload:Ampere.AmpFile.FileUtils.RemoveLine
   name: RemoveLine
   nameWithType: FileUtils.RemoveLine
-  fullName: Ampere.FileUtils.FileUtils.RemoveLine
-- uid: Ampere.FileUtils.FileUtils.RemoveLines*
-  commentId: Overload:Ampere.FileUtils.FileUtils.RemoveLines
+  fullName: Ampere.AmpFile.FileUtils.RemoveLine
+- uid: Ampere.AmpFile.FileUtils.RemoveLines*
+  commentId: Overload:Ampere.AmpFile.FileUtils.RemoveLines
   name: RemoveLines
   nameWithType: FileUtils.RemoveLines
-  fullName: Ampere.FileUtils.FileUtils.RemoveLines
+  fullName: Ampere.AmpFile.FileUtils.RemoveLines
 - uid: System.Int32[]
   isExternal: true
   name: Int32[]
@@ -1369,11 +1369,11 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: Ampere.FileUtils.FileUtils.FindInFile*
-  commentId: Overload:Ampere.FileUtils.FileUtils.FindInFile
+- uid: Ampere.AmpFile.FileUtils.FindInFile*
+  commentId: Overload:Ampere.AmpFile.FileUtils.FindInFile
   name: FindInFile
   nameWithType: FileUtils.FindInFile
-  fullName: Ampere.FileUtils.FileUtils.FindInFile
+  fullName: Ampere.AmpFile.FileUtils.FindInFile
 - uid: System.Func{System.String,System.Boolean}
   commentId: T:System.Func{System.String,System.Boolean}
   parent: System
@@ -1485,16 +1485,16 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.FileUtils.FileUtils.GetValueAtLine*
-  commentId: Overload:Ampere.FileUtils.FileUtils.GetValueAtLine
+- uid: Ampere.AmpFile.FileUtils.GetValueAtLine*
+  commentId: Overload:Ampere.AmpFile.FileUtils.GetValueAtLine
   name: GetValueAtLine
   nameWithType: FileUtils.GetValueAtLine
-  fullName: Ampere.FileUtils.FileUtils.GetValueAtLine
-- uid: Ampere.FileUtils.FileUtils.GetDirectorySize*
-  commentId: Overload:Ampere.FileUtils.FileUtils.GetDirectorySize
+  fullName: Ampere.AmpFile.FileUtils.GetValueAtLine
+- uid: Ampere.AmpFile.FileUtils.GetDirectorySize*
+  commentId: Overload:Ampere.AmpFile.FileUtils.GetDirectorySize
   name: GetDirectorySize
   nameWithType: FileUtils.GetDirectorySize
-  fullName: Ampere.FileUtils.FileUtils.GetDirectorySize
+  fullName: Ampere.AmpFile.FileUtils.GetDirectorySize
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
@@ -1502,18 +1502,18 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
-- uid: Ampere.FileUtils.FileUtils.GetFileSize*
-  commentId: Overload:Ampere.FileUtils.FileUtils.GetFileSize
+- uid: Ampere.AmpFile.FileUtils.GetFileSize*
+  commentId: Overload:Ampere.AmpFile.FileUtils.GetFileSize
   name: GetFileSize
   nameWithType: FileUtils.GetFileSize
-  fullName: Ampere.FileUtils.FileUtils.GetFileSize
-- uid: Ampere.FileUtils.FileUtils.GetRootPath*
-  commentId: Overload:Ampere.FileUtils.FileUtils.GetRootPath
+  fullName: Ampere.AmpFile.FileUtils.GetFileSize
+- uid: Ampere.AmpFile.FileUtils.GetRootPath*
+  commentId: Overload:Ampere.AmpFile.FileUtils.GetRootPath
   name: GetRootPath
   nameWithType: FileUtils.GetRootPath
-  fullName: Ampere.FileUtils.FileUtils.GetRootPath
-- uid: Ampere.FileUtils.FileUtils.GetUserPath*
-  commentId: Overload:Ampere.FileUtils.FileUtils.GetUserPath
+  fullName: Ampere.AmpFile.FileUtils.GetRootPath
+- uid: Ampere.AmpFile.FileUtils.GetUserPath*
+  commentId: Overload:Ampere.AmpFile.FileUtils.GetUserPath
   name: GetUserPath
   nameWithType: FileUtils.GetUserPath
-  fullName: Ampere.FileUtils.FileUtils.GetUserPath
+  fullName: Ampere.AmpFile.FileUtils.GetUserPath

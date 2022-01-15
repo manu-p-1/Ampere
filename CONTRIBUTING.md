@@ -89,7 +89,7 @@ public static IEnumerable<T> Insert<T>(ref IEnumerable<T> src, int startIdx, int
 ```
 
 ## DocFX
-Since all Ampere methods are documented using .NET XML documentation. This is compiled using [DocFX](https://dotnet.github.io/docfx/) with the `docfx.json` file under the [DocFX folder](https://github.com/manu-p-1/Ampere/tree/master/DocFx). DocFX creates static HTML pages which are used by <https://powerplug.me>. If you would like to change documentation on this website after understanding the DocFX file structure, you can contribute it at the top-level DocFX folder.
+Since all Ampere methods are documented using .NET XML documentation. This is compiled using [DocFX](https://dotnet.github.io/docfx/) with the `docfx.json` file under the [DocFX folder](https://github.com/manu-p-1/Ampere/tree/master/DocFx). DocFX creates static HTML pages which are used by [Ampere Docs](https://manu-p-1.github.io/Ampere/). If you would like to change documentation on this website after understanding the DocFX file structure, you can contribute it at the top-level DocFX folder.
 
 ### Building DocFX
 Download the DocFX executable from their website. For convenience, it is recommended that the executable be added to the System environment variable PATH. [Here's a tutorial](https://www.c-sharpcorner.com/article/add-a-directory-to-path-environment-variable-in-windows-10/) on how to do that. To run the executable, go to the top level solution directory and run:

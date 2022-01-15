@@ -56,10 +56,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
-  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Int32}[])
-  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
-  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
-  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Int32}[])
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Enumerable.EnumerableUtils.Shuffle``1
+  - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
   - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Mean``1(System.Func{System.Int32,System.Double})
   - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Median``1(System.Func{System.Int32,System.Double})
   - System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Statistics.EnumerableStats.Mode``1(System.Func{System.Int32,System.Double})
@@ -909,21 +909,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Int32}[])
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{System.Int32}[])
+  commentId: M:Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
   name: InnerContains<Int32>(Boolean, IEnumerable<Int32>[])
   nameWithType: EnumerableUtils.InnerContains<Int32>(Boolean, IEnumerable<Int32>[])
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<System.Int32>(System.Boolean, System.Collections.Generic.IEnumerable<System.Int32>[])
+  fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<System.Int32>(System.Boolean, System.Collections.Generic.IEnumerable<System.Int32>[])
   nameWithType.vb: EnumerableUtils.InnerContains(Of Int32)(Boolean, IEnumerable(Of Int32)())
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of System.Int32)(System.Boolean, System.Collections.Generic.IEnumerable(Of System.Int32)())
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.InnerContains(Of System.Int32)(System.Boolean, System.Collections.Generic.IEnumerable(Of System.Int32)())
   name.vb: InnerContains(Of Int32)(Boolean, IEnumerable(Of Int32)())
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains<Int32>
     nameWithType: EnumerableUtils.InnerContains<Int32>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<System.Int32>
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<System.Int32>
   - name: (
     nameWithType: (
     fullName: (
@@ -958,10 +958,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains(Of Int32)
     nameWithType: EnumerableUtils.InnerContains(Of Int32)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of System.Int32)
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains(Of System.Int32)
   - name: (
     nameWithType: (
     fullName: (
@@ -995,21 +995,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
+  commentId: M:Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   name: IsNullOrEmpty<Int32>()
   nameWithType: EnumerableUtils.IsNullOrEmpty<Int32>()
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<System.Int32>()
+  fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<System.Int32>()
   nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of Int32)()
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of System.Int32)()
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of System.Int32)()
   name.vb: IsNullOrEmpty(Of Int32)()
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
     name: IsNullOrEmpty<Int32>
     nameWithType: EnumerableUtils.IsNullOrEmpty<Int32>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<System.Int32>
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<System.Int32>
   - name: (
     nameWithType: (
     fullName: (
@@ -1017,31 +1017,31 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1
     name: IsNullOrEmpty(Of Int32)
     nameWithType: EnumerableUtils.IsNullOrEmpty(Of Int32)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of System.Int32)
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of System.Int32)
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Enumerable.EnumerableUtils.Shuffle``1
+  commentId: M:Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   name: Shuffle<Int32>()
   nameWithType: EnumerableUtils.Shuffle<Int32>()
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<System.Int32>()
+  fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<System.Int32>()
   nameWithType.vb: EnumerableUtils.Shuffle(Of Int32)()
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of System.Int32)()
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.Shuffle(Of System.Int32)()
   name.vb: Shuffle(Of Int32)()
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1
     name: Shuffle<Int32>
     nameWithType: EnumerableUtils.Shuffle<Int32>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<System.Int32>
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<System.Int32>
   - name: (
     nameWithType: (
     fullName: (
@@ -1049,31 +1049,31 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1
     name: Shuffle(Of Int32)
     nameWithType: EnumerableUtils.Shuffle(Of Int32)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of System.Int32)
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle(Of System.Int32)
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
-  parent: Ampere.EnumerableUtils.EnumerableUtils
-  definition: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+- uid: System.Collections.Generic.IEnumerable{System.Int32}.Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  commentId: M:Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  parent: Ampere.Enumerable.EnumerableUtils
+  definition: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
   name: ToString<Int32>(String, Boolean)
   nameWithType: EnumerableUtils.ToString<Int32>(String, Boolean)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<System.Int32>(System.String, System.Boolean)
+  fullName: Ampere.Enumerable.EnumerableUtils.ToString<System.Int32>(System.String, System.Boolean)
   nameWithType.vb: EnumerableUtils.ToString(Of Int32)(String, Boolean)
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of System.Int32)(System.String, System.Boolean)
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.ToString(Of System.Int32)(System.String, System.Boolean)
   name.vb: ToString(Of Int32)(String, Boolean)
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
     name: ToString<Int32>
     nameWithType: EnumerableUtils.ToString<Int32>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<System.Int32>
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString<System.Int32>
   - name: (
     nameWithType: (
     fullName: (
@@ -1094,10 +1094,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.String,System.Boolean)
     name: ToString(Of Int32)
     nameWithType: EnumerableUtils.ToString(Of Int32)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of System.Int32)
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString(Of System.Int32)
   - name: (
     nameWithType: (
     fullName: (
@@ -2581,20 +2581,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+- uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  commentId: M:Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
   isExternal: true
   name: InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
   nameWithType: EnumerableUtils.InnerContains<T>(IEnumerable<T>, Boolean, IEnumerable<T>[])
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
+  fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Collections.Generic.IEnumerable<T>[])
   nameWithType.vb: EnumerableUtils.InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.InnerContains(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Collections.Generic.IEnumerable(Of T)())
   name.vb: InnerContains(Of T)(IEnumerable(Of T), Boolean, IEnumerable(Of T)())
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains<T>
     nameWithType: EnumerableUtils.InnerContains<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -2644,10 +2644,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
+  - uid: Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])
     name: InnerContains(Of T)
     nameWithType: EnumerableUtils.InnerContains(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.InnerContains(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.InnerContains(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -2696,26 +2696,26 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils
-  commentId: T:Ampere.EnumerableUtils.EnumerableUtils
-  parent: Ampere.EnumerableUtils
+- uid: Ampere.Enumerable.EnumerableUtils
+  commentId: T:Ampere.Enumerable.EnumerableUtils
+  parent: Ampere.Enumerable
   name: EnumerableUtils
   nameWithType: EnumerableUtils
-  fullName: Ampere.EnumerableUtils.EnumerableUtils
-- uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  fullName: Ampere.Enumerable.EnumerableUtils
+- uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
   isExternal: true
   name: IsNullOrEmpty<T>(IEnumerable<T>)
   nameWithType: EnumerableUtils.IsNullOrEmpty<T>(IEnumerable<T>)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
   nameWithType.vb: EnumerableUtils.IsNullOrEmpty(Of T)(IEnumerable(Of T))
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
   name.vb: IsNullOrEmpty(Of T)(IEnumerable(Of T))
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
     name: IsNullOrEmpty<T>
     nameWithType: EnumerableUtils.IsNullOrEmpty<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -2737,10 +2737,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
     name: IsNullOrEmpty(Of T)
     nameWithType: EnumerableUtils.IsNullOrEmpty(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.IsNullOrEmpty(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -2761,20 +2761,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   isExternal: true
   name: Shuffle<T>(IEnumerable<T>)
   nameWithType: EnumerableUtils.Shuffle<T>(IEnumerable<T>)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
   nameWithType.vb: EnumerableUtils.Shuffle(Of T)(IEnumerable(Of T))
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
   name.vb: Shuffle(Of T)(IEnumerable(Of T))
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
     name: Shuffle<T>
     nameWithType: EnumerableUtils.Shuffle<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -2796,10 +2796,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - uid: Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
     name: Shuffle(Of T)
     nameWithType: EnumerableUtils.Shuffle(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.Shuffle(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.Shuffle(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -2820,20 +2820,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
-  commentId: M:Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+- uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  commentId: M:Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
   isExternal: true
   name: ToString<T>(IEnumerable<T>, String, Boolean)
   nameWithType: EnumerableUtils.ToString<T>(IEnumerable<T>, String, Boolean)
-  fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
+  fullName: Ampere.Enumerable.EnumerableUtils.ToString<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.Boolean)
   nameWithType.vb: EnumerableUtils.ToString(Of T)(IEnumerable(Of T), String, Boolean)
-  fullName.vb: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
+  fullName.vb: Ampere.Enumerable.EnumerableUtils.ToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.Boolean)
   name.vb: ToString(Of T)(IEnumerable(Of T), String, Boolean)
   spec.csharp:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
     name: ToString<T>
     nameWithType: EnumerableUtils.ToString<T>
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString<T>
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -2871,10 +2871,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
+  - uid: Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)
     name: ToString(Of T)
     nameWithType: EnumerableUtils.ToString(Of T)
-    fullName: Ampere.EnumerableUtils.EnumerableUtils.ToString(Of T)
+    fullName: Ampere.Enumerable.EnumerableUtils.ToString(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -4475,11 +4475,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Ampere.EnumerableUtils
-  commentId: N:Ampere.EnumerableUtils
-  name: Ampere.EnumerableUtils
-  nameWithType: Ampere.EnumerableUtils
-  fullName: Ampere.EnumerableUtils
+- uid: Ampere.Enumerable
+  commentId: N:Ampere.Enumerable
+  name: Ampere.Enumerable
+  nameWithType: Ampere.Enumerable
+  fullName: Ampere.Enumerable
 - uid: Ampere.Statistics
   commentId: N:Ampere.Statistics
   name: Ampere.Statistics

@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.AmpMath
+  commentId: N:Ampere.AmpMath
+  id: Ampere.AmpMath
+  children:
+  - Ampere.AmpMath.IMatrixer
+  - Ampere.AmpMath.Matrix
+  - Ampere.AmpMath.MatrixPropertyException
+  langs:
+  - csharp
+  - vb
+  name: Ampere.AmpMath
+  nameWithType: Ampere.AmpMath
+  fullName: Ampere.AmpMath
+  type: Namespace
+  assemblies:
+  - Ampere
+references:
+- uid: Ampere.AmpMath.IMatrixer
+  commentId: T:Ampere.AmpMath.IMatrixer
+  parent: Ampere.AmpMath
+  name: IMatrixer
+  nameWithType: IMatrixer
+  fullName: Ampere.AmpMath.IMatrixer
+- uid: Ampere.AmpMath.Matrix
+  commentId: T:Ampere.AmpMath.Matrix
+  parent: Ampere.AmpMath
+  name: Matrix
+  nameWithType: Matrix
+  fullName: Ampere.AmpMath.Matrix
+- uid: Ampere.AmpMath.MatrixPropertyException
+  commentId: T:Ampere.AmpMath.MatrixPropertyException
+  name: MatrixPropertyException
+  nameWithType: MatrixPropertyException
+  fullName: Ampere.AmpMath.MatrixPropertyException
+- uid: Ampere.AmpMath
+  commentId: N:Ampere.AmpMath
+  name: Ampere.AmpMath
+  nameWithType: Ampere.AmpMath
+  fullName: Ampere.AmpMath

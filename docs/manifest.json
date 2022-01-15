@@ -14,6 +14,78 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.AmpFile.FileUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.AmpFile.FileUtils.html",
+          "hash": "eBXpftjzjJlRWlshX6uP1P6HdhZafrqsOCxyo9iQQpM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.AmpFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.AmpFile.html",
+          "hash": "BdmitwxCJ9sjTb6zunRk7NiiI6NFjhgDqAkbiXE2o8A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.AmpMath.IMatrixer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.AmpMath.IMatrixer.html",
+          "hash": "1TXycofEYG7ofaG5Gv4hDJbyZf8URiA7iOigU3N7hPc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.AmpMath.Matrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.AmpMath.Matrix.html",
+          "hash": "qMkQL+bh1vSeAl20GcPFPy5qO3SKRxk9X3Y8Z08HX1s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.AmpMath.MatrixPropertyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.AmpMath.MatrixPropertyException.html",
+          "hash": "YOv1UH/RxInWZLrKLbckG+bENosMhS3ypX1EouOMKP8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.AmpMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.AmpMath.html",
+          "hash": "Vb80V/j4Coxk5BqEAp/uF1dabJsbgjcxsWQE90aIHPI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.IIndexable-2.yml",
       "output": {
         ".html": {
@@ -114,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ampere.Base.IntRange.html",
-          "hash": "FC71db01upF1F34cyv86DSTaPq5h+/bKwbVJBDafit8="
+          "hash": "vw1pa5u/PC9Zc8Z6rEaJcB2XzA/0O1HZcFlC3rItcQ4="
         }
       },
       "is_incremental": false,
@@ -146,11 +218,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.EnumerableUtils.EnumerableUtils.yml",
+      "source_relative_path": "api/Ampere.Enumerable.EnumerableUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.EnumerableUtils.EnumerableUtils.html",
-          "hash": "IhnJqS+1QSD3apgL//EVFNgakCqzV5mbK9uzbF/+g/8="
+          "relative_path": "api/Ampere.Enumerable.EnumerableUtils.html",
+          "hash": "rM/bFbE353UpkYXrugxJSJJDkMQJMbGQhPWxOuGWveQ="
         }
       },
       "is_incremental": false,
@@ -158,11 +230,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.EnumerableUtils.InnerContainsProgram-1.yml",
+      "source_relative_path": "api/Ampere.Enumerable.InnerContainsProgram-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.EnumerableUtils.InnerContainsProgram-1.html",
-          "hash": "GVE+bTehNShWMI6AWsUMQMH8k964enD+R8psVvjjkKo="
+          "relative_path": "api/Ampere.Enumerable.InnerContainsProgram-1.html",
+          "hash": "prr3pPjij6ccqaf59XwTgb4JkWoQKMwSLm7eqPi8Xw4="
         }
       },
       "is_incremental": false,
@@ -170,83 +242,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.EnumerableUtils.yml",
+      "source_relative_path": "api/Ampere.Enumerable.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.EnumerableUtils.html",
-          "hash": "SgB+f99ZagzzpxwtDdQBg3XCzZ2bKQG5l0c2oE64E+E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.FileUtils.FileUtils.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ampere.FileUtils.FileUtils.html",
-          "hash": "OpiZJ2aCgD5qjUx2l7BzM9ehD44Lbxos9Gnat0WNOHY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.FileUtils.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ampere.FileUtils.html",
-          "hash": "MNXIn/djrcKyKZeH0FsxhwWDqUe+wp1rC9skRpy0yNA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.MathUtils.IMatrixer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ampere.MathUtils.IMatrixer.html",
-          "hash": "14BpQyWVW+mswn+wRSYklBiuw0IB1bwbCS9AP6RoeC8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.MathUtils.Matrix.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ampere.MathUtils.Matrix.html",
-          "hash": "qNJK7W3a8XaaZjw+JWwH0eo6Z9HcBteT30+qAophKqU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.MathUtils.MatrixPropertyException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ampere.MathUtils.MatrixPropertyException.html",
-          "hash": "NdQxkS0V1aKaO7Cjm5Q2PWam1WA7iG8sLcv3DwNZjYM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.MathUtils.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ampere.MathUtils.html",
-          "hash": "jTj/fsCi9YKB9/9eF35f72/MKRrNLaugDm2s5tXtd4A="
+          "relative_path": "api/Ampere.Enumerable.html",
+          "hash": "IZFU7XJ23QZUf550mNOteFjenicfcy+xr60raE6xofk="
         }
       },
       "is_incremental": false,
@@ -302,11 +302,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.StringUtils.StringBuilderUtils.yml",
+      "source_relative_path": "api/Ampere.Str.StringBuilderUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.StringUtils.StringBuilderUtils.html",
-          "hash": "weS8nX3hPmfKDpFV7Icwbky6BwTXreAScbK7M6YHESo="
+          "relative_path": "api/Ampere.Str.StringBuilderUtils.html",
+          "hash": "6qfPzHPpMjY7MsjRvKA/OltLEXlEI8K1Jl7pT7ww6pQ="
         }
       },
       "is_incremental": false,
@@ -314,11 +314,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.StringUtils.StringUtils.yml",
+      "source_relative_path": "api/Ampere.Str.StringUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.StringUtils.StringUtils.html",
-          "hash": "D/Qy0MqQB9mBcp7xc5rdF+p4xY8g9dgWYjtfmihlBdk="
+          "relative_path": "api/Ampere.Str.StringUtils.html",
+          "hash": "TOjZszGzArW+BqSpfH9KLjH84VDhhEbWb+AZkVrDj+U="
         }
       },
       "is_incremental": false,
@@ -326,11 +326,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ampere.StringUtils.yml",
+      "source_relative_path": "api/Ampere.Str.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.StringUtils.html",
-          "hash": "jCgCssvO2Y6E/PVBCtiMgCVdxhMYv078Tttn22rbaZE="
+          "relative_path": "api/Ampere.Str.html",
+          "hash": "nnWhqViBfErdsLAthJ8umOer20f1+xCoO9ZVb8SuJYI="
         }
       },
       "is_incremental": false,
@@ -342,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vJXLsVC3ORlUe68DfRIc3HOCFYA5AdBvsk5RlGgNRuE="
+          "hash": "yrqwrf9oL7VYIzC0ogag3AcbNPYCJOdZeMXqnllgFhc="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "MRvDDmAypVkMDrHYPFlzSIvBRexJb2Xl/Yg8S6jmr1U="
+          "hash": "1vTW2je3lTxdEwqyjtGSigCg+ZHgtM9+Pt/zgtWGhVY="
         }
       },
       "is_incremental": false,
@@ -390,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "itfZzDadrIJwBT7qQg+qxxEddipf+RdAzqCfHICcL1E="
+          "hash": "aRa9nE9a+5lHmk80NF9Z5YAwyRO3w4lvxDhbEUbgENM="
         }
       },
       "is_incremental": false,

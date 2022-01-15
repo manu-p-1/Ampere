@@ -1,4 +1,18 @@
 ### YamlMime:TableOfContent
+- uid: Ampere.AmpFile
+  name: Ampere.AmpFile
+  items:
+  - uid: Ampere.AmpFile.FileUtils
+    name: FileUtils
+- uid: Ampere.AmpMath
+  name: Ampere.AmpMath
+  items:
+  - uid: Ampere.AmpMath.IMatrixer
+    name: IMatrixer
+  - uid: Ampere.AmpMath.Matrix
+    name: Matrix
+  - uid: Ampere.AmpMath.MatrixPropertyException
+    name: MatrixPropertyException
 - uid: Ampere.Base
   name: Ampere.Base
   items:
@@ -31,28 +45,14 @@
   - uid: Ampere.Base.Range`1
     name: Range<T>
     name.vb: Range(Of T)
-- uid: Ampere.EnumerableUtils
-  name: Ampere.EnumerableUtils
+- uid: Ampere.Enumerable
+  name: Ampere.Enumerable
   items:
-  - uid: Ampere.EnumerableUtils.EnumerableUtils
+  - uid: Ampere.Enumerable.EnumerableUtils
     name: EnumerableUtils
-  - uid: Ampere.EnumerableUtils.InnerContainsProgram`1
+  - uid: Ampere.Enumerable.InnerContainsProgram`1
     name: InnerContainsProgram<T>
     name.vb: InnerContainsProgram(Of T)
-- uid: Ampere.FileUtils
-  name: Ampere.FileUtils
-  items:
-  - uid: Ampere.FileUtils.FileUtils
-    name: FileUtils
-- uid: Ampere.MathUtils
-  name: Ampere.MathUtils
-  items:
-  - uid: Ampere.MathUtils.IMatrixer
-    name: IMatrixer
-  - uid: Ampere.MathUtils.Matrix
-    name: Matrix
-  - uid: Ampere.MathUtils.MatrixPropertyException
-    name: MatrixPropertyException
 - uid: Ampere.Statistics
   name: Ampere.Statistics
   items:
@@ -62,10 +62,10 @@
     name: InsufficientDataSetException
   - uid: Ampere.Statistics.NoModeException
     name: NoModeException
-- uid: Ampere.StringUtils
-  name: Ampere.StringUtils
+- uid: Ampere.Str
+  name: Ampere.Str
   items:
-  - uid: Ampere.StringUtils.StringBuilderUtils
+  - uid: Ampere.Str.StringBuilderUtils
     name: StringBuilderUtils
-  - uid: Ampere.StringUtils.StringUtils
+  - uid: Ampere.Str.StringUtils
     name: StringUtils
