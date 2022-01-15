@@ -61,6 +61,39 @@ namespace Ampere.Enumerable
         }
 
         /// <summary>
+        /// Extends an generic array buffer by a specified size given a predefined condition
+        /// is satisfied.
+        /// </summary>
+        /// <typeparam name="T">The type of the array</typeparam>
+        /// <param name="buf">The buffer to be used</param>
+        /// <param name="condition">The condition that should be satisfied before Array resizing</param>
+        /// <param name="size">The size in which to resize the buffer if the condition is satisfied</param>
+        [System.Runtime.CompilerServices.MethodImpl(
+            System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        public static void CheckBufferAndExtend<T>(ref T[] buf, bool condition, int size)
+        {
+            if (condition)
+                Array.Resize(ref buf, buf.Length + size);
+        }
+
+        /// <summary>
+        /// Extends an <see cref="IEnumerable{T}"/> buffer by a specified size given a predefined condition
+        /// is satisfied.
+        /// </summary>
+        /// <typeparam name="T">The type of the IEnumerable</typeparam>
+        /// <param name="buf">The buffer to be used</param>
+        /// <param name="condition">The condition that should be satisfied before Array resizing</param>
+        /// <param name="size">The size in which to resize the buffer if the condition is satisfied</param>
+        [System.Runtime.CompilerServices.MethodImpl(
+            System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        public static void CheckBufferAndExtend<T>(ref IEnumerable<T> buf, bool condition, int size)
+        {
+            var x = buf as T[] ?? buf.ToArray();
+            if (condition)
+                Array.Resize(ref x, x.Length + size);
+        }
+
+        /// <summary>
         /// Inserts the specified element at the specified index in the generic array (modifying the original array).
         /// If element at that position exits, If shifts that element and any subsequent elements to the right,
         /// adding one to their indices. The method also allows for inserting more than one element into
