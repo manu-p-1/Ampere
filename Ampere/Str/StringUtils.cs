@@ -1,6 +1,5 @@
 ﻿#nullable enable
 using Ampere.Base;
-using Ampere.Base.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
@@ -551,196 +550,6 @@ namespace Ampere.Str
         }
 
         /// <summary>
-        /// Returns a new string in which a specified string in the current instanc is replaced another specified string.
-        /// This function performs identically to the StringBuilder's Replace method and is used based on a startIndex
-        /// and a <see cref="StringComparison"/> instance
-        /// </summary>
-        /// <param name="str">The string instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="startIndex">The starting index of where to search, inclusive</param>
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex)
-        {
-            return ReplaceRange(str, oldValue, newValue, startIndex, str.Length);
-        }
-
-        /// <summary>
-        /// Returns a new string in which a specified string in the current instanc is replaced another specified string.
-        /// This function performs identically to the StringBuilder's Replace method and is used based on a startIndex, count
-        /// and a <see cref="StringComparison"/> instance
-        /// </summary>
-        /// <param name="str">The string instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="startIndex">The starting index of where to search, inclusive</param>
-        /// <param name="count">The number of character positions to examine.</param>
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, int count)
-        {
-            /*
-             * Previous commits show the number of attempts I tried to optimize the Replace function without using
-             * StringBuilder. Pointers and various other strategies proved effective, however, StringBuilder's
-             * Replace function was so optimized, it was difficult to beat in terms of performance - mainly for large
-             * strings
-             */
-            return new StringBuilder(str).Replace(oldValue, newValue, startIndex, count)
-                .ToString();
-        }
-
-        /// <summary>
-        /// Returns a new string in which a specific occurrence of a specified string in the current instance
-        /// is replaced another specified string. 
-        /// </summary>
-        /// <example>
-        /// Given a string that says, "Hello my good good good friend", StringBuilder.ReplaceOccurrence("good", "very good", 3) would
-        /// result in, "Hello my good good very good friend".
-        /// </example>
-        /// <param name="str">The string instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceOccurrence(this string str, string oldValue, string? newValue, int occurrence)
-            => new StringBuilder(str)
-                .ReplaceOccurrence(oldValue, newValue, occurrence,
-                    StringComparison.CurrentCulture) //Using the Ampere Repalce
-                .ToString();
-
-
-        /// <summary>
-        /// Returns a new string in which a specific occurrence of a specified string in the current instance
-        /// is replaced another specified string. 
-        /// </summary>
-        /// <example>
-        /// Given a string that says, "Hello my good good good friend", StringBuilder.ReplaceOccurrence("good", "very good", 3) would
-        /// result in, "Hello my good good very good friend".
-        /// </example>
-        /// <param name="str">The string instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
-        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceOccurrence(this string str, string oldValue, string? newValue, int occurrence,
-            StringComparison comparisonType)
-            => new StringBuilder(str)
-                .ReplaceOccurrence(oldValue, newValue, occurrence, comparisonType) //Using the Ampere Repalce
-                .ToString();
-
-        /// <summary>
-        /// Returns a new string in which a specific occurrence of a specified string in the current instance
-        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
-        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(string,string,string?,int, int, StringComparison)"/>
-        /// <example>
-        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
-        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
-        /// "very happy very happy very happy very"
-        /// </example>
-        /// <example>
-        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
-        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
-        /// "very happy very very very very very"
-        /// </example>
-        /// </summary>
-        /// <param name="str">The string Instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceInterval(this string str, string oldValue, string? newValue, int every)
-            => new StringBuilder(str)
-                .ReplaceInterval(oldValue, newValue, every)
-                .ToString();
-
-        /// <summary>
-        /// Returns a new string in which a specific occurrence of a specified string in the current instance
-        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
-        /// up to a predefined stop count.
-        /// <example>
-        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
-        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
-        /// "very happy very happy very happy very"
-        /// </example>
-        /// <example>
-        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
-        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
-        /// "very happy very very very very very"
-        /// </example>
-        /// </summary>
-        /// <param name="str">The StringBuilder Instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
-        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceInterval(this string str, string oldValue, string? newValue, int every,
-            StringComparison comparisonType)
-            => ReplaceInterval(str, oldValue, newValue, every, str.Length, comparisonType);
-
-        /// <summary>
-        /// Returns a new string in which a specific occurrence of a specified string in the current instance
-        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
-        /// up to a predefined stop count.
-        /// <example>
-        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
-        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
-        /// "very happy very happy very happy very"
-        /// </example>
-        /// <example>
-        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
-        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
-        /// "very happy very very very very very"
-        /// </example>
-        /// </summary>
-        /// <param name="str">The StringBuilder Instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
-        /// <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceInterval(this string str, string oldValue, string? newValue, int every, int stop)
-            => new StringBuilder(str)
-                .ReplaceInterval(oldValue, newValue, every, stop)
-                .ToString();
-
-        /// <summary>
-        /// Returns a new string in which a specific occurrence of a specified string in the current instance
-        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
-        /// up to a predefined stop count.
-        /// <example>
-        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
-        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
-        /// "very happy very happy very happy very"
-        /// </example>
-        /// <example>
-        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
-        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
-        /// "very happy very very very very very"
-        /// </example>
-        /// </summary>
-        /// <param name="str">The StringBuilder Instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
-        /// <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
-        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceInterval(this string str, string oldValue, string? newValue, int every, int stop,
-            StringComparison comparisonType)
-            => new StringBuilder(str)
-                .ReplaceInterval(oldValue, newValue, every, stop, comparisonType)
-                .ToString();
-
-        /// <summary>
         /// Performs a Substring given a starting and ending index, similar to Java.
         /// The operation is performed mathematically as [startIndex, endIndex).
         /// </summary>
@@ -751,10 +560,26 @@ namespace Ampere.Str
         /// instance, or Empty if startIndex is equal to the length of this instance.</returns>
         [System.Runtime.CompilerServices.MethodImpl(
             System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-        public static string Slice(this string str, int startIndex, int endIndex)
+        public static string SubstringRng(this string str, int startIndex, int endIndex)
         {
             str = str ?? throw new ArgumentNullException(nameof(str));
             return str.Substring(startIndex, (endIndex - startIndex) + 1);
+        }
+
+        /// <summary>
+        /// Performs a Substring given a starting and ending index, similar to Java.
+        /// The operation is performed mathematically as [startIndex, endIndex).
+        /// </summary>
+        /// <param name="str">The given string</param>
+        /// <param name="startIndex">The inclusive starting index of <paramref name="str"/></param>
+        /// <returns>A string that is equivalent to the substring that begins at startIndex in this 
+        /// instance, or Empty if startIndex is equal to the length of this instance.</returns>
+        [System.Runtime.CompilerServices.MethodImpl(
+            System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+        public static string SubstringRng(this string str, int startIndex)
+        {
+            str = str ?? throw new ArgumentNullException(nameof(str));
+            return str.Substring(startIndex, (str.Length - 1 - startIndex) + 1);
         }
 
         /// <summary>
