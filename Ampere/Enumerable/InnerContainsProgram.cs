@@ -39,9 +39,9 @@ namespace Ampere.Enumerable
         /// <param name="otherArrays">The list of IEnumberables to check against the baseArray</param>
         public InnerContainsProgram(IEnumerable<T> baseArray, bool isAll, params IEnumerable<T>[] otherArrays)
         {
-            this._baseArray = baseArray;
-            this._otherArrays = otherArrays;
-            this._isAll = isAll;
+            _baseArray = baseArray;
+            _otherArrays = otherArrays;
+            _isAll = isAll;
         }
 
         /// <summary>

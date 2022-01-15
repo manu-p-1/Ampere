@@ -16,7 +16,7 @@ namespace Ampere.Base
         /// </summary>
         /// <param name="minimum"></param>
         /// <param name="maximum"></param>
-        public IntRange(int minimum, int maximum) : base(minimum, maximum){ }
+        public IntRange(int minimum, int maximum) : base(minimum, maximum) { }
 
         /// <summary>
         /// Returns an instance of the IntRangeEnumerator that's used to enumerate through the range
@@ -30,7 +30,7 @@ namespace Ampere.Base
         /// values of this instance.
         /// </summary>
         /// <returns>An instance of the IntRangeEnumerator class</returns>
-        IEnumerator IEnumerable.GetEnumerator() => this.GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
         private sealed class IntRangeEnumerator : IEnumerator<int>
         {
@@ -60,7 +60,7 @@ namespace Ampere.Base
             {
                 get
                 {
-                    if (_position > this._maximum)
+                    if (_position > _maximum)
                     {
                         throw new InvalidOperationException("Range maximum exceeded");
                     }

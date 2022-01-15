@@ -1,8 +1,8 @@
 ﻿#nullable enable
+using Ampere.Base.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Ampere.Base.Attributes;
 
 namespace Ampere.Str
 {
@@ -12,21 +12,76 @@ namespace Ampere.Str
     public static class StringBuilderUtils
     {
         /// <summary>
-        /// A StringBuilder extension to append to the StringBuilder if and only if a condition is met.
+        /// Appends a <see cref="ReadOnlySpan{T}"/> if a condition is met.
         /// </summary>
         /// <param name="sb">The StringBuilder instance</param>
-        /// <param name="str">The string to append</param>
-        /// <param name="condition">The condition to meet in order for the append to occur</param>
-        /// <returns>The StringBuilder instance</returns>
-        public static StringBuilder AppendIf(this StringBuilder sb, string str, bool condition)
+        /// <param name="c">The ReadOnlySpan instance to append to the StringBuilder instance</param>
+        /// <param name="condition">The condition to satisfy to decide whether appending will occur</param>
+        /// <returns>Th StringBuilder instance</returns>
+        public static StringBuilder AppendIf(this StringBuilder sb, ReadOnlySpan<char> c, bool condition)
         {
             if (sb is null)
                 throw new ArgumentNullException(nameof(sb));
+            return condition ? sb.Append(c) : sb;
+        }
 
-            if (condition)
-                sb.Append(str);
+        /// <summary>
+        /// Appends a <see cref="ReadOnlyMemory{T}"/> if a condition is met.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="c">The ReadOnlySpan instance to append to the StringBuilder instance</param>
+        /// <param name="condition">The condition to satisfy to decide whether appending will occur</param>
+        /// <returns>Th StringBuilder instance</returns>
+        public static StringBuilder AppendIf(this StringBuilder sb, ReadOnlyMemory<char> c, bool condition)
+        {
+            if (sb is null)
+                throw new ArgumentNullException(nameof(sb));
+            return condition ? sb.Append(c) : sb;
+        }
 
-            return sb;
+        /// <summary>
+        /// Appends a <see cref="bool"/> if a condition is met.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="b">The ReadOnlySpan instance to append to the StringBuilder instance</param>
+        /// <param name="condition">The condition to satisfy to decide whether appending will occur</param>
+        /// <returns>Th StringBuilder instance</returns>
+        public static StringBuilder AppendIf(this StringBuilder sb, bool b, bool condition)
+        {
+            if (sb is null)
+                throw new ArgumentNullException(nameof(sb));
+            return condition ? sb.Append(b) : sb;
+        }
+
+        /// <summary>
+        /// Appends a <see cref="StringBuilder"/> if a condition is met.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="stringBuilder">The ReadOnlySpan instance to append to the StringBuilder instance</param>
+        /// <param name="condition">The condition to satisfy to decide whether appending will occur</param>
+        /// <returns>Th StringBuilder instance</returns>
+        public static StringBuilder AppendIf(this StringBuilder sb, StringBuilder? stringBuilder, bool condition)
+        {
+            if (sb is null)
+                throw new ArgumentNullException(nameof(sb));
+            return condition ? sb.Append(stringBuilder) : sb;
+        }
+
+        /// <summary>
+        /// Appends a <see cref="StringBuilder"/> if a condition is met.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="stringBuilder">The ReadOnlySpan instance to append to the StringBuilder instance</param>
+        /// <param name="startIndex">The starting index of where to search, inclusive</param>
+        /// <param name="count">The number of character positions to examine.</param>
+        /// <param name="condition">The condition to satisfy to decide whether appending will occur</param>
+        /// <returns>Th StringBuilder instance</returns>
+        public static StringBuilder AppendIf(this StringBuilder sb, StringBuilder? stringBuilder, int startIndex,
+            int count, bool condition)
+        {
+            if (sb is null)
+                throw new ArgumentNullException(nameof(sb));
+            return condition ? sb.Append(stringBuilder, startIndex, count) : sb;
         }
 
         /// <summary>
@@ -99,12 +154,15 @@ namespace Ampere.Str
         /// <param name="value">The string to find as a character array</param>
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
         /// <param name="count">The number of character positions to examine.</param>
-        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
+        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="value"/> is searched within this instance</param>
         /// <returns>The index if found and -1 otherwise</returns>
         [Beta("Evaluating Performance versus StringBuilder.ToString().IndexOf()")]
         public static int IndexOf(this StringBuilder sb, string value, int startIndex, int count,
             StringComparison comparisonType)
         {
+            if (sb == null)
+                throw new ArgumentNullException(nameof(sb));
+
             if (value == null)
                 throw new ArgumentNullException(nameof(value));
 
@@ -123,7 +181,6 @@ namespace Ampere.Str
             {
                 return -1;
             }
-
 
             int index;
             int length = value.Length;
@@ -256,11 +313,73 @@ namespace Ampere.Str
         /// <summary>
         /// Returns true if the length of the string is zero or one.
         /// </summary>
-        /// <param name="sb">The string to be used</param>
+        /// <param name="sb">The StringBuilder instance</param>
         /// <returns>True if the length of the string is zero or one</returns>
         [System.Runtime.CompilerServices.MethodImpl(
             System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
         internal static bool IsZeroOrOne(this StringBuilder sb) => sb.Length is 0 or 1;
+
+        /// <summary>
+        /// Calls the StringBuilder Replace method only if a predefined condition is met.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="oldChar">The character to replace</param>
+        /// <param name="newChar">The character that will replace <paramref name="oldChar"/></param>
+        /// <param name="condition">The condition to satisfy to decide whether replacement will occur</param>
+        /// <returns>The StringBuilder instance</returns>
+        public static StringBuilder ReplaceIf(this StringBuilder sb, char oldChar, char newChar, bool condition)
+        {
+            if (sb == null) throw new ArgumentNullException(nameof(sb));
+            return condition ? sb.Replace(oldChar, newChar) : sb;
+        }
+
+        /// <summary>
+        /// Calls the StringBuilder Replace method only if a predefined condition is met.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="oldChar">The character to replace</param>
+        /// <param name="newChar">The character that will replace <paramref name="oldChar"/></param>
+        /// <param name="startIndex">The starting index of where to search, inclusive</param>
+        /// <param name="count">The number of character positions to examine.</param>
+        /// <param name="condition">The condition to satisfy to decide whether replacement will occur</param>
+        /// <returns>The StringBuilder instance</returns>
+        public static StringBuilder ReplaceIf(this StringBuilder sb, char oldChar, char newChar, int startIndex,
+            int count, bool condition)
+        {
+            if (sb == null) throw new ArgumentNullException(nameof(sb));
+            return condition ? sb.Replace(oldChar, newChar, startIndex, count) : sb;
+        }
+
+        /// <summary>
+        /// Calls the StringBuilder Replace method only if a predefined condition is met.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="oldValue">The string to replace</param>
+        /// <param name="newValue">The string that will replace <paramref name="oldValue"/></param>
+        /// <param name="condition">The condition to satisfy to decide whether replacement will occur</param>
+        /// <returns>The StringBuilder instance</returns>
+        public static StringBuilder ReplaceIf(this StringBuilder sb, string oldValue, string? newValue, bool condition)
+        {
+            if (sb == null) throw new ArgumentNullException(nameof(sb));
+            return condition ? sb.Replace(oldValue, newValue) : sb;
+        }
+
+        /// <summary>
+        /// Calls the StringBuilder Replace method only if a predefined condition is met.
+        /// </summary>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="oldValue">The string to replace</param>
+        /// <param name="newValue">The string that will replace <paramref name="oldValue"/></param>
+        /// <param name="startIndex">The starting index of where to search, inclusive</param>
+        /// <param name="count">The number of character positions to examine.</param>
+        /// <param name="condition">The condition to satisfy to decide whether replacement will occur</param>
+        /// <returns>The StringBuilder instance</returns>
+        public static StringBuilder ReplaceIf(this StringBuilder sb, string oldValue, string? newValue, int startIndex,
+            int count, bool condition)
+        {
+            if (sb == null) throw new ArgumentNullException(nameof(sb));
+            return condition ? sb.Replace(oldValue, newValue, startIndex, count) : sb;
+        }
 
         /// <summary>
         /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
@@ -277,7 +396,45 @@ namespace Ampere.Str
         /// <returns>This StringBuilder instance</returns>
         [Beta]
         public static StringBuilder ReplaceOccurrence(this StringBuilder sb, string oldValue, string? newValue,
-            int occurrence) => ReplaceOccurrence(sb, oldValue, newValue, occurrence, StringComparison.CurrentCulture);
+            int occurrence)
+            => ReplaceOccurrence(sb, oldValue, newValue, occurrence, StringComparison.CurrentCulture, true);
+
+        /// <summary>
+        /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string. 
+        /// </summary>
+        /// <example>
+        /// Given a string that says, "Hello my good good good friend", StringBuilder.ReplaceOccurrence("good", "very good", 3) would
+        /// result in, "Hello my good good very good friend".
+        /// </example>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
+        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>        /// <returns>This StringBuilder instance</returns>
+        [Beta]
+        public static StringBuilder ReplaceOccurrence(this StringBuilder sb, string oldValue, string? newValue,
+            int occurrence, StringComparison comparisonType)
+            => ReplaceOccurrence(sb, oldValue, newValue, occurrence, comparisonType, true);
+
+        /// <summary>
+        /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string. 
+        /// </summary>
+        /// <example>
+        /// Given a string that says, "Hello my good good good friend", StringBuilder.ReplaceOccurrence("good", "very good", 3) would
+        /// result in, "Hello my good good very good friend".
+        /// </example>
+        /// <param name="sb">The StringBuilder instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
+        /// <param name="condition">The condition to satisfy to decide whether replacement will occur</param>
+        /// <returns>This StringBuilder instance</returns>
+        [Beta]
+        public static StringBuilder ReplaceOccurrence(this StringBuilder sb, string oldValue, string? newValue,
+            int occurrence, bool condition)
+            => ReplaceOccurrence(sb, oldValue, newValue, occurrence, StringComparison.CurrentCulture, condition);
 
         /// <summary>
         /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
@@ -292,11 +449,18 @@ namespace Ampere.Str
         /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
         /// <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
         /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
+        /// <param name="condition">The condition to satisfy to decide whether replacement will occur</param>
         /// <returns>This StringBuilder instance</returns>
         [Beta]
         public static StringBuilder ReplaceOccurrence(this StringBuilder sb, string oldValue, string? newValue,
-            int occurrence, StringComparison comparisonType)
+            int occurrence, StringComparison comparisonType, bool condition)
         {
+            if (!condition)
+                return sb;
+
+            if (sb == null)
+                throw new ArgumentOutOfRangeException(nameof(sb));
+
             switch (occurrence)
             {
                 case < 0:
@@ -327,7 +491,7 @@ namespace Ampere.Str
         /// <summary>
         /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
         /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
-        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(System.Text.StringBuilder,string,string?,int, int, StringComparison)"/>
+        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(StringBuilder,string,string?,int, int, StringComparison, bool)"/>
         /// <example>
         /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
         /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
@@ -346,12 +510,38 @@ namespace Ampere.Str
         /// <returns>This StringBuilder instance</returns>
         [Beta]
         public static StringBuilder ReplaceInterval(this StringBuilder sb, string oldValue, string? newValue, int every)
-            => ReplaceInterval(sb, oldValue, newValue, every, sb.Length, StringComparison.CurrentCulture);
+            => ReplaceInterval(sb, oldValue, newValue, every, sb.Length, StringComparison.CurrentCulture, true);
 
         /// <summary>
         /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
         /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
-        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(System.Text.StringBuilder,string,string?,int, int, StringComparison)"/>
+        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(StringBuilder,string,string?,int, int, StringComparison, bool)"/>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
+        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
+        /// "very happy very happy very happy very"
+        /// </example>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
+        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
+        /// "very happy very very very very very"
+        /// </example>
+        /// </summary>
+        /// <param name="sb">The StringBuilder Instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
+        /// <param name="condition">The condition to satisfy before replacing the value</param>
+        /// <returns>This StringBuilder instance</returns>
+        [Beta]
+        public static StringBuilder ReplaceInterval(this StringBuilder sb, string oldValue, string? newValue, int every,
+            bool condition)
+            => ReplaceInterval(sb, oldValue, newValue, every, sb.Length, StringComparison.CurrentCulture, condition);
+
+        /// <summary>
+        /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(StringBuilder,string,string?,int, int, StringComparison, bool)"/>
         /// <example>
         /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
         /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
@@ -372,12 +562,39 @@ namespace Ampere.Str
         [Beta]
         public static StringBuilder ReplaceInterval(this StringBuilder sb, string oldValue, string? newValue, int every,
             StringComparison comparisonType)
-            => ReplaceInterval(sb, oldValue, newValue, every, sb.Length, comparisonType);
+            => ReplaceInterval(sb, oldValue, newValue, every, sb.Length, comparisonType, true);
 
         /// <summary>
         /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
         /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
-        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(System.Text.StringBuilder,string,string?,int, int, StringComparison)"/>
+        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(StringBuilder,string,string?,int, int, StringComparison, bool)"/>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
+        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
+        /// "very happy very happy very happy very"
+        /// </example>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
+        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
+        /// "very happy very very very very very"
+        /// </example>
+        /// </summary>
+        /// <param name="sb">The StringBuilder Instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
+        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
+        /// <param name="condition">The condition to satisfy before replacing the value</param>
+        /// <returns>This StringBuilder instance</returns>
+        [Beta]
+        public static StringBuilder ReplaceInterval(this StringBuilder sb, string oldValue, string? newValue, int every,
+            StringComparison comparisonType, bool condition)
+            => ReplaceInterval(sb, oldValue, newValue, every, sb.Length, comparisonType, condition);
+
+        /// <summary>
+        /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(StringBuilder,string,string?,int, int, StringComparison, bool)"/>
         /// <example>
         /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
         /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
@@ -398,7 +615,34 @@ namespace Ampere.Str
         [Beta]
         public static StringBuilder ReplaceInterval(this StringBuilder sb, string oldValue, string? newValue, int every,
             int stop)
-            => ReplaceInterval(sb, oldValue, newValue, every, stop, StringComparison.CurrentCulture);
+            => ReplaceInterval(sb, oldValue, newValue, every, stop, StringComparison.CurrentCulture, true);
+
+        /// <summary>
+        /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+        /// up to a predefined stop count. This is an overload of <see cref="ReplaceInterval(StringBuilder,string,string?,int, int, StringComparison, bool)"/>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
+        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
+        /// "very happy very happy very happy very"
+        /// </example>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
+        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
+        /// "very happy very very very very very"
+        /// </example>
+        /// </summary>
+        /// <param name="sb">The StringBuilder Instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
+        /// <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
+        /// <param name="condition">The condition to satisfy before replacing the value</param>
+        /// <returns>This StringBuilder instance</returns>
+        [Beta]
+        public static StringBuilder ReplaceInterval(this StringBuilder sb, string oldValue, string? newValue, int every,
+            int stop, bool condition)
+            => ReplaceInterval(sb, oldValue, newValue, every, stop, StringComparison.CurrentCulture, condition);
 
         /// <summary>
         /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
@@ -425,7 +669,38 @@ namespace Ampere.Str
         [Beta]
         public static StringBuilder ReplaceInterval(this StringBuilder sb, string oldValue, string? newValue, int every,
             int stop, StringComparison comparisonType)
+            => ReplaceInterval(sb, oldValue, newValue, every, stop, comparisonType, true);
+
+        /// <summary>
+        /// Returns this instance of the StringBuilder in which a specific occurrence of a specified string in the current instance
+        /// is replaced another specified string on a integer defined interval. This allows certain occurrences/intervals of text
+        /// up to a predefined stop count.
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, sb.Length, StringComparison.CurrentCulture)
+        /// will replace every second "very" with the word "happy" until the very end of the string. The result would be:
+        /// "very happy very happy very happy very"
+        /// </example>
+        /// <example>
+        /// Given the following string, "very very very very very very very", StringBuilder.ReplaceInterval("very", "happy", 2, 3)
+        /// will replace every second "very" with the word "happy" until the third occurrence of "very". The result would be:
+        /// "very happy very very very very very"
+        /// </example>
+        /// </summary>
+        /// <param name="sb">The StringBuilder Instance</param>
+        /// <param name="oldValue">The string to be replaced</param>
+        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
+        /// <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
+        /// <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
+        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
+        /// <param name="condition">The condition to satisfy before replacing the value</param>
+        /// <returns>This StringBuilder instance</returns>
+        [Beta]
+        public static StringBuilder ReplaceInterval(this StringBuilder sb, string oldValue, string? newValue, int every,
+            int stop, StringComparison comparisonType, bool condition)
         {
+            if (!condition)
+                return sb;
+
             if (every < 0)
                 throw new ArgumentOutOfRangeException(nameof(every));
 

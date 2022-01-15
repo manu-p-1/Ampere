@@ -69,9 +69,9 @@ namespace Ampere.Base
     /// <typeparam name="T">The element type of the array</typeparam>
     internal sealed class Shuffler<T>
     {
-       /*
-        * Holds the array
-        */
+        /*
+         * Holds the array
+         */
         private readonly T[] _data;
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace Ampere.Base
         /// <param name="data">The generic array to be shuffled</param>
         public Shuffler(T[] data)
         {
-            this._data = data;
+            _data = data;
         }
 
         /// <summary>
@@ -191,6 +191,6 @@ namespace Ampere.Base
             {
                 (_data[indexThree], _data[indexFour]) = (_data[indexFour], _data[indexThree]);
             }
-        } 
+        }
     } //ShuffleUtil
 } //Namespace

@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Ampere.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Ampere.Base;
 
 namespace Ampere.Enumerable
 {
@@ -292,14 +292,14 @@ namespace Ampere.Enumerable
         {
             src = src ?? throw new ArgumentNullException(nameof(src));
             var enumerable = src as T[] ?? src.ToArray();
-            
+
             if (enumerable.IsZeroOrOne())
             {
                 return enumerable;
             }
 
             return src.GetType() == typeof(Array)
-                ? new Shuffler<T>((T[]) src).Shuffle()
+                ? new Shuffler<T>((T[])src).Shuffle()
                 : new Shuffler<T>(enumerable.ToArray()).Shuffle();
         }
 

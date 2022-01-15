@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Ampere.Base.Attributes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Ampere.Base.Attributes;
 
 namespace Ampere.AmpFile
 {
@@ -20,11 +20,11 @@ namespace Ampere.AmpFile
         {
             var x = File.ReadLines(fileInfo.FullName).Last();
             using var file = new StreamWriter(fileInfo.FullName, true);
-            
+
             if (x != string.Empty)
             {
                 file.WriteLine(Environment.NewLine);
-                
+
             }
             file.WriteLine(value);
         }
@@ -66,7 +66,7 @@ namespace Ampere.AmpFile
         /// <param name="line">The line number to replace from</param>
         public static void ReplaceAllInLine(FileInfo fileInfo, string oldValue, string replacementValue, int line)
         {
-            ReplaceInLines(fileInfo,new Dictionary<KeyValuePair<string, string>, int>
+            ReplaceInLines(fileInfo, new Dictionary<KeyValuePair<string, string>, int>
             {
                 {
                     new KeyValuePair<string, string>(oldValue,
@@ -90,7 +90,7 @@ namespace Ampere.AmpFile
             foreach (var ((key, s), value) in replacementDict)
             {
                 arrLine[value - 1] = arrLine[value - 1].Replace(key, s);
-                
+
             }
             File.WriteAllLines(fileInfo.FullName, arrLine);
         }
@@ -103,7 +103,7 @@ namespace Ampere.AmpFile
         /// <param name="line">The line number to replace from</param>
         public static void ReplaceLine(FileInfo fileInfo, string replacementValue, int line)
         {
-            ReplaceLines(fileInfo, new Dictionary<string, int> {{replacementValue, line}});
+            ReplaceLines(fileInfo, new Dictionary<string, int> { { replacementValue, line } });
         }
 
         /// <summary>
@@ -191,7 +191,7 @@ namespace Ampere.AmpFile
         /// <param name="fileInfo">The FileInfo instance to read from</param>
         /// <param name="line">The line number to find</param>
         /// <returns></returns>
-        public static string GetValueAtLine(FileInfo fileInfo, int line) => 
+        public static string GetValueAtLine(FileInfo fileInfo, int line) =>
             File.ReadAllLines(fileInfo.FullName)[line - 1].Trim();
 
         /// <summary>

@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Ampere.Base;
+using Ampere.Base.Attributes;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using Ampere.Base;
-using Ampere.Base.Attributes;
+// ReSharper disable PossibleInvalidOperationException
 
 namespace Ampere.AmpMath
 {
@@ -86,7 +87,7 @@ namespace Ampere.AmpMath
         /// <returns></returns>
         public bool EqualDimension(IMatrixer otherMatrix)
         {
-            return this.Rows == otherMatrix.Rows && this.Cols == otherMatrix.Cols;
+            return Rows == otherMatrix.Rows && Cols == otherMatrix.Cols;
         }
 
         private protected static Matrix DoTwoMatrixScalar(Matrix one, Matrix two, Func<double, double, double> action)
@@ -207,7 +208,7 @@ namespace Ampere.AmpMath
         /// </summary>
         /// <param name="m">The Matrix instance</param>
         /// <returns>The Matrix after the scalar has been applied</returns>
-        public static Matrix operator !(Matrix m) => DoScalar(m, null, (val, sc) => val - (val * 2));
+        public static Matrix operator !(Matrix m) => DoScalar(m, null, (val, _) => val - (val * 2));
 
         /// <summary>
         /// An operator method to add two Matrix instances.
@@ -278,18 +279,18 @@ namespace Ampere.AmpMath
         /// <returns>A bool representing whether the two Matrix instances are equal</returns>
         public static bool operator ==(Matrix one, Matrix two)
         {
-            if(one is null || two is null)
+            if (one is null || two is null)
             {
                 return false;
             }
             if (!IMatrixer.EqualDimension(one, two))
                 return false;
 
-            for(var i = 0; i < one.Rows; i++)
+            for (var i = 0; i < one.Rows; i++)
             {
-                for(var j = 0; j < one.Cols; j++)
+                for (var j = 0; j < one.Cols; j++)
                 {
-                    if (Math.Abs(one[i, j] - two[i, j]) > Tolerance) 
+                    if (Math.Abs(one[i, j] - two[i, j]) > Tolerance)
                         return false;
                 }
             }
@@ -414,7 +415,7 @@ namespace Ampere.AmpMath
         {
             if (obj is null) return false;
             if (ReferenceEquals(this, obj)) return true;
-            return obj.GetType() == this.GetType() && Equals((Matrix) obj);
+            return obj.GetType() == GetType() && Equals((Matrix)obj);
         }
 
         /// <summary>

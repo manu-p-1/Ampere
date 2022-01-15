@@ -1,13 +1,12 @@
 ﻿#nullable enable
+using Ampere.Base;
+using Ampere.Base.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Linq;
 using System.Text;
-using Ampere.Base;
-using Ampere.Base.Attributes;
-using Ampere.Enumerable;
 
 namespace Ampere.Str
 {
@@ -19,9 +18,7 @@ namespace Ampere.Str
         /// <summary>
         /// 
         /// </summary>
-        private const char CharSpace = (char) 32;
-
-        private const short DefaultBufferExtension = 256;
+        private const char CharSpace = (char)32;
 
         /// <summary>
         /// Converts a <see cref="IEnumerable{T}"/> to a string
@@ -171,7 +168,7 @@ namespace Ampere.Str
             {
                 0 => 0,
                 1 => 1,
-                _ => str.Split(new[] {CharSpace, '\r', '\n'}, options: StringSplitOptions.RemoveEmptyEntries)
+                _ => str.Split(new[] { CharSpace, '\r', '\n' }, options: StringSplitOptions.RemoveEmptyEntries)
                     .Length
             };
         }
@@ -490,7 +487,7 @@ namespace Ampere.Str
         public static string ReplaceAt(this string str, int index, char c)
         {
             str = str ?? throw new ArgumentNullException(nameof(str));
-            return new StringBuilder(str) {[index] = c}.ToString();
+            return new StringBuilder(str) { [index] = c }.ToString();
         }
 
         /// <summary>
@@ -556,6 +553,7 @@ namespace Ampere.Str
         /// <summary>
         /// Returns a new string in which a specified string in the current instanc is replaced another specified string.
         /// This function performs identically to the StringBuilder's Replace method and is used based on a startIndex
+        /// and a <see cref="StringComparison"/> instance
         /// </summary>
         /// <param name="str">The string instance</param>
         /// <param name="oldValue">The string to be replaced</param>
@@ -565,41 +563,7 @@ namespace Ampere.Str
         [Beta]
         public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex)
         {
-            return ReplaceRange(str, oldValue, newValue, startIndex, str.Length, StringComparison.CurrentCulture);
-        }
-
-        /// <summary>
-        /// Returns a new string in which a specified string in the current instanc is replaced another specified string.
-        /// This function performs identically to the StringBuilder's Replace method and is used based on a startIndex
-        /// and a <see cref="StringComparison"/> instance
-        /// </summary>
-        /// <param name="str">The string instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="startIndex">The starting index of where to search, inclusive</param>
-        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex,
-            StringComparison comparisonType)
-        {
-            return ReplaceRange(str, oldValue, newValue, startIndex, str.Length, comparisonType);
-        }
-
-        /// <summary>
-        /// Returns a new string in which a specified string in the current instanc is replaced another specified string.
-        /// This function performs identically to the StringBuilder's Replace method and is used based on a startIndex and count.
-        /// </summary>
-        /// <param name="str">The string instance</param>
-        /// <param name="oldValue">The string to be replaced</param>
-        /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
-        /// <param name="startIndex">The starting index of where to search, inclusive</param>
-        /// <param name="count">The number of character positions to examine.</param>
-        /// <returns>A new string containing the replacement</returns>
-        [Beta]
-        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, int count)
-        {
-            return ReplaceRange(str, oldValue, newValue, startIndex, count, StringComparison.CurrentCulture);
+            return ReplaceRange(str, oldValue, newValue, startIndex, str.Length);
         }
 
         /// <summary>
@@ -612,64 +576,18 @@ namespace Ampere.Str
         /// <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
         /// <param name="startIndex">The starting index of where to search, inclusive</param>
         /// <param name="count">The number of character positions to examine.</param>
-        /// <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
         /// <returns>A new string containing the replacement</returns>
         [Beta]
-        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex,
-            int count, StringComparison comparisonType)
+        public static string ReplaceRange(this string str, string oldValue, string newValue, int startIndex, int count)
         {
-            int index = str.IndexOf(oldValue, startIndex, comparisonType);
-
-            if (index == -1 || count == 0)
-            {
-                return str;
-            }
-
-            if (startIndex < 0 || startIndex >= str.Length)
-            {
-                throw new ArgumentOutOfRangeException(nameof(startIndex));
-            }
-
-            if (count < 0 || count > str.Length)
-            {
-                throw new ArgumentOutOfRangeException(nameof(count));
-            }
-
-            var nctr = 0;
-            var octr = 0;
-            var buf = new char[str.Length];
-            char[] cpy = str.ToCharArray();
-            
-            while (octr != str.Length)
-            {
-
-                if (octr == index)
-                {
-                    if (octr + oldValue.Length > count)
-                        break;
-
-                    octr += oldValue.Length;
-
-                    foreach (char c in newValue)
-                    {
-                        EnumerableUtils.CheckBufferAndExtend(ref buf, nctr == buf.Length, DefaultBufferExtension);
-
-                        buf[nctr++] = c;
-                    }
-
-                    index += oldValue.Length; // Move to the end of the replacement
-                    index = str.IndexOf(oldValue, index, comparisonType);
-                }
-                else
-                {
-                    EnumerableUtils.CheckBufferAndExtend(ref buf, nctr == buf.Length, DefaultBufferExtension);
-                    buf[nctr] = cpy[octr];
-                    nctr++;
-                    octr++;
-                }
-            }
-
-            return new string(buf, 0, nctr);
+            /*
+             * Previous commits show the number of attempts I tried to optimize the Replace function without using
+             * StringBuilder. Pointers and various other strategies proved effective, however, StringBuilder's
+             * Replace function was so optimized, it was difficult to beat in terms of performance - mainly for large
+             * strings
+             */
+            return new StringBuilder(str).Replace(oldValue, newValue, startIndex, count)
+                .ToString();
         }
 
         /// <summary>
