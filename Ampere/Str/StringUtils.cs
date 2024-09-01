@@ -537,8 +537,7 @@ namespace Ampere.Str
                     {
                         if (!spaceSplit[i].IsZeroOrOne())
                         {
-                            var shuffleUtil = new Shuffler<char>(spaceSplit[i].ToCharArray());
-                            spaceSplit[i] = new string(shuffleUtil.Shuffle());
+                            spaceSplit[i] = new string(Shuffler.Shuffle(spaceSplit[i].ToCharArray()));
                         }
                     }
 
@@ -546,7 +545,7 @@ namespace Ampere.Str
                 }
             }
 
-            return new string(new Shuffler<char>(str.ToCharArray()).Shuffle());
+            return new string(Shuffler.Shuffle(str.ToCharArray()));
         }
 
         /// <summary>
