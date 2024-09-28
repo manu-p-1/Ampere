@@ -11,9 +11,9 @@ namespace AmpereMSTest
         [TestMethod]
         public void InnerContainsTest_WithIsAllTrue()
         {
-            int[] x = { 1, 2, 3, 4, 5, 6, 7 };
-            int[] y = { 3, 4, 5 };
-            int[] z = { 10, 11, 12 };
+            int[] x = [1, 2, 3, 4, 5, 6, 7];
+            int[] y = [3, 4, 5];
+            int[] z = [10, 11, 12];
 
             var icp = x.InnerContains(true, y, z);
             Assert.AreEqual(icp.CheckContains(), false);
@@ -23,9 +23,9 @@ namespace AmpereMSTest
         [TestMethod]
         public void InnerContainsTest_WithIsAllFalse()
         {
-            int[] x = { 1, 2, 3, 4, 5, 6, 7 };
-            int[] y = { 3, 4, 5 };
-            int[] z = { 10, 11, 12, 3 };
+            int[] x = [1, 2, 3, 4, 5, 6, 7];
+            int[] y = [3, 4, 5];
+            int[] z = [10, 11, 12, 3];
 
             var icp = x.InnerContains(false, y, z);
             Assert.AreEqual(icp.CheckContains(), true);
