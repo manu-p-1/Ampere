@@ -139,5 +139,14 @@ namespace AmpereMSTest.Str
             sb.ReplaceInterval("very", "happy", 2, 3);
             Assert.AreEqual(sb.ToString(), "very happy very very very very very");
         }
+
+        [TestMethod]
+        public void AppendIf_Test()
+        {
+            var sb = new StringBuilder("Manu");
+            bool x = true;
+            sb.AppendIf(" is Cool", x);
+            Assert.AreEqual(sb.ToString(), "Manu is Cool");
+        }
     }
 }
