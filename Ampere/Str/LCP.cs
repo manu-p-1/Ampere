@@ -4,16 +4,10 @@ using System.Text;
 
 namespace Ampere.Str
 {
-    internal class LcpFinder
+    internal class LcpFinder(IEnumerable<string> strs, bool ignoreCase = false)
     {
-        private IEnumerable<string> Strs { get; }
-        private bool IgnoreCase { get; }
-
-        public LcpFinder(IEnumerable<string> strs, bool ignoreCase = false)
-        {
-            Strs = strs;
-            IgnoreCase = ignoreCase;
-        }
+        private IEnumerable<string> Strs { get; } = strs;
+        private bool IgnoreCase { get; } = ignoreCase;
 
         public string Find()
         {

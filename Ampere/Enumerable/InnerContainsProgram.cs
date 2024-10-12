@@ -59,11 +59,9 @@ namespace Ampere.Enumerable
                 foreach (var x in _otherArrays)
                 {
                     var violatedEnumerable = x as T[] ?? x.ToArray(); // To avoid multi-enumeration in LINQ Query
-                    if (violatedEnumerable.Intersect(_baseArray).Count() != violatedEnumerable.Length)
-                    {
-                        ViolatedEnumerable = violatedEnumerable;
-                        return false;
-                    }
+                    if (violatedEnumerable.Intersect(_baseArray).Count() == violatedEnumerable.Length) continue;
+                    ViolatedEnumerable = violatedEnumerable;
+                    return false;
                 }
             }
             else
@@ -71,11 +69,9 @@ namespace Ampere.Enumerable
                 foreach (var x in _otherArrays)
                 {
                     var violatedEnumerable = x as T[] ?? x.ToArray(); // To avoid multi-enumeration in LINQ Query
-                    if (!violatedEnumerable.Intersect(_baseArray).Any())
-                    {
-                        ViolatedEnumerable = violatedEnumerable;
-                        return false;
-                    }
+                    if (violatedEnumerable.Intersect(_baseArray).Any()) continue;
+                    ViolatedEnumerable = violatedEnumerable;
+                    return false;
                 }
             }
 

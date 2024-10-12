@@ -20,8 +20,7 @@ namespace Ampere.Str
         /// <returns>Th StringBuilder instance</returns>
         public static StringBuilder AppendIf(this StringBuilder sb, ReadOnlySpan<char> c, bool condition)
         {
-            if (sb is null)
-                throw new ArgumentNullException(nameof(sb));
+            ArgumentNullException.ThrowIfNull(sb);
             return condition ? sb.Append(c) : sb;
         }
 
@@ -34,8 +33,7 @@ namespace Ampere.Str
         /// <returns>Th StringBuilder instance</returns>
         public static StringBuilder AppendIf(this StringBuilder sb, ReadOnlyMemory<char> c, bool condition)
         {
-            if (sb is null)
-                throw new ArgumentNullException(nameof(sb));
+            ArgumentNullException.ThrowIfNull(sb);
             return condition ? sb.Append(c) : sb;
         }
 
@@ -48,8 +46,7 @@ namespace Ampere.Str
         /// <returns>Th StringBuilder instance</returns>
         public static StringBuilder AppendIf(this StringBuilder sb, bool b, bool condition)
         {
-            if (sb is null)
-                throw new ArgumentNullException(nameof(sb));
+            ArgumentNullException.ThrowIfNull(sb);
             return condition ? sb.Append(b) : sb;
         }
 
@@ -62,8 +59,7 @@ namespace Ampere.Str
         /// <returns>Th StringBuilder instance</returns>
         public static StringBuilder AppendIf(this StringBuilder sb, StringBuilder? stringBuilder, bool condition)
         {
-            if (sb is null)
-                throw new ArgumentNullException(nameof(sb));
+            ArgumentNullException.ThrowIfNull(sb);
             return condition ? sb.Append(stringBuilder) : sb;
         }
 
@@ -79,8 +75,7 @@ namespace Ampere.Str
         public static StringBuilder AppendIf(this StringBuilder sb, StringBuilder? stringBuilder, int startIndex,
             int count, bool condition)
         {
-            if (sb is null)
-                throw new ArgumentNullException(nameof(sb));
+            ArgumentNullException.ThrowIfNull(sb);
             return condition ? sb.Append(stringBuilder, startIndex, count) : sb;
         }
 
@@ -160,11 +155,8 @@ namespace Ampere.Str
         public static int IndexOf(this StringBuilder sb, string value, int startIndex, int count,
             StringComparison comparisonType)
         {
-            if (sb == null)
-                throw new ArgumentNullException(nameof(sb));
-
-            if (value == null)
-                throw new ArgumentNullException(nameof(value));
+            ArgumentNullException.ThrowIfNull(sb);
+            ArgumentNullException.ThrowIfNull(value);
 
             if (startIndex < 0 || startIndex > sb.Length)
                 throw new ArgumentOutOfRangeException(nameof(startIndex));
@@ -187,16 +179,14 @@ namespace Ampere.Str
 
             for (int i = startIndex; i < count + startIndex; ++i)
             {
-                if (sb[i] == value[0])
-                {
-                    index = 1;
-                    while (index < length &&
-                           string.Equals(sb[i + index].ToString(), value[index].ToString(), comparisonType))
-                        ++index;
+                if (sb[i] != value[0]) continue;
+                index = 1;
+                while (index < length &&
+                       string.Equals(sb[i + index].ToString(), value[index].ToString(), comparisonType))
+                    ++index;
 
-                    if (index == length)
-                        return i;
-                }
+                if (index == length)
+                    return i;
             }
 
             return -1;
@@ -377,7 +367,7 @@ namespace Ampere.Str
         public static StringBuilder ReplaceIf(this StringBuilder sb, string oldValue, string? newValue, int startIndex,
             int count, bool condition)
         {
-            if (sb == null) throw new ArgumentNullException(nameof(sb));
+            ArgumentNullException.ThrowIfNull(sb);
             return condition ? sb.Replace(oldValue, newValue, startIndex, count) : sb;
         }
 
@@ -701,11 +691,9 @@ namespace Ampere.Str
             if (!condition)
                 return sb;
 
-            if (every < 0)
-                throw new ArgumentOutOfRangeException(nameof(every));
+            ArgumentOutOfRangeException.ThrowIfNegative(every);
 
-            if (stop > oldValue.Length)
-                throw new ArgumentOutOfRangeException(nameof(stop));
+            ArgumentOutOfRangeException.ThrowIfGreaterThan(stop, oldValue.Length);
 
             newValue ??= string.Empty;
 

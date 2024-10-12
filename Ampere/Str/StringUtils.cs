@@ -27,7 +27,7 @@ namespace Ampere.Str
         /// <returns>The converted string</returns>
         public static string CharToString(IEnumerable<char> charEnumerable)
         {
-            if (charEnumerable is null) throw new ArgumentNullException(nameof(charEnumerable));
+            ArgumentNullException.ThrowIfNull(charEnumerable);
             return new string(charEnumerable as char[] ?? charEnumerable.ToArray());
         }
 
@@ -65,20 +65,16 @@ namespace Ampere.Str
                 return str;
             }
 
-            if (spaces != 0)
+            if (spaces == 0) return str;
+            var matchingNumSpaces = 0;
+            for (var i = 0; i < str.Length; i++)
             {
-                var matchingNumSpaces = 0;
-                for (var i = 0; i < str.Length; i++)
-                {
-                    if (char.IsWhiteSpace(str[i]))
-                    {
-                        matchingNumSpaces++;
+                if (!char.IsWhiteSpace(str[i])) continue;
+                matchingNumSpaces++;
 
-                        if (spaces == matchingNumSpaces)
-                        {
-                            return str[..i];
-                        }
-                    }
+                if (spaces == matchingNumSpaces)
+                {
+                    return str[..i];
                 }
             }
 
@@ -103,7 +99,7 @@ namespace Ampere.Str
         /// </summary>
         /// <param name="str">The string to be used</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
-        /// <returns>True if their are duplicate characters. False, otherwise</returns>
+        /// <returns>True if there are duplicate characters. False, otherwise</returns>
         public static bool ContainsDuplicateChars(this string str)
         {
             str = str ?? throw new ArgumentNullException(nameof(str));
@@ -124,7 +120,7 @@ namespace Ampere.Str
         /// <param name="arg">The inner string to search for duplicates</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="arg"/> is null</exception>
-        /// <returns>True if their are duplicate inner strings. False, otherwise</returns>
+        /// <returns>True if there are duplicate inner strings. False, otherwise</returns>
         public static bool ContainsDuplicateStrings(this string str, string arg)
         {
             str = str ?? throw new ArgumentNullException(nameof(str));
@@ -167,7 +163,7 @@ namespace Ampere.Str
             {
                 0 => 0,
                 1 => 1,
-                _ => str.Split(new[] { CharSpace, '\r', '\n' }, options: StringSplitOptions.RemoveEmptyEntries)
+                _ => str.Split([CharSpace, '\r', '\n'], options: StringSplitOptions.RemoveEmptyEntries)
                     .Length
             };
         }
@@ -299,18 +295,18 @@ namespace Ampere.Str
         }
 
         /// <summary>
-        /// Checks if a string is well formed. A string is well formed if
+        /// Checks if a string is well-formed. A string is well-formed if
         /// for every alphabet-recognized character, there is an appropriate
-        /// closing character. For every inner string, with the exception
-        /// of characters not defined in the alphabet, in between an opening
+        /// closing character. For every inner string, except for
+        ///  characters not defined in the alphabet, in between an opening
         /// and closing character, if that string were to be split in half,
-        /// each half would be a mirror image of each other. A well formed
+        /// each half would be a mirror image of each other. A well-formed
         /// string consists of the default alphabet consists of the following
         /// characters: '(',')','{','}','[',']','&lt;','>'.
         /// </summary>
         /// <param name="str">the string to check</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
-        /// <returns>whether the string is well formed</returns>
+        /// <returns>whether the string is well-formed</returns>
         /// <example>The following demonstrates how to use the <see cref="IsWellFormed(string)"/> method.</example>
         /// <code>
         ///
@@ -332,12 +328,12 @@ namespace Ampere.Str
         }
 
         /// <summary>
-        /// Checks if a string is well formed. A string is well formed if
+        /// Checks if a string is well-formed. A string is well-formed if
         /// for every alphabet-recognized character, there is an appropriate
-        /// closing character. For every inner string, with the exception
-        /// of characters not defined in the alphabet, in between an opening
+        /// closing character. For every inner string, except for
+        ///  characters not defined in the alphabet, in between an opening
         /// and closing character, if that string were to be split in half,
-        /// each half would be a mirror image of each other. A well formed
+        /// each half would be a mirror image of each other. A well-formed
         /// string consists of the user specified Dictionary of key-value
         /// pairs, where the key is the opening character and the value
         /// is the closing character.
@@ -346,7 +342,7 @@ namespace Ampere.Str
         /// <param name="alphabet">the dictionary of key value pairs - where the key
         /// represents the opening character and the value represents the closing character</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
-        /// <returns>whether the string is well formed</returns>
+        /// <returns>whether the string is well-formed</returns>
         /// <example>The following demonstrates how to use the
         /// <see cref="IsWellFormed(string, Dictionary{char, char})"/> method.</example>
         /// <code>
@@ -383,7 +379,7 @@ namespace Ampere.Str
         /// <returns>The longest common prefix</returns>
         public static string LongestCommonPrefix(this IEnumerable<string> strs, bool ignoreCase = false)
         {
-            if (strs is null) throw new ArgumentNullException(nameof(strs));
+            ArgumentNullException.ThrowIfNull(strs);
             var enumerable = strs as string[] ?? strs.ToArray();
             return enumerable.Length == 1
                 ? enumerable.ElementAt(0)
@@ -513,7 +509,7 @@ namespace Ampere.Str
         /// Shuffle's characters in a string. The methodology used to generate random
         /// indices used for shuffling is cryptographically strong. Due to this nature,
         /// there is no guarantee that the return string will be entirely different
-        /// than the original.
+        /// from the original.
         /// </summary>
         /// <param name="str">The string to be shuffled</param>
         /// <param name="preserveSpaces">Determines whether to shuffle spaces or not</param>

@@ -6,7 +6,7 @@ namespace Ampere.Base
 {
     /// <summary>
     /// The range class represents a range of int values. Unlike other <see cref="IRangify{T}"/> implementing classes,
-    /// IntRange contains an <see cref="IEnumerator{T}"/> of type int to enumerate through all of the values between
+    /// IntRange contains an <see cref="IEnumerator{T}"/> of type int to enumerate through all the values between
     /// the minimum and maximum ranges. By convention, both sides of the range should be inclusive values.
     /// </summary>
     public class IntRange : Range<int>, IEnumerable<int>

@@ -14,13 +14,13 @@ namespace Ampere.Enumerable
         private static readonly System.Globalization.CultureInfo CulInv = System.Globalization.CultureInfo.InvariantCulture;
 
         /// <summary>
-        /// Concatenates all IEnumerables which are specified in in the parameter. The
+        /// Concatenates all IEnumerables which are specified in the parameter. The
         /// concatenation occurs in the order specified in the parameter.
         /// </summary>
         /// <typeparam name="T">The enumerable type to be used</typeparam>
         /// <param name="ie">An enumerable of all one dimensional arrays to be concatenated</param>
         /// <exception cref="ArgumentNullException"> Is thrown if any enumerable, which is a candidate to be concatenated, is null</exception>
-        /// <returns>A single enumerable with all of the concatenated elements</returns>
+        /// <returns>A single enumerable with all the concatenated elements</returns>
         /// <example>This simple example shows how to call the <see cref="Concat{T}"/> method.</example>
         /// <code>
         ///
@@ -61,7 +61,7 @@ namespace Ampere.Enumerable
         }
 
         /// <summary>
-        /// Extends an generic array buffer by a specified size given a predefined condition
+        /// Extends a generic array buffer by a specified size given a predefined condition
         /// is satisfied.
         /// </summary>
         /// <typeparam name="T">The type of the array</typeparam>
@@ -173,7 +173,7 @@ namespace Ampere.Enumerable
         /// adding one to their indices. The method also allows for inserting more than one element into
         /// the enumerable at one time given that they are specified. This Insert method is functionally similar
         /// to the Insert method of the IList interface. <see cref="System.Collections.IList.Insert(int, object)"/>
-        /// for information about the add method of the IList interface. This function also has an generic array overload.
+        /// for information about the add method of the IList interface. This function also has a generic array overload.
         /// </summary>
         /// <typeparam name="T">The type of the enumerable</typeparam>
         /// <param name="src">The IEnumerable to be used</param>
@@ -335,7 +335,7 @@ namespace Ampere.Enumerable
         /// as a separator between each element. If the enumerable is not primitive, it prints the enumerable with no separator.
         /// A fmtExp of length 1 specifies a character to separate each element. The enumerable is printed out, following
         /// a default behavior, except with the specified separator rather than the default separator. A fmtExp
-        /// of length 2 specifies a two characters to mark the left and right outer bounds of the enumerable, A fmtExp
+        /// of length 2 specifies two characters to mark the left and right outer bounds of the enumerable, A fmtExp
         /// of length 3 specifies a character for the left outer bound of the enumerable, followed by a separator character,
         /// followed by a character for the right outer bound of the enumerable. If no separator is desired, the "/0+" expression
         /// can be specified.The evenlySpacedSeparator parameter specifies whether an even number of spaces should be on
@@ -347,7 +347,7 @@ namespace Ampere.Enumerable
         /// <param name="evenlySpacedSeparator">Determines whether the spacing between each element should be the same</param>
         /// <returns>The string representation of the enumerable</returns>
         /// <exception cref="ArgumentNullException">If arr is null</exception>
-        /// <exception cref="FormatException">If the formatting expression length is neither 0 or 3</exception>
+        /// <exception cref="FormatException">If the formatting expression length is neither 0 nor 3</exception>
         /// <example>This sample shows how to call the <see cref="ToString{T}"/> method.</example>
         /// <code>
         ///

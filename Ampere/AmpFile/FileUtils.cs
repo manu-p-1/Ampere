@@ -66,7 +66,7 @@ namespace Ampere.AmpFile
         /// <param name="line">The line number to replace from</param>
         public static void ReplaceAllInLine(FileInfo fileInfo, string oldValue, string replacementValue, int line)
         {
-            ReplaceInLines(fileInfo, new Dictionary<KeyValuePair<string, string>, int>
+            ReplaceInLines(fileInfo, new Dictionary<KeyValuePair<string, string>, int>()
             {
                 {
                     new KeyValuePair<string, string>(oldValue,
@@ -170,10 +170,9 @@ namespace Ampere.AmpFile
         public static int FindInFile(FileInfo fileInfo, Func<string, bool> predicate)
         {
             using var file = new StreamReader(fileInfo.FullName, true);
-            string line;
             var count = 1;
 
-            while ((line = file.ReadLine()) != null)
+            while (file.ReadLine() is { } line)
             {
                 if (predicate(line))
                 {

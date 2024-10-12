@@ -17,10 +17,7 @@ namespace Ampere.Base
         /// <exception cref="ArgumentNullException">Thrown when the provided array is null.</exception>
         public static T[] Shuffle<T>(T[] data)
         {
-            if (data == null)
-            {
-                throw new ArgumentNullException(nameof(data));
-            }
+            ArgumentNullException.ThrowIfNull(data);
 
             var len = data.Length;
             var rng = RandomNumberGenerator.Create();

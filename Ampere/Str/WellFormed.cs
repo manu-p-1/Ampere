@@ -6,7 +6,7 @@ namespace Ampere.Str
 {
     /// <summary>
     /// A utility class that contains functions to determine
-    /// whether a string is a well formed string.
+    /// whether a string is a well-formed string.
     /// </summary>
     internal class WellFormedUtility
     {
@@ -37,7 +37,7 @@ namespace Ampere.Str
             };
 
         /// <summary>
-        /// Verifies if the string is well formed by using
+        /// Verifies if the string is well-formed by using
         /// a stack data structure to measure the balance of the string.
         /// </summary>
         /// <param name="inp">The input string</param>

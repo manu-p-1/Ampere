@@ -109,7 +109,7 @@ namespace Ampere.Statistics
         {
             src = src ?? throw new ArgumentNullException(nameof(src));
 
-            double[] enumerable = src as double[] ?? src.ToArray();
+            var enumerable = src as double[] ?? src.ToArray();
             int len = enumerable.Length;
 
             switch (len)
@@ -125,8 +125,7 @@ namespace Ampere.Statistics
             var hash = new Dictionary<double, int>();
             foreach (double t in sorted)
             {
-                if (hash.ContainsKey(t)) hash[t] += 1;
-                else hash.Add(t, 1);
+                if (!hash.TryAdd(t, 1)) hash[t] += 1;
             }
 
             double[] keysInDict = hash.Keys.ToArray();
@@ -237,7 +236,7 @@ namespace Ampere.Statistics
         /// <typeparam name="T">The type of the enumerable</typeparam>
         /// <param name="numbers">The specified enumerable</param>
         /// <param name="selector">The numeral specifier</param>
-        /// <returns>The populationvariance of the source</returns>
+        /// <returns>The population variance of the source</returns>
         public static double PopulationVariance<T>(this IEnumerable<T> numbers, Func<T, double> selector)
         {
             return (from num in numbers select selector(num)).PopulationVariance();
@@ -422,7 +421,7 @@ namespace Ampere.Statistics
         }
 
         /// <summary>
-        /// Finds the inter-quartile range of the enumerable.
+        /// Finds the inter quartile range of the enumerable.
         /// </summary>
         /// <param name="src">The IEnumerable of type double</param>
         /// <exception cref="ArgumentNullException">Thrown when the source is null</exception>
