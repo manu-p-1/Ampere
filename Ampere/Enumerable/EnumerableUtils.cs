@@ -21,7 +21,7 @@ namespace Ampere.Enumerable
         /// <param name="ie">An enumerable of all one dimensional arrays to be concatenated</param>
         /// <exception cref="ArgumentNullException"> Is thrown if any enumerable, which is a candidate to be concatenated, is null</exception>
         /// <returns>A single enumerable with all the concatenated elements</returns>
-        /// <example>This simple example shows how to call the <see cref="Concat{T}"/> method.</example>
+        /// <example>This simple example shows how to call the <see cref="Fuse{T}"/> method.</example>
         /// <code>
         ///
         /// using static Utilities.EnumerableUtils;
@@ -33,12 +33,12 @@ namespace Ampere.Enumerable
         ///        int[] x = { 1, 2, 3, 4 };
         ///        int[] y = { 1, 2, 3, 4, 5, 6 };
         ///        int[] z = { 1, 2, 3 };
-        ///        int[] comb = Concat(x, y, z).toArray();
+        ///        int[] comb = Fuse(x, y, z).toArray();
         ///        //Printing out 'comb' results in 1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 1, 2, 3
         ///    }
         /// }
         /// </code>
-        public static IEnumerable<T> Concat<T>(params IEnumerable<T>[] ie) //Passing a variable number of IEnumerables as params
+        public static IEnumerable<T> Fuse<T>(params IEnumerable<T>[] ie) //Passing a variable number of IEnumerables as params
         {
             if (ie is null) throw new ArgumentNullException(nameof(ie));
             foreach (var x in ie)
@@ -219,15 +219,9 @@ namespace Ampere.Enumerable
         /// <returns>An instance of the <see cref="InnerContainsProgram{T}"/> to verify the result and violating enumerables</returns>
         public static InnerContainsProgram<T> InnerContains<T>(this IEnumerable<T> ie, bool isAll, params IEnumerable<T>[] otherArrays)
         {
-            if (ie is null)
-            {
-                throw new ArgumentNullException(nameof(ie));
-            }
+            ArgumentNullException.ThrowIfNull(ie);
 
-            if (otherArrays is null)
-            {
-                throw new ArgumentNullException(nameof(otherArrays));
-            }
+            ArgumentNullException.ThrowIfNull(otherArrays);
 
             return new InnerContainsProgram<T>(ie, isAll, otherArrays);
         }
