@@ -1,5 +1,6 @@
 ﻿using Ampere.Enumerable;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
@@ -50,6 +51,24 @@ namespace AmpereMSTest
 
             Trace.WriteLine(EnumerableUtils.ToString(x));
             Trace.WriteLine("Enumerable Utils: " + watch.Elapsed);
+        }
+
+        [TestMethod]
+        public void ToString_FormatsEnumerableCorrectly()
+        {
+            var list = new List<int> { 1, 2, 3 };
+            var result = list.ToString("[|]");
+            Assert.AreEqual("[1|2|3]", result);
+        }
+
+        [TestMethod]
+        public void Insert_AddsElementsToEnumerable()
+        {
+            var array = new[] { 1, 2, 4 };
+            EnumerableUtils.Insert(ref array, 2, 1, 3);
+
+            Assert.AreEqual(4, array.Length);
+            Assert.AreEqual(3, array[2]);
         }
     }
 }

@@ -367,97 +367,26 @@ namespace Ampere.Enumerable
         /// </code>
         public static string ToString<T>(this IEnumerable<T> src, string fmtExp = "", bool evenlySpacedSeparator = false)
         {
-            fmtExp = fmtExp ?? throw new ArgumentNullException(nameof(fmtExp));
-            var frl = fmtExp.Length;
+            fmtExp ??= throw new ArgumentNullException(nameof(fmtExp));
+            src ??= throw new ArgumentNullException(nameof(src));
 
-            src = src ?? throw new ArgumentNullException(nameof(src));
-
-            if (frl > 3)
+            var (outerLeft, separator, outerRight) = fmtExp.Length switch
             {
-                throw new FormatException("Unsupported Expression");
-            }
+                3 => (fmtExp[0].ToString(), fmtExp[1].ToString(), fmtExp[2].ToString()),
+                2 => (fmtExp[0].ToString(), "", fmtExp[1].ToString()),
+                1 => ("", fmtExp[0].ToString(), ""),
+                _ => ("", "", "")
+            };
 
-            string outerLeft = string.Empty, separator = string.Empty, outerRight = string.Empty;
-            var hasNoSep = false;
-            if (fmtExp.Equals("/0+", StringComparison.InvariantCulture))
-            {
-                hasNoSep = true;
-                frl = 1;
-            }
-
-            switch (frl)
-            {
-                case 3:
-                    outerLeft = fmtExp[0].ToString(CulInv);
-                    separator = fmtExp[1].ToString(CulInv);
-                    outerRight = fmtExp[2].ToString(CulInv);
-                    break;
-
-                case 2:
-                    outerLeft = fmtExp[0].ToString(CulInv);
-                    outerRight = fmtExp[1].ToString(CulInv);
-                    break;
-
-                case 1:
-                    separator = fmtExp[0].ToString(CulInv);
-                    break;
-            }
-
-            var isLooselyPrimitive = false;
-            var type = typeof(T);
-            if (type.IsPrimitive || type == typeof(decimal) || type == typeof(string))
-            {
-                isLooselyPrimitive = true;
-            }
-
-            var sb = new StringBuilder();
-
-            sb.Append(outerLeft);
-
+            var sb = new StringBuilder(outerLeft);
             var enumerable = src as T[] ?? src.ToArray();
-            var len = enumerable.Length;
 
-            for (var i = 0; i < len; i++)
+            for (var i = 0; i < enumerable.Length; i++)
             {
-                if (i == len - 1)
-                {
-                    sb.Append(enumerable.ElementAt(i));
-                }
-                else switch (frl)
-                {
-                    case 0:
-                    case 2:
-                    case 3:
-                        defBehavior:
-                        if (evenlySpacedSeparator && isLooselyPrimitive)
-                        {
-                            if (frl != 2)
-                            {
-                                sb.Append(enumerable.ElementAt(i) + " " + separator + " ");
-                            }
-                            else
-                            {
-                                sb.Append(enumerable.ElementAt(i) + separator + " ");
-                            }
-                        }
-                        else if (isLooselyPrimitive)
-                        {
-                            sb.Append(enumerable.ElementAt(i) + separator + " ");
-                        }
-                        else
-                        {
-                            sb.Append(enumerable.ElementAt(i) + separator);
-                        }
-                        break;
-
-                    case 1:
-                        if (hasNoSep)
-                            sb.Append(enumerable.ElementAt(i));
-                        else
-                            goto defBehavior;
-                        break;
-                }
+                sb.Append(enumerable[i]);
+                if (i < enumerable.Length - 1) sb.Append(separator);
             }
+
             sb.Append(outerRight);
             return sb.ToString();
         }

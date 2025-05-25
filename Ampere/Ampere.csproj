@@ -1,11 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>13.0</LangVersion>
     <Version>0.1.0</Version>
     <Company />
     <Description>A robust library of .NET utilities</Description>
-    <Copyright>Copyright © Manu Puduvalli 2024</Copyright>
+    <Copyright>Copyright © Manu Puduvalli 2025</Copyright>
     <PackageProjectUrl>https://github.com/manu-p-1/Ampere</PackageProjectUrl>
     <RepositoryUrl>https://github.com/manu-p-1/Ampere</RepositoryUrl>
     <FileVersion>0.1.0</FileVersion>

@@ -35,5 +35,33 @@ namespace AmpereMSTest.Str
             sb.AppendLineFromEnumerable(ss);
             TestContext.WriteLine(sb.ToString());
         }
+
+        [TestMethod]
+        public void IsSystemDateTime_ValidDate_ReturnsTrue()
+        {
+            var result = "2025-05-25".IsSystemDateTime("yyyy-MM-dd");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void IsSystemDateTime_InvalidDate_ReturnsFalse()
+        {
+            var result = "invalid-date".IsSystemDateTime("yyyy-MM-dd");
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void ContainsDigits_StringWithDigits_ReturnsTrue()
+        {
+            var result = "abc123".ContainsDigits();
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void ContainsDigits_StringWithoutDigits_ReturnsFalse()
+        {
+            var result = "abcdef".ContainsDigits();
+            Assert.IsFalse(result);
+        }
     }
 }

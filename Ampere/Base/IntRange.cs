@@ -45,31 +45,13 @@ namespace Ampere.Base
                 _position = minimum;
             }
 
-            public bool MoveNext()
-            {
-                _position++;
-                return (_position < _maximum);
-            }
+            public bool MoveNext() => ++_position <= _maximum;
 
-            public void Reset()
-            {
-                _position = _minimum;
-            }
+            public void Reset() => _position = _minimum;
 
-            public object Current
-            {
-                get
-                {
-                    if (_position > _maximum)
-                    {
-                        throw new InvalidOperationException("Range maximum exceeded");
-                    }
-                    return _position;
-                }
-            }
+            public int Current => _position;
 
-            // ReSharper disable once PossibleNullReferenceException
-            int IEnumerator<int>.Current => (int)Current;
+            object IEnumerator.Current => Current;
 
             public void Dispose() { } // According to Microsoft, leave empty if nothing to Dispose
         }
