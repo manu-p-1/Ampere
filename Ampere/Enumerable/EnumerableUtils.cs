@@ -130,8 +130,6 @@ namespace Ampere.Enumerable
         /// </code>
         public static void Insert<T>(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)
         {
-            var len = src.Length;
-
             if (src is null)
             {
                 throw new ArgumentNullException(nameof(src));
@@ -140,31 +138,22 @@ namespace Ampere.Enumerable
             {
                 throw new ArgumentNullException(nameof(valuesToIns));
             }
-            if (startIdx < 0 || startIdx >= len || amtToIns < 0)
+            if (startIdx < 0 || startIdx > src.Length || amtToIns < 0)
             {
                 throw new IndexOutOfRangeException();
             }
             if (amtToIns != valuesToIns.Length && valuesToIns.Length != 0)
             {
-                throw new IndexOutOfRangeException("offset amount should equal the number of values to be filled");
+                throw new IndexOutOfRangeException("The number of values to insert must match the specified amount.");
             }
-            var arrManaged = new T[len + amtToIns];
 
-            if (amtToIns != 0)
-            {
-                if (startIdx == len - 1)
-                {
-                    Array.ConstrainedCopy(src, 0, arrManaged, 0, len);
-                    Array.ConstrainedCopy(valuesToIns, 0, arrManaged, startIdx + 1, valuesToIns.Length);
-                }
-                else
-                {
-                    Array.ConstrainedCopy(src, 0, arrManaged, 0, startIdx);
-                    Array.ConstrainedCopy(valuesToIns, 0, arrManaged, startIdx, valuesToIns.Length);
-                    Array.ConstrainedCopy(src, startIdx, arrManaged, startIdx + amtToIns, len - startIdx);
-                }
-            }
-            src = arrManaged;
+            var newArray = new T[src.Length + amtToIns];
+
+            Array.Copy(src, 0, newArray, 0, startIdx);
+            Array.Copy(valuesToIns, 0, newArray, startIdx, valuesToIns.Length);
+            Array.Copy(src, startIdx, newArray, startIdx + amtToIns, src.Length - startIdx);
+
+            src = newArray;
         }
 
         /// <summary>
@@ -367,8 +356,15 @@ namespace Ampere.Enumerable
         /// </code>
         public static string ToString<T>(this IEnumerable<T> src, string fmtExp = "", bool evenlySpacedSeparator = false)
         {
-            fmtExp ??= throw new ArgumentNullException(nameof(fmtExp));
-            src ??= throw new ArgumentNullException(nameof(src));
+            if (fmtExp == null)
+            {
+                throw new ArgumentNullException(nameof(fmtExp));
+            }
+
+            if (src == null)
+            {
+                throw new ArgumentNullException(nameof(src));
+            }
 
             var (outerLeft, separator, outerRight) = fmtExp.Length switch
             {

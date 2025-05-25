@@ -1,9 +1,9 @@
-﻿using Ampere.Str;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Ampere.Str;
 // ReSharper disable StringIndexOfIsCultureSpecific.1
 // ReSharper disable ReturnValueOfPureMethodIsNotUsed
 
@@ -89,7 +89,8 @@ namespace AmpereMSTest.Str
         [TestMethod]
         public void IndexOf_Test_ExecutionTime()
         {
-            var sb = new StringBuilder(File.ReadAllText(@"..\..\..\String\Blob\IpsumLoremParagraph.txt"));
+            var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../String/Blob/IpsumLoremParagraph.txt");
+            var sb = new StringBuilder(File.ReadAllText(filePath));
             var stopwatch = new Stopwatch();
 
             stopwatch.Start();
@@ -104,7 +105,8 @@ namespace AmpereMSTest.Str
         [TestMethod]
         public void IndexOfBuiltIn_Test_ExecutionTime()
         {
-            var sb = File.ReadAllText(@"..\..\..\String\Blob\IpsumLoremParagraph.txt");
+            var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../String/Blob/IpsumLoremParagraph.txt");
+            var sb = File.ReadAllText(filePath);
             var stopwatch = new Stopwatch();
 
             stopwatch.Start();

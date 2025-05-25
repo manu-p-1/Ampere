@@ -1,6 +1,6 @@
 using Ampere.Base;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace AmpereMSTest.Base
 {
@@ -11,7 +11,12 @@ namespace AmpereMSTest.Base
         public void GetEnumerator_IteratesThroughRange()
         {
             var range = new IntRange(1, 5);
-            var result = range.ToList();
+            var result = new List<int>();
+
+            foreach (var value in range)
+            {
+                result.Add(value);
+            }
 
             CollectionAssert.AreEqual(new[] { 1, 2, 3, 4, 5 }, result);
         }

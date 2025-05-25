@@ -269,8 +269,15 @@ namespace Ampere.Str
         /// <returns>True if the string is a valid date recognized by System.DateTime</returns>
         public static bool IsSystemDateTime(this string date, string formattingRegex)
         {
-            date ??= throw new ArgumentNullException(nameof(date));
-            formattingRegex ??= throw new ArgumentNullException(nameof(formattingRegex));
+            if (date == null)
+            {
+                throw new ArgumentNullException(nameof(date));
+            }
+
+            if (formattingRegex == null)
+            {
+                throw new ArgumentNullException(nameof(formattingRegex));
+            }
 
             if (date.Length == 0 || formattingRegex.Length == 0)
             {

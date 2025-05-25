@@ -18,14 +18,14 @@ namespace Ampere.AmpFile
         /// <param name="value">The string value to write</param>
         public static void WriteLine(FileInfo fileInfo, string value)
         {
-            var x = File.ReadLines(fileInfo.FullName).Last();
+            var lastLine = File.ReadLines(fileInfo.FullName).LastOrDefault();
             using var file = new StreamWriter(fileInfo.FullName, true);
 
-            if (x != string.Empty)
+            if (!string.IsNullOrEmpty(lastLine))
             {
-                file.WriteLine(Environment.NewLine);
-
+                file.WriteLine();
             }
+
             file.WriteLine(value);
         }
 

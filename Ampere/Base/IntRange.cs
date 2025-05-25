@@ -23,7 +23,13 @@ namespace Ampere.Base
         /// values of this instance.
         /// </summary>
         /// <returns>An instance of the IntRangeEnumerator class</returns>
-        public IEnumerator<int> GetEnumerator() => new IntRangeEnumerator(Minimum, Maximum);
+        public IEnumerator<int> GetEnumerator()
+        {
+            for (int i = Minimum; i <= Maximum; i++)
+            {
+                yield return i;
+            }
+        }
 
         /// <summary>
         /// Returns an instance of the IntRangeEnumerator that's used to enumerate through the range
@@ -31,29 +37,5 @@ namespace Ampere.Base
         /// </summary>
         /// <returns>An instance of the IntRangeEnumerator class</returns>
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
-
-        private sealed class IntRangeEnumerator : IEnumerator<int>
-        {
-            private readonly int _minimum;
-            private readonly int _maximum;
-            private int _position;
-
-            public IntRangeEnumerator(int minimum, int maximum)
-            {
-                _minimum = minimum;
-                _maximum = maximum;
-                _position = minimum;
-            }
-
-            public bool MoveNext() => ++_position <= _maximum;
-
-            public void Reset() => _position = _minimum;
-
-            public int Current => _position;
-
-            object IEnumerator.Current => Current;
-
-            public void Dispose() { } // According to Microsoft, leave empty if nothing to Dispose
-        }
     }
 }
