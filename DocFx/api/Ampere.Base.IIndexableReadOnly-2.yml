@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IIndexable.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: IIndexableReadOnly
     path: ../Ampere/Base/IIndexable.cs
@@ -24,7 +24,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
-  summary: "\nSpecifies a read-only indexer with one dimension.\n"
+  summary: Specifies a read-only indexer with one dimension.
   example: []
   syntax:
     content: public interface IIndexableReadOnly<in TKey, out TVal>
@@ -35,12 +35,6 @@ items:
       description: The element type of the value
     content.vb: Public Interface IIndexableReadOnly(Of In TKey, Out TVal)
   nameWithType.vb: IIndexableReadOnly(Of TKey, TVal)
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
   fullName.vb: Ampere.Base.IIndexableReadOnly(Of TKey, TVal)
   name.vb: IIndexableReadOnly(Of TKey, TVal)
 - uid: Ampere.Base.IIndexableReadOnly`2.Item(`0)
@@ -50,14 +44,14 @@ items:
   langs:
   - csharp
   - vb
-  name: Item[TKey]
-  nameWithType: IIndexableReadOnly<TKey, TVal>.Item[TKey]
-  fullName: Ampere.Base.IIndexableReadOnly<TKey, TVal>.Item[TKey]
+  name: this[TKey]
+  nameWithType: IIndexableReadOnly<TKey, TVal>.this[TKey]
+  fullName: Ampere.Base.IIndexableReadOnly<TKey, TVal>.this[TKey]
   type: Property
   source:
     remote:
       path: Ampere/Base/IIndexable.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: this[]
     path: ../Ampere/Base/IIndexable.cs
@@ -65,7 +59,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
-  summary: "\nThe one dimension readonly indexer.\n"
+  summary: The one dimension readonly indexer.
   example: []
   syntax:
     content: TVal this[TKey key] { get; }
@@ -76,28 +70,43 @@ items:
     return:
       type: '{TVal}'
       description: The TVal generic type
-    content.vb: ReadOnly Property Item(key As TKey) As TVal
+    content.vb: ReadOnly Default Property this[](key As TKey) As TVal
   overload: Ampere.Base.IIndexableReadOnly`2.Item*
-  nameWithType.vb: IIndexableReadOnly(Of TKey, TVal).Item(TKey)
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
-  fullName.vb: Ampere.Base.IIndexableReadOnly(Of TKey, TVal).Item(TKey)
-  name.vb: Item(TKey)
+  nameWithType.vb: IIndexableReadOnly(Of TKey, TVal).this[](TKey)
+  fullName.vb: Ampere.Base.IIndexableReadOnly(Of TKey, TVal).this[](TKey)
+  name.vb: this[](TKey)
 references:
 - uid: Ampere.Base
   commentId: N:Ampere.Base
+  href: Ampere.html
   name: Ampere.Base
   nameWithType: Ampere.Base
   fullName: Ampere.Base
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Base
+    name: Base
+    href: Ampere.Base.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Base
+    name: Base
+    href: Ampere.Base.html
 - uid: Ampere.Base.IIndexableReadOnly`2.Item*
   commentId: Overload:Ampere.Base.IIndexableReadOnly`2.Item
-  name: Item
-  nameWithType: IIndexableReadOnly<TKey, TVal>.Item
-  fullName: Ampere.Base.IIndexableReadOnly<TKey, TVal>.Item
-  nameWithType.vb: IIndexableReadOnly(Of TKey, TVal).Item
-  fullName.vb: Ampere.Base.IIndexableReadOnly(Of TKey, TVal).Item
+  href: Ampere.Base.IIndexableReadOnly-2.html#Ampere_Base_IIndexableReadOnly_2_Item__0_
+  name: this
+  nameWithType: IIndexableReadOnly<TKey, TVal>.this
+  fullName: Ampere.Base.IIndexableReadOnly<TKey, TVal>.this
+  nameWithType.vb: IIndexableReadOnly(Of TKey, TVal).this[]
+  fullName.vb: Ampere.Base.IIndexableReadOnly(Of TKey, TVal).this[]
+  name.vb: this[]
 - uid: '{TKey}'
   commentId: '!:TKey'
   definition: TKey

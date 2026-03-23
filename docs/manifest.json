@@ -1,6 +1,8 @@
 {
-  "homepages": [],
-  "source_base_path": "C:/Users/Manu/source/repos/Ampere/DocFx",
+  "sitemap": {
+    "baseUrl": "https://manu-p-1.github.io/Ampere/"
+  },
+  "source_base_path": "/Users/mp/Github/Ampere/DocFx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,343 +11,411 @@
         "resource": {
           "relative_path": "index.json"
         }
-      },
-      "is_incremental": false
+      }
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.AmpFile.FileUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.AmpFile.FileUtils.html",
-          "hash": "eBXpftjzjJlRWlshX6uP1P6HdhZafrqsOCxyo9iQQpM="
+          "relative_path": "api/Ampere.AmpFile.FileUtils.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.AmpFile.FileUtils",
+      "Summary": "<p sourcefile=\"api/Ampere.AmpFile.FileUtils.yml\" sourcestartlinenumber=\"1\">A static class for File utility functions</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.AmpFile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.AmpFile.html",
-          "hash": "BdmitwxCJ9sjTb6zunRk7NiiI6NFjhgDqAkbiXE2o8A="
+          "relative_path": "api/Ampere.AmpFile.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.AmpFile",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.AmpMath.IMatrixer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.AmpMath.IMatrixer.html",
-          "hash": "1TXycofEYG7ofaG5Gv4hDJbyZf8URiA7iOigU3N7hPc="
+          "relative_path": "api/Ampere.AmpMath.IMatrixer.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.AmpMath.IMatrixer",
+      "Summary": "<p sourcefile=\"api/Ampere.AmpMath.IMatrixer.yml\" sourcestartlinenumber=\"1\">Represents the minimum requirements to create a Matrix.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.AmpMath.Matrix.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.AmpMath.Matrix.html",
-          "hash": "qMkQL+bh1vSeAl20GcPFPy5qO3SKRxk9X3Y8Z08HX1s="
+          "relative_path": "api/Ampere.AmpMath.Matrix.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.AmpMath.Matrix",
+      "Summary": "<p sourcefile=\"api/Ampere.AmpMath.Matrix.yml\" sourcestartlinenumber=\"1\">A class representing a mathematical Matrix. Creates a rectangular\narray of rows and columns with numbers as elements. The Matrix\nclass includes mathematical matrix operations to manipulate it.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.AmpMath.MatrixPropertyException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.AmpMath.MatrixPropertyException.html",
-          "hash": "YOv1UH/RxInWZLrKLbckG+bENosMhS3ypX1EouOMKP8="
+          "relative_path": "api/Ampere.AmpMath.MatrixPropertyException.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.AmpMath.MatrixPropertyException",
+      "Summary": "<p sourcefile=\"api/Ampere.AmpMath.MatrixPropertyException.yml\" sourcestartlinenumber=\"1\">An exception that occurs if a Matrix property is violated\nwhen examining certain properties at runtime.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.AmpMath.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.AmpMath.html",
-          "hash": "Vb80V/j4Coxk5BqEAp/uF1dabJsbgjcxsWQE90aIHPI="
+          "relative_path": "api/Ampere.AmpMath.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.AmpMath",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.IIndexable-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.IIndexable-2.html",
-          "hash": "1lmci2Iehit+bAcg17jVNk3d33o1fo2T7jJ1x68t9u0="
+          "relative_path": "api/Ampere.Base.IIndexable-2.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.IIndexable<TKey, TVal>",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.IIndexable-2.yml\" sourcestartlinenumber=\"1\">Specifies an indexer with one dimension.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.IIndexableDouble-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.IIndexableDouble-2.html",
-          "hash": "tImvNHwSKbsOtm6TKtbadkXzCKFVj0/p3uVEb94B1Vw="
+          "relative_path": "api/Ampere.Base.IIndexableDouble-2.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.IIndexableDouble<TKey, TVal>",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.IIndexableDouble-2.yml\" sourcestartlinenumber=\"1\">Specifies an indexer with two dimensions.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.IIndexableDoubleReadOnly-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.IIndexableDoubleReadOnly-2.html",
-          "hash": "l4IVH55J30I97dZs6DcZxFbHL+eXn1EiUl+l2ssI+Pg="
+          "relative_path": "api/Ampere.Base.IIndexableDoubleReadOnly-2.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.IIndexableDoubleReadOnly<TKey, TVal>",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.IIndexableDoubleReadOnly-2.yml\" sourcestartlinenumber=\"1\">Specifies a read-only indexer with two dimensions.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.IIndexableReadOnly-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.IIndexableReadOnly-2.html",
-          "hash": "ziF7GkPFUt9SQRuvQ+CXeIyC8S/ERu4UzKPCjr50hg8="
+          "relative_path": "api/Ampere.Base.IIndexableReadOnly-2.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.IIndexableReadOnly<TKey, TVal>",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.IIndexableReadOnly-2.yml\" sourcestartlinenumber=\"1\">Specifies a read-only indexer with one dimension.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.IIndexableTriple-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.IIndexableTriple-2.html",
-          "hash": "WjYSsy4NYtc/uiquM25omAbENSTbqQwwRCYaRv45WLk="
+          "relative_path": "api/Ampere.Base.IIndexableTriple-2.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.IIndexableTriple<TKey, TVal>",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.IIndexableTriple-2.yml\" sourcestartlinenumber=\"1\">Specifies an indexer with three dimensions.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.IIndexableTripleReadOnly-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.IIndexableTripleReadOnly-2.html",
-          "hash": "xCsoOjsO6+Yuh5ZGZCXfcA98mFsIUlRH/6On57AqR2Y="
+          "relative_path": "api/Ampere.Base.IIndexableTripleReadOnly-2.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.IIndexableTripleReadOnly<TKey, TVal>",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.IIndexableTripleReadOnly-2.yml\" sourcestartlinenumber=\"1\">Specifies a read-only indexer with three dimensions.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.IRangify-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.IRangify-1.html",
-          "hash": "IdGoRFUk1F7FYiUuda6D3+ELrOXeHZFB2YAlw7DiV6I="
+          "relative_path": "api/Ampere.Base.IRangify-1.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.IRangify<T>",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.IRangify-1.yml\" sourcestartlinenumber=\"1\">The range class represents a range of values of a generic type.\nThe Range class which was modified from user <xref href=\"drharris\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@drharris\" sourcefile=\"api/Ampere.Base.IRangify-1.yml\" sourcestartlinenumber=\"2\"></xref> on StackOverflow.\nBy convention, both sides of the range should be inclusive values.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.ImmutableRange-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.ImmutableRange-1.html",
-          "hash": "M6BsktFxdIbKqNTP6zYB7/lX6NcSy8ZEenbi9kFv3qA="
+          "relative_path": "api/Ampere.Base.ImmutableRange-1.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.ImmutableRange<T>",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.ImmutableRange-1.yml\" sourcestartlinenumber=\"1\">The range class represents a range of values of a generic type.\nThe Range class which was modified from user <xref href=\"drharris\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@drharris\" sourcefile=\"api/Ampere.Base.ImmutableRange-1.yml\" sourcestartlinenumber=\"2\"></xref> on StackOverflow.\nBy convention, both sides of the range should be inclusive values.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.IntRange.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.IntRange.html",
-          "hash": "vw1pa5u/PC9Zc8Z6rEaJcB2XzA/0O1HZcFlC3rItcQ4="
+          "relative_path": "api/Ampere.Base.IntRange.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.IntRange",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.IntRange.yml\" sourcestartlinenumber=\"1\">The range class represents a range of int values. Unlike other <xref href=\"Ampere.Base.IRangify%601\" data-throw-if-not-resolved=\"false\"></xref> implementing classes,\nIntRange contains an <xref href=\"System.Collections.Generic.IEnumerator%601\" data-throw-if-not-resolved=\"false\"></xref> of type int to enumerate through all the values between\nthe minimum and maximum ranges. By convention, both sides of the range should be inclusive values.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.Range-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.Range-1.html",
-          "hash": "5aHYzwbQFZOz6W5AYqsBAedNLKXGvwgvaregYlXWq48="
+          "relative_path": "api/Ampere.Base.Range-1.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.Range<T>",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.Range-1.yml\" sourcestartlinenumber=\"1\">The range class represents a range of values of a generic type.\nThe Range class which was modified from user <xref href=\"drharris\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@drharris\" sourcefile=\"api/Ampere.Base.Range-1.yml\" sourcestartlinenumber=\"2\"></xref> on StackOverflow.\nBy convention, both sides of the range should be inclusive values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Base.Shuffler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Base.Shuffler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base.Shuffler",
+      "Summary": "<p sourcefile=\"api/Ampere.Base.Shuffler.yml\" sourcestartlinenumber=\"1\">A utility to shuffle an array using the Fisher-Yates algorithm.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Base.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Base.html",
-          "hash": "7ipjIaP60W9Z7usipfRGRO/VIwD7BVk7Qzfp3Xk09Os="
+          "relative_path": "api/Ampere.Base.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Base",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Enumerable.EnumerableUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Enumerable.EnumerableUtils.html",
-          "hash": "rM/bFbE353UpkYXrugxJSJJDkMQJMbGQhPWxOuGWveQ="
+          "relative_path": "api/Ampere.Enumerable.EnumerableUtils.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Enumerable.EnumerableUtils",
+      "Summary": "<p sourcefile=\"api/Ampere.Enumerable.EnumerableUtils.yml\" sourcestartlinenumber=\"1\">A static utility class for .NET <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Enumerable.InnerContainsProgram-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Enumerable.InnerContainsProgram-1.html",
-          "hash": "prr3pPjij6ccqaf59XwTgb4JkWoQKMwSLm7eqPi8Xw4="
+          "relative_path": "api/Ampere.Enumerable.InnerContainsProgram-1.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Enumerable.InnerContainsProgram<T>",
+      "Summary": "<p sourcefile=\"api/Ampere.Enumerable.InnerContainsProgram-1.yml\" sourcestartlinenumber=\"1\">Program to check whether all values in one or more enumerables's are included in a\nspecified enumerable.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Enumerable.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Enumerable.html",
-          "hash": "IZFU7XJ23QZUf550mNOteFjenicfcy+xr60raE6xofk="
+          "relative_path": "api/Ampere.Enumerable.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Enumerable",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Statistics.EnumerableStats.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Statistics.EnumerableStats.html",
-          "hash": "ScZ/s/9FU3HOYhcsymNngtBo6hzqKAR4OywNazxiCLE="
+          "relative_path": "api/Ampere.Statistics.EnumerableStats.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Statistics.EnumerableStats",
+      "Summary": "<p sourcefile=\"api/Ampere.Statistics.EnumerableStats.yml\" sourcestartlinenumber=\"1\">A static utility class for calculating a variety of statistics based on IEnumerables. Moreover,\ngeneric overload methods exist to simplify calculating statistics of object enumerables containing\nnumeric properties.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Statistics.InsufficientDataSetException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Statistics.InsufficientDataSetException.html",
-          "hash": "GswAzwCmmM++SspFBaE88rxFtI5a67wgc3A75Cr0K4U="
+          "relative_path": "api/Ampere.Statistics.InsufficientDataSetException.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Statistics.InsufficientDataSetException",
+      "Summary": "<p sourcefile=\"api/Ampere.Statistics.InsufficientDataSetException.yml\" sourcestartlinenumber=\"1\">An exception that is thrown when the data set is not large enough to compute a statistic.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Statistics.NoModeException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Statistics.NoModeException.html",
-          "hash": "YP45fH6LQCZbGeDI+ZA9EohNbdhGXbFIWpnEzv6HNBE="
+          "relative_path": "api/Ampere.Statistics.NoModeException.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Statistics.NoModeException",
+      "Summary": "<p sourcefile=\"api/Ampere.Statistics.NoModeException.yml\" sourcestartlinenumber=\"1\">An exception that is thrown when no Mode exists in the data set.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Statistics.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Statistics.html",
-          "hash": "5sy3gpAQ5PLgRuGsQvobb8B6QQ5R5o1hclgUSV8UX8E="
+          "relative_path": "api/Ampere.Statistics.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Statistics",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Str.StringBuilderUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Str.StringBuilderUtils.html",
-          "hash": "6qfPzHPpMjY7MsjRvKA/OltLEXlEI8K1Jl7pT7ww6pQ="
+          "relative_path": "api/Ampere.Str.StringBuilderUtils.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.StringBuilderUtils",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.StringBuilderUtils.yml\" sourcestartlinenumber=\"1\">A static utility class for StringBuilder extension methods.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Str.StringUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Str.StringUtils.html",
-          "hash": "TOjZszGzArW+BqSpfH9KLjH84VDhhEbWb+AZkVrDj+U="
+          "relative_path": "api/Ampere.Str.StringUtils.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.StringUtils",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.StringUtils.yml\" sourcestartlinenumber=\"1\">A static utility class for string extension methods.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Str.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ampere.Str.html",
-          "hash": "nnWhqViBfErdsLAthJ8umOer20f1+xCoO9ZVb8SuJYI="
+          "relative_path": "api/Ampere.Str.html"
         }
       },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str",
+      "Summary": null
     },
     {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "yrqwrf9oL7VYIzC0ogag3AcbNPYCJOdZeMXqnllgFhc="
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -353,11 +423,9 @@
       "source_relative_path": "articles/AmpereReleases.md",
       "output": {
         ".html": {
-          "relative_path": "articles/AmpereReleases.html",
-          "hash": "4WPxaWngOOgV3xM9BSk0KYCZ+fybi5ky+0T4UodQ7lI="
+          "relative_path": "articles/AmpereReleases.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -365,11 +433,32 @@
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "6vaxPmQxK5cUlYG6/pl+8o0BnObnSfcYAti9isds0vs="
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.svg"
+        }
+      },
       "version": ""
     },
     {
@@ -377,11 +466,9 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "1vTW2je3lTxdEwqyjtGSigCg+ZHgtM9+Pt/zgtWGhVY="
+          "relative_path": "index.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -389,56 +476,15 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "aRa9nE9a+5lHmk80NF9Z5YAwyRO3w4lvxDhbEUbgENM="
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     }
   ],
-  "incremental_info": [
-    {
-      "status": {
-        "can_incremental": true,
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 2,
-          "skipped_file_count": 1
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 27,
-          "skipped_file_count": 27
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
-        "incrementalPhase": "postProcessing",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {}
-    }
-  ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

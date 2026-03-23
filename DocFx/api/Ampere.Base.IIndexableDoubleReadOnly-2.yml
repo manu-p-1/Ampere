@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IIndexable.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: IIndexableDoubleReadOnly
     path: ../Ampere/Base/IIndexable.cs
@@ -24,7 +24,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
-  summary: "\nSpecifies a read-only indexer with two dimensions.\n"
+  summary: Specifies a read-only indexer with two dimensions.
   example: []
   syntax:
     content: public interface IIndexableDoubleReadOnly<in TKey, out TVal>
@@ -35,12 +35,6 @@ items:
       description: The element type of the value
     content.vb: Public Interface IIndexableDoubleReadOnly(Of In TKey, Out TVal)
   nameWithType.vb: IIndexableDoubleReadOnly(Of TKey, TVal)
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
   fullName.vb: Ampere.Base.IIndexableDoubleReadOnly(Of TKey, TVal)
   name.vb: IIndexableDoubleReadOnly(Of TKey, TVal)
 - uid: Ampere.Base.IIndexableDoubleReadOnly`2.Item(`0,`0)
@@ -50,14 +44,14 @@ items:
   langs:
   - csharp
   - vb
-  name: Item[TKey, TKey]
-  nameWithType: IIndexableDoubleReadOnly<TKey, TVal>.Item[TKey, TKey]
-  fullName: Ampere.Base.IIndexableDoubleReadOnly<TKey, TVal>.Item[TKey, TKey]
+  name: this[TKey, TKey]
+  nameWithType: IIndexableDoubleReadOnly<TKey, TVal>.this[TKey, TKey]
+  fullName: Ampere.Base.IIndexableDoubleReadOnly<TKey, TVal>.this[TKey, TKey]
   type: Property
   source:
     remote:
       path: Ampere/Base/IIndexable.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: this[]
     path: ../Ampere/Base/IIndexable.cs
@@ -65,7 +59,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
-  summary: "\nThe two dimension readonly indexer.\n"
+  summary: The two dimension readonly indexer.
   example: []
   syntax:
     content: TVal this[TKey key, TKey key2] { get; }
@@ -79,28 +73,43 @@ items:
     return:
       type: '{TVal}'
       description: The TVal generic type
-    content.vb: ReadOnly Property Item(key As TKey, key2 As TKey) As TVal
+    content.vb: ReadOnly Default Property this[](key As TKey, key2 As TKey) As TVal
   overload: Ampere.Base.IIndexableDoubleReadOnly`2.Item*
-  nameWithType.vb: IIndexableDoubleReadOnly(Of TKey, TVal).Item(TKey, TKey)
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
-  fullName.vb: Ampere.Base.IIndexableDoubleReadOnly(Of TKey, TVal).Item(TKey, TKey)
-  name.vb: Item(TKey, TKey)
+  nameWithType.vb: IIndexableDoubleReadOnly(Of TKey, TVal).this[](TKey, TKey)
+  fullName.vb: Ampere.Base.IIndexableDoubleReadOnly(Of TKey, TVal).this[](TKey, TKey)
+  name.vb: this[](TKey, TKey)
 references:
 - uid: Ampere.Base
   commentId: N:Ampere.Base
+  href: Ampere.html
   name: Ampere.Base
   nameWithType: Ampere.Base
   fullName: Ampere.Base
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Base
+    name: Base
+    href: Ampere.Base.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Base
+    name: Base
+    href: Ampere.Base.html
 - uid: Ampere.Base.IIndexableDoubleReadOnly`2.Item*
   commentId: Overload:Ampere.Base.IIndexableDoubleReadOnly`2.Item
-  name: Item
-  nameWithType: IIndexableDoubleReadOnly<TKey, TVal>.Item
-  fullName: Ampere.Base.IIndexableDoubleReadOnly<TKey, TVal>.Item
-  nameWithType.vb: IIndexableDoubleReadOnly(Of TKey, TVal).Item
-  fullName.vb: Ampere.Base.IIndexableDoubleReadOnly(Of TKey, TVal).Item
+  href: Ampere.Base.IIndexableDoubleReadOnly-2.html#Ampere_Base_IIndexableDoubleReadOnly_2_Item__0__0_
+  name: this
+  nameWithType: IIndexableDoubleReadOnly<TKey, TVal>.this
+  fullName: Ampere.Base.IIndexableDoubleReadOnly<TKey, TVal>.this
+  nameWithType.vb: IIndexableDoubleReadOnly(Of TKey, TVal).this[]
+  fullName.vb: Ampere.Base.IIndexableDoubleReadOnly(Of TKey, TVal).this[]
+  name.vb: this[]
 - uid: '{TKey}'
   commentId: '!:TKey'
   definition: TKey

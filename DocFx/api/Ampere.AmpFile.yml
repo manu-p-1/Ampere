@@ -17,6 +17,7 @@ items:
 references:
 - uid: Ampere.AmpFile.FileUtils
   commentId: T:Ampere.AmpFile.FileUtils
+  href: Ampere.AmpFile.FileUtils.html
   name: FileUtils
   nameWithType: FileUtils
   fullName: Ampere.AmpFile.FileUtils

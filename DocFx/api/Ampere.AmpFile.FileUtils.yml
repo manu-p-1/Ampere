@@ -31,7 +31,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: FileUtils
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -39,7 +39,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nA static class for File utility functions\n"
+  summary: A static class for File utility functions
   example: []
   syntax:
     content: public static class FileUtils
@@ -54,13 +54,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  modifiers.csharp:
-  - public
-  - static
-  - class
-  modifiers.vb:
-  - Public
-  - Module
 - uid: Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo,System.String)
   commentId: M:Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo,System.String)
   id: WriteLine(System.IO.FileInfo,System.String)
@@ -68,14 +61,14 @@ items:
   langs:
   - csharp
   - vb
-  name: WriteLine(FileInfo, String)
-  nameWithType: FileUtils.WriteLine(FileInfo, String)
-  fullName: Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo, System.String)
+  name: WriteLine(FileInfo, string)
+  nameWithType: FileUtils.WriteLine(FileInfo, string)
+  fullName: Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo, string)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: WriteLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -83,7 +76,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nAppends a string value into the file.\n"
+  summary: Appends a string value into the file.
   example: []
   syntax:
     content: public static void WriteLine(FileInfo fileInfo, string value)
@@ -96,12 +89,9 @@ items:
       description: The string value to write
     content.vb: Public Shared Sub WriteLine(fileInfo As FileInfo, value As String)
   overload: Ampere.AmpFile.FileUtils.WriteLine*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.WriteLine(FileInfo, String)
+  fullName.vb: Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo, String)
+  name.vb: WriteLine(FileInfo, String)
 - uid: Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
   commentId: M:Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)
   id: ReplaceAll(System.IO.FileInfo,System.String,System.String)
@@ -109,14 +99,14 @@ items:
   langs:
   - csharp
   - vb
-  name: ReplaceAll(FileInfo, String, String)
-  nameWithType: FileUtils.ReplaceAll(FileInfo, String, String)
-  fullName: Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo, System.String, System.String)
+  name: ReplaceAll(FileInfo, string, string)
+  nameWithType: FileUtils.ReplaceAll(FileInfo, string, string)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo, string, string)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAll
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -124,7 +114,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReplaces all instances of a specific value from a file with another replacement value.\n"
+  summary: Replaces all instances of a specific value from a file with another replacement value.
   example: []
   syntax:
     content: public static void ReplaceAll(FileInfo fileInfo, string oldValue, string replacementValue)
@@ -140,12 +130,9 @@ items:
       description: The replacement value
     content.vb: Public Shared Sub ReplaceAll(fileInfo As FileInfo, oldValue As String, replacementValue As String)
   overload: Ampere.AmpFile.FileUtils.ReplaceAll*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.ReplaceAll(FileInfo, String, String)
+  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo, String, String)
+  name.vb: ReplaceAll(FileInfo, String, String)
 - uid: Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
   commentId: M:Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
   id: ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)
@@ -153,14 +140,14 @@ items:
   langs:
   - csharp
   - vb
-  name: ReplaceAllByLine(FileInfo, String, String)
-  nameWithType: FileUtils.ReplaceAllByLine(FileInfo, String, String)
-  fullName: Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo, System.String, System.String)
+  name: ReplaceAllByLine(FileInfo, string, string)
+  nameWithType: FileUtils.ReplaceAllByLine(FileInfo, string, string)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo, string, string)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllByLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -168,7 +155,10 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReplaces all instances of a specific value from a file with another replacement value if and only if\nthe old value is solely in one line.\n"
+  summary: >-
+    Replaces all instances of a specific value from a file with another replacement value if and only if
+
+    the old value is solely in one line.
   example: []
   syntax:
     content: public static void ReplaceAllByLine(FileInfo fileInfo, string oldValue, string replacementValue)
@@ -184,12 +174,9 @@ items:
       description: The replacement value
     content.vb: Public Shared Sub ReplaceAllByLine(fileInfo As FileInfo, oldValue As String, replacementValue As String)
   overload: Ampere.AmpFile.FileUtils.ReplaceAllByLine*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.ReplaceAllByLine(FileInfo, String, String)
+  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo, String, String)
+  name.vb: ReplaceAllByLine(FileInfo, String, String)
 - uid: Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
   commentId: M:Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
   id: ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)
@@ -197,14 +184,14 @@ items:
   langs:
   - csharp
   - vb
-  name: ReplaceAllInLine(FileInfo, String, String, Int32)
-  nameWithType: FileUtils.ReplaceAllInLine(FileInfo, String, String, Int32)
-  fullName: Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo, System.String, System.String, System.Int32)
+  name: ReplaceAllInLine(FileInfo, string, string, int)
+  nameWithType: FileUtils.ReplaceAllInLine(FileInfo, string, string, int)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo, string, string, int)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllInLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -212,7 +199,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReplaces all instances of a specific value from a file with another replacement value from a specified line\n"
+  summary: Replaces all instances of a specific value from a file with another replacement value from a specified line
   example: []
   syntax:
     content: public static void ReplaceAllInLine(FileInfo fileInfo, string oldValue, string replacementValue, int line)
@@ -231,12 +218,9 @@ items:
       description: The line number to replace from
     content.vb: Public Shared Sub ReplaceAllInLine(fileInfo As FileInfo, oldValue As String, replacementValue As String, line As Integer)
   overload: Ampere.AmpFile.FileUtils.ReplaceAllInLine*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.ReplaceAllInLine(FileInfo, String, String, Integer)
+  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo, String, String, Integer)
+  name.vb: ReplaceAllInLine(FileInfo, String, String, Integer)
 - uid: Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
   commentId: M:Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
   id: ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
@@ -244,14 +228,14 @@ items:
   langs:
   - csharp
   - vb
-  name: ReplaceInLines(FileInfo, Dictionary<KeyValuePair<String, String>, Int32>)
-  nameWithType: FileUtils.ReplaceInLines(FileInfo, Dictionary<KeyValuePair<String, String>, Int32>)
-  fullName: Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<System.Collections.Generic.KeyValuePair<System.String, System.String>, System.Int32>)
+  name: ReplaceInLines(FileInfo, Dictionary<KeyValuePair<string, string>, int>)
+  nameWithType: FileUtils.ReplaceInLines(FileInfo, Dictionary<KeyValuePair<string, string>, int>)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<System.Collections.Generic.KeyValuePair<string, string>, int>)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInLines
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -259,7 +243,14 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReplaces all instances of a specific value from a file with another replacement value from a specified line.\nThis overload facilitates the replacement through a Dictionary where the key&apos;s is an instance of\n<xref href=\"System.Collections.Generic.KeyValuePair%602\" data-throw-if-not-resolved=\"false\"></xref> and the value is an int. This allows for unique replacements to occur\nin more than one line\n"
+  summary: >-
+    Replaces all instances of a specific value from a file with another replacement value from a specified line.
+
+    This overload facilitates the replacement through a Dictionary where the key's is an instance of
+
+    <xref href="System.Collections.Generic.KeyValuePair%602" data-throw-if-not-resolved="false"></xref> and the value is an int. This allows for unique replacements to occur
+
+    in more than one line
   example: []
   syntax:
     content: public static void ReplaceInLines(FileInfo fileInfo, Dictionary<KeyValuePair<string, string>, int> replacementDict)
@@ -272,15 +263,9 @@ items:
       description: A Dictionary of replacement values and line numbers
     content.vb: Public Shared Sub ReplaceInLines(fileInfo As FileInfo, replacementDict As Dictionary(Of KeyValuePair(Of String, String), Integer))
   overload: Ampere.AmpFile.FileUtils.ReplaceInLines*
-  nameWithType.vb: FileUtils.ReplaceInLines(FileInfo, Dictionary(Of KeyValuePair(Of String, String), Int32))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String), System.Int32))
-  name.vb: ReplaceInLines(FileInfo, Dictionary(Of KeyValuePair(Of String, String), Int32))
+  nameWithType.vb: FileUtils.ReplaceInLines(FileInfo, Dictionary(Of KeyValuePair(Of String, String), Integer))
+  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of System.Collections.Generic.KeyValuePair(Of String, String), Integer))
+  name.vb: ReplaceInLines(FileInfo, Dictionary(Of KeyValuePair(Of String, String), Integer))
 - uid: Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
   commentId: M:Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
   id: ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
@@ -288,14 +273,14 @@ items:
   langs:
   - csharp
   - vb
-  name: ReplaceLine(FileInfo, String, Int32)
-  nameWithType: FileUtils.ReplaceLine(FileInfo, String, Int32)
-  fullName: Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo, System.String, System.Int32)
+  name: ReplaceLine(FileInfo, string, int)
+  nameWithType: FileUtils.ReplaceLine(FileInfo, string, int)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo, string, int)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -303,7 +288,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReplaces an entire line with a replacement value.\n"
+  summary: Replaces an entire line with a replacement value.
   example: []
   syntax:
     content: public static void ReplaceLine(FileInfo fileInfo, string replacementValue, int line)
@@ -319,12 +304,9 @@ items:
       description: The line number to replace from
     content.vb: Public Shared Sub ReplaceLine(fileInfo As FileInfo, replacementValue As String, line As Integer)
   overload: Ampere.AmpFile.FileUtils.ReplaceLine*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.ReplaceLine(FileInfo, String, Integer)
+  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo, String, Integer)
+  name.vb: ReplaceLine(FileInfo, String, Integer)
 - uid: Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
   commentId: M:Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
   id: ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
@@ -332,14 +314,14 @@ items:
   langs:
   - csharp
   - vb
-  name: ReplaceLines(FileInfo, Dictionary<String, Int32>)
-  nameWithType: FileUtils.ReplaceLines(FileInfo, Dictionary<String, Int32>)
-  fullName: Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<System.String, System.Int32>)
+  name: ReplaceLines(FileInfo, Dictionary<string, int>)
+  nameWithType: FileUtils.ReplaceLines(FileInfo, Dictionary<string, int>)
+  fullName: Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary<string, int>)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLines
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -347,7 +329,10 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReplace an entire line with a replacement value. This overload uses a Dictionary of replacement values\nand line numbers to replace more than one line. \n"
+  summary: >-
+    Replace an entire line with a replacement value. This overload uses a Dictionary of replacement values
+
+    and line numbers to replace more than one line.
   example: []
   syntax:
     content: public static void ReplaceLines(FileInfo fileInfo, Dictionary<string, int> replacementValueLine)
@@ -360,15 +345,9 @@ items:
       description: A Dictionary of replacement values and line number
     content.vb: Public Shared Sub ReplaceLines(fileInfo As FileInfo, replacementValueLine As Dictionary(Of String, Integer))
   overload: Ampere.AmpFile.FileUtils.ReplaceLines*
-  nameWithType.vb: FileUtils.ReplaceLines(FileInfo, Dictionary(Of String, Int32))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of System.String, System.Int32))
-  name.vb: ReplaceLines(FileInfo, Dictionary(Of String, Int32))
+  nameWithType.vb: FileUtils.ReplaceLines(FileInfo, Dictionary(Of String, Integer))
+  fullName.vb: Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo, System.Collections.Generic.Dictionary(Of String, Integer))
+  name.vb: ReplaceLines(FileInfo, Dictionary(Of String, Integer))
 - uid: Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
   commentId: M:Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
   id: RemoveFromEachLine(System.IO.FileInfo,System.String)
@@ -376,14 +355,14 @@ items:
   langs:
   - csharp
   - vb
-  name: RemoveFromEachLine(FileInfo, String)
-  nameWithType: FileUtils.RemoveFromEachLine(FileInfo, String)
-  fullName: Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo, System.String)
+  name: RemoveFromEachLine(FileInfo, string)
+  nameWithType: FileUtils.RemoveFromEachLine(FileInfo, string)
+  fullName: Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo, string)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveFromEachLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -391,7 +370,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nRemoves all instances of a specific value from a file if and only if the value is solely in one line.\n"
+  summary: Removes all instances of a specific value from a file if and only if the value is solely in one line.
   example: []
   syntax:
     content: public static void RemoveFromEachLine(FileInfo fileInfo, string valToRemove)
@@ -404,12 +383,9 @@ items:
       description: The value to remove
     content.vb: Public Shared Sub RemoveFromEachLine(fileInfo As FileInfo, valToRemove As String)
   overload: Ampere.AmpFile.FileUtils.RemoveFromEachLine*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.RemoveFromEachLine(FileInfo, String)
+  fullName.vb: Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo, String)
+  name.vb: RemoveFromEachLine(FileInfo, String)
 - uid: Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
   commentId: M:Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
   id: RemoveLine(System.IO.FileInfo,System.Int32)
@@ -417,14 +393,14 @@ items:
   langs:
   - csharp
   - vb
-  name: RemoveLine(FileInfo, Int32)
-  nameWithType: FileUtils.RemoveLine(FileInfo, Int32)
-  fullName: Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo, System.Int32)
+  name: RemoveLine(FileInfo, int)
+  nameWithType: FileUtils.RemoveLine(FileInfo, int)
+  fullName: Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo, int)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -432,7 +408,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nRemoves a specific line number from a file.\n"
+  summary: Removes a specific line number from a file.
   example: []
   syntax:
     content: public static void RemoveLine(FileInfo fileInfo, int line)
@@ -445,12 +421,9 @@ items:
       description: The line number to remove
     content.vb: Public Shared Sub RemoveLine(fileInfo As FileInfo, line As Integer)
   overload: Ampere.AmpFile.FileUtils.RemoveLine*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.RemoveLine(FileInfo, Integer)
+  fullName.vb: Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo, Integer)
+  name.vb: RemoveLine(FileInfo, Integer)
 - uid: Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
   commentId: M:Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
   id: RemoveLines(System.IO.FileInfo,System.Int32[])
@@ -458,14 +431,14 @@ items:
   langs:
   - csharp
   - vb
-  name: RemoveLines(FileInfo, Int32[])
-  nameWithType: FileUtils.RemoveLines(FileInfo, Int32[])
-  fullName: Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo, System.Int32[])
+  name: RemoveLines(FileInfo, params int[])
+  nameWithType: FileUtils.RemoveLines(FileInfo, params int[])
+  fullName: Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo, params int[])
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLines
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -473,7 +446,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nRemoves a variable argument number of lines from a file.\n"
+  summary: Removes a variable argument number of lines from a file.
   example: []
   syntax:
     content: public static void RemoveLines(FileInfo fileInfo, params int[] lines)
@@ -486,15 +459,9 @@ items:
       description: The line numbers to remove
     content.vb: Public Shared Sub RemoveLines(fileInfo As FileInfo, ParamArray lines As Integer())
   overload: Ampere.AmpFile.FileUtils.RemoveLines*
-  nameWithType.vb: FileUtils.RemoveLines(FileInfo, Int32())
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo, System.Int32())
-  name.vb: RemoveLines(FileInfo, Int32())
+  nameWithType.vb: FileUtils.RemoveLines(FileInfo, ParamArray Integer())
+  fullName.vb: Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo, ParamArray Integer())
+  name.vb: RemoveLines(FileInfo, ParamArray Integer())
 - uid: Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
   commentId: M:Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
   id: FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
@@ -502,14 +469,14 @@ items:
   langs:
   - csharp
   - vb
-  name: FindInFile(FileInfo, Func<String, Boolean>)
-  nameWithType: FileUtils.FindInFile(FileInfo, Func<String, Boolean>)
-  fullName: Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo, System.Func<System.String, System.Boolean>)
+  name: FindInFile(FileInfo, Func<string, bool>)
+  nameWithType: FileUtils.FindInFile(FileInfo, Func<string, bool>)
+  fullName: Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo, System.Func<string, bool>)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: FindInFile
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -517,7 +484,10 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReturns the line of the matched predicate in the file. If the predicate is not found,\n-1 is returned.\n"
+  summary: >-
+    Returns the line of the matched predicate in the file. If the predicate is not found,
+
+    -1 is returned.
   example: []
   syntax:
     content: public static int FindInFile(FileInfo fileInfo, Func<string, bool> predicate)
@@ -534,13 +504,7 @@ items:
     content.vb: Public Shared Function FindInFile(fileInfo As FileInfo, predicate As Func(Of String, Boolean)) As Integer
   overload: Ampere.AmpFile.FileUtils.FindInFile*
   nameWithType.vb: FileUtils.FindInFile(FileInfo, Func(Of String, Boolean))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo, System.Func(Of System.String, System.Boolean))
+  fullName.vb: Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo, System.Func(Of String, Boolean))
   name.vb: FindInFile(FileInfo, Func(Of String, Boolean))
 - uid: Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
   commentId: M:Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
@@ -549,22 +513,22 @@ items:
   langs:
   - csharp
   - vb
-  name: GetValueAtLine(FileInfo, Int32)
-  nameWithType: FileUtils.GetValueAtLine(FileInfo, Int32)
-  fullName: Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo, System.Int32)
+  name: GetValueAtLine(FileInfo, int)
+  nameWithType: FileUtils.GetValueAtLine(FileInfo, int)
+  fullName: Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo, int)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetValueAtLine
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 193
+    startLine: 192
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReturns the value found at a line number.\n"
+  summary: Returns the value found at a line number.
   example: []
   syntax:
     content: public static string GetValueAtLine(FileInfo fileInfo, int line)
@@ -580,12 +544,9 @@ items:
       description: ''
     content.vb: Public Shared Function GetValueAtLine(fileInfo As FileInfo, line As Integer) As String
   overload: Ampere.AmpFile.FileUtils.GetValueAtLine*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.GetValueAtLine(FileInfo, Integer)
+  fullName.vb: Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo, Integer)
+  name.vb: GetValueAtLine(FileInfo, Integer)
 - uid: Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
   commentId: M:Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
   id: GetDirectorySize(System.String)
@@ -594,22 +555,22 @@ items:
   langs:
   - csharp
   - vb
-  name: GetDirectorySize(String)
-  nameWithType: FileUtils.GetDirectorySize(String)
-  fullName: Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
+  name: GetDirectorySize(string)
+  nameWithType: FileUtils.GetDirectorySize(string)
+  fullName: Ampere.AmpFile.FileUtils.GetDirectorySize(string)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetDirectorySize
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 201
+    startLine: 200
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReturns the size of a directory in bytes, given an abstract file path.\n"
+  summary: Returns the size of a directory in bytes, given an abstract file path.
   example: []
   syntax:
     content: public static long GetDirectorySize(this string dirPath)
@@ -620,17 +581,11 @@ items:
     return:
       type: System.Int64
       description: The size of the directory in bytes
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function GetDirectorySize(dirPath As String) As Long
+    content.vb: Public Shared Function GetDirectorySize(dirPath As String) As Long
   overload: Ampere.AmpFile.FileUtils.GetDirectorySize*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.GetDirectorySize(String)
+  fullName.vb: Ampere.AmpFile.FileUtils.GetDirectorySize(String)
+  name.vb: GetDirectorySize(String)
 - uid: Ampere.AmpFile.FileUtils.GetFileSize(System.String)
   commentId: M:Ampere.AmpFile.FileUtils.GetFileSize(System.String)
   id: GetFileSize(System.String)
@@ -639,22 +594,22 @@ items:
   langs:
   - csharp
   - vb
-  name: GetFileSize(String)
-  nameWithType: FileUtils.GetFileSize(String)
-  fullName: Ampere.AmpFile.FileUtils.GetFileSize(System.String)
+  name: GetFileSize(string)
+  nameWithType: FileUtils.GetFileSize(string)
+  fullName: Ampere.AmpFile.FileUtils.GetFileSize(string)
   type: Method
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetFileSize
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 218
+    startLine: 217
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReturns the size of file in bytes, given an abstract file path.\n"
+  summary: Returns the size of file in bytes, given an abstract file path.
   example: []
   syntax:
     content: public static long GetFileSize(this string filePath)
@@ -665,17 +620,11 @@ items:
     return:
       type: System.Int64
       description: The size of the file in bytes
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function GetFileSize(filePath As String) As Long
+    content.vb: Public Shared Function GetFileSize(filePath As String) As Long
   overload: Ampere.AmpFile.FileUtils.GetFileSize*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  nameWithType.vb: FileUtils.GetFileSize(String)
+  fullName.vb: Ampere.AmpFile.FileUtils.GetFileSize(String)
+  name.vb: GetFileSize(String)
 - uid: Ampere.AmpFile.FileUtils.GetRootPath
   commentId: M:Ampere.AmpFile.FileUtils.GetRootPath
   id: GetRootPath
@@ -690,29 +639,23 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetRootPath
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 225
+    startLine: 224
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReturns a pathname to the root directory of the System.\n"
+  summary: Returns a pathname to the root directory of the System.
   example: []
   syntax:
     content: public static string GetRootPath()
     return:
       type: System.String
       description: A pathname to the root directory of the System
-    content.vb: Public Shared Function GetRootPath As String
+    content.vb: Public Shared Function GetRootPath() As String
   overload: Ampere.AmpFile.FileUtils.GetRootPath*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 - uid: Ampere.AmpFile.FileUtils.GetUserPath
   commentId: M:Ampere.AmpFile.FileUtils.GetUserPath
   id: GetUserPath
@@ -727,329 +670,286 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetUserPath
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 232
+    startLine: 231
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: "\nReturns a pathname to the user&apos;s profile folder.\n"
+  summary: Returns a pathname to the user's profile folder.
   example: []
   syntax:
     content: public static string GetUserPath()
     return:
       type: System.String
-      description: A pathname to the user&apos;s profile folder
-    content.vb: Public Shared Function GetUserPath As String
+      description: A pathname to the user's profile folder
+    content.vb: Public Shared Function GetUserPath() As String
   overload: Ampere.AmpFile.FileUtils.GetUserPath*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 references:
 - uid: Ampere.AmpFile
   commentId: N:Ampere.AmpFile
+  href: Ampere.html
   name: Ampere.AmpFile
   nameWithType: Ampere.AmpFile
   fullName: Ampere.AmpFile
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.AmpFile
+    name: AmpFile
+    href: Ampere.AmpFile.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.AmpFile
+    name: AmpFile
+    href: Ampere.AmpFile.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   commentId: M:System.Object.Equals(System.Object,System.Object)
   parent: System.Object
   isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.GetHashCode
     name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
   spec.csharp:
   - uid: System.Object.GetType
     name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.GetType
     name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.MemberwiseClone
   commentId: M:System.Object.MemberwiseClone
   parent: System.Object
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
   spec.csharp:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
   isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.ToString
     name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
 - uid: Ampere.AmpFile.FileUtils.WriteLine*
   commentId: Overload:Ampere.AmpFile.FileUtils.WriteLine
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_WriteLine_System_IO_FileInfo_System_String_
   name: WriteLine
   nameWithType: FileUtils.WriteLine
   fullName: Ampere.AmpFile.FileUtils.WriteLine
@@ -1057,6 +957,7 @@ references:
   commentId: T:System.IO.FileInfo
   parent: System.IO
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.fileinfo
   name: FileInfo
   nameWithType: FileInfo
   fullName: System.IO.FileInfo
@@ -1064,27 +965,55 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: System.IO
   commentId: N:System.IO
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System.IO
   nameWithType: System.IO
   fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
 - uid: Ampere.AmpFile.FileUtils.ReplaceAll*
   commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceAll
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ReplaceAll_System_IO_FileInfo_System_String_System_String_
   name: ReplaceAll
   nameWithType: FileUtils.ReplaceAll
   fullName: Ampere.AmpFile.FileUtils.ReplaceAll
 - uid: Ampere.AmpFile.FileUtils.ReplaceAllByLine*
   commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceAllByLine
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ReplaceAllByLine_System_IO_FileInfo_System_String_System_String_
   name: ReplaceAllByLine
   nameWithType: FileUtils.ReplaceAllByLine
   fullName: Ampere.AmpFile.FileUtils.ReplaceAllByLine
 - uid: Ampere.AmpFile.FileUtils.ReplaceAllInLine*
   commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceAllInLine
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ReplaceAllInLine_System_IO_FileInfo_System_String_System_String_System_Int32_
   name: ReplaceAllInLine
   nameWithType: FileUtils.ReplaceAllInLine
   fullName: Ampere.AmpFile.FileUtils.ReplaceAllInLine
@@ -1092,14 +1021,50 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: System.Collections.Generic.KeyValuePair`2
   commentId: T:System.Collections.Generic.KeyValuePair`2
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<TKey, TValue>
+  nameWithType: KeyValuePair<TKey, TValue>
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  nameWithType.vb: KeyValuePair(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  name.vb: KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
 - uid: Ampere.AmpFile.FileUtils.ReplaceInLines*
   commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceInLines
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ReplaceInLines_System_IO_FileInfo_System_Collections_Generic_Dictionary_System_Collections_Generic_KeyValuePair_System_String_System_String__System_Int32__
   name: ReplaceInLines
   nameWithType: FileUtils.ReplaceInLines
   fullName: Ampere.AmpFile.FileUtils.ReplaceInLines
@@ -1107,103 +1072,79 @@ references:
   commentId: T:System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.Dictionary`2
-  name: Dictionary<KeyValuePair<String, String>, Int32>
-  nameWithType: Dictionary<KeyValuePair<String, String>, Int32>
-  fullName: System.Collections.Generic.Dictionary<System.Collections.Generic.KeyValuePair<System.String, System.String>, System.Int32>
-  nameWithType.vb: Dictionary(Of KeyValuePair(Of String, String), Int32)
-  fullName.vb: System.Collections.Generic.Dictionary(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String), System.Int32)
-  name.vb: Dictionary(Of KeyValuePair(Of String, String), Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<KeyValuePair<string, string>, int>
+  nameWithType: Dictionary<KeyValuePair<string, string>, int>
+  fullName: System.Collections.Generic.Dictionary<System.Collections.Generic.KeyValuePair<string, string>, int>
+  nameWithType.vb: Dictionary(Of KeyValuePair(Of String, String), Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Collections.Generic.KeyValuePair(Of String, String), Integer)
+  name.vb: Dictionary(Of KeyValuePair(Of String, String), Integer)
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
-    nameWithType: KeyValuePair
-    fullName: System.Collections.Generic.KeyValuePair
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+  - name: ','
+  - name: " "
   - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+    name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
-    nameWithType: KeyValuePair
-    fullName: System.Collections.Generic.KeyValuePair
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+  - name: ','
+  - name: " "
   - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+    name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Collections.Generic.Dictionary`2
   commentId: T:System.Collections.Generic.Dictionary`2
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
   name: Dictionary<TKey, TValue>
   nameWithType: Dictionary<TKey, TValue>
   fullName: System.Collections.Generic.Dictionary<TKey, TValue>
@@ -1213,58 +1154,73 @@ references:
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
   - name: <
-    nameWithType: <
-    fullName: <
   - name: TKey
-    nameWithType: TKey
-    fullName: TKey
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+  - name: ','
+  - name: " "
   - name: TValue
-    nameWithType: TValue
-    fullName: TValue
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
   - name: TKey
-    nameWithType: TKey
-    fullName: TKey
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+  - name: ','
+  - name: " "
   - name: TValue
-    nameWithType: TValue
-    fullName: TValue
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Ampere.AmpFile.FileUtils.ReplaceLine*
   commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceLine
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ReplaceLine_System_IO_FileInfo_System_String_System_Int32_
   name: ReplaceLine
   nameWithType: FileUtils.ReplaceLine
   fullName: Ampere.AmpFile.FileUtils.ReplaceLine
 - uid: Ampere.AmpFile.FileUtils.ReplaceLines*
   commentId: Overload:Ampere.AmpFile.FileUtils.ReplaceLines
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ReplaceLines_System_IO_FileInfo_System_Collections_Generic_Dictionary_System_String_System_Int32__
   name: ReplaceLines
   nameWithType: FileUtils.ReplaceLines
   fullName: Ampere.AmpFile.FileUtils.ReplaceLines
@@ -1272,105 +1228,93 @@ references:
   commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.Dictionary`2
-  name: Dictionary<String, Int32>
-  nameWithType: Dictionary<String, Int32>
-  fullName: System.Collections.Generic.Dictionary<System.String, System.Int32>
-  nameWithType.vb: Dictionary(Of String, Int32)
-  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Int32)
-  name.vb: Dictionary(Of String, Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, int>
+  nameWithType: Dictionary<string, int>
+  fullName: System.Collections.Generic.Dictionary<string, int>
+  nameWithType.vb: Dictionary(Of String, Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Integer)
+  name.vb: Dictionary(Of String, Integer)
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+    name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+    name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: Ampere.AmpFile.FileUtils.RemoveFromEachLine*
   commentId: Overload:Ampere.AmpFile.FileUtils.RemoveFromEachLine
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_RemoveFromEachLine_System_IO_FileInfo_System_String_
   name: RemoveFromEachLine
   nameWithType: FileUtils.RemoveFromEachLine
   fullName: Ampere.AmpFile.FileUtils.RemoveFromEachLine
 - uid: Ampere.AmpFile.FileUtils.RemoveLine*
   commentId: Overload:Ampere.AmpFile.FileUtils.RemoveLine
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_RemoveLine_System_IO_FileInfo_System_Int32_
   name: RemoveLine
   nameWithType: FileUtils.RemoveLine
   fullName: Ampere.AmpFile.FileUtils.RemoveLine
 - uid: Ampere.AmpFile.FileUtils.RemoveLines*
   commentId: Overload:Ampere.AmpFile.FileUtils.RemoveLines
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_RemoveLines_System_IO_FileInfo_System_Int32___
   name: RemoveLines
   nameWithType: FileUtils.RemoveLines
   fullName: Ampere.AmpFile.FileUtils.RemoveLines
 - uid: System.Int32[]
   isExternal: true
-  name: Int32[]
-  nameWithType: Int32[]
-  fullName: System.Int32[]
-  nameWithType.vb: Int32()
-  fullName.vb: System.Int32()
-  name.vb: Int32()
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
   spec.csharp:
   - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+    name: int
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+    name: Integer
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
 - uid: Ampere.AmpFile.FileUtils.FindInFile*
   commentId: Overload:Ampere.AmpFile.FileUtils.FindInFile
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_FindInFile_System_IO_FileInfo_System_Func_System_String_System_Boolean__
   name: FindInFile
   nameWithType: FileUtils.FindInFile
   fullName: Ampere.AmpFile.FileUtils.FindInFile
@@ -1378,65 +1322,53 @@ references:
   commentId: T:System.Func{System.String,System.Boolean}
   parent: System
   definition: System.Func`2
-  name: Func<String, Boolean>
-  nameWithType: Func<String, Boolean>
-  fullName: System.Func<System.String, System.Boolean>
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, bool>
+  nameWithType: Func<string, bool>
+  fullName: System.Func<string, bool>
   nameWithType.vb: Func(Of String, Boolean)
-  fullName.vb: System.Func(Of System.String, System.Boolean)
+  fullName.vb: System.Func(Of String, Boolean)
   name.vb: Func(Of String, Boolean)
   spec.csharp:
   - uid: System.Func`2
     name: Func
-    nameWithType: Func
-    fullName: System.Func
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
+    name: bool
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.Func`2
     name: Func
-    nameWithType: Func
-    fullName: System.Func
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.Boolean
     name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Func`2
   commentId: T:System.Func`2
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
   name: Func<T, TResult>
   nameWithType: Func<T, TResult>
   fullName: System.Func<T, TResult>
@@ -1446,52 +1378,36 @@ references:
   spec.csharp:
   - uid: System.Func`2
     name: Func
-    nameWithType: Func
-    fullName: System.Func
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: <
-    nameWithType: <
-    fullName: <
   - name: T
-    nameWithType: T
-    fullName: T
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+  - name: ','
+  - name: " "
   - name: TResult
-    nameWithType: TResult
-    fullName: TResult
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.Func`2
     name: Func
-    nameWithType: Func
-    fullName: System.Func
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
   - name: T
-    nameWithType: T
-    fullName: T
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+  - name: ','
+  - name: " "
   - name: TResult
-    nameWithType: TResult
-    fullName: TResult
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: Ampere.AmpFile.FileUtils.GetValueAtLine*
   commentId: Overload:Ampere.AmpFile.FileUtils.GetValueAtLine
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_GetValueAtLine_System_IO_FileInfo_System_Int32_
   name: GetValueAtLine
   nameWithType: FileUtils.GetValueAtLine
   fullName: Ampere.AmpFile.FileUtils.GetValueAtLine
 - uid: Ampere.AmpFile.FileUtils.GetDirectorySize*
   commentId: Overload:Ampere.AmpFile.FileUtils.GetDirectorySize
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_GetDirectorySize_System_String_
   name: GetDirectorySize
   nameWithType: FileUtils.GetDirectorySize
   fullName: Ampere.AmpFile.FileUtils.GetDirectorySize
@@ -1499,21 +1415,28 @@ references:
   commentId: T:System.Int64
   parent: System
   isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
 - uid: Ampere.AmpFile.FileUtils.GetFileSize*
   commentId: Overload:Ampere.AmpFile.FileUtils.GetFileSize
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_GetFileSize_System_String_
   name: GetFileSize
   nameWithType: FileUtils.GetFileSize
   fullName: Ampere.AmpFile.FileUtils.GetFileSize
 - uid: Ampere.AmpFile.FileUtils.GetRootPath*
   commentId: Overload:Ampere.AmpFile.FileUtils.GetRootPath
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_GetRootPath
   name: GetRootPath
   nameWithType: FileUtils.GetRootPath
   fullName: Ampere.AmpFile.FileUtils.GetRootPath
 - uid: Ampere.AmpFile.FileUtils.GetUserPath*
   commentId: Overload:Ampere.AmpFile.FileUtils.GetUserPath
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_GetUserPath
   name: GetUserPath
   nameWithType: FileUtils.GetUserPath
   fullName: Ampere.AmpFile.FileUtils.GetUserPath

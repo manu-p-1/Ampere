@@ -18,11 +18,13 @@ items:
 references:
 - uid: Ampere.Str.StringBuilderUtils
   commentId: T:Ampere.Str.StringBuilderUtils
+  href: Ampere.Str.StringBuilderUtils.html
   name: StringBuilderUtils
   nameWithType: StringBuilderUtils
   fullName: Ampere.Str.StringBuilderUtils
 - uid: Ampere.Str.StringUtils
   commentId: T:Ampere.Str.StringUtils
+  href: Ampere.Str.StringUtils.html
   name: StringUtils
   nameWithType: StringUtils
   fullName: Ampere.Str.StringUtils

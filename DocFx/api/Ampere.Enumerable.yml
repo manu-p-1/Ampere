@@ -19,11 +19,13 @@ references:
 - uid: Ampere.Enumerable.EnumerableUtils
   commentId: T:Ampere.Enumerable.EnumerableUtils
   parent: Ampere.Enumerable
+  href: Ampere.Enumerable.EnumerableUtils.html
   name: EnumerableUtils
   nameWithType: EnumerableUtils
   fullName: Ampere.Enumerable.EnumerableUtils
 - uid: Ampere.Enumerable.InnerContainsProgram`1
   commentId: T:Ampere.Enumerable.InnerContainsProgram`1
+  href: Ampere.Enumerable.InnerContainsProgram-1.html
   name: InnerContainsProgram<T>
   nameWithType: InnerContainsProgram<T>
   fullName: Ampere.Enumerable.InnerContainsProgram<T>
@@ -33,33 +35,38 @@ references:
   spec.csharp:
   - uid: Ampere.Enumerable.InnerContainsProgram`1
     name: InnerContainsProgram
-    nameWithType: InnerContainsProgram
-    fullName: Ampere.Enumerable.InnerContainsProgram
+    href: Ampere.Enumerable.InnerContainsProgram-1.html
   - name: <
-    nameWithType: <
-    fullName: <
   - name: T
-    nameWithType: T
-    fullName: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: Ampere.Enumerable.InnerContainsProgram`1
     name: InnerContainsProgram
-    nameWithType: InnerContainsProgram
-    fullName: Ampere.Enumerable.InnerContainsProgram
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: Ampere.Enumerable.InnerContainsProgram-1.html
+  - name: (
+  - name: Of
+  - name: " "
   - name: T
-    nameWithType: T
-    fullName: T
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: Ampere.Enumerable
   commentId: N:Ampere.Enumerable
+  href: Ampere.html
   name: Ampere.Enumerable
   nameWithType: Ampere.Enumerable
   fullName: Ampere.Enumerable
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Enumerable
+    name: Enumerable
+    href: Ampere.Enumerable.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Enumerable
+    name: Enumerable
+    href: Ampere.Enumerable.html

@@ -1,71 +1,93 @@
 ### YamlMime:TableOfContent
+items:
 - uid: Ampere.AmpFile
   name: Ampere.AmpFile
+  type: Namespace
   items:
   - uid: Ampere.AmpFile.FileUtils
     name: FileUtils
+    type: Class
 - uid: Ampere.AmpMath
   name: Ampere.AmpMath
+  type: Namespace
   items:
   - uid: Ampere.AmpMath.IMatrixer
     name: IMatrixer
+    type: Interface
   - uid: Ampere.AmpMath.Matrix
     name: Matrix
+    type: Class
   - uid: Ampere.AmpMath.MatrixPropertyException
     name: MatrixPropertyException
+    type: Class
 - uid: Ampere.Base
   name: Ampere.Base
+  type: Namespace
   items:
-  - uid: Ampere.Base.IIndexable`2
-    name: IIndexable<TKey, TVal>
-    name.vb: IIndexable(Of TKey, TVal)
-  - uid: Ampere.Base.IIndexableDouble`2
-    name: IIndexableDouble<TKey, TVal>
-    name.vb: IIndexableDouble(Of TKey, TVal)
   - uid: Ampere.Base.IIndexableDoubleReadOnly`2
     name: IIndexableDoubleReadOnly<TKey, TVal>
-    name.vb: IIndexableDoubleReadOnly(Of TKey, TVal)
+    type: Interface
+  - uid: Ampere.Base.IIndexableDouble`2
+    name: IIndexableDouble<TKey, TVal>
+    type: Interface
   - uid: Ampere.Base.IIndexableReadOnly`2
     name: IIndexableReadOnly<TKey, TVal>
-    name.vb: IIndexableReadOnly(Of TKey, TVal)
-  - uid: Ampere.Base.IIndexableTriple`2
-    name: IIndexableTriple<TKey, TVal>
-    name.vb: IIndexableTriple(Of TKey, TVal)
+    type: Interface
   - uid: Ampere.Base.IIndexableTripleReadOnly`2
     name: IIndexableTripleReadOnly<TKey, TVal>
-    name.vb: IIndexableTripleReadOnly(Of TKey, TVal)
-  - uid: Ampere.Base.ImmutableRange`1
-    name: ImmutableRange<T>
-    name.vb: ImmutableRange(Of T)
-  - uid: Ampere.Base.IntRange
-    name: IntRange
+    type: Interface
+  - uid: Ampere.Base.IIndexableTriple`2
+    name: IIndexableTriple<TKey, TVal>
+    type: Interface
+  - uid: Ampere.Base.IIndexable`2
+    name: IIndexable<TKey, TVal>
+    type: Interface
   - uid: Ampere.Base.IRangify`1
     name: IRangify<T>
-    name.vb: IRangify(Of T)
+    type: Interface
+  - uid: Ampere.Base.ImmutableRange`1
+    name: ImmutableRange<T>
+    type: Class
+  - uid: Ampere.Base.IntRange
+    name: IntRange
+    type: Class
   - uid: Ampere.Base.Range`1
     name: Range<T>
-    name.vb: Range(Of T)
+    type: Class
+  - uid: Ampere.Base.Shuffler
+    name: Shuffler
+    type: Class
 - uid: Ampere.Enumerable
   name: Ampere.Enumerable
+  type: Namespace
   items:
   - uid: Ampere.Enumerable.EnumerableUtils
     name: EnumerableUtils
+    type: Class
   - uid: Ampere.Enumerable.InnerContainsProgram`1
     name: InnerContainsProgram<T>
-    name.vb: InnerContainsProgram(Of T)
+    type: Class
 - uid: Ampere.Statistics
   name: Ampere.Statistics
+  type: Namespace
   items:
   - uid: Ampere.Statistics.EnumerableStats
     name: EnumerableStats
+    type: Class
   - uid: Ampere.Statistics.InsufficientDataSetException
     name: InsufficientDataSetException
+    type: Class
   - uid: Ampere.Statistics.NoModeException
     name: NoModeException
+    type: Class
 - uid: Ampere.Str
   name: Ampere.Str
+  type: Namespace
   items:
   - uid: Ampere.Str.StringBuilderUtils
     name: StringBuilderUtils
+    type: Class
   - uid: Ampere.Str.StringUtils
     name: StringUtils
+    type: Class
+memberLayout: SamePage

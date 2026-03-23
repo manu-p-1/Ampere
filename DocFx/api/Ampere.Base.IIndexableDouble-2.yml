@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IIndexable.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: IIndexableDouble
     path: ../Ampere/Base/IIndexable.cs
@@ -24,7 +24,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
-  summary: "\nSpecifies an indexer with two dimensions.\n"
+  summary: Specifies an indexer with two dimensions.
   example: []
   syntax:
     content: public interface IIndexableDouble<in TKey, TVal>
@@ -34,13 +34,9 @@ items:
     - id: TVal
       description: The element type of the value
     content.vb: Public Interface IIndexableDouble(Of In TKey, TVal)
+  derivedClasses:
+  - Ampere.AmpMath.Matrix
   nameWithType.vb: IIndexableDouble(Of TKey, TVal)
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
   fullName.vb: Ampere.Base.IIndexableDouble(Of TKey, TVal)
   name.vb: IIndexableDouble(Of TKey, TVal)
 - uid: Ampere.Base.IIndexableDouble`2.Item(`0,`0)
@@ -50,14 +46,14 @@ items:
   langs:
   - csharp
   - vb
-  name: Item[TKey, TKey]
-  nameWithType: IIndexableDouble<TKey, TVal>.Item[TKey, TKey]
-  fullName: Ampere.Base.IIndexableDouble<TKey, TVal>.Item[TKey, TKey]
+  name: this[TKey, TKey]
+  nameWithType: IIndexableDouble<TKey, TVal>.this[TKey, TKey]
+  fullName: Ampere.Base.IIndexableDouble<TKey, TVal>.this[TKey, TKey]
   type: Property
   source:
     remote:
       path: Ampere/Base/IIndexable.cs
-      branch: main
+      branch: upgrade-net10
       repo: https://github.com/manu-p-1/Ampere.git
     id: this[]
     path: ../Ampere/Base/IIndexable.cs
@@ -65,7 +61,7 @@ items:
   assemblies:
   - Ampere
   namespace: Ampere.Base
-  summary: "\nThe two dimension read/write indexer.\n"
+  summary: The two dimension read/write indexer.
   example: []
   syntax:
     content: TVal this[TKey key, TKey key2] { get; set; }
@@ -79,27 +75,43 @@ items:
     return:
       type: '{TVal}'
       description: The TVal generic type
-    content.vb: Property Item(key As TKey, key2 As TKey) As TVal
+    content.vb: Default Property this[](key As TKey, key2 As TKey) As TVal
   overload: Ampere.Base.IIndexableDouble`2.Item*
-  nameWithType.vb: IIndexableDouble(Of TKey, TVal).Item(TKey, TKey)
-  modifiers.csharp:
-  - get
-  - set
-  fullName.vb: Ampere.Base.IIndexableDouble(Of TKey, TVal).Item(TKey, TKey)
-  name.vb: Item(TKey, TKey)
+  nameWithType.vb: IIndexableDouble(Of TKey, TVal).this[](TKey, TKey)
+  fullName.vb: Ampere.Base.IIndexableDouble(Of TKey, TVal).this[](TKey, TKey)
+  name.vb: this[](TKey, TKey)
 references:
 - uid: Ampere.Base
   commentId: N:Ampere.Base
+  href: Ampere.html
   name: Ampere.Base
   nameWithType: Ampere.Base
   fullName: Ampere.Base
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Base
+    name: Base
+    href: Ampere.Base.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Base
+    name: Base
+    href: Ampere.Base.html
 - uid: Ampere.Base.IIndexableDouble`2.Item*
   commentId: Overload:Ampere.Base.IIndexableDouble`2.Item
-  name: Item
-  nameWithType: IIndexableDouble<TKey, TVal>.Item
-  fullName: Ampere.Base.IIndexableDouble<TKey, TVal>.Item
-  nameWithType.vb: IIndexableDouble(Of TKey, TVal).Item
-  fullName.vb: Ampere.Base.IIndexableDouble(Of TKey, TVal).Item
+  href: Ampere.Base.IIndexableDouble-2.html#Ampere_Base_IIndexableDouble_2_Item__0__0_
+  name: this
+  nameWithType: IIndexableDouble<TKey, TVal>.this
+  fullName: Ampere.Base.IIndexableDouble<TKey, TVal>.this
+  nameWithType.vb: IIndexableDouble(Of TKey, TVal).this[]
+  fullName.vb: Ampere.Base.IIndexableDouble(Of TKey, TVal).this[]
+  name.vb: this[]
 - uid: '{TKey}'
   commentId: '!:TKey'
   definition: TKey

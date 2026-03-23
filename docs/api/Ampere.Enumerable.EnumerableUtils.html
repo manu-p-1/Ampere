@@ -1,1025 +1,777 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
+<!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class EnumerableUtils
-   | Ampere Docs </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class EnumerableUtils
-   | Ampere Docs ">
-    <meta name="generator" content="docfx 2.58.9.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+      <title>Class EnumerableUtils | Ampere Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EnumerableUtils | Ampere Docs ">
+      
+      <meta name="description" content="A static utility class for .NET">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Ampere">
+            Ampere
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Ampere.Enumerable.EnumerableUtils">
-  
-  
-  <h1 id="Ampere_Enumerable_EnumerableUtils" data-uid="Ampere.Enumerable.EnumerableUtils" class="text-break">Class EnumerableUtils
+
+        <article data-uid="Ampere.Enumerable.EnumerableUtils">
+
+
+
+  <h1 id="Ampere_Enumerable_EnumerableUtils" data-uid="Ampere.Enumerable.EnumerableUtils" class="text-break">
+Class EnumerableUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"><p>A static utility class for .NET <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span></p>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ampere.html">Ampere</a>.<a class="xref" href="Ampere.Enumerable.html">Enumerable</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ampere.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A static utility class for .NET <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">EnumerableUtils</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Ampere.Enumerable.html">Ampere.Enumerable</a></h6>
-  <h6><strong>Assembly</strong>: Ampere.dll</h6>
-  <h5 id="Ampere_Enumerable_EnumerableUtils_syntax">Syntax</h5>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class EnumerableUtils</code></pre>
   </div>
-  <h3 id="methods">Methods
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EnumerableUtils</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend_" data-uid="Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend*"></a>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend__1_System_Collections_Generic_IEnumerable___0___System_Boolean_System_Int32_" data-uid="Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend``1(System.Collections.Generic.IEnumerable{``0}@,System.Boolean,System.Int32)">
+  CheckBufferAndExtend&lt;T&gt;(ref IEnumerable&lt;T&gt;, bool, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend__1___0____System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend%60%601(%60%600%5B%5D%40%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L71">View Source</a>
-  </span>
-  <a id="Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend_" data-uid="Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend__1___0____System_Boolean_System_Int32_" data-uid="Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend``1(``0[]@,System.Boolean,System.Int32)">CheckBufferAndExtend&lt;T&gt;(ref T[], Boolean, Int32)</h4>
-  <div class="markdown level1 summary"><p>Extends an generic array buffer by a specified size given a predefined condition
+
+  <div class="markdown level1 summary"><p>Extends an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> buffer by a specified size given a predefined condition
 is satisfied.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CheckBufferAndExtend&lt;T&gt;(ref T[] buf, bool condition, int size)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>T[]</td>
-        <td><span class="parametername">buf</span></td>
-        <td><p>The buffer to be used</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">condition</span></td>
-        <td><p>The condition that should be satisfied before Array resizing</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">size</span></td>
-        <td><p>The size in which to resize the buffer if the condition is satisfied</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the array</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend__1_System_Collections_Generic_IEnumerable___0___System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%40%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L87">View Source</a>
-  </span>
-  <a id="Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend_" data-uid="Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend__1_System_Collections_Generic_IEnumerable___0___System_Boolean_System_Int32_" data-uid="Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend``1(System.Collections.Generic.IEnumerable{``0}@,System.Boolean,System.Int32)">CheckBufferAndExtend&lt;T&gt;(ref IEnumerable&lt;T&gt;, Boolean, Int32)</h4>
-  <div class="markdown level1 summary"><p>Extends an <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> buffer by a specified size given a predefined condition
-is satisfied.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void CheckBufferAndExtend&lt;T&gt;(ref IEnumerable&lt;T&gt; buf, bool condition, int size)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><span class="parametername">buf</span></td>
-        <td><p>The buffer to be used</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">condition</span></td>
-        <td><p>The condition that should be satisfied before Array resizing</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">size</span></td>
-        <td><p>The size in which to resize the buffer if the condition is satisfied</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the IEnumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_Concat__1_System_Collections_Generic_IEnumerable___0____.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.Concat%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L41">View Source</a>
-  </span>
-  <a id="Ampere_Enumerable_EnumerableUtils_Concat_" data-uid="Ampere.Enumerable.EnumerableUtils.Concat*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_Concat__1_System_Collections_Generic_IEnumerable___0____" data-uid="Ampere.Enumerable.EnumerableUtils.Concat``1(System.Collections.Generic.IEnumerable{``0}[])">Concat&lt;T&gt;(IEnumerable&lt;T&gt;[])</h4>
-  <div class="markdown level1 summary"><p>Concatenates all IEnumerables which are specified in in the parameter. The
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The buffer to be used</p>
+</dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The condition that should be satisfied before Array resizing</p>
+</dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The size in which to resize the buffer if the condition is satisfied</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the IEnumerable</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend_" data-uid="Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend*"></a>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_CheckBufferAndExtend__1___0____System_Boolean_System_Int32_" data-uid="Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend``1(``0[]@,System.Boolean,System.Int32)">
+  CheckBufferAndExtend&lt;T&gt;(ref T[], bool, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extends a generic array buffer by a specified size given a predefined condition
+is satisfied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckBufferAndExtend&lt;T&gt;(ref T[] buf, bool condition, int size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buf</code> T[]</dt>
+    <dd><p>The buffer to be used</p>
+</dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The condition that should be satisfied before Array resizing</p>
+</dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The size in which to resize the buffer if the condition is satisfied</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the array</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Enumerable_EnumerableUtils_Fuse_" data-uid="Ampere.Enumerable.EnumerableUtils.Fuse*"></a>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_Fuse__1_System_Collections_Generic_IEnumerable___0____" data-uid="Ampere.Enumerable.EnumerableUtils.Fuse``1(System.Collections.Generic.IEnumerable{``0}[])">
+  Fuse&lt;T&gt;(params IEnumerable&lt;T&gt;[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Concatenates all IEnumerables which are specified in the parameter. The
 concatenation occurs in the order specified in the parameter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; Concat&lt;T&gt;(params IEnumerable&lt;T&gt;[] ie)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;[]</td>
-        <td><span class="parametername">ie</span></td>
-        <td><p>An enumerable of all one dimensional arrays to be concatenated</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><p>A single enumerable with all of the concatenated elements</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The enumerable type to be used</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Ampere_Enumerable_EnumerableUtils_Concat__1_System_Collections_Generic_IEnumerable___0_____examples">Examples</h5>
-  <p>This simple example shows how to call the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Concat__1_System_Collections_Generic_IEnumerable___0____">Concat&lt;T&gt;(IEnumerable&lt;T&gt;[])</a> method.</p>
 
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Is thrown if any enumerable, which is a candidate to be concatenated, is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_InnerContains__1_System_Collections_Generic_IEnumerable___0__System_Boolean_System_Collections_Generic_IEnumerable___0____.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.InnerContains%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Boolean%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L220">View Source</a>
-  </span>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; Fuse&lt;T&gt;(params IEnumerable&lt;T&gt;[] ie)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ie</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;[]</dt>
+    <dd><p>An enumerable of all one dimensional arrays to be concatenated</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>A single enumerable with all the concatenated elements</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The enumerable type to be used</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Ampere_Enumerable_EnumerableUtils_Fuse__1_System_Collections_Generic_IEnumerable___0_____examples">Examples</h4>
+  <p>This simple example shows how to call the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Fuse__1_System_Collections_Generic_IEnumerable___0____">Fuse&lt;T&gt;(params IEnumerable&lt;T&gt;[])</a> method.</p>
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Is thrown if any enumerable, which is a candidate to be concatenated, is null</p>
+</dd>
+  </dl>
+
+
+
   <a id="Ampere_Enumerable_EnumerableUtils_InnerContains_" data-uid="Ampere.Enumerable.EnumerableUtils.InnerContains*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_InnerContains__1_System_Collections_Generic_IEnumerable___0__System_Boolean_System_Collections_Generic_IEnumerable___0____" data-uid="Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])">InnerContains&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean, IEnumerable&lt;T&gt;[])</h4>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_InnerContains__1_System_Collections_Generic_IEnumerable___0__System_Boolean_System_Collections_Generic_IEnumerable___0____" data-uid="Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])">
+  InnerContains&lt;T&gt;(IEnumerable&lt;T&gt;, bool, params IEnumerable&lt;T&gt;[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Given a primary enumerable to check against and one or more test enumerable's, InnerContains executes an intersection
 of the primary and test enumerables to verify if all values in the test are contained within the primary enumerable.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static InnerContainsProgram&lt;T&gt; InnerContains&lt;T&gt;(this IEnumerable&lt;T&gt; ie, bool isAll, params IEnumerable&lt;T&gt;[] otherArrays)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><span class="parametername">ie</span></td>
-        <td><p>The primary IEnumerable to check against</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">isAll</span></td>
-        <td><p>Indicates whether to check whether all values are intersected or partially intersected</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;[]</td>
-        <td><span class="parametername">otherArrays</span></td>
-        <td><p>An array of Enumerable's to test against the primary enumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ampere.Enumerable.InnerContainsProgram-1.html">InnerContainsProgram</a>&lt;T&gt;</td>
-        <td><p>An instance of the <a class="xref" href="Ampere.Enumerable.InnerContainsProgram-1.html">InnerContainsProgram&lt;T&gt;</a> to verify the result and violating enumerables</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the IEnumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_Insert__1___0____System_Int32_System_Int32___0___.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.Insert%60%601(%60%600%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2C%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L131">View Source</a>
-  </span>
-  <a id="Ampere_Enumerable_EnumerableUtils_Insert_" data-uid="Ampere.Enumerable.EnumerableUtils.Insert*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_Insert__1___0____System_Int32_System_Int32___0___" data-uid="Ampere.Enumerable.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])">Insert&lt;T&gt;(ref T[], Int32, Int32, T[])</h4>
-  <div class="markdown level1 summary"><p>Inserts the specified element at the specified index in the generic array (modifying the original array).
-If element at that position exits, If shifts that element and any subsequent elements to the right,
-adding one to their indices. The method also allows for inserting more than one element into
-the array at one time given that they are specified. This Insert method is functionally similar
-to the Insert method of the IList interface. <span class="xref">System.Collections.IList.Insert(System.Int32,System.Object)</span>
-for information about the add method of the IList interface. This function also has an enumerable overload.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Insert&lt;T&gt;(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>T[]</td>
-        <td><span class="parametername">src</span></td>
-        <td><p>The generic array to be used</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">startIdx</span></td>
-        <td><p>The index to start insertion</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">amtToIns</span></td>
-        <td><p>The amount of elements to insert into the array</p>
-</td>
-      </tr>
-      <tr>
-        <td>T[]</td>
-        <td><span class="parametername">valuesToIns</span></td>
-        <td><p>Optionally, the values to insert into the empty indices of the new array</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the array</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Ampere_Enumerable_EnumerableUtils_Insert__1___0____System_Int32_System_Int32___0____examples">Examples</h5>
-  <p>This sample shows how to call the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Insert__1___0____System_Int32_System_Int32___0___">Insert&lt;T&gt;(ref T[], Int32, Int32, T[])</a> method.</p>
 
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IndexOutOfRangeException</span></td>
-        <td><p>Thrown when the valuesToIns array does not match the amount to insert (if it is greater than 0)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.IndexOutOfRangeException</span></td>
-        <td><p>Thrown when the amtToIns or the startIdx is less than 0</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Ampere_Enumerable_EnumerableUtils_Insert__1___0____System_Int32_System_Int32___0____seealso">See Also</h5>
-  <div class="seealso">
-      <div><span class="xref">System.Collections.IList.Insert(System.Int32,System.Object)</span></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0___.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.Insert%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%40%2CSystem.Int32%2CSystem.Int32%2C%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L205">View Source</a>
-  </span>
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ie</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The primary IEnumerable to check against</p>
+</dd>
+    <dt><code>isAll</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether to check whether all values are intersected or partially intersected</p>
+</dd>
+    <dt><code>otherArrays</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;[]</dt>
+    <dd><p>An array of Enumerable's to test against the primary enumerable</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Enumerable.InnerContainsProgram-1.html">InnerContainsProgram</a>&lt;T&gt;</dt>
+    <dd><p>An instance of the <a class="xref" href="Ampere.Enumerable.InnerContainsProgram-1.html">InnerContainsProgram&lt;T&gt;</a> to verify the result and violating enumerables</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the IEnumerable</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Ampere_Enumerable_EnumerableUtils_Insert_" data-uid="Ampere.Enumerable.EnumerableUtils.Insert*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0___" data-uid="Ampere.Enumerable.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])">Insert&lt;T&gt;(ref IEnumerable&lt;T&gt;, Int32, Int32, T[])</h4>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0___" data-uid="Ampere.Enumerable.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])">
+  Insert&lt;T&gt;(ref IEnumerable&lt;T&gt;, int, int, params T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Inserts the specified element at the specified index in the enumerable (modifying the original enumerable).
 If element at that position exits, If shifts that element and any subsequent elements to the right,
 adding one to their indices. The method also allows for inserting more than one element into
 the enumerable at one time given that they are specified. This Insert method is functionally similar
-to the Insert method of the IList interface. <span class="xref">System.Collections.IList.Insert(System.Int32,System.Object)</span>
-for information about the add method of the IList interface. This function also has an generic array overload.</p>
+to the Insert method of the IList interface. <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist.insert">Insert(int, object)</a>
+for information about the add method of the IList interface. This function also has a generic array overload.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Insert&lt;T&gt;(ref IEnumerable&lt;T&gt; src, int startIdx, int amtToIns, params T[] valuesToIns)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><span class="parametername">src</span></td>
-        <td><p>The IEnumerable to be used</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">startIdx</span></td>
-        <td><p>The index to start insertion</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">amtToIns</span></td>
-        <td><p>The amount of elements to insert into the enumerable</p>
-</td>
-      </tr>
-      <tr>
-        <td>T[]</td>
-        <td><span class="parametername">valuesToIns</span></td>
-        <td><p>Optionally, the values to insert into the empty indices of the new enumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the enumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Ampere_Enumerable_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0____examples">Examples</h5>
-  <p>This sample shows how to call the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0___">Insert&lt;T&gt;(ref IEnumerable&lt;T&gt;, Int32, Int32, T[])</a> method.</p>
 
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IndexOutOfRangeException</span></td>
-        <td><p>Thrown when the valuesToIns enumerable does not match the amount to insert (if it is greater than 0)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.IndexOutOfRangeException</span></td>
-        <td><p>Thrown when the amtToIns or the startIdx is less than 0</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Ampere_Enumerable_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0____seealso">See Also</h5>
-  <div class="seealso">
-      <div><span class="xref">System.Collections.IList.Insert(System.Int32,System.Object)</span></div>
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The IEnumerable to be used</p>
+</dd>
+    <dt><code>startIdx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index to start insertion</p>
+</dd>
+    <dt><code>amtToIns</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The amount of elements to insert into the enumerable</p>
+</dd>
+    <dt><code>valuesToIns</code> T[]</dt>
+    <dd><p>Optionally, the values to insert into the empty indices of the new enumerable</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the enumerable</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Ampere_Enumerable_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0____examples">Examples</h4>
+  <p>This sample shows how to call the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Insert__1_System_Collections_Generic_IEnumerable___0___System_Int32_System_Int32___0___">Insert&lt;T&gt;(ref IEnumerable&lt;T&gt;, int, int, params T[])</a> method.</p>
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Thrown when the valuesToIns enumerable does not match the amount to insert (if it is greater than 0)</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Thrown when the amtToIns or the startIdx is less than 0</p>
+</dd>
+  </dl>
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist.insert">Insert</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>)</div>
+    </dd>
+  </dl>
+
+
+  <a id="Ampere_Enumerable_EnumerableUtils_Insert_" data-uid="Ampere.Enumerable.EnumerableUtils.Insert*"></a>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_Insert__1___0____System_Int32_System_Int32___0___" data-uid="Ampere.Enumerable.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])">
+  Insert&lt;T&gt;(ref T[], int, int, params T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the specified element at the specified index in the generic array (modifying the original array).
+If element at that position exits, If shifts that element and any subsequent elements to the right,
+adding one to their indices. The method also allows for inserting more than one element into
+the array at one time given that they are specified. This Insert method is functionally similar
+to the Insert method of the IList interface. <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist.insert">Insert(int, object)</a>
+for information about the add method of the IList interface. This function also has an enumerable overload.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Insert&lt;T&gt;(ref T[] src, int startIdx, int amtToIns, params T[] valuesToIns)</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_IsNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L241">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>src</code> T[]</dt>
+    <dd><p>The generic array to be used</p>
+</dd>
+    <dt><code>startIdx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index to start insertion</p>
+</dd>
+    <dt><code>amtToIns</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The amount of elements to insert into the array</p>
+</dd>
+    <dt><code>valuesToIns</code> T[]</dt>
+    <dd><p>Optionally, the values to insert into the empty indices of the new array</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the array</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Ampere_Enumerable_EnumerableUtils_Insert__1___0____System_Int32_System_Int32___0____examples">Examples</h4>
+  <p>This sample shows how to call the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Insert__1___0____System_Int32_System_Int32___0___">Insert&lt;T&gt;(ref T[], int, int, params T[])</a> method.</p>
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Thrown when the valuesToIns array does not match the amount to insert (if it is greater than 0)</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>Thrown when the amtToIns or the startIdx is less than 0</p>
+</dd>
+  </dl>
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist.insert">Insert</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>)</div>
+    </dd>
+  </dl>
+
+
   <a id="Ampere_Enumerable_EnumerableUtils_IsNullOrEmpty_" data-uid="Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_IsNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__" data-uid="Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})">IsNullOrEmpty&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_IsNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__" data-uid="Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})">
+  IsNullOrEmpty&lt;T&gt;(IEnumerable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Returns whether an IEnumerable is null or empty</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool IsNullOrEmpty&lt;T&gt;(this IEnumerable&lt;T&gt; ie)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><span class="parametername">ie</span></td>
-        <td><p>The IEnumerable to be used</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>The truth</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the IEnumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_Range_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.Range(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L279">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ie</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The IEnumerable to be used</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The truth</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the IEnumerable</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Ampere_Enumerable_EnumerableUtils_Range_" data-uid="Ampere.Enumerable.EnumerableUtils.Range*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_Range_System_Int32_System_Int32_" data-uid="Ampere.Enumerable.EnumerableUtils.Range(System.Int32,System.Int32)">Range(Int32, Int32)</h4>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_Range_System_Int32_System_Int32_" data-uid="Ampere.Enumerable.EnumerableUtils.Range(System.Int32,System.Int32)">
+  Range(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Enables python style for-loop for easier readability. This loop begins
 at the starting value and loops until the end - 1,</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;int&gt; Range(int start, int end)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">start</span></td>
-        <td><p>The starting counter for the loop (inclusive)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">end</span></td>
-        <td><p>The ending counter for the loop (exclusive)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><p>An IEnumerable representing the current index</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Ampere_Enumerable_EnumerableUtils_Range_System_Int32_System_Int32__examples">Examples</h5>
-  <p>This example shows how to use the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Range_System_Int32_System_Int32_">Range(Int32, Int32)</a>method.</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_Shuffle__1_System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.Shuffle%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L291">View Source</a>
-  </span>
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The starting counter for the loop (inclusive)</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The ending counter for the loop (exclusive)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>An IEnumerable representing the current index</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="Ampere_Enumerable_EnumerableUtils_Range_System_Int32_System_Int32__examples">Examples</h4>
+  <p>This example shows how to use the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Range_System_Int32_System_Int32_">Range(int, int)</a>method.</p>
+
+
+
+
+
+
   <a id="Ampere_Enumerable_EnumerableUtils_Shuffle_" data-uid="Ampere.Enumerable.EnumerableUtils.Shuffle*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_Shuffle__1_System_Collections_Generic_IEnumerable___0__" data-uid="Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})">Shuffle&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_Shuffle__1_System_Collections_Generic_IEnumerable___0__" data-uid="Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})">
+  Shuffle&lt;T&gt;(IEnumerable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Cryptographically shuffles an enumerable.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; Shuffle&lt;T&gt;(this IEnumerable&lt;T&gt; src)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><span class="parametername">src</span></td>
-        <td><p>The IEnumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><p>The Shuffled IEnumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The element type of the IEnumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_Span_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.Span(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L325">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The IEnumerable</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The Shuffled IEnumerable</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type of the IEnumerable</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Ampere_Enumerable_EnumerableUtils_Span_" data-uid="Ampere.Enumerable.EnumerableUtils.Span*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_Span_System_Int32_System_Int32_" data-uid="Ampere.Enumerable.EnumerableUtils.Span(System.Int32,System.Int32)">Span(Int32, Int32)</h4>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_Span_System_Int32_System_Int32_" data-uid="Ampere.Enumerable.EnumerableUtils.Span(System.Int32,System.Int32)">
+  Span(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Enables python style for-loop for easier readability. This loop begins
 at the starting value and loops until the end.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;int&gt; Span(int start, int end)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">start</span></td>
-        <td><p>The starting counter for the loop (inclusive)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">end</span></td>
-        <td><p>The ending counter for the loop (inclusive)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><p>An IEnumerable representing the current index</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Ampere_Enumerable_EnumerableUtils_Span_System_Int32_System_Int32__examples">Examples</h5>
-  <p>This example shows how to use the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Span_System_Int32_System_Int32_">Span(Int32, Int32)</a>method.</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils.ToString%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L374">View Source</a>
-  </span>
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The starting counter for the loop (inclusive)</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The ending counter for the loop (inclusive)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>An IEnumerable representing the current index</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="Ampere_Enumerable_EnumerableUtils_Span_System_Int32_System_Int32__examples">Examples</h4>
+  <p>This example shows how to use the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Span_System_Int32_System_Int32_">Span(int, int)</a>method.</p>
+
+
+
+
+
+
   <a id="Ampere_Enumerable_EnumerableUtils_ToString_" data-uid="Ampere.Enumerable.EnumerableUtils.ToString*"></a>
-  <h4 id="Ampere_Enumerable_EnumerableUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean_" data-uid="Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)">ToString&lt;T&gt;(IEnumerable&lt;T&gt;, String, Boolean)</h4>
+
+  <h3 id="Ampere_Enumerable_EnumerableUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean_" data-uid="Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)">
+  ToString&lt;T&gt;(IEnumerable&lt;T&gt;, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Prints a string representation of an enumerable. There are 4 supported lengths for the fmtExp. The
 default length is 0 and the default behavior depends on the type of the enumerable. If the type is primitive
 (based on the System.IsPrimitive property) including decimal and string, then it prints the enumerable with a space
 as a separator between each element. If the enumerable is not primitive, it prints the enumerable with no separator.
 A fmtExp of length 1 specifies a character to separate each element. The enumerable is printed out, following
 a default behavior, except with the specified separator rather than the default separator. A fmtExp
-of length 2 specifies a two characters to mark the left and right outer bounds of the enumerable, A fmtExp
+of length 2 specifies two characters to mark the left and right outer bounds of the enumerable, A fmtExp
 of length 3 specifies a character for the left outer bound of the enumerable, followed by a separator character,
 followed by a character for the right outer bound of the enumerable. If no separator is desired, the &quot;/0+&quot; expression
 can be specified.The evenlySpacedSeparator parameter specifies whether an even number of spaces should be on
 both sides of the separator. This parameter ignores Object type enumerables excluding decimal and string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string ToString&lt;T&gt;(this IEnumerable&lt;T&gt; src, string fmtExp = &quot;&quot;, bool evenlySpacedSeparator = false)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
-        <td><span class="parametername">src</span></td>
-        <td><p>The IEnumerable to be used</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">fmtExp</span></td>
-        <td><p>The defined expression to be optionally used</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">evenlySpacedSeparator</span></td>
-        <td><p>Determines whether the spacing between each element should be the same</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The string representation of the enumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the enumerable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Ampere_Enumerable_EnumerableUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean__examples">Examples</h5>
-  <p>This sample shows how to call the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean_">ToString&lt;T&gt;(IEnumerable&lt;T&gt;, String, Boolean)</a> method.</p>
 
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>If arr is null</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.FormatException</span></td>
-        <td><p>If the formatting expression length is neither 0 or 3</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The IEnumerable to be used</p>
+</dd>
+    <dt><code>fmtExp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The defined expression to be optionally used</p>
+</dd>
+    <dt><code>evenlySpacedSeparator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Determines whether the spacing between each element should be the same</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string representation of the enumerable</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the enumerable</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Ampere_Enumerable_EnumerableUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean__examples">Examples</h4>
+  <p>This sample shows how to call the <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean_">ToString&lt;T&gt;(IEnumerable&lt;T&gt;, string, bool)</a> method.</p>
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>If arr is null</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></dt>
+    <dd><p>If the formatting expression length is neither 0 nor 3</p>
+</dd>
+  </dl>
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Enumerable_EnumerableUtils.md&amp;value=---%0Auid%3A%20Ampere.Enumerable.EnumerableUtils%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/manu-p-1/Ampere/blob/main/Ampere/Enumerable/EnumerableUtils.cs/#L12" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Enumerable/EnumerableUtils.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright &copy; Manu Puduvalli<br>Generated with <strong><a href='https://github.com/dotnet/docfx'>DocFX</a></strong></span>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright &copy; Manu Puduvalli<br>Generated with <strong><a href='https://github.com/dotnet/docfx'>DocFX</a></strong></span>
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

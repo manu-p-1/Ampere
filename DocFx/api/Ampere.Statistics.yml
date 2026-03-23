@@ -20,21 +20,41 @@ references:
 - uid: Ampere.Statistics.EnumerableStats
   commentId: T:Ampere.Statistics.EnumerableStats
   parent: Ampere.Statistics
+  href: Ampere.Statistics.EnumerableStats.html
   name: EnumerableStats
   nameWithType: EnumerableStats
   fullName: Ampere.Statistics.EnumerableStats
 - uid: Ampere.Statistics.InsufficientDataSetException
   commentId: T:Ampere.Statistics.InsufficientDataSetException
+  href: Ampere.Statistics.InsufficientDataSetException.html
   name: InsufficientDataSetException
   nameWithType: InsufficientDataSetException
   fullName: Ampere.Statistics.InsufficientDataSetException
 - uid: Ampere.Statistics.NoModeException
   commentId: T:Ampere.Statistics.NoModeException
+  href: Ampere.Statistics.NoModeException.html
   name: NoModeException
   nameWithType: NoModeException
   fullName: Ampere.Statistics.NoModeException
 - uid: Ampere.Statistics
   commentId: N:Ampere.Statistics
+  href: Ampere.html
   name: Ampere.Statistics
   nameWithType: Ampere.Statistics
   fullName: Ampere.Statistics
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Statistics
+    name: Statistics
+    href: Ampere.Statistics.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Statistics
+    name: Statistics
+    href: Ampere.Statistics.html
