@@ -1978,27 +1978,6 @@
             A static utility class for string extension methods.
             </summary>
         </member>
-        <member name="F:Ampere.Str.StringUtils.CharSpace">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Ampere.Str.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})">
-            <summary>
-            Converts a <see cref="T:System.Collections.Generic.IEnumerable`1"/> to a string
-            </summary>
-            <param name="charEnumerable">The <see cref="T:System.Collections.Generic.IEnumerable`1"/></param>
-            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="charEnumerable"/> is null</exception>
-            <returns>The converted string</returns>
-        </member>
-        <member name="M:Ampere.Str.StringUtils.Chomp(System.String)">
-            <summary>
-            Creates a string from the first character of the string to the first whitespace.
-            </summary>
-            <param name="str">The string to be chomped</param>
-            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
-            <returns>The string retaining the first word</returns>
-        </member>
         <member name="M:Ampere.Str.StringUtils.ChompAfter(System.String,System.Int32)">
             <summary>
             Creates a string from the first character of the string to the nth whitespace that is specified.
@@ -2007,14 +1986,6 @@
             <param name="spaces">The amount of white space to chomp after</param>
             <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
             <returns>The string retaining the chomped word</returns>
-        </member>
-        <member name="M:Ampere.Str.StringUtils.ContainsDigits(System.String)">
-            <summary>
-            Checks if a given string contains any digits.
-            </summary>
-            <param name="str">The string to be used</param>
-            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
-            <returns>True if the string contains any digits, false otherwise</returns>
         </member>
         <member name="M:Ampere.Str.StringUtils.ContainsDuplicateChars(System.String)">
             <summary>
@@ -2033,15 +2004,6 @@
             <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
             <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="arg"/> is null</exception>
             <returns>True if there are duplicate inner strings. False, otherwise</returns>
-        </member>
-        <member name="M:Ampere.Str.StringUtils.CountLetters(System.String,System.Char)">
-            <summary>
-            Counts how many times a given letter appears in a string.
-            </summary>
-            <param name="str">The string to be used</param>
-            <param name="letter">The specific letter to search</param>
-            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
-            <returns></returns>
         </member>
         <member name="M:Ampere.Str.StringUtils.CountWords(System.String)">
             <summary>
@@ -2096,90 +2058,6 @@
             <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="uri"/> is null</exception>
             <returns>True if the URI is valid</returns>
         </member>
-        <member name="M:Ampere.Str.StringUtils.IsWellFormed(System.String)">
-             <summary>
-             Checks if a string is well-formed. A string is well-formed if
-             for every alphabet-recognized character, there is an appropriate
-             closing character. For every inner string, except for
-              characters not defined in the alphabet, in between an opening
-             and closing character, if that string were to be split in half,
-             each half would be a mirror image of each other. A well-formed
-             string consists of the default alphabet consists of the following
-             characters: '(',')','{','}','[',']','&lt;','>'.
-             </summary>
-             <param name="str">the string to check</param>
-             <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
-             <returns>whether the string is well-formed</returns>
-             <example>The following demonstrates how to use the <see cref="M:Ampere.Str.StringUtils.IsWellFormed(System.String)"/> method.</example>
-             <code>
-            
-             using static Utilities.StringUtils;
-            
-             class TestClass
-             {
-                 static void Main(string[] args)
-                 {
-                     Console.WriteLine("&lt;&lt;()>>{}{}".IsWellFormed()); //prints true
-                     Console.WriteLine("{([)]}".IsWellFormed()) //prints false
-                 }
-             }
-             </code>
-        </member>
-        <member name="M:Ampere.Str.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})">
-             <summary>
-             Checks if a string is well-formed. A string is well-formed if
-             for every alphabet-recognized character, there is an appropriate
-             closing character. For every inner string, except for
-              characters not defined in the alphabet, in between an opening
-             and closing character, if that string were to be split in half,
-             each half would be a mirror image of each other. A well-formed
-             string consists of the user specified Dictionary of key-value
-             pairs, where the key is the opening character and the value
-             is the closing character.
-             </summary>
-             <param name="str">the string to check</param>
-             <param name="alphabet">the dictionary of key value pairs - where the key
-             represents the opening character and the value represents the closing character</param>
-             <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
-             <returns>whether the string is well-formed</returns>
-             <example>The following demonstrates how to use the
-             <see cref="M:Ampere.Str.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})"/> method.</example>
-             <code>
-            
-             using static Utilities.StringUtils;
-             using System.Collections.Generic;
-            
-             class TestClass
-             {
-                 static void Main(string[] args)
-                 {
-                     var dict = new Dictionary&lt;char, char>();
-                     {
-                         {'/','\'},
-                         {'(',')'}
-                     };
-                     Console.WriteLine("(/Manu\)".IsWellFormed(dict)); //prints true
-                 }
-             }
-             </code>
-        </member>
-        <member name="M:Ampere.Str.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
-            <summary>
-            Finds the longest common prefix of a group of strings of type 
-            <see cref="T:System.Collections.Generic.IEnumerable`1"/>
-            </summary>
-            <param name="strs">A group of strings to find the common prefix</param>
-            <param name="ignoreCase">A flag whether to ignore case</param>
-            <returns>The longest common prefix</returns>
-        </member>
-        <member name="M:Ampere.Str.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            Orders an enumerable by its length in ascending order (natural order).
-            </summary>
-            <param name="si">the <see cref="T:System.Collections.Generic.IEnumerable`1"/> si</param>
-            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="si"/> is null</exception>
-            <returns>An ordered enumerable</returns>
-        </member>
         <member name="M:Ampere.Str.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])">
             <summary>
             Removes all instances of any number of characters from a specified string.
@@ -2230,63 +2108,12 @@
             <exception cref="T:System.ArgumentNullException">Thrown when the <paramref name="str"/> is null</exception>
             <returns>The shuffled string</returns>
         </member>
-        <member name="M:Ampere.Str.StringUtils.SubstringRng(System.String,System.Int32,System.Int32)">
-            <summary>
-            Performs a Substring given a starting and ending index, similar to Java.
-            The operation is performed mathematically as [startIndex, endIndex).
-            </summary>
-            <param name="str">The given string</param>
-            <param name="startIndex">The inclusive starting index of <paramref name="str"/></param>
-            <param name="endIndex">The exclusive ending index of <paramref name="str"/></param>
-            <returns>A string that is equivalent to the substring that begins at startIndex in this 
-            instance, or Empty if startIndex is equal to the length of this instance.</returns>
-        </member>
-        <member name="M:Ampere.Str.StringUtils.SubstringRng(System.String,System.Int32)">
-            <summary>
-            Performs a Substring given a starting and ending index, similar to Java.
-            The operation is performed mathematically as [startIndex, endIndex).
-            </summary>
-            <param name="str">The given string</param>
-            <param name="startIndex">The inclusive starting index of <paramref name="str"/></param>
-            <returns>A string that is equivalent to the substring that begins at startIndex in this 
-            instance, or Empty if startIndex is equal to the length of this instance.</returns>
-        </member>
         <member name="M:Ampere.Str.StringUtils.IsZeroOrOne(System.String)">
             <summary>
             Returns true if the length of the string is zero or one.
             </summary>
             <param name="str">The string to be used</param>
             <returns>True if the length of the string is zero or one</returns>
-        </member>
-        <member name="T:Ampere.Str.WellFormedUtility">
-            <summary>
-            A utility class that contains functions to determine
-            whether a string is a well-formed string.
-            </summary>
-        </member>
-        <member name="P:Ampere.Str.WellFormedUtility.Alphabet">
-            <summary>
-            An instance of the Dictionary containing this alphabet.
-            </summary>
-        </member>
-        <member name="M:Ampere.Str.WellFormedUtility.#ctor(System.Collections.Generic.Dictionary{System.Char,System.Char})">
-            <summary>
-            constructor that sets up the alphabet
-            </summary>
-            <param name="dct">A dictionary representing an alphabet</param>
-        </member>
-        <member name="P:Ampere.Str.WellFormedUtility.DefaultAlphabet">
-            <summary>
-            The default alphabet
-            </summary>
-        </member>
-        <member name="M:Ampere.Str.WellFormedUtility.Run(System.String)">
-            <summary>
-            Verifies if the string is well-formed by using
-            a stack data structure to measure the balance of the string.
-            </summary>
-            <param name="inp">The input string</param>
-            <returns></returns>
         </member>
     </members>
 </doc>

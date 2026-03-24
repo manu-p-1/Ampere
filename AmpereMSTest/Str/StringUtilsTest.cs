@@ -15,19 +15,6 @@ namespace AmpereMSTest.Str
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public void IsWellFormedTest()
-        {
-            var dt = new Dictionary<char, char>
-            {
-                ['<'] = '>',
-                ['('] = ')'
-            };
-
-            Assert.AreEqual(true, "<<((Manu))>>".IsWellFormed(dt));
-            Assert.AreEqual(false, "<<((Manu)>>".IsWellFormed(dt));
-        }
-
-        [TestMethod]
         public void AppendFromEnumerableTest()
         {
             var ss = new List<string>(5) { "How", "Hello", "Are", "You", "Doing" };
