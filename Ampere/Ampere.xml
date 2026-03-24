@@ -1458,45 +1458,63 @@
             <param name="sb">The StringBuilder instance</param>
             <param name="c">The ReadOnlySpan instance to append to the StringBuilder instance</param>
             <param name="condition">The condition to satisfy to decide whether appending will occur</param>
-            <returns>Th StringBuilder instance</returns>
+            <returns>The StringBuilder instance</returns>
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.AppendIf(System.Text.StringBuilder,System.ReadOnlyMemory{System.Char},System.Boolean)">
             <summary>
             Appends a <see cref="T:System.ReadOnlyMemory`1"/> if a condition is met.
             </summary>
             <param name="sb">The StringBuilder instance</param>
-            <param name="c">The ReadOnlySpan instance to append to the StringBuilder instance</param>
+            <param name="c">The ReadOnlyMemory instance to append to the StringBuilder instance</param>
             <param name="condition">The condition to satisfy to decide whether appending will occur</param>
-            <returns>Th StringBuilder instance</returns>
+            <returns>The StringBuilder instance</returns>
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.AppendIf(System.Text.StringBuilder,System.Boolean,System.Boolean)">
             <summary>
             Appends a <see cref="T:System.Boolean"/> if a condition is met.
             </summary>
             <param name="sb">The StringBuilder instance</param>
-            <param name="b">The ReadOnlySpan instance to append to the StringBuilder instance</param>
+            <param name="b">The boolean value to append to the StringBuilder instance</param>
             <param name="condition">The condition to satisfy to decide whether appending will occur</param>
-            <returns>Th StringBuilder instance</returns>
+            <returns>The StringBuilder instance</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.AppendIf(System.Text.StringBuilder,System.String,System.Boolean)">
+            <summary>
+            Appends a <see cref="T:System.String"/> if a condition is met.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <param name="value">The string to append to the StringBuilder instance</param>
+            <param name="condition">The condition to satisfy to decide whether appending will occur</param>
+            <returns>The StringBuilder instance</returns>
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.AppendIf(System.Text.StringBuilder,System.Text.StringBuilder,System.Boolean)">
             <summary>
             Appends a <see cref="T:System.Text.StringBuilder"/> if a condition is met.
             </summary>
             <param name="sb">The StringBuilder instance</param>
-            <param name="stringBuilder">The ReadOnlySpan instance to append to the StringBuilder instance</param>
+            <param name="stringBuilder">The StringBuilder instance to append</param>
             <param name="condition">The condition to satisfy to decide whether appending will occur</param>
-            <returns>Th StringBuilder instance</returns>
+            <returns>The StringBuilder instance</returns>
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.AppendIf(System.Text.StringBuilder,System.Text.StringBuilder,System.Int32,System.Int32,System.Boolean)">
             <summary>
             Appends a <see cref="T:System.Text.StringBuilder"/> if a condition is met.
             </summary>
             <param name="sb">The StringBuilder instance</param>
-            <param name="stringBuilder">The ReadOnlySpan instance to append to the StringBuilder instance</param>
+            <param name="stringBuilder">The StringBuilder instance to append</param>
             <param name="startIndex">The starting index of where to search, inclusive</param>
             <param name="count">The number of character positions to examine.</param>
             <param name="condition">The condition to satisfy to decide whether appending will occur</param>
-            <returns>Th StringBuilder instance</returns>
+            <returns>The StringBuilder instance</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.AppendLineIf(System.Text.StringBuilder,System.String,System.Boolean)">
+            <summary>
+            Appends a string with a line terminator if a condition is met.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <param name="value">The string to append</param>
+            <param name="condition">The condition to satisfy to decide whether appending will occur</param>
+            <returns>The StringBuilder instance</returns>
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.AppendFromEnumerable``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})">
             <summary>
@@ -1536,20 +1554,20 @@
             <param name="enumerable">The enumerable to append from</param>
             <returns>The StringBuilder instance</returns>
         </member>
-        <member name="M:Ampere.Str.StringBuilderUtils.EnumerableAction``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+        <member name="M:Ampere.Str.StringBuilderUtils.AppendJoinFrom``1(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})">
             <summary>
-            A helper method to carry out an enumerable action. This method really serves no function other than making the other
-            methods look more elegant.
+            Appends items from an enumerable with a separator between each element.
             </summary>
             <typeparam name="T">The type of the enumerable</typeparam>
             <param name="sb">The StringBuilder instance</param>
+            <param name="separator">The separator to place between elements</param>
             <param name="enumerable">The enumerable to append from</param>
-            <param name="action">The specific StringBuilder action to carry out for the StringBuilder</param>
+            <param name="func">The function specifying what item should be appended</param>
             <returns>The StringBuilder instance</returns>
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32,System.Int32,System.StringComparison)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1561,7 +1579,7 @@
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32,System.StringComparison)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1572,7 +1590,7 @@
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char,System.Int32,System.StringComparison)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1583,7 +1601,7 @@
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.StringComparison)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1593,7 +1611,7 @@
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32,System.Int32)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1604,7 +1622,7 @@
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char,System.StringComparison)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1614,7 +1632,7 @@
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char,System.Int32)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1624,7 +1642,7 @@
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1633,7 +1651,7 @@
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.Char)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1642,7 +1660,7 @@
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.IndexOf(System.Text.StringBuilder,System.String,System.Int32)">
             <summary>
-            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder isntance.
+            Reports the zero-based index of the first occurrence of a specified string within this StringBuilder instance.
             The method returns -1 if the string is not found in this instance. A new string is not created during the search.
             </summary>
             <param name="sb">The StringBuilder instance</param>
@@ -1650,12 +1668,76 @@
             <param name="startIndex">The starting index of where to search, inclusive</param>
             <returns>The index if found and -1 otherwise</returns>
         </member>
-        <member name="M:Ampere.Str.StringBuilderUtils.IsZeroOrOne(System.Text.StringBuilder)">
+        <member name="M:Ampere.Str.StringBuilderUtils.CountOccurrences(System.Text.StringBuilder,System.String,System.StringComparison)">
             <summary>
-            Returns true if the length of the string is zero or one.
+            Counts the number of non-overlapping occurrences of a specified string within this StringBuilder instance.
             </summary>
             <param name="sb">The StringBuilder instance</param>
-            <returns>True if the length of the string is zero or one</returns>
+            <param name="value">The string to count occurrences of</param>
+            <param name="comparisonType">One of the enumeration values that determines how <paramref name="value"/> is searched</param>
+            <returns>The number of non-overlapping occurrences found</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.Contains(System.Text.StringBuilder,System.String,System.StringComparison)">
+            <summary>
+            Returns true if the StringBuilder contains the specified string.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <param name="value">The string to search for</param>
+            <param name="comparisonType">One of the enumeration values that determines how <paramref name="value"/> is searched</param>
+            <returns>True if the value is found, false otherwise</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.StartsWith(System.Text.StringBuilder,System.String,System.StringComparison)">
+            <summary>
+            Determines whether the beginning of this StringBuilder instance matches the specified string.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <param name="value">The string to compare</param>
+            <param name="comparisonType">One of the enumeration values that determines how the strings are compared</param>
+            <returns>True if the StringBuilder starts with the specified value</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.EndsWith(System.Text.StringBuilder,System.String,System.StringComparison)">
+            <summary>
+            Determines whether the end of this StringBuilder instance matches the specified string.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <param name="value">The string to compare</param>
+            <param name="comparisonType">One of the enumeration values that determines how the strings are compared</param>
+            <returns>True if the StringBuilder ends with the specified value</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.Reverse(System.Text.StringBuilder)">
+            <summary>
+            Reverses the contents of the StringBuilder in place.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <returns>The StringBuilder instance with reversed contents</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.TrimStart(System.Text.StringBuilder)">
+            <summary>
+            Removes all leading whitespace characters from the StringBuilder.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <returns>The StringBuilder instance with leading whitespace removed</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.TrimEnd(System.Text.StringBuilder)">
+            <summary>
+            Removes all trailing whitespace characters from the StringBuilder.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <returns>The StringBuilder instance with trailing whitespace removed</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.Trim(System.Text.StringBuilder)">
+            <summary>
+            Removes all leading and trailing whitespace characters from the StringBuilder.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <returns>The StringBuilder instance with leading and trailing whitespace removed</returns>
+        </member>
+        <member name="M:Ampere.Str.StringBuilderUtils.IsZeroOrOne(System.Text.StringBuilder)">
+            <summary>
+            Returns true if the length of the StringBuilder is zero or one.
+            </summary>
+            <param name="sb">The StringBuilder instance</param>
+            <returns>True if the length of the StringBuilder is zero or one</returns>
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.ReplaceIf(System.Text.StringBuilder,System.Char,System.Char,System.Boolean)">
             <summary>
@@ -1729,7 +1811,8 @@
             <param name="oldValue">The string to be replaced</param>
             <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
             <param name="occurrence">The nth occurrence of the <paramref name="oldValue"/> to replace</param>
-            <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>        /// <returns>This StringBuilder instance</returns>
+            <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
+            <returns>This StringBuilder instance</returns>
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.ReplaceOccurrence(System.Text.StringBuilder,System.String,System.String,System.Int32,System.Boolean)">
             <summary>
@@ -1876,7 +1959,7 @@
             <param name="oldValue">The string to be replaced</param>
             <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
             <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
-            <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
+            <param name="stop">The number of found instances of <paramref name="oldValue"/> to search before stopping</param>
             <returns>This StringBuilder instance</returns>
         </member>
         <member name="M:Ampere.Str.StringBuilderUtils.ReplaceInterval(System.Text.StringBuilder,System.String,System.String,System.Int32,System.Int32,System.Boolean)">
@@ -1899,7 +1982,7 @@
             <param name="oldValue">The string to be replaced</param>
             <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
             <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
-            <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
+            <param name="stop">The number of found instances of <paramref name="oldValue"/> to search before stopping</param>
             <param name="condition">The condition to satisfy before replacing the value</param>
             <returns>This StringBuilder instance</returns>
         </member>
@@ -1923,7 +2006,7 @@
             <param name="oldValue">The string to be replaced</param>
             <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
             <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
-            <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
+            <param name="stop">The number of found instances of <paramref name="oldValue"/> to search before stopping</param>
             <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
             <returns>This StringBuilder instance</returns>
         </member>
@@ -1947,31 +2030,20 @@
             <param name="oldValue">The string to be replaced</param>
             <param name="newValue">The string to replace an occurrence of <paramref name="oldValue"/></param>
             <param name="every">The interval the replacement should follow - read as, "Replace every nth occurrence of <paramref name="oldValue"/>"</param>
-            <param name="stop">The number of found instances of <paramref name="oldValue"/></param> to seach before stopping
+            <param name="stop">The number of found instances of <paramref name="oldValue"/> to search before stopping</param>
             <param name="comparisonType">One of the enumeration values that determines how <paramref name="oldValue"/> is searched within this instance</param>
             <param name="condition">The condition to satisfy before replacing the value</param>
             <returns>This StringBuilder instance</returns>
         </member>
-        <member name="M:Ampere.Str.StringBuilderUtils.SubstringRng(System.Text.StringBuilder,System.Int32,System.Int32)">
+        <member name="M:Ampere.Str.StringBuilderUtils.EnumerableAction``1(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
             <summary>
-            Performs a Substring given a starting and ending index, similar to Java.
-            The operation is performed mathematically as [startIndex, endIndex).
+            A helper method to carry out an enumerable action.
             </summary>
+            <typeparam name="T">The type of the enumerable</typeparam>
             <param name="sb">The StringBuilder instance</param>
-            <param name="startIndex">The inclusive starting index of <paramref name="sb"/></param>
-            <param name="endIndex">The exclusive ending index of <paramref name="sb"/></param>
-            <returns>A string that is equivalent to the substring that begins at startIndex in this 
-            instance, or Empty if startIndex is equal to the length of this instance.</returns>
-        </member>
-        <member name="M:Ampere.Str.StringBuilderUtils.SubstringRng(System.Text.StringBuilder,System.Int32)">
-            <summary>
-            Performs a Substring given a starting and ending index, similar to Java.
-            The operation is performed mathematically as [startIndex, endIndex).
-            </summary>
-            <param name="sb">The StringBuilder instance</param>
-            <param name="startIndex">The inclusive starting index of <paramref name="sb"/></param>
-            <returns>A string that is equivalent to the substring that begins at startIndex in this 
-            instance, or Empty if startIndex is equal to the length of this instance.</returns>
+            <param name="enumerable">The enumerable to append from</param>
+            <param name="action">The specific StringBuilder action to carry out for the StringBuilder</param>
+            <returns>The StringBuilder instance</returns>
         </member>
         <member name="T:Ampere.Str.StringUtils">
             <summary>
@@ -2107,6 +2179,92 @@
             <param name="preserveSpaces">Determines whether to shuffle spaces or not</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the <paramref name="str"/> is null</exception>
             <returns>The shuffled string</returns>
+        </member>
+        <member name="M:Ampere.Str.StringUtils.Truncate(System.String,System.Int32,System.String)">
+            <summary>
+            Truncates a string to a specified maximum length, appending an optional suffix if truncation occurs.
+            </summary>
+            <param name="str">The string to truncate</param>
+            <param name="maxLength">The maximum length of the returned string (including suffix)</param>
+            <param name="suffix">The suffix to append when truncation occurs (default: "...")</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="maxLength"/> is negative</exception>
+            <returns>The original string if within bounds, or a truncated string with suffix</returns>
+        </member>
+        <member name="M:Ampere.Str.StringUtils.ContainsAny(System.String,System.StringComparison,System.String[])">
+            <summary>
+            Determines whether the string contains any of the specified values.
+            </summary>
+            <param name="str">The string to search within</param>
+            <param name="comparisonType">The comparison rules to use</param>
+            <param name="values">The values to search for</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> or <paramref name="values"/> is null</exception>
+            <returns>True if the string contains at least one of the specified values</returns>
+        </member>
+        <member name="M:Ampere.Str.StringUtils.ContainsAll(System.String,System.StringComparison,System.String[])">
+            <summary>
+            Determines whether the string contains all of the specified values.
+            </summary>
+            <param name="str">The string to search within</param>
+            <param name="comparisonType">The comparison rules to use</param>
+            <param name="values">The values to search for</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> or <paramref name="values"/> is null</exception>
+            <returns>True if the string contains all of the specified values</returns>
+        </member>
+        <member name="M:Ampere.Str.StringUtils.Repeat(System.String,System.Int32)">
+            <summary>
+            Repeats the string a specified number of times.
+            </summary>
+            <param name="str">The string to repeat</param>
+            <param name="count">The number of times to repeat the string</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="count"/> is negative</exception>
+            <returns>A new string consisting of the original string repeated the specified number of times</returns>
+        </member>
+        <member name="M:Ampere.Str.StringUtils.EqualsIgnoreCase(System.String,System.String)">
+            <summary>
+            Performs a case-insensitive ordinal equality comparison between two strings.
+            </summary>
+            <param name="str">The first string</param>
+            <param name="other">The second string to compare</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+            <returns>True if the strings are equal ignoring case</returns>
+        </member>
+        <member name="M:Ampere.Str.StringUtils.SafeSubstring(System.String,System.Int32,System.Int32)">
+            <summary>
+            Returns a substring safely without throwing exceptions when the indices are out of range.
+            If startIndex is beyond the string length, an empty string is returned.
+            If startIndex + length exceeds the string length, the available characters are returned.
+            </summary>
+            <param name="str">The string to extract from</param>
+            <param name="startIndex">The zero-based starting index</param>
+            <param name="length">The maximum number of characters to extract</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+            <returns>The substring, or an empty string if out of range</returns>
+        </member>
+        <member name="M:Ampere.Str.StringUtils.RemoveWhitespace(System.String)">
+            <summary>
+            Removes all whitespace characters from the string.
+            </summary>
+            <param name="str">The string to process</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+            <returns>The string with all whitespace characters removed</returns>
+        </member>
+        <member name="M:Ampere.Str.StringUtils.ToSnakeCase(System.String)">
+            <summary>
+            Converts a PascalCase or camelCase string to snake_case.
+            </summary>
+            <param name="str">The string to convert</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+            <returns>The snake_case representation of the string</returns>
+        </member>
+        <member name="M:Ampere.Str.StringUtils.ToKebabCase(System.String)">
+            <summary>
+            Converts a PascalCase or camelCase string to kebab-case.
+            </summary>
+            <param name="str">The string to convert</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+            <returns>The kebab-case representation of the string</returns>
         </member>
         <member name="M:Ampere.Str.StringUtils.IsZeroOrOne(System.String)">
             <summary>

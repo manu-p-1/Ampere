@@ -381,6 +381,232 @@ public static class StringUtils
     }
 
     /// <summary>
+    /// Truncates a string to a specified maximum length, appending an optional suffix if truncation occurs.
+    /// </summary>
+    /// <param name="str">The string to truncate</param>
+    /// <param name="maxLength">The maximum length of the returned string (including suffix)</param>
+    /// <param name="suffix">The suffix to append when truncation occurs (default: "...")</param>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="maxLength"/> is negative</exception>
+    /// <returns>The original string if within bounds, or a truncated string with suffix</returns>
+    public static string Truncate(this string str, int maxLength, string suffix = "...")
+    {
+        ArgumentNullException.ThrowIfNull(str);
+        ArgumentOutOfRangeException.ThrowIfNegative(maxLength);
+        suffix ??= string.Empty;
+
+        if (str.Length <= maxLength)
+            return str;
+
+        if (maxLength <= suffix.Length)
+            return suffix[..maxLength];
+
+        return string.Concat(str.AsSpan(0, maxLength - suffix.Length), suffix);
+    }
+
+    /// <summary>
+    /// Determines whether the string contains any of the specified values.
+    /// </summary>
+    /// <param name="str">The string to search within</param>
+    /// <param name="comparisonType">The comparison rules to use</param>
+    /// <param name="values">The values to search for</param>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> or <paramref name="values"/> is null</exception>
+    /// <returns>True if the string contains at least one of the specified values</returns>
+    public static bool ContainsAny(this string str, StringComparison comparisonType, params string[] values)
+    {
+        ArgumentNullException.ThrowIfNull(str);
+        ArgumentNullException.ThrowIfNull(values);
+
+        foreach (var value in values)
+        {
+            if (str.Contains(value, comparisonType))
+                return true;
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Determines whether the string contains all of the specified values.
+    /// </summary>
+    /// <param name="str">The string to search within</param>
+    /// <param name="comparisonType">The comparison rules to use</param>
+    /// <param name="values">The values to search for</param>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> or <paramref name="values"/> is null</exception>
+    /// <returns>True if the string contains all of the specified values</returns>
+    public static bool ContainsAll(this string str, StringComparison comparisonType, params string[] values)
+    {
+        ArgumentNullException.ThrowIfNull(str);
+        ArgumentNullException.ThrowIfNull(values);
+
+        foreach (var value in values)
+        {
+            if (!str.Contains(value, comparisonType))
+                return false;
+        }
+
+        return true;
+    }
+
+    /// <summary>
+    /// Repeats the string a specified number of times.
+    /// </summary>
+    /// <param name="str">The string to repeat</param>
+    /// <param name="count">The number of times to repeat the string</param>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="count"/> is negative</exception>
+    /// <returns>A new string consisting of the original string repeated the specified number of times</returns>
+    public static string Repeat(this string str, int count)
+    {
+        ArgumentNullException.ThrowIfNull(str);
+        ArgumentOutOfRangeException.ThrowIfNegative(count);
+
+        return count switch
+        {
+            0 => string.Empty,
+            1 => str,
+            _ => string.Create(str.Length * count, (str, count), static (span, state) =>
+            {
+                var (s, c) = state;
+                for (var i = 0; i < c; i++)
+                    s.AsSpan().CopyTo(span[(i * s.Length)..]);
+            })
+        };
+    }
+
+    /// <summary>
+    /// Performs a case-insensitive ordinal equality comparison between two strings.
+    /// </summary>
+    /// <param name="str">The first string</param>
+    /// <param name="other">The second string to compare</param>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+    /// <returns>True if the strings are equal ignoring case</returns>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public static bool EqualsIgnoreCase(this string str, string other)
+    {
+        ArgumentNullException.ThrowIfNull(str);
+        return str.Equals(other, StringComparison.OrdinalIgnoreCase);
+    }
+
+    /// <summary>
+    /// Returns a substring safely without throwing exceptions when the indices are out of range.
+    /// If startIndex is beyond the string length, an empty string is returned.
+    /// If startIndex + length exceeds the string length, the available characters are returned.
+    /// </summary>
+    /// <param name="str">The string to extract from</param>
+    /// <param name="startIndex">The zero-based starting index</param>
+    /// <param name="length">The maximum number of characters to extract</param>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+    /// <returns>The substring, or an empty string if out of range</returns>
+    public static string SafeSubstring(this string str, int startIndex, int length)
+    {
+        ArgumentNullException.ThrowIfNull(str);
+
+        if (startIndex < 0) startIndex = 0;
+        if (length < 0) length = 0;
+
+        if (startIndex >= str.Length)
+            return string.Empty;
+
+        if (startIndex + length > str.Length)
+            length = str.Length - startIndex;
+
+        return str.Substring(startIndex, length);
+    }
+
+    /// <summary>
+    /// Removes all whitespace characters from the string.
+    /// </summary>
+    /// <param name="str">The string to process</param>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+    /// <returns>The string with all whitespace characters removed</returns>
+    public static string RemoveWhitespace(this string str)
+    {
+        ArgumentNullException.ThrowIfNull(str);
+
+        if (str.Length == 0)
+            return str;
+
+        return string.Create(str.Length, str, static (span, s) =>
+        {
+            var idx = 0;
+            foreach (var c in s)
+            {
+                if (!char.IsWhiteSpace(c))
+                    span[idx++] = c;
+            }
+
+            span[idx..].Fill('\0');
+        }).TrimEnd('\0');
+    }
+
+    /// <summary>
+    /// Converts a PascalCase or camelCase string to snake_case.
+    /// </summary>
+    /// <param name="str">The string to convert</param>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+    /// <returns>The snake_case representation of the string</returns>
+    public static string ToSnakeCase(this string str)
+    {
+        ArgumentNullException.ThrowIfNull(str);
+
+        if (str.Length <= 1)
+            return str.ToLowerInvariant();
+
+        var sb = new StringBuilder(str.Length + 4);
+        sb.Append(char.ToLowerInvariant(str[0]));
+
+        for (var i = 1; i < str.Length; i++)
+        {
+            var c = str[i];
+            if (char.IsUpper(c))
+            {
+                sb.Append('_');
+                sb.Append(char.ToLowerInvariant(c));
+            }
+            else
+            {
+                sb.Append(c);
+            }
+        }
+
+        return sb.ToString();
+    }
+
+    /// <summary>
+    /// Converts a PascalCase or camelCase string to kebab-case.
+    /// </summary>
+    /// <param name="str">The string to convert</param>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="str"/> is null</exception>
+    /// <returns>The kebab-case representation of the string</returns>
+    public static string ToKebabCase(this string str)
+    {
+        ArgumentNullException.ThrowIfNull(str);
+
+        if (str.Length <= 1)
+            return str.ToLowerInvariant();
+
+        var sb = new StringBuilder(str.Length + 4);
+        sb.Append(char.ToLowerInvariant(str[0]));
+
+        for (var i = 1; i < str.Length; i++)
+        {
+            var c = str[i];
+            if (char.IsUpper(c))
+            {
+                sb.Append('-');
+                sb.Append(char.ToLowerInvariant(c));
+            }
+            else
+            {
+                sb.Append(c);
+            }
+        }
+
+        return sb.ToString();
+    }
+
+    /// <summary>
     /// Returns true if the length of the string is zero or one.
     /// </summary>
     /// <param name="str">The string to be used</param>

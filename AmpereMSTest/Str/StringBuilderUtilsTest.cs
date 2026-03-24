@@ -148,5 +148,151 @@ namespace AmpereMSTest.Str
             sb.AppendIf(" is Cool", x);
             Assert.AreEqual(sb.ToString(), "Manu is Cool");
         }
+
+        [TestMethod]
+        public void AppendIf_StringFalse_NoChange()
+        {
+            var sb = new StringBuilder("Manu");
+            sb.AppendIf(" is Cool", false);
+            Assert.AreEqual("Manu", sb.ToString());
+        }
+
+        [TestMethod]
+        public void AppendLineIf_True_AppendsLine()
+        {
+            var sb = new StringBuilder("Hello");
+            sb.AppendLineIf(" World", true);
+            Assert.IsTrue(sb.ToString().StartsWith("Hello World"));
+            Assert.IsTrue(sb.ToString().Contains(Environment.NewLine));
+        }
+
+        [TestMethod]
+        public void AppendLineIf_False_NoChange()
+        {
+            var sb = new StringBuilder("Hello");
+            sb.AppendLineIf(" World", false);
+            Assert.AreEqual("Hello", sb.ToString());
+        }
+
+        [TestMethod]
+        public void AppendJoinFrom_Test()
+        {
+            var sb = new StringBuilder();
+            var items = new[] { 1, 2, 3 };
+            sb.AppendJoinFrom(", ", items, i => i.ToString());
+            Assert.AreEqual("1, 2, 3", sb.ToString());
+        }
+
+        [TestMethod]
+        public void AppendJoinFrom_SingleItem()
+        {
+            var sb = new StringBuilder();
+            sb.AppendJoinFrom(", ", new[] { "only" }, s => s);
+            Assert.AreEqual("only", sb.ToString());
+        }
+
+        [TestMethod]
+        public void CountOccurrences_Test()
+        {
+            var sb = new StringBuilder("hello world hello");
+            Assert.AreEqual(2, sb.CountOccurrences("hello"));
+        }
+
+        [TestMethod]
+        public void CountOccurrences_None()
+        {
+            var sb = new StringBuilder("hello world");
+            Assert.AreEqual(0, sb.CountOccurrences("xyz"));
+        }
+
+        [TestMethod]
+        public void Contains_Found()
+        {
+            var sb = new StringBuilder("Hello World");
+            Assert.IsTrue(sb.Contains("World"));
+        }
+
+        [TestMethod]
+        public void Contains_NotFound()
+        {
+            var sb = new StringBuilder("Hello World");
+            Assert.IsFalse(sb.Contains("xyz"));
+        }
+
+        [TestMethod]
+        public void StartsWith_True()
+        {
+            var sb = new StringBuilder("Hello World");
+            Assert.IsTrue(sb.StartsWith("Hello"));
+        }
+
+        [TestMethod]
+        public void StartsWith_False()
+        {
+            var sb = new StringBuilder("Hello World");
+            Assert.IsFalse(sb.StartsWith("World"));
+        }
+
+        [TestMethod]
+        public void EndsWith_True()
+        {
+            var sb = new StringBuilder("Hello World");
+            Assert.IsTrue(sb.EndsWith("World"));
+        }
+
+        [TestMethod]
+        public void EndsWith_False()
+        {
+            var sb = new StringBuilder("Hello World");
+            Assert.IsFalse(sb.EndsWith("Hello"));
+        }
+
+        [TestMethod]
+        public void Reverse_Test()
+        {
+            var sb = new StringBuilder("Hello");
+            sb.Reverse();
+            Assert.AreEqual("olleH", sb.ToString());
+        }
+
+        [TestMethod]
+        public void Reverse_SingleChar()
+        {
+            var sb = new StringBuilder("A");
+            sb.Reverse();
+            Assert.AreEqual("A", sb.ToString());
+        }
+
+        [TestMethod]
+        public void TrimStart_Test()
+        {
+            var sb = new StringBuilder("   Hello");
+            sb.TrimStart();
+            Assert.AreEqual("Hello", sb.ToString());
+        }
+
+        [TestMethod]
+        public void TrimEnd_Test()
+        {
+            var sb = new StringBuilder("Hello   ");
+            sb.TrimEnd();
+            Assert.AreEqual("Hello", sb.ToString());
+        }
+
+        [TestMethod]
+        public void Trim_Test()
+        {
+            var sb = new StringBuilder("   Hello   ");
+            sb.Trim();
+            Assert.AreEqual("Hello", sb.ToString());
+        }
+
+        [TestMethod]
+        public void Trim_NoWhitespace_NoChange()
+        {
+            var sb = new StringBuilder("Hello");
+            sb.Trim();
+            Assert.AreEqual("Hello", sb.ToString());
+        }
     }
 }
