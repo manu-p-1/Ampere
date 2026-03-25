@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class FileUtils | Ampere Docs ">
       
-      <meta name="description" content="A static class for File utility functions">
+      <meta name="description" content="A static class for File utility functions.">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ampere_AmpFile_FileUtils" data-uid="Ampere.AmpFile.FileUtils" class="text-break">
-Class FileUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class FileUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>Ampere.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A static class for File utility functions</p>
+  <div class="markdown summary"><p>A static class for File utility functions.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -153,11 +153,170 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 </h2>
 
 
+  <a id="Ampere_AmpFile_FileUtils_ComputeSha256Hash_" data-uid="Ampere.AmpFile.FileUtils.ComputeSha256Hash*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_ComputeSha256Hash_System_IO_FileInfo_" data-uid="Ampere.AmpFile.FileUtils.ComputeSha256Hash(System.IO.FileInfo)">
+  ComputeSha256Hash(FileInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Computes the SHA-256 hash of a file's contents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ComputeSha256Hash(FileInfo fileInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo instance to hash</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The hex-encoded SHA-256 hash string</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_CopyTo_" data-uid="Ampere.AmpFile.FileUtils.CopyTo*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_CopyTo_System_IO_FileInfo_System_String_System_Boolean_" data-uid="Ampere.AmpFile.FileUtils.CopyTo(System.IO.FileInfo,System.String,System.Boolean)">
+  CopyTo(FileInfo, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies a file to the specified destination, optionally overwriting an existing file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileInfo CopyTo(FileInfo fileInfo, string destinationPath, bool overwrite = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The source file</p>
+</dd>
+    <dt><code>destinationPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The destination file path</p>
+</dd>
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to overwrite an existing file at the destination</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>A FileInfo for the new file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_EnsureDirectoryExists_" data-uid="Ampere.AmpFile.FileUtils.EnsureDirectoryExists*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_EnsureDirectoryExists_System_IO_FileInfo_" data-uid="Ampere.AmpFile.FileUtils.EnsureDirectoryExists(System.IO.FileInfo)">
+  EnsureDirectoryExists(FileInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures the parent directory of the specified file exists, creating it if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnsureDirectoryExists(FileInfo fileInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo whose parent directory should be ensured</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_FindAllInFile_" data-uid="Ampere.AmpFile.FileUtils.FindAllInFile*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_FindAllInFile_System_IO_FileInfo_System_Func_System_String_System_Boolean__" data-uid="Ampere.AmpFile.FileUtils.FindAllInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})">
+  FindAllInFile(FileInfo, Func&lt;string, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns all 1-based line numbers matching the predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;int&gt; FindAllInFile(FileInfo fileInfo, Func&lt;string, bool&gt; predicate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo instance to read from</p>
+</dd>
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The function predicate to match</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>An enumerable of 1-based line numbers</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Ampere_AmpFile_FileUtils_FindInFile_" data-uid="Ampere.AmpFile.FileUtils.FindInFile*"></a>
 
   <h3 id="Ampere_AmpFile_FileUtils_FindInFile_System_IO_FileInfo_System_Func_System_String_System_Boolean__" data-uid="Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})">
   FindInFile(FileInfo, Func&lt;string, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the line of the matched predicate in the file. If the predicate is not found,
@@ -182,7 +341,8 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The 1-based line number, or -1 if not found</p>
+</dd>
   </dl>
 
 
@@ -199,7 +359,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Ampere_AmpFile_FileUtils_GetDirectorySize_System_String_" data-uid="Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)">
   GetDirectorySize(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L445"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the size of a directory in bytes, given an abstract file path.</p>
@@ -238,7 +398,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Ampere_AmpFile_FileUtils_GetFileSize_System_String_" data-uid="Ampere.AmpFile.FileUtils.GetFileSize(System.String)">
   GetFileSize(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L460"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the size of file in bytes, given an abstract file path.</p>
@@ -273,11 +433,50 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <a id="Ampere_AmpFile_FileUtils_GetLineCount_" data-uid="Ampere.AmpFile.FileUtils.GetLineCount*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_GetLineCount_System_IO_FileInfo_" data-uid="Ampere.AmpFile.FileUtils.GetLineCount(System.IO.FileInfo)">
+  GetLineCount(FileInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Efficiently counts the number of lines in a file without loading the entire content into memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetLineCount(FileInfo fileInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo instance to read from</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of lines in the file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Ampere_AmpFile_FileUtils_GetRootPath_" data-uid="Ampere.AmpFile.FileUtils.GetRootPath*"></a>
 
   <h3 id="Ampere_AmpFile_FileUtils_GetRootPath" data-uid="Ampere.AmpFile.FileUtils.GetRootPath">
   GetRootPath()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L467"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a pathname to the root directory of the System.</p>
@@ -285,7 +484,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetRootPath()</code></pre>
+    <pre><code class="lang-csharp hljs">public static string? GetRootPath()</code></pre>
   </div>
 
 
@@ -310,7 +509,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Ampere_AmpFile_FileUtils_GetUserPath" data-uid="Ampere.AmpFile.FileUtils.GetUserPath">
   GetUserPath()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L473"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a pathname to the user's profile folder.</p>
@@ -343,7 +542,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Ampere_AmpFile_FileUtils_GetValueAtLine_System_IO_FileInfo_System_Int32_" data-uid="Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)">
   GetValueAtLine(FileInfo, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the value found at a line number.</p>
@@ -360,14 +559,222 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
     <dd><p>The FileInfo instance to read from</p>
 </dd>
     <dt><code>line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The line number to find</p>
+    <dd><p>The line number to find (1-based)</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The trimmed content at the specified line</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_IsFileLocked_" data-uid="Ampere.AmpFile.FileUtils.IsFileLocked*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_IsFileLocked_System_IO_FileInfo_" data-uid="Ampere.AmpFile.FileUtils.IsFileLocked(System.IO.FileInfo)">
+  IsFileLocked(FileInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks whether a file is currently locked by another process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFileLocked(FileInfo fileInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo instance to check</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the file is locked, false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_MoveTo_" data-uid="Ampere.AmpFile.FileUtils.MoveTo*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_MoveTo_System_IO_FileInfo_System_String_System_Boolean_" data-uid="Ampere.AmpFile.FileUtils.MoveTo(System.IO.FileInfo,System.String,System.Boolean)">
+  MoveTo(FileInfo, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves a file to the specified destination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveTo(FileInfo fileInfo, string destinationPath, bool overwrite = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The source file</p>
+</dd>
+    <dt><code>destinationPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The destination file path</p>
+</dd>
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to overwrite an existing file at the destination</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_ReadAllLinesAsync_" data-uid="Ampere.AmpFile.FileUtils.ReadAllLinesAsync*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_ReadAllLinesAsync_System_IO_FileInfo_System_Threading_CancellationToken_" data-uid="Ampere.AmpFile.FileUtils.ReadAllLinesAsync(System.IO.FileInfo,System.Threading.CancellationToken)">
+  ReadAllLinesAsync(FileInfo, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads all lines of a file asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;string[]&gt; ReadAllLinesAsync(FileInfo fileInfo, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo instance to read from</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Optional cancellation token</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]&gt;</dt>
+    <dd><p>An array of all lines in the file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_ReadAllTextAsync_" data-uid="Ampere.AmpFile.FileUtils.ReadAllTextAsync*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_ReadAllTextAsync_System_IO_FileInfo_System_Threading_CancellationToken_" data-uid="Ampere.AmpFile.FileUtils.ReadAllTextAsync(System.IO.FileInfo,System.Threading.CancellationToken)">
+  ReadAllTextAsync(FileInfo, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads the entire contents of a file asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;string&gt; ReadAllTextAsync(FileInfo fileInfo, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo instance to read from</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Optional cancellation token</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The file contents as a string</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_ReadLineRange_" data-uid="Ampere.AmpFile.FileUtils.ReadLineRange*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_ReadLineRange_System_IO_FileInfo_System_Int32_System_Int32_" data-uid="Ampere.AmpFile.FileUtils.ReadLineRange(System.IO.FileInfo,System.Int32,System.Int32)">
+  ReadLineRange(FileInfo, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads a range of lines from the file (1-based, inclusive on both ends).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] ReadLineRange(FileInfo fileInfo, int startLine, int endLine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo instance to read from</p>
+</dd>
+    <dt><code>startLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The starting line number (1-based, inclusive)</p>
+</dd>
+    <dt><code>endLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The ending line number (1-based, inclusive)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>An array of lines in the specified range</p>
+</dd>
   </dl>
 
 
@@ -384,7 +791,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Ampere_AmpFile_FileUtils_RemoveFromEachLine_System_IO_FileInfo_System_String_" data-uid="Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)">
   RemoveFromEachLine(FileInfo, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes all instances of a specific value from a file if and only if the value is solely in one line.</p>
@@ -420,7 +827,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Ampere_AmpFile_FileUtils_RemoveLine_System_IO_FileInfo_System_Int32_" data-uid="Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)">
   RemoveLine(FileInfo, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes a specific line number from a file.</p>
@@ -456,10 +863,11 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Ampere_AmpFile_FileUtils_RemoveLines_System_IO_FileInfo_System_Int32___" data-uid="Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])">
   RemoveLines(FileInfo, params int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Removes a variable argument number of lines from a file.</p>
+  <div class="markdown level1 summary"><p>Removes a variable argument number of lines from a file.
+Lines are removed correctly regardless of order by sorting indices in descending order.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -473,7 +881,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
     <dd><p>The FileInfo instance to write the value to</p>
 </dd>
     <dt><code>lines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
-    <dd><p>The line numbers to remove</p>
+    <dd><p>The line numbers to remove (1-based)</p>
 </dd>
   </dl>
 
@@ -492,7 +900,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Ampere_AmpFile_FileUtils_ReplaceAll_System_IO_FileInfo_System_String_System_String_" data-uid="Ampere.AmpFile.FileUtils.ReplaceAll(System.IO.FileInfo,System.String,System.String)">
   ReplaceAll(FileInfo, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replaces all instances of a specific value from a file with another replacement value.</p>
@@ -531,7 +939,7 @@ Class FileUtils  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Ampere_AmpFile_FileUtils_ReplaceAllByLine_System_IO_FileInfo_System_String_System_String_" data-uid="Ampere.AmpFile.FileUtils.ReplaceAllByLine(System.IO.FileInfo,System.String,System.String)">
   ReplaceAllByLine(FileInfo, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replaces all instances of a specific value from a file with another replacement value if and only if
@@ -571,10 +979,10 @@ the old value is solely in one line.</p>
 
   <h3 id="Ampere_AmpFile_FileUtils_ReplaceAllInLine_System_IO_FileInfo_System_String_System_String_System_Int32_" data-uid="Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)">
   ReplaceAllInLine(FileInfo, string, string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Replaces all instances of a specific value from a file with another replacement value from a specified line</p>
+  <div class="markdown level1 summary"><p>Replaces all instances of a specific value from a file with another replacement value from a specified line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -613,13 +1021,13 @@ the old value is solely in one line.</p>
 
   <h3 id="Ampere_AmpFile_FileUtils_ReplaceInLines_System_IO_FileInfo_System_Collections_Generic_Dictionary_System_Collections_Generic_KeyValuePair_System_String_System_String__System_Int32__" data-uid="Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})">
   ReplaceInLines(FileInfo, Dictionary&lt;KeyValuePair&lt;string, string&gt;, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replaces all instances of a specific value from a file with another replacement value from a specified line.
-This overload facilitates the replacement through a Dictionary where the key's is an instance of
+This overload facilitates the replacement through a Dictionary where the key is an instance of
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair&lt;TKey, TValue&gt;</a> and the value is an int. This allows for unique replacements to occur
-in more than one line</p>
+in more than one line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -652,7 +1060,7 @@ in more than one line</p>
 
   <h3 id="Ampere_AmpFile_FileUtils_ReplaceLine_System_IO_FileInfo_System_String_System_Int32_" data-uid="Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)">
   ReplaceLine(FileInfo, string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replaces an entire line with a replacement value.</p>
@@ -691,7 +1099,7 @@ in more than one line</p>
 
   <h3 id="Ampere_AmpFile_FileUtils_ReplaceLines_System_IO_FileInfo_System_Collections_Generic_Dictionary_System_String_System_Int32__" data-uid="Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})">
   ReplaceLines(FileInfo, Dictionary&lt;string, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replace an entire line with a replacement value. This overload uses a Dictionary of replacement values
@@ -724,11 +1132,126 @@ and line numbers to replace more than one line.</p>
 
 
 
+  <a id="Ampere_AmpFile_FileUtils_SafeWriteAllText_" data-uid="Ampere.AmpFile.FileUtils.SafeWriteAllText*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_SafeWriteAllText_System_IO_FileInfo_System_String_" data-uid="Ampere.AmpFile.FileUtils.SafeWriteAllText(System.IO.FileInfo,System.String)">
+  SafeWriteAllText(FileInfo, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes text to a file atomically by writing to a temporary file first, then replacing
+the target file. This prevents data corruption if the process is interrupted mid-write.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SafeWriteAllText(FileInfo fileInfo, string content)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The target file</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The content to write</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_TouchFile_" data-uid="Ampere.AmpFile.FileUtils.TouchFile*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_TouchFile_System_IO_FileInfo_" data-uid="Ampere.AmpFile.FileUtils.TouchFile(System.IO.FileInfo)">
+  TouchFile(FileInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates the file if it does not exist, or updates its last-write timestamp if it does.
+Similar to the Unix <code>touch</code> command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TouchFile(FileInfo fileInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_AmpFile_FileUtils_WriteAllTextAsync_" data-uid="Ampere.AmpFile.FileUtils.WriteAllTextAsync*"></a>
+
+  <h3 id="Ampere_AmpFile_FileUtils_WriteAllTextAsync_System_IO_FileInfo_System_String_System_Threading_CancellationToken_" data-uid="Ampere.AmpFile.FileUtils.WriteAllTextAsync(System.IO.FileInfo,System.String,System.Threading.CancellationToken)">
+  WriteAllTextAsync(FileInfo, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes text to a file asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task WriteAllTextAsync(FileInfo fileInfo, string content, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></dt>
+    <dd><p>The FileInfo instance to write to</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The content to write</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Optional cancellation token</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Ampere_AmpFile_FileUtils_WriteLine_" data-uid="Ampere.AmpFile.FileUtils.WriteLine*"></a>
 
   <h3 id="Ampere_AmpFile_FileUtils_WriteLine_System_IO_FileInfo_System_String_" data-uid="Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo,System.String)">
   WriteLine(FileInfo, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Appends a string value into the file.</p>
@@ -764,7 +1287,7 @@ and line numbers to replace more than one line.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpFile/FileUtils.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

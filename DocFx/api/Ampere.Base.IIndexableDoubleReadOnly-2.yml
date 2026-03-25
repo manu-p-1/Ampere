@@ -20,7 +20,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IIndexableDoubleReadOnly
     path: ../Ampere/Base/IIndexable.cs
-    startLine: 53
+    startLine: 55
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -55,7 +55,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: this[]
     path: ../Ampere/Base/IIndexable.cs
-    startLine: 61
+    startLine: 63
   assemblies:
   - Ampere
   namespace: Ampere.Base

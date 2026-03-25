@@ -6,7 +6,6 @@ items:
   parent: Ampere.AmpMath
   children:
   - Ampere.AmpMath.MatrixPropertyException.#ctor
-  - Ampere.AmpMath.MatrixPropertyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   - Ampere.AmpMath.MatrixPropertyException.#ctor(System.String)
   - Ampere.AmpMath.MatrixPropertyException.#ctor(System.String,System.Exception)
   langs:
@@ -23,7 +22,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: MatrixPropertyException
     path: ../Ampere/AmpMath/MatrixPropertyException.cs
-    startLine: 8
+    startLine: 10
   assemblies:
   - Ampere
   namespace: Ampere.AmpMath
@@ -33,14 +32,8 @@ items:
     when examining certain properties at runtime.
   example: []
   syntax:
-    content: >-
-      [Serializable]
-
-      public class MatrixPropertyException : Exception, ISerializable
-    content.vb: >-
-      <Serializable>
-
-      Public Class MatrixPropertyException Inherits Exception Implements ISerializable
+    content: 'public class MatrixPropertyException : Exception, ISerializable'
+    content.vb: Public Class MatrixPropertyException Inherits Exception Implements ISerializable
   inheritance:
   - System.Object
   - System.Exception
@@ -64,10 +57,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  attributes:
-  - type: System.SerializableAttribute
-    ctor: System.SerializableAttribute.#ctor
-    arguments: []
 - uid: Ampere.AmpMath.MatrixPropertyException.#ctor
   commentId: M:Ampere.AmpMath.MatrixPropertyException.#ctor
   id: '#ctor'
@@ -86,7 +75,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/AmpMath/MatrixPropertyException.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Ampere
   namespace: Ampere.AmpMath
@@ -117,7 +106,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/AmpMath/MatrixPropertyException.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Ampere
   namespace: Ampere.AmpMath
@@ -152,7 +141,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/AmpMath/MatrixPropertyException.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - Ampere
   namespace: Ampere.AmpMath
@@ -172,47 +161,6 @@ items:
   nameWithType.vb: MatrixPropertyException.New(String, Exception)
   fullName.vb: Ampere.AmpMath.MatrixPropertyException.New(String, System.Exception)
   name.vb: New(String, Exception)
-- uid: Ampere.AmpMath.MatrixPropertyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  commentId: M:Ampere.AmpMath.MatrixPropertyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
-  parent: Ampere.AmpMath.MatrixPropertyException
-  langs:
-  - csharp
-  - vb
-  name: MatrixPropertyException(SerializationInfo, StreamingContext)
-  nameWithType: MatrixPropertyException.MatrixPropertyException(SerializationInfo, StreamingContext)
-  fullName: Ampere.AmpMath.MatrixPropertyException.MatrixPropertyException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  type: Constructor
-  source:
-    remote:
-      path: Ampere/AmpMath/MatrixPropertyException.cs
-      branch: upgrade-net10
-      repo: https://github.com/manu-p-1/Ampere.git
-    id: .ctor
-    path: ../Ampere/AmpMath/MatrixPropertyException.cs
-    startLine: 36
-  assemblies:
-  - Ampere
-  namespace: Ampere.AmpMath
-  summary: >-
-    Creates a new overloaded MatrixPropertyException containing a <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> instance
-
-    and a <xref href="System.Runtime.Serialization.StreamingContext" data-throw-if-not-resolved="false"></xref> instance.
-  example: []
-  syntax:
-    content: protected MatrixPropertyException(SerializationInfo info, StreamingContext context)
-    parameters:
-    - id: info
-      type: System.Runtime.Serialization.SerializationInfo
-      description: The SerializationInfo instance
-    - id: context
-      type: System.Runtime.Serialization.StreamingContext
-      description: The StreamingContext instance
-    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
-  overload: Ampere.AmpMath.MatrixPropertyException.#ctor*
-  nameWithType.vb: MatrixPropertyException.New(SerializationInfo, StreamingContext)
-  fullName.vb: Ampere.AmpMath.MatrixPropertyException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  name.vb: New(SerializationInfo, StreamingContext)
 references:
 - uid: Ampere.AmpMath
   commentId: N:Ampere.AmpMath
@@ -636,19 +584,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Runtime.Serialization.SerializationInfo
-  commentId: T:System.Runtime.Serialization.SerializationInfo
-  parent: System.Runtime.Serialization
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
-  name: SerializationInfo
-  nameWithType: SerializationInfo
-  fullName: System.Runtime.Serialization.SerializationInfo
-- uid: System.Runtime.Serialization.StreamingContext
-  commentId: T:System.Runtime.Serialization.StreamingContext
-  parent: System.Runtime.Serialization
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
-  name: StreamingContext
-  nameWithType: StreamingContext
-  fullName: System.Runtime.Serialization.StreamingContext

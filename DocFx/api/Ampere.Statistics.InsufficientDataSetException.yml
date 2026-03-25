@@ -6,7 +6,6 @@ items:
   parent: Ampere.Statistics
   children:
   - Ampere.Statistics.InsufficientDataSetException.#ctor
-  - Ampere.Statistics.InsufficientDataSetException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   - Ampere.Statistics.InsufficientDataSetException.#ctor(System.String)
   - Ampere.Statistics.InsufficientDataSetException.#ctor(System.String,System.Exception)
   langs:
@@ -23,21 +22,15 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: InsufficientDataSetException
     path: ../Ampere/Statistics/StatExceptions.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Ampere
   namespace: Ampere.Statistics
   summary: An exception that is thrown when the data set is not large enough to compute a statistic.
   example: []
   syntax:
-    content: >-
-      [Serializable]
-
-      public class InsufficientDataSetException : Exception, ISerializable
-    content.vb: >-
-      <Serializable>
-
-      Public Class InsufficientDataSetException Inherits Exception Implements ISerializable
+    content: 'public class InsufficientDataSetException : Exception, ISerializable'
+    content.vb: Public Class InsufficientDataSetException Inherits Exception Implements ISerializable
   inheritance:
   - System.Object
   - System.Exception
@@ -61,10 +54,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  attributes:
-  - type: System.SerializableAttribute
-    ctor: System.SerializableAttribute.#ctor
-    arguments: []
 - uid: Ampere.Statistics.InsufficientDataSetException.#ctor
   commentId: M:Ampere.Statistics.InsufficientDataSetException.#ctor
   id: '#ctor'
@@ -114,11 +103,11 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - Ampere
   namespace: Ampere.Statistics
-  summary: Creates a new overloaded InsufficientDataSetException containing a message.
+  summary: Creates a new InsufficientDataSetException containing a message.
   example: []
   syntax:
     content: public InsufficientDataSetException(string message)
@@ -149,11 +138,11 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - Ampere
   namespace: Ampere.Statistics
-  summary: Creates a new overloaded InsufficientDataSetException containing a message and an inner Exception.
+  summary: Creates a new InsufficientDataSetException containing a message and an inner Exception.
   example: []
   syntax:
     content: public InsufficientDataSetException(string message, Exception inner)
@@ -169,47 +158,6 @@ items:
   nameWithType.vb: InsufficientDataSetException.New(String, Exception)
   fullName.vb: Ampere.Statistics.InsufficientDataSetException.New(String, System.Exception)
   name.vb: New(String, Exception)
-- uid: Ampere.Statistics.InsufficientDataSetException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  commentId: M:Ampere.Statistics.InsufficientDataSetException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
-  parent: Ampere.Statistics.InsufficientDataSetException
-  langs:
-  - csharp
-  - vb
-  name: InsufficientDataSetException(SerializationInfo, StreamingContext)
-  nameWithType: InsufficientDataSetException.InsufficientDataSetException(SerializationInfo, StreamingContext)
-  fullName: Ampere.Statistics.InsufficientDataSetException.InsufficientDataSetException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  type: Constructor
-  source:
-    remote:
-      path: Ampere/Statistics/StatExceptions.cs
-      branch: upgrade-net10
-      repo: https://github.com/manu-p-1/Ampere.git
-    id: .ctor
-    path: ../Ampere/Statistics/StatExceptions.cs
-    startLine: 36
-  assemblies:
-  - Ampere
-  namespace: Ampere.Statistics
-  summary: >-
-    Creates a new overloaded InsufficientDataSetException containing a <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> instance
-
-    and a <xref href="System.Runtime.Serialization.StreamingContext" data-throw-if-not-resolved="false"></xref> instance.
-  example: []
-  syntax:
-    content: protected InsufficientDataSetException(SerializationInfo info, StreamingContext context)
-    parameters:
-    - id: info
-      type: System.Runtime.Serialization.SerializationInfo
-      description: The SerializationInfo instance
-    - id: context
-      type: System.Runtime.Serialization.StreamingContext
-      description: The StreamingContext instance
-    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
-  overload: Ampere.Statistics.InsufficientDataSetException.#ctor*
-  nameWithType.vb: InsufficientDataSetException.New(SerializationInfo, StreamingContext)
-  fullName.vb: Ampere.Statistics.InsufficientDataSetException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  name.vb: New(SerializationInfo, StreamingContext)
 references:
 - uid: Ampere.Statistics
   commentId: N:Ampere.Statistics
@@ -633,19 +581,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Runtime.Serialization.SerializationInfo
-  commentId: T:System.Runtime.Serialization.SerializationInfo
-  parent: System.Runtime.Serialization
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
-  name: SerializationInfo
-  nameWithType: SerializationInfo
-  fullName: System.Runtime.Serialization.SerializationInfo
-- uid: System.Runtime.Serialization.StreamingContext
-  commentId: T:System.Runtime.Serialization.StreamingContext
-  parent: System.Runtime.Serialization
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
-  name: StreamingContext
-  nameWithType: StreamingContext
-  fullName: System.Runtime.Serialization.StreamingContext

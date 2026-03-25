@@ -89,7 +89,7 @@
 
 
   <h1 id="Ampere_AmpMath_IMatrixer" data-uid="Ampere.AmpMath.IMatrixer" class="text-break">
-Interface IMatrixer  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Interface IMatrixer  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -123,16 +123,94 @@ Interface IMatrixer  <a class="header-action link-secondary" title="View source"
     <dt>Extension Methods</dt>
     <dd>
   <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Batch__1_System_Collections_Generic_IEnumerable___0__System_Int32_">EnumerableUtils.Batch&lt;T&gt;(IEnumerable&lt;T&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_CountBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">EnumerableUtils.CountBy&lt;T, TKey&gt;(IEnumerable&lt;T&gt;, Func&lt;T, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">EnumerableUtils.DistinctBy&lt;T, TKey&gt;(IEnumerable&lt;T&gt;, Func&lt;T, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_DistinctConsecutive__1_System_Collections_Generic_IEnumerable___0__">EnumerableUtils.DistinctConsecutive&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0_System_Int32__">EnumerableUtils.ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T, int&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">EnumerableUtils.ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
       <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_InnerContains__1_System_Collections_Generic_IEnumerable___0__System_Boolean_System_Collections_Generic_IEnumerable___0____">EnumerableUtils.InnerContains&lt;T&gt;(IEnumerable&lt;T&gt;, bool, params IEnumerable&lt;T&gt;[])</a>
   </div>
   <div>
-      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_IsNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__">EnumerableUtils.IsNullOrEmpty&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Interleave__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__">EnumerableUtils.Interleave&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_IsNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__">EnumerableUtils.IsNullOrEmpty&lt;T&gt;(IEnumerable&lt;T&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_MinMax__1_System_Collections_Generic_IEnumerable___0__">EnumerableUtils.MinMax&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Paginate__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_Int32_">EnumerableUtils.Paginate&lt;T&gt;(IEnumerable&lt;T&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Partition__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__">EnumerableUtils.Partition&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_SafeElementAt__1_System_Collections_Generic_IEnumerable___0__System_Int32___0_">EnumerableUtils.SafeElementAt&lt;T&gt;(IEnumerable&lt;T&gt;, int, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Scan__2_System_Collections_Generic_IEnumerable___0____1_System_Func___1___0___1__">EnumerableUtils.Scan&lt;T, TAccumulate&gt;(IEnumerable&lt;T&gt;, TAccumulate, Func&lt;TAccumulate, T, TAccumulate&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Shuffle__1_System_Collections_Generic_IEnumerable___0__">EnumerableUtils.Shuffle&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
   </div>
   <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_TakeEvery__1_System_Collections_Generic_IEnumerable___0__System_Int32_">EnumerableUtils.TakeEvery&lt;T&gt;(IEnumerable&lt;T&gt;, int)</a>
+  </div>
+  <div>
       <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean_">EnumerableUtils.ToString&lt;T&gt;(IEnumerable&lt;T&gt;, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Enumerable.EnumerableUtils.html#Ampere_Enumerable_EnumerableUtils_Window__1_System_Collections_Generic_IEnumerable___0__System_Int32_">EnumerableUtils.Window&lt;T&gt;(IEnumerable&lt;T&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_CoefficientOfVariation_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.CoefficientOfVariation(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_CoefficientOfVariation__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.CoefficientOfVariation&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Covariance_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.Covariance(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_CumulativeSum_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.CumulativeSum(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Entropy_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.Entropy(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Entropy__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.Entropy&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_ExcessKurtosis_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.ExcessKurtosis(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_ExcessKurtosis__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.ExcessKurtosis&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_GeometricMean_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.GeometricMean(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_GeometricMean__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.GeometricMean&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_HarmonicMean_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.HarmonicMean(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_HarmonicMean__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.HarmonicMean&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_InterQuartileRange_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.InterQuartileRange(IEnumerable&lt;double&gt;)</a>
@@ -141,16 +219,16 @@ Interface IMatrixer  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_InterQuartileRange__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.InterQuartileRange&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalMean_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.IsNormalMean(IEnumerable&lt;double&gt;)</a>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsApproximatelyNormal_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.IsApproximatelyNormal(IEnumerable&lt;double&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalMean__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.IsNormalMean&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsApproximatelyNormal__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.IsApproximatelyNormal&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalProportion_System_Collections_Generic_IEnumerable_System_Double__System_Double_">EnumerableStats.IsNormalProportion(IEnumerable&lt;double&gt;, double)</a>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalProportion_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Int32_">EnumerableStats.IsNormalProportion(IEnumerable&lt;double&gt;, double, int)</a>
   </div>
   <div>
-      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalProportion__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__System_Double_">EnumerableStats.IsNormalProportion&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;, double)</a>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_IsNormalProportion__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__System_Double_System_Int32_">EnumerableStats.IsNormalProportion&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;, double, int)</a>
   </div>
   <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_LowerQuartile_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.LowerQuartile(IEnumerable&lt;double&gt;)</a>
@@ -159,16 +237,52 @@ Interface IMatrixer  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_LowerQuartile__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.LowerQuartile&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
   </div>
   <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Mean_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.Mean(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_MeanAbsoluteDeviation_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.MeanAbsoluteDeviation(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_MeanAbsoluteDeviation__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.MeanAbsoluteDeviation&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Mean__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.Mean&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
   </div>
   <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Median_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.Median(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_MedianAbsoluteDeviation_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.MedianAbsoluteDeviation(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_MedianAbsoluteDeviation__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.MedianAbsoluteDeviation&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Median__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.Median&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_MinMaxNormalize_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.MinMaxNormalize(IEnumerable&lt;double&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Mode_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.Mode(IEnumerable&lt;double&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Mode__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.Mode&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_MovingAverage_System_Collections_Generic_IEnumerable_System_Double__System_Int32_">EnumerableStats.MovingAverage(IEnumerable&lt;double&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Outliers_System_Collections_Generic_IEnumerable_System_Double__System_Double_">EnumerableStats.Outliers(IEnumerable&lt;double&gt;, double)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_PearsonCorrelation_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.PearsonCorrelation(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Percentile_System_Collections_Generic_IEnumerable_System_Double__System_Double_">EnumerableStats.Percentile(IEnumerable&lt;double&gt;, double)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Percentile__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__System_Double_">EnumerableStats.Percentile&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;, double)</a>
   </div>
   <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_PopulationStandardDeviation_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.PopulationStandardDeviation(IEnumerable&lt;double&gt;)</a>
@@ -189,6 +303,12 @@ Interface IMatrixer  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Range__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.Range&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
   </div>
   <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_RootMeanSquare_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.RootMeanSquare(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_RootMeanSquare__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.RootMeanSquare&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SampleStandardDeviation_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.SampleStandardDeviation(IEnumerable&lt;double&gt;)</a>
   </div>
   <div>
@@ -201,16 +321,52 @@ Interface IMatrixer  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SampleVariance__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.SampleVariance&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
   </div>
   <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Skewness_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.Skewness(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_Skewness__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.Skewness&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SpearmanCorrelation_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.SpearmanCorrelation(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_StandardError_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.StandardError(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_StandardError__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.StandardError&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_StandardizedScore_System_Collections_Generic_IEnumerable_System_Double__System_Double_">EnumerableStats.StandardizedScore(IEnumerable&lt;double&gt;, double)</a>
   </div>
   <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_StandardizedScore__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__System_Double_">EnumerableStats.StandardizedScore&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;, double)</a>
   </div>
   <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SumOfSquares_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.SumOfSquares(IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_SumOfSquares__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.SumOfSquares&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_TrimmedMean_System_Collections_Generic_IEnumerable_System_Double__System_Double_">EnumerableStats.TrimmedMean(IEnumerable&lt;double&gt;, double)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_TrimmedMean__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__System_Double_">EnumerableStats.TrimmedMean&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;, double)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_TwoSampleTStatistic_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.TwoSampleTStatistic(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_UpperQuartile_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.UpperQuartile(IEnumerable&lt;double&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_UpperQuartile__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__">EnumerableStats.UpperQuartile&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_WeightedMean_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.WeightedMean(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ampere.Statistics.EnumerableStats.html#Ampere_Statistics_EnumerableStats_ZScoreNormalize_System_Collections_Generic_IEnumerable_System_Double__">EnumerableStats.ZScoreNormalize(IEnumerable&lt;double&gt;)</a>
   </div>
   </dd></dl>
 
@@ -226,7 +382,7 @@ Interface IMatrixer  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Ampere_AmpMath_IMatrixer_Cols" data-uid="Ampere.AmpMath.IMatrixer.Cols">
   Cols
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Property for the number of columns in an IMatrixer.</p>
@@ -258,10 +414,10 @@ Interface IMatrixer  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Ampere_AmpMath_IMatrixer_Rows" data-uid="Ampere.AmpMath.IMatrixer.Rows">
   Rows
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Property for the number of Rows in and IMatrixer.</p>
+  <div class="markdown level1 summary"><p>Property for the number of Rows in an IMatrixer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -290,7 +446,7 @@ Interface IMatrixer  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Ampere_AmpMath_IMatrixer_Values" data-uid="Ampere.AmpMath.IMatrixer.Values">
   Values
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Property representing the values of the IMatrixer as a generic 2D array.</p>
@@ -326,7 +482,7 @@ Interface IMatrixer  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Ampere_AmpMath_IMatrixer_EqualDimension_Ampere_AmpMath_IMatrixer_" data-uid="Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer)">
   EqualDimension(IMatrixer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns whether this instance is the same dimension as another IMatrixer instance.
@@ -347,7 +503,7 @@ Same dimension means that the rows and the columns of both instances are the sam
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>A new Matrix containing the transposed version of the original</p>
+    <dd><p>True if dimensions match, false otherwise</p>
 </dd>
   </dl>
 
@@ -365,7 +521,7 @@ Same dimension means that the rows and the columns of both instances are the sam
 
   <h3 id="Ampere_AmpMath_IMatrixer_EqualDimension_Ampere_AmpMath_IMatrixer_Ampere_AmpMath_IMatrixer_" data-uid="Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer,Ampere.AmpMath.IMatrixer)">
   EqualDimension(IMatrixer, IMatrixer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns whether two <a class="xref" href="Ampere.AmpMath.Matrix.html">Matrix</a> instances are of the same dimension.
@@ -390,7 +546,8 @@ Same dimension means that the rows and the columns of both instances are the sam
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>True if dimensions match</p>
+</dd>
   </dl>
 
 
@@ -407,7 +564,7 @@ Same dimension means that the rows and the columns of both instances are the sam
 
   <h3 id="Ampere_AmpMath_IMatrixer_IsColumnVector" data-uid="Ampere.AmpMath.IMatrixer.IsColumnVector">
   IsColumnVector()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns whether the number of Columns equals 1.</p>
@@ -440,10 +597,10 @@ Same dimension means that the rows and the columns of both instances are the sam
 
   <h3 id="Ampere_AmpMath_IMatrixer_IsRowVector" data-uid="Ampere.AmpMath.IMatrixer.IsRowVector">
   IsRowVector()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns whether the number of Rows equals 1</p>
+  <div class="markdown level1 summary"><p>Returns whether the number of Rows equals 1.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -473,7 +630,7 @@ Same dimension means that the rows and the columns of both instances are the sam
 
   <h3 id="Ampere_AmpMath_IMatrixer_IsSquareVector" data-uid="Ampere.AmpMath.IMatrixer.IsSquareVector">
   IsSquareVector()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns whether the number of Rows equals the number of Columns.</p>
@@ -506,7 +663,7 @@ Same dimension means that the rows and the columns of both instances are the sam
 
   <h3 id="Ampere_AmpMath_IMatrixer_ToString" data-uid="Ampere.AmpMath.IMatrixer.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string representation of an IMatrixer.</p>
@@ -539,7 +696,7 @@ Same dimension means that the rows and the columns of both instances are the sam
 
   <h3 id="Ampere_AmpMath_IMatrixer_Transpose" data-uid="Ampere.AmpMath.IMatrixer.Transpose">
   Transpose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Transposes the contents of the Matrix and returns a new Matrix.</p>
@@ -572,7 +729,7 @@ Same dimension means that the rows and the columns of both instances are the sam
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/AmpMath/IMatrixer.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -27,7 +27,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ImmutableRange
     path: ../Ampere/Base/ImmutableRange.cs
-    startLine: 3
+    startLine: 5
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -74,7 +74,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: Minimum
     path: ../Ampere/Base/ImmutableRange.cs
-    startLine: 6
+    startLine: 8
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -112,7 +112,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: Maximum
     path: ../Ampere/Base/ImmutableRange.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -150,7 +150,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Base/ImmutableRange.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -191,7 +191,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
     path: ../Ampere/Base/ImmutableRange.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -227,7 +227,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsValid
     path: ../Ampere/Base/ImmutableRange.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -264,7 +264,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsValue
     path: ../Ampere/Base/ImmutableRange.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -304,7 +304,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsInsideRange
     path: ../Ampere/Base/ImmutableRange.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -345,7 +345,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsRange
     path: ../Ampere/Base/ImmutableRange.cs
-    startLine: 37
+    startLine: 39
   assemblies:
   - Ampere
   namespace: Ampere.Base

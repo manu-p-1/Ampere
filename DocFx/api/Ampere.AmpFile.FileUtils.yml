@@ -5,12 +5,22 @@ items:
   id: FileUtils
   parent: Ampere.AmpFile
   children:
+  - Ampere.AmpFile.FileUtils.ComputeSha256Hash(System.IO.FileInfo)
+  - Ampere.AmpFile.FileUtils.CopyTo(System.IO.FileInfo,System.String,System.Boolean)
+  - Ampere.AmpFile.FileUtils.EnsureDirectoryExists(System.IO.FileInfo)
+  - Ampere.AmpFile.FileUtils.FindAllInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
   - Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
   - Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
   - Ampere.AmpFile.FileUtils.GetFileSize(System.String)
+  - Ampere.AmpFile.FileUtils.GetLineCount(System.IO.FileInfo)
   - Ampere.AmpFile.FileUtils.GetRootPath
   - Ampere.AmpFile.FileUtils.GetUserPath
   - Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
+  - Ampere.AmpFile.FileUtils.IsFileLocked(System.IO.FileInfo)
+  - Ampere.AmpFile.FileUtils.MoveTo(System.IO.FileInfo,System.String,System.Boolean)
+  - Ampere.AmpFile.FileUtils.ReadAllLinesAsync(System.IO.FileInfo,System.Threading.CancellationToken)
+  - Ampere.AmpFile.FileUtils.ReadAllTextAsync(System.IO.FileInfo,System.Threading.CancellationToken)
+  - Ampere.AmpFile.FileUtils.ReadLineRange(System.IO.FileInfo,System.Int32,System.Int32)
   - Ampere.AmpFile.FileUtils.RemoveFromEachLine(System.IO.FileInfo,System.String)
   - Ampere.AmpFile.FileUtils.RemoveLine(System.IO.FileInfo,System.Int32)
   - Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])
@@ -20,6 +30,9 @@ items:
   - Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})
   - Ampere.AmpFile.FileUtils.ReplaceLine(System.IO.FileInfo,System.String,System.Int32)
   - Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})
+  - Ampere.AmpFile.FileUtils.SafeWriteAllText(System.IO.FileInfo,System.String)
+  - Ampere.AmpFile.FileUtils.TouchFile(System.IO.FileInfo)
+  - Ampere.AmpFile.FileUtils.WriteAllTextAsync(System.IO.FileInfo,System.String,System.Threading.CancellationToken)
   - Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo,System.String)
   langs:
   - csharp
@@ -35,11 +48,11 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: FileUtils
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 11
+    startLine: 16
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: A static class for File utility functions
+  summary: A static class for File utility functions.
   example: []
   syntax:
     content: public static class FileUtils
@@ -72,7 +85,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: WriteLine
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 18
+    startLine: 23
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -110,7 +123,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAll
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 37
+    startLine: 44
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -151,7 +164,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllByLine
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 51
+    startLine: 62
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -195,11 +208,11 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllInLine
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 66
+    startLine: 79
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: Replaces all instances of a specific value from a file with another replacement value from a specified line
+  summary: Replaces all instances of a specific value from a file with another replacement value from a specified line.
   example: []
   syntax:
     content: public static void ReplaceAllInLine(FileInfo fileInfo, string oldValue, string replacementValue, int line)
@@ -239,18 +252,18 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInLines
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 86
+    startLine: 98
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
   summary: >-
     Replaces all instances of a specific value from a file with another replacement value from a specified line.
 
-    This overload facilitates the replacement through a Dictionary where the key's is an instance of
+    This overload facilitates the replacement through a Dictionary where the key is an instance of
 
     <xref href="System.Collections.Generic.KeyValuePair%602" data-throw-if-not-resolved="false"></xref> and the value is an int. This allows for unique replacements to occur
 
-    in more than one line
+    in more than one line.
   example: []
   syntax:
     content: public static void ReplaceInLines(FileInfo fileInfo, Dictionary<KeyValuePair<string, string>, int> replacementDict)
@@ -284,7 +297,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLine
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 103
+    startLine: 117
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -325,7 +338,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLines
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 114
+    startLine: 128
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -366,7 +379,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveFromEachLine
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 129
+    startLine: 146
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -404,7 +417,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLine
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 142
+    startLine: 162
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -442,11 +455,14 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLines
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 152
+    startLine: 173
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
-  summary: Removes a variable argument number of lines from a file.
+  summary: >-
+    Removes a variable argument number of lines from a file.
+
+    Lines are removed correctly regardless of order by sorting indices in descending order.
   example: []
   syntax:
     content: public static void RemoveLines(FileInfo fileInfo, params int[] lines)
@@ -456,7 +472,7 @@ items:
       description: The FileInfo instance to write the value to
     - id: lines
       type: System.Int32[]
-      description: The line numbers to remove
+      description: The line numbers to remove (1-based)
     content.vb: Public Shared Sub RemoveLines(fileInfo As FileInfo, ParamArray lines As Integer())
   overload: Ampere.AmpFile.FileUtils.RemoveLines*
   nameWithType.vb: FileUtils.RemoveLines(FileInfo, ParamArray Integer())
@@ -480,7 +496,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: FindInFile
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 169
+    startLine: 193
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -500,12 +516,53 @@ items:
       description: The function predicate to find in the file
     return:
       type: System.Int32
-      description: ''
+      description: The 1-based line number, or -1 if not found
     content.vb: Public Shared Function FindInFile(fileInfo As FileInfo, predicate As Func(Of String, Boolean)) As Integer
   overload: Ampere.AmpFile.FileUtils.FindInFile*
   nameWithType.vb: FileUtils.FindInFile(FileInfo, Func(Of String, Boolean))
   fullName.vb: Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo, System.Func(Of String, Boolean))
   name.vb: FindInFile(FileInfo, Func(Of String, Boolean))
+- uid: Ampere.AmpFile.FileUtils.FindAllInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
+  commentId: M:Ampere.AmpFile.FileUtils.FindAllInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
+  id: FindAllInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: FindAllInFile(FileInfo, Func<string, bool>)
+  nameWithType: FileUtils.FindAllInFile(FileInfo, Func<string, bool>)
+  fullName: Ampere.AmpFile.FileUtils.FindAllInFile(System.IO.FileInfo, System.Func<string, bool>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: FindAllInFile
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 217
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Returns all 1-based line numbers matching the predicate.
+  example: []
+  syntax:
+    content: public static IEnumerable<int> FindAllInFile(FileInfo fileInfo, Func<string, bool> predicate)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance to read from
+    - id: predicate
+      type: System.Func{System.String,System.Boolean}
+      description: The function predicate to match
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+      description: An enumerable of 1-based line numbers
+    content.vb: Public Shared Function FindAllInFile(fileInfo As FileInfo, predicate As Func(Of String, Boolean)) As IEnumerable(Of Integer)
+  overload: Ampere.AmpFile.FileUtils.FindAllInFile*
+  nameWithType.vb: FileUtils.FindAllInFile(FileInfo, Func(Of String, Boolean))
+  fullName.vb: Ampere.AmpFile.FileUtils.FindAllInFile(System.IO.FileInfo, System.Func(Of String, Boolean))
+  name.vb: FindAllInFile(FileInfo, Func(Of String, Boolean))
 - uid: Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
   commentId: M:Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)
   id: GetValueAtLine(System.IO.FileInfo,System.Int32)
@@ -524,7 +581,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetValueAtLine
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 192
+    startLine: 240
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -538,15 +595,476 @@ items:
       description: The FileInfo instance to read from
     - id: line
       type: System.Int32
-      description: The line number to find
+      description: The line number to find (1-based)
     return:
       type: System.String
-      description: ''
+      description: The trimmed content at the specified line
     content.vb: Public Shared Function GetValueAtLine(fileInfo As FileInfo, line As Integer) As String
   overload: Ampere.AmpFile.FileUtils.GetValueAtLine*
   nameWithType.vb: FileUtils.GetValueAtLine(FileInfo, Integer)
   fullName.vb: Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo, Integer)
   name.vb: GetValueAtLine(FileInfo, Integer)
+- uid: Ampere.AmpFile.FileUtils.ReadLineRange(System.IO.FileInfo,System.Int32,System.Int32)
+  commentId: M:Ampere.AmpFile.FileUtils.ReadLineRange(System.IO.FileInfo,System.Int32,System.Int32)
+  id: ReadLineRange(System.IO.FileInfo,System.Int32,System.Int32)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: ReadLineRange(FileInfo, int, int)
+  nameWithType: FileUtils.ReadLineRange(FileInfo, int, int)
+  fullName: Ampere.AmpFile.FileUtils.ReadLineRange(System.IO.FileInfo, int, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ReadLineRange
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 250
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Reads a range of lines from the file (1-based, inclusive on both ends).
+  example: []
+  syntax:
+    content: public static string[] ReadLineRange(FileInfo fileInfo, int startLine, int endLine)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance to read from
+    - id: startLine
+      type: System.Int32
+      description: The starting line number (1-based, inclusive)
+    - id: endLine
+      type: System.Int32
+      description: The ending line number (1-based, inclusive)
+    return:
+      type: System.String[]
+      description: An array of lines in the specified range
+    content.vb: Public Shared Function ReadLineRange(fileInfo As FileInfo, startLine As Integer, endLine As Integer) As String()
+  overload: Ampere.AmpFile.FileUtils.ReadLineRange*
+  nameWithType.vb: FileUtils.ReadLineRange(FileInfo, Integer, Integer)
+  fullName.vb: Ampere.AmpFile.FileUtils.ReadLineRange(System.IO.FileInfo, Integer, Integer)
+  name.vb: ReadLineRange(FileInfo, Integer, Integer)
+- uid: Ampere.AmpFile.FileUtils.GetLineCount(System.IO.FileInfo)
+  commentId: M:Ampere.AmpFile.FileUtils.GetLineCount(System.IO.FileInfo)
+  id: GetLineCount(System.IO.FileInfo)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: GetLineCount(FileInfo)
+  nameWithType: FileUtils.GetLineCount(FileInfo)
+  fullName: Ampere.AmpFile.FileUtils.GetLineCount(System.IO.FileInfo)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetLineCount
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 267
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Efficiently counts the number of lines in a file without loading the entire content into memory.
+  example: []
+  syntax:
+    content: public static int GetLineCount(FileInfo fileInfo)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance to read from
+    return:
+      type: System.Int32
+      description: The number of lines in the file
+    content.vb: Public Shared Function GetLineCount(fileInfo As FileInfo) As Integer
+  overload: Ampere.AmpFile.FileUtils.GetLineCount*
+- uid: Ampere.AmpFile.FileUtils.ComputeSha256Hash(System.IO.FileInfo)
+  commentId: M:Ampere.AmpFile.FileUtils.ComputeSha256Hash(System.IO.FileInfo)
+  id: ComputeSha256Hash(System.IO.FileInfo)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: ComputeSha256Hash(FileInfo)
+  nameWithType: FileUtils.ComputeSha256Hash(FileInfo)
+  fullName: Ampere.AmpFile.FileUtils.ComputeSha256Hash(System.IO.FileInfo)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ComputeSha256Hash
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 283
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Computes the SHA-256 hash of a file's contents.
+  example: []
+  syntax:
+    content: public static string ComputeSha256Hash(FileInfo fileInfo)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance to hash
+    return:
+      type: System.String
+      description: The hex-encoded SHA-256 hash string
+    content.vb: Public Shared Function ComputeSha256Hash(fileInfo As FileInfo) As String
+  overload: Ampere.AmpFile.FileUtils.ComputeSha256Hash*
+- uid: Ampere.AmpFile.FileUtils.SafeWriteAllText(System.IO.FileInfo,System.String)
+  commentId: M:Ampere.AmpFile.FileUtils.SafeWriteAllText(System.IO.FileInfo,System.String)
+  id: SafeWriteAllText(System.IO.FileInfo,System.String)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: SafeWriteAllText(FileInfo, string)
+  nameWithType: FileUtils.SafeWriteAllText(FileInfo, string)
+  fullName: Ampere.AmpFile.FileUtils.SafeWriteAllText(System.IO.FileInfo, string)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: SafeWriteAllText
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 298
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: >-
+    Writes text to a file atomically by writing to a temporary file first, then replacing
+
+    the target file. This prevents data corruption if the process is interrupted mid-write.
+  example: []
+  syntax:
+    content: public static void SafeWriteAllText(FileInfo fileInfo, string content)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The target file
+    - id: content
+      type: System.String
+      description: The content to write
+    content.vb: Public Shared Sub SafeWriteAllText(fileInfo As FileInfo, content As String)
+  overload: Ampere.AmpFile.FileUtils.SafeWriteAllText*
+  nameWithType.vb: FileUtils.SafeWriteAllText(FileInfo, String)
+  fullName.vb: Ampere.AmpFile.FileUtils.SafeWriteAllText(System.IO.FileInfo, String)
+  name.vb: SafeWriteAllText(FileInfo, String)
+- uid: Ampere.AmpFile.FileUtils.ReadAllTextAsync(System.IO.FileInfo,System.Threading.CancellationToken)
+  commentId: M:Ampere.AmpFile.FileUtils.ReadAllTextAsync(System.IO.FileInfo,System.Threading.CancellationToken)
+  id: ReadAllTextAsync(System.IO.FileInfo,System.Threading.CancellationToken)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: ReadAllTextAsync(FileInfo, CancellationToken)
+  nameWithType: FileUtils.ReadAllTextAsync(FileInfo, CancellationToken)
+  fullName: Ampere.AmpFile.FileUtils.ReadAllTextAsync(System.IO.FileInfo, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ReadAllTextAsync
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 324
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Reads the entire contents of a file asynchronously.
+  example: []
+  syntax:
+    content: public static Task<string> ReadAllTextAsync(FileInfo fileInfo, CancellationToken cancellationToken = default)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance to read from
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Optional cancellation token
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The file contents as a string
+    content.vb: Public Shared Function ReadAllTextAsync(fileInfo As FileInfo, cancellationToken As CancellationToken = Nothing) As Task(Of String)
+  overload: Ampere.AmpFile.FileUtils.ReadAllTextAsync*
+- uid: Ampere.AmpFile.FileUtils.WriteAllTextAsync(System.IO.FileInfo,System.String,System.Threading.CancellationToken)
+  commentId: M:Ampere.AmpFile.FileUtils.WriteAllTextAsync(System.IO.FileInfo,System.String,System.Threading.CancellationToken)
+  id: WriteAllTextAsync(System.IO.FileInfo,System.String,System.Threading.CancellationToken)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: WriteAllTextAsync(FileInfo, string, CancellationToken)
+  nameWithType: FileUtils.WriteAllTextAsync(FileInfo, string, CancellationToken)
+  fullName: Ampere.AmpFile.FileUtils.WriteAllTextAsync(System.IO.FileInfo, string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WriteAllTextAsync
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 336
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Writes text to a file asynchronously.
+  example: []
+  syntax:
+    content: public static Task WriteAllTextAsync(FileInfo fileInfo, string content, CancellationToken cancellationToken = default)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance to write to
+    - id: content
+      type: System.String
+      description: The content to write
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Optional cancellation token
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function WriteAllTextAsync(fileInfo As FileInfo, content As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Ampere.AmpFile.FileUtils.WriteAllTextAsync*
+  nameWithType.vb: FileUtils.WriteAllTextAsync(FileInfo, String, CancellationToken)
+  fullName.vb: Ampere.AmpFile.FileUtils.WriteAllTextAsync(System.IO.FileInfo, String, System.Threading.CancellationToken)
+  name.vb: WriteAllTextAsync(FileInfo, String, CancellationToken)
+- uid: Ampere.AmpFile.FileUtils.ReadAllLinesAsync(System.IO.FileInfo,System.Threading.CancellationToken)
+  commentId: M:Ampere.AmpFile.FileUtils.ReadAllLinesAsync(System.IO.FileInfo,System.Threading.CancellationToken)
+  id: ReadAllLinesAsync(System.IO.FileInfo,System.Threading.CancellationToken)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: ReadAllLinesAsync(FileInfo, CancellationToken)
+  nameWithType: FileUtils.ReadAllLinesAsync(FileInfo, CancellationToken)
+  fullName: Ampere.AmpFile.FileUtils.ReadAllLinesAsync(System.IO.FileInfo, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ReadAllLinesAsync
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 349
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Reads all lines of a file asynchronously.
+  example: []
+  syntax:
+    content: public static Task<string[]> ReadAllLinesAsync(FileInfo fileInfo, CancellationToken cancellationToken = default)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance to read from
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Optional cancellation token
+    return:
+      type: System.Threading.Tasks.Task{System.String[]}
+      description: An array of all lines in the file
+    content.vb: Public Shared Function ReadAllLinesAsync(fileInfo As FileInfo, cancellationToken As CancellationToken = Nothing) As Task(Of String())
+  overload: Ampere.AmpFile.FileUtils.ReadAllLinesAsync*
+- uid: Ampere.AmpFile.FileUtils.TouchFile(System.IO.FileInfo)
+  commentId: M:Ampere.AmpFile.FileUtils.TouchFile(System.IO.FileInfo)
+  id: TouchFile(System.IO.FileInfo)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: TouchFile(FileInfo)
+  nameWithType: FileUtils.TouchFile(FileInfo)
+  fullName: Ampere.AmpFile.FileUtils.TouchFile(System.IO.FileInfo)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: TouchFile
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 360
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: >-
+    Creates the file if it does not exist, or updates its last-write timestamp if it does.
+
+    Similar to the Unix <code>touch</code> command.
+  example: []
+  syntax:
+    content: public static void TouchFile(FileInfo fileInfo)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance
+    content.vb: Public Shared Sub TouchFile(fileInfo As FileInfo)
+  overload: Ampere.AmpFile.FileUtils.TouchFile*
+- uid: Ampere.AmpFile.FileUtils.EnsureDirectoryExists(System.IO.FileInfo)
+  commentId: M:Ampere.AmpFile.FileUtils.EnsureDirectoryExists(System.IO.FileInfo)
+  id: EnsureDirectoryExists(System.IO.FileInfo)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: EnsureDirectoryExists(FileInfo)
+  nameWithType: FileUtils.EnsureDirectoryExists(FileInfo)
+  fullName: Ampere.AmpFile.FileUtils.EnsureDirectoryExists(System.IO.FileInfo)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: EnsureDirectoryExists
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 379
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Ensures the parent directory of the specified file exists, creating it if necessary.
+  example: []
+  syntax:
+    content: public static void EnsureDirectoryExists(FileInfo fileInfo)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo whose parent directory should be ensured
+    content.vb: Public Shared Sub EnsureDirectoryExists(fileInfo As FileInfo)
+  overload: Ampere.AmpFile.FileUtils.EnsureDirectoryExists*
+- uid: Ampere.AmpFile.FileUtils.CopyTo(System.IO.FileInfo,System.String,System.Boolean)
+  commentId: M:Ampere.AmpFile.FileUtils.CopyTo(System.IO.FileInfo,System.String,System.Boolean)
+  id: CopyTo(System.IO.FileInfo,System.String,System.Boolean)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(FileInfo, string, bool)
+  nameWithType: FileUtils.CopyTo(FileInfo, string, bool)
+  fullName: Ampere.AmpFile.FileUtils.CopyTo(System.IO.FileInfo, string, bool)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: CopyTo
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 395
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Copies a file to the specified destination, optionally overwriting an existing file.
+  example: []
+  syntax:
+    content: public static FileInfo CopyTo(FileInfo fileInfo, string destinationPath, bool overwrite = false)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The source file
+    - id: destinationPath
+      type: System.String
+      description: The destination file path
+    - id: overwrite
+      type: System.Boolean
+      description: Whether to overwrite an existing file at the destination
+    return:
+      type: System.IO.FileInfo
+      description: A FileInfo for the new file
+    content.vb: Public Shared Function CopyTo(fileInfo As FileInfo, destinationPath As String, overwrite As Boolean = False) As FileInfo
+  overload: Ampere.AmpFile.FileUtils.CopyTo*
+  nameWithType.vb: FileUtils.CopyTo(FileInfo, String, Boolean)
+  fullName.vb: Ampere.AmpFile.FileUtils.CopyTo(System.IO.FileInfo, String, Boolean)
+  name.vb: CopyTo(FileInfo, String, Boolean)
+- uid: Ampere.AmpFile.FileUtils.MoveTo(System.IO.FileInfo,System.String,System.Boolean)
+  commentId: M:Ampere.AmpFile.FileUtils.MoveTo(System.IO.FileInfo,System.String,System.Boolean)
+  id: MoveTo(System.IO.FileInfo,System.String,System.Boolean)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: MoveTo(FileInfo, string, bool)
+  nameWithType: FileUtils.MoveTo(FileInfo, string, bool)
+  fullName: Ampere.AmpFile.FileUtils.MoveTo(System.IO.FileInfo, string, bool)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: MoveTo
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 409
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Moves a file to the specified destination.
+  example: []
+  syntax:
+    content: public static void MoveTo(FileInfo fileInfo, string destinationPath, bool overwrite = false)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The source file
+    - id: destinationPath
+      type: System.String
+      description: The destination file path
+    - id: overwrite
+      type: System.Boolean
+      description: Whether to overwrite an existing file at the destination
+    content.vb: Public Shared Sub MoveTo(fileInfo As FileInfo, destinationPath As String, overwrite As Boolean = False)
+  overload: Ampere.AmpFile.FileUtils.MoveTo*
+  nameWithType.vb: FileUtils.MoveTo(FileInfo, String, Boolean)
+  fullName.vb: Ampere.AmpFile.FileUtils.MoveTo(System.IO.FileInfo, String, Boolean)
+  name.vb: MoveTo(FileInfo, String, Boolean)
+- uid: Ampere.AmpFile.FileUtils.IsFileLocked(System.IO.FileInfo)
+  commentId: M:Ampere.AmpFile.FileUtils.IsFileLocked(System.IO.FileInfo)
+  id: IsFileLocked(System.IO.FileInfo)
+  parent: Ampere.AmpFile.FileUtils
+  langs:
+  - csharp
+  - vb
+  name: IsFileLocked(FileInfo)
+  nameWithType: FileUtils.IsFileLocked(FileInfo)
+  fullName: Ampere.AmpFile.FileUtils.IsFileLocked(System.IO.FileInfo)
+  type: Method
+  source:
+    remote:
+      path: Ampere/AmpFile/FileUtils.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: IsFileLocked
+    path: ../Ampere/AmpFile/FileUtils.cs
+    startLine: 422
+  assemblies:
+  - Ampere
+  namespace: Ampere.AmpFile
+  summary: Checks whether a file is currently locked by another process.
+  example: []
+  syntax:
+    content: public static bool IsFileLocked(FileInfo fileInfo)
+    parameters:
+    - id: fileInfo
+      type: System.IO.FileInfo
+      description: The FileInfo instance to check
+    return:
+      type: System.Boolean
+      description: True if the file is locked, false otherwise
+    content.vb: Public Shared Function IsFileLocked(fileInfo As FileInfo) As Boolean
+  overload: Ampere.AmpFile.FileUtils.IsFileLocked*
 - uid: Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
   commentId: M:Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)
   id: GetDirectorySize(System.String)
@@ -566,7 +1084,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetDirectorySize
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 200
+    startLine: 444
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -605,7 +1123,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetFileSize
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 217
+    startLine: 459
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -643,14 +1161,14 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetRootPath
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 224
+    startLine: 466
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
   summary: Returns a pathname to the root directory of the System.
   example: []
   syntax:
-    content: public static string GetRootPath()
+    content: public static string? GetRootPath()
     return:
       type: System.String
       description: A pathname to the root directory of the System
@@ -674,7 +1192,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetUserPath
     path: ../Ampere/AmpFile/FileUtils.cs
-    startLine: 231
+    startLine: 472
   assemblies:
   - Ampere
   namespace: Ampere.AmpFile
@@ -1399,12 +1917,369 @@ references:
   - name: " "
   - name: TResult
   - name: )
+- uid: Ampere.AmpFile.FileUtils.FindAllInFile*
+  commentId: Overload:Ampere.AmpFile.FileUtils.FindAllInFile
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_FindAllInFile_System_IO_FileInfo_System_Func_System_String_System_Boolean__
+  name: FindAllInFile
+  nameWithType: FileUtils.FindAllInFile
+  fullName: Ampere.AmpFile.FileUtils.FindAllInFile
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<int>
+  nameWithType: IEnumerable<int>
+  fullName: System.Collections.Generic.IEnumerable<int>
+  nameWithType.vb: IEnumerable(Of Integer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Integer)
+  name.vb: IEnumerable(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Ampere.AmpFile.FileUtils.GetValueAtLine*
   commentId: Overload:Ampere.AmpFile.FileUtils.GetValueAtLine
   href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_GetValueAtLine_System_IO_FileInfo_System_Int32_
   name: GetValueAtLine
   nameWithType: FileUtils.GetValueAtLine
   fullName: Ampere.AmpFile.FileUtils.GetValueAtLine
+- uid: Ampere.AmpFile.FileUtils.ReadLineRange*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ReadLineRange
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ReadLineRange_System_IO_FileInfo_System_Int32_System_Int32_
+  name: ReadLineRange
+  nameWithType: FileUtils.ReadLineRange
+  fullName: Ampere.AmpFile.FileUtils.ReadLineRange
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Ampere.AmpFile.FileUtils.GetLineCount*
+  commentId: Overload:Ampere.AmpFile.FileUtils.GetLineCount
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_GetLineCount_System_IO_FileInfo_
+  name: GetLineCount
+  nameWithType: FileUtils.GetLineCount
+  fullName: Ampere.AmpFile.FileUtils.GetLineCount
+- uid: Ampere.AmpFile.FileUtils.ComputeSha256Hash*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ComputeSha256Hash
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ComputeSha256Hash_System_IO_FileInfo_
+  name: ComputeSha256Hash
+  nameWithType: FileUtils.ComputeSha256Hash
+  fullName: Ampere.AmpFile.FileUtils.ComputeSha256Hash
+- uid: Ampere.AmpFile.FileUtils.SafeWriteAllText*
+  commentId: Overload:Ampere.AmpFile.FileUtils.SafeWriteAllText
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_SafeWriteAllText_System_IO_FileInfo_System_String_
+  name: SafeWriteAllText
+  nameWithType: FileUtils.SafeWriteAllText
+  fullName: Ampere.AmpFile.FileUtils.SafeWriteAllText
+- uid: Ampere.AmpFile.FileUtils.ReadAllTextAsync*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ReadAllTextAsync
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ReadAllTextAsync_System_IO_FileInfo_System_Threading_CancellationToken_
+  name: ReadAllTextAsync
+  nameWithType: FileUtils.ReadAllTextAsync
+  fullName: Ampere.AmpFile.FileUtils.ReadAllTextAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Ampere.AmpFile.FileUtils.WriteAllTextAsync*
+  commentId: Overload:Ampere.AmpFile.FileUtils.WriteAllTextAsync
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_WriteAllTextAsync_System_IO_FileInfo_System_String_System_Threading_CancellationToken_
+  name: WriteAllTextAsync
+  nameWithType: FileUtils.WriteAllTextAsync
+  fullName: Ampere.AmpFile.FileUtils.WriteAllTextAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Ampere.AmpFile.FileUtils.ReadAllLinesAsync*
+  commentId: Overload:Ampere.AmpFile.FileUtils.ReadAllLinesAsync
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_ReadAllLinesAsync_System_IO_FileInfo_System_Threading_CancellationToken_
+  name: ReadAllLinesAsync
+  nameWithType: FileUtils.ReadAllLinesAsync
+  fullName: Ampere.AmpFile.FileUtils.ReadAllLinesAsync
+- uid: System.Threading.Tasks.Task{System.String[]}
+  commentId: T:System.Threading.Tasks.Task{System.String[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string[]>
+  nameWithType: Task<string[]>
+  fullName: System.Threading.Tasks.Task<string[]>
+  nameWithType.vb: Task(Of String())
+  fullName.vb: System.Threading.Tasks.Task(Of String())
+  name.vb: Task(Of String())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: Ampere.AmpFile.FileUtils.TouchFile*
+  commentId: Overload:Ampere.AmpFile.FileUtils.TouchFile
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_TouchFile_System_IO_FileInfo_
+  name: TouchFile
+  nameWithType: FileUtils.TouchFile
+  fullName: Ampere.AmpFile.FileUtils.TouchFile
+- uid: Ampere.AmpFile.FileUtils.EnsureDirectoryExists*
+  commentId: Overload:Ampere.AmpFile.FileUtils.EnsureDirectoryExists
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_EnsureDirectoryExists_System_IO_FileInfo_
+  name: EnsureDirectoryExists
+  nameWithType: FileUtils.EnsureDirectoryExists
+  fullName: Ampere.AmpFile.FileUtils.EnsureDirectoryExists
+- uid: Ampere.AmpFile.FileUtils.CopyTo*
+  commentId: Overload:Ampere.AmpFile.FileUtils.CopyTo
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_CopyTo_System_IO_FileInfo_System_String_System_Boolean_
+  name: CopyTo
+  nameWithType: FileUtils.CopyTo
+  fullName: Ampere.AmpFile.FileUtils.CopyTo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Ampere.AmpFile.FileUtils.MoveTo*
+  commentId: Overload:Ampere.AmpFile.FileUtils.MoveTo
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_MoveTo_System_IO_FileInfo_System_String_System_Boolean_
+  name: MoveTo
+  nameWithType: FileUtils.MoveTo
+  fullName: Ampere.AmpFile.FileUtils.MoveTo
+- uid: Ampere.AmpFile.FileUtils.IsFileLocked*
+  commentId: Overload:Ampere.AmpFile.FileUtils.IsFileLocked
+  href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_IsFileLocked_System_IO_FileInfo_
+  name: IsFileLocked
+  nameWithType: FileUtils.IsFileLocked
+  fullName: Ampere.AmpFile.FileUtils.IsFileLocked
 - uid: Ampere.AmpFile.FileUtils.GetDirectorySize*
   commentId: Overload:Ampere.AmpFile.FileUtils.GetDirectorySize
   href: Ampere.AmpFile.FileUtils.html#Ampere_AmpFile_FileUtils_GetDirectorySize_System_String_

@@ -25,7 +25,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ampere.AmpFile.FileUtils",
-      "Summary": "<p sourcefile=\"api/Ampere.AmpFile.FileUtils.yml\" sourcestartlinenumber=\"1\">A static class for File utility functions</p>\n"
+      "Summary": "<p sourcefile=\"api/Ampere.AmpFile.FileUtils.yml\" sourcestartlinenumber=\"1\">A static class for File utility functions.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -249,7 +249,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ampere.Base.Shuffler",
-      "Summary": "<p sourcefile=\"api/Ampere.Base.Shuffler.yml\" sourcestartlinenumber=\"1\">A utility to shuffle an array using the Fisher-Yates algorithm.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ampere.Base.Shuffler.yml\" sourcestartlinenumber=\"1\">Provides cryptographically secure shuffling and sampling algorithms.\nAll methods use <xref href=\"System.Security.Cryptography.RandomNumberGenerator\" data-throw-if-not-resolved=\"false\"></xref> for unbiased randomness.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -319,7 +319,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ampere.Statistics.EnumerableStats",
-      "Summary": "<p sourcefile=\"api/Ampere.Statistics.EnumerableStats.yml\" sourcestartlinenumber=\"1\">A static utility class for calculating a variety of statistics based on IEnumerables. Moreover,\ngeneric overload methods exist to simplify calculating statistics of object enumerables containing\nnumeric properties.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ampere.Statistics.EnumerableStats.yml\" sourcestartlinenumber=\"1\">A static utility class for calculating a variety of statistics based on IEnumerables. Provides\nextension methods for <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref> with generic overloads that accept a selector\nfunction, enabling statistics computation on object enumerables containing numeric properties.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -347,7 +347,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ampere.Statistics.NoModeException",
-      "Summary": "<p sourcefile=\"api/Ampere.Statistics.NoModeException.yml\" sourcestartlinenumber=\"1\">An exception that is thrown when no Mode exists in the data set.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ampere.Statistics.NoModeException.yml\" sourcestartlinenumber=\"1\">An exception that is thrown when no mode exists in the data set.</p>\n"
     },
     {
       "type": "ManagedReference",

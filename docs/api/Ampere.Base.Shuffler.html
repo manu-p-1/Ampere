@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Shuffler | Ampere Docs ">
       
-      <meta name="description" content="A utility to shuffle an array using the Fisher-Yates algorithm.">
+      <meta name="description" content="Provides cryptographically secure shuffling and sampling algorithms. All methods use  for unbiased randomness.">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ampere_Base_Shuffler" data-uid="Ampere.Base.Shuffler" class="text-break">
-Class Shuffler  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class Shuffler  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Shuffler  <a class="header-action link-secondary" title="View source" href
   <dl><dt>Assembly</dt><dd>Ampere.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A utility to shuffle an array using the Fisher-Yates algorithm.</p>
+  <div class="markdown summary"><p>Provides cryptographically secure shuffling and sampling algorithms.
+All methods use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator">RandomNumberGenerator</a> for unbiased randomness.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -153,39 +154,41 @@ Class Shuffler  <a class="header-action link-secondary" title="View source" href
 </h2>
 
 
-  <a id="Ampere_Base_Shuffler_Shuffle_" data-uid="Ampere.Base.Shuffler.Shuffle*"></a>
+  <a id="Ampere_Base_Shuffler_Derange_" data-uid="Ampere.Base.Shuffler.Derange*"></a>
 
-  <h3 id="Ampere_Base_Shuffler_Shuffle__1___0___" data-uid="Ampere.Base.Shuffler.Shuffle``1(``0[])">
-  Shuffle&lt;T&gt;(T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Ampere_Base_Shuffler_Derange__1_System_ReadOnlySpan___0__" data-uid="Ampere.Base.Shuffler.Derange``1(System.ReadOnlySpan{``0})">
+  Derange&lt;T&gt;(ReadOnlySpan&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Shuffles the array using the Fisher-Yates algorithm with cryptographically secure random number generation.</p>
+  <div class="markdown level1 summary"><p>Produces a random derangement of the given array using Sattolo's algorithm.
+A derangement is a permutation where no element appears in its original position.
+Returns a new array; the original is not modified.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Shuffle&lt;T&gt;(T[] data)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Derange&lt;T&gt;(ReadOnlySpan&lt;T&gt; source)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>data</code> T[]</dt>
-    <dd><p>The array to be shuffled.</p>
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
+    <dd><p>The source array (must have at least 2 elements)</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt>T[]</dt>
-    <dd><p>The shuffled array.</p>
+    <dd><p>A new array representing a random derangement of the source</p>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The element type of the array.</p>
+    <dd><p>The element type</p>
 </dd>
   </dl>
 
@@ -195,12 +198,370 @@ Class Shuffler  <a class="header-action link-secondary" title="View source" href
 
 
 
-  <h4 class="section">Exceptions</h4>
+
+
+
+  <a id="Ampere_Base_Shuffler_PartialShuffle_" data-uid="Ampere.Base.Shuffler.PartialShuffle*"></a>
+
+  <h3 id="Ampere_Base_Shuffler_PartialShuffle__1_System_ReadOnlySpan___0__System_Int32_" data-uid="Ampere.Base.Shuffler.PartialShuffle``1(System.ReadOnlySpan{``0},System.Int32)">
+  PartialShuffle&lt;T&gt;(ReadOnlySpan&lt;T&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects <code class="paramref">k</code> random elements from the source using a
+partial Fisher–Yates shuffle. Only the first k positions are shuffled,
+making this O(k) instead of O(n).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] PartialShuffle&lt;T&gt;(ReadOnlySpan&lt;T&gt; source, int k)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when the provided array is null.</p>
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
+    <dd><p>The source array</p>
+</dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of elements to select</p>
 </dd>
   </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>An array of k randomly selected elements</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Base_Shuffler_ReservoirSample_" data-uid="Ampere.Base.Shuffler.ReservoirSample*"></a>
+
+  <h3 id="Ampere_Base_Shuffler_ReservoirSample__1_System_Collections_Generic_IEnumerable___0__System_Int32_" data-uid="Ampere.Base.Shuffler.ReservoirSample``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+  ReservoirSample&lt;T&gt;(IEnumerable&lt;T&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs reservoir sampling (Vitter's Algorithm L) to select
+<code class="paramref">k</code> elements uniformly at random from a potentially
+infinite or very large stream. Runs in O(n) time with O(k) space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] ReservoirSample&lt;T&gt;(IEnumerable&lt;T&gt; source, int k)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The source enumerable (may be streamed)</p>
+</dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The reservoir size (number of elements to sample)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>An array of k uniformly sampled elements</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Base_Shuffler_ShuffleCopy_" data-uid="Ampere.Base.Shuffler.ShuffleCopy*"></a>
+
+  <h3 id="Ampere_Base_Shuffler_ShuffleCopy__1_System_Collections_Generic_IEnumerable___0__" data-uid="Ampere.Base.Shuffler.ShuffleCopy``1(System.Collections.Generic.IEnumerable{``0})">
+  ShuffleCopy&lt;T&gt;(IEnumerable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new shuffled copy of the source enumerable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] ShuffleCopy&lt;T&gt;(IEnumerable&lt;T&gt; source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The source enumerable</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>A new array with elements in random order</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Base_Shuffler_ShuffleCopy_" data-uid="Ampere.Base.Shuffler.ShuffleCopy*"></a>
+
+  <h3 id="Ampere_Base_Shuffler_ShuffleCopy__1_System_ReadOnlySpan___0__" data-uid="Ampere.Base.Shuffler.ShuffleCopy``1(System.ReadOnlySpan{``0})">
+  ShuffleCopy&lt;T&gt;(ReadOnlySpan&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new shuffled copy of the source array without
+modifying the original (non-destructive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] ShuffleCopy&lt;T&gt;(ReadOnlySpan&lt;T&gt; source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
+    <dd><p>The source array</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>A new array with elements in random order</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Base_Shuffler_Shuffle_" data-uid="Ampere.Base.Shuffler.Shuffle*"></a>
+
+  <h3 id="Ampere_Base_Shuffler_Shuffle__1_System_Collections_Generic_IList___0__" data-uid="Ampere.Base.Shuffler.Shuffle``1(System.Collections.Generic.IList{``0})">
+  Shuffle&lt;T&gt;(IList&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs an in-place Fisher–Yates shuffle on an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Shuffle&lt;T&gt;(IList&lt;T&gt; list)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd><p>The list to shuffle in-place</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Base_Shuffler_Shuffle_" data-uid="Ampere.Base.Shuffler.Shuffle*"></a>
+
+  <h3 id="Ampere_Base_Shuffler_Shuffle__1_System_Span___0__" data-uid="Ampere.Base.Shuffler.Shuffle``1(System.Span{``0})">
+  Shuffle&lt;T&gt;(Span&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs an in-place Fisher–Yates shuffle on a span using
+cryptographically secure random number generation.
+This is the zero-allocation core implementation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Shuffle&lt;T&gt;(Span&lt;T&gt; span)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>span</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</dt>
+    <dd><p>The span to shuffle in-place</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Base_Shuffler_Shuffle_" data-uid="Ampere.Base.Shuffler.Shuffle*"></a>
+
+  <h3 id="Ampere_Base_Shuffler_Shuffle__1___0___" data-uid="Ampere.Base.Shuffler.Shuffle``1(``0[])">
+  Shuffle&lt;T&gt;(T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs an in-place Fisher–Yates shuffle on an array using
+cryptographically secure random number generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Shuffle&lt;T&gt;(T[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd><p>The array to shuffle in-place</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Base_Shuffler_WeightedSample_" data-uid="Ampere.Base.Shuffler.WeightedSample*"></a>
+
+  <h3 id="Ampere_Base_Shuffler_WeightedSample__1_System_ReadOnlySpan___0__System_ReadOnlySpan_System_Double__System_Int32_" data-uid="Ampere.Base.Shuffler.WeightedSample``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{System.Double},System.Int32)">
+  WeightedSample&lt;T&gt;(ReadOnlySpan&lt;T&gt;, ReadOnlySpan&lt;double&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects <code class="paramref">k</code> elements from a weighted distribution using
+the Efraimidis–Spirakis algorithm. Each element is associated with a weight
+that determines its probability of selection. Runs in O(n log k).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] WeightedSample&lt;T&gt;(ReadOnlySpan&lt;T&gt; items, ReadOnlySpan&lt;double&gt; weights, int k)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
+    <dd><p>The source items</p>
+</dd>
+    <dt><code>weights</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The corresponding weights (must be positive)</p>
+</dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of elements to select</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>An array of k weighted-sampled elements</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
@@ -208,7 +569,7 @@ Class Shuffler  <a class="header-action link-secondary" title="View source" href
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Base/Shuffler.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

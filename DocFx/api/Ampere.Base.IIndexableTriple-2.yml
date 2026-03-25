@@ -20,7 +20,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: IIndexableTriple
     path: ../Ampere/Base/IIndexable.cs
-    startLine: 69
+    startLine: 71
   assemblies:
   - Ampere
   namespace: Ampere.Base
@@ -55,7 +55,7 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: this[]
     path: ../Ampere/Base/IIndexable.cs
-    startLine: 78
+    startLine: 80
   assemblies:
   - Ampere
   namespace: Ampere.Base

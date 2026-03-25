@@ -89,7 +89,7 @@
 
 
   <h1 id="Ampere_Str_StringUtils" data-uid="Ampere.Str.StringUtils" class="text-break">
-Class StringUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L15"><i class="bi bi-code-slash"></i></a>
+Class StringUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -153,101 +153,11 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 </h2>
 
 
-  <a id="Ampere_Str_StringUtils_CharToString_" data-uid="Ampere.Str.StringUtils.CharToString*"></a>
-
-  <h3 id="Ampere_Str_StringUtils_CharToString_System_Collections_Generic_IEnumerable_System_Char__" data-uid="Ampere.Str.StringUtils.CharToString(System.Collections.Generic.IEnumerable{System.Char})">
-  CharToString(IEnumerable&lt;char&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L28"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> to a string</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string CharToString(IEnumerable&lt;char&gt; charEnumerable)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>charEnumerable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The converted string</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when <code class="paramref">charEnumerable</code> is null</p>
-</dd>
-  </dl>
-
-
-
-  <a id="Ampere_Str_StringUtils_Chomp_" data-uid="Ampere.Str.StringUtils.Chomp*"></a>
-
-  <h3 id="Ampere_Str_StringUtils_Chomp_System_String_" data-uid="Ampere.Str.StringUtils.Chomp(System.String)">
-  Chomp(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L40"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Creates a string from the first character of the string to the first whitespace.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Chomp(this string str)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string to be chomped</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string retaining the first word</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
-</dd>
-  </dl>
-
-
-
   <a id="Ampere_Str_StringUtils_ChompAfter_" data-uid="Ampere.Str.StringUtils.ChompAfter*"></a>
 
   <h3 id="Ampere_Str_StringUtils_ChompAfter_System_String_System_Int32_" data-uid="Ampere.Str.StringUtils.ChompAfter(System.String,System.Int32)">
   ChompAfter(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a string from the first character of the string to the nth whitespace that is specified.</p>
@@ -291,32 +201,38 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
 
 
-  <a id="Ampere_Str_StringUtils_ContainsDigits_" data-uid="Ampere.Str.StringUtils.ContainsDigits*"></a>
+  <a id="Ampere_Str_StringUtils_ContainsAll_" data-uid="Ampere.Str.StringUtils.ContainsAll*"></a>
 
-  <h3 id="Ampere_Str_StringUtils_ContainsDigits_System_String_" data-uid="Ampere.Str.StringUtils.ContainsDigits(System.String)">
-  ContainsDigits(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Ampere_Str_StringUtils_ContainsAll_System_String_System_StringComparison_System_String___" data-uid="Ampere.Str.StringUtils.ContainsAll(System.String,System.StringComparison,System.String[])">
+  ContainsAll(string, StringComparison, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L437"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Checks if a given string contains any digits.</p>
+  <div class="markdown level1 summary"><p>Determines whether the string contains all of the specified values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ContainsDigits(this string str)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ContainsAll(this string str, StringComparison comparisonType, params string[] values)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string to be used</p>
+    <dd><p>The string to search within</p>
+</dd>
+    <dt><code>comparisonType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.stringcomparison">StringComparison</a></dt>
+    <dd><p>The comparison rules to use</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The values to search for</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the string contains any digits, false otherwise</p>
+    <dd><p>True if the string contains all of the specified values</p>
 </dd>
   </dl>
 
@@ -330,7 +246,58 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
+    <dd><p>Thrown when <code class="paramref">str</code> or <code class="paramref">values</code> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Ampere_Str_StringUtils_ContainsAny_" data-uid="Ampere.Str.StringUtils.ContainsAny*"></a>
+
+  <h3 id="Ampere_Str_StringUtils_ContainsAny_System_String_System_StringComparison_System_String___" data-uid="Ampere.Str.StringUtils.ContainsAny(System.String,System.StringComparison,System.String[])">
+  ContainsAny(string, StringComparison, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the string contains any of the specified values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsAny(this string str, StringComparison comparisonType, params string[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to search within</p>
+</dd>
+    <dt><code>comparisonType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.stringcomparison">StringComparison</a></dt>
+    <dd><p>The comparison rules to use</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The values to search for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the string contains at least one of the specified values</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">str</code> or <code class="paramref">values</code> is null</p>
 </dd>
   </dl>
 
@@ -340,7 +307,7 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Ampere_Str_StringUtils_ContainsDuplicateChars_System_String_" data-uid="Ampere.Str.StringUtils.ContainsDuplicateChars(System.String)">
   ContainsDuplicateChars(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks whether a string contains duplicate characters.</p>
@@ -385,7 +352,7 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Ampere_Str_StringUtils_ContainsDuplicateStrings_System_String_System_String_" data-uid="Ampere.Str.StringUtils.ContainsDuplicateStrings(System.String,System.String)">
   ContainsDuplicateStrings(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks whether a string contains duplicate inner strings.</p>
@@ -432,58 +399,11 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
 
 
-  <a id="Ampere_Str_StringUtils_CountLetters_" data-uid="Ampere.Str.StringUtils.CountLetters*"></a>
-
-  <h3 id="Ampere_Str_StringUtils_CountLetters_System_String_System_Char_" data-uid="Ampere.Str.StringUtils.CountLetters(System.String,System.Char)">
-  CountLetters(string, char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L147"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Counts how many times a given letter appears in a string.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CountLetters(this string str, char letter)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The string to be used</p>
-</dd>
-    <dt><code>letter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
-    <dd><p>The specific letter to search</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
-</dd>
-  </dl>
-
-
-
   <a id="Ampere_Str_StringUtils_CountWords_" data-uid="Ampere.Str.StringUtils.CountWords*"></a>
 
   <h3 id="Ampere_Str_StringUtils_CountWords_System_String_" data-uid="Ampere.Str.StringUtils.CountWords(System.String)">
   CountWords(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Counts the number of words in a string.</p>
@@ -524,11 +444,59 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Ampere_Str_StringUtils_EqualsIgnoreCase_" data-uid="Ampere.Str.StringUtils.EqualsIgnoreCase*"></a>
+
+  <h3 id="Ampere_Str_StringUtils_EqualsIgnoreCase_System_String_System_String_" data-uid="Ampere.Str.StringUtils.EqualsIgnoreCase(System.String,System.String)">
+  EqualsIgnoreCase(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a case-insensitive ordinal equality comparison between two strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualsIgnoreCase(this string str, string other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The first string</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The second string to compare</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the strings are equal ignoring case</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
+</dd>
+  </dl>
+
+
+
   <a id="Ampere_Str_StringUtils_IsPalindrome_" data-uid="Ampere.Str.StringUtils.IsPalindrome*"></a>
 
   <h3 id="Ampere_Str_StringUtils_IsPalindrome_System_String_System_Boolean_" data-uid="Ampere.Str.StringUtils.IsPalindrome(System.String,System.Boolean)">
   IsPalindrome(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if a given string is a palindrome.</p>
@@ -576,7 +544,7 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Ampere_Str_StringUtils_IsStrictlyDecreasing_System_String_System_Boolean_" data-uid="Ampere.Str.StringUtils.IsStrictlyDecreasing(System.String,System.Boolean)">
   IsStrictlyDecreasing(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if each character in a string is lexicographically smaller than the previous character.</p>
@@ -624,7 +592,7 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Ampere_Str_StringUtils_IsStrictlyIncreasing_System_String_System_Boolean_" data-uid="Ampere.Str.StringUtils.IsStrictlyIncreasing(System.String,System.Boolean)">
   IsStrictlyIncreasing(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if each character in a string is lexicographically greater than the previous character.</p>
@@ -672,7 +640,7 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Ampere_Str_StringUtils_IsSystemDateTime_System_String_System_String_" data-uid="Ampere.Str.StringUtils.IsSystemDateTime(System.String,System.String)">
   IsSystemDateTime(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if a given string is a valid date used by System.DateTime</p>
@@ -723,7 +691,7 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Ampere_Str_StringUtils_IsValidUri_System_String_" data-uid="Ampere.Str.StringUtils.IsValidUri(System.String)">
   IsValidUri(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L230"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if a given string is a valid URI. This checks both HTTP and HTTPS URLs.</p>
@@ -764,215 +732,11 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
 
 
 
-  <a id="Ampere_Str_StringUtils_IsWellFormed_" data-uid="Ampere.Str.StringUtils.IsWellFormed*"></a>
-
-  <h3 id="Ampere_Str_StringUtils_IsWellFormed_System_String_" data-uid="Ampere.Str.StringUtils.IsWellFormed(System.String)">
-  IsWellFormed(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L324"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Checks if a string is well-formed. A string is well-formed if
-for every alphabet-recognized character, there is an appropriate
-closing character. For every inner string, except for
-characters not defined in the alphabet, in between an opening
-and closing character, if that string were to be split in half,
-each half would be a mirror image of each other. A well-formed
-string consists of the default alphabet consists of the following
-characters: '(',')','{','}','[',']','&lt;','&gt;'.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsWellFormed(this string str)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>the string to check</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>whether the string is well-formed</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-  <h4 class="section" id="Ampere_Str_StringUtils_IsWellFormed_System_String__examples">Examples</h4>
-  <p>The following demonstrates how to use the <a class="xref" href="Ampere.Str.StringUtils.html#Ampere_Str_StringUtils_IsWellFormed_System_String_">IsWellFormed(string)</a> method.</p>
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
-</dd>
-  </dl>
-
-
-
-  <a id="Ampere_Str_StringUtils_IsWellFormed_" data-uid="Ampere.Str.StringUtils.IsWellFormed*"></a>
-
-  <h3 id="Ampere_Str_StringUtils_IsWellFormed_System_String_System_Collections_Generic_Dictionary_System_Char_System_Char__" data-uid="Ampere.Str.StringUtils.IsWellFormed(System.String,System.Collections.Generic.Dictionary{System.Char,System.Char})">
-  IsWellFormed(string, Dictionary&lt;char, char&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L366"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Checks if a string is well-formed. A string is well-formed if
-for every alphabet-recognized character, there is an appropriate
-closing character. For every inner string, except for
-characters not defined in the alphabet, in between an opening
-and closing character, if that string were to be split in half,
-each half would be a mirror image of each other. A well-formed
-string consists of the user specified Dictionary of key-value
-pairs, where the key is the opening character and the value
-is the closing character.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsWellFormed(this string str, Dictionary&lt;char, char&gt; alphabet)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>the string to check</p>
-</dd>
-    <dt><code>alphabet</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
-    <dd><p>the dictionary of key value pairs - where the key
-represents the opening character and the value represents the closing character</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>whether the string is well-formed</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-  <h4 class="section" id="Ampere_Str_StringUtils_IsWellFormed_System_String_System_Collections_Generic_Dictionary_System_Char_System_Char___examples">Examples</h4>
-  <p>The following demonstrates how to use the
-<a class="xref" href="Ampere.Str.StringUtils.html#Ampere_Str_StringUtils_IsWellFormed_System_String_System_Collections_Generic_Dictionary_System_Char_System_Char__">IsWellFormed(string, Dictionary&lt;char, char&gt;)</a> method.</p>
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
-</dd>
-  </dl>
-
-
-
-  <a id="Ampere_Str_StringUtils_LongestCommonPrefix_" data-uid="Ampere.Str.StringUtils.LongestCommonPrefix*"></a>
-
-  <h3 id="Ampere_Str_StringUtils_LongestCommonPrefix_System_Collections_Generic_IEnumerable_System_String__System_Boolean_" data-uid="Ampere.Str.StringUtils.LongestCommonPrefix(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
-  LongestCommonPrefix(IEnumerable&lt;string&gt;, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L380"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Finds the longest common prefix of a group of strings of type
-<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LongestCommonPrefix(this IEnumerable&lt;string&gt; strs, bool ignoreCase = false)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>strs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>A group of strings to find the common prefix</p>
-</dd>
-    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>A flag whether to ignore case</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The longest common prefix</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ampere_Str_StringUtils_OrderByLength_" data-uid="Ampere.Str.StringUtils.OrderByLength*"></a>
-
-  <h3 id="Ampere_Str_StringUtils_OrderByLength_System_Collections_Generic_IEnumerable_System_String__" data-uid="Ampere.Str.StringUtils.OrderByLength(System.Collections.Generic.IEnumerable{System.String})">
-  OrderByLength(IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L395"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Orders an enumerable by its length in ascending order (natural order).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; OrderByLength(this IEnumerable&lt;string&gt; si)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>si</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> si</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>An ordered enumerable</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when <code class="paramref">si</code> is null</p>
-</dd>
-  </dl>
-
-
-
   <a id="Ampere_Str_StringUtils_RemoveAll_" data-uid="Ampere.Str.StringUtils.RemoveAll*"></a>
 
   <h3 id="Ampere_Str_StringUtils_RemoveAll_System_String_System_Boolean_System_Collections_Generic_IEnumerable_System_Char____" data-uid="Ampere.Str.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Char}[])">
   RemoveAll(string, bool, params IEnumerable&lt;char&gt;[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L246"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes all instances of any number of characters from a specified string.</p>
@@ -1026,7 +790,7 @@ represents the opening character and the value represents the closing character<
 
   <h3 id="Ampere_Str_StringUtils_RemoveAll_System_String_System_Boolean_System_Collections_Generic_IEnumerable_System_String____" data-uid="Ampere.Str.StringUtils.RemoveAll(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String}[])">
   RemoveAll(string, bool, params IEnumerable&lt;string&gt;[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes all instances of any number of strings from a specified string.</p>
@@ -1076,11 +840,107 @@ represents the opening character and the value represents the closing character<
 
 
 
+  <a id="Ampere_Str_StringUtils_RemoveWhitespace_" data-uid="Ampere.Str.StringUtils.RemoveWhitespace*"></a>
+
+  <h3 id="Ampere_Str_StringUtils_RemoveWhitespace_System_String_" data-uid="Ampere.Str.StringUtils.RemoveWhitespace(System.String)">
+  RemoveWhitespace(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all whitespace characters from the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RemoveWhitespace(this string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to process</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string with all whitespace characters removed</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Ampere_Str_StringUtils_Repeat_" data-uid="Ampere.Str.StringUtils.Repeat*"></a>
+
+  <h3 id="Ampere_Str_StringUtils_Repeat_System_String_System_Int32_" data-uid="Ampere.Str.StringUtils.Repeat(System.String,System.Int32)">
+  Repeat(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Repeats the string a specified number of times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Repeat(this string str, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to repeat</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of times to repeat the string</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A new string consisting of the original string repeated the specified number of times</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Thrown when <code class="paramref">count</code> is negative</p>
+</dd>
+  </dl>
+
+
+
   <a id="Ampere_Str_StringUtils_ReplaceAt_" data-uid="Ampere.Str.StringUtils.ReplaceAt*"></a>
 
   <h3 id="Ampere_Str_StringUtils_ReplaceAt_System_String_System_Int32_System_Char_" data-uid="Ampere.Str.StringUtils.ReplaceAt(System.String,System.Int32,System.Char)">
   ReplaceAt(string, int, char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replaces a character at a specific index in a string, only once.</p>
@@ -1124,7 +984,7 @@ represents the opening character and the value represents the closing character<
 
   <h3 id="Ampere_Str_StringUtils_Reverse_System_String_" data-uid="Ampere.Str.StringUtils.Reverse(System.String)">
   Reverse(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reverses a string from left to right order while maintaining case sensitivity.</p>
@@ -1165,11 +1025,64 @@ represents the opening character and the value represents the closing character<
 
 
 
+  <a id="Ampere_Str_StringUtils_SafeSubstring_" data-uid="Ampere.Str.StringUtils.SafeSubstring*"></a>
+
+  <h3 id="Ampere_Str_StringUtils_SafeSubstring_System_String_System_Int32_System_Int32_" data-uid="Ampere.Str.StringUtils.SafeSubstring(System.String,System.Int32,System.Int32)">
+  SafeSubstring(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a substring safely without throwing exceptions when the indices are out of range.
+If startIndex is beyond the string length, an empty string is returned.
+If startIndex + length exceeds the string length, the available characters are returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SafeSubstring(this string str, int startIndex, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to extract from</p>
+</dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based starting index</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum number of characters to extract</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The substring, or an empty string if out of range</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
+</dd>
+  </dl>
+
+
+
   <a id="Ampere_Str_StringUtils_Shuffle_" data-uid="Ampere.Str.StringUtils.Shuffle*"></a>
 
   <h3 id="Ampere_Str_StringUtils_Shuffle_System_String_System_Boolean_" data-uid="Ampere.Str.StringUtils.Shuffle(System.String,System.Boolean)">
   Shuffle(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Shuffle's characters in a string. The methodology used to generate random
@@ -1216,37 +1129,32 @@ from the original.</p>
 
 
 
-  <a id="Ampere_Str_StringUtils_SubstringRng_" data-uid="Ampere.Str.StringUtils.SubstringRng*"></a>
+  <a id="Ampere_Str_StringUtils_ToKebabCase_" data-uid="Ampere.Str.StringUtils.ToKebabCase*"></a>
 
-  <h3 id="Ampere_Str_StringUtils_SubstringRng_System_String_System_Int32_" data-uid="Ampere.Str.StringUtils.SubstringRng(System.String,System.Int32)">
-  SubstringRng(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Ampere_Str_StringUtils_ToKebabCase_System_String_" data-uid="Ampere.Str.StringUtils.ToKebabCase(System.String)">
+  ToKebabCase(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L582"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Performs a Substring given a starting and ending index, similar to Java.
-The operation is performed mathematically as [startIndex, endIndex).</p>
+  <div class="markdown level1 summary"><p>Converts a PascalCase or camelCase string to kebab-case.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string SubstringRng(this string str, int startIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ToKebabCase(this string str)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The given string</p>
-</dd>
-    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The inclusive starting index of <code class="paramref">str</code></p>
+    <dd><p>The string to convert</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A string that is equivalent to the substring that begins at startIndex in this
-instance, or Empty if startIndex is equal to the length of this instance.</p>
+    <dd><p>The kebab-case representation of the string</p>
 </dd>
   </dl>
 
@@ -1257,43 +1165,41 @@ instance, or Empty if startIndex is equal to the length of this instance.</p>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
+</dd>
+  </dl>
 
 
 
-  <a id="Ampere_Str_StringUtils_SubstringRng_" data-uid="Ampere.Str.StringUtils.SubstringRng*"></a>
+  <a id="Ampere_Str_StringUtils_ToSnakeCase_" data-uid="Ampere.Str.StringUtils.ToSnakeCase*"></a>
 
-  <h3 id="Ampere_Str_StringUtils_SubstringRng_System_String_System_Int32_System_Int32_" data-uid="Ampere.Str.StringUtils.SubstringRng(System.String,System.Int32,System.Int32)">
-  SubstringRng(string, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Ampere_Str_StringUtils_ToSnakeCase_System_String_" data-uid="Ampere.Str.StringUtils.ToSnakeCase(System.String)">
+  ToSnakeCase(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L549"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Performs a Substring given a starting and ending index, similar to Java.
-The operation is performed mathematically as [startIndex, endIndex).</p>
+  <div class="markdown level1 summary"><p>Converts a PascalCase or camelCase string to snake_case.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string SubstringRng(this string str, int startIndex, int endIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ToSnakeCase(this string str)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The given string</p>
-</dd>
-    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The inclusive starting index of <code class="paramref">str</code></p>
-</dd>
-    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The exclusive ending index of <code class="paramref">str</code></p>
+    <dd><p>The string to convert</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A string that is equivalent to the substring that begins at startIndex in this
-instance, or Empty if startIndex is equal to the length of this instance.</p>
+    <dd><p>The snake_case representation of the string</p>
 </dd>
   </dl>
 
@@ -1304,6 +1210,66 @@ instance, or Empty if startIndex is equal to the length of this instance.</p>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Ampere_Str_StringUtils_Truncate_" data-uid="Ampere.Str.StringUtils.Truncate*"></a>
+
+  <h3 id="Ampere_Str_StringUtils_Truncate_System_String_System_Int32_System_String_" data-uid="Ampere.Str.StringUtils.Truncate(System.String,System.Int32,System.String)">
+  Truncate(string, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Truncates a string to a specified maximum length, appending an optional suffix if truncation occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Truncate(this string str, int maxLength, string suffix = &quot;...&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to truncate</p>
+</dd>
+    <dt><code>maxLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum length of the returned string (including suffix)</p>
+</dd>
+    <dt><code>suffix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The suffix to append when truncation occurs (default: &quot;...&quot;)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The original string if within bounds, or a truncated string with suffix</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">str</code> is null</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Thrown when <code class="paramref">maxLength</code> is negative</p>
+</dd>
+  </dl>
 
 
 
@@ -1311,7 +1277,7 @@ instance, or Empty if startIndex is equal to the length of this instance.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/StringUtils.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

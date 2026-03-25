@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class NoModeException | Ampere Docs ">
       
-      <meta name="description" content="An exception that is thrown when no Mode exists in the data set.">
+      <meta name="description" content="An exception that is thrown when no mode exists in the data set.">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ampere_Statistics_NoModeException" data-uid="Ampere.Statistics.NoModeException" class="text-break">
-Class NoModeException  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L44"><i class="bi bi-code-slash"></i></a>
+Class NoModeException  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,12 @@ Class NoModeException  <a class="header-action link-secondary" title="View sourc
   <dl><dt>Assembly</dt><dd>Ampere.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>An exception that is thrown when no Mode exists in the data set.</p>
+  <div class="markdown summary"><p>An exception that is thrown when no mode exists in the data set.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class NoModeException : Exception, ISerializable</code></pre>
+    <pre><code class="lang-csharp hljs">public class NoModeException : Exception, ISerializable</code></pre>
   </div>
 
 
@@ -195,7 +194,7 @@ public class NoModeException : Exception, ISerializable</code></pre>
 
   <h3 id="Ampere_Statistics_NoModeException__ctor" data-uid="Ampere.Statistics.NoModeException.#ctor">
   NoModeException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a new NoModeException.</p>
@@ -220,49 +219,12 @@ public class NoModeException : Exception, ISerializable</code></pre>
 
   <a id="Ampere_Statistics_NoModeException__ctor_" data-uid="Ampere.Statistics.NoModeException.#ctor*"></a>
 
-  <h3 id="Ampere_Statistics_NoModeException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Ampere.Statistics.NoModeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-  NoModeException(SerializationInfo, StreamingContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L72"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Creates a new overloaded NoModeException containing a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance
-and a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected NoModeException(SerializationInfo info, StreamingContext context)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
-    <dd><p>The SerializationInfo instance</p>
-</dd>
-    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
-    <dd><p>The StreamingContext instance</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ampere_Statistics_NoModeException__ctor_" data-uid="Ampere.Statistics.NoModeException.#ctor*"></a>
-
   <h3 id="Ampere_Statistics_NoModeException__ctor_System_String_" data-uid="Ampere.Statistics.NoModeException.#ctor(System.String)">
   NoModeException(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new overloaded NoModeException containing a message.</p>
+  <div class="markdown level1 summary"><p>Creates a new NoModeException containing a message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -292,10 +254,10 @@ and a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtim
 
   <h3 id="Ampere_Statistics_NoModeException__ctor_System_String_System_Exception_" data-uid="Ampere.Statistics.NoModeException.#ctor(System.String,System.Exception)">
   NoModeException(string, Exception)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new overloaded NoModeException containing a message and an inner Exception.</p>
+  <div class="markdown level1 summary"><p>Creates a new NoModeException containing a message and an inner Exception.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -328,7 +290,7 @@ and a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtim
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L44" class="edit-link">Edit this page</a>
+          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Statistics/StatExceptions.cs/#L34" class="edit-link">Edit this page</a>
         </div>
 
 

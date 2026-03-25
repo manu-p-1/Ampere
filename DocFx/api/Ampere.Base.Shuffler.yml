@@ -5,7 +5,15 @@ items:
   id: Shuffler
   parent: Ampere.Base
   children:
+  - Ampere.Base.Shuffler.Derange``1(System.ReadOnlySpan{``0})
+  - Ampere.Base.Shuffler.PartialShuffle``1(System.ReadOnlySpan{``0},System.Int32)
+  - Ampere.Base.Shuffler.ReservoirSample``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  - Ampere.Base.Shuffler.ShuffleCopy``1(System.Collections.Generic.IEnumerable{``0})
+  - Ampere.Base.Shuffler.ShuffleCopy``1(System.ReadOnlySpan{``0})
+  - Ampere.Base.Shuffler.Shuffle``1(System.Collections.Generic.IList{``0})
+  - Ampere.Base.Shuffler.Shuffle``1(System.Span{``0})
   - Ampere.Base.Shuffler.Shuffle``1(``0[])
+  - Ampere.Base.Shuffler.WeightedSample``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{System.Double},System.Int32)
   langs:
   - csharp
   - vb
@@ -20,11 +28,14 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffler
     path: ../Ampere/Base/Shuffler.cs
-    startLine: 8
+    startLine: 13
   assemblies:
   - Ampere
   namespace: Ampere.Base
-  summary: A utility to shuffle an array using the Fisher-Yates algorithm.
+  summary: >-
+    Provides cryptographically secure shuffling and sampling algorithms.
+
+    All methods use <xref href="System.Security.Cryptography.RandomNumberGenerator" data-throw-if-not-resolved="false"></xref> for unbiased randomness.
   example: []
   syntax:
     content: public static class Shuffler
@@ -57,34 +68,399 @@ items:
       repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffle
     path: ../Ampere/Base/Shuffler.cs
-    startLine: 17
+    startLine: 21
   assemblies:
   - Ampere
   namespace: Ampere.Base
-  summary: Shuffles the array using the Fisher-Yates algorithm with cryptographically secure random number generation.
+  summary: >-
+    Performs an in-place Fisher–Yates shuffle on an array using
+
+    cryptographically secure random number generation.
   example: []
   syntax:
-    content: public static T[] Shuffle<T>(T[] data)
+    content: public static void Shuffle<T>(T[] array)
     parameters:
-    - id: data
+    - id: array
       type: '{T}[]'
-      description: The array to be shuffled.
+      description: The array to shuffle in-place
     typeParameters:
     - id: T
-      description: The element type of the array.
-    return:
-      type: '{T}[]'
-      description: The shuffled array.
-    content.vb: Public Shared Function Shuffle(Of T)(data As T()) As T()
+      description: The element type
+    content.vb: Public Shared Sub Shuffle(Of T)(array As T())
   overload: Ampere.Base.Shuffler.Shuffle*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Thrown when the provided array is null.
   nameWithType.vb: Shuffler.Shuffle(Of T)(T())
   fullName.vb: Ampere.Base.Shuffler.Shuffle(Of T)(T())
   name.vb: Shuffle(Of T)(T())
+- uid: Ampere.Base.Shuffler.Shuffle``1(System.Span{``0})
+  commentId: M:Ampere.Base.Shuffler.Shuffle``1(System.Span{``0})
+  id: Shuffle``1(System.Span{``0})
+  parent: Ampere.Base.Shuffler
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<T>(Span<T>)
+  nameWithType: Shuffler.Shuffle<T>(Span<T>)
+  fullName: Ampere.Base.Shuffler.Shuffle<T>(System.Span<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Shuffler.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Shuffle
+    path: ../Ampere/Base/Shuffler.cs
+    startLine: 35
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: >-
+    Performs an in-place Fisher–Yates shuffle on a span using
+
+    cryptographically secure random number generation.
+
+    This is the zero-allocation core implementation.
+  example: []
+  syntax:
+    content: public static void Shuffle<T>(Span<T> span)
+    parameters:
+    - id: span
+      type: System.Span{{T}}
+      description: The span to shuffle in-place
+    typeParameters:
+    - id: T
+      description: The element type
+    content.vb: Public Shared Sub Shuffle(Of T)(span As Span(Of T))
+  overload: Ampere.Base.Shuffler.Shuffle*
+  nameWithType.vb: Shuffler.Shuffle(Of T)(Span(Of T))
+  fullName.vb: Ampere.Base.Shuffler.Shuffle(Of T)(System.Span(Of T))
+  name.vb: Shuffle(Of T)(Span(Of T))
+- uid: Ampere.Base.Shuffler.Shuffle``1(System.Collections.Generic.IList{``0})
+  commentId: M:Ampere.Base.Shuffler.Shuffle``1(System.Collections.Generic.IList{``0})
+  id: Shuffle``1(System.Collections.Generic.IList{``0})
+  parent: Ampere.Base.Shuffler
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<T>(IList<T>)
+  nameWithType: Shuffler.Shuffle<T>(IList<T>)
+  fullName: Ampere.Base.Shuffler.Shuffle<T>(System.Collections.Generic.IList<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Shuffler.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Shuffle
+    path: ../Ampere/Base/Shuffler.cs
+    startLine: 49
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: Performs an in-place Fisher–Yates shuffle on an <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static void Shuffle<T>(IList<T> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+      description: The list to shuffle in-place
+    typeParameters:
+    - id: T
+      description: The element type
+    content.vb: Public Shared Sub Shuffle(Of T)(list As IList(Of T))
+  overload: Ampere.Base.Shuffler.Shuffle*
+  nameWithType.vb: Shuffler.Shuffle(Of T)(IList(Of T))
+  fullName.vb: Ampere.Base.Shuffler.Shuffle(Of T)(System.Collections.Generic.IList(Of T))
+  name.vb: Shuffle(Of T)(IList(Of T))
+- uid: Ampere.Base.Shuffler.ShuffleCopy``1(System.ReadOnlySpan{``0})
+  commentId: M:Ampere.Base.Shuffler.ShuffleCopy``1(System.ReadOnlySpan{``0})
+  id: ShuffleCopy``1(System.ReadOnlySpan{``0})
+  parent: Ampere.Base.Shuffler
+  langs:
+  - csharp
+  - vb
+  name: ShuffleCopy<T>(ReadOnlySpan<T>)
+  nameWithType: Shuffler.ShuffleCopy<T>(ReadOnlySpan<T>)
+  fullName: Ampere.Base.Shuffler.ShuffleCopy<T>(System.ReadOnlySpan<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Shuffler.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ShuffleCopy
+    path: ../Ampere/Base/Shuffler.cs
+    startLine: 66
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: >-
+    Returns a new shuffled copy of the source array without
+
+    modifying the original (non-destructive).
+  example: []
+  syntax:
+    content: public static T[] ShuffleCopy<T>(ReadOnlySpan<T> source)
+    parameters:
+    - id: source
+      type: System.ReadOnlySpan{{T}}
+      description: The source array
+    typeParameters:
+    - id: T
+      description: The element type
+    return:
+      type: '{T}[]'
+      description: A new array with elements in random order
+    content.vb: Public Shared Function ShuffleCopy(Of T)(source As ReadOnlySpan(Of T)) As T()
+  overload: Ampere.Base.Shuffler.ShuffleCopy*
+  nameWithType.vb: Shuffler.ShuffleCopy(Of T)(ReadOnlySpan(Of T))
+  fullName.vb: Ampere.Base.Shuffler.ShuffleCopy(Of T)(System.ReadOnlySpan(Of T))
+  name.vb: ShuffleCopy(Of T)(ReadOnlySpan(Of T))
+- uid: Ampere.Base.Shuffler.ShuffleCopy``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Ampere.Base.Shuffler.ShuffleCopy``1(System.Collections.Generic.IEnumerable{``0})
+  id: ShuffleCopy``1(System.Collections.Generic.IEnumerable{``0})
+  parent: Ampere.Base.Shuffler
+  langs:
+  - csharp
+  - vb
+  name: ShuffleCopy<T>(IEnumerable<T>)
+  nameWithType: Shuffler.ShuffleCopy<T>(IEnumerable<T>)
+  fullName: Ampere.Base.Shuffler.ShuffleCopy<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Shuffler.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ShuffleCopy
+    path: ../Ampere/Base/Shuffler.cs
+    startLine: 79
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: Returns a new shuffled copy of the source enumerable.
+  example: []
+  syntax:
+    content: public static T[] ShuffleCopy<T>(IEnumerable<T> source)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The source enumerable
+    typeParameters:
+    - id: T
+      description: The element type
+    return:
+      type: '{T}[]'
+      description: A new array with elements in random order
+    content.vb: Public Shared Function ShuffleCopy(Of T)(source As IEnumerable(Of T)) As T()
+  overload: Ampere.Base.Shuffler.ShuffleCopy*
+  nameWithType.vb: Shuffler.ShuffleCopy(Of T)(IEnumerable(Of T))
+  fullName.vb: Ampere.Base.Shuffler.ShuffleCopy(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ShuffleCopy(Of T)(IEnumerable(Of T))
+- uid: Ampere.Base.Shuffler.PartialShuffle``1(System.ReadOnlySpan{``0},System.Int32)
+  commentId: M:Ampere.Base.Shuffler.PartialShuffle``1(System.ReadOnlySpan{``0},System.Int32)
+  id: PartialShuffle``1(System.ReadOnlySpan{``0},System.Int32)
+  parent: Ampere.Base.Shuffler
+  langs:
+  - csharp
+  - vb
+  name: PartialShuffle<T>(ReadOnlySpan<T>, int)
+  nameWithType: Shuffler.PartialShuffle<T>(ReadOnlySpan<T>, int)
+  fullName: Ampere.Base.Shuffler.PartialShuffle<T>(System.ReadOnlySpan<T>, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Shuffler.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: PartialShuffle
+    path: ../Ampere/Base/Shuffler.cs
+    startLine: 96
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: >-
+    Selects <code class="paramref">k</code> random elements from the source using a
+
+    partial Fisher–Yates shuffle. Only the first k positions are shuffled,
+
+    making this O(k) instead of O(n).
+  example: []
+  syntax:
+    content: public static T[] PartialShuffle<T>(ReadOnlySpan<T> source, int k)
+    parameters:
+    - id: source
+      type: System.ReadOnlySpan{{T}}
+      description: The source array
+    - id: k
+      type: System.Int32
+      description: The number of elements to select
+    typeParameters:
+    - id: T
+      description: The element type
+    return:
+      type: '{T}[]'
+      description: An array of k randomly selected elements
+    content.vb: Public Shared Function PartialShuffle(Of T)(source As ReadOnlySpan(Of T), k As Integer) As T()
+  overload: Ampere.Base.Shuffler.PartialShuffle*
+  nameWithType.vb: Shuffler.PartialShuffle(Of T)(ReadOnlySpan(Of T), Integer)
+  fullName.vb: Ampere.Base.Shuffler.PartialShuffle(Of T)(System.ReadOnlySpan(Of T), Integer)
+  name.vb: PartialShuffle(Of T)(ReadOnlySpan(Of T), Integer)
+- uid: Ampere.Base.Shuffler.ReservoirSample``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  commentId: M:Ampere.Base.Shuffler.ReservoirSample``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  id: ReservoirSample``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  parent: Ampere.Base.Shuffler
+  langs:
+  - csharp
+  - vb
+  name: ReservoirSample<T>(IEnumerable<T>, int)
+  nameWithType: Shuffler.ReservoirSample<T>(IEnumerable<T>, int)
+  fullName: Ampere.Base.Shuffler.ReservoirSample<T>(System.Collections.Generic.IEnumerable<T>, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Shuffler.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ReservoirSample
+    path: ../Ampere/Base/Shuffler.cs
+    startLine: 120
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: >-
+    Performs reservoir sampling (Vitter's Algorithm L) to select
+
+    <code class="paramref">k</code> elements uniformly at random from a potentially
+
+    infinite or very large stream. Runs in O(n) time with O(k) space.
+  example: []
+  syntax:
+    content: public static T[] ReservoirSample<T>(IEnumerable<T> source, int k)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The source enumerable (may be streamed)
+    - id: k
+      type: System.Int32
+      description: The reservoir size (number of elements to sample)
+    typeParameters:
+    - id: T
+      description: The element type
+    return:
+      type: '{T}[]'
+      description: An array of k uniformly sampled elements
+    content.vb: Public Shared Function ReservoirSample(Of T)(source As IEnumerable(Of T), k As Integer) As T()
+  overload: Ampere.Base.Shuffler.ReservoirSample*
+  nameWithType.vb: Shuffler.ReservoirSample(Of T)(IEnumerable(Of T), Integer)
+  fullName.vb: Ampere.Base.Shuffler.ReservoirSample(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
+  name.vb: ReservoirSample(Of T)(IEnumerable(Of T), Integer)
+- uid: Ampere.Base.Shuffler.WeightedSample``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{System.Double},System.Int32)
+  commentId: M:Ampere.Base.Shuffler.WeightedSample``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{System.Double},System.Int32)
+  id: WeightedSample``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{System.Double},System.Int32)
+  parent: Ampere.Base.Shuffler
+  langs:
+  - csharp
+  - vb
+  name: WeightedSample<T>(ReadOnlySpan<T>, ReadOnlySpan<double>, int)
+  nameWithType: Shuffler.WeightedSample<T>(ReadOnlySpan<T>, ReadOnlySpan<double>, int)
+  fullName: Ampere.Base.Shuffler.WeightedSample<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<double>, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Shuffler.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WeightedSample
+    path: ../Ampere/Base/Shuffler.cs
+    startLine: 167
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: >-
+    Selects <code class="paramref">k</code> elements from a weighted distribution using
+
+    the Efraimidis–Spirakis algorithm. Each element is associated with a weight
+
+    that determines its probability of selection. Runs in O(n log k).
+  example: []
+  syntax:
+    content: public static T[] WeightedSample<T>(ReadOnlySpan<T> items, ReadOnlySpan<double> weights, int k)
+    parameters:
+    - id: items
+      type: System.ReadOnlySpan{{T}}
+      description: The source items
+    - id: weights
+      type: System.ReadOnlySpan{System.Double}
+      description: The corresponding weights (must be positive)
+    - id: k
+      type: System.Int32
+      description: The number of elements to select
+    typeParameters:
+    - id: T
+      description: The element type
+    return:
+      type: '{T}[]'
+      description: An array of k weighted-sampled elements
+    content.vb: Public Shared Function WeightedSample(Of T)(items As ReadOnlySpan(Of T), weights As ReadOnlySpan(Of Double), k As Integer) As T()
+  overload: Ampere.Base.Shuffler.WeightedSample*
+  nameWithType.vb: Shuffler.WeightedSample(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of Double), Integer)
+  fullName.vb: Ampere.Base.Shuffler.WeightedSample(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of Double), Integer)
+  name.vb: WeightedSample(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of Double), Integer)
+- uid: Ampere.Base.Shuffler.Derange``1(System.ReadOnlySpan{``0})
+  commentId: M:Ampere.Base.Shuffler.Derange``1(System.ReadOnlySpan{``0})
+  id: Derange``1(System.ReadOnlySpan{``0})
+  parent: Ampere.Base.Shuffler
+  langs:
+  - csharp
+  - vb
+  name: Derange<T>(ReadOnlySpan<T>)
+  nameWithType: Shuffler.Derange<T>(ReadOnlySpan<T>)
+  fullName: Ampere.Base.Shuffler.Derange<T>(System.ReadOnlySpan<T>)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Base/Shuffler.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Derange
+    path: ../Ampere/Base/Shuffler.cs
+    startLine: 200
+  assemblies:
+  - Ampere
+  namespace: Ampere.Base
+  summary: >-
+    Produces a random derangement of the given array using Sattolo's algorithm.
+
+    A derangement is a permutation where no element appears in its original position.
+
+    Returns a new array; the original is not modified.
+  example: []
+  syntax:
+    content: public static T[] Derange<T>(ReadOnlySpan<T> source)
+    parameters:
+    - id: source
+      type: System.ReadOnlySpan{{T}}
+      description: The source array (must have at least 2 elements)
+    typeParameters:
+    - id: T
+      description: The element type
+    return:
+      type: '{T}[]'
+      description: A new array representing a random derangement of the source
+    content.vb: Public Shared Function Derange(Of T)(source As ReadOnlySpan(Of T)) As T()
+  overload: Ampere.Base.Shuffler.Derange*
+  nameWithType.vb: Shuffler.Derange(Of T)(ReadOnlySpan(Of T))
+  fullName.vb: Ampere.Base.Shuffler.Derange(Of T)(System.ReadOnlySpan(Of T))
+  name.vb: Derange(Of T)(ReadOnlySpan(Of T))
 references:
+- uid: System.Security.Cryptography.RandomNumberGenerator
+  commentId: T:System.Security.Cryptography.RandomNumberGenerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator
+  name: RandomNumberGenerator
+  nameWithType: RandomNumberGenerator
+  fullName: System.Security.Cryptography.RandomNumberGenerator
 - uid: Ampere.Base
   commentId: N:Ampere.Base
   href: Ampere.html
@@ -344,13 +720,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.ArgumentNullException
-  commentId: T:System.ArgumentNullException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-  name: ArgumentNullException
-  nameWithType: ArgumentNullException
-  fullName: System.ArgumentNullException
 - uid: Ampere.Base.Shuffler.Shuffle*
   commentId: Overload:Ampere.Base.Shuffler.Shuffle
   href: Ampere.Base.Shuffler.html#Ampere_Base_Shuffler_Shuffle__1___0___
@@ -373,3 +742,344 @@ references:
   - name: T
   - name: (
   - name: )
+- uid: System.Span{{T}}
+  commentId: T:System.Span{``0}
+  parent: System
+  definition: System.Span`1
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Ampere.Base.Shuffler.ShuffleCopy*
+  commentId: Overload:Ampere.Base.Shuffler.ShuffleCopy
+  href: Ampere.Base.Shuffler.html#Ampere_Base_Shuffler_ShuffleCopy__1_System_ReadOnlySpan___0__
+  name: ShuffleCopy
+  nameWithType: Shuffler.ShuffleCopy
+  fullName: Ampere.Base.Shuffler.ShuffleCopy
+- uid: System.ReadOnlySpan{{T}}
+  commentId: T:System.ReadOnlySpan{``0}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Ampere.Base.Shuffler.PartialShuffle*
+  commentId: Overload:Ampere.Base.Shuffler.PartialShuffle
+  href: Ampere.Base.Shuffler.html#Ampere_Base_Shuffler_PartialShuffle__1_System_ReadOnlySpan___0__System_Int32_
+  name: PartialShuffle
+  nameWithType: Shuffler.PartialShuffle
+  fullName: Ampere.Base.Shuffler.PartialShuffle
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Ampere.Base.Shuffler.ReservoirSample*
+  commentId: Overload:Ampere.Base.Shuffler.ReservoirSample
+  href: Ampere.Base.Shuffler.html#Ampere_Base_Shuffler_ReservoirSample__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  name: ReservoirSample
+  nameWithType: Shuffler.ReservoirSample
+  fullName: Ampere.Base.Shuffler.ReservoirSample
+- uid: Ampere.Base.Shuffler.WeightedSample*
+  commentId: Overload:Ampere.Base.Shuffler.WeightedSample
+  href: Ampere.Base.Shuffler.html#Ampere_Base_Shuffler_WeightedSample__1_System_ReadOnlySpan___0__System_ReadOnlySpan_System_Double__System_Int32_
+  name: WeightedSample
+  nameWithType: Shuffler.WeightedSample
+  fullName: Ampere.Base.Shuffler.WeightedSample
+- uid: System.ReadOnlySpan{System.Double}
+  commentId: T:System.ReadOnlySpan{System.Double}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<double>
+  nameWithType: ReadOnlySpan<double>
+  fullName: System.ReadOnlySpan<double>
+  nameWithType.vb: ReadOnlySpan(Of Double)
+  fullName.vb: System.ReadOnlySpan(Of Double)
+  name.vb: ReadOnlySpan(Of Double)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: Ampere.Base.Shuffler.Derange*
+  commentId: Overload:Ampere.Base.Shuffler.Derange
+  href: Ampere.Base.Shuffler.html#Ampere_Base_Shuffler_Derange__1_System_ReadOnlySpan___0__
+  name: Derange
+  nameWithType: Shuffler.Derange
+  fullName: Ampere.Base.Shuffler.Derange
