@@ -6,7 +6,7 @@
     <members>
         <member name="T:Ampere.AmpFile.FileUtils">
             <summary>
-            A static class for File utility functions
+            A static class for File utility functions.
             </summary>
         </member>
         <member name="M:Ampere.AmpFile.FileUtils.WriteLine(System.IO.FileInfo,System.String)">
@@ -35,7 +35,7 @@
         </member>
         <member name="M:Ampere.AmpFile.FileUtils.ReplaceAllInLine(System.IO.FileInfo,System.String,System.String,System.Int32)">
             <summary>
-            Replaces all instances of a specific value from a file with another replacement value from a specified line
+            Replaces all instances of a specific value from a file with another replacement value from a specified line.
             </summary>
             <param name="fileInfo">The FileInfo instance to write the value to</param>
             <param name="oldValue">The value to replace</param>
@@ -45,9 +45,9 @@
         <member name="M:Ampere.AmpFile.FileUtils.ReplaceInLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32})">
             <summary>
             Replaces all instances of a specific value from a file with another replacement value from a specified line.
-            This overload facilitates the replacement through a Dictionary where the key's is an instance of
+            This overload facilitates the replacement through a Dictionary where the key is an instance of
             <see cref="T:System.Collections.Generic.KeyValuePair`2"/> and the value is an int. This allows for unique replacements to occur
-            in more than one line
+            in more than one line.
             </summary>
             <param name="fileInfo">The FileInfo instance to write the value to</param>
             <param name="replacementDict">A Dictionary of replacement values and line numbers</param>
@@ -63,7 +63,7 @@
         <member name="M:Ampere.AmpFile.FileUtils.ReplaceLines(System.IO.FileInfo,System.Collections.Generic.Dictionary{System.String,System.Int32})">
             <summary>
             Replace an entire line with a replacement value. This overload uses a Dictionary of replacement values
-            and line numbers to replace more than one line. 
+            and line numbers to replace more than one line.
             </summary>
             <param name="fileInfo">The FileInfo instance to write the value to</param>
             <param name="replacementValueLine">A Dictionary of replacement values and line number</param>
@@ -85,9 +85,10 @@
         <member name="M:Ampere.AmpFile.FileUtils.RemoveLines(System.IO.FileInfo,System.Int32[])">
             <summary>
             Removes a variable argument number of lines from a file.
+            Lines are removed correctly regardless of order by sorting indices in descending order.
             </summary>
             <param name="fileInfo">The FileInfo instance to write the value to</param>
-            <param name="lines">The line numbers to remove</param>
+            <param name="lines">The line numbers to remove (1-based)</param>
         </member>
         <member name="M:Ampere.AmpFile.FileUtils.FindInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})">
             <summary>
@@ -96,15 +97,115 @@
             </summary>
             <param name="fileInfo">The FileInfo instance to read from</param>
             <param name="predicate">The function predicate to find in the file</param>
-            <returns></returns>
+            <returns>The 1-based line number, or -1 if not found</returns>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.FindAllInFile(System.IO.FileInfo,System.Func{System.String,System.Boolean})">
+            <summary>
+            Returns all 1-based line numbers matching the predicate.
+            </summary>
+            <param name="fileInfo">The FileInfo instance to read from</param>
+            <param name="predicate">The function predicate to match</param>
+            <returns>An enumerable of 1-based line numbers</returns>
         </member>
         <member name="M:Ampere.AmpFile.FileUtils.GetValueAtLine(System.IO.FileInfo,System.Int32)">
             <summary>
             Returns the value found at a line number.
             </summary>
             <param name="fileInfo">The FileInfo instance to read from</param>
-            <param name="line">The line number to find</param>
-            <returns></returns>
+            <param name="line">The line number to find (1-based)</param>
+            <returns>The trimmed content at the specified line</returns>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.ReadLineRange(System.IO.FileInfo,System.Int32,System.Int32)">
+            <summary>
+            Reads a range of lines from the file (1-based, inclusive on both ends).
+            </summary>
+            <param name="fileInfo">The FileInfo instance to read from</param>
+            <param name="startLine">The starting line number (1-based, inclusive)</param>
+            <param name="endLine">The ending line number (1-based, inclusive)</param>
+            <returns>An array of lines in the specified range</returns>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.GetLineCount(System.IO.FileInfo)">
+            <summary>
+            Efficiently counts the number of lines in a file without loading the entire content into memory.
+            </summary>
+            <param name="fileInfo">The FileInfo instance to read from</param>
+            <returns>The number of lines in the file</returns>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.ComputeSha256Hash(System.IO.FileInfo)">
+            <summary>
+            Computes the SHA-256 hash of a file's contents.
+            </summary>
+            <param name="fileInfo">The FileInfo instance to hash</param>
+            <returns>The hex-encoded SHA-256 hash string</returns>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.SafeWriteAllText(System.IO.FileInfo,System.String)">
+            <summary>
+            Writes text to a file atomically by writing to a temporary file first, then replacing
+            the target file. This prevents data corruption if the process is interrupted mid-write.
+            </summary>
+            <param name="fileInfo">The target file</param>
+            <param name="content">The content to write</param>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.ReadAllTextAsync(System.IO.FileInfo,System.Threading.CancellationToken)">
+            <summary>
+            Reads the entire contents of a file asynchronously.
+            </summary>
+            <param name="fileInfo">The FileInfo instance to read from</param>
+            <param name="cancellationToken">Optional cancellation token</param>
+            <returns>The file contents as a string</returns>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.WriteAllTextAsync(System.IO.FileInfo,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Writes text to a file asynchronously.
+            </summary>
+            <param name="fileInfo">The FileInfo instance to write to</param>
+            <param name="content">The content to write</param>
+            <param name="cancellationToken">Optional cancellation token</param>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.ReadAllLinesAsync(System.IO.FileInfo,System.Threading.CancellationToken)">
+            <summary>
+            Reads all lines of a file asynchronously.
+            </summary>
+            <param name="fileInfo">The FileInfo instance to read from</param>
+            <param name="cancellationToken">Optional cancellation token</param>
+            <returns>An array of all lines in the file</returns>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.TouchFile(System.IO.FileInfo)">
+            <summary>
+            Creates the file if it does not exist, or updates its last-write timestamp if it does.
+            Similar to the Unix <c>touch</c> command.
+            </summary>
+            <param name="fileInfo">The FileInfo instance</param>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.EnsureDirectoryExists(System.IO.FileInfo)">
+            <summary>
+            Ensures the parent directory of the specified file exists, creating it if necessary.
+            </summary>
+            <param name="fileInfo">The FileInfo whose parent directory should be ensured</param>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.CopyTo(System.IO.FileInfo,System.String,System.Boolean)">
+            <summary>
+            Copies a file to the specified destination, optionally overwriting an existing file.
+            </summary>
+            <param name="fileInfo">The source file</param>
+            <param name="destinationPath">The destination file path</param>
+            <param name="overwrite">Whether to overwrite an existing file at the destination</param>
+            <returns>A FileInfo for the new file</returns>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.MoveTo(System.IO.FileInfo,System.String,System.Boolean)">
+            <summary>
+            Moves a file to the specified destination.
+            </summary>
+            <param name="fileInfo">The source file</param>
+            <param name="destinationPath">The destination file path</param>
+            <param name="overwrite">Whether to overwrite an existing file at the destination</param>
+        </member>
+        <member name="M:Ampere.AmpFile.FileUtils.IsFileLocked(System.IO.FileInfo)">
+            <summary>
+            Checks whether a file is currently locked by another process.
+            </summary>
+            <param name="fileInfo">The FileInfo instance to check</param>
+            <returns>True if the file is locked, false otherwise</returns>
         </member>
         <member name="M:Ampere.AmpFile.FileUtils.GetDirectorySize(System.String)">
             <summary>
@@ -144,7 +245,7 @@
         </member>
         <member name="P:Ampere.AmpMath.IMatrixer.Rows">
             <summary>
-            Property for the number of Rows in and IMatrixer.
+            Property for the number of Rows in an IMatrixer.
             </summary>
         </member>
         <member name="P:Ampere.AmpMath.IMatrixer.Cols">
@@ -163,7 +264,7 @@
             Returns whether this instance is the same dimension as another IMatrixer instance.
             Same dimension means that the rows and the columns of both instances are the same.
             </summary>
-            <returns>A new Matrix containing the transposed version of the original</returns>
+            <returns>True if dimensions match, false otherwise</returns>
         </member>
         <member name="M:Ampere.AmpMath.IMatrixer.EqualDimension(Ampere.AmpMath.IMatrixer,Ampere.AmpMath.IMatrixer)">
             <summary>
@@ -172,11 +273,11 @@
             </summary>
             <param name="one">The first IMatrixer instance</param>
             <param name="two">The second IMatrixer instance</param>
-            <returns></returns>
+            <returns>True if dimensions match</returns>
         </member>
         <member name="M:Ampere.AmpMath.IMatrixer.IsRowVector">
             <summary>
-            Returns whether the number of Rows equals 1
+            Returns whether the number of Rows equals 1.
             </summary>
             <returns>A bool specifying whether the number of Rows equals 1</returns>
         </member>
@@ -223,7 +324,7 @@
         </member>
         <member name="M:Ampere.AmpMath.Matrix.#ctor(System.Double[0:,0:])">
             <summary>
-            Creates an instance of a Matrix given a 2D array. 
+            Creates an instance of a Matrix given a 2D array.
             </summary>
             <param name="matrix">A 2D array of doubles</param>
         </member>
@@ -233,7 +334,7 @@
             </summary>
             <param name="row">The row to insert the value</param>
             <param name="col">The column to insert the value</param>
-            <returns></returns>
+            <returns>The value at the specified row and column</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Transpose">
             <inheritdoc cref="T:Ampere.AmpMath.IMatrixer"/>
@@ -241,232 +342,133 @@
         <member name="M:Ampere.AmpMath.Matrix.EqualDimension(Ampere.AmpMath.IMatrixer)">
             <summary>
             Returns whether two <see cref="T:Ampere.AmpMath.Matrix"/> instances are of the same dimension.
-            Same dimension means that the rows and the columns of both instances are the same. This
-            overload is an instance method of the Matrix class.
             </summary>
-            <param name="otherMatrix"></param>
-            <returns></returns>
+            <param name="otherMatrix">The other matrix to compare</param>
+            <returns>True if dimensions match</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Addition(Ampere.AmpMath.Matrix,System.Double)">
             <summary>
             An operator method to add a matrix instance with a scalar.
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Addition(System.Double,Ampere.AmpMath.Matrix)">
             <summary>
-            An operator method to add a matrix instance with a scalar.
+            An operator method to add a scalar with a matrix instance.
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Subtraction(Ampere.AmpMath.Matrix,System.Double)">
             <summary>
-            An operator method to subtract a matrix instance with a scalar.
+            An operator method to subtract a scalar from a matrix instance.
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Subtraction(System.Double,Ampere.AmpMath.Matrix)">
             <summary>
-            An operator method to subtract a matrix instance with a scalar.
+            An operator method to subtract a matrix from a scalar (scalar - each element).
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Multiply(Ampere.AmpMath.Matrix,System.Double)">
             <summary>
             An operator method to multiply a matrix instance with a scalar.
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Multiply(System.Double,Ampere.AmpMath.Matrix)">
             <summary>
-            An operator method to multiply a matrix instance with a scalar.
+            An operator method to multiply a scalar with a matrix instance.
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Division(Ampere.AmpMath.Matrix,System.Double)">
             <summary>
-            An operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception
-            if the matrix contains a value of 0.
+            An operator method to divide a matrix instance by a scalar.
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Division(System.Double,Ampere.AmpMath.Matrix)">
             <summary>
-            An operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception
-            if the matrix contains a value of 0.
+            An operator method to divide a scalar by each element of a matrix (scalar / each element).
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Modulus(Ampere.AmpMath.Matrix,System.Double)">
             <summary>
             An operator method to mod a matrix instance with a scalar.
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Modulus(System.Double,Ampere.AmpMath.Matrix)">
             <summary>
-            An operator method to mod a matrix instance with a scalar.
+            An operator method to compute scalar mod each element of a matrix (scalar % each element).
             </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_LogicalNot(Ampere.AmpMath.Matrix)">
             <summary>
             An operator method to negate a matrix. Every value in the Matrix provided will be negated.
+            Returns a new Matrix without modifying the original.
             </summary>
             <param name="m">The Matrix instance</param>
-            <returns>The Matrix after the scalar has been applied</returns>
+            <returns>A new Matrix with negated values</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Addition(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)">
             <summary>
             An operator method to add two Matrix instances.
             </summary>
-            <param name="one">The first Matrix instance</param>
-            <param name="two">The second Matrix instance</param>
-            <returns>A new Matrix instance containing the added values</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Subtraction(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)">
             <summary>
             An operator method to subtract two Matrix instances.
             </summary>
-            <param name="one">The first Matrix instance</param>
-            <param name="two">The second Matrix instance</param>
-            <returns>A new Matrix instance containing the added values</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Multiply(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)">
             <summary>
             An operator method to compute the dot product of two Matrix instances.
             </summary>
-            <param name="one">The first Matrix instance</param>
-            <param name="two">The second Matrix instance</param>
-            <returns>A new Matrix instance containing dot product</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Equality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)">
             <summary>
-            An operator method to compare two Matrix instances for equality. Equality is defined by structure and values, meaning that
-            both matrices must have an equal dimension and every value in both matrices must be equal.
+            An operator method to compare two Matrix instances for equality.
+            Equality is defined by structure and values within tolerance.
             </summary>
-            <param name="one">The first Matrix instance</param>
-            <param name="two">The second Matrix instance</param>
-            <returns>A bool representing whether the two Matrix instances are equal</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.op_Inequality(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)">
             <summary>
-            An operator method to compare two Matrix instances for equality. Equality is defined by structure and values, meaning that
-            both matrices must have an equal dimension and every value in both matrices must be equal.
+            An operator method to compare two Matrix instances for inequality.
             </summary>
-            <param name="one">The first Matrix instance</param>
-            <param name="two">The second Matrix instance</param>
-            <returns>A new Matrix instance containing the added values</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix,System.Double)">
-            <summary>
-            A wrapper for the operator method to add a matrix instance with a scalar.
-            </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
+            <summary>A wrapper for the operator method to add a matrix instance with a scalar.</summary>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Add(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)">
-            <summary>
-            A wrapper for the operator method to add two Matrix instances.
-            </summary>
-            <param name="one">The first Matrix instance</param>
-            <param name="two">The second Matrix instance</param>
-            <returns>A new Matrix instance containing the added values</returns>
+            <summary>A wrapper for the operator method to add two Matrix instances.</summary>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix,System.Double)">
-            <summary>
-            A wrapper for the operator method to subtract a matrix instance with a scalar.
-            </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
+            <summary>A wrapper for the operator method to subtract a scalar from a matrix instance.</summary>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Subtract(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)">
-            <summary>
-            A wrapper for the operator method to subtract two Matrix instances.
-            </summary>
-            <param name="one">The first Matrix instance</param>
-            <param name="two">The second Matrix instance</param>
-            <returns>A new Matrix instance containing the added values</returns>
+            <summary>A wrapper for the operator method to subtract two Matrix instances.</summary>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Multiply(Ampere.AmpMath.Matrix,System.Double)">
-            <summary>
-            A wrapper for the operator method to multiply a matrix instance with a scalar.
-            </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
+            <summary>A wrapper for the operator method to multiply a matrix instance with a scalar.</summary>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.DotProduct(Ampere.AmpMath.Matrix,Ampere.AmpMath.Matrix)">
-            <summary>
-            A wrapper for the operator method to compute the dot product of two Matrix instances.
-            </summary>
-            <param name="one">The first Matrix instance</param>
-            <param name="two">The second Matrix instance</param>
-            <returns>A new Matrix instance containing dot product</returns>
+            <summary>A wrapper for the operator method to compute the dot product of two Matrix instances.</summary>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Divide(Ampere.AmpMath.Matrix,System.Double)">
-            <summary>
-            A wrapper for the operator method to divide a matrix instance with a scalar. This may result in a Divide By Zero exception
-            if the matrix contains a value of 0.
-            </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
+            <summary>A wrapper for the operator method to divide a matrix instance by a scalar.</summary>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Mod(Ampere.AmpMath.Matrix,System.Double)">
-            <summary>
-            A wrapper for the operator method to mod a matrix instance with a scalar.
-            </summary>
-            <param name="m">The Matrix instance</param>
-            <param name="scalar">The scalar value</param>
-            <returns>The Matrix after the scalar has been applied</returns>
+            <summary>A wrapper for the operator method to mod a matrix instance with a scalar.</summary>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Negate(Ampere.AmpMath.Matrix)">
-            <summary>
-            A wrapper for the operator method to negate a matrix. Every value in the Matrix provided will be negated.
-            </summary>
-            <param name="m">The Matrix instance</param>
-            <returns>The Matrix after the scalar has been applied</returns>
+            <summary>A wrapper for the operator method to negate a matrix.</summary>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Equals(System.Object)">
-            <summary>
-            Compares an object to a Matrix instance. This will check for type first then calls the
-            <see cref="M:Ampere.AmpMath.Matrix.Equals(Ampere.AmpMath.Matrix)"/> method.
-            </summary>
-            <param name="obj">The object to compare</param>
-            <returns>A bool representing whether the object is equal</returns>
+            <inheritdoc />
         </member>
         <member name="M:Ampere.AmpMath.Matrix.Equals(Ampere.AmpMath.Matrix)">
             <summary>
             A wrapper method for operator== method.
             </summary>
             <param name="other">The Matrix instance to check for equality</param>
-            <returns>A bool representing whether the Matrix instance is equal</returns>
+            <returns>True if equal</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.GetHashCode">
-            <inheritdoc cref="T:System.Object"/>
+            <inheritdoc />
         </member>
         <member name="M:Ampere.AmpMath.Matrix.IsRowVector">
             <inheritdoc cref="T:Ampere.AmpMath.IMatrixer"/>
@@ -477,19 +479,129 @@
         <member name="M:Ampere.AmpMath.Matrix.IsSquareVector">
             <inheritdoc cref="T:Ampere.AmpMath.IMatrixer"/>
         </member>
+        <member name="M:Ampere.AmpMath.Matrix.Clone">
+            <summary>
+            Creates a deep copy of this Matrix.
+            </summary>
+            <returns>A new Matrix with the same values</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.Identity(System.Int32)">
+            <summary>
+            Creates an identity matrix of the specified size.
+            </summary>
+            <param name="n">The dimension of the square identity matrix</param>
+            <returns>An n×n identity matrix</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.Zeros(System.Int32,System.Int32)">
+            <summary>
+            Creates a zero matrix of the specified dimensions.
+            </summary>
+            <param name="rows">The number of rows</param>
+            <param name="cols">The number of columns</param>
+            <returns>A rows×cols zero matrix</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.Fill(System.Double)">
+            <summary>
+            Fills the entire matrix with the specified value.
+            </summary>
+            <param name="value">The value to fill with</param>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.Map(System.Func{System.Double,System.Double})">
+            <summary>
+            Applies a function to every element and returns a new Matrix with the results.
+            </summary>
+            <param name="func">The transformation function</param>
+            <returns>A new Matrix with transformed values</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.Trace">
+            <summary>
+            Computes the trace of the matrix (sum of diagonal elements).
+            The matrix must be square.
+            </summary>
+            <returns>The trace of the matrix</returns>
+            <exception cref="T:Ampere.AmpMath.MatrixPropertyException">Thrown when the matrix is not square</exception>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.Determinant">
+            <summary>
+            Computes the determinant of the matrix using LU decomposition.
+            The matrix must be square.
+            </summary>
+            <returns>The determinant of the matrix</returns>
+            <exception cref="T:Ampere.AmpMath.MatrixPropertyException">Thrown when the matrix is not square</exception>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.FrobeniusNorm">
+            <summary>
+            Computes the Frobenius norm of the matrix (square root of sum of squares of all elements).
+            </summary>
+            <returns>The Frobenius norm</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.IsSymmetric">
+            <summary>
+            Returns whether the matrix is symmetric (A == A^T).
+            The matrix must be square.
+            </summary>
+            <returns>True if the matrix is symmetric</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.IsDiagonal">
+            <summary>
+            Returns whether the matrix is diagonal (all off-diagonal elements are zero).
+            The matrix must be square.
+            </summary>
+            <returns>True if the matrix is diagonal</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.IsIdentity">
+            <summary>
+            Returns whether the matrix is an identity matrix.
+            </summary>
+            <returns>True if the matrix is an identity matrix</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.GetRow(System.Int32)">
+            <summary>
+            Extracts the specified row as a one-dimensional array.
+            </summary>
+            <param name="row">The zero-based row index</param>
+            <returns>An array containing the row values</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.GetColumn(System.Int32)">
+            <summary>
+            Extracts the specified column as a one-dimensional array.
+            </summary>
+            <param name="col">The zero-based column index</param>
+            <returns>An array containing the column values</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.SubMatrix(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Extracts a submatrix from the specified row and column ranges (inclusive).
+            </summary>
+            <param name="rowStart">Starting row index (inclusive)</param>
+            <param name="rowEnd">Ending row index (inclusive)</param>
+            <param name="colStart">Starting column index (inclusive)</param>
+            <param name="colEnd">Ending column index (inclusive)</param>
+            <returns>A new Matrix containing the submatrix</returns>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.SwapRows(System.Int32,System.Int32)">
+            <summary>
+            Swaps two rows in the matrix (in-place).
+            </summary>
+            <param name="r1">First row index</param>
+            <param name="r2">Second row index</param>
+        </member>
+        <member name="M:Ampere.AmpMath.Matrix.Flatten">
+            <summary>
+            Flattens the matrix into a one-dimensional array in row-major order.
+            </summary>
+            <returns>A one-dimensional array of all matrix values</returns>
+        </member>
         <member name="M:Ampere.AmpMath.Matrix.GetEnumerator">
             <summary>
-            Returns an enumerator this Matrix containing every value. The iteration occurs through each row
-            in the matrix.
+            Returns an enumerator for this Matrix yielding every value in row-major order.
             </summary>
             <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1"/> instance for the Matrix</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.System#Collections#IEnumerable#GetEnumerator">
             <summary>
-            Returns the non-generic Enumerator for the Matrix. This returns the generic <see cref="M:Ampere.AmpMath.Matrix.GetEnumerator"/> method
-            under the hood.
+            Returns the non-generic Enumerator for the Matrix.
             </summary>
-            <returns>An <see cref="T:System.Collections.IEnumerator"/> instance for the Matrix</returns>
         </member>
         <member name="M:Ampere.AmpMath.Matrix.ToString">
             <inheritdoc cref="T:Ampere.AmpMath.IMatrixer"/>
@@ -517,14 +629,6 @@
             </summary>
             <param name="message">The message of this exception type</param>
             <param name="inner">The inner Exception</param>
-        </member>
-        <member name="M:Ampere.AmpMath.MatrixPropertyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Creates a new overloaded MatrixPropertyException containing a <see cref="T:System.Runtime.Serialization.SerializationInfo"/> instance
-            and a <see cref="T:System.Runtime.Serialization.StreamingContext"/> instance.
-            </summary>
-            <param name="info">The SerializationInfo instance</param>
-            <param name="context">The StreamingContext instance</param>
         </member>
         <member name="T:Ampere.Base.Attributes.Beta">
             <summary>
@@ -686,19 +790,19 @@
             <summary>
             Creates a new instance of IntRange, specifying the minimum and maximum values.
             </summary>
-            <param name="minimum"></param>
-            <param name="maximum"></param>
+            <param name="minimum">The minimum value (inclusive)</param>
+            <param name="maximum">The maximum value (inclusive)</param>
         </member>
         <member name="M:Ampere.Base.IntRange.GetEnumerator">
             <summary>
-            Returns an instance of the IntRangeEnumerator that's used to enumerate through the range
-            values of this instance.
+            Returns an instance of the IntRangeEnumerator that enumerates through the range
+            values of this instance (inclusive on both ends).
             </summary>
             <returns>An instance of the IntRangeEnumerator class</returns>
         </member>
         <member name="M:Ampere.Base.IntRange.System#Collections#IEnumerable#GetEnumerator">
             <summary>
-            Returns an instance of the IntRangeEnumerator that's used to enumerate through the range
+            Returns an instance of the IntRangeEnumerator that enumerates through the range
             values of this instance.
             </summary>
             <returns>An instance of the IntRangeEnumerator class</returns>
@@ -774,17 +878,101 @@
         </member>
         <member name="T:Ampere.Base.Shuffler">
             <summary>
-            A utility to shuffle an array using the Fisher-Yates algorithm.
+            Provides cryptographically secure shuffling and sampling algorithms.
+            All methods use <see cref="T:System.Security.Cryptography.RandomNumberGenerator"/> for unbiased randomness.
             </summary>
         </member>
         <member name="M:Ampere.Base.Shuffler.Shuffle``1(``0[])">
             <summary>
-            Shuffles the array using the Fisher-Yates algorithm with cryptographically secure random number generation.
+            Performs an in-place Fisher–Yates shuffle on an array using
+            cryptographically secure random number generation.
             </summary>
-            <typeparam name="T">The element type of the array.</typeparam>
-            <param name="data">The array to be shuffled.</param>
-            <returns>The shuffled array.</returns>
-            <exception cref="T:System.ArgumentNullException">Thrown when the provided array is null.</exception>
+            <typeparam name="T">The element type</typeparam>
+            <param name="array">The array to shuffle in-place</param>
+        </member>
+        <member name="M:Ampere.Base.Shuffler.Shuffle``1(System.Span{``0})">
+            <summary>
+            Performs an in-place Fisher–Yates shuffle on a span using
+            cryptographically secure random number generation.
+            This is the zero-allocation core implementation.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="span">The span to shuffle in-place</param>
+        </member>
+        <member name="M:Ampere.Base.Shuffler.Shuffle``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Performs an in-place Fisher–Yates shuffle on an <see cref="T:System.Collections.Generic.IList`1"/>.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="list">The list to shuffle in-place</param>
+        </member>
+        <member name="M:Ampere.Base.Shuffler.ShuffleCopy``1(System.ReadOnlySpan{``0})">
+            <summary>
+            Returns a new shuffled copy of the source array without
+            modifying the original (non-destructive).
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="source">The source array</param>
+            <returns>A new array with elements in random order</returns>
+        </member>
+        <member name="M:Ampere.Base.Shuffler.ShuffleCopy``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns a new shuffled copy of the source enumerable.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="source">The source enumerable</param>
+            <returns>A new array with elements in random order</returns>
+        </member>
+        <member name="M:Ampere.Base.Shuffler.PartialShuffle``1(System.ReadOnlySpan{``0},System.Int32)">
+            <summary>
+            Selects <paramref name="k"/> random elements from the source using a
+            partial Fisher–Yates shuffle. Only the first k positions are shuffled,
+            making this O(k) instead of O(n).
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="source">The source array</param>
+            <param name="k">The number of elements to select</param>
+            <returns>An array of k randomly selected elements</returns>
+        </member>
+        <member name="M:Ampere.Base.Shuffler.ReservoirSample``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Performs reservoir sampling (Vitter's Algorithm L) to select
+            <paramref name="k"/> elements uniformly at random from a potentially
+            infinite or very large stream. Runs in O(n) time with O(k) space.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="source">The source enumerable (may be streamed)</param>
+            <param name="k">The reservoir size (number of elements to sample)</param>
+            <returns>An array of k uniformly sampled elements</returns>
+        </member>
+        <member name="M:Ampere.Base.Shuffler.WeightedSample``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{System.Double},System.Int32)">
+            <summary>
+            Selects <paramref name="k"/> elements from a weighted distribution using
+            the Efraimidis–Spirakis algorithm. Each element is associated with a weight
+            that determines its probability of selection. Runs in O(n log k).
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="items">The source items</param>
+            <param name="weights">The corresponding weights (must be positive)</param>
+            <param name="k">The number of elements to select</param>
+            <returns>An array of k weighted-sampled elements</returns>
+        </member>
+        <member name="M:Ampere.Base.Shuffler.Derange``1(System.ReadOnlySpan{``0})">
+            <summary>
+            Produces a random derangement of the given array using Sattolo's algorithm.
+            A derangement is a permutation where no element appears in its original position.
+            Returns a new array; the original is not modified.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="source">The source array (must have at least 2 elements)</param>
+            <returns>A new array representing a random derangement of the source</returns>
+        </member>
+        <member name="M:Ampere.Base.Shuffler.RandomDouble">
+            <summary>
+            Generates a uniformly distributed random double in (0, 1) exclusive
+            using cryptographic randomness. Uses 53 bits of entropy to fill
+            the full mantissa of a double-precision float.
+            </summary>
         </member>
         <member name="T:Ampere.Enumerable.EnumerableUtils">
             <summary>
@@ -792,31 +980,14 @@
             </summary>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.Fuse``1(System.Collections.Generic.IEnumerable{``0}[])">
-             <summary>
-             Concatenates all IEnumerables which are specified in the parameter. The
-             concatenation occurs in the order specified in the parameter.
-             </summary>
-             <typeparam name="T">The enumerable type to be used</typeparam>
-             <param name="ie">An enumerable of all one dimensional arrays to be concatenated</param>
-             <exception cref="T:System.ArgumentNullException"> Is thrown if any enumerable, which is a candidate to be concatenated, is null</exception>
-             <returns>A single enumerable with all the concatenated elements</returns>
-             <example>This simple example shows how to call the <see cref="M:Ampere.Enumerable.EnumerableUtils.Fuse``1(System.Collections.Generic.IEnumerable{``0}[])"/> method.</example>
-             <code>
-            
-             using static Utilities.EnumerableUtils;
-            
-             class TestClass
-             {
-                static void Main(string[] args)
-                {
-                    int[] x = { 1, 2, 3, 4 };
-                    int[] y = { 1, 2, 3, 4, 5, 6 };
-                    int[] z = { 1, 2, 3 };
-                    int[] comb = Fuse(x, y, z).toArray();
-                    //Printing out 'comb' results in 1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 1, 2, 3
-                }
-             }
-             </code>
+            <summary>
+            Concatenates all IEnumerables which are specified in the parameter. The
+            concatenation occurs in the order specified in the parameter.
+            </summary>
+            <typeparam name="T">The enumerable type to be used</typeparam>
+            <param name="ie">An enumerable of all one dimensional arrays to be concatenated</param>
+            <exception cref="T:System.ArgumentNullException">Is thrown if any enumerable, which is a candidate to be concatenated, is null</exception>
+            <returns>A single enumerable with all the concatenated elements</returns>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.CheckBufferAndExtend``1(``0[]@,System.Boolean,System.Int32)">
             <summary>
@@ -839,97 +1010,50 @@
             <param name="size">The size in which to resize the buffer if the condition is satisfied</param>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])">
-             <summary>
-             Inserts the specified element at the specified index in the generic array (modifying the original array).
-             If element at that position exits, If shifts that element and any subsequent elements to the right,
-             adding one to their indices. The method also allows for inserting more than one element into
-             the array at one time given that they are specified. This Insert method is functionally similar
-             to the Insert method of the IList interface. <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)"/>
-             for information about the add method of the IList interface. This function also has an enumerable overload.
-             </summary>
-             <typeparam name="T">The type of the array</typeparam>
-             <param name="src">The generic array to be used</param>
-             <param name="startIdx">The index to start insertion</param>
-             <param name="amtToIns">The amount of elements to insert into the array</param>
-             <param name="valuesToIns">Optionally, the values to insert into the empty indices of the new array</param>
-             <exception cref="T:System.IndexOutOfRangeException">Thrown when the valuesToIns array does not match the amount to insert (if it is greater than 0)</exception>
-             <exception cref="T:System.IndexOutOfRangeException">Thrown when the amtToIns or the startIdx is less than 0</exception>
-             <example>This sample shows how to call the <see cref="M:Ampere.Enumerable.EnumerableUtils.Insert``1(``0[]@,System.Int32,System.Int32,``0[])"/> method.</example>
-             <seealso cref="M:System.Collections.IList.Insert(System.Int32,System.Object)"/>
-             <code>
-            
-             using static Utilities.EnumerableUtils;
-            
-             class TestClass
-             {
-                 static void Main(string[] args)
-                 {
-                     var w = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10};
-                     Insert(ref w, 1, 3);
-                     //Printing out 'w' results in: 2, 0, 0, 0, 3, 4, 5, 6, 7, 8, 9, 10
-            
-                     var y = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10};
-                     Insert(ref y, 1, 3, 250, 350, 450);
-                     //Printing out 'y' results in: 2, 250, 350, 450, 3, 4, 5, 6, 7, 8, 9, 10
-                 }
-             }
-             </code>
+            <summary>
+            Inserts the specified element at the specified index in the generic array (modifying the original array).
+            If element at that position exists, it shifts that element and any subsequent elements to the right,
+            adding one to their indices. The method also allows for inserting more than one element into
+            the array at one time given that they are specified.
+            </summary>
+            <typeparam name="T">The type of the array</typeparam>
+            <param name="src">The generic array to be used</param>
+            <param name="startIdx">The index to start insertion</param>
+            <param name="amtToIns">The amount of elements to insert into the array</param>
+            <param name="valuesToIns">Optionally, the values to insert into the empty indices of the new array</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when src or valuesToIns is null</exception>
+            <exception cref="T:System.IndexOutOfRangeException">Thrown when the valuesToIns array does not match the amount to insert (if it is greater than 0)</exception>
+            <exception cref="T:System.IndexOutOfRangeException">Thrown when the amtToIns or the startIdx is less than 0</exception>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])">
-             <summary>
-             Inserts the specified element at the specified index in the enumerable (modifying the original enumerable).
-             If element at that position exits, If shifts that element and any subsequent elements to the right,
-             adding one to their indices. The method also allows for inserting more than one element into
-             the enumerable at one time given that they are specified. This Insert method is functionally similar
-             to the Insert method of the IList interface. <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)"/>
-             for information about the add method of the IList interface. This function also has a generic array overload.
-             </summary>
-             <typeparam name="T">The type of the enumerable</typeparam>
-             <param name="src">The IEnumerable to be used</param>
-             <param name="startIdx">The index to start insertion</param>
-             <param name="amtToIns">The amount of elements to insert into the enumerable</param>
-             <param name="valuesToIns">Optionally, the values to insert into the empty indices of the new enumerable</param>
-             <exception cref="T:System.IndexOutOfRangeException">Thrown when the valuesToIns enumerable does not match the amount to insert (if it is greater than 0)</exception>
-             <exception cref="T:System.IndexOutOfRangeException">Thrown when the amtToIns or the startIdx is less than 0</exception>
-             <example>This sample shows how to call the <see cref="M:Ampere.Enumerable.EnumerableUtils.Insert``1(System.Collections.Generic.IEnumerable{``0}@,System.Int32,System.Int32,``0[])"/> method.</example>
-             <seealso cref="M:System.Collections.IList.Insert(System.Int32,System.Object)"/>
-             <code>
-            
-             using static Utilities.EnumerableUtils;
-            
-             class TestClass
-             {
-                 static void Main(string[] args)
-                 {
-                     var w = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10}.AsEnumerable();
-                     Insert(ref w, 1, 3);
-                     //Printing out 'w' results in: 2, 0, 0, 0, 3, 4, 5, 6, 7, 8, 9, 10
-            
-                     var y = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10}.AsEnumerable();
-                     Insert(ref y, 1, 3, 250, 350, 450);
-                     //Printing out 'y' results in: 2, 250, 350, 450, 3, 4, 5, 6, 7, 8, 9, 10
-                 }
-             }
-             </code>
+            <summary>
+            Inserts the specified element at the specified index in the enumerable (modifying the original enumerable).
+            If element at that position exists, it shifts that element and any subsequent elements to the right.
+            </summary>
+            <typeparam name="T">The type of the enumerable</typeparam>
+            <param name="src">The IEnumerable to be used</param>
+            <param name="startIdx">The index to start insertion</param>
+            <param name="amtToIns">The amount of elements to insert into the enumerable</param>
+            <param name="valuesToIns">Optionally, the values to insert into the empty indices of the new enumerable</param>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.InnerContains``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0}[])">
             <summary>
-            Given a primary enumerable to check against and one or more test enumerable's, InnerContains executes an intersection
+            Given a primary enumerable to check against and one or more test enumerables, InnerContains executes an intersection
             of the primary and test enumerables to verify if all values in the test are contained within the primary enumerable.
             </summary>
             <typeparam name="T">The type of the IEnumerable</typeparam>
             <param name="ie">The primary IEnumerable to check against</param>
             <param name="isAll">Indicates whether to check whether all values are intersected or partially intersected</param>
-            <param name="otherArrays">An array of Enumerable's to test against the primary enumerable</param>
+            <param name="otherArrays">An array of Enumerables to test against the primary enumerable</param>
             <returns>An instance of the <see cref="T:Ampere.Enumerable.InnerContainsProgram`1"/> to verify the result and violating enumerables</returns>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})">
             <summary>
-            Returns whether an IEnumerable is null or empty
+            Returns whether an IEnumerable is null or empty.
             </summary>
             <typeparam name="T">The type of the IEnumerable</typeparam>
             <param name="ie">The IEnumerable to be used</param>
-            <returns>The truth</returns>
+            <returns>True if null or empty</returns>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.IsZeroOrOne``1(System.Collections.Generic.IEnumerable{``0})">
             <summary>
@@ -940,99 +1064,199 @@
             <returns>True if the Count of the IEnumerable is zero or one</returns>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.Range(System.Int32,System.Int32)">
-             <summary>
-             Enables python style for-loop for easier readability. This loop begins
-             at the starting value and loops until the end - 1,
-             </summary>
-             <param name="start">The starting counter for the loop (inclusive)</param>
-             <param name="end">The ending counter for the loop (exclusive)</param>
-             <returns>An IEnumerable representing the current index</returns>
-             <example>This example shows how to use the <see cref="M:Ampere.Enumerable.EnumerableUtils.Range(System.Int32,System.Int32)"/>method.</example>
-             <code>
-             using static Utilities.EnumerableUtils;
-            
-             class TestClass
-             {
-                 static void Main(string[] args)
-                 {
-                     foreach(int i in Range(0,10)) Console.WriteLine(i); //Prints 0 - 9
-                 }
-             }
-             </code>
+            <summary>
+            Enables python style for-loop for easier readability. This loop begins
+            at the starting value and loops until the end - 1.
+            </summary>
+            <param name="start">The starting counter for the loop (inclusive)</param>
+            <param name="end">The ending counter for the loop (exclusive)</param>
+            <returns>An IEnumerable representing the current index</returns>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.Shuffle``1(System.Collections.Generic.IEnumerable{``0})">
             <summary>
-            Cryptographically shuffles an enumerable. 
+            Cryptographically shuffles an enumerable.
             </summary>
             <typeparam name="T">The element type of the IEnumerable</typeparam>
             <param name="src">The IEnumerable</param>
             <returns>The Shuffled IEnumerable</returns>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.Span(System.Int32,System.Int32)">
-             <summary>
-             Enables python style for-loop for easier readability. This loop begins
-             at the starting value and loops until the end.
-             </summary>
-             <param name="start">The starting counter for the loop (inclusive)</param>
-             <param name="end">The ending counter for the loop (inclusive)</param>
-             <returns>An IEnumerable representing the current index</returns>
-             <example>This example shows how to use the <see cref="M:Ampere.Enumerable.EnumerableUtils.Span(System.Int32,System.Int32)"/>method.</example>
-             <code>
-             using static Utilities.EnumerableUtils;
-            
-             class TestClass
-             {
-                 static void Main(string[] args)
-                 {
-                     foreach(int i in Span(0,10)) Console.WriteLine(i); //Prints 0 - 10
-                 }
-             }
-             </code>
+            <summary>
+            Enables python style for-loop for easier readability. This loop begins
+            at the starting value and loops until the end (inclusive).
+            </summary>
+            <param name="start">The starting counter for the loop (inclusive)</param>
+            <param name="end">The ending counter for the loop (inclusive)</param>
+            <returns>An IEnumerable representing the current index</returns>
         </member>
         <member name="M:Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)">
-             <summary>
-             Prints a string representation of an enumerable. There are 4 supported lengths for the fmtExp. The
-             default length is 0 and the default behavior depends on the type of the enumerable. If the type is primitive
-             (based on the System.IsPrimitive property) including decimal and string, then it prints the enumerable with a space
-             as a separator between each element. If the enumerable is not primitive, it prints the enumerable with no separator.
-             A fmtExp of length 1 specifies a character to separate each element. The enumerable is printed out, following
-             a default behavior, except with the specified separator rather than the default separator. A fmtExp
-             of length 2 specifies two characters to mark the left and right outer bounds of the enumerable, A fmtExp
-             of length 3 specifies a character for the left outer bound of the enumerable, followed by a separator character,
-             followed by a character for the right outer bound of the enumerable. If no separator is desired, the "/0+" expression
-             can be specified.The evenlySpacedSeparator parameter specifies whether an even number of spaces should be on
-             both sides of the separator. This parameter ignores Object type enumerables excluding decimal and string.
-             </summary>
-             <typeparam name="T">The type of the enumerable</typeparam>
-             <param name="src">The IEnumerable to be used</param>
-             <param name="fmtExp">The defined expression to be optionally used</param>
-             <param name="evenlySpacedSeparator">Determines whether the spacing between each element should be the same</param>
-             <returns>The string representation of the enumerable</returns>
-             <exception cref="T:System.ArgumentNullException">If arr is null</exception>
-             <exception cref="T:System.FormatException">If the formatting expression length is neither 0 nor 3</exception>
-             <example>This sample shows how to call the <see cref="M:Ampere.Enumerable.EnumerableUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean)"/> method.</example>
-             <code>
-            
-             using static Utilities.EnumerableUtils;
-            
-             class TestClass
-             {
-                 static void Main(string[] args)
-                 {
-                     var w = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10};
-                     Console.WriteLine(w.ToString("[,]"));
-                     //Printing out 'w' results in: [2, 3, 4, 5, 6, 7, 8, 9, 10]
-            
-                     var x = new int[9] {2, 3, 4, 5, 6, 7, 8, 9, 10};
-                     Console.WriteLine(x.ToString("(|)", true));
-                     //Printing out 'x' results in: (2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10)
-            
-                     var y = new string[4] {"Bill", "Bob", "Tom", "Joe"};
-                     Console.WriteLine(y.ToString());
-                     //Printing out 'y' results in: Bill Bob Tom Joe
-                 }
-             }
-             </code>
+            <summary>
+            Prints a string representation of an enumerable. There are 4 supported lengths for the fmtExp. The
+            default length is 0 and the default behavior depends on the type of the enumerable. If the type is primitive
+            (based on the System.IsPrimitive property) including decimal and string, then it prints the enumerable with a space
+            as a separator between each element. A fmtExp of length 1 specifies a character to separate each element.
+            A fmtExp of length 2 specifies two characters to mark the left and right outer bounds of the enumerable.
+            A fmtExp of length 3 specifies a character for the left outer bound, a separator character,
+            and a character for the right outer bound. The "/0+" expression disables separators.
+            </summary>
+            <typeparam name="T">The type of the enumerable</typeparam>
+            <param name="src">The IEnumerable to be used</param>
+            <param name="fmtExp">The defined expression to be optionally used</param>
+            <param name="evenlySpacedSeparator">Determines whether the spacing between each element should be the same</param>
+            <returns>The string representation of the enumerable</returns>
+            <exception cref="T:System.ArgumentNullException">If arr is null</exception>
+            <exception cref="T:System.FormatException">If the formatting expression length is neither 0 nor 3</exception>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.Batch``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Splits the source enumerable into batches of the specified size.
+            The last batch may contain fewer elements than the batch size.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="batchSize">The maximum number of elements per batch</param>
+            <returns>An enumerable of batches</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Executes the specified action on each element in the enumerable.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="action">The action to execute on each element</param>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})">
+            <summary>
+            Executes the specified action on each element along with its index.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="action">The action to execute, receiving the element and its zero-based index</param>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.Interleave``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Interleaves elements from two sequences, taking one element from each in turn.
+            If one sequence is longer, its remaining elements are appended at the end.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="first">The first sequence</param>
+            <param name="second">The second sequence</param>
+            <returns>The interleaved sequence</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.Partition``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">
+            <summary>
+            Partitions the source into two lists based on a predicate.
+            The first list contains elements matching the predicate, the second contains the rest.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="predicate">The partitioning predicate</param>
+            <returns>A tuple of (matching, nonMatching) lists</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.Scan``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})">
+            <summary>
+            Applies an accumulator function over a sequence, yielding each intermediate result.
+            Similar to LINQ's Aggregate but returns all intermediate accumulated values.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <typeparam name="TAccumulate">The accumulator type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="seed">The initial accumulator value</param>
+            <param name="func">The accumulator function</param>
+            <returns>The sequence of accumulated values</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.Window``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Returns a sliding window of the specified size over the source sequence.
+            Each window is an array of exactly <paramref name="windowSize"/> elements.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="windowSize">The number of elements in each window</param>
+            <returns>An enumerable of fixed-size windows</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.DistinctConsecutive``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Removes consecutive duplicate elements from the sequence.
+            Only removes duplicates that are adjacent — non-adjacent duplicates are preserved.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <returns>The sequence with consecutive duplicates removed</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.TakeEvery``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Takes every Nth element from the sequence, starting with the first element.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="step">The step size (must be >= 1)</param>
+            <returns>Every Nth element</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.Flatten``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Flattens a sequence of sequences into a single sequence.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source of enumerables</param>
+            <returns>A flattened sequence</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.Paginate``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Int32)">
+            <summary>
+            Returns a specific page of results from the source enumerable.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="pageNumber">The 1-based page number</param>
+            <param name="pageSize">The number of elements per page</param>
+            <returns>The elements on the specified page</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.SafeElementAt``1(System.Collections.Generic.IEnumerable{``0},System.Int32,``0)">
+            <summary>
+            Returns the element at the specified index, or a default value if the index is out of range.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="index">The zero-based index</param>
+            <param name="defaultValue">The default value to return if index is out of range</param>
+            <returns>The element at the index or the default value</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.MinMax``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns the minimum and maximum values from the sequence in a single pass.
+            </summary>
+            <typeparam name="T">The element type, must be comparable</typeparam>
+            <param name="src">The source enumerable</param>
+            <returns>A tuple containing the minimum and maximum values</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns the sequence without null values (for reference types and nullable value types).
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <param name="src">The source enumerable</param>
+            <returns>The source with nulls removed</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">
+            <summary>
+            Returns a sequence with duplicate elements removed, keeping only the first occurrence.
+            Uses the specified key selector to determine uniqueness.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <typeparam name="TKey">The key type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="keySelector">The function to extract the comparison key</param>
+            <returns>The distinct sequence</returns>
+        </member>
+        <member name="M:Ampere.Enumerable.EnumerableUtils.CountBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">
+            <summary>
+            Groups elements by a key and returns each group as a key-count pair.
+            </summary>
+            <typeparam name="T">The element type</typeparam>
+            <typeparam name="TKey">The key type</typeparam>
+            <param name="src">The source enumerable</param>
+            <param name="keySelector">The function to extract the grouping key</param>
+            <returns>A dictionary mapping keys to their occurrence counts</returns>
         </member>
         <member name="T:Ampere.Enumerable.InnerContainsProgram`1">
             <summary>
@@ -1082,307 +1306,574 @@
         </member>
         <member name="T:Ampere.Statistics.EnumerableStats">
             <summary>
-            A static utility class for calculating a variety of statistics based on IEnumerables. Moreover,
-            generic overload methods exist to simplify calculating statistics of object enumerables containing
-            numeric properties.
+            A static utility class for calculating a variety of statistics based on IEnumerables. Provides
+            extension methods for <see cref="T:System.Collections.Generic.IEnumerable`1"/> with generic overloads that accept a selector
+            function, enabling statistics computation on object enumerables containing numeric properties.
             </summary>
         </member>
-        <member name="F:Ampere.Statistics.EnumerableStats.Tolerance">
+        <member name="M:Ampere.Statistics.EnumerableStats.Materialize(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            The tolerance level for floating point arithmetic (or known as the epsilon value).
+            Materializes the source enumerable into an array for safe multi-pass iteration.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.ValidateNotEmpty(System.Collections.Generic.IEnumerable{System.Double},System.String)">
+            <summary>
+            Validates that the source is not null and not empty, returning the materialized array.
             </summary>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.Mean(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the average of all the elements in the enumerable.
+            Computes the arithmetic mean (average) of all elements in the enumerable.
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of length 0</exception>
-            <returns>The average of all the elements in the source</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>The arithmetic mean of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.Mean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.Mean(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.Mean(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the arithmetic mean of the projected values.
             </summary>
             <typeparam name="T">The type of the enumerable</typeparam>
             <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The average of all the elements in the source</returns>
+            <param name="selector">The numeric property selector</param>
+            <returns>The arithmetic mean of the projected values</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.Median(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the median of all the elements in the enumerable.
+            Computes the median (middle value) of all elements in the enumerable.
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source if of length 0</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
             <returns>The median of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.Median``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.Median(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.Median(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the median of the projected values.
             </summary>
             <typeparam name="T">The type of the enumerable</typeparam>
             <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The median of the source</returns>
+            <param name="selector">The numeric property selector</param>
+            <returns>The median of the projected values</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.Mode(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the mode of all the elements in the enumerable.
+            Finds the mode (most frequently occurring value) of all elements in the enumerable.
+            When multiple values share the highest frequency, the first encountered value is returned.
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of length 0</exception>
-            <exception cref="T:Ampere.Statistics.NoModeException">Thrown when no mode exists for the source</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <exception cref="T:Ampere.Statistics.NoModeException">Thrown when all values occur with equal frequency</exception>
             <returns>The mode of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.Mode``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.Mode(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.Mode(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Finds the mode of the projected values.
             </summary>
             <typeparam name="T">The type of the enumerable</typeparam>
             <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The mode of the source</returns>
+            <param name="selector">The numeric property selector</param>
+            <returns>The mode of the projected values</returns>
         </member>
-        <member name="M:Ampere.Statistics.EnumerableStats.SampleVariance(System.Collections.Generic.IEnumerable{System.Double})">
+        <member name="M:Ampere.Statistics.EnumerableStats.GeometricMean(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the sample variance of the enumerable.
+            Computes the geometric mean, which is the nth root of the product of n values.
+            Useful for averaging growth rates, ratios, and percentages.
+            All values must be positive.
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source if of length 0</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty or contains non-positive values</exception>
+            <returns>The geometric mean of the source</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.GeometricMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the geometric mean of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.HarmonicMean(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the harmonic mean, which is the reciprocal of the arithmetic mean of the reciprocals.
+            Useful for averaging rates (e.g., speed, throughput).
+            All values must be positive.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty or contains non-positive values</exception>
+            <returns>The harmonic mean of the source</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.HarmonicMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the harmonic mean of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.WeightedMean(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the weighted arithmetic mean of the values using the specified weights.
+            </summary>
+            <param name="src">The values</param>
+            <param name="weights">The weights corresponding to each value</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source or weights are null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty or counts differ</exception>
+            <returns>The weighted mean</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.TrimmedMean(System.Collections.Generic.IEnumerable{System.Double},System.Double)">
+            <summary>
+            Computes the trimmed mean by excluding a specified fraction of values from both tails.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <param name="trimFraction">The fraction to trim from each end (0.0 to 0.5 exclusive)</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when trimFraction is out of range</exception>
+            <returns>The trimmed mean</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.TrimmedMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)">
+            <summary>
+            Computes the trimmed mean of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.SampleVariance(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the sample variance of the enumerable using Bessel's correction (n-1 denominator).
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
             <returns>The sample variance of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.SampleVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.SampleVariance(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.SampleVariance(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the sample variance of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The sample variance of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.PopulationVariance(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the population variance of the enumerable.
+            Computes the population variance of the enumerable (n denominator).
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of length 0</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
             <returns>The population variance of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.PopulationVariance``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.PopulationVariance(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.PopulationVariance(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the population variance of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The population variance of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.SampleStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the sample standard deviation of the enumerable.
+            Computes the sample standard deviation of the enumerable (square root of sample variance).
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of length 0</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
             <returns>The sample standard deviation of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.SampleStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.SampleStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.SampleStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the sample standard deviation of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The sample standard deviation of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the population standard deviation of the enumerable.
+            Computes the population standard deviation of the enumerable (square root of population variance).
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of length 0</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
             <returns>The population standard deviation of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.PopulationStandardDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})"/> method.
-            This method will call the <see cref="M:Ampere.Statistics.EnumerableStats.PopulationStandardDeviation(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the population standard deviation of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The population standard deviation of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.Range(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the range of the enumerable.
+            Computes the range (max - min) of the enumerable.
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of size 0</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
             <returns>The range of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.Range``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.Range(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.Range(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the range of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The range of the source</returns>
         </member>
-        <member name="M:Ampere.Statistics.EnumerableStats.LowerQuartile(System.Collections.Generic.IEnumerable{System.Double})">
+        <member name="M:Ampere.Statistics.EnumerableStats.MeanAbsoluteDeviation(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the lower quartile of the enumerable.
+            Computes the mean absolute deviation from the mean.
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of size 0</exception>
-            <exception cref="T:Ampere.Statistics.InsufficientDataSetException">Thrown when the data set is not large enough to calculate a lower quartile</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>The mean absolute deviation</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.MeanAbsoluteDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the mean absolute deviation of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.MedianAbsoluteDeviation(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the median absolute deviation (MAD), a robust measure of variability.
+            MAD = Median(|xi - Median(x)|)
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>The median absolute deviation</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.MedianAbsoluteDeviation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the median absolute deviation of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.CoefficientOfVariation(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the coefficient of variation (CV), the ratio of standard deviation to mean.
+            Expressed as a fraction (not percentage). Useful for comparing variability across data sets
+            with different units or scales.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty or mean is zero</exception>
+            <returns>The coefficient of variation</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.CoefficientOfVariation``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the coefficient of variation of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.LowerQuartile(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the lower quartile (25th percentile / Q1) of the enumerable.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <exception cref="T:Ampere.Statistics.InsufficientDataSetException">Thrown when the data set has fewer than 3 elements</exception>
             <returns>The lower quartile of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.LowerQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.LowerQuartile(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.LowerQuartile(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the lower quartile of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The lower quartile of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.UpperQuartile(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the upper quartile of the enumerable.
+            Computes the upper quartile (75th percentile / Q3) of the enumerable.
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of size 0</exception>
-            <exception cref="T:Ampere.Statistics.InsufficientDataSetException">Thrown when the data set is not large enough to calculate an upper quartile</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <exception cref="T:Ampere.Statistics.InsufficientDataSetException">Thrown when the data set has fewer than 3 elements</exception>
             <returns>The upper quartile of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.UpperQuartile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.UpperQuartile(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.UpperQuartile(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the upper quartile of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The upper quartile of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.InterQuartileRange(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Finds the inter quartile range of the enumerable.
+            Computes the inter-quartile range (IQR = Q3 - Q1) of the enumerable.
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of length 0</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
             <returns>The inter-quartile range of the source</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.InterQuartileRange``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.InterQuartileRange(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.InterQuartileRange(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the inter-quartile range of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>The inter-quartile range of the source</returns>
         </member>
-        <member name="M:Ampere.Statistics.EnumerableStats.IsNormalProportion(System.Collections.Generic.IEnumerable{System.Double},System.Double)">
+        <member name="M:Ampere.Statistics.EnumerableStats.Percentile(System.Collections.Generic.IEnumerable{System.Double},System.Double)">
             <summary>
-            Returns whether if the data set is normally distributed for a proportion.
+            Computes the value at the specified percentile using linear interpolation.
             </summary>
             <param name="src">The IEnumerable of type double</param>
-            <param name="samstat">The sample statistic</param>
+            <param name="percentile">The percentile to compute (0 to 100 inclusive)</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of length 0</exception>
-            <returns>Returns if the data set is normally distributed for a proportion.</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when percentile is outside [0, 100]</exception>
+            <returns>The value at the specified percentile</returns>
         </member>
-        <member name="M:Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)">
+        <member name="M:Ampere.Statistics.EnumerableStats.Percentile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.IsNormalProportion(System.Collections.Generic.IEnumerable{System.Double},System.Double)"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.IsNormalProportion(System.Collections.Generic.IEnumerable{System.Double},System.Double)"/> overload.
+            Computes the value at the specified percentile of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <param name="samstat">The sample statistic></param>
-            <returns>Returns if the data set is normally distributed for a proportion.</returns>
         </member>
-        <member name="M:Ampere.Statistics.EnumerableStats.IsNormalMean(System.Collections.Generic.IEnumerable{System.Double})">
+        <member name="M:Ampere.Statistics.EnumerableStats.Skewness(System.Collections.Generic.IEnumerable{System.Double})">
             <summary>
-            Returns whether if the data set is normally distributed for a mean.
+            Computes Fisher's sample skewness coefficient, measuring the asymmetry of the distribution.
+            Positive skew indicates a longer right tail; negative skew indicates a longer left tail.
             </summary>
             <param name="src">The IEnumerable of type double</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source is of length 0</exception>
-            <returns>Returns whether if the data set is normally distributed for a mean.</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <exception cref="T:Ampere.Statistics.InsufficientDataSetException">Thrown when fewer than 3 data points</exception>
+            <returns>The sample skewness</returns>
         </member>
-        <member name="M:Ampere.Statistics.EnumerableStats.IsNormalMean``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+        <member name="M:Ampere.Statistics.EnumerableStats.Skewness``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.IsNormalMean(System.Collections.Generic.IEnumerable{System.Double})"/> method. This method will call
-            the <see cref="M:Ampere.Statistics.EnumerableStats.IsNormalMean(System.Collections.Generic.IEnumerable{System.Double})"/> overload.
+            Computes the sample skewness of the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <returns>Returns if the data set is normally distributed for a proportion.</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.ExcessKurtosis(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the sample excess kurtosis, measuring the "tailedness" of the distribution.
+            Normal distribution has excess kurtosis of 0. Positive values indicate heavier tails (leptokurtic),
+            negative values indicate lighter tails (platykurtic).
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <exception cref="T:Ampere.Statistics.InsufficientDataSetException">Thrown when fewer than 4 data points</exception>
+            <returns>The sample excess kurtosis</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.ExcessKurtosis``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the sample excess kurtosis of the projected values.
+            </summary>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.StandardizedScore(System.Collections.Generic.IEnumerable{System.Double},System.Double)">
             <summary>
-            Calculates the standardized score (z-score or standard score) of the enumerable.
+            Computes the standardized score (z-score) of a given element relative to the data set.
+            z = (x - mean) / stddev
             </summary>
             <param name="src">The IEnumerable of type double</param>
-            <param name="elem">The value of the element</param>
+            <param name="elem">The value to compute the z-score for</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown when the source if of length 0</exception>
-            <returns>The standardized score of the source</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty or has zero standard deviation</exception>
+            <returns>The z-score of the element</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.StandardizedScore``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double)">
             <summary>
-            A generic overload of the <see cref="M:Ampere.Statistics.EnumerableStats.StandardizedScore(System.Collections.Generic.IEnumerable{System.Double},System.Double)"/> method. 
-            This method will call the <see cref="M:Ampere.Statistics.EnumerableStats.StandardizedScore(System.Collections.Generic.IEnumerable{System.Double},System.Double)"/> overload.
+            Computes the standardized score of a given element relative to the projected values.
             </summary>
-            <typeparam name="T">The type of the enumerable</typeparam>
-            <param name="numbers">The specified enumerable</param>
-            <param name="selector">The numeral specifier</param>
-            <param name="elem">The value of the element</param>
-            <returns>The standardized score of the source</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.ZScoreNormalize(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Returns a new collection of z-score normalized values (each value transformed to its z-score).
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty or has zero standard deviation</exception>
+            <returns>The z-score normalized values</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.MinMaxNormalize(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Returns a new collection of min-max normalized values scaled to [0, 1].
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty or all values are identical</exception>
+            <returns>The min-max normalized values</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.Covariance(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the sample covariance between two data sets.
+            </summary>
+            <param name="x">The first data set</param>
+            <param name="y">The second data set</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when either source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the sources are empty or have different lengths</exception>
+            <returns>The sample covariance</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.PearsonCorrelation(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the Pearson product-moment correlation coefficient between two data sets.
+            Returns a value between -1 and 1.
+            </summary>
+            <param name="x">The first data set</param>
+            <param name="y">The second data set</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when either source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the sources are empty, differ in length, or have zero variance</exception>
+            <returns>The Pearson correlation coefficient</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.SpearmanCorrelation(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the Spearman rank correlation coefficient between two data sets.
+            A non-parametric measure of rank correlation.
+            </summary>
+            <param name="x">The first data set</param>
+            <param name="y">The second data set</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when either source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the sources are empty or differ in length</exception>
+            <returns>The Spearman rank correlation coefficient</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.ComputeRanks(System.Double[])">
+            <summary>
+            Computes average ranks for an array, handling ties by averaging.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.RootMeanSquare(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the root mean square (RMS) of the enumerable.
+            Common in signal processing and physics.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>The RMS value</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.RootMeanSquare``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the RMS of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.SumOfSquares(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the sum of squares (the sum of squared deviations from the mean).
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>The sum of squares from the mean</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.SumOfSquares``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the sum of squares of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.StandardError(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the standard error of the mean (SEM = sample stddev / sqrt(n)).
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>The standard error of the mean</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.StandardError``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the standard error of the mean of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.CumulativeSum(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the cumulative sum (running total) of the enumerable.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <returns>A read-only list of cumulative sums</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.MovingAverage(System.Collections.Generic.IEnumerable{System.Double},System.Int32)">
+            <summary>
+            Computes a simple moving average with the specified window size.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <param name="windowSize">The number of elements in each window</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when windowSize is less than 1</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source has fewer elements than the window size</exception>
+            <returns>A read-only list of moving averages</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.Outliers(System.Collections.Generic.IEnumerable{System.Double},System.Double)">
+            <summary>
+            Detects outliers using the IQR method (values below Q1 - 1.5*IQR or above Q3 + 1.5*IQR).
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <param name="multiplier">The IQR multiplier (default 1.5)</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>The outlier values</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.Entropy(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the entropy (Shannon entropy) of a data set based on the frequency of each unique value.
+            Measured in bits (log base 2). Higher entropy indicates more disorder/randomness.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>The Shannon entropy in bits</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.Entropy``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Computes the Shannon entropy of the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.IsNormalProportion(System.Collections.Generic.IEnumerable{System.Double},System.Double,System.Int32)">
+            <summary>
+            Returns whether the data set passes the normal proportion condition:
+            both np &gt;= threshold and n(1-p) &gt;= threshold. Sam wrote this.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <param name="samstat">The sample proportion (p-hat)</param>
+            <param name="threshold">The minimum threshold (default 10)</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>True if the normal proportion condition is satisfied</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.IsNormalProportion``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double},System.Double,System.Int32)">
+            <summary>
+            Returns whether the data set passes the normal proportion condition for the projected values.
+            </summary>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.IsApproximatelyNormal(System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Heuristically checks whether the data is approximately normally distributed by
+            verifying that the mean, median, and mode are close to each other.
+            Uses population standard deviation as the tolerance band.
+            </summary>
+            <param name="src">The IEnumerable of type double</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the source is empty</exception>
+            <returns>True if the data appears approximately normally distributed</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.IsApproximatelyNormal``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+            <summary>
+            Heuristically checks whether the projected data is approximately normally distributed.
+            </summary>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.CreateConfidenceInterval(System.Double,System.Double,System.Double)">
             <summary>
-            Creates confidence interval for the given data set.
+            Creates a confidence interval given the mean, critical value, and standard error.
             </summary>
             <param name="mean">The mean of the data set</param>
-            <param name="cv">The critical value of the data set</param>
-            <param name="se">The standard error of the data set</param>
-            <returns>Returns a confidence interval of the data set.</returns>
+            <param name="criticalValue">The critical value (z* or t*)</param>
+            <param name="standardError">The standard error</param>
+            <returns>A tuple containing the lower and upper bounds of the confidence interval</returns>
         </member>
         <member name="M:Ampere.Statistics.EnumerableStats.ConstructTValue(System.Double,System.Double,System.Double,System.Double)">
             <summary>
-            Returns whether if the data set is normally distributed for a mean.
+            Computes the t-statistic for a one-sample t-test.
             </summary>
-            <param name="mean">The mean of the data set</param>
-            <param name="popMean">The population mean</param>
-            <param name="stdDev">The standard deviation of the data set</param>
-            <param name="size">The size of the data set</param>
-            <returns>Constructs the t-critical value</returns>
+            <param name="mean">The sample mean</param>
+            <param name="populationMean">The hypothesized population mean</param>
+            <param name="standardDeviation">The sample standard deviation</param>
+            <param name="sampleSize">The sample size</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when sampleSize is less than 1</exception>
+            <returns>The t-statistic</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.ConstructZValue(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Computes the z-statistic for a one-sample z-test.
+            </summary>
+            <param name="sampleMean">The sample mean</param>
+            <param name="populationMean">The hypothesized population mean</param>
+            <param name="populationStdDev">The known population standard deviation</param>
+            <param name="sampleSize">The sample size</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when sampleSize is less than 1</exception>
+            <returns>The z-statistic</returns>
+        </member>
+        <member name="M:Ampere.Statistics.EnumerableStats.TwoSampleTStatistic(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+            <summary>
+            Computes the two-sample t-statistic (assuming equal variances / pooled).
+            </summary>
+            <param name="x">The first sample</param>
+            <param name="y">The second sample</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when either source is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when either source is empty</exception>
+            <returns>The two-sample pooled t-statistic</returns>
         </member>
         <member name="T:Ampere.Statistics.InsufficientDataSetException">
             <summary>
@@ -1396,28 +1887,20 @@
         </member>
         <member name="M:Ampere.Statistics.InsufficientDataSetException.#ctor(System.String)">
             <summary>
-            Creates a new overloaded InsufficientDataSetException containing a message.
+            Creates a new InsufficientDataSetException containing a message.
             </summary>
             <param name="message">The message of this exception type</param>
         </member>
         <member name="M:Ampere.Statistics.InsufficientDataSetException.#ctor(System.String,System.Exception)">
             <summary>
-            Creates a new overloaded InsufficientDataSetException containing a message and an inner Exception.
+            Creates a new InsufficientDataSetException containing a message and an inner Exception.
             </summary>
             <param name="message">The message of this exception type</param>
             <param name="inner">The inner Exception</param>
         </member>
-        <member name="M:Ampere.Statistics.InsufficientDataSetException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Creates a new overloaded InsufficientDataSetException containing a <see cref="T:System.Runtime.Serialization.SerializationInfo"/> instance
-            and a <see cref="T:System.Runtime.Serialization.StreamingContext"/> instance.
-            </summary>
-            <param name="info">The SerializationInfo instance</param>
-            <param name="context">The StreamingContext instance</param>
-        </member>
         <member name="T:Ampere.Statistics.NoModeException">
             <summary>
-            An exception that is thrown when no Mode exists in the data set.
+            An exception that is thrown when no mode exists in the data set.
             </summary>
         </member>
         <member name="M:Ampere.Statistics.NoModeException.#ctor">
@@ -1427,24 +1910,16 @@
         </member>
         <member name="M:Ampere.Statistics.NoModeException.#ctor(System.String)">
             <summary>
-            Creates a new overloaded NoModeException containing a message.
+            Creates a new NoModeException containing a message.
             </summary>
             <param name="message">The message of this exception type</param>
         </member>
         <member name="M:Ampere.Statistics.NoModeException.#ctor(System.String,System.Exception)">
             <summary>
-            Creates a new overloaded NoModeException containing a message and an inner Exception.
+            Creates a new NoModeException containing a message and an inner Exception.
             </summary>
             <param name="message">The message of this exception type</param>
             <param name="inner">The inner Exception</param>
-        </member>
-        <member name="M:Ampere.Statistics.NoModeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Creates a new overloaded NoModeException containing a <see cref="T:System.Runtime.Serialization.SerializationInfo"/> instance
-            and a <see cref="T:System.Runtime.Serialization.StreamingContext"/> instance.
-            </summary>
-            <param name="info">The SerializationInfo instance</param>
-            <param name="context">The StreamingContext instance</param>
         </member>
         <member name="T:Ampere.Str.StringBuilderUtils">
             <summary>
