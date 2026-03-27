@@ -369,7 +369,7 @@ public static class StringUtils
                 {
                     if (!spaceSplit[i].IsZeroOrOne())
                     {
-                        spaceSplit[i] = new string(Shuffler.Shuffle(spaceSplit[i].ToCharArray()));
+                        spaceSplit[i] = new string(Shuffler.ShuffleCopy((ReadOnlySpan<char>)spaceSplit[i].ToCharArray()));
                     }
                 }
 
@@ -377,7 +377,7 @@ public static class StringUtils
             }
         }
 
-        return new string(Shuffler.Shuffle(str.ToCharArray()));
+        return new string(Shuffler.ShuffleCopy((ReadOnlySpan<char>)str.ToCharArray()));
     }
 
     /// <summary>
