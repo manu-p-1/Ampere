@@ -365,6 +365,272 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronBuilder",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronBuilder.yml\" sourcestartlinenumber=\"1\">A fluent, type-safe builder for constructing <xref href=\"Ampere.Str.Cron.CronExpression\" data-throw-if-not-resolved=\"false\"></xref> instances.</p>\n<p>\nProvides both raw field methods (<xref href=\"Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)\" data-throw-if-not-resolved=\"false\"></xref>) and\nhigh-level convenience methods (<xref href=\"Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"Ampere.Str.Cron.CronBuilder.AtTime(System.Int32%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek%5b%5d)\" data-throw-if-not-resolved=\"false\"></xref>).\n</p>\n<example>\n<pre><code class=\"lang-csharp\">var expr = new CronBuilder()\n    .AtTime(9, 0)\n    .OnDaysOfWeek(DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday)\n    .Build();\n// produces \"0 9 * * 1,3,5\"</code></pre>\n</example>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronExpression.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronExpression",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronExpression.yml\" sourcestartlinenumber=\"1\">An immutable, thread-safe representation of a fully parsed cron expression.</p>\n<p>\nSupports standard 5-field (minute–DOW), 6-field with seconds, and 7-field\nwith seconds + year formats.  Also supports Quartz-style extensions: <code>L</code>,\n<code>W</code>, <code>LW</code>, <code>#</code>, and <code>?</code>.\n</p>\n<p>\nUse <xref href=\"Ampere.Str.Cron.CronParser.Parse(System.String)\" data-throw-if-not-resolved=\"false\"></xref> to obtain instances, or <xref href=\"Ampere.Str.Cron.CronBuilder\" data-throw-if-not-resolved=\"false\"></xref>\nto construct them fluently.\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronField.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronField",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronField.yml\" sourcestartlinenumber=\"1\">Represents a single parsed field (e.g. minutes, hours) of a cron expression.\nA field contains one or more <xref href=\"Ampere.Str.Cron.CronNode\" data-throw-if-not-resolved=\"false\"></xref> elements (the comma-separated parts).\nInstances are immutable and thread-safe.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronFieldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronFieldType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronFieldType",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronFieldType.yml\" sourcestartlinenumber=\"1\">Identifies which field of a cron expression a <xref href=\"Ampere.Str.Cron.CronField\" data-throw-if-not-resolved=\"false\"></xref> represents.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronFormat",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronFormat.yml\" sourcestartlinenumber=\"1\">Specifies the number of fields in a cron expression.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronHashNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronHashNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronHashNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronHashNode.yml\" sourcestartlinenumber=\"1\">Nth day-of-week in the month (<code>5#3</code> = third Friday).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronLastDayNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronLastDayNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronLastDayNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronLastDayNode.yml\" sourcestartlinenumber=\"1\">Last day indicator (<code>L</code>) for day-of-month, optionally with an offset (<code>L-3</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronLastWeekdayNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronLastWeekdayNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronLastWeekdayNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronLastWeekdayNode.yml\" sourcestartlinenumber=\"1\">Last weekday (<code>LW</code>) of the month – shorthand for the last business day.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronLastWeekdayOfMonthNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronLastWeekdayOfMonthNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronLastWeekdayOfMonthNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronLastWeekdayOfMonthNode.yml\" sourcestartlinenumber=\"1\">Last specific weekday of the month (<code>5L</code> = last Friday).\nUsed in the day-of-week field.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronNearestWeekdayNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronNearestWeekdayNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronNearestWeekdayNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronNearestWeekdayNode.yml\" sourcestartlinenumber=\"1\">Nearest weekday to a given day-of-month (<code>15W</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronNode.yml\" sourcestartlinenumber=\"1\">Abstract base for all nodes in a cron-field AST.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronParseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronParseException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronParseException",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronParseException.yml\" sourcestartlinenumber=\"1\">Exception thrown when a cron expression cannot be parsed or validated.\nProvides detailed information about the parse failure including position and field context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronParser",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronParser.yml\" sourcestartlinenumber=\"1\">A high-performance, enterprise-grade cron expression parser supporting standard\n5-field (minute–DOW), 6-field (with seconds), and 7-field (with year) formats,\nplus Quartz-style extensions (<code>L</code>, <code>W</code>, <code>LW</code>, <code>#</code>, <code>?</code>)\nand predefined macros (<code><xref href=\"yearly\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@yearly\" sourcefile=\"api/Ampere.Str.Cron.CronParser.yml\" sourcestartlinenumber=\"4\"></xref></code>, <code><xref href=\"monthly\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@monthly\" sourcefile=\"api/Ampere.Str.Cron.CronParser.yml\" sourcestartlinenumber=\"4\"></xref></code>, etc.).</p>\n<p>\nAll public methods are thread-safe.  Parsed <xref href=\"Ampere.Str.Cron.CronExpression\" data-throw-if-not-resolved=\"false\"></xref> instances\nare immutable and may be cached freely.\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronQuestionMarkNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronQuestionMarkNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronQuestionMarkNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronQuestionMarkNode.yml\" sourcestartlinenumber=\"1\">Question mark (<code>?</code>) – &quot;no specific value&quot;, used in day-of-month / day-of-week.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronRangeNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronRangeNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronRangeNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronRangeNode.yml\" sourcestartlinenumber=\"1\">A contiguous range (e.g. <code>1-5</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronStepNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronStepNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronStepNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronStepNode.yml\" sourcestartlinenumber=\"1\">A step expression (e.g. <code>* /5</code>, <code>1-10/2</code>, <code>0/15</code>).\nThe <xref href=\"Ampere.Str.Cron.CronStepNode.Base\" data-throw-if-not-resolved=\"false\"></xref> is the range or wildcard; the <xref href=\"Ampere.Str.Cron.CronStepNode.Step\" data-throw-if-not-resolved=\"false\"></xref> is the increment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronValueNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronValueNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronValueNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronValueNode.yml\" sourcestartlinenumber=\"1\">A single integer value (e.g. <code>5</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.CronWildcardNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.CronWildcardNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron.CronWildcardNode",
+      "Summary": "<p sourcefile=\"api/Ampere.Str.Cron.CronWildcardNode.yml\" sourcestartlinenumber=\"1\">Wildcard (<code>*</code>) – matches every value in the field's range.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ampere.Str.Cron.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ampere.Str.Cron.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ampere.Str.Cron",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ampere.Str.StringBuilderUtils.yml",
       "output": {
         ".html": {

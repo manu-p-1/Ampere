@@ -1,0 +1,2030 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Str.Cron.CronBuilder
+  commentId: T:Ampere.Str.Cron.CronBuilder
+  id: CronBuilder
+  parent: Ampere.Str.Cron
+  children:
+  - Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)
+  - Ampere.Str.Cron.CronBuilder.AtTimes(System.ValueTuple{System.Int32,System.Int32}[])
+  - Ampere.Str.Cron.CronBuilder.Build
+  - Ampere.Str.Cron.CronBuilder.Daily
+  - Ampere.Str.Cron.CronBuilder.DuringHours(System.Int32,System.Int32)
+  - Ampere.Str.Cron.CronBuilder.EveryHour
+  - Ampere.Str.Cron.CronBuilder.EveryMinute
+  - Ampere.Str.Cron.CronBuilder.EveryNHours(System.Int32)
+  - Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)
+  - Ampere.Str.Cron.CronBuilder.EveryNSeconds(System.Int32)
+  - Ampere.Str.Cron.CronBuilder.InMonths(System.Int32[])
+  - Ampere.Str.Cron.CronBuilder.InYears(System.Int32[])
+  - Ampere.Str.Cron.CronBuilder.Monthly
+  - Ampere.Str.Cron.CronBuilder.OnDaysOfMonth(System.Int32[])
+  - Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])
+  - Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth
+  - Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek(System.DayOfWeek)
+  - Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth
+  - Ampere.Str.Cron.CronBuilder.OnNearestWeekday(System.Int32)
+  - Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek(System.DayOfWeek,System.Int32)
+  - Ampere.Str.Cron.CronBuilder.ToCronString
+  - Ampere.Str.Cron.CronBuilder.ToString
+  - Ampere.Str.Cron.CronBuilder.TryBuild(Ampere.Str.Cron.CronExpression@,System.String@)
+  - Ampere.Str.Cron.CronBuilder.Weekdays
+  - Ampere.Str.Cron.CronBuilder.Weekends
+  - Ampere.Str.Cron.CronBuilder.Weekly
+  - Ampere.Str.Cron.CronBuilder.WithDayOfMonth(System.String)
+  - Ampere.Str.Cron.CronBuilder.WithDayOfWeek(System.String)
+  - Ampere.Str.Cron.CronBuilder.WithHours(System.String)
+  - Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)
+  - Ampere.Str.Cron.CronBuilder.WithMonth(System.String)
+  - Ampere.Str.Cron.CronBuilder.WithSeconds(System.String)
+  - Ampere.Str.Cron.CronBuilder.WithYear(System.String)
+  - Ampere.Str.Cron.CronBuilder.Yearly
+  langs:
+  - csharp
+  - vb
+  name: CronBuilder
+  nameWithType: CronBuilder
+  fullName: Ampere.Str.Cron.CronBuilder
+  type: Class
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: CronBuilder
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 26
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    A fluent, type-safe builder for constructing <xref href="Ampere.Str.Cron.CronExpression" data-throw-if-not-resolved="false"></xref> instances.
+
+
+    <p>
+
+    Provides both raw field methods (<xref href="Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)" data-throw-if-not-resolved="false"></xref>) and
+
+    high-level convenience methods (<xref href="Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Ampere.Str.Cron.CronBuilder.AtTime(System.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>, <xref href="Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek%5b%5d)" data-throw-if-not-resolved="false"></xref>).
+
+    </p>
+
+    <example>
+
+    <pre><code class="lang-csharp">var expr = new CronBuilder()
+        .AtTime(9, 0)
+        .OnDaysOfWeek(DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday)
+        .Build();
+    // produces "0 9 * * 1,3,5"</code></pre>
+
+    </example>
+  example: []
+  syntax:
+    content: public sealed class CronBuilder
+    content.vb: Public NotInheritable Class CronBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Ampere.Str.Cron.CronBuilder.WithSeconds(System.String)
+  commentId: M:Ampere.Str.Cron.CronBuilder.WithSeconds(System.String)
+  id: WithSeconds(System.String)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithSeconds(string)
+  nameWithType: CronBuilder.WithSeconds(string)
+  fullName: Ampere.Str.Cron.CronBuilder.WithSeconds(string)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WithSeconds
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 37
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the seconds field (enables 6-field format). Any valid cron syntax.
+  example: []
+  syntax:
+    content: public CronBuilder WithSeconds(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function WithSeconds(expression As String) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.WithSeconds*
+  nameWithType.vb: CronBuilder.WithSeconds(String)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.WithSeconds(String)
+  name.vb: WithSeconds(String)
+- uid: Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)
+  commentId: M:Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)
+  id: WithMinutes(System.String)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithMinutes(string)
+  nameWithType: CronBuilder.WithMinutes(string)
+  fullName: Ampere.Str.Cron.CronBuilder.WithMinutes(string)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WithMinutes
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 40
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the minutes field. Any valid cron syntax (e.g. <code>*/15</code>, <code>0,30</code>).
+  example: []
+  syntax:
+    content: public CronBuilder WithMinutes(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function WithMinutes(expression As String) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.WithMinutes*
+  nameWithType.vb: CronBuilder.WithMinutes(String)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.WithMinutes(String)
+  name.vb: WithMinutes(String)
+- uid: Ampere.Str.Cron.CronBuilder.WithHours(System.String)
+  commentId: M:Ampere.Str.Cron.CronBuilder.WithHours(System.String)
+  id: WithHours(System.String)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithHours(string)
+  nameWithType: CronBuilder.WithHours(string)
+  fullName: Ampere.Str.Cron.CronBuilder.WithHours(string)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WithHours
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 43
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the hours field.
+  example: []
+  syntax:
+    content: public CronBuilder WithHours(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function WithHours(expression As String) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.WithHours*
+  nameWithType.vb: CronBuilder.WithHours(String)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.WithHours(String)
+  name.vb: WithHours(String)
+- uid: Ampere.Str.Cron.CronBuilder.WithDayOfMonth(System.String)
+  commentId: M:Ampere.Str.Cron.CronBuilder.WithDayOfMonth(System.String)
+  id: WithDayOfMonth(System.String)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithDayOfMonth(string)
+  nameWithType: CronBuilder.WithDayOfMonth(string)
+  fullName: Ampere.Str.Cron.CronBuilder.WithDayOfMonth(string)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WithDayOfMonth
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 46
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the day-of-month field.
+  example: []
+  syntax:
+    content: public CronBuilder WithDayOfMonth(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function WithDayOfMonth(expression As String) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.WithDayOfMonth*
+  nameWithType.vb: CronBuilder.WithDayOfMonth(String)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.WithDayOfMonth(String)
+  name.vb: WithDayOfMonth(String)
+- uid: Ampere.Str.Cron.CronBuilder.WithMonth(System.String)
+  commentId: M:Ampere.Str.Cron.CronBuilder.WithMonth(System.String)
+  id: WithMonth(System.String)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithMonth(string)
+  nameWithType: CronBuilder.WithMonth(string)
+  fullName: Ampere.Str.Cron.CronBuilder.WithMonth(string)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WithMonth
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 49
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the month field.
+  example: []
+  syntax:
+    content: public CronBuilder WithMonth(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function WithMonth(expression As String) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.WithMonth*
+  nameWithType.vb: CronBuilder.WithMonth(String)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.WithMonth(String)
+  name.vb: WithMonth(String)
+- uid: Ampere.Str.Cron.CronBuilder.WithDayOfWeek(System.String)
+  commentId: M:Ampere.Str.Cron.CronBuilder.WithDayOfWeek(System.String)
+  id: WithDayOfWeek(System.String)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithDayOfWeek(string)
+  nameWithType: CronBuilder.WithDayOfWeek(string)
+  fullName: Ampere.Str.Cron.CronBuilder.WithDayOfWeek(string)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WithDayOfWeek
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 52
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the day-of-week field.
+  example: []
+  syntax:
+    content: public CronBuilder WithDayOfWeek(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function WithDayOfWeek(expression As String) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.WithDayOfWeek*
+  nameWithType.vb: CronBuilder.WithDayOfWeek(String)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.WithDayOfWeek(String)
+  name.vb: WithDayOfWeek(String)
+- uid: Ampere.Str.Cron.CronBuilder.WithYear(System.String)
+  commentId: M:Ampere.Str.Cron.CronBuilder.WithYear(System.String)
+  id: WithYear(System.String)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithYear(string)
+  nameWithType: CronBuilder.WithYear(string)
+  fullName: Ampere.Str.Cron.CronBuilder.WithYear(string)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WithYear
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 55
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the year field (enables 7-field format).
+  example: []
+  syntax:
+    content: public CronBuilder WithYear(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function WithYear(expression As String) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.WithYear*
+  nameWithType.vb: CronBuilder.WithYear(String)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.WithYear(String)
+  name.vb: WithYear(String)
+- uid: Ampere.Str.Cron.CronBuilder.EveryMinute
+  commentId: M:Ampere.Str.Cron.CronBuilder.EveryMinute
+  id: EveryMinute
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: EveryMinute()
+  nameWithType: CronBuilder.EveryMinute()
+  fullName: Ampere.Str.Cron.CronBuilder.EveryMinute()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: EveryMinute
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 58
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the expression to fire every minute (<code>* * * * *</code> baseline).
+  example: []
+  syntax:
+    content: public CronBuilder EveryMinute()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function EveryMinute() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.EveryMinute*
+- uid: Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)
+  commentId: M:Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)
+  id: EveryNMinutes(System.Int32)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: EveryNMinutes(int)
+  nameWithType: CronBuilder.EveryNMinutes(int)
+  fullName: Ampere.Str.Cron.CronBuilder.EveryNMinutes(int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: EveryNMinutes
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 61
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the expression to fire every <code class="paramref">n</code> minutes.
+  example: []
+  syntax:
+    content: public CronBuilder EveryNMinutes(int n)
+    parameters:
+    - id: n
+      type: System.Int32
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function EveryNMinutes(n As Integer) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.EveryNMinutes*
+  nameWithType.vb: CronBuilder.EveryNMinutes(Integer)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.EveryNMinutes(Integer)
+  name.vb: EveryNMinutes(Integer)
+- uid: Ampere.Str.Cron.CronBuilder.EveryHour
+  commentId: M:Ampere.Str.Cron.CronBuilder.EveryHour
+  id: EveryHour
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: EveryHour()
+  nameWithType: CronBuilder.EveryHour()
+  fullName: Ampere.Str.Cron.CronBuilder.EveryHour()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: EveryHour
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 69
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the expression to fire every hour at minute 0.
+  example: []
+  syntax:
+    content: public CronBuilder EveryHour()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function EveryHour() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.EveryHour*
+- uid: Ampere.Str.Cron.CronBuilder.EveryNHours(System.Int32)
+  commentId: M:Ampere.Str.Cron.CronBuilder.EveryNHours(System.Int32)
+  id: EveryNHours(System.Int32)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: EveryNHours(int)
+  nameWithType: CronBuilder.EveryNHours(int)
+  fullName: Ampere.Str.Cron.CronBuilder.EveryNHours(int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: EveryNHours
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 72
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the expression to fire every <code class="paramref">n</code> hours at minute 0.
+  example: []
+  syntax:
+    content: public CronBuilder EveryNHours(int n)
+    parameters:
+    - id: n
+      type: System.Int32
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function EveryNHours(n As Integer) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.EveryNHours*
+  nameWithType.vb: CronBuilder.EveryNHours(Integer)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.EveryNHours(Integer)
+  name.vb: EveryNHours(Integer)
+- uid: Ampere.Str.Cron.CronBuilder.EveryNSeconds(System.Int32)
+  commentId: M:Ampere.Str.Cron.CronBuilder.EveryNSeconds(System.Int32)
+  id: EveryNSeconds(System.Int32)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: EveryNSeconds(int)
+  nameWithType: CronBuilder.EveryNSeconds(int)
+  fullName: Ampere.Str.Cron.CronBuilder.EveryNSeconds(int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: EveryNSeconds
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 81
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the expression to fire every <code class="paramref">n</code> seconds (enables seconds field).
+  example: []
+  syntax:
+    content: public CronBuilder EveryNSeconds(int n)
+    parameters:
+    - id: n
+      type: System.Int32
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function EveryNSeconds(n As Integer) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.EveryNSeconds*
+  nameWithType.vb: CronBuilder.EveryNSeconds(Integer)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.EveryNSeconds(Integer)
+  name.vb: EveryNSeconds(Integer)
+- uid: Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)
+  commentId: M:Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)
+  id: AtTime(System.Int32,System.Int32)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: AtTime(int, int)
+  nameWithType: CronBuilder.AtTime(int, int)
+  fullName: Ampere.Str.Cron.CronBuilder.AtTime(int, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: AtTime
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 89
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the time to a specific hour and minute (e.g. 9:30).
+  example: []
+  syntax:
+    content: public CronBuilder AtTime(int hour, int minute)
+    parameters:
+    - id: hour
+      type: System.Int32
+    - id: minute
+      type: System.Int32
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function AtTime(hour As Integer, minute As Integer) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.AtTime*
+  nameWithType.vb: CronBuilder.AtTime(Integer, Integer)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.AtTime(Integer, Integer)
+  name.vb: AtTime(Integer, Integer)
+- uid: Ampere.Str.Cron.CronBuilder.AtTimes(System.ValueTuple{System.Int32,System.Int32}[])
+  commentId: M:Ampere.Str.Cron.CronBuilder.AtTimes(System.ValueTuple{System.Int32,System.Int32}[])
+  id: AtTimes(System.ValueTuple{System.Int32,System.Int32}[])
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: AtTimes(params (int Hour, int Minute)[])
+  nameWithType: CronBuilder.AtTimes(params (int Hour, int Minute)[])
+  fullName: Ampere.Str.Cron.CronBuilder.AtTimes(params (int Hour, int Minute)[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: AtTimes
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 99
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets the time to multiple specific times during the day.
+  example: []
+  syntax:
+    content: public CronBuilder AtTimes(params (int Hour, int Minute)[] times)
+    parameters:
+    - id: times
+      type: System.ValueTuple{System.Int32,System.Int32}[]
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function AtTimes(ParamArray times As (Hour As Integer, Minute As Integer)()) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.AtTimes*
+  nameWithType.vb: CronBuilder.AtTimes(ParamArray (Hour As Integer, Minute As Integer)())
+  fullName.vb: Ampere.Str.Cron.CronBuilder.AtTimes(ParamArray (Hour As Integer, Minute As Integer)())
+  name.vb: AtTimes(ParamArray (Hour As Integer, Minute As Integer)())
+- uid: Ampere.Str.Cron.CronBuilder.DuringHours(System.Int32,System.Int32)
+  commentId: M:Ampere.Str.Cron.CronBuilder.DuringHours(System.Int32,System.Int32)
+  id: DuringHours(System.Int32,System.Int32)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: DuringHours(int, int)
+  nameWithType: CronBuilder.DuringHours(int, int)
+  fullName: Ampere.Str.Cron.CronBuilder.DuringHours(int, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: DuringHours
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 135
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Sets hours to a range (e.g. 9–17 for business hours).
+  example: []
+  syntax:
+    content: public CronBuilder DuringHours(int startHour, int endHour)
+    parameters:
+    - id: startHour
+      type: System.Int32
+    - id: endHour
+      type: System.Int32
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function DuringHours(startHour As Integer, endHour As Integer) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.DuringHours*
+  nameWithType.vb: CronBuilder.DuringHours(Integer, Integer)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.DuringHours(Integer, Integer)
+  name.vb: DuringHours(Integer, Integer)
+- uid: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])
+  commentId: M:Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])
+  id: OnDaysOfWeek(System.DayOfWeek[])
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: OnDaysOfWeek(params DayOfWeek[])
+  nameWithType: CronBuilder.OnDaysOfWeek(params DayOfWeek[])
+  fullName: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(params System.DayOfWeek[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: OnDaysOfWeek
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 146
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Restricts to the given days of the week.
+  example: []
+  syntax:
+    content: public CronBuilder OnDaysOfWeek(params DayOfWeek[] days)
+    parameters:
+    - id: days
+      type: System.DayOfWeek[]
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function OnDaysOfWeek(ParamArray days As DayOfWeek()) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek*
+  nameWithType.vb: CronBuilder.OnDaysOfWeek(ParamArray DayOfWeek())
+  fullName.vb: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(ParamArray System.DayOfWeek())
+  name.vb: OnDaysOfWeek(ParamArray DayOfWeek())
+- uid: Ampere.Str.Cron.CronBuilder.Weekdays
+  commentId: M:Ampere.Str.Cron.CronBuilder.Weekdays
+  id: Weekdays
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: Weekdays()
+  nameWithType: CronBuilder.Weekdays()
+  fullName: Ampere.Str.Cron.CronBuilder.Weekdays()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Weekdays
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 155
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Shorthand for Monday–Friday.
+  example: []
+  syntax:
+    content: public CronBuilder Weekdays()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function Weekdays() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.Weekdays*
+- uid: Ampere.Str.Cron.CronBuilder.Weekends
+  commentId: M:Ampere.Str.Cron.CronBuilder.Weekends
+  id: Weekends
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: Weekends()
+  nameWithType: CronBuilder.Weekends()
+  fullName: Ampere.Str.Cron.CronBuilder.Weekends()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Weekends
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 158
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Shorthand for Saturday and Sunday.
+  example: []
+  syntax:
+    content: public CronBuilder Weekends()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function Weekends() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.Weekends*
+- uid: Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek(System.DayOfWeek,System.Int32)
+  commentId: M:Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek(System.DayOfWeek,System.Int32)
+  id: OnNthDayOfWeek(System.DayOfWeek,System.Int32)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: OnNthDayOfWeek(DayOfWeek, int)
+  nameWithType: CronBuilder.OnNthDayOfWeek(DayOfWeek, int)
+  fullName: Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek(System.DayOfWeek, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: OnNthDayOfWeek
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 161
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Fires on the Nth occurrence of a weekday in the month (e.g. 2nd Tuesday).
+  example: []
+  syntax:
+    content: public CronBuilder OnNthDayOfWeek(DayOfWeek day, int nth)
+    parameters:
+    - id: day
+      type: System.DayOfWeek
+    - id: nth
+      type: System.Int32
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function OnNthDayOfWeek(day As DayOfWeek, nth As Integer) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek*
+  nameWithType.vb: CronBuilder.OnNthDayOfWeek(DayOfWeek, Integer)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek(System.DayOfWeek, Integer)
+  name.vb: OnNthDayOfWeek(DayOfWeek, Integer)
+- uid: Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek(System.DayOfWeek)
+  commentId: M:Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek(System.DayOfWeek)
+  id: OnLastDayOfWeek(System.DayOfWeek)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: OnLastDayOfWeek(DayOfWeek)
+  nameWithType: CronBuilder.OnLastDayOfWeek(DayOfWeek)
+  fullName: Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek(System.DayOfWeek)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: OnLastDayOfWeek
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 169
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Fires on the last occurrence of a weekday in the month.
+  example: []
+  syntax:
+    content: public CronBuilder OnLastDayOfWeek(DayOfWeek day)
+    parameters:
+    - id: day
+      type: System.DayOfWeek
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function OnLastDayOfWeek(day As DayOfWeek) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek*
+- uid: Ampere.Str.Cron.CronBuilder.OnDaysOfMonth(System.Int32[])
+  commentId: M:Ampere.Str.Cron.CronBuilder.OnDaysOfMonth(System.Int32[])
+  id: OnDaysOfMonth(System.Int32[])
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: OnDaysOfMonth(params int[])
+  nameWithType: CronBuilder.OnDaysOfMonth(params int[])
+  fullName: Ampere.Str.Cron.CronBuilder.OnDaysOfMonth(params int[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: OnDaysOfMonth
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 172
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Restricts to specific days of the month.
+  example: []
+  syntax:
+    content: public CronBuilder OnDaysOfMonth(params int[] days)
+    parameters:
+    - id: days
+      type: System.Int32[]
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function OnDaysOfMonth(ParamArray days As Integer()) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.OnDaysOfMonth*
+  nameWithType.vb: CronBuilder.OnDaysOfMonth(ParamArray Integer())
+  fullName.vb: Ampere.Str.Cron.CronBuilder.OnDaysOfMonth(ParamArray Integer())
+  name.vb: OnDaysOfMonth(ParamArray Integer())
+- uid: Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth
+  commentId: M:Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth
+  id: OnLastDayOfMonth
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: OnLastDayOfMonth()
+  nameWithType: CronBuilder.OnLastDayOfMonth()
+  fullName: Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: OnLastDayOfMonth
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 182
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Fires on the last day of every month (<code>L</code>).
+  example: []
+  syntax:
+    content: public CronBuilder OnLastDayOfMonth()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function OnLastDayOfMonth() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth*
+- uid: Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth
+  commentId: M:Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth
+  id: OnLastWeekdayOfMonth
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: OnLastWeekdayOfMonth()
+  nameWithType: CronBuilder.OnLastWeekdayOfMonth()
+  fullName: Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: OnLastWeekdayOfMonth
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 185
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Fires on the last weekday (Mon–Fri) of every month (<code>LW</code>).
+  example: []
+  syntax:
+    content: public CronBuilder OnLastWeekdayOfMonth()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function OnLastWeekdayOfMonth() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth*
+- uid: Ampere.Str.Cron.CronBuilder.OnNearestWeekday(System.Int32)
+  commentId: M:Ampere.Str.Cron.CronBuilder.OnNearestWeekday(System.Int32)
+  id: OnNearestWeekday(System.Int32)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: OnNearestWeekday(int)
+  nameWithType: CronBuilder.OnNearestWeekday(int)
+  fullName: Ampere.Str.Cron.CronBuilder.OnNearestWeekday(int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: OnNearestWeekday
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 188
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Fires on the nearest weekday to the given day of the month.
+  example: []
+  syntax:
+    content: public CronBuilder OnNearestWeekday(int day)
+    parameters:
+    - id: day
+      type: System.Int32
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function OnNearestWeekday(day As Integer) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.OnNearestWeekday*
+  nameWithType.vb: CronBuilder.OnNearestWeekday(Integer)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.OnNearestWeekday(Integer)
+  name.vb: OnNearestWeekday(Integer)
+- uid: Ampere.Str.Cron.CronBuilder.InMonths(System.Int32[])
+  commentId: M:Ampere.Str.Cron.CronBuilder.InMonths(System.Int32[])
+  id: InMonths(System.Int32[])
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: InMonths(params int[])
+  nameWithType: CronBuilder.InMonths(params int[])
+  fullName: Ampere.Str.Cron.CronBuilder.InMonths(params int[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: InMonths
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 196
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Restricts to specific months (1–12).
+  example: []
+  syntax:
+    content: public CronBuilder InMonths(params int[] months)
+    parameters:
+    - id: months
+      type: System.Int32[]
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function InMonths(ParamArray months As Integer()) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.InMonths*
+  nameWithType.vb: CronBuilder.InMonths(ParamArray Integer())
+  fullName.vb: Ampere.Str.Cron.CronBuilder.InMonths(ParamArray Integer())
+  name.vb: InMonths(ParamArray Integer())
+- uid: Ampere.Str.Cron.CronBuilder.InYears(System.Int32[])
+  commentId: M:Ampere.Str.Cron.CronBuilder.InYears(System.Int32[])
+  id: InYears(System.Int32[])
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: InYears(params int[])
+  nameWithType: CronBuilder.InYears(params int[])
+  fullName: Ampere.Str.Cron.CronBuilder.InYears(params int[])
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: InYears
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 206
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Restricts to specific years (enables 7-field format).
+  example: []
+  syntax:
+    content: public CronBuilder InYears(params int[] years)
+    parameters:
+    - id: years
+      type: System.Int32[]
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function InYears(ParamArray years As Integer()) As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.InYears*
+  nameWithType.vb: CronBuilder.InYears(ParamArray Integer())
+  fullName.vb: Ampere.Str.Cron.CronBuilder.InYears(ParamArray Integer())
+  name.vb: InYears(ParamArray Integer())
+- uid: Ampere.Str.Cron.CronBuilder.Daily
+  commentId: M:Ampere.Str.Cron.CronBuilder.Daily
+  id: Daily
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: Daily()
+  nameWithType: CronBuilder.Daily()
+  fullName: Ampere.Str.Cron.CronBuilder.Daily()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Daily
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 217
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Every day at midnight.
+  example: []
+  syntax:
+    content: public CronBuilder Daily()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function Daily() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.Daily*
+- uid: Ampere.Str.Cron.CronBuilder.Weekly
+  commentId: M:Ampere.Str.Cron.CronBuilder.Weekly
+  id: Weekly
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: Weekly()
+  nameWithType: CronBuilder.Weekly()
+  fullName: Ampere.Str.Cron.CronBuilder.Weekly()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Weekly
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 220
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Every Sunday at midnight.
+  example: []
+  syntax:
+    content: public CronBuilder Weekly()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function Weekly() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.Weekly*
+- uid: Ampere.Str.Cron.CronBuilder.Monthly
+  commentId: M:Ampere.Str.Cron.CronBuilder.Monthly
+  id: Monthly
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: Monthly()
+  nameWithType: CronBuilder.Monthly()
+  fullName: Ampere.Str.Cron.CronBuilder.Monthly()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Monthly
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 223
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: First of every month at midnight.
+  example: []
+  syntax:
+    content: public CronBuilder Monthly()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function Monthly() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.Monthly*
+- uid: Ampere.Str.Cron.CronBuilder.Yearly
+  commentId: M:Ampere.Str.Cron.CronBuilder.Yearly
+  id: Yearly
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: Yearly()
+  nameWithType: CronBuilder.Yearly()
+  fullName: Ampere.Str.Cron.CronBuilder.Yearly()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Yearly
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 226
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: January 1 at midnight each year.
+  example: []
+  syntax:
+    content: public CronBuilder Yearly()
+    return:
+      type: Ampere.Str.Cron.CronBuilder
+    content.vb: Public Function Yearly() As CronBuilder
+  overload: Ampere.Str.Cron.CronBuilder.Yearly*
+- uid: Ampere.Str.Cron.CronBuilder.Build
+  commentId: M:Ampere.Str.Cron.CronBuilder.Build
+  id: Build
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: CronBuilder.Build()
+  fullName: Ampere.Str.Cron.CronBuilder.Build()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Build
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 232
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Builds and validates the <xref href="Ampere.Str.Cron.CronExpression" data-throw-if-not-resolved="false"></xref>.
+
+    Throws <xref href="Ampere.Str.Cron.CronParseException" data-throw-if-not-resolved="false"></xref> if the assembled fields are invalid.
+  example: []
+  syntax:
+    content: public CronExpression Build()
+    return:
+      type: Ampere.Str.Cron.CronExpression
+    content.vb: Public Function Build() As CronExpression
+  overload: Ampere.Str.Cron.CronBuilder.Build*
+- uid: Ampere.Str.Cron.CronBuilder.TryBuild(Ampere.Str.Cron.CronExpression@,System.String@)
+  commentId: M:Ampere.Str.Cron.CronBuilder.TryBuild(Ampere.Str.Cron.CronExpression@,System.String@)
+  id: TryBuild(Ampere.Str.Cron.CronExpression@,System.String@)
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: TryBuild(out CronExpression?, out string?)
+  nameWithType: CronBuilder.TryBuild(out CronExpression?, out string?)
+  fullName: Ampere.Str.Cron.CronBuilder.TryBuild(out Ampere.Str.Cron.CronExpression?, out string?)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: TryBuild
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 244
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Attempts to build the expression without throwing.
+  example: []
+  syntax:
+    content: public bool TryBuild(out CronExpression? result, out string? error)
+    parameters:
+    - id: result
+      type: Ampere.Str.Cron.CronExpression
+      description: The built expression, or <code>null</code>.
+    - id: error
+      type: System.String
+      description: A description of the failure, or <code>null</code>.
+    return:
+      type: System.Boolean
+      description: <code>true</code> on success.
+    content.vb: Public Function TryBuild(result As CronExpression, [error] As String) As Boolean
+  overload: Ampere.Str.Cron.CronBuilder.TryBuild*
+  nameWithType.vb: CronBuilder.TryBuild(CronExpression, String)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.TryBuild(Ampere.Str.Cron.CronExpression, String)
+  name.vb: TryBuild(CronExpression, String)
+- uid: Ampere.Str.Cron.CronBuilder.ToCronString
+  commentId: M:Ampere.Str.Cron.CronBuilder.ToCronString
+  id: ToCronString
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToCronString()
+  nameWithType: CronBuilder.ToCronString()
+  fullName: Ampere.Str.Cron.CronBuilder.ToCronString()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ToCronString
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 264
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Returns the cron string that <xref href="Ampere.Str.Cron.CronBuilder.Build" data-throw-if-not-resolved="false"></xref> would parse,
+
+    without performing validation.
+  example: []
+  syntax:
+    content: public string ToCronString()
+    return:
+      type: System.String
+    content.vb: Public Function ToCronString() As String
+  overload: Ampere.Str.Cron.CronBuilder.ToCronString*
+- uid: Ampere.Str.Cron.CronBuilder.ToString
+  commentId: M:Ampere.Str.Cron.CronBuilder.ToString
+  id: ToString
+  parent: Ampere.Str.Cron.CronBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: CronBuilder.ToString()
+  fullName: Ampere.Str.Cron.CronBuilder.ToString()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronBuilder.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ToString
+    path: ../Ampere/Str/Cron/CronBuilder.cs
+    startLine: 270
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Returns a human-readable description of what the built expression would produce.
+
+    Returns the cron string if validation fails.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Ampere.Str.Cron.CronBuilder.ToString*
+references:
+- uid: Ampere.Str.Cron.CronExpression
+  commentId: T:Ampere.Str.Cron.CronExpression
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronExpression.html
+  name: CronExpression
+  nameWithType: CronExpression
+  fullName: Ampere.Str.Cron.CronExpression
+- uid: Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)
+  commentId: M:Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)
+  isExternal: true
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithMinutes_System_String_
+  name: WithMinutes(string)
+  nameWithType: CronBuilder.WithMinutes(string)
+  fullName: Ampere.Str.Cron.CronBuilder.WithMinutes(string)
+  nameWithType.vb: CronBuilder.WithMinutes(String)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.WithMinutes(String)
+  name.vb: WithMinutes(String)
+  spec.csharp:
+  - uid: Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)
+    name: WithMinutes
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithMinutes_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)
+    name: WithMinutes
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithMinutes_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)
+  commentId: M:Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)
+  isExternal: true
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_EveryNMinutes_System_Int32_
+  name: EveryNMinutes(int)
+  nameWithType: CronBuilder.EveryNMinutes(int)
+  fullName: Ampere.Str.Cron.CronBuilder.EveryNMinutes(int)
+  nameWithType.vb: CronBuilder.EveryNMinutes(Integer)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.EveryNMinutes(Integer)
+  name.vb: EveryNMinutes(Integer)
+  spec.csharp:
+  - uid: Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)
+    name: EveryNMinutes
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_EveryNMinutes_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)
+    name: EveryNMinutes
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_EveryNMinutes_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)
+  commentId: M:Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)
+  isExternal: true
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_AtTime_System_Int32_System_Int32_
+  name: AtTime(int, int)
+  nameWithType: CronBuilder.AtTime(int, int)
+  fullName: Ampere.Str.Cron.CronBuilder.AtTime(int, int)
+  nameWithType.vb: CronBuilder.AtTime(Integer, Integer)
+  fullName.vb: Ampere.Str.Cron.CronBuilder.AtTime(Integer, Integer)
+  name.vb: AtTime(Integer, Integer)
+  spec.csharp:
+  - uid: Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)
+    name: AtTime
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_AtTime_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)
+    name: AtTime
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_AtTime_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])
+  commentId: M:Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])
+  isExternal: true
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnDaysOfWeek_System_DayOfWeek___
+  name: OnDaysOfWeek(params DayOfWeek[])
+  nameWithType: CronBuilder.OnDaysOfWeek(params DayOfWeek[])
+  fullName: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(params System.DayOfWeek[])
+  nameWithType.vb: CronBuilder.OnDaysOfWeek(ParamArray DayOfWeek())
+  fullName.vb: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(ParamArray System.DayOfWeek())
+  name.vb: OnDaysOfWeek(ParamArray DayOfWeek())
+  spec.csharp:
+  - uid: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])
+    name: OnDaysOfWeek
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnDaysOfWeek_System_DayOfWeek___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.DayOfWeek
+    name: DayOfWeek
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dayofweek
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])
+    name: OnDaysOfWeek
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnDaysOfWeek_System_DayOfWeek___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.DayOfWeek
+    name: DayOfWeek
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dayofweek
+  - name: (
+  - name: )
+  - name: )
+- uid: Ampere.Str.Cron
+  commentId: N:Ampere.Str.Cron
+  href: Ampere.html
+  name: Ampere.Str.Cron
+  nameWithType: Ampere.Str.Cron
+  fullName: Ampere.Str.Cron
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Ampere.Str.Cron.CronBuilder.WithSeconds*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.WithSeconds
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithSeconds_System_String_
+  name: WithSeconds
+  nameWithType: CronBuilder.WithSeconds
+  fullName: Ampere.Str.Cron.CronBuilder.WithSeconds
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Ampere.Str.Cron.CronBuilder
+  commentId: T:Ampere.Str.Cron.CronBuilder
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronBuilder.html
+  name: CronBuilder
+  nameWithType: CronBuilder
+  fullName: Ampere.Str.Cron.CronBuilder
+- uid: Ampere.Str.Cron.CronBuilder.WithMinutes*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.WithMinutes
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithMinutes_System_String_
+  name: WithMinutes
+  nameWithType: CronBuilder.WithMinutes
+  fullName: Ampere.Str.Cron.CronBuilder.WithMinutes
+- uid: Ampere.Str.Cron.CronBuilder.WithHours*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.WithHours
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithHours_System_String_
+  name: WithHours
+  nameWithType: CronBuilder.WithHours
+  fullName: Ampere.Str.Cron.CronBuilder.WithHours
+- uid: Ampere.Str.Cron.CronBuilder.WithDayOfMonth*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.WithDayOfMonth
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithDayOfMonth_System_String_
+  name: WithDayOfMonth
+  nameWithType: CronBuilder.WithDayOfMonth
+  fullName: Ampere.Str.Cron.CronBuilder.WithDayOfMonth
+- uid: Ampere.Str.Cron.CronBuilder.WithMonth*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.WithMonth
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithMonth_System_String_
+  name: WithMonth
+  nameWithType: CronBuilder.WithMonth
+  fullName: Ampere.Str.Cron.CronBuilder.WithMonth
+- uid: Ampere.Str.Cron.CronBuilder.WithDayOfWeek*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.WithDayOfWeek
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithDayOfWeek_System_String_
+  name: WithDayOfWeek
+  nameWithType: CronBuilder.WithDayOfWeek
+  fullName: Ampere.Str.Cron.CronBuilder.WithDayOfWeek
+- uid: Ampere.Str.Cron.CronBuilder.WithYear*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.WithYear
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithYear_System_String_
+  name: WithYear
+  nameWithType: CronBuilder.WithYear
+  fullName: Ampere.Str.Cron.CronBuilder.WithYear
+- uid: Ampere.Str.Cron.CronBuilder.EveryMinute*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.EveryMinute
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_EveryMinute
+  name: EveryMinute
+  nameWithType: CronBuilder.EveryMinute
+  fullName: Ampere.Str.Cron.CronBuilder.EveryMinute
+- uid: Ampere.Str.Cron.CronBuilder.EveryNMinutes*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.EveryNMinutes
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_EveryNMinutes_System_Int32_
+  name: EveryNMinutes
+  nameWithType: CronBuilder.EveryNMinutes
+  fullName: Ampere.Str.Cron.CronBuilder.EveryNMinutes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Ampere.Str.Cron.CronBuilder.EveryHour*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.EveryHour
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_EveryHour
+  name: EveryHour
+  nameWithType: CronBuilder.EveryHour
+  fullName: Ampere.Str.Cron.CronBuilder.EveryHour
+- uid: Ampere.Str.Cron.CronBuilder.EveryNHours*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.EveryNHours
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_EveryNHours_System_Int32_
+  name: EveryNHours
+  nameWithType: CronBuilder.EveryNHours
+  fullName: Ampere.Str.Cron.CronBuilder.EveryNHours
+- uid: Ampere.Str.Cron.CronBuilder.EveryNSeconds*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.EveryNSeconds
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_EveryNSeconds_System_Int32_
+  name: EveryNSeconds
+  nameWithType: CronBuilder.EveryNSeconds
+  fullName: Ampere.Str.Cron.CronBuilder.EveryNSeconds
+- uid: Ampere.Str.Cron.CronBuilder.AtTime*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.AtTime
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_AtTime_System_Int32_System_Int32_
+  name: AtTime
+  nameWithType: CronBuilder.AtTime
+  fullName: Ampere.Str.Cron.CronBuilder.AtTime
+- uid: Ampere.Str.Cron.CronBuilder.AtTimes*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.AtTimes
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_AtTimes_System_ValueTuple_System_Int32_System_Int32____
+  name: AtTimes
+  nameWithType: CronBuilder.AtTimes
+  fullName: Ampere.Str.Cron.CronBuilder.AtTimes
+- uid: System.ValueTuple{System.Int32,System.Int32}[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: (int Hour, int Minute)[]
+  nameWithType: (int Hour, int Minute)[]
+  fullName: (int Hour, int Minute)[]
+  nameWithType.vb: (Hour As Integer, Minute As Integer)()
+  fullName.vb: (Hour As Integer, Minute As Integer)()
+  name.vb: (Hour As Integer, Minute As Integer)()
+  spec.csharp:
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.Hour
+    name: Hour
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.hour
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.Minute
+    name: Minute
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.minute
+  - name: )
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Int32,System.Int32}.Hour
+    name: Hour
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.hour
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.Minute
+    name: Minute
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.minute
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronBuilder.DuringHours*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.DuringHours
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_DuringHours_System_Int32_System_Int32_
+  name: DuringHours
+  nameWithType: CronBuilder.DuringHours
+  fullName: Ampere.Str.Cron.CronBuilder.DuringHours
+- uid: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.OnDaysOfWeek
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnDaysOfWeek_System_DayOfWeek___
+  name: OnDaysOfWeek
+  nameWithType: CronBuilder.OnDaysOfWeek
+  fullName: Ampere.Str.Cron.CronBuilder.OnDaysOfWeek
+- uid: System.DayOfWeek[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dayofweek
+  name: DayOfWeek[]
+  nameWithType: DayOfWeek[]
+  fullName: System.DayOfWeek[]
+  nameWithType.vb: DayOfWeek()
+  fullName.vb: System.DayOfWeek()
+  name.vb: DayOfWeek()
+  spec.csharp:
+  - uid: System.DayOfWeek
+    name: DayOfWeek
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dayofweek
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.DayOfWeek
+    name: DayOfWeek
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dayofweek
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronBuilder.Weekdays*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.Weekdays
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Weekdays
+  name: Weekdays
+  nameWithType: CronBuilder.Weekdays
+  fullName: Ampere.Str.Cron.CronBuilder.Weekdays
+- uid: Ampere.Str.Cron.CronBuilder.Weekends*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.Weekends
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Weekends
+  name: Weekends
+  nameWithType: CronBuilder.Weekends
+  fullName: Ampere.Str.Cron.CronBuilder.Weekends
+- uid: Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnNthDayOfWeek_System_DayOfWeek_System_Int32_
+  name: OnNthDayOfWeek
+  nameWithType: CronBuilder.OnNthDayOfWeek
+  fullName: Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek
+- uid: System.DayOfWeek
+  commentId: T:System.DayOfWeek
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dayofweek
+  name: DayOfWeek
+  nameWithType: DayOfWeek
+  fullName: System.DayOfWeek
+- uid: Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnLastDayOfWeek_System_DayOfWeek_
+  name: OnLastDayOfWeek
+  nameWithType: CronBuilder.OnLastDayOfWeek
+  fullName: Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek
+- uid: Ampere.Str.Cron.CronBuilder.OnDaysOfMonth*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.OnDaysOfMonth
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnDaysOfMonth_System_Int32___
+  name: OnDaysOfMonth
+  nameWithType: CronBuilder.OnDaysOfMonth
+  fullName: Ampere.Str.Cron.CronBuilder.OnDaysOfMonth
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnLastDayOfMonth
+  name: OnLastDayOfMonth
+  nameWithType: CronBuilder.OnLastDayOfMonth
+  fullName: Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth
+- uid: Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnLastWeekdayOfMonth
+  name: OnLastWeekdayOfMonth
+  nameWithType: CronBuilder.OnLastWeekdayOfMonth
+  fullName: Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth
+- uid: Ampere.Str.Cron.CronBuilder.OnNearestWeekday*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.OnNearestWeekday
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnNearestWeekday_System_Int32_
+  name: OnNearestWeekday
+  nameWithType: CronBuilder.OnNearestWeekday
+  fullName: Ampere.Str.Cron.CronBuilder.OnNearestWeekday
+- uid: Ampere.Str.Cron.CronBuilder.InMonths*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.InMonths
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_InMonths_System_Int32___
+  name: InMonths
+  nameWithType: CronBuilder.InMonths
+  fullName: Ampere.Str.Cron.CronBuilder.InMonths
+- uid: Ampere.Str.Cron.CronBuilder.InYears*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.InYears
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_InYears_System_Int32___
+  name: InYears
+  nameWithType: CronBuilder.InYears
+  fullName: Ampere.Str.Cron.CronBuilder.InYears
+- uid: Ampere.Str.Cron.CronBuilder.Daily*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.Daily
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Daily
+  name: Daily
+  nameWithType: CronBuilder.Daily
+  fullName: Ampere.Str.Cron.CronBuilder.Daily
+- uid: Ampere.Str.Cron.CronBuilder.Weekly*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.Weekly
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Weekly
+  name: Weekly
+  nameWithType: CronBuilder.Weekly
+  fullName: Ampere.Str.Cron.CronBuilder.Weekly
+- uid: Ampere.Str.Cron.CronBuilder.Monthly*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.Monthly
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Monthly
+  name: Monthly
+  nameWithType: CronBuilder.Monthly
+  fullName: Ampere.Str.Cron.CronBuilder.Monthly
+- uid: Ampere.Str.Cron.CronBuilder.Yearly*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.Yearly
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Yearly
+  name: Yearly
+  nameWithType: CronBuilder.Yearly
+  fullName: Ampere.Str.Cron.CronBuilder.Yearly
+- uid: Ampere.Str.Cron.CronParseException
+  commentId: T:Ampere.Str.Cron.CronParseException
+  href: Ampere.Str.Cron.CronParseException.html
+  name: CronParseException
+  nameWithType: CronParseException
+  fullName: Ampere.Str.Cron.CronParseException
+- uid: Ampere.Str.Cron.CronBuilder.Build*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.Build
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Build
+  name: Build
+  nameWithType: CronBuilder.Build
+  fullName: Ampere.Str.Cron.CronBuilder.Build
+- uid: Ampere.Str.Cron.CronBuilder.TryBuild*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.TryBuild
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_TryBuild_Ampere_Str_Cron_CronExpression__System_String__
+  name: TryBuild
+  nameWithType: CronBuilder.TryBuild
+  fullName: Ampere.Str.Cron.CronBuilder.TryBuild
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Ampere.Str.Cron.CronBuilder.Build
+  commentId: M:Ampere.Str.Cron.CronBuilder.Build
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Build
+  name: Build()
+  nameWithType: CronBuilder.Build()
+  fullName: Ampere.Str.Cron.CronBuilder.Build()
+  spec.csharp:
+  - uid: Ampere.Str.Cron.CronBuilder.Build
+    name: Build
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Build
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Ampere.Str.Cron.CronBuilder.Build
+    name: Build
+    href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Build
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronBuilder.ToCronString*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.ToCronString
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_ToCronString
+  name: ToCronString
+  nameWithType: CronBuilder.ToCronString
+  fullName: Ampere.Str.Cron.CronBuilder.ToCronString
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronBuilder.ToString*
+  commentId: Overload:Ampere.Str.Cron.CronBuilder.ToString
+  href: Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_ToString
+  name: ToString
+  nameWithType: CronBuilder.ToString
+  fullName: Ampere.Str.Cron.CronBuilder.ToString

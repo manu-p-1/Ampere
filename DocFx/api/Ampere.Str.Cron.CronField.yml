@@ -1,0 +1,1313 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Str.Cron.CronField
+  commentId: T:Ampere.Str.Cron.CronField
+  id: CronField
+  parent: Ampere.Str.Cron
+  children:
+  - Ampere.Str.Cron.CronField.FieldType
+  - Ampere.Str.Cron.CronField.GetFieldRange(Ampere.Str.Cron.CronFieldType)
+  - Ampere.Str.Cron.CronField.GetFirstMatchingValue
+  - Ampere.Str.Cron.CronField.GetMatchingValues
+  - Ampere.Str.Cron.CronField.GetMatchingValues(System.Int32,System.Int32)
+  - Ampere.Str.Cron.CronField.GetNextMatchingValue(System.Int32)
+  - Ampere.Str.Cron.CronField.GetNextMatchingValue(System.Int32,System.Int32,System.Int32)
+  - Ampere.Str.Cron.CronField.IsContextDependent
+  - Ampere.Str.Cron.CronField.IsQuestionMark
+  - Ampere.Str.Cron.CronField.IsWildcard
+  - Ampere.Str.Cron.CronField.Matches(System.Int32)
+  - Ampere.Str.Cron.CronField.Matches(System.Int32,System.Int32,System.Int32)
+  - Ampere.Str.Cron.CronField.Nodes
+  - Ampere.Str.Cron.CronField.RawValue
+  - Ampere.Str.Cron.CronField.ToCronString
+  - Ampere.Str.Cron.CronField.ToString
+  langs:
+  - csharp
+  - vb
+  name: CronField
+  nameWithType: CronField
+  fullName: Ampere.Str.Cron.CronField
+  type: Class
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: CronField
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 269
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Represents a single parsed field (e.g. minutes, hours) of a cron expression.
+
+    A field contains one or more <xref href="Ampere.Str.Cron.CronNode" data-throw-if-not-resolved="false"></xref> elements (the comma-separated parts).
+
+    Instances are immutable and thread-safe.
+  example: []
+  syntax:
+    content: public sealed class CronField
+    content.vb: Public NotInheritable Class CronField
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Ampere.Str.Cron.CronField.FieldType
+  commentId: P:Ampere.Str.Cron.CronField.FieldType
+  id: FieldType
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: FieldType
+  nameWithType: CronField.FieldType
+  fullName: Ampere.Str.Cron.CronField.FieldType
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: FieldType
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 272
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets which part of the cron expression this field represents.
+  example: []
+  syntax:
+    content: public CronFieldType FieldType { get; }
+    parameters: []
+    return:
+      type: Ampere.Str.Cron.CronFieldType
+    content.vb: Public ReadOnly Property FieldType As CronFieldType
+  overload: Ampere.Str.Cron.CronField.FieldType*
+- uid: Ampere.Str.Cron.CronField.Nodes
+  commentId: P:Ampere.Str.Cron.CronField.Nodes
+  id: Nodes
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: Nodes
+  nameWithType: CronField.Nodes
+  fullName: Ampere.Str.Cron.CronField.Nodes
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Nodes
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 275
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the AST nodes that compose this field.
+  example: []
+  syntax:
+    content: public IReadOnlyList<CronNode> Nodes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Ampere.Str.Cron.CronNode}
+    content.vb: Public ReadOnly Property Nodes As IReadOnlyList(Of CronNode)
+  overload: Ampere.Str.Cron.CronField.Nodes*
+- uid: Ampere.Str.Cron.CronField.RawValue
+  commentId: P:Ampere.Str.Cron.CronField.RawValue
+  id: RawValue
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: RawValue
+  nameWithType: CronField.RawValue
+  fullName: Ampere.Str.Cron.CronField.RawValue
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: RawValue
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 278
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the raw text that was parsed to produce this field.
+  example: []
+  syntax:
+    content: public string RawValue { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property RawValue As String
+  overload: Ampere.Str.Cron.CronField.RawValue*
+- uid: Ampere.Str.Cron.CronField.IsWildcard
+  commentId: P:Ampere.Str.Cron.CronField.IsWildcard
+  id: IsWildcard
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: IsWildcard
+  nameWithType: CronField.IsWildcard
+  fullName: Ampere.Str.Cron.CronField.IsWildcard
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: IsWildcard
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 281
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns <code>true</code> if this field is a bare wildcard (<code>*</code>).
+  example: []
+  syntax:
+    content: public bool IsWildcard { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsWildcard As Boolean
+  overload: Ampere.Str.Cron.CronField.IsWildcard*
+- uid: Ampere.Str.Cron.CronField.IsQuestionMark
+  commentId: P:Ampere.Str.Cron.CronField.IsQuestionMark
+  id: IsQuestionMark
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: IsQuestionMark
+  nameWithType: CronField.IsQuestionMark
+  fullName: Ampere.Str.Cron.CronField.IsQuestionMark
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: IsQuestionMark
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 284
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns <code>true</code> if this field is a question mark (<code>?</code>).
+  example: []
+  syntax:
+    content: public bool IsQuestionMark { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsQuestionMark As Boolean
+  overload: Ampere.Str.Cron.CronField.IsQuestionMark*
+- uid: Ampere.Str.Cron.CronField.IsContextDependent
+  commentId: P:Ampere.Str.Cron.CronField.IsContextDependent
+  id: IsContextDependent
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: IsContextDependent
+  nameWithType: CronField.IsContextDependent
+  fullName: Ampere.Str.Cron.CronField.IsContextDependent
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: IsContextDependent
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 287
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: 'Returns <code>true</code> when the field contains context-dependent nodes (L, W, #).'
+  example: []
+  syntax:
+    content: public bool IsContextDependent { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsContextDependent As Boolean
+  overload: Ampere.Str.Cron.CronField.IsContextDependent*
+- uid: Ampere.Str.Cron.CronField.GetFieldRange(Ampere.Str.Cron.CronFieldType)
+  commentId: M:Ampere.Str.Cron.CronField.GetFieldRange(Ampere.Str.Cron.CronFieldType)
+  id: GetFieldRange(Ampere.Str.Cron.CronFieldType)
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: GetFieldRange(CronFieldType)
+  nameWithType: CronField.GetFieldRange(CronFieldType)
+  fullName: Ampere.Str.Cron.CronField.GetFieldRange(Ampere.Str.Cron.CronFieldType)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetFieldRange
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 309
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns the valid inclusive [min, max] range for a given field type.
+  example: []
+  syntax:
+    content: public static (int Min, int Max) GetFieldRange(CronFieldType type)
+    parameters:
+    - id: type
+      type: Ampere.Str.Cron.CronFieldType
+    return:
+      type: System.ValueTuple{System.Int32,System.Int32}
+    content.vb: Public Shared Function GetFieldRange(type As CronFieldType) As (Min As Integer, Max As Integer)
+  overload: Ampere.Str.Cron.CronField.GetFieldRange*
+- uid: Ampere.Str.Cron.CronField.Matches(System.Int32)
+  commentId: M:Ampere.Str.Cron.CronField.Matches(System.Int32)
+  id: Matches(System.Int32)
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: Matches(int)
+  nameWithType: CronField.Matches(int)
+  fullName: Ampere.Str.Cron.CronField.Matches(int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Matches
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 325
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Determines whether the given <code class="paramref">value</code> is matched by this field.
+
+    For context-dependent fields (L, W, #), use <xref href="Ampere.Str.Cron.CronField.Matches(System.Int32%2cSystem.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Matches(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function Matches(value As Integer) As Boolean
+  overload: Ampere.Str.Cron.CronField.Matches*
+  nameWithType.vb: CronField.Matches(Integer)
+  fullName.vb: Ampere.Str.Cron.CronField.Matches(Integer)
+  name.vb: Matches(Integer)
+- uid: Ampere.Str.Cron.CronField.Matches(System.Int32,System.Int32,System.Int32)
+  commentId: M:Ampere.Str.Cron.CronField.Matches(System.Int32,System.Int32,System.Int32)
+  id: Matches(System.Int32,System.Int32,System.Int32)
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: Matches(int, int, int)
+  nameWithType: CronField.Matches(int, int, int)
+  fullName: Ampere.Str.Cron.CronField.Matches(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Matches
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 331
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Determines whether the given <code class="paramref">value</code> is matched by this field,
+
+    using <code class="paramref">year</code> and <code class="paramref">month</code> for context-dependent resolution.
+  example: []
+  syntax:
+    content: public bool Matches(int value, int year, int month)
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: year
+      type: System.Int32
+    - id: month
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function Matches(value As Integer, year As Integer, month As Integer) As Boolean
+  overload: Ampere.Str.Cron.CronField.Matches*
+  nameWithType.vb: CronField.Matches(Integer, Integer, Integer)
+  fullName.vb: Ampere.Str.Cron.CronField.Matches(Integer, Integer, Integer)
+  name.vb: Matches(Integer, Integer, Integer)
+- uid: Ampere.Str.Cron.CronField.GetMatchingValues
+  commentId: M:Ampere.Str.Cron.CronField.GetMatchingValues
+  id: GetMatchingValues
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingValues()
+  nameWithType: CronField.GetMatchingValues()
+  fullName: Ampere.Str.Cron.CronField.GetMatchingValues()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetMatchingValues
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 342
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns the set of all integer values this field can match.
+  example: []
+  syntax:
+    content: public IReadOnlySet<int> GetMatchingValues()
+    return:
+      type: System.Collections.Generic.IReadOnlySet{System.Int32}
+    content.vb: Public Function GetMatchingValues() As IReadOnlySet(Of Integer)
+  overload: Ampere.Str.Cron.CronField.GetMatchingValues*
+- uid: Ampere.Str.Cron.CronField.GetMatchingValues(System.Int32,System.Int32)
+  commentId: M:Ampere.Str.Cron.CronField.GetMatchingValues(System.Int32,System.Int32)
+  id: GetMatchingValues(System.Int32,System.Int32)
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: GetMatchingValues(int, int)
+  nameWithType: CronField.GetMatchingValues(int, int)
+  fullName: Ampere.Str.Cron.CronField.GetMatchingValues(int, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetMatchingValues
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 347
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns the set of all integer values this field can match for a specific year/month context.
+  example: []
+  syntax:
+    content: public IReadOnlySet<int> GetMatchingValues(int year, int month)
+    parameters:
+    - id: year
+      type: System.Int32
+    - id: month
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IReadOnlySet{System.Int32}
+    content.vb: Public Function GetMatchingValues(year As Integer, month As Integer) As IReadOnlySet(Of Integer)
+  overload: Ampere.Str.Cron.CronField.GetMatchingValues*
+  nameWithType.vb: CronField.GetMatchingValues(Integer, Integer)
+  fullName.vb: Ampere.Str.Cron.CronField.GetMatchingValues(Integer, Integer)
+  name.vb: GetMatchingValues(Integer, Integer)
+- uid: Ampere.Str.Cron.CronField.GetNextMatchingValue(System.Int32)
+  commentId: M:Ampere.Str.Cron.CronField.GetNextMatchingValue(System.Int32)
+  id: GetNextMatchingValue(System.Int32)
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: GetNextMatchingValue(int)
+  nameWithType: CronField.GetNextMatchingValue(int)
+  fullName: Ampere.Str.Cron.CronField.GetNextMatchingValue(int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetNextMatchingValue
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 358
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Returns the smallest value ≥ <code class="paramref">startFrom</code> that this field matches,
+
+    or <code>null</code> if none exists within the field's valid range.
+  example: []
+  syntax:
+    content: public int? GetNextMatchingValue(int startFrom)
+    parameters:
+    - id: startFrom
+      type: System.Int32
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Function GetNextMatchingValue(startFrom As Integer) As Integer?
+  overload: Ampere.Str.Cron.CronField.GetNextMatchingValue*
+  nameWithType.vb: CronField.GetNextMatchingValue(Integer)
+  fullName.vb: Ampere.Str.Cron.CronField.GetNextMatchingValue(Integer)
+  name.vb: GetNextMatchingValue(Integer)
+- uid: Ampere.Str.Cron.CronField.GetNextMatchingValue(System.Int32,System.Int32,System.Int32)
+  commentId: M:Ampere.Str.Cron.CronField.GetNextMatchingValue(System.Int32,System.Int32,System.Int32)
+  id: GetNextMatchingValue(System.Int32,System.Int32,System.Int32)
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: GetNextMatchingValue(int, int, int)
+  nameWithType: CronField.GetNextMatchingValue(int, int, int)
+  fullName: Ampere.Str.Cron.CronField.GetNextMatchingValue(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetNextMatchingValue
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 373
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Returns the smallest value ≥ <code class="paramref">startFrom</code> that this field matches
+
+    with date context, or <code>null</code> if none exists.
+  example: []
+  syntax:
+    content: public int? GetNextMatchingValue(int startFrom, int year, int month)
+    parameters:
+    - id: startFrom
+      type: System.Int32
+    - id: year
+      type: System.Int32
+    - id: month
+      type: System.Int32
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Function GetNextMatchingValue(startFrom As Integer, year As Integer, month As Integer) As Integer?
+  overload: Ampere.Str.Cron.CronField.GetNextMatchingValue*
+  nameWithType.vb: CronField.GetNextMatchingValue(Integer, Integer, Integer)
+  fullName.vb: Ampere.Str.Cron.CronField.GetNextMatchingValue(Integer, Integer, Integer)
+  name.vb: GetNextMatchingValue(Integer, Integer, Integer)
+- uid: Ampere.Str.Cron.CronField.GetFirstMatchingValue
+  commentId: M:Ampere.Str.Cron.CronField.GetFirstMatchingValue
+  id: GetFirstMatchingValue
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: GetFirstMatchingValue()
+  nameWithType: CronField.GetFirstMatchingValue()
+  fullName: Ampere.Str.Cron.CronField.GetFirstMatchingValue()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetFirstMatchingValue
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 389
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns the smallest matching value within this field's valid range, or <code>null</code>.
+  example: []
+  syntax:
+    content: public int? GetFirstMatchingValue()
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Function GetFirstMatchingValue() As Integer?
+  overload: Ampere.Str.Cron.CronField.GetFirstMatchingValue*
+- uid: Ampere.Str.Cron.CronField.ToCronString
+  commentId: M:Ampere.Str.Cron.CronField.ToCronString
+  id: ToCronString
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: ToCronString()
+  nameWithType: CronField.ToCronString()
+  fullName: Ampere.Str.Cron.CronField.ToCronString()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ToCronString
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 394
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns the canonical cron string for this field (e.g. <code>1-5</code>, <code>*/15</code>).
+  example: []
+  syntax:
+    content: public string ToCronString()
+    return:
+      type: System.String
+    content.vb: Public Function ToCronString() As String
+  overload: Ampere.Str.Cron.CronField.ToCronString*
+- uid: Ampere.Str.Cron.CronField.ToString
+  commentId: M:Ampere.Str.Cron.CronField.ToString
+  id: ToString
+  parent: Ampere.Str.Cron.CronField
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: CronField.ToString()
+  fullName: Ampere.Str.Cron.CronField.ToString()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ToString
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 398
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Ampere.Str.Cron.CronField.ToString*
+references:
+- uid: Ampere.Str.Cron.CronNode
+  commentId: T:Ampere.Str.Cron.CronNode
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronNode.html
+  name: CronNode
+  nameWithType: CronNode
+  fullName: Ampere.Str.Cron.CronNode
+- uid: Ampere.Str.Cron
+  commentId: N:Ampere.Str.Cron
+  href: Ampere.html
+  name: Ampere.Str.Cron
+  nameWithType: Ampere.Str.Cron
+  fullName: Ampere.Str.Cron
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Ampere.Str.Cron.CronField.FieldType*
+  commentId: Overload:Ampere.Str.Cron.CronField.FieldType
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_FieldType
+  name: FieldType
+  nameWithType: CronField.FieldType
+  fullName: Ampere.Str.Cron.CronField.FieldType
+- uid: Ampere.Str.Cron.CronFieldType
+  commentId: T:Ampere.Str.Cron.CronFieldType
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronFieldType.html
+  name: CronFieldType
+  nameWithType: CronFieldType
+  fullName: Ampere.Str.Cron.CronFieldType
+- uid: Ampere.Str.Cron.CronField.Nodes*
+  commentId: Overload:Ampere.Str.Cron.CronField.Nodes
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_Nodes
+  name: Nodes
+  nameWithType: CronField.Nodes
+  fullName: Ampere.Str.Cron.CronField.Nodes
+- uid: System.Collections.Generic.IReadOnlyList{Ampere.Str.Cron.CronNode}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Ampere.Str.Cron.CronNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CronNode>
+  nameWithType: IReadOnlyList<CronNode>
+  fullName: System.Collections.Generic.IReadOnlyList<Ampere.Str.Cron.CronNode>
+  nameWithType.vb: IReadOnlyList(Of CronNode)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Ampere.Str.Cron.CronNode)
+  name.vb: IReadOnlyList(Of CronNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Ampere.Str.Cron.CronNode
+    name: CronNode
+    href: Ampere.Str.Cron.CronNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ampere.Str.Cron.CronNode
+    name: CronNode
+    href: Ampere.Str.Cron.CronNode.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Ampere.Str.Cron.CronField.RawValue*
+  commentId: Overload:Ampere.Str.Cron.CronField.RawValue
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_RawValue
+  name: RawValue
+  nameWithType: CronField.RawValue
+  fullName: Ampere.Str.Cron.CronField.RawValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Ampere.Str.Cron.CronField.IsWildcard*
+  commentId: Overload:Ampere.Str.Cron.CronField.IsWildcard
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_IsWildcard
+  name: IsWildcard
+  nameWithType: CronField.IsWildcard
+  fullName: Ampere.Str.Cron.CronField.IsWildcard
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Ampere.Str.Cron.CronField.IsQuestionMark*
+  commentId: Overload:Ampere.Str.Cron.CronField.IsQuestionMark
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_IsQuestionMark
+  name: IsQuestionMark
+  nameWithType: CronField.IsQuestionMark
+  fullName: Ampere.Str.Cron.CronField.IsQuestionMark
+- uid: Ampere.Str.Cron.CronField.IsContextDependent*
+  commentId: Overload:Ampere.Str.Cron.CronField.IsContextDependent
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_IsContextDependent
+  name: IsContextDependent
+  nameWithType: CronField.IsContextDependent
+  fullName: Ampere.Str.Cron.CronField.IsContextDependent
+- uid: Ampere.Str.Cron.CronField.GetFieldRange*
+  commentId: Overload:Ampere.Str.Cron.CronField.GetFieldRange
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_GetFieldRange_Ampere_Str_Cron_CronFieldType_
+  name: GetFieldRange
+  nameWithType: CronField.GetFieldRange
+  fullName: Ampere.Str.Cron.CronField.GetFieldRange
+- uid: System.ValueTuple{System.Int32,System.Int32}
+  commentId: T:System.ValueTuple{System.Int32,System.Int32}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: (int Min, int Max)
+  nameWithType: (int Min, int Max)
+  fullName: (int Min, int Max)
+  nameWithType.vb: (Min As Integer, Max As Integer)
+  fullName.vb: (Min As Integer, Max As Integer)
+  name.vb: (Min As Integer, Max As Integer)
+  spec.csharp:
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.Min
+    name: Min
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.min
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.Max
+    name: Max
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.max
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Int32,System.Int32}.Min
+    name: Min
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.min
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.Int32}.Max
+    name: Max
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.max
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Ampere.Str.Cron.CronField.Matches(System.Int32,System.Int32,System.Int32)
+  commentId: M:Ampere.Str.Cron.CronField.Matches(System.Int32,System.Int32,System.Int32)
+  isExternal: true
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_Matches_System_Int32_System_Int32_System_Int32_
+  name: Matches(int, int, int)
+  nameWithType: CronField.Matches(int, int, int)
+  fullName: Ampere.Str.Cron.CronField.Matches(int, int, int)
+  nameWithType.vb: CronField.Matches(Integer, Integer, Integer)
+  fullName.vb: Ampere.Str.Cron.CronField.Matches(Integer, Integer, Integer)
+  name.vb: Matches(Integer, Integer, Integer)
+  spec.csharp:
+  - uid: Ampere.Str.Cron.CronField.Matches(System.Int32,System.Int32,System.Int32)
+    name: Matches
+    href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_Matches_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Ampere.Str.Cron.CronField.Matches(System.Int32,System.Int32,System.Int32)
+    name: Matches
+    href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_Matches_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Ampere.Str.Cron.CronField.Matches*
+  commentId: Overload:Ampere.Str.Cron.CronField.Matches
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_Matches_System_Int32_
+  name: Matches
+  nameWithType: CronField.Matches
+  fullName: Ampere.Str.Cron.CronField.Matches
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Ampere.Str.Cron.CronField.GetMatchingValues*
+  commentId: Overload:Ampere.Str.Cron.CronField.GetMatchingValues
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_GetMatchingValues
+  name: GetMatchingValues
+  nameWithType: CronField.GetMatchingValues
+  fullName: Ampere.Str.Cron.CronField.GetMatchingValues
+- uid: System.Collections.Generic.IReadOnlySet{System.Int32}
+  commentId: T:System.Collections.Generic.IReadOnlySet{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlySet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  name: IReadOnlySet<int>
+  nameWithType: IReadOnlySet<int>
+  fullName: System.Collections.Generic.IReadOnlySet<int>
+  nameWithType.vb: IReadOnlySet(Of Integer)
+  fullName.vb: System.Collections.Generic.IReadOnlySet(Of Integer)
+  name.vb: IReadOnlySet(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IReadOnlySet`1
+  commentId: T:System.Collections.Generic.IReadOnlySet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  name: IReadOnlySet<T>
+  nameWithType: IReadOnlySet<T>
+  fullName: System.Collections.Generic.IReadOnlySet<T>
+  nameWithType.vb: IReadOnlySet(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlySet(Of T)
+  name.vb: IReadOnlySet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Ampere.Str.Cron.CronField.GetNextMatchingValue*
+  commentId: Overload:Ampere.Str.Cron.CronField.GetNextMatchingValue
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_GetNextMatchingValue_System_Int32_
+  name: GetNextMatchingValue
+  nameWithType: CronField.GetNextMatchingValue
+  fullName: Ampere.Str.Cron.CronField.GetNextMatchingValue
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Ampere.Str.Cron.CronField.GetFirstMatchingValue*
+  commentId: Overload:Ampere.Str.Cron.CronField.GetFirstMatchingValue
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_GetFirstMatchingValue
+  name: GetFirstMatchingValue
+  nameWithType: CronField.GetFirstMatchingValue
+  fullName: Ampere.Str.Cron.CronField.GetFirstMatchingValue
+- uid: Ampere.Str.Cron.CronField.ToCronString*
+  commentId: Overload:Ampere.Str.Cron.CronField.ToCronString
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_ToCronString
+  name: ToCronString
+  nameWithType: CronField.ToCronString
+  fullName: Ampere.Str.Cron.CronField.ToCronString
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronField.ToString*
+  commentId: Overload:Ampere.Str.Cron.CronField.ToString
+  href: Ampere.Str.Cron.CronField.html#Ampere_Str_Cron_CronField_ToString
+  name: ToString
+  nameWithType: CronField.ToString
+  fullName: Ampere.Str.Cron.CronField.ToString

@@ -1,0 +1,1677 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Str.Cron.CronExpression
+  commentId: T:Ampere.Str.Cron.CronExpression
+  id: CronExpression
+  parent: Ampere.Str.Cron
+  children:
+  - Ampere.Str.Cron.CronExpression.DayOfMonth
+  - Ampere.Str.Cron.CronExpression.DayOfWeek
+  - Ampere.Str.Cron.CronExpression.Describe
+  - Ampere.Str.Cron.CronExpression.Equals(Ampere.Str.Cron.CronExpression)
+  - Ampere.Str.Cron.CronExpression.Equals(System.Object)
+  - Ampere.Str.Cron.CronExpression.Format
+  - Ampere.Str.Cron.CronExpression.GetHashCode
+  - Ampere.Str.Cron.CronExpression.GetNextOccurrence(System.DateTime,System.Boolean,System.TimeZoneInfo)
+  - Ampere.Str.Cron.CronExpression.GetNextOccurrences(System.DateTime,System.Int32)
+  - Ampere.Str.Cron.CronExpression.GetOccurrences(System.DateTime,System.DateTime)
+  - Ampere.Str.Cron.CronExpression.GetPreviousOccurrence(System.DateTime,System.Boolean)
+  - Ampere.Str.Cron.CronExpression.Hours
+  - Ampere.Str.Cron.CronExpression.IsMatch(System.DateTime)
+  - Ampere.Str.Cron.CronExpression.Minutes
+  - Ampere.Str.Cron.CronExpression.Month
+  - Ampere.Str.Cron.CronExpression.RawExpression
+  - Ampere.Str.Cron.CronExpression.Seconds
+  - Ampere.Str.Cron.CronExpression.ToCronString
+  - Ampere.Str.Cron.CronExpression.ToString
+  - Ampere.Str.Cron.CronExpression.Year
+  - Ampere.Str.Cron.CronExpression.op_Equality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)
+  - Ampere.Str.Cron.CronExpression.op_Inequality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)
+  langs:
+  - csharp
+  - vb
+  name: CronExpression
+  nameWithType: CronExpression
+  fullName: Ampere.Str.Cron.CronExpression
+  type: Class
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: CronExpression
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 21
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    An immutable, thread-safe representation of a fully parsed cron expression.
+
+
+    <p>
+
+    Supports standard 5-field (minute–DOW), 6-field with seconds, and 7-field
+
+    with seconds + year formats.  Also supports Quartz-style extensions: <code>L</code>,
+
+    <code>W</code>, <code>LW</code>, <code>#</code>, and <code>?</code>.
+
+    </p>
+
+    <p>
+
+    Use <xref href="Ampere.Str.Cron.CronParser.Parse(System.String)" data-throw-if-not-resolved="false"></xref> to obtain instances, or <xref href="Ampere.Str.Cron.CronBuilder" data-throw-if-not-resolved="false"></xref>
+
+    to construct them fluently.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public sealed class CronExpression : IEquatable<CronExpression>'
+    content.vb: Public NotInheritable Class CronExpression Implements IEquatable(Of CronExpression)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Ampere.Str.Cron.CronExpression}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Ampere.Str.Cron.CronExpression.Seconds
+  commentId: P:Ampere.Str.Cron.CronExpression.Seconds
+  id: Seconds
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: Seconds
+  nameWithType: CronExpression.Seconds
+  fullName: Ampere.Str.Cron.CronExpression.Seconds
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Seconds
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 26
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the seconds field, or <code>null</code> for standard 5-field expressions.
+  example: []
+  syntax:
+    content: public CronField? Seconds { get; }
+    parameters: []
+    return:
+      type: Ampere.Str.Cron.CronField
+    content.vb: Public ReadOnly Property Seconds As CronField
+  overload: Ampere.Str.Cron.CronExpression.Seconds*
+- uid: Ampere.Str.Cron.CronExpression.Minutes
+  commentId: P:Ampere.Str.Cron.CronExpression.Minutes
+  id: Minutes
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: Minutes
+  nameWithType: CronExpression.Minutes
+  fullName: Ampere.Str.Cron.CronExpression.Minutes
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Minutes
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 29
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the minutes field.
+  example: []
+  syntax:
+    content: public CronField Minutes { get; }
+    parameters: []
+    return:
+      type: Ampere.Str.Cron.CronField
+    content.vb: Public ReadOnly Property Minutes As CronField
+  overload: Ampere.Str.Cron.CronExpression.Minutes*
+- uid: Ampere.Str.Cron.CronExpression.Hours
+  commentId: P:Ampere.Str.Cron.CronExpression.Hours
+  id: Hours
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: Hours
+  nameWithType: CronExpression.Hours
+  fullName: Ampere.Str.Cron.CronExpression.Hours
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Hours
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 32
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the hours field.
+  example: []
+  syntax:
+    content: public CronField Hours { get; }
+    parameters: []
+    return:
+      type: Ampere.Str.Cron.CronField
+    content.vb: Public ReadOnly Property Hours As CronField
+  overload: Ampere.Str.Cron.CronExpression.Hours*
+- uid: Ampere.Str.Cron.CronExpression.DayOfMonth
+  commentId: P:Ampere.Str.Cron.CronExpression.DayOfMonth
+  id: DayOfMonth
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: DayOfMonth
+  nameWithType: CronExpression.DayOfMonth
+  fullName: Ampere.Str.Cron.CronExpression.DayOfMonth
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: DayOfMonth
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 35
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the day-of-month field.
+  example: []
+  syntax:
+    content: public CronField DayOfMonth { get; }
+    parameters: []
+    return:
+      type: Ampere.Str.Cron.CronField
+    content.vb: Public ReadOnly Property DayOfMonth As CronField
+  overload: Ampere.Str.Cron.CronExpression.DayOfMonth*
+- uid: Ampere.Str.Cron.CronExpression.Month
+  commentId: P:Ampere.Str.Cron.CronExpression.Month
+  id: Month
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: Month
+  nameWithType: CronExpression.Month
+  fullName: Ampere.Str.Cron.CronExpression.Month
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Month
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 38
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the month field.
+  example: []
+  syntax:
+    content: public CronField Month { get; }
+    parameters: []
+    return:
+      type: Ampere.Str.Cron.CronField
+    content.vb: Public ReadOnly Property Month As CronField
+  overload: Ampere.Str.Cron.CronExpression.Month*
+- uid: Ampere.Str.Cron.CronExpression.DayOfWeek
+  commentId: P:Ampere.Str.Cron.CronExpression.DayOfWeek
+  id: DayOfWeek
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: DayOfWeek
+  nameWithType: CronExpression.DayOfWeek
+  fullName: Ampere.Str.Cron.CronExpression.DayOfWeek
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: DayOfWeek
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 41
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the day-of-week field.
+  example: []
+  syntax:
+    content: public CronField DayOfWeek { get; }
+    parameters: []
+    return:
+      type: Ampere.Str.Cron.CronField
+    content.vb: Public ReadOnly Property DayOfWeek As CronField
+  overload: Ampere.Str.Cron.CronExpression.DayOfWeek*
+- uid: Ampere.Str.Cron.CronExpression.Year
+  commentId: P:Ampere.Str.Cron.CronExpression.Year
+  id: Year
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: Year
+  nameWithType: CronExpression.Year
+  fullName: Ampere.Str.Cron.CronExpression.Year
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Year
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 44
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the year field, or <code>null</code> when not present.
+  example: []
+  syntax:
+    content: public CronField? Year { get; }
+    parameters: []
+    return:
+      type: Ampere.Str.Cron.CronField
+    content.vb: Public ReadOnly Property Year As CronField
+  overload: Ampere.Str.Cron.CronExpression.Year*
+- uid: Ampere.Str.Cron.CronExpression.Format
+  commentId: P:Ampere.Str.Cron.CronExpression.Format
+  id: Format
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: CronExpression.Format
+  fullName: Ampere.Str.Cron.CronExpression.Format
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Format
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 47
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the format that was detected during parsing.
+  example: []
+  syntax:
+    content: public CronFormat Format { get; }
+    parameters: []
+    return:
+      type: Ampere.Str.Cron.CronFormat
+    content.vb: Public ReadOnly Property Format As CronFormat
+  overload: Ampere.Str.Cron.CronExpression.Format*
+- uid: Ampere.Str.Cron.CronExpression.RawExpression
+  commentId: P:Ampere.Str.Cron.CronExpression.RawExpression
+  id: RawExpression
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: RawExpression
+  nameWithType: CronExpression.RawExpression
+  fullName: Ampere.Str.Cron.CronExpression.RawExpression
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: RawExpression
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 50
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Gets the original raw expression string.
+  example: []
+  syntax:
+    content: public string RawExpression { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property RawExpression As String
+  overload: Ampere.Str.Cron.CronExpression.RawExpression*
+- uid: Ampere.Str.Cron.CronExpression.ToCronString
+  commentId: M:Ampere.Str.Cron.CronExpression.ToCronString
+  id: ToCronString
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: ToCronString()
+  nameWithType: CronExpression.ToCronString()
+  fullName: Ampere.Str.Cron.CronExpression.ToCronString()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ToCronString
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 79
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns the canonical cron-notation string (e.g. <code>0 9 * * 1-5</code>).
+  example: []
+  syntax:
+    content: public string ToCronString()
+    return:
+      type: System.String
+    content.vb: Public Function ToCronString() As String
+  overload: Ampere.Str.Cron.CronExpression.ToCronString*
+- uid: Ampere.Str.Cron.CronExpression.ToString
+  commentId: M:Ampere.Str.Cron.CronExpression.ToString
+  id: ToString
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: CronExpression.ToString()
+  fullName: Ampere.Str.Cron.CronExpression.ToString()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ToString
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 95
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns a human-readable English description of this cron expression.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Ampere.Str.Cron.CronExpression.ToString*
+- uid: Ampere.Str.Cron.CronExpression.Describe
+  commentId: M:Ampere.Str.Cron.CronExpression.Describe
+  id: Describe
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: Describe()
+  nameWithType: CronExpression.Describe()
+  fullName: Ampere.Str.Cron.CronExpression.Describe()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Describe
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 104
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Produces a human-readable English description of this cron expression.
+
+    Examples: "Every minute", "At 9:00 AM, Monday through Friday",
+
+    "Every 15 minutes, 9:00 AM – 5:59 PM, Monday through Friday".
+  example: []
+  syntax:
+    content: public string Describe()
+    return:
+      type: System.String
+    content.vb: Public Function Describe() As String
+  overload: Ampere.Str.Cron.CronExpression.Describe*
+- uid: Ampere.Str.Cron.CronExpression.IsMatch(System.DateTime)
+  commentId: M:Ampere.Str.Cron.CronExpression.IsMatch(System.DateTime)
+  id: IsMatch(System.DateTime)
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: IsMatch(DateTime)
+  nameWithType: CronExpression.IsMatch(DateTime)
+  fullName: Ampere.Str.Cron.CronExpression.IsMatch(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: IsMatch
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 312
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Returns <code>true</code> if <code class="paramref">dateTime</code> satisfies every field
+
+    of this cron expression.
+  example: []
+  syntax:
+    content: public bool IsMatch(DateTime dateTime)
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsMatch(dateTime As Date) As Boolean
+  overload: Ampere.Str.Cron.CronExpression.IsMatch*
+  nameWithType.vb: CronExpression.IsMatch(Date)
+  fullName.vb: Ampere.Str.Cron.CronExpression.IsMatch(Date)
+  name.vb: IsMatch(Date)
+- uid: Ampere.Str.Cron.CronExpression.GetNextOccurrence(System.DateTime,System.Boolean,System.TimeZoneInfo)
+  commentId: M:Ampere.Str.Cron.CronExpression.GetNextOccurrence(System.DateTime,System.Boolean,System.TimeZoneInfo)
+  id: GetNextOccurrence(System.DateTime,System.Boolean,System.TimeZoneInfo)
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: GetNextOccurrence(DateTime, bool, TimeZoneInfo?)
+  nameWithType: CronExpression.GetNextOccurrence(DateTime, bool, TimeZoneInfo?)
+  fullName: Ampere.Str.Cron.CronExpression.GetNextOccurrence(System.DateTime, bool, System.TimeZoneInfo?)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetNextOccurrence
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 380
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Returns the next <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> that matches this cron expression
+
+    after <code class="paramref">from</code>, or <code>null</code> if none exists within ~4 years.
+  example: []
+  syntax:
+    content: public DateTime? GetNextOccurrence(DateTime from, bool inclusive = false, TimeZoneInfo? timeZone = null)
+    parameters:
+    - id: from
+      type: System.DateTime
+      description: The reference point (exclusive by default).
+    - id: inclusive
+      type: System.Boolean
+      description: When <code>true</code>, <code class="paramref">from</code> itself may be returned.
+    - id: timeZone
+      type: System.TimeZoneInfo
+      description: >-
+        Optional time zone; when supplied, the search
+            and result are performed in that zone and returned as local time.
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Function GetNextOccurrence(from As Date, inclusive As Boolean = False, timeZone As TimeZoneInfo = Nothing) As Date?
+  overload: Ampere.Str.Cron.CronExpression.GetNextOccurrence*
+  nameWithType.vb: CronExpression.GetNextOccurrence(Date, Boolean, TimeZoneInfo)
+  fullName.vb: Ampere.Str.Cron.CronExpression.GetNextOccurrence(Date, Boolean, System.TimeZoneInfo)
+  name.vb: GetNextOccurrence(Date, Boolean, TimeZoneInfo)
+- uid: Ampere.Str.Cron.CronExpression.GetPreviousOccurrence(System.DateTime,System.Boolean)
+  commentId: M:Ampere.Str.Cron.CronExpression.GetPreviousOccurrence(System.DateTime,System.Boolean)
+  id: GetPreviousOccurrence(System.DateTime,System.Boolean)
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: GetPreviousOccurrence(DateTime, bool)
+  nameWithType: CronExpression.GetPreviousOccurrence(DateTime, bool)
+  fullName: Ampere.Str.Cron.CronExpression.GetPreviousOccurrence(System.DateTime, bool)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetPreviousOccurrence
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 477
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Returns the previous <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> that matches this cron expression
+
+    before <code class="paramref">from</code>, or <code>null</code> if none exists within ~4 years.
+  example: []
+  syntax:
+    content: public DateTime? GetPreviousOccurrence(DateTime from, bool inclusive = false)
+    parameters:
+    - id: from
+      type: System.DateTime
+    - id: inclusive
+      type: System.Boolean
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Function GetPreviousOccurrence(from As Date, inclusive As Boolean = False) As Date?
+  overload: Ampere.Str.Cron.CronExpression.GetPreviousOccurrence*
+  nameWithType.vb: CronExpression.GetPreviousOccurrence(Date, Boolean)
+  fullName.vb: Ampere.Str.Cron.CronExpression.GetPreviousOccurrence(Date, Boolean)
+  name.vb: GetPreviousOccurrence(Date, Boolean)
+- uid: Ampere.Str.Cron.CronExpression.GetOccurrences(System.DateTime,System.DateTime)
+  commentId: M:Ampere.Str.Cron.CronExpression.GetOccurrences(System.DateTime,System.DateTime)
+  id: GetOccurrences(System.DateTime,System.DateTime)
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: GetOccurrences(DateTime, DateTime)
+  nameWithType: CronExpression.GetOccurrences(DateTime, DateTime)
+  fullName: Ampere.Str.Cron.CronExpression.GetOccurrences(System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetOccurrences
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 572
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Enumerates all occurrences between <code class="paramref">from</code> (exclusive)
+
+    and <code class="paramref">to</code> (inclusive).
+  example: []
+  syntax:
+    content: public IEnumerable<DateTime> GetOccurrences(DateTime from, DateTime to)
+    parameters:
+    - id: from
+      type: System.DateTime
+    - id: to
+      type: System.DateTime
+    return:
+      type: System.Collections.Generic.IEnumerable{System.DateTime}
+    content.vb: Public Function GetOccurrences(from As Date, [to] As Date) As IEnumerable(Of Date)
+  overload: Ampere.Str.Cron.CronExpression.GetOccurrences*
+  nameWithType.vb: CronExpression.GetOccurrences(Date, Date)
+  fullName.vb: Ampere.Str.Cron.CronExpression.GetOccurrences(Date, Date)
+  name.vb: GetOccurrences(Date, Date)
+- uid: Ampere.Str.Cron.CronExpression.GetNextOccurrences(System.DateTime,System.Int32)
+  commentId: M:Ampere.Str.Cron.CronExpression.GetNextOccurrences(System.DateTime,System.Int32)
+  id: GetNextOccurrences(System.DateTime,System.Int32)
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: GetNextOccurrences(DateTime, int)
+  nameWithType: CronExpression.GetNextOccurrences(DateTime, int)
+  fullName: Ampere.Str.Cron.CronExpression.GetNextOccurrences(System.DateTime, int)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetNextOccurrences
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 587
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns the next <code class="paramref">count</code> occurrences after <code class="paramref">from</code>.
+  example: []
+  syntax:
+    content: public IReadOnlyList<DateTime> GetNextOccurrences(DateTime from, int count)
+    parameters:
+    - id: from
+      type: System.DateTime
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.DateTime}
+    content.vb: Public Function GetNextOccurrences(from As Date, count As Integer) As IReadOnlyList(Of Date)
+  overload: Ampere.Str.Cron.CronExpression.GetNextOccurrences*
+  nameWithType.vb: CronExpression.GetNextOccurrences(Date, Integer)
+  fullName.vb: Ampere.Str.Cron.CronExpression.GetNextOccurrences(Date, Integer)
+  name.vb: GetNextOccurrences(Date, Integer)
+- uid: Ampere.Str.Cron.CronExpression.Equals(Ampere.Str.Cron.CronExpression)
+  commentId: M:Ampere.Str.Cron.CronExpression.Equals(Ampere.Str.Cron.CronExpression)
+  id: Equals(Ampere.Str.Cron.CronExpression)
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: Equals(CronExpression?)
+  nameWithType: CronExpression.Equals(CronExpression?)
+  fullName: Ampere.Str.Cron.CronExpression.Equals(Ampere.Str.Cron.CronExpression?)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Equals
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 621
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(CronExpression? other)
+    parameters:
+    - id: other
+      type: Ampere.Str.Cron.CronExpression
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As CronExpression) As Boolean
+  overload: Ampere.Str.Cron.CronExpression.Equals*
+  implements:
+  - System.IEquatable{Ampere.Str.Cron.CronExpression}.Equals(Ampere.Str.Cron.CronExpression)
+  nameWithType.vb: CronExpression.Equals(CronExpression)
+  fullName.vb: Ampere.Str.Cron.CronExpression.Equals(Ampere.Str.Cron.CronExpression)
+  name.vb: Equals(CronExpression)
+- uid: Ampere.Str.Cron.CronExpression.Equals(System.Object)
+  commentId: M:Ampere.Str.Cron.CronExpression.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: CronExpression.Equals(object?)
+  fullName: Ampere.Str.Cron.CronExpression.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Equals
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 629
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Ampere.Str.Cron.CronExpression.Equals*
+  nameWithType.vb: CronExpression.Equals(Object)
+  fullName.vb: Ampere.Str.Cron.CronExpression.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Ampere.Str.Cron.CronExpression.GetHashCode
+  commentId: M:Ampere.Str.Cron.CronExpression.GetHashCode
+  id: GetHashCode
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: CronExpression.GetHashCode()
+  fullName: Ampere.Str.Cron.CronExpression.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: GetHashCode
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 632
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Ampere.Str.Cron.CronExpression.GetHashCode*
+- uid: Ampere.Str.Cron.CronExpression.op_Equality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)
+  commentId: M:Ampere.Str.Cron.CronExpression.op_Equality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)
+  id: op_Equality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: operator ==(CronExpression?, CronExpression?)
+  nameWithType: CronExpression.operator ==(CronExpression?, CronExpression?)
+  fullName: Ampere.Str.Cron.CronExpression.operator ==(Ampere.Str.Cron.CronExpression?, Ampere.Str.Cron.CronExpression?)
+  type: Operator
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: op_Equality
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 635
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Equality operator.
+  example: []
+  syntax:
+    content: public static bool operator ==(CronExpression? left, CronExpression? right)
+    parameters:
+    - id: left
+      type: Ampere.Str.Cron.CronExpression
+    - id: right
+      type: Ampere.Str.Cron.CronExpression
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As CronExpression, right As CronExpression) As Boolean
+  overload: Ampere.Str.Cron.CronExpression.op_Equality*
+  nameWithType.vb: CronExpression.=(CronExpression, CronExpression)
+  fullName.vb: Ampere.Str.Cron.CronExpression.=(Ampere.Str.Cron.CronExpression, Ampere.Str.Cron.CronExpression)
+  name.vb: =(CronExpression, CronExpression)
+- uid: Ampere.Str.Cron.CronExpression.op_Inequality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)
+  commentId: M:Ampere.Str.Cron.CronExpression.op_Inequality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)
+  id: op_Inequality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)
+  parent: Ampere.Str.Cron.CronExpression
+  langs:
+  - csharp
+  - vb
+  name: operator !=(CronExpression?, CronExpression?)
+  nameWithType: CronExpression.operator !=(CronExpression?, CronExpression?)
+  fullName: Ampere.Str.Cron.CronExpression.operator !=(Ampere.Str.Cron.CronExpression?, Ampere.Str.Cron.CronExpression?)
+  type: Operator
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronExpression.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: op_Inequality
+    path: ../Ampere/Str/Cron/CronExpression.cs
+    startLine: 638
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Inequality operator.
+  example: []
+  syntax:
+    content: public static bool operator !=(CronExpression? left, CronExpression? right)
+    parameters:
+    - id: left
+      type: Ampere.Str.Cron.CronExpression
+    - id: right
+      type: Ampere.Str.Cron.CronExpression
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As CronExpression, right As CronExpression) As Boolean
+  overload: Ampere.Str.Cron.CronExpression.op_Inequality*
+  nameWithType.vb: CronExpression.<>(CronExpression, CronExpression)
+  fullName.vb: Ampere.Str.Cron.CronExpression.<>(Ampere.Str.Cron.CronExpression, Ampere.Str.Cron.CronExpression)
+  name.vb: <>(CronExpression, CronExpression)
+references:
+- uid: Ampere.Str.Cron.CronParser.Parse(System.String)
+  commentId: M:Ampere.Str.Cron.CronParser.Parse(System.String)
+  isExternal: true
+  href: Ampere.Str.Cron.CronParser.html#Ampere_Str_Cron_CronParser_Parse_System_String_
+  name: Parse(string)
+  nameWithType: CronParser.Parse(string)
+  fullName: Ampere.Str.Cron.CronParser.Parse(string)
+  nameWithType.vb: CronParser.Parse(String)
+  fullName.vb: Ampere.Str.Cron.CronParser.Parse(String)
+  name.vb: Parse(String)
+  spec.csharp:
+  - uid: Ampere.Str.Cron.CronParser.Parse(System.String)
+    name: Parse
+    href: Ampere.Str.Cron.CronParser.html#Ampere_Str_Cron_CronParser_Parse_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Ampere.Str.Cron.CronParser.Parse(System.String)
+    name: Parse
+    href: Ampere.Str.Cron.CronParser.html#Ampere_Str_Cron_CronParser_Parse_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Ampere.Str.Cron.CronBuilder
+  commentId: T:Ampere.Str.Cron.CronBuilder
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronBuilder.html
+  name: CronBuilder
+  nameWithType: CronBuilder
+  fullName: Ampere.Str.Cron.CronBuilder
+- uid: Ampere.Str.Cron
+  commentId: N:Ampere.Str.Cron
+  href: Ampere.html
+  name: Ampere.Str.Cron
+  nameWithType: Ampere.Str.Cron
+  fullName: Ampere.Str.Cron
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Ampere.Str.Cron.CronExpression}
+  commentId: T:System.IEquatable{Ampere.Str.Cron.CronExpression}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CronExpression>
+  nameWithType: IEquatable<CronExpression>
+  fullName: System.IEquatable<Ampere.Str.Cron.CronExpression>
+  nameWithType.vb: IEquatable(Of CronExpression)
+  fullName.vb: System.IEquatable(Of Ampere.Str.Cron.CronExpression)
+  name.vb: IEquatable(Of CronExpression)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Ampere.Str.Cron.CronExpression
+    name: CronExpression
+    href: Ampere.Str.Cron.CronExpression.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ampere.Str.Cron.CronExpression
+    name: CronExpression
+    href: Ampere.Str.Cron.CronExpression.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Ampere.Str.Cron.CronExpression.Seconds*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.Seconds
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_Seconds
+  name: Seconds
+  nameWithType: CronExpression.Seconds
+  fullName: Ampere.Str.Cron.CronExpression.Seconds
+- uid: Ampere.Str.Cron.CronField
+  commentId: T:Ampere.Str.Cron.CronField
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronField.html
+  name: CronField
+  nameWithType: CronField
+  fullName: Ampere.Str.Cron.CronField
+- uid: Ampere.Str.Cron.CronExpression.Minutes*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.Minutes
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_Minutes
+  name: Minutes
+  nameWithType: CronExpression.Minutes
+  fullName: Ampere.Str.Cron.CronExpression.Minutes
+- uid: Ampere.Str.Cron.CronExpression.Hours*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.Hours
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_Hours
+  name: Hours
+  nameWithType: CronExpression.Hours
+  fullName: Ampere.Str.Cron.CronExpression.Hours
+- uid: Ampere.Str.Cron.CronExpression.DayOfMonth*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.DayOfMonth
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_DayOfMonth
+  name: DayOfMonth
+  nameWithType: CronExpression.DayOfMonth
+  fullName: Ampere.Str.Cron.CronExpression.DayOfMonth
+- uid: Ampere.Str.Cron.CronExpression.Month*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.Month
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_Month
+  name: Month
+  nameWithType: CronExpression.Month
+  fullName: Ampere.Str.Cron.CronExpression.Month
+- uid: Ampere.Str.Cron.CronExpression.DayOfWeek*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.DayOfWeek
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_DayOfWeek
+  name: DayOfWeek
+  nameWithType: CronExpression.DayOfWeek
+  fullName: Ampere.Str.Cron.CronExpression.DayOfWeek
+- uid: Ampere.Str.Cron.CronExpression.Year*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.Year
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_Year
+  name: Year
+  nameWithType: CronExpression.Year
+  fullName: Ampere.Str.Cron.CronExpression.Year
+- uid: Ampere.Str.Cron.CronExpression.Format*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.Format
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_Format
+  name: Format
+  nameWithType: CronExpression.Format
+  fullName: Ampere.Str.Cron.CronExpression.Format
+- uid: Ampere.Str.Cron.CronFormat
+  commentId: T:Ampere.Str.Cron.CronFormat
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronFormat.html
+  name: CronFormat
+  nameWithType: CronFormat
+  fullName: Ampere.Str.Cron.CronFormat
+- uid: Ampere.Str.Cron.CronExpression.RawExpression*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.RawExpression
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_RawExpression
+  name: RawExpression
+  nameWithType: CronExpression.RawExpression
+  fullName: Ampere.Str.Cron.CronExpression.RawExpression
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Ampere.Str.Cron.CronExpression.ToCronString*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.ToCronString
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_ToCronString
+  name: ToCronString
+  nameWithType: CronExpression.ToCronString
+  fullName: Ampere.Str.Cron.CronExpression.ToCronString
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronExpression.ToString*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.ToString
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_ToString
+  name: ToString
+  nameWithType: CronExpression.ToString
+  fullName: Ampere.Str.Cron.CronExpression.ToString
+- uid: Ampere.Str.Cron.CronExpression.Describe*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.Describe
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_Describe
+  name: Describe
+  nameWithType: CronExpression.Describe
+  fullName: Ampere.Str.Cron.CronExpression.Describe
+- uid: Ampere.Str.Cron.CronExpression.IsMatch*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.IsMatch
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_IsMatch_System_DateTime_
+  name: IsMatch
+  nameWithType: CronExpression.IsMatch
+  fullName: Ampere.Str.Cron.CronExpression.IsMatch
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Ampere.Str.Cron.CronExpression.GetNextOccurrence*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.GetNextOccurrence
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_GetNextOccurrence_System_DateTime_System_Boolean_System_TimeZoneInfo_
+  name: GetNextOccurrence
+  nameWithType: CronExpression.GetNextOccurrence
+  fullName: Ampere.Str.Cron.CronExpression.GetNextOccurrence
+- uid: System.TimeZoneInfo
+  commentId: T:System.TimeZoneInfo
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timezoneinfo
+  name: TimeZoneInfo
+  nameWithType: TimeZoneInfo
+  fullName: System.TimeZoneInfo
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Ampere.Str.Cron.CronExpression.GetPreviousOccurrence*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.GetPreviousOccurrence
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_GetPreviousOccurrence_System_DateTime_System_Boolean_
+  name: GetPreviousOccurrence
+  nameWithType: CronExpression.GetPreviousOccurrence
+  fullName: Ampere.Str.Cron.CronExpression.GetPreviousOccurrence
+- uid: Ampere.Str.Cron.CronExpression.GetOccurrences*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.GetOccurrences
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_GetOccurrences_System_DateTime_System_DateTime_
+  name: GetOccurrences
+  nameWithType: CronExpression.GetOccurrences
+  fullName: Ampere.Str.Cron.CronExpression.GetOccurrences
+- uid: System.Collections.Generic.IEnumerable{System.DateTime}
+  commentId: T:System.Collections.Generic.IEnumerable{System.DateTime}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DateTime>
+  nameWithType: IEnumerable<DateTime>
+  fullName: System.Collections.Generic.IEnumerable<System.DateTime>
+  nameWithType.vb: IEnumerable(Of Date)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Date)
+  name.vb: IEnumerable(Of Date)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Ampere.Str.Cron.CronExpression.GetNextOccurrences*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.GetNextOccurrences
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_GetNextOccurrences_System_DateTime_System_Int32_
+  name: GetNextOccurrences
+  nameWithType: CronExpression.GetNextOccurrences
+  fullName: Ampere.Str.Cron.CronExpression.GetNextOccurrences
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IReadOnlyList{System.DateTime}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.DateTime}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<DateTime>
+  nameWithType: IReadOnlyList<DateTime>
+  fullName: System.Collections.Generic.IReadOnlyList<System.DateTime>
+  nameWithType.vb: IReadOnlyList(Of Date)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Date)
+  name.vb: IReadOnlyList(Of Date)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Ampere.Str.Cron.CronExpression.Equals*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.Equals
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_Equals_Ampere_Str_Cron_CronExpression_
+  name: Equals
+  nameWithType: CronExpression.Equals
+  fullName: Ampere.Str.Cron.CronExpression.Equals
+- uid: System.IEquatable{Ampere.Str.Cron.CronExpression}.Equals(Ampere.Str.Cron.CronExpression)
+  commentId: M:System.IEquatable{Ampere.Str.Cron.CronExpression}.Equals(Ampere.Str.Cron.CronExpression)
+  parent: System.IEquatable{Ampere.Str.Cron.CronExpression}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(CronExpression)
+  nameWithType: IEquatable<CronExpression>.Equals(CronExpression)
+  fullName: System.IEquatable<Ampere.Str.Cron.CronExpression>.Equals(Ampere.Str.Cron.CronExpression)
+  nameWithType.vb: IEquatable(Of CronExpression).Equals(CronExpression)
+  fullName.vb: System.IEquatable(Of Ampere.Str.Cron.CronExpression).Equals(Ampere.Str.Cron.CronExpression)
+  spec.csharp:
+  - uid: System.IEquatable{Ampere.Str.Cron.CronExpression}.Equals(Ampere.Str.Cron.CronExpression)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Ampere.Str.Cron.CronExpression
+    name: CronExpression
+    href: Ampere.Str.Cron.CronExpression.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Ampere.Str.Cron.CronExpression}.Equals(Ampere.Str.Cron.CronExpression)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Ampere.Str.Cron.CronExpression
+    name: CronExpression
+    href: Ampere.Str.Cron.CronExpression.html
+  - name: )
+- uid: Ampere.Str.Cron.CronExpression
+  commentId: T:Ampere.Str.Cron.CronExpression
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronExpression.html
+  name: CronExpression
+  nameWithType: CronExpression
+  fullName: Ampere.Str.Cron.CronExpression
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronExpression.GetHashCode*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.GetHashCode
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_GetHashCode
+  name: GetHashCode
+  nameWithType: CronExpression.GetHashCode
+  fullName: Ampere.Str.Cron.CronExpression.GetHashCode
+- uid: Ampere.Str.Cron.CronExpression.op_Equality*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.op_Equality
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_op_Equality_Ampere_Str_Cron_CronExpression_Ampere_Str_Cron_CronExpression_
+  name: operator ==
+  nameWithType: CronExpression.operator ==
+  fullName: Ampere.Str.Cron.CronExpression.operator ==
+  nameWithType.vb: CronExpression.=
+  fullName.vb: Ampere.Str.Cron.CronExpression.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Ampere.Str.Cron.CronExpression.op_Equality*
+    name: ==
+    href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_op_Equality_Ampere_Str_Cron_CronExpression_Ampere_Str_Cron_CronExpression_
+- uid: Ampere.Str.Cron.CronExpression.op_Inequality*
+  commentId: Overload:Ampere.Str.Cron.CronExpression.op_Inequality
+  href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_op_Inequality_Ampere_Str_Cron_CronExpression_Ampere_Str_Cron_CronExpression_
+  name: operator !=
+  nameWithType: CronExpression.operator !=
+  fullName: Ampere.Str.Cron.CronExpression.operator !=
+  nameWithType.vb: CronExpression.<>
+  fullName.vb: Ampere.Str.Cron.CronExpression.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Ampere.Str.Cron.CronExpression.op_Inequality*
+    name: '!='
+    href: Ampere.Str.Cron.CronExpression.html#Ampere_Str_Cron_CronExpression_op_Inequality_Ampere_Str_Cron_CronExpression_Ampere_Str_Cron_CronExpression_

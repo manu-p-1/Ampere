@@ -1,0 +1,553 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+  commentId: T:Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+  id: CronLastWeekdayOfMonthNode
+  parent: Ampere.Str.Cron
+  children:
+  - Ampere.Str.Cron.CronLastWeekdayOfMonthNode.#ctor(System.Int32)
+  - Ampere.Str.Cron.CronLastWeekdayOfMonthNode.DayOfWeek
+  - Ampere.Str.Cron.CronLastWeekdayOfMonthNode.ToCronString
+  langs:
+  - csharp
+  - vb
+  name: CronLastWeekdayOfMonthNode
+  nameWithType: CronLastWeekdayOfMonthNode
+  fullName: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+  type: Class
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: CronLastWeekdayOfMonthNode
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 170
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Last specific weekday of the month (<code>5L</code> = last Friday).
+
+    Used in the day-of-week field.
+  example: []
+  syntax:
+    content: 'public sealed record CronLastWeekdayOfMonthNode : CronNode, IEquatable<CronNode>, IEquatable<CronLastWeekdayOfMonthNode>'
+    content.vb: Public NotInheritable Class CronLastWeekdayOfMonthNode Inherits CronNode Implements IEquatable(Of CronNode), IEquatable(Of CronLastWeekdayOfMonthNode)
+  inheritance:
+  - System.Object
+  - Ampere.Str.Cron.CronNode
+  implements:
+  - System.IEquatable{Ampere.Str.Cron.CronNode}
+  - System.IEquatable{Ampere.Str.Cron.CronLastWeekdayOfMonthNode}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.#ctor(System.Int32)
+  commentId: M:Ampere.Str.Cron.CronLastWeekdayOfMonthNode.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+  langs:
+  - csharp
+  - vb
+  name: CronLastWeekdayOfMonthNode(int)
+  nameWithType: CronLastWeekdayOfMonthNode.CronLastWeekdayOfMonthNode(int)
+  fullName: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.CronLastWeekdayOfMonthNode(int)
+  type: Constructor
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: .ctor
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 170
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: >-
+    Last specific weekday of the month (<code>5L</code> = last Friday).
+
+    Used in the day-of-week field.
+  example: []
+  syntax:
+    content: public CronLastWeekdayOfMonthNode(int DayOfWeek)
+    parameters:
+    - id: DayOfWeek
+      type: System.Int32
+    content.vb: Public Sub New(DayOfWeek As Integer)
+  overload: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.#ctor*
+  nameWithType.vb: CronLastWeekdayOfMonthNode.New(Integer)
+  fullName.vb: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.New(Integer)
+  name.vb: New(Integer)
+- uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.DayOfWeek
+  commentId: P:Ampere.Str.Cron.CronLastWeekdayOfMonthNode.DayOfWeek
+  id: DayOfWeek
+  parent: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+  langs:
+  - csharp
+  - vb
+  name: DayOfWeek
+  nameWithType: CronLastWeekdayOfMonthNode.DayOfWeek
+  fullName: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.DayOfWeek
+  type: Property
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: DayOfWeek
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 170
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  syntax:
+    content: public int DayOfWeek { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DayOfWeek As Integer
+  overload: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.DayOfWeek*
+- uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.ToCronString
+  commentId: M:Ampere.Str.Cron.CronLastWeekdayOfMonthNode.ToCronString
+  id: ToCronString
+  parent: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+  langs:
+  - csharp
+  - vb
+  name: ToCronString()
+  nameWithType: CronLastWeekdayOfMonthNode.ToCronString()
+  fullName: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.ToCronString()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ToCronString
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 183
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns the canonical cron-syntax representation of this node.
+  example: []
+  syntax:
+    content: public override string ToCronString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToCronString() As String
+  overridden: Ampere.Str.Cron.CronNode.ToCronString
+  overload: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.ToCronString*
+references:
+- uid: Ampere.Str.Cron
+  commentId: N:Ampere.Str.Cron
+  href: Ampere.html
+  name: Ampere.Str.Cron
+  nameWithType: Ampere.Str.Cron
+  fullName: Ampere.Str.Cron
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Ampere.Str.Cron.CronNode
+  commentId: T:Ampere.Str.Cron.CronNode
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronNode.html
+  name: CronNode
+  nameWithType: CronNode
+  fullName: Ampere.Str.Cron.CronNode
+- uid: System.IEquatable{Ampere.Str.Cron.CronNode}
+  commentId: T:System.IEquatable{Ampere.Str.Cron.CronNode}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CronNode>
+  nameWithType: IEquatable<CronNode>
+  fullName: System.IEquatable<Ampere.Str.Cron.CronNode>
+  nameWithType.vb: IEquatable(Of CronNode)
+  fullName.vb: System.IEquatable(Of Ampere.Str.Cron.CronNode)
+  name.vb: IEquatable(Of CronNode)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Ampere.Str.Cron.CronNode
+    name: CronNode
+    href: Ampere.Str.Cron.CronNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ampere.Str.Cron.CronNode
+    name: CronNode
+    href: Ampere.Str.Cron.CronNode.html
+  - name: )
+- uid: System.IEquatable{Ampere.Str.Cron.CronLastWeekdayOfMonthNode}
+  commentId: T:System.IEquatable{Ampere.Str.Cron.CronLastWeekdayOfMonthNode}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CronLastWeekdayOfMonthNode>
+  nameWithType: IEquatable<CronLastWeekdayOfMonthNode>
+  fullName: System.IEquatable<Ampere.Str.Cron.CronLastWeekdayOfMonthNode>
+  nameWithType.vb: IEquatable(Of CronLastWeekdayOfMonthNode)
+  fullName.vb: System.IEquatable(Of Ampere.Str.Cron.CronLastWeekdayOfMonthNode)
+  name.vb: IEquatable(Of CronLastWeekdayOfMonthNode)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+    name: CronLastWeekdayOfMonthNode
+    href: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+    name: CronLastWeekdayOfMonthNode
+    href: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.#ctor*
+  commentId: Overload:Ampere.Str.Cron.CronLastWeekdayOfMonthNode.#ctor
+  href: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.html#Ampere_Str_Cron_CronLastWeekdayOfMonthNode__ctor_System_Int32_
+  name: CronLastWeekdayOfMonthNode
+  nameWithType: CronLastWeekdayOfMonthNode.CronLastWeekdayOfMonthNode
+  fullName: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.CronLastWeekdayOfMonthNode
+  nameWithType.vb: CronLastWeekdayOfMonthNode.New
+  fullName.vb: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.DayOfWeek*
+  commentId: Overload:Ampere.Str.Cron.CronLastWeekdayOfMonthNode.DayOfWeek
+  href: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.html#Ampere_Str_Cron_CronLastWeekdayOfMonthNode_DayOfWeek
+  name: DayOfWeek
+  nameWithType: CronLastWeekdayOfMonthNode.DayOfWeek
+  fullName: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.DayOfWeek
+- uid: Ampere.Str.Cron.CronNode.ToCronString
+  commentId: M:Ampere.Str.Cron.CronNode.ToCronString
+  parent: Ampere.Str.Cron.CronNode
+  href: Ampere.Str.Cron.CronNode.html#Ampere_Str_Cron_CronNode_ToCronString
+  name: ToCronString()
+  nameWithType: CronNode.ToCronString()
+  fullName: Ampere.Str.Cron.CronNode.ToCronString()
+  spec.csharp:
+  - uid: Ampere.Str.Cron.CronNode.ToCronString
+    name: ToCronString
+    href: Ampere.Str.Cron.CronNode.html#Ampere_Str_Cron_CronNode_ToCronString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Ampere.Str.Cron.CronNode.ToCronString
+    name: ToCronString
+    href: Ampere.Str.Cron.CronNode.html#Ampere_Str_Cron_CronNode_ToCronString
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.ToCronString*
+  commentId: Overload:Ampere.Str.Cron.CronLastWeekdayOfMonthNode.ToCronString
+  href: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.html#Ampere_Str_Cron_CronLastWeekdayOfMonthNode_ToCronString
+  name: ToCronString
+  nameWithType: CronLastWeekdayOfMonthNode.ToCronString
+  fullName: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.ToCronString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

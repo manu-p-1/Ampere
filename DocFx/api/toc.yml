@@ -90,4 +90,62 @@ items:
   - uid: Ampere.Str.StringUtils
     name: StringUtils
     type: Class
+- uid: Ampere.Str.Cron
+  name: Ampere.Str.Cron
+  type: Namespace
+  items:
+  - uid: Ampere.Str.Cron.CronBuilder
+    name: CronBuilder
+    type: Class
+  - uid: Ampere.Str.Cron.CronExpression
+    name: CronExpression
+    type: Class
+  - uid: Ampere.Str.Cron.CronField
+    name: CronField
+    type: Class
+  - uid: Ampere.Str.Cron.CronFieldType
+    name: CronFieldType
+    type: Enum
+  - uid: Ampere.Str.Cron.CronFormat
+    name: CronFormat
+    type: Enum
+  - uid: Ampere.Str.Cron.CronHashNode
+    name: CronHashNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronLastDayNode
+    name: CronLastDayNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronLastWeekdayNode
+    name: CronLastWeekdayNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+    name: CronLastWeekdayOfMonthNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronNearestWeekdayNode
+    name: CronNearestWeekdayNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronNode
+    name: CronNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronParseException
+    name: CronParseException
+    type: Class
+  - uid: Ampere.Str.Cron.CronParser
+    name: CronParser
+    type: Class
+  - uid: Ampere.Str.Cron.CronQuestionMarkNode
+    name: CronQuestionMarkNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronRangeNode
+    name: CronRangeNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronStepNode
+    name: CronStepNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronValueNode
+    name: CronValueNode
+    type: Class
+  - uid: Ampere.Str.Cron.CronWildcardNode
+    name: CronWildcardNode
+    type: Class
 memberLayout: SamePage

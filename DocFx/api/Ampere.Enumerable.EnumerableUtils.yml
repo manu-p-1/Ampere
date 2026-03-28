@@ -1924,6 +1924,7 @@ references:
   fullName: Ampere.Enumerable.EnumerableUtils.Span
 - uid: System.FormatException
   commentId: T:System.FormatException
+  parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.formatexception
   name: FormatException

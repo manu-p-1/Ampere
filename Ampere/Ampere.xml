@@ -1921,6 +1921,549 @@
             <param name="message">The message of this exception type</param>
             <param name="inner">The inner Exception</param>
         </member>
+        <member name="T:Ampere.Str.Cron.CronBuilder">
+            <summary>
+            A fluent, type-safe builder for constructing <see cref="T:Ampere.Str.Cron.CronExpression"/> instances.
+            <para>
+            Provides both raw field methods (<see cref="M:Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)"/>) and
+            high-level convenience methods (<see cref="M:Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)"/>,
+            <see cref="M:Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)"/>, <see cref="M:Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])"/>).
+            </para>
+            <example>
+            <code>
+            var expr = new CronBuilder()
+                .AtTime(9, 0)
+                .OnDaysOfWeek(DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday)
+                .Build();
+            // produces "0 9 * * 1,3,5"
+            </code>
+            </example>
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.WithSeconds(System.String)">
+            <summary>Sets the seconds field (enables 6-field format). Any valid cron syntax.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)">
+            <summary>Sets the minutes field. Any valid cron syntax (e.g. <c>*/15</c>, <c>0,30</c>).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.WithHours(System.String)">
+            <summary>Sets the hours field.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.WithDayOfMonth(System.String)">
+            <summary>Sets the day-of-month field.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.WithMonth(System.String)">
+            <summary>Sets the month field.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.WithDayOfWeek(System.String)">
+            <summary>Sets the day-of-week field.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.WithYear(System.String)">
+            <summary>Sets the year field (enables 7-field format).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.EveryMinute">
+            <summary>Sets the expression to fire every minute (<c>* * * * *</c> baseline).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)">
+            <summary>Sets the expression to fire every <paramref name="n"/> minutes.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.EveryHour">
+            <summary>Sets the expression to fire every hour at minute 0.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.EveryNHours(System.Int32)">
+            <summary>Sets the expression to fire every <paramref name="n"/> hours at minute 0.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.EveryNSeconds(System.Int32)">
+            <summary>Sets the expression to fire every <paramref name="n"/> seconds (enables seconds field).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)">
+            <summary>Sets the time to a specific hour and minute (e.g. 9:30).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.AtTimes(System.ValueTuple{System.Int32,System.Int32}[])">
+            <summary>Sets the time to multiple specific times during the day.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.DuringHours(System.Int32,System.Int32)">
+            <summary>Sets hours to a range (e.g. 9–17 for business hours).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])">
+            <summary>Restricts to the given days of the week.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.Weekdays">
+            <summary>Shorthand for Monday–Friday.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.Weekends">
+            <summary>Shorthand for Saturday and Sunday.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek(System.DayOfWeek,System.Int32)">
+            <summary>Fires on the Nth occurrence of a weekday in the month (e.g. 2nd Tuesday).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek(System.DayOfWeek)">
+            <summary>Fires on the last occurrence of a weekday in the month.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.OnDaysOfMonth(System.Int32[])">
+            <summary>Restricts to specific days of the month.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth">
+            <summary>Fires on the last day of every month (<c>L</c>).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth">
+            <summary>Fires on the last weekday (Mon–Fri) of every month (<c>LW</c>).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.OnNearestWeekday(System.Int32)">
+            <summary>Fires on the nearest weekday to the given day of the month.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.InMonths(System.Int32[])">
+            <summary>Restricts to specific months (1–12).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.InYears(System.Int32[])">
+            <summary>Restricts to specific years (enables 7-field format).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.Daily">
+            <summary>Every day at midnight.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.Weekly">
+            <summary>Every Sunday at midnight.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.Monthly">
+            <summary>First of every month at midnight.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.Yearly">
+            <summary>January 1 at midnight each year.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.Build">
+            <summary>
+            Builds and validates the <see cref="T:Ampere.Str.Cron.CronExpression"/>.
+            Throws <see cref="T:Ampere.Str.Cron.CronParseException"/> if the assembled fields are invalid.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.TryBuild(Ampere.Str.Cron.CronExpression@,System.String@)">
+            <summary>
+            Attempts to build the expression without throwing.
+            </summary>
+            <param name="result">The built expression, or <c>null</c>.</param>
+            <param name="error">A description of the failure, or <c>null</c>.</param>
+            <returns><c>true</c> on success.</returns>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.ToCronString">
+            <summary>
+            Returns the cron string that <see cref="M:Ampere.Str.Cron.CronBuilder.Build"/> would parse,
+            without performing validation.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronBuilder.ToString">
+            <summary>
+            Returns a human-readable description of what the built expression would produce.
+            Returns the cron string if validation fails.
+            </summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronExpression">
+            <summary>
+            An immutable, thread-safe representation of a fully parsed cron expression.
+            <para>
+            Supports standard 5-field (minute–DOW), 6-field with seconds, and 7-field
+            with seconds + year formats.  Also supports Quartz-style extensions: <c>L</c>,
+            <c>W</c>, <c>LW</c>, <c>#</c>, and <c>?</c>.
+            </para>
+            <para>
+            Use <see cref="M:Ampere.Str.Cron.CronParser.Parse(System.String)"/> to obtain instances, or <see cref="T:Ampere.Str.Cron.CronBuilder"/>
+            to construct them fluently.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronExpression.Seconds">
+            <summary>Gets the seconds field, or <c>null</c> for standard 5-field expressions.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronExpression.Minutes">
+            <summary>Gets the minutes field.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronExpression.Hours">
+            <summary>Gets the hours field.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronExpression.DayOfMonth">
+            <summary>Gets the day-of-month field.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronExpression.Month">
+            <summary>Gets the month field.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronExpression.DayOfWeek">
+            <summary>Gets the day-of-week field.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronExpression.Year">
+            <summary>Gets the year field, or <c>null</c> when not present.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronExpression.Format">
+            <summary>Gets the format that was detected during parsing.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronExpression.RawExpression">
+            <summary>Gets the original raw expression string.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.ToCronString">
+            <summary>
+            Returns the canonical cron-notation string (e.g. <c>0 9 * * 1-5</c>).
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.ToString">
+            <summary>
+            Returns a human-readable English description of this cron expression.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.Describe">
+            <summary>
+            Produces a human-readable English description of this cron expression.
+            Examples: "Every minute", "At 9:00 AM, Monday through Friday",
+            "Every 15 minutes, 9:00 AM – 5:59 PM, Monday through Friday".
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.IsMatch(System.DateTime)">
+            <summary>
+            Returns <c>true</c> if <paramref name="dateTime"/> satisfies every field
+            of this cron expression.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.GetNextOccurrence(System.DateTime,System.Boolean,System.TimeZoneInfo)">
+            <summary>
+            Returns the next <see cref="T:System.DateTime"/> that matches this cron expression
+            after <paramref name="from"/>, or <c>null</c> if none exists within ~4 years.
+            </summary>
+            <param name="from">The reference point (exclusive by default).</param>
+            <param name="inclusive">When <c>true</c>, <paramref name="from"/> itself may be returned.</param>
+            <param name="timeZone">Optional time zone; when supplied, the search
+            and result are performed in that zone and returned as local time.</param>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.GetPreviousOccurrence(System.DateTime,System.Boolean)">
+            <summary>
+            Returns the previous <see cref="T:System.DateTime"/> that matches this cron expression
+            before <paramref name="from"/>, or <c>null</c> if none exists within ~4 years.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.GetOccurrences(System.DateTime,System.DateTime)">
+            <summary>
+            Enumerates all occurrences between <paramref name="from"/> (exclusive)
+            and <paramref name="to"/> (inclusive).
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.GetNextOccurrences(System.DateTime,System.Int32)">
+            <summary>
+            Returns the next <paramref name="count"/> occurrences after <paramref name="from"/>.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.Equals(Ampere.Str.Cron.CronExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.op_Equality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)">
+            <summary>Equality operator.</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronExpression.op_Inequality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)">
+            <summary>Inequality operator.</summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronFieldType">
+            <summary>
+            Identifies which field of a cron expression a <see cref="T:Ampere.Str.Cron.CronField"/> represents.
+            </summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFieldType.Second">
+            <summary>Seconds field (0–59). Present only in extended cron formats.</summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFieldType.Minute">
+            <summary>Minutes field (0–59).</summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFieldType.Hour">
+            <summary>Hours field (0–23).</summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFieldType.DayOfMonth">
+            <summary>Day-of-month field (1–31).</summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFieldType.Month">
+            <summary>Month field (1–12).</summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFieldType.DayOfWeek">
+            <summary>Day-of-week field (0–6, where 0 = Sunday).</summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFieldType.Year">
+            <summary>Year field (1970–2099). Present only in extended cron formats.</summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronFormat">
+            <summary>
+            Specifies the number of fields in a cron expression.
+            </summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFormat.Standard">
+            <summary>Standard 5-field format: minute hour day-of-month month day-of-week.</summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFormat.WithSeconds">
+            <summary>6-field format with seconds: second minute hour day-of-month month day-of-week.</summary>
+        </member>
+        <member name="F:Ampere.Str.Cron.CronFormat.WithSecondsAndYear">
+            <summary>7-field format: second minute hour day-of-month month day-of-week year.</summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronNode">
+            <summary>
+            Abstract base for all nodes in a cron-field AST.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronNode.Expand(System.Int32,System.Int32)">
+            <summary>
+            Expands this node into the discrete set of integer values it represents
+            within the given inclusive range [<paramref name="min"/>, <paramref name="max"/>].
+            For context-dependent nodes (L, W, #), callers should use the overload that
+            accepts year and month.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronNode.Expand(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Expands this node with date context for L / W / # resolution.
+            The default implementation delegates to <see cref="M:Ampere.Str.Cron.CronNode.Expand(System.Int32,System.Int32)"/>.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronNode.ToCronString">
+            <summary>Returns the canonical cron-syntax representation of this node.</summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronWildcardNode">
+            <summary>Wildcard (<c>*</c>) – matches every value in the field's range.</summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronQuestionMarkNode">
+            <summary>Question mark (<c>?</c>) – "no specific value", used in day-of-month / day-of-week.</summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronValueNode">
+            <summary>A single integer value (e.g. <c>5</c>).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronValueNode.#ctor(System.Int32)">
+            <summary>A single integer value (e.g. <c>5</c>).</summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronRangeNode">
+            <summary>A contiguous range (e.g. <c>1-5</c>).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronRangeNode.#ctor(System.Int32,System.Int32)">
+            <summary>A contiguous range (e.g. <c>1-5</c>).</summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronStepNode">
+            <summary>
+            A step expression (e.g. <c>* /5</c>, <c>1-10/2</c>, <c>0/15</c>).
+            The <see cref="P:Ampere.Str.Cron.CronStepNode.Base"/> is the range or wildcard; the <see cref="P:Ampere.Str.Cron.CronStepNode.Step"/> is the increment.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronStepNode.#ctor(Ampere.Str.Cron.CronNode,System.Int32)">
+            <summary>
+            A step expression (e.g. <c>* /5</c>, <c>1-10/2</c>, <c>0/15</c>).
+            The <see cref="P:Ampere.Str.Cron.CronStepNode.Base"/> is the range or wildcard; the <see cref="P:Ampere.Str.Cron.CronStepNode.Step"/> is the increment.
+            </summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronLastDayNode">
+            <summary>
+            Last day indicator (<c>L</c>) for day-of-month, optionally with an offset (<c>L-3</c>).
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronLastDayNode.#ctor(System.Int32)">
+            <summary>
+            Last day indicator (<c>L</c>) for day-of-month, optionally with an offset (<c>L-3</c>).
+            </summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronLastWeekdayOfMonthNode">
+            <summary>
+            Last specific weekday of the month (<c>5L</c> = last Friday).
+            Used in the day-of-week field.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronLastWeekdayOfMonthNode.#ctor(System.Int32)">
+            <summary>
+            Last specific weekday of the month (<c>5L</c> = last Friday).
+            Used in the day-of-week field.
+            </summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronNearestWeekdayNode">
+            <summary>
+            Nearest weekday to a given day-of-month (<c>15W</c>).
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronNearestWeekdayNode.#ctor(System.Int32)">
+            <summary>
+            Nearest weekday to a given day-of-month (<c>15W</c>).
+            </summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronLastWeekdayNode">
+            <summary>
+            Last weekday (<c>LW</c>) of the month – shorthand for the last business day.
+            </summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronHashNode">
+            <summary>
+            Nth day-of-week in the month (<c>5#3</c> = third Friday).
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronHashNode.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Nth day-of-week in the month (<c>5#3</c> = third Friday).
+            </summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronField">
+            <summary>
+            Represents a single parsed field (e.g. minutes, hours) of a cron expression.
+            A field contains one or more <see cref="T:Ampere.Str.Cron.CronNode"/> elements (the comma-separated parts).
+            Instances are immutable and thread-safe.
+            </summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronField.FieldType">
+            <summary>Gets which part of the cron expression this field represents.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronField.Nodes">
+            <summary>Gets the AST nodes that compose this field.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronField.RawValue">
+            <summary>Gets the raw text that was parsed to produce this field.</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronField.IsWildcard">
+            <summary>Returns <c>true</c> if this field is a bare wildcard (<c>*</c>).</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronField.IsQuestionMark">
+            <summary>Returns <c>true</c> if this field is a question mark (<c>?</c>).</summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronField.IsContextDependent">
+            <summary>Returns <c>true</c> when the field contains context-dependent nodes (L, W, #).</summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.GetFieldRange(Ampere.Str.Cron.CronFieldType)">
+            <summary>
+            Returns the valid inclusive [min, max] range for a given field type.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.Matches(System.Int32)">
+            <summary>
+            Determines whether the given <paramref name="value"/> is matched by this field.
+            For context-dependent fields (L, W, #), use <see cref="M:Ampere.Str.Cron.CronField.Matches(System.Int32,System.Int32,System.Int32)"/>.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.Matches(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Determines whether the given <paramref name="value"/> is matched by this field,
+            using <paramref name="year"/> and <paramref name="month"/> for context-dependent resolution.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.GetMatchingValues">
+            <summary>
+            Returns the set of all integer values this field can match.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.GetMatchingValues(System.Int32,System.Int32)">
+            <summary>
+            Returns the set of all integer values this field can match for a specific year/month context.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.GetNextMatchingValue(System.Int32)">
+            <summary>
+            Returns the smallest value ≥ <paramref name="startFrom"/> that this field matches,
+            or <c>null</c> if none exists within the field's valid range.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.GetNextMatchingValue(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns the smallest value ≥ <paramref name="startFrom"/> that this field matches
+            with date context, or <c>null</c> if none exists.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.GetFirstMatchingValue">
+            <summary>
+            Returns the smallest matching value within this field's valid range, or <c>null</c>.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.ToCronString">
+            <summary>
+            Returns the canonical cron string for this field (e.g. <c>1-5</c>, <c>*/15</c>).
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronField.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:Ampere.Str.Cron.CronParseException">
+            <summary>
+            Exception thrown when a cron expression cannot be parsed or validated.
+            Provides detailed information about the parse failure including position and field context.
+            </summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronParseException.Expression">
+            <summary>
+            Gets the raw cron expression that failed to parse.
+            </summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronParseException.Position">
+            <summary>
+            Gets the zero-based position in the expression where the error was detected, or -1 if not applicable.
+            </summary>
+        </member>
+        <member name="P:Ampere.Str.Cron.CronParseException.FieldType">
+            <summary>
+            Gets the field that was being parsed when the error occurred, if applicable.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronParseException.#ctor(System.String,System.String,System.Int32,System.Nullable{Ampere.Str.Cron.CronFieldType})">
+            <summary>
+            Initializes a new instance of <see cref="T:Ampere.Str.Cron.CronParseException"/>.
+            </summary>
+            <param name="message">A description of the parse error.</param>
+            <param name="expression">The raw cron expression.</param>
+            <param name="position">The zero-based character position of the error, or -1.</param>
+            <param name="fieldType">The field being parsed when the error occurred.</param>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronParseException.#ctor(System.String,System.String,System.Exception,System.Int32,System.Nullable{Ampere.Str.Cron.CronFieldType})">
+            <summary>
+            Initializes a new instance of <see cref="T:Ampere.Str.Cron.CronParseException"/> with an inner exception.
+            </summary>
+        </member>
+        <member name="T:Ampere.Str.Cron.CronParser">
+            <summary>
+            A high-performance, enterprise-grade cron expression parser supporting standard
+            5-field (minute–DOW), 6-field (with seconds), and 7-field (with year) formats,
+            plus Quartz-style extensions (<c>L</c>, <c>W</c>, <c>LW</c>, <c>#</c>, <c>?</c>)
+            and predefined macros (<c>@yearly</c>, <c>@monthly</c>, etc.).
+            <para>
+            All public methods are thread-safe.  Parsed <see cref="T:Ampere.Str.Cron.CronExpression"/> instances
+            are immutable and may be cached freely.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronParser.Parse(System.String)">
+            <summary>
+            Parses a cron expression string into an immutable <see cref="T:Ampere.Str.Cron.CronExpression"/>.
+            </summary>
+            <param name="expression">A standard or extended cron string, or a macro such as <c>@daily</c>.</param>
+            <returns>The parsed expression.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="expression"/> is <c>null</c>.</exception>
+            <exception cref="T:Ampere.Str.Cron.CronParseException">The expression has invalid syntax or out-of-range values.</exception>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronParser.TryParse(System.String,Ampere.Str.Cron.CronExpression@)">
+            <summary>
+            Attempts to parse a cron expression string.
+            </summary>
+            <param name="expression">The cron string to parse.</param>
+            <param name="result">When the method returns <c>true</c>, contains the parsed expression.</param>
+            <returns><c>true</c> if parsing succeeded; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronParser.ParseCron(System.String)">
+            <summary>
+            Extension method: parses this string as a cron expression.
+            </summary>
+            <example><code>"*/5 * * * *".ParseCron()</code></example>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronParser.TryParseCron(System.String,Ampere.Str.Cron.CronExpression@)">
+            <summary>
+            Extension method: attempts to parse this string as a cron expression.
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronParser.ParseField(System.String,Ampere.Str.Cron.CronFieldType,System.String)">
+            <summary>
+            Parses a single cron field (e.g. <c>1-5</c>, <c>*/15</c>, <c>MON-FRI</c>).
+            </summary>
+        </member>
+        <member name="M:Ampere.Str.Cron.CronParser.ResolveIntOrName(System.String,Ampere.Str.Cron.CronFieldType,System.String)">
+            <summary>
+            Resolves an element string to an integer value, handling named months (JAN-DEC)
+            and days of week (SUN-SAT), as well as Sunday == 7 normalisation.
+            </summary>
+        </member>
         <member name="T:Ampere.Str.StringBuilderUtils">
             <summary>
             A static utility class for StringBuilder extension methods.

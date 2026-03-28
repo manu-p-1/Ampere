@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CronExpression | Ampere Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CronExpression | Ampere Docs ">
+      
+      <meta name="description" content="An immutable, thread-safe representation of a fully parsed cron expression.  Supports standard 5-field (minute–DOW), 6-field with seconds, and 7-field with seconds + year formats.  Also supports Quartz-style extensions: L, W, LW, #, and ?.   Use  to obtain instances, or  to construct them fluently.">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Str_Cron_CronExpression.md&amp;value=---%0Auid%3A%20Ampere.Str.Cron.CronExpression%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Ampere">
+            Ampere
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ampere.Str.Cron.CronExpression">
+
+
+
+  <h1 id="Ampere_Str_Cron_CronExpression" data-uid="Ampere.Str.Cron.CronExpression" class="text-break">
+Class CronExpression  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ampere.html">Ampere</a>.<a class="xref" href="Ampere.Str.html">Str</a>.<a class="xref" href="Ampere.Str.Cron.html">Cron</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ampere.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An immutable, thread-safe representation of a fully parsed cron expression.</p>
+<p>
+Supports standard 5-field (minute–DOW), 6-field with seconds, and 7-field
+with seconds + year formats.  Also supports Quartz-style extensions: <code>L</code>,
+<code>W</code>, <code>LW</code>, <code>#</code>, and <code>?</code>.
+</p>
+<p>
+Use <a class="xref" href="Ampere.Str.Cron.CronParser.html#Ampere_Str_Cron_CronParser_Parse_System_String_">Parse(string)</a> to obtain instances, or <a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a>
+to construct them fluently.
+</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CronExpression : IEquatable&lt;CronExpression&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CronExpression</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Ampere_Str_Cron_CronExpression_DayOfMonth_" data-uid="Ampere.Str.Cron.CronExpression.DayOfMonth*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_DayOfMonth" data-uid="Ampere.Str.Cron.CronExpression.DayOfMonth">
+  DayOfMonth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the day-of-month field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronField DayOfMonth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronField.html">CronField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_DayOfWeek_" data-uid="Ampere.Str.Cron.CronExpression.DayOfWeek*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_DayOfWeek" data-uid="Ampere.Str.Cron.CronExpression.DayOfWeek">
+  DayOfWeek
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the day-of-week field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronField DayOfWeek { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronField.html">CronField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_Format_" data-uid="Ampere.Str.Cron.CronExpression.Format*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_Format" data-uid="Ampere.Str.Cron.CronExpression.Format">
+  Format
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the format that was detected during parsing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronFormat Format { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronFormat.html">CronFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_Hours_" data-uid="Ampere.Str.Cron.CronExpression.Hours*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_Hours" data-uid="Ampere.Str.Cron.CronExpression.Hours">
+  Hours
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the hours field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronField Hours { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronField.html">CronField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_Minutes_" data-uid="Ampere.Str.Cron.CronExpression.Minutes*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_Minutes" data-uid="Ampere.Str.Cron.CronExpression.Minutes">
+  Minutes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the minutes field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronField Minutes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronField.html">CronField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_Month_" data-uid="Ampere.Str.Cron.CronExpression.Month*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_Month" data-uid="Ampere.Str.Cron.CronExpression.Month">
+  Month
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the month field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronField Month { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronField.html">CronField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_RawExpression_" data-uid="Ampere.Str.Cron.CronExpression.RawExpression*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_RawExpression" data-uid="Ampere.Str.Cron.CronExpression.RawExpression">
+  RawExpression
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the original raw expression string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RawExpression { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_Seconds_" data-uid="Ampere.Str.Cron.CronExpression.Seconds*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_Seconds" data-uid="Ampere.Str.Cron.CronExpression.Seconds">
+  Seconds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the seconds field, or <code>null</code> for standard 5-field expressions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronField? Seconds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronField.html">CronField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_Year_" data-uid="Ampere.Str.Cron.CronExpression.Year*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_Year" data-uid="Ampere.Str.Cron.CronExpression.Year">
+  Year
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the year field, or <code>null</code> when not present.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronField? Year { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronField.html">CronField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ampere_Str_Cron_CronExpression_Describe_" data-uid="Ampere.Str.Cron.CronExpression.Describe*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_Describe" data-uid="Ampere.Str.Cron.CronExpression.Describe">
+  Describe()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Produces a human-readable English description of this cron expression.
+Examples: &quot;Every minute&quot;, &quot;At 9:00 AM, Monday through Friday&quot;,
+&quot;Every 15 minutes, 9:00 AM – 5:59 PM, Monday through Friday&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Describe()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_Equals_" data-uid="Ampere.Str.Cron.CronExpression.Equals*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_Equals_Ampere_Str_Cron_CronExpression_" data-uid="Ampere.Str.Cron.CronExpression.Equals(Ampere.Str.Cron.CronExpression)">
+  Equals(CronExpression?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(CronExpression? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_Equals_" data-uid="Ampere.Str.Cron.CronExpression.Equals*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_Equals_System_Object_" data-uid="Ampere.Str.Cron.CronExpression.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L630"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_GetHashCode_" data-uid="Ampere.Str.Cron.CronExpression.GetHashCode*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_GetHashCode" data-uid="Ampere.Str.Cron.CronExpression.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L633"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_GetNextOccurrence_" data-uid="Ampere.Str.Cron.CronExpression.GetNextOccurrence*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_GetNextOccurrence_System_DateTime_System_Boolean_System_TimeZoneInfo_" data-uid="Ampere.Str.Cron.CronExpression.GetNextOccurrence(System.DateTime,System.Boolean,System.TimeZoneInfo)">
+  GetNextOccurrence(DateTime, bool, TimeZoneInfo?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the next <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> that matches this cron expression
+after <code class="paramref">from</code>, or <code>null</code> if none exists within ~4 years.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? GetNextOccurrence(DateTime from, bool inclusive = false, TimeZoneInfo? timeZone = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The reference point (exclusive by default).</p>
+</dd>
+    <dt><code>inclusive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code>, <code class="paramref">from</code> itself may be returned.</p>
+</dd>
+    <dt><code>timeZone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timezoneinfo">TimeZoneInfo</a></dt>
+    <dd><p>Optional time zone; when supplied, the search
+and result are performed in that zone and returned as local time.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_GetNextOccurrences_" data-uid="Ampere.Str.Cron.CronExpression.GetNextOccurrences*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_GetNextOccurrences_System_DateTime_System_Int32_" data-uid="Ampere.Str.Cron.CronExpression.GetNextOccurrences(System.DateTime,System.Int32)">
+  GetNextOccurrences(DateTime, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the next <code class="paramref">count</code> occurrences after <code class="paramref">from</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DateTime&gt; GetNextOccurrences(DateTime from, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_GetOccurrences_" data-uid="Ampere.Str.Cron.CronExpression.GetOccurrences*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_GetOccurrences_System_DateTime_System_DateTime_" data-uid="Ampere.Str.Cron.CronExpression.GetOccurrences(System.DateTime,System.DateTime)">
+  GetOccurrences(DateTime, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enumerates all occurrences between <code class="paramref">from</code> (exclusive)
+and <code class="paramref">to</code> (inclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;DateTime&gt; GetOccurrences(DateTime from, DateTime to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_GetPreviousOccurrence_" data-uid="Ampere.Str.Cron.CronExpression.GetPreviousOccurrence*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_GetPreviousOccurrence_System_DateTime_System_Boolean_" data-uid="Ampere.Str.Cron.CronExpression.GetPreviousOccurrence(System.DateTime,System.Boolean)">
+  GetPreviousOccurrence(DateTime, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the previous <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> that matches this cron expression
+before <code class="paramref">from</code>, or <code>null</code> if none exists within ~4 years.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? GetPreviousOccurrence(DateTime from, bool inclusive = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>inclusive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_IsMatch_" data-uid="Ampere.Str.Cron.CronExpression.IsMatch*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_IsMatch_System_DateTime_" data-uid="Ampere.Str.Cron.CronExpression.IsMatch(System.DateTime)">
+  IsMatch(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if <code class="paramref">dateTime</code> satisfies every field
+of this cron expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMatch(DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_ToCronString_" data-uid="Ampere.Str.Cron.CronExpression.ToCronString*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_ToCronString" data-uid="Ampere.Str.Cron.CronExpression.ToCronString">
+  ToCronString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the canonical cron-notation string (e.g. <code>0 9 * * 1-5</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToCronString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_ToString_" data-uid="Ampere.Str.Cron.CronExpression.ToString*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_ToString" data-uid="Ampere.Str.Cron.CronExpression.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a human-readable English description of this cron expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Ampere_Str_Cron_CronExpression_op_Equality_" data-uid="Ampere.Str.Cron.CronExpression.op_Equality*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_op_Equality_Ampere_Str_Cron_CronExpression_Ampere_Str_Cron_CronExpression_" data-uid="Ampere.Str.Cron.CronExpression.op_Equality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)">
+  operator ==(CronExpression?, CronExpression?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Equality operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(CronExpression? left, CronExpression? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronExpression_op_Inequality_" data-uid="Ampere.Str.Cron.CronExpression.op_Inequality*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronExpression_op_Inequality_Ampere_Str_Cron_CronExpression_Ampere_Str_Cron_CronExpression_" data-uid="Ampere.Str.Cron.CronExpression.op_Inequality(Ampere.Str.Cron.CronExpression,Ampere.Str.Cron.CronExpression)">
+  operator !=(CronExpression?, CronExpression?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L639"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inequality operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(CronExpression? left, CronExpression? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronExpression.cs/#L22" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright &copy; Manu Puduvalli<br>Generated with <strong><a href='https://github.com/dotnet/docfx'>DocFX</a></strong></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

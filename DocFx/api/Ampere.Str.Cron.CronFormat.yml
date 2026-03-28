@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Str.Cron.CronFormat
+  commentId: T:Ampere.Str.Cron.CronFormat
+  id: CronFormat
+  parent: Ampere.Str.Cron
+  children:
+  - Ampere.Str.Cron.CronFormat.Standard
+  - Ampere.Str.Cron.CronFormat.WithSeconds
+  - Ampere.Str.Cron.CronFormat.WithSecondsAndYear
+  langs:
+  - csharp
+  - vb
+  name: CronFormat
+  nameWithType: CronFormat
+  fullName: Ampere.Str.Cron.CronFormat
+  type: Enum
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: CronFormat
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 32
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Specifies the number of fields in a cron expression.
+  example: []
+  syntax:
+    content: public enum CronFormat
+    content.vb: Public Enum CronFormat
+- uid: Ampere.Str.Cron.CronFormat.Standard
+  commentId: F:Ampere.Str.Cron.CronFormat.Standard
+  id: Standard
+  parent: Ampere.Str.Cron.CronFormat
+  langs:
+  - csharp
+  - vb
+  name: Standard
+  nameWithType: CronFormat.Standard
+  fullName: Ampere.Str.Cron.CronFormat.Standard
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Standard
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 35
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: 'Standard 5-field format: minute hour day-of-month month day-of-week.'
+  example: []
+  syntax:
+    content: Standard = 0
+    return:
+      type: Ampere.Str.Cron.CronFormat
+- uid: Ampere.Str.Cron.CronFormat.WithSeconds
+  commentId: F:Ampere.Str.Cron.CronFormat.WithSeconds
+  id: WithSeconds
+  parent: Ampere.Str.Cron.CronFormat
+  langs:
+  - csharp
+  - vb
+  name: WithSeconds
+  nameWithType: CronFormat.WithSeconds
+  fullName: Ampere.Str.Cron.CronFormat.WithSeconds
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WithSeconds
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 37
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: '6-field format with seconds: second minute hour day-of-month month day-of-week.'
+  example: []
+  syntax:
+    content: WithSeconds = 1
+    return:
+      type: Ampere.Str.Cron.CronFormat
+- uid: Ampere.Str.Cron.CronFormat.WithSecondsAndYear
+  commentId: F:Ampere.Str.Cron.CronFormat.WithSecondsAndYear
+  id: WithSecondsAndYear
+  parent: Ampere.Str.Cron.CronFormat
+  langs:
+  - csharp
+  - vb
+  name: WithSecondsAndYear
+  nameWithType: CronFormat.WithSecondsAndYear
+  fullName: Ampere.Str.Cron.CronFormat.WithSecondsAndYear
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: WithSecondsAndYear
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 39
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: '7-field format: second minute hour day-of-month month day-of-week year.'
+  example: []
+  syntax:
+    content: WithSecondsAndYear = 2
+    return:
+      type: Ampere.Str.Cron.CronFormat
+references:
+- uid: Ampere.Str.Cron
+  commentId: N:Ampere.Str.Cron
+  href: Ampere.html
+  name: Ampere.Str.Cron
+  nameWithType: Ampere.Str.Cron
+  fullName: Ampere.Str.Cron
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+- uid: Ampere.Str.Cron.CronFormat
+  commentId: T:Ampere.Str.Cron.CronFormat
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronFormat.html
+  name: CronFormat
+  nameWithType: CronFormat
+  fullName: Ampere.Str.Cron.CronFormat

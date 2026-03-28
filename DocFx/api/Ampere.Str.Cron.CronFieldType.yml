@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Str.Cron.CronFieldType
+  commentId: T:Ampere.Str.Cron.CronFieldType
+  id: CronFieldType
+  parent: Ampere.Str.Cron
+  children:
+  - Ampere.Str.Cron.CronFieldType.Second
+  - Ampere.Str.Cron.CronFieldType.Minute
+  - Ampere.Str.Cron.CronFieldType.Hour
+  - Ampere.Str.Cron.CronFieldType.DayOfMonth
+  - Ampere.Str.Cron.CronFieldType.Month
+  - Ampere.Str.Cron.CronFieldType.DayOfWeek
+  - Ampere.Str.Cron.CronFieldType.Year
+  langs:
+  - csharp
+  - vb
+  name: CronFieldType
+  nameWithType: CronFieldType
+  fullName: Ampere.Str.Cron.CronFieldType
+  type: Enum
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: CronFieldType
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 11
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Identifies which field of a cron expression a <xref href="Ampere.Str.Cron.CronField" data-throw-if-not-resolved="false"></xref> represents.
+  example: []
+  syntax:
+    content: public enum CronFieldType
+    content.vb: Public Enum CronFieldType
+- uid: Ampere.Str.Cron.CronFieldType.Second
+  commentId: F:Ampere.Str.Cron.CronFieldType.Second
+  id: Second
+  parent: Ampere.Str.Cron.CronFieldType
+  langs:
+  - csharp
+  - vb
+  name: Second
+  nameWithType: CronFieldType.Second
+  fullName: Ampere.Str.Cron.CronFieldType.Second
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Second
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 14
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Seconds field (0–59). Present only in extended cron formats.
+  example: []
+  syntax:
+    content: Second = 0
+    return:
+      type: Ampere.Str.Cron.CronFieldType
+- uid: Ampere.Str.Cron.CronFieldType.Minute
+  commentId: F:Ampere.Str.Cron.CronFieldType.Minute
+  id: Minute
+  parent: Ampere.Str.Cron.CronFieldType
+  langs:
+  - csharp
+  - vb
+  name: Minute
+  nameWithType: CronFieldType.Minute
+  fullName: Ampere.Str.Cron.CronFieldType.Minute
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Minute
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 16
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Minutes field (0–59).
+  example: []
+  syntax:
+    content: Minute = 1
+    return:
+      type: Ampere.Str.Cron.CronFieldType
+- uid: Ampere.Str.Cron.CronFieldType.Hour
+  commentId: F:Ampere.Str.Cron.CronFieldType.Hour
+  id: Hour
+  parent: Ampere.Str.Cron.CronFieldType
+  langs:
+  - csharp
+  - vb
+  name: Hour
+  nameWithType: CronFieldType.Hour
+  fullName: Ampere.Str.Cron.CronFieldType.Hour
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Hour
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 18
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Hours field (0–23).
+  example: []
+  syntax:
+    content: Hour = 2
+    return:
+      type: Ampere.Str.Cron.CronFieldType
+- uid: Ampere.Str.Cron.CronFieldType.DayOfMonth
+  commentId: F:Ampere.Str.Cron.CronFieldType.DayOfMonth
+  id: DayOfMonth
+  parent: Ampere.Str.Cron.CronFieldType
+  langs:
+  - csharp
+  - vb
+  name: DayOfMonth
+  nameWithType: CronFieldType.DayOfMonth
+  fullName: Ampere.Str.Cron.CronFieldType.DayOfMonth
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: DayOfMonth
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 20
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Day-of-month field (1–31).
+  example: []
+  syntax:
+    content: DayOfMonth = 3
+    return:
+      type: Ampere.Str.Cron.CronFieldType
+- uid: Ampere.Str.Cron.CronFieldType.Month
+  commentId: F:Ampere.Str.Cron.CronFieldType.Month
+  id: Month
+  parent: Ampere.Str.Cron.CronFieldType
+  langs:
+  - csharp
+  - vb
+  name: Month
+  nameWithType: CronFieldType.Month
+  fullName: Ampere.Str.Cron.CronFieldType.Month
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Month
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 22
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Month field (1–12).
+  example: []
+  syntax:
+    content: Month = 4
+    return:
+      type: Ampere.Str.Cron.CronFieldType
+- uid: Ampere.Str.Cron.CronFieldType.DayOfWeek
+  commentId: F:Ampere.Str.Cron.CronFieldType.DayOfWeek
+  id: DayOfWeek
+  parent: Ampere.Str.Cron.CronFieldType
+  langs:
+  - csharp
+  - vb
+  name: DayOfWeek
+  nameWithType: CronFieldType.DayOfWeek
+  fullName: Ampere.Str.Cron.CronFieldType.DayOfWeek
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: DayOfWeek
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 24
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Day-of-week field (0–6, where 0 = Sunday).
+  example: []
+  syntax:
+    content: DayOfWeek = 5
+    return:
+      type: Ampere.Str.Cron.CronFieldType
+- uid: Ampere.Str.Cron.CronFieldType.Year
+  commentId: F:Ampere.Str.Cron.CronFieldType.Year
+  id: Year
+  parent: Ampere.Str.Cron.CronFieldType
+  langs:
+  - csharp
+  - vb
+  name: Year
+  nameWithType: CronFieldType.Year
+  fullName: Ampere.Str.Cron.CronFieldType.Year
+  type: Field
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: Year
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 26
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Year field (1970–2099). Present only in extended cron formats.
+  example: []
+  syntax:
+    content: Year = 6
+    return:
+      type: Ampere.Str.Cron.CronFieldType
+references:
+- uid: Ampere.Str.Cron.CronField
+  commentId: T:Ampere.Str.Cron.CronField
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronField.html
+  name: CronField
+  nameWithType: CronField
+  fullName: Ampere.Str.Cron.CronField
+- uid: Ampere.Str.Cron
+  commentId: N:Ampere.Str.Cron
+  href: Ampere.html
+  name: Ampere.Str.Cron
+  nameWithType: Ampere.Str.Cron
+  fullName: Ampere.Str.Cron
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+- uid: Ampere.Str.Cron.CronFieldType
+  commentId: T:Ampere.Str.Cron.CronFieldType
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronFieldType.html
+  name: CronFieldType
+  nameWithType: CronFieldType
+  fullName: Ampere.Str.Cron.CronFieldType

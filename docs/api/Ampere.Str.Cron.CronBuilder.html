@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CronBuilder | Ampere Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CronBuilder | Ampere Docs ">
+      
+      <meta name="description" content="A fluent, type-safe builder for constructing  instances.  Provides both raw field methods () and high-level convenience methods (, , ).   var expr = new CronBuilder()     .AtTime(9, 0)     .OnDaysOfWeek(DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday)     .Build(); // produces &quot;0 9 * * 1,3,5&quot;">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/manu-p-1/Ampere/new/main/apiSpec/new?filename=Ampere_Str_Cron_CronBuilder.md&amp;value=---%0Auid%3A%20Ampere.Str.Cron.CronBuilder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="Ampere">
+            Ampere
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ampere.Str.Cron.CronBuilder">
+
+
+
+  <h1 id="Ampere_Str_Cron_CronBuilder" data-uid="Ampere.Str.Cron.CronBuilder" class="text-break">
+Class CronBuilder  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ampere.html">Ampere</a>.<a class="xref" href="Ampere.Str.html">Str</a>.<a class="xref" href="Ampere.Str.Cron.html">Cron</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ampere.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A fluent, type-safe builder for constructing <a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a> instances.</p>
+<p>
+Provides both raw field methods (<a class="xref" href="Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_WithMinutes_System_String_">WithMinutes(string)</a>) and
+high-level convenience methods (<a class="xref" href="Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_EveryNMinutes_System_Int32_">EveryNMinutes(int)</a>,
+<a class="xref" href="Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_AtTime_System_Int32_System_Int32_">AtTime(int, int)</a>, <a class="xref" href="Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_OnDaysOfWeek_System_DayOfWeek___">OnDaysOfWeek(params DayOfWeek[])</a>).
+</p>
+<example>
+<pre><code class="lang-csharp">var expr = new CronBuilder()
+    .AtTime(9, 0)
+    .OnDaysOfWeek(DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday)
+    .Build();
+// produces "0 9 * * 1,3,5"</code></pre>
+</example>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CronBuilder</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CronBuilder</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_AtTime_" data-uid="Ampere.Str.Cron.CronBuilder.AtTime*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_AtTime_System_Int32_System_Int32_" data-uid="Ampere.Str.Cron.CronBuilder.AtTime(System.Int32,System.Int32)">
+  AtTime(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the time to a specific hour and minute (e.g. 9:30).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder AtTime(int hour, int minute)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hour</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>minute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_AtTimes_" data-uid="Ampere.Str.Cron.CronBuilder.AtTimes*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_AtTimes_System_ValueTuple_System_Int32_System_Int32____" data-uid="Ampere.Str.Cron.CronBuilder.AtTimes(System.ValueTuple{System.Int32,System.Int32}[])">
+  AtTimes(params (int Hour, int Minute)[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the time to multiple specific times during the day.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder AtTimes(params (int Hour, int Minute)[] times)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>times</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.hour">Hour</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.int32-.minute">Minute</a>)[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_Build_" data-uid="Ampere.Str.Cron.CronBuilder.Build*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_Build" data-uid="Ampere.Str.Cron.CronBuilder.Build">
+  Build()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds and validates the <a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a>.
+Throws <a class="xref" href="Ampere.Str.Cron.CronParseException.html">CronParseException</a> if the assembled fields are invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronExpression Build()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_Daily_" data-uid="Ampere.Str.Cron.CronBuilder.Daily*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_Daily" data-uid="Ampere.Str.Cron.CronBuilder.Daily">
+  Daily()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Every day at midnight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder Daily()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_DuringHours_" data-uid="Ampere.Str.Cron.CronBuilder.DuringHours*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_DuringHours_System_Int32_System_Int32_" data-uid="Ampere.Str.Cron.CronBuilder.DuringHours(System.Int32,System.Int32)">
+  DuringHours(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets hours to a range (e.g. 9–17 for business hours).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder DuringHours(int startHour, int endHour)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startHour</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endHour</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_EveryHour_" data-uid="Ampere.Str.Cron.CronBuilder.EveryHour*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_EveryHour" data-uid="Ampere.Str.Cron.CronBuilder.EveryHour">
+  EveryHour()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the expression to fire every hour at minute 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder EveryHour()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_EveryMinute_" data-uid="Ampere.Str.Cron.CronBuilder.EveryMinute*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_EveryMinute" data-uid="Ampere.Str.Cron.CronBuilder.EveryMinute">
+  EveryMinute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the expression to fire every minute (<code>* * * * *</code> baseline).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder EveryMinute()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_EveryNHours_" data-uid="Ampere.Str.Cron.CronBuilder.EveryNHours*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_EveryNHours_System_Int32_" data-uid="Ampere.Str.Cron.CronBuilder.EveryNHours(System.Int32)">
+  EveryNHours(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the expression to fire every <code class="paramref">n</code> hours at minute 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder EveryNHours(int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_EveryNMinutes_" data-uid="Ampere.Str.Cron.CronBuilder.EveryNMinutes*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_EveryNMinutes_System_Int32_" data-uid="Ampere.Str.Cron.CronBuilder.EveryNMinutes(System.Int32)">
+  EveryNMinutes(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the expression to fire every <code class="paramref">n</code> minutes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder EveryNMinutes(int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_EveryNSeconds_" data-uid="Ampere.Str.Cron.CronBuilder.EveryNSeconds*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_EveryNSeconds_System_Int32_" data-uid="Ampere.Str.Cron.CronBuilder.EveryNSeconds(System.Int32)">
+  EveryNSeconds(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the expression to fire every <code class="paramref">n</code> seconds (enables seconds field).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder EveryNSeconds(int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_InMonths_" data-uid="Ampere.Str.Cron.CronBuilder.InMonths*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_InMonths_System_Int32___" data-uid="Ampere.Str.Cron.CronBuilder.InMonths(System.Int32[])">
+  InMonths(params int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restricts to specific months (1–12).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder InMonths(params int[] months)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>months</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_InYears_" data-uid="Ampere.Str.Cron.CronBuilder.InYears*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_InYears_System_Int32___" data-uid="Ampere.Str.Cron.CronBuilder.InYears(System.Int32[])">
+  InYears(params int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restricts to specific years (enables 7-field format).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder InYears(params int[] years)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>years</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_Monthly_" data-uid="Ampere.Str.Cron.CronBuilder.Monthly*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_Monthly" data-uid="Ampere.Str.Cron.CronBuilder.Monthly">
+  Monthly()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>First of every month at midnight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder Monthly()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_OnDaysOfMonth_" data-uid="Ampere.Str.Cron.CronBuilder.OnDaysOfMonth*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_OnDaysOfMonth_System_Int32___" data-uid="Ampere.Str.Cron.CronBuilder.OnDaysOfMonth(System.Int32[])">
+  OnDaysOfMonth(params int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restricts to specific days of the month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder OnDaysOfMonth(params int[] days)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>days</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_OnDaysOfWeek_" data-uid="Ampere.Str.Cron.CronBuilder.OnDaysOfWeek*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_OnDaysOfWeek_System_DayOfWeek___" data-uid="Ampere.Str.Cron.CronBuilder.OnDaysOfWeek(System.DayOfWeek[])">
+  OnDaysOfWeek(params DayOfWeek[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restricts to the given days of the week.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder OnDaysOfWeek(params DayOfWeek[] days)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>days</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dayofweek">DayOfWeek</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_OnLastDayOfMonth_" data-uid="Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_OnLastDayOfMonth" data-uid="Ampere.Str.Cron.CronBuilder.OnLastDayOfMonth">
+  OnLastDayOfMonth()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fires on the last day of every month (<code>L</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder OnLastDayOfMonth()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_OnLastDayOfWeek_" data-uid="Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_OnLastDayOfWeek_System_DayOfWeek_" data-uid="Ampere.Str.Cron.CronBuilder.OnLastDayOfWeek(System.DayOfWeek)">
+  OnLastDayOfWeek(DayOfWeek)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fires on the last occurrence of a weekday in the month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder OnLastDayOfWeek(DayOfWeek day)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>day</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dayofweek">DayOfWeek</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_OnLastWeekdayOfMonth_" data-uid="Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_OnLastWeekdayOfMonth" data-uid="Ampere.Str.Cron.CronBuilder.OnLastWeekdayOfMonth">
+  OnLastWeekdayOfMonth()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fires on the last weekday (Mon–Fri) of every month (<code>LW</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder OnLastWeekdayOfMonth()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_OnNearestWeekday_" data-uid="Ampere.Str.Cron.CronBuilder.OnNearestWeekday*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_OnNearestWeekday_System_Int32_" data-uid="Ampere.Str.Cron.CronBuilder.OnNearestWeekday(System.Int32)">
+  OnNearestWeekday(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fires on the nearest weekday to the given day of the month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder OnNearestWeekday(int day)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>day</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_OnNthDayOfWeek_" data-uid="Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_OnNthDayOfWeek_System_DayOfWeek_System_Int32_" data-uid="Ampere.Str.Cron.CronBuilder.OnNthDayOfWeek(System.DayOfWeek,System.Int32)">
+  OnNthDayOfWeek(DayOfWeek, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fires on the Nth occurrence of a weekday in the month (e.g. 2nd Tuesday).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder OnNthDayOfWeek(DayOfWeek day, int nth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>day</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dayofweek">DayOfWeek</a></dt>
+    <dd></dd>
+    <dt><code>nth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_ToCronString_" data-uid="Ampere.Str.Cron.CronBuilder.ToCronString*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_ToCronString" data-uid="Ampere.Str.Cron.CronBuilder.ToCronString">
+  ToCronString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the cron string that <a class="xref" href="Ampere.Str.Cron.CronBuilder.html#Ampere_Str_Cron_CronBuilder_Build">Build()</a> would parse,
+without performing validation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToCronString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_ToString_" data-uid="Ampere.Str.Cron.CronBuilder.ToString*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_ToString" data-uid="Ampere.Str.Cron.CronBuilder.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a human-readable description of what the built expression would produce.
+Returns the cron string if validation fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_TryBuild_" data-uid="Ampere.Str.Cron.CronBuilder.TryBuild*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_TryBuild_Ampere_Str_Cron_CronExpression__System_String__" data-uid="Ampere.Str.Cron.CronBuilder.TryBuild(Ampere.Str.Cron.CronExpression@,System.String@)">
+  TryBuild(out CronExpression?, out string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to build the expression without throwing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryBuild(out CronExpression? result, out string? error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="Ampere.Str.Cron.CronExpression.html">CronExpression</a></dt>
+    <dd><p>The built expression, or <code>null</code>.</p>
+</dd>
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A description of the failure, or <code>null</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> on success.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_Weekdays_" data-uid="Ampere.Str.Cron.CronBuilder.Weekdays*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_Weekdays" data-uid="Ampere.Str.Cron.CronBuilder.Weekdays">
+  Weekdays()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shorthand for Monday–Friday.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder Weekdays()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_Weekends_" data-uid="Ampere.Str.Cron.CronBuilder.Weekends*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_Weekends" data-uid="Ampere.Str.Cron.CronBuilder.Weekends">
+  Weekends()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shorthand for Saturday and Sunday.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder Weekends()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_Weekly_" data-uid="Ampere.Str.Cron.CronBuilder.Weekly*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_Weekly" data-uid="Ampere.Str.Cron.CronBuilder.Weekly">
+  Weekly()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Every Sunday at midnight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder Weekly()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_WithDayOfMonth_" data-uid="Ampere.Str.Cron.CronBuilder.WithDayOfMonth*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_WithDayOfMonth_System_String_" data-uid="Ampere.Str.Cron.CronBuilder.WithDayOfMonth(System.String)">
+  WithDayOfMonth(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the day-of-month field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder WithDayOfMonth(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_WithDayOfWeek_" data-uid="Ampere.Str.Cron.CronBuilder.WithDayOfWeek*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_WithDayOfWeek_System_String_" data-uid="Ampere.Str.Cron.CronBuilder.WithDayOfWeek(System.String)">
+  WithDayOfWeek(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the day-of-week field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder WithDayOfWeek(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_WithHours_" data-uid="Ampere.Str.Cron.CronBuilder.WithHours*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_WithHours_System_String_" data-uid="Ampere.Str.Cron.CronBuilder.WithHours(System.String)">
+  WithHours(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the hours field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder WithHours(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_WithMinutes_" data-uid="Ampere.Str.Cron.CronBuilder.WithMinutes*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_WithMinutes_System_String_" data-uid="Ampere.Str.Cron.CronBuilder.WithMinutes(System.String)">
+  WithMinutes(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the minutes field. Any valid cron syntax (e.g. <code>*/15</code>, <code>0,30</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder WithMinutes(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_WithMonth_" data-uid="Ampere.Str.Cron.CronBuilder.WithMonth*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_WithMonth_System_String_" data-uid="Ampere.Str.Cron.CronBuilder.WithMonth(System.String)">
+  WithMonth(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the month field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder WithMonth(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_WithSeconds_" data-uid="Ampere.Str.Cron.CronBuilder.WithSeconds*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_WithSeconds_System_String_" data-uid="Ampere.Str.Cron.CronBuilder.WithSeconds(System.String)">
+  WithSeconds(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the seconds field (enables 6-field format). Any valid cron syntax.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder WithSeconds(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_WithYear_" data-uid="Ampere.Str.Cron.CronBuilder.WithYear*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_WithYear_System_String_" data-uid="Ampere.Str.Cron.CronBuilder.WithYear(System.String)">
+  WithYear(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the year field (enables 7-field format).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder WithYear(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ampere_Str_Cron_CronBuilder_Yearly_" data-uid="Ampere.Str.Cron.CronBuilder.Yearly*"></a>
+
+  <h3 id="Ampere_Str_Cron_CronBuilder_Yearly" data-uid="Ampere.Str.Cron.CronBuilder.Yearly">
+  Yearly()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>January 1 at midnight each year.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CronBuilder Yearly()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ampere.Str.Cron.CronBuilder.html">CronBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/manu-p-1/Ampere/blob/upgrade-net10/Ampere/Str/Cron/CronBuilder.cs/#L27" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright &copy; Manu Puduvalli<br>Generated with <strong><a href='https://github.com/dotnet/docfx'>DocFX</a></strong></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

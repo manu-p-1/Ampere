@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Str.Cron
+  commentId: N:Ampere.Str.Cron
+  id: Ampere.Str.Cron
+  children:
+  - Ampere.Str.Cron.CronBuilder
+  - Ampere.Str.Cron.CronExpression
+  - Ampere.Str.Cron.CronField
+  - Ampere.Str.Cron.CronFieldType
+  - Ampere.Str.Cron.CronFormat
+  - Ampere.Str.Cron.CronHashNode
+  - Ampere.Str.Cron.CronLastDayNode
+  - Ampere.Str.Cron.CronLastWeekdayNode
+  - Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+  - Ampere.Str.Cron.CronNearestWeekdayNode
+  - Ampere.Str.Cron.CronNode
+  - Ampere.Str.Cron.CronParseException
+  - Ampere.Str.Cron.CronParser
+  - Ampere.Str.Cron.CronQuestionMarkNode
+  - Ampere.Str.Cron.CronRangeNode
+  - Ampere.Str.Cron.CronStepNode
+  - Ampere.Str.Cron.CronValueNode
+  - Ampere.Str.Cron.CronWildcardNode
+  langs:
+  - csharp
+  - vb
+  name: Ampere.Str.Cron
+  nameWithType: Ampere.Str.Cron
+  fullName: Ampere.Str.Cron
+  type: Namespace
+  assemblies:
+  - Ampere
+references:
+- uid: Ampere.Str.Cron.CronBuilder
+  commentId: T:Ampere.Str.Cron.CronBuilder
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronBuilder.html
+  name: CronBuilder
+  nameWithType: CronBuilder
+  fullName: Ampere.Str.Cron.CronBuilder
+- uid: Ampere.Str.Cron.CronExpression
+  commentId: T:Ampere.Str.Cron.CronExpression
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronExpression.html
+  name: CronExpression
+  nameWithType: CronExpression
+  fullName: Ampere.Str.Cron.CronExpression
+- uid: Ampere.Str.Cron.CronFieldType
+  commentId: T:Ampere.Str.Cron.CronFieldType
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronFieldType.html
+  name: CronFieldType
+  nameWithType: CronFieldType
+  fullName: Ampere.Str.Cron.CronFieldType
+- uid: Ampere.Str.Cron.CronFormat
+  commentId: T:Ampere.Str.Cron.CronFormat
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronFormat.html
+  name: CronFormat
+  nameWithType: CronFormat
+  fullName: Ampere.Str.Cron.CronFormat
+- uid: Ampere.Str.Cron.CronNode
+  commentId: T:Ampere.Str.Cron.CronNode
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronNode.html
+  name: CronNode
+  nameWithType: CronNode
+  fullName: Ampere.Str.Cron.CronNode
+- uid: Ampere.Str.Cron.CronWildcardNode
+  commentId: T:Ampere.Str.Cron.CronWildcardNode
+  href: Ampere.Str.Cron.CronWildcardNode.html
+  name: CronWildcardNode
+  nameWithType: CronWildcardNode
+  fullName: Ampere.Str.Cron.CronWildcardNode
+- uid: Ampere.Str.Cron.CronQuestionMarkNode
+  commentId: T:Ampere.Str.Cron.CronQuestionMarkNode
+  href: Ampere.Str.Cron.CronQuestionMarkNode.html
+  name: CronQuestionMarkNode
+  nameWithType: CronQuestionMarkNode
+  fullName: Ampere.Str.Cron.CronQuestionMarkNode
+- uid: Ampere.Str.Cron.CronValueNode
+  commentId: T:Ampere.Str.Cron.CronValueNode
+  href: Ampere.Str.Cron.CronValueNode.html
+  name: CronValueNode
+  nameWithType: CronValueNode
+  fullName: Ampere.Str.Cron.CronValueNode
+- uid: Ampere.Str.Cron.CronRangeNode
+  commentId: T:Ampere.Str.Cron.CronRangeNode
+  href: Ampere.Str.Cron.CronRangeNode.html
+  name: CronRangeNode
+  nameWithType: CronRangeNode
+  fullName: Ampere.Str.Cron.CronRangeNode
+- uid: Ampere.Str.Cron.CronStepNode
+  commentId: T:Ampere.Str.Cron.CronStepNode
+  href: Ampere.Str.Cron.CronStepNode.html
+  name: CronStepNode
+  nameWithType: CronStepNode
+  fullName: Ampere.Str.Cron.CronStepNode
+- uid: Ampere.Str.Cron.CronLastDayNode
+  commentId: T:Ampere.Str.Cron.CronLastDayNode
+  href: Ampere.Str.Cron.CronLastDayNode.html
+  name: CronLastDayNode
+  nameWithType: CronLastDayNode
+  fullName: Ampere.Str.Cron.CronLastDayNode
+- uid: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+  commentId: T:Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+  href: Ampere.Str.Cron.CronLastWeekdayOfMonthNode.html
+  name: CronLastWeekdayOfMonthNode
+  nameWithType: CronLastWeekdayOfMonthNode
+  fullName: Ampere.Str.Cron.CronLastWeekdayOfMonthNode
+- uid: Ampere.Str.Cron.CronNearestWeekdayNode
+  commentId: T:Ampere.Str.Cron.CronNearestWeekdayNode
+  href: Ampere.Str.Cron.CronNearestWeekdayNode.html
+  name: CronNearestWeekdayNode
+  nameWithType: CronNearestWeekdayNode
+  fullName: Ampere.Str.Cron.CronNearestWeekdayNode
+- uid: Ampere.Str.Cron.CronLastWeekdayNode
+  commentId: T:Ampere.Str.Cron.CronLastWeekdayNode
+  href: Ampere.Str.Cron.CronLastWeekdayNode.html
+  name: CronLastWeekdayNode
+  nameWithType: CronLastWeekdayNode
+  fullName: Ampere.Str.Cron.CronLastWeekdayNode
+- uid: Ampere.Str.Cron.CronHashNode
+  commentId: T:Ampere.Str.Cron.CronHashNode
+  href: Ampere.Str.Cron.CronHashNode.html
+  name: CronHashNode
+  nameWithType: CronHashNode
+  fullName: Ampere.Str.Cron.CronHashNode
+- uid: Ampere.Str.Cron.CronField
+  commentId: T:Ampere.Str.Cron.CronField
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronField.html
+  name: CronField
+  nameWithType: CronField
+  fullName: Ampere.Str.Cron.CronField
+- uid: Ampere.Str.Cron.CronParseException
+  commentId: T:Ampere.Str.Cron.CronParseException
+  href: Ampere.Str.Cron.CronParseException.html
+  name: CronParseException
+  nameWithType: CronParseException
+  fullName: Ampere.Str.Cron.CronParseException
+- uid: Ampere.Str.Cron.CronParser
+  commentId: T:Ampere.Str.Cron.CronParser
+  href: Ampere.Str.Cron.CronParser.html
+  name: CronParser
+  nameWithType: CronParser
+  fullName: Ampere.Str.Cron.CronParser
+- uid: Ampere.Str.Cron
+  commentId: N:Ampere.Str.Cron
+  href: Ampere.html
+  name: Ampere.Str.Cron
+  nameWithType: Ampere.Str.Cron
+  fullName: Ampere.Str.Cron
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html

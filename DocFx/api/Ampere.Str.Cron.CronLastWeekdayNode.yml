@@ -1,0 +1,456 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ampere.Str.Cron.CronLastWeekdayNode
+  commentId: T:Ampere.Str.Cron.CronLastWeekdayNode
+  id: CronLastWeekdayNode
+  parent: Ampere.Str.Cron
+  children:
+  - Ampere.Str.Cron.CronLastWeekdayNode.ToCronString
+  langs:
+  - csharp
+  - vb
+  name: CronLastWeekdayNode
+  nameWithType: CronLastWeekdayNode
+  fullName: Ampere.Str.Cron.CronLastWeekdayNode
+  type: Class
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: CronLastWeekdayNode
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 219
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Last weekday (<code>LW</code>) of the month – shorthand for the last business day.
+  example: []
+  syntax:
+    content: 'public sealed record CronLastWeekdayNode : CronNode, IEquatable<CronNode>, IEquatable<CronLastWeekdayNode>'
+    content.vb: Public NotInheritable Class CronLastWeekdayNode Inherits CronNode Implements IEquatable(Of CronNode), IEquatable(Of CronLastWeekdayNode)
+  inheritance:
+  - System.Object
+  - Ampere.Str.Cron.CronNode
+  implements:
+  - System.IEquatable{Ampere.Str.Cron.CronNode}
+  - System.IEquatable{Ampere.Str.Cron.CronLastWeekdayNode}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Ampere.Str.Cron.CronLastWeekdayNode.ToCronString
+  commentId: M:Ampere.Str.Cron.CronLastWeekdayNode.ToCronString
+  id: ToCronString
+  parent: Ampere.Str.Cron.CronLastWeekdayNode
+  langs:
+  - csharp
+  - vb
+  name: ToCronString()
+  nameWithType: CronLastWeekdayNode.ToCronString()
+  fullName: Ampere.Str.Cron.CronLastWeekdayNode.ToCronString()
+  type: Method
+  source:
+    remote:
+      path: Ampere/Str/Cron/CronField.cs
+      branch: upgrade-net10
+      repo: https://github.com/manu-p-1/Ampere.git
+    id: ToCronString
+    path: ../Ampere/Str/Cron/CronField.cs
+    startLine: 232
+  assemblies:
+  - Ampere
+  namespace: Ampere.Str.Cron
+  summary: Returns the canonical cron-syntax representation of this node.
+  example: []
+  syntax:
+    content: public override string ToCronString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToCronString() As String
+  overridden: Ampere.Str.Cron.CronNode.ToCronString
+  overload: Ampere.Str.Cron.CronLastWeekdayNode.ToCronString*
+references:
+- uid: Ampere.Str.Cron
+  commentId: N:Ampere.Str.Cron
+  href: Ampere.html
+  name: Ampere.Str.Cron
+  nameWithType: Ampere.Str.Cron
+  fullName: Ampere.Str.Cron
+  spec.csharp:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+  spec.vb:
+  - uid: Ampere
+    name: Ampere
+    href: Ampere.html
+  - name: .
+  - uid: Ampere.Str
+    name: Str
+    href: Ampere.Str.html
+  - name: .
+  - uid: Ampere.Str.Cron
+    name: Cron
+    href: Ampere.Str.Cron.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Ampere.Str.Cron.CronNode
+  commentId: T:Ampere.Str.Cron.CronNode
+  parent: Ampere.Str.Cron
+  href: Ampere.Str.Cron.CronNode.html
+  name: CronNode
+  nameWithType: CronNode
+  fullName: Ampere.Str.Cron.CronNode
+- uid: System.IEquatable{Ampere.Str.Cron.CronNode}
+  commentId: T:System.IEquatable{Ampere.Str.Cron.CronNode}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CronNode>
+  nameWithType: IEquatable<CronNode>
+  fullName: System.IEquatable<Ampere.Str.Cron.CronNode>
+  nameWithType.vb: IEquatable(Of CronNode)
+  fullName.vb: System.IEquatable(Of Ampere.Str.Cron.CronNode)
+  name.vb: IEquatable(Of CronNode)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Ampere.Str.Cron.CronNode
+    name: CronNode
+    href: Ampere.Str.Cron.CronNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ampere.Str.Cron.CronNode
+    name: CronNode
+    href: Ampere.Str.Cron.CronNode.html
+  - name: )
+- uid: System.IEquatable{Ampere.Str.Cron.CronLastWeekdayNode}
+  commentId: T:System.IEquatable{Ampere.Str.Cron.CronLastWeekdayNode}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CronLastWeekdayNode>
+  nameWithType: IEquatable<CronLastWeekdayNode>
+  fullName: System.IEquatable<Ampere.Str.Cron.CronLastWeekdayNode>
+  nameWithType.vb: IEquatable(Of CronLastWeekdayNode)
+  fullName.vb: System.IEquatable(Of Ampere.Str.Cron.CronLastWeekdayNode)
+  name.vb: IEquatable(Of CronLastWeekdayNode)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Ampere.Str.Cron.CronLastWeekdayNode
+    name: CronLastWeekdayNode
+    href: Ampere.Str.Cron.CronLastWeekdayNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ampere.Str.Cron.CronLastWeekdayNode
+    name: CronLastWeekdayNode
+    href: Ampere.Str.Cron.CronLastWeekdayNode.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Ampere.Str.Cron.CronNode.ToCronString
+  commentId: M:Ampere.Str.Cron.CronNode.ToCronString
+  parent: Ampere.Str.Cron.CronNode
+  href: Ampere.Str.Cron.CronNode.html#Ampere_Str_Cron_CronNode_ToCronString
+  name: ToCronString()
+  nameWithType: CronNode.ToCronString()
+  fullName: Ampere.Str.Cron.CronNode.ToCronString()
+  spec.csharp:
+  - uid: Ampere.Str.Cron.CronNode.ToCronString
+    name: ToCronString
+    href: Ampere.Str.Cron.CronNode.html#Ampere_Str_Cron_CronNode_ToCronString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Ampere.Str.Cron.CronNode.ToCronString
+    name: ToCronString
+    href: Ampere.Str.Cron.CronNode.html#Ampere_Str_Cron_CronNode_ToCronString
+  - name: (
+  - name: )
+- uid: Ampere.Str.Cron.CronLastWeekdayNode.ToCronString*
+  commentId: Overload:Ampere.Str.Cron.CronLastWeekdayNode.ToCronString
+  href: Ampere.Str.Cron.CronLastWeekdayNode.html#Ampere_Str_Cron_CronLastWeekdayNode_ToCronString
+  name: ToCronString
+  nameWithType: CronLastWeekdayNode.ToCronString
+  fullName: Ampere.Str.Cron.CronLastWeekdayNode.ToCronString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
