@@ -41,10 +41,10 @@ We are actively looking for contributors to work on all aspects of the code base
 
 ### Building Ampere
 Prerequisites:
-- Visual Studio 2017 or Later OR VSCode
-- .NET 5 (with .NET Core)
+- Visual Studio 2022 or Later OR VSCode
+- .NET 8 or .NET 10 SDK
 
-The default language setting for this project is C# 9.0. The project can be built using `dotnet build` and the output will display the `AssemblyPath`.
+The project multi-targets `net8.0` and `net10.0`. The project can be built using `dotnet build` and the output will display the `AssemblyPath`.
 
 ### Documentation
 There are two components to Ampere documentation:
@@ -56,10 +56,10 @@ All Ampere methods are documented using .NET XML documentation. This is compiled
 HTML pages which are used by [Ampere Docs](https://manu-p-1.github.io/Ampere/>). Lastly, as a fluid repository, many files change and constantly need to be documented and updated.
 
 ## Roadmap
-There are two planned releases - the latest being by **July 2021**:
+See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
 
-- 0.1.0 - First full release of Ampere
-- 0.2.0 - Additional statistics data analysis tools.
+Upcoming:
+- 1.0.0 - Stable release with complete API documentation and full test coverage
 
 ## State
 Ampere is a very fluid project and you may encounter issues during execution, especially for preleases. To report an issue visit, [Ampere Issues](https://github.com/manu-p-1/Ampere/issues), or to contribute, view the contribution guidelines.

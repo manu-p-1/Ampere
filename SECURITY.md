@@ -11,7 +11,8 @@ receiving such patches depend on the Ampere Package/Release:
 
 | Ampere Version | Supported Versions          |
 | ------- | ------------------ |
-| 0.1.x   | :white_check_mark: |
+| 0.9.x   | :white_check_mark: |
+| 0.1.x   | :x:                |
 
 ## Reporting a Vulnerability
 Please report (suspected) security vulnerabilities as an Ampere issue or Discussion item. You will receive a response from

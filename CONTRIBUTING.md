@@ -42,7 +42,7 @@ We'll discuss how to contribute to each one in detail below.
 Customized utility classes and methods form the foundation of Ampere. The code is divided up by category within the Ampere project. If you find that a utility does not exist or various classes need to be written to accomplish the task, consider finding the right category to place your code. Once you decide on the directory structure and it's been approved by Ampere maintainers, you're free to type away!
 
 ### Environment Information
-It is important to note that Ampere only supports the [.NET 5 runtime](https://dotnet.microsoft.com/download/dotnet/5.0). After you setup .NET 5 with Visual Studio, you'll be able to fork and clone the repository. The project can be built using `dotnet build` or Visual Studio and the output will display the `AssemblyPath`. The AssemblyPath is a `.dll` file is created within the `bin` folder of the repository; this file can be imported into your Visual Studio Proejcts. If a debug executable has not been setup already, follow these steps:
+Ampere targets .NET 8 and .NET 10. After you setup the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) with Visual Studio 2022+ or VS Code, you'll be able to fork and clone the repository. The project can be built using `dotnet build` or Visual Studio and the output will display the `AssemblyPath`. The AssemblyPath is a `.dll` file created within the `bin` folder of the repository; this file can be imported into your Visual Studio or VS Code projects. If a debug executable has not been setup already, follow these steps:
 
 ### Utility Documentation
 Make sure to document all information using the XML format on top of each class, property and method. An example is provided below:
@@ -120,8 +120,8 @@ Ampere is licensed under the [**GNU General Public License v3.0**](https://www.g
 
 # Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at [http://contributor-covenant.org/version/1/4][version]
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.1,
+available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][version]
 
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
+[homepage]: https://www.contributor-covenant.org
+[version]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
