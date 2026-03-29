@@ -5,6 +5,11 @@ All notable changes to the Ampere project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.1] - 2026-03-29
+
+### Fixed
+- Fixed Release build `PlatformTarget` set to `x64`, causing assembly architecture incompatibility on non-x64 platforms (e.g., ARM64). Changed to `AnyCPU` to support cross-platform use.
+
 ## [0.9.0] - 2026-03-29
 
 ### Added

@@ -2,21 +2,21 @@
 
   <PropertyGroup>
     <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
-    <Version>0.9.0</Version>
+    <Version>0.9.1</Version>
     <Company />
     <Description>A robust library of .NET utilities</Description>
     <Copyright>Copyright © Manu Puduvalli 2026</Copyright>
     <PackageProjectUrl>https://github.com/manu-p-1/Ampere</PackageProjectUrl>
     <RepositoryUrl>https://github.com/manu-p-1/Ampere</RepositoryUrl>
-    <FileVersion>0.9.0</FileVersion>
-    <AssemblyVersion>0.9.0</AssemblyVersion>
+    <FileVersion>0.9.1</FileVersion>
+    <AssemblyVersion>0.9.1</AssemblyVersion>
     <ApplicationIcon>AmpereIcon.ico</ApplicationIcon>
     <Authors>The Ampere Authors</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIcon>AmpereIcon.png</PackageIcon>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageTags>csharp, utilities, library, dotnet, productivity</PackageTags>
-    <PackageReleaseNotes>Initial Release of the Ampere Library</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed assembly architecture compatibility issue for cross-platform use</PackageReleaseNotes>
     <SignAssembly>false</SignAssembly>
     <Win32Resource />
   </PropertyGroup>
@@ -28,7 +28,6 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
     <DocumentationFile></DocumentationFile>
     <OutputPath></OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
