@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
-    <Version>0.9.1</Version>
+    <Version>0.9.2</Version>
     <Company />
     <Description>A robust library of .NET utilities</Description>
     <Copyright>Copyright © Manu Puduvalli 2026</Copyright>
     <PackageProjectUrl>https://github.com/manu-p-1/Ampere</PackageProjectUrl>
     <RepositoryUrl>https://github.com/manu-p-1/Ampere</RepositoryUrl>
-    <FileVersion>0.9.1</FileVersion>
-    <AssemblyVersion>0.9.1</AssemblyVersion>
+    <FileVersion>0.9.2</FileVersion>
+    <AssemblyVersion>0.9.2</AssemblyVersion>
     <ApplicationIcon>AmpereIcon.ico</ApplicationIcon>
     <Authors>The Ampere Authors</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -17,6 +17,7 @@
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageTags>csharp, utilities, library, dotnet, productivity</PackageTags>
     <PackageReleaseNotes>Fixed assembly architecture compatibility issue for cross-platform use</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <SignAssembly>false</SignAssembly>
     <Win32Resource />
   </PropertyGroup>
@@ -43,6 +44,10 @@
       <PackagePath></PackagePath>
     </None>
     <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
