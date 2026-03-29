@@ -37,7 +37,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CronExpression
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Seconds
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -123,7 +123,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Minutes
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Hours
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: DayOfMonth
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -216,7 +216,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Month
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -247,7 +247,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: DayOfWeek
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -278,7 +278,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Year
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -309,7 +309,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Format
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RawExpression
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -371,7 +371,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToCronString
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -401,7 +401,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -432,7 +432,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Describe
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -467,7 +467,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsMatch
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -506,7 +506,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetNextOccurrence
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -554,7 +554,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetPreviousOccurrence
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -595,7 +595,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetOccurrences
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -636,7 +636,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetNextOccurrences
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -674,7 +674,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Equals
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -714,7 +714,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Equals
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -753,7 +753,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetHashCode
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -785,7 +785,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Equality
     path: ../Ampere/Str/Cron/CronExpression.cs
@@ -823,7 +823,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronExpression.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Inequality
     path: ../Ampere/Str/Cron/CronExpression.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParser.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CronParser
     path: ../Ampere/Str/Cron/CronParser.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParser.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Parse
     path: ../Ampere/Str/Cron/CronParser.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParser.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: TryParse
     path: ../Ampere/Str/Cron/CronParser.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParser.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ParseCron
     path: ../Ampere/Str/Cron/CronParser.cs
@@ -197,7 +197,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParser.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: TryParseCron
     path: ../Ampere/Str/Cron/CronParser.cs

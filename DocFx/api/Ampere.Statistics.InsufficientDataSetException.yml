@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: InsufficientDataSetException
     path: ../Ampere/Statistics/StatExceptions.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs
@@ -134,7 +134,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/StatExceptions.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Statistics/StatExceptions.cs

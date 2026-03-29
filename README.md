@@ -16,9 +16,6 @@
   
    <a href="https://github.com/manu-p-1/Ampere/actions/workflows/codeql-analysis.yml" alt="CodeQL">
       <img src="https://github.com/manu-p-1/Ampere/actions/workflows/codeql-analysis.yml/badge.svg"/></a>
-  
-   <a href="https://github.com/manu-p-1/Ampere/releases" alt="Latest Release">
-      <img src="https://img.shields.io/github/v/release/manu-p-1/Ampere?include_prereleases"/></a>
         
    <a href="#" alt="Repo Size">
       <img src="https://img.shields.io/github/repo-size/manu-p-1/Ampere?label=size&color=informational"/></a>

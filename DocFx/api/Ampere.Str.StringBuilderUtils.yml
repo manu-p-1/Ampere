@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: StringBuilderUtils
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -189,7 +189,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -234,7 +234,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -279,7 +279,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -324,7 +324,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -375,7 +375,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendLineIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -420,7 +420,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendFromEnumerable
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -468,7 +468,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendFromEnumerable
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -510,7 +510,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendLineFromEnumerable
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -561,7 +561,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendLineFromEnumerable
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -606,7 +606,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AppendJoinFrom
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -657,7 +657,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -711,7 +711,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -762,7 +762,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -813,7 +813,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -861,7 +861,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -912,7 +912,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -960,7 +960,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1008,7 +1008,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1053,7 +1053,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1098,7 +1098,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IndexOf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1146,7 +1146,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CountOccurrences
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1191,7 +1191,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Contains
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1236,7 +1236,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: StartsWith
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1281,7 +1281,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EndsWith
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1326,7 +1326,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Reverse
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1362,7 +1362,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: TrimStart
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1398,7 +1398,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: TrimEnd
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1434,7 +1434,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Trim
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1470,7 +1470,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1518,7 +1518,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1572,7 +1572,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1620,7 +1620,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceIf
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1674,7 +1674,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceOccurrence
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1729,7 +1729,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceOccurrence
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1787,7 +1787,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceOccurrence
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1845,7 +1845,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceOccurrence
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1906,7 +1906,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInterval
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -1979,7 +1979,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInterval
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -2055,7 +2055,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInterval
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -2131,7 +2131,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInterval
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -2210,7 +2210,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInterval
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -2286,7 +2286,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInterval
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -2365,7 +2365,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInterval
     path: ../Ampere/Str/StringBuilderUtils.cs
@@ -2445,7 +2445,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringBuilderUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInterval
     path: ../Ampere/Str/StringBuilderUtils.cs

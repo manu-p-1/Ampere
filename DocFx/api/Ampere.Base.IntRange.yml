@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IntRange.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IntRange
     path: ../Ampere/Base/IntRange.cs
@@ -116,7 +116,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IntRange.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Base/IntRange.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IntRange.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetEnumerator
     path: ../Ampere/Base/IntRange.cs

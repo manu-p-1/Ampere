@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParseException.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CronParseException
     path: ../Ampere/Str/Cron/CronParseException.cs
@@ -73,7 +73,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParseException.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Expression
     path: ../Ampere/Str/Cron/CronParseException.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParseException.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Position
     path: ../Ampere/Str/Cron/CronParseException.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParseException.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: FieldType
     path: ../Ampere/Str/Cron/CronParseException.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParseException.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Str/Cron/CronParseException.cs
@@ -210,7 +210,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronParseException.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Str/Cron/CronParseException.cs

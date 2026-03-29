@@ -82,7 +82,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EnumerableStats
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -125,7 +125,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Mean
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Mean
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -216,7 +216,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Median
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -262,7 +262,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Median
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -307,7 +307,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Mode
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -359,7 +359,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Mode
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -404,7 +404,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GeometricMean
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -455,7 +455,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GeometricMean
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -496,7 +496,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: HarmonicMean
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -547,7 +547,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: HarmonicMean
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -588,7 +588,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WeightedMean
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -637,7 +637,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: TrimmedMean
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -689,7 +689,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: TrimmedMean
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -732,7 +732,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SampleVariance
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -778,7 +778,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SampleVariance
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -819,7 +819,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: PopulationVariance
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -865,7 +865,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: PopulationVariance
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -906,7 +906,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SampleStandardDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -952,7 +952,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SampleStandardDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -993,7 +993,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: PopulationStandardDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1039,7 +1039,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: PopulationStandardDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1080,7 +1080,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Range
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1126,7 +1126,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Range
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1167,7 +1167,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: MeanAbsoluteDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1213,7 +1213,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: MeanAbsoluteDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1254,7 +1254,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: MedianAbsoluteDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1303,7 +1303,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: MedianAbsoluteDeviation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1344,7 +1344,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CoefficientOfVariation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1395,7 +1395,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CoefficientOfVariation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1436,7 +1436,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: LowerQuartile
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1485,7 +1485,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: LowerQuartile
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1526,7 +1526,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: UpperQuartile
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1575,7 +1575,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: UpperQuartile
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1616,7 +1616,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: InterQuartileRange
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1662,7 +1662,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: InterQuartileRange
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1703,7 +1703,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Percentile
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1755,7 +1755,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Percentile
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1798,7 +1798,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Skewness
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1850,7 +1850,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Skewness
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1891,7 +1891,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ExcessKurtosis
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1945,7 +1945,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ExcessKurtosis
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -1986,7 +1986,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: StandardizedScore
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2038,7 +2038,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: StandardizedScore
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2081,7 +2081,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ZScoreNormalize
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2127,7 +2127,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: MinMaxNormalize
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2173,7 +2173,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Covariance
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2222,7 +2222,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: PearsonCorrelation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2274,7 +2274,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SpearmanCorrelation
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2326,7 +2326,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RootMeanSquare
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2375,7 +2375,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RootMeanSquare
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2416,7 +2416,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SumOfSquares
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2462,7 +2462,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SumOfSquares
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2503,7 +2503,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: StandardError
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2549,7 +2549,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: StandardError
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2590,7 +2590,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CumulativeSum
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2633,7 +2633,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: MovingAverage
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2685,7 +2685,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Outliers
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2734,7 +2734,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Entropy
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2783,7 +2783,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Entropy
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2824,7 +2824,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsNormalProportion
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2879,7 +2879,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsNormalProportion
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2924,7 +2924,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsApproximatelyNormal
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -2975,7 +2975,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsApproximatelyNormal
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -3015,7 +3015,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CreateConfidenceInterval
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -3059,7 +3059,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ConstructTValue
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -3110,7 +3110,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ConstructZValue
     path: ../Ampere/Statistics/EnumerableStats.cs
@@ -3162,7 +3162,7 @@ items:
   source:
     remote:
       path: Ampere/Statistics/EnumerableStats.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: TwoSampleTStatistic
     path: ../Ampere/Statistics/EnumerableStats.cs

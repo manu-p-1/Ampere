@@ -2,295 +2,295 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.AmpFile.FileUtils.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.AmpFile.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.AmpMath.IMatrixer.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.AmpMath.Matrix.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.AmpMath.MatrixPropertyException.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.AmpMath.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.IIndexable-2.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.IIndexableDouble-2.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.IIndexableDoubleReadOnly-2.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.IIndexableReadOnly-2.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.IIndexableTriple-2.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.IIndexableTripleReadOnly-2.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.IRangify-1.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.ImmutableRange-1.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.IntRange.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.Range-1.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.Shuffler.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Base.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Enumerable.EnumerableUtils.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Enumerable.InnerContainsProgram-1.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Enumerable.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Statistics.EnumerableStats.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Statistics.InsufficientDataSetException.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Statistics.NoModeException.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Statistics.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronBuilder.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronExpression.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronField.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronFieldType.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronFormat.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronHashNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronLastDayNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronLastWeekdayNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronLastWeekdayOfMonthNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronNearestWeekdayNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronParseException.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronParser.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronQuestionMarkNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronRangeNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronStepNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronValueNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.CronWildcardNode.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.Cron.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.StringBuilderUtils.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.StringUtils.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/api/Ampere.Str.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/articles/AmpereReleases.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://manu-p-1.github.io/Ampere/index.html</loc>
-    <lastmod>2026-03-27T09:11:44-04:00</lastmod>
+    <lastmod>2026-03-29T12:07:24-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

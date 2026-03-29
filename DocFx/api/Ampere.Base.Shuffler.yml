@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffler
     path: ../Ampere/Base/Shuffler.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffle
     path: ../Ampere/Base/Shuffler.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffle
     path: ../Ampere/Base/Shuffler.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffle
     path: ../Ampere/Base/Shuffler.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ShuffleCopy
     path: ../Ampere/Base/Shuffler.cs
@@ -230,7 +230,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ShuffleCopy
     path: ../Ampere/Base/Shuffler.cs
@@ -271,7 +271,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: PartialShuffle
     path: ../Ampere/Base/Shuffler.cs
@@ -320,7 +320,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReservoirSample
     path: ../Ampere/Base/Shuffler.cs
@@ -369,7 +369,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WeightedSample
     path: ../Ampere/Base/Shuffler.cs
@@ -421,7 +421,7 @@ items:
   source:
     remote:
       path: Ampere/Base/Shuffler.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Derange
     path: ../Ampere/Base/Shuffler.cs

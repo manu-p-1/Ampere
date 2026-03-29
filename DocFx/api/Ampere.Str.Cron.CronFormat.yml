@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CronFormat
     path: ../Ampere/Str/Cron/CronField.cs
@@ -45,7 +45,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Standard
     path: ../Ampere/Str/Cron/CronField.cs
@@ -73,7 +73,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WithSeconds
     path: ../Ampere/Str/Cron/CronField.cs
@@ -101,7 +101,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WithSecondsAndYear
     path: ../Ampere/Str/Cron/CronField.cs

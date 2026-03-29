@@ -44,7 +44,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: FileUtils
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -81,7 +81,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WriteLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -119,7 +119,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAll
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -160,7 +160,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllByLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAllInLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceInLines
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -293,7 +293,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -334,7 +334,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceLines
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -375,7 +375,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveFromEachLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -413,7 +413,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -451,7 +451,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveLines
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -492,7 +492,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: FindInFile
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -536,7 +536,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: FindAllInFile
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -577,7 +577,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetValueAtLine
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -618,7 +618,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReadLineRange
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -662,7 +662,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetLineCount
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -697,7 +697,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ComputeSha256Hash
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -732,7 +732,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SafeWriteAllText
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -773,7 +773,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReadAllTextAsync
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -811,7 +811,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WriteAllTextAsync
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -854,7 +854,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReadAllLinesAsync
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -892,7 +892,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: TouchFile
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -927,7 +927,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EnsureDirectoryExists
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -959,7 +959,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CopyTo
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -1003,7 +1003,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: MoveTo
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -1044,7 +1044,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsFileLocked
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -1080,7 +1080,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetDirectorySize
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -1119,7 +1119,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetFileSize
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -1157,7 +1157,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetRootPath
     path: ../Ampere/AmpFile/FileUtils.cs
@@ -1188,7 +1188,7 @@ items:
   source:
     remote:
       path: Ampere/AmpFile/FileUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetUserPath
     path: ../Ampere/AmpFile/FileUtils.cs

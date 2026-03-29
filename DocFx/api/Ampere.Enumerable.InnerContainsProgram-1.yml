@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Ampere/Enumerable/InnerContainsProgram.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: InnerContainsProgram
     path: ../Ampere/Enumerable/InnerContainsProgram.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: Ampere/Enumerable/InnerContainsProgram.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ViolatedEnumerable
     path: ../Ampere/Enumerable/InnerContainsProgram.cs
@@ -100,7 +100,7 @@ items:
   source:
     remote:
       path: Ampere/Enumerable/InnerContainsProgram.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/Enumerable/InnerContainsProgram.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: Ampere/Enumerable/InnerContainsProgram.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CheckContains
     path: ../Ampere/Enumerable/InnerContainsProgram.cs

@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CronLastWeekdayNode
     path: ../Ampere/Str/Cron/CronField.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToCronString
     path: ../Ampere/Str/Cron/CronField.cs

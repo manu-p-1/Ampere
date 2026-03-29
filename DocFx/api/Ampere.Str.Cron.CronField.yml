@@ -31,7 +31,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CronField
     path: ../Ampere/Str/Cron/CronField.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: FieldType
     path: ../Ampere/Str/Cron/CronField.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Nodes
     path: ../Ampere/Str/Cron/CronField.cs
@@ -133,7 +133,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RawValue
     path: ../Ampere/Str/Cron/CronField.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsWildcard
     path: ../Ampere/Str/Cron/CronField.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsQuestionMark
     path: ../Ampere/Str/Cron/CronField.cs
@@ -226,7 +226,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsContextDependent
     path: ../Ampere/Str/Cron/CronField.cs
@@ -257,7 +257,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetFieldRange
     path: ../Ampere/Str/Cron/CronField.cs
@@ -290,7 +290,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Matches
     path: ../Ampere/Str/Cron/CronField.cs
@@ -329,7 +329,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Matches
     path: ../Ampere/Str/Cron/CronField.cs
@@ -372,7 +372,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetMatchingValues
     path: ../Ampere/Str/Cron/CronField.cs
@@ -402,7 +402,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetMatchingValues
     path: ../Ampere/Str/Cron/CronField.cs
@@ -440,7 +440,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetNextMatchingValue
     path: ../Ampere/Str/Cron/CronField.cs
@@ -479,7 +479,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetNextMatchingValue
     path: ../Ampere/Str/Cron/CronField.cs
@@ -522,7 +522,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetFirstMatchingValue
     path: ../Ampere/Str/Cron/CronField.cs
@@ -552,7 +552,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToCronString
     path: ../Ampere/Str/Cron/CronField.cs
@@ -582,7 +582,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronField.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
     path: ../Ampere/Str/Cron/CronField.cs

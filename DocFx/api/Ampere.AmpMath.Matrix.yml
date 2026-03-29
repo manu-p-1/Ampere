@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Matrix
     path: ../Ampere/AmpMath/Matrix.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Values
     path: ../Ampere/AmpMath/Matrix.cs
@@ -232,7 +232,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Rows
     path: ../Ampere/AmpMath/Matrix.cs
@@ -265,7 +265,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Cols
     path: ../Ampere/AmpMath/Matrix.cs
@@ -298,7 +298,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/AmpMath/Matrix.cs
@@ -336,7 +336,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: .ctor
     path: ../Ampere/AmpMath/Matrix.cs
@@ -371,7 +371,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: this[]
     path: ../Ampere/AmpMath/Matrix.cs
@@ -414,7 +414,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Transpose
     path: ../Ampere/AmpMath/Matrix.cs
@@ -446,7 +446,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EqualDimension
     path: ../Ampere/AmpMath/Matrix.cs
@@ -483,7 +483,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Addition
     path: ../Ampere/AmpMath/Matrix.cs
@@ -521,7 +521,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Addition
     path: ../Ampere/AmpMath/Matrix.cs
@@ -559,7 +559,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Subtraction
     path: ../Ampere/AmpMath/Matrix.cs
@@ -597,7 +597,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Subtraction
     path: ../Ampere/AmpMath/Matrix.cs
@@ -635,7 +635,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Multiply
     path: ../Ampere/AmpMath/Matrix.cs
@@ -673,7 +673,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Multiply
     path: ../Ampere/AmpMath/Matrix.cs
@@ -711,7 +711,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Division
     path: ../Ampere/AmpMath/Matrix.cs
@@ -749,7 +749,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Division
     path: ../Ampere/AmpMath/Matrix.cs
@@ -787,7 +787,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Modulus
     path: ../Ampere/AmpMath/Matrix.cs
@@ -825,7 +825,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Modulus
     path: ../Ampere/AmpMath/Matrix.cs
@@ -863,7 +863,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_LogicalNot
     path: ../Ampere/AmpMath/Matrix.cs
@@ -904,7 +904,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Addition
     path: ../Ampere/AmpMath/Matrix.cs
@@ -942,7 +942,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Subtraction
     path: ../Ampere/AmpMath/Matrix.cs
@@ -980,7 +980,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Multiply
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1018,7 +1018,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Equality
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1059,7 +1059,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: op_Inequality
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1097,7 +1097,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Add
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1135,7 +1135,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Add
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1170,7 +1170,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Subtract
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1208,7 +1208,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Subtract
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1243,7 +1243,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Multiply
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1281,7 +1281,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: DotProduct
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1316,7 +1316,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Divide
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1354,7 +1354,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Mod
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1392,7 +1392,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Negate
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1425,7 +1425,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Equals
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1464,7 +1464,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Equals
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1502,7 +1502,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetHashCode
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1534,7 +1534,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsRowVector
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1566,7 +1566,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsColumnVector
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1598,7 +1598,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsSquareVector
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1630,7 +1630,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Clone
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1661,7 +1661,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Identity
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1699,7 +1699,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Zeros
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1740,7 +1740,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Fill
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1775,7 +1775,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Map
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1813,7 +1813,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Trace
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1851,7 +1851,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Determinant
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1889,7 +1889,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: FrobeniusNorm
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1920,7 +1920,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsSymmetric
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1954,7 +1954,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsDiagonal
     path: ../Ampere/AmpMath/Matrix.cs
@@ -1988,7 +1988,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsIdentity
     path: ../Ampere/AmpMath/Matrix.cs
@@ -2019,7 +2019,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetRow
     path: ../Ampere/AmpMath/Matrix.cs
@@ -2057,7 +2057,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetColumn
     path: ../Ampere/AmpMath/Matrix.cs
@@ -2095,7 +2095,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SubMatrix
     path: ../Ampere/AmpMath/Matrix.cs
@@ -2142,7 +2142,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SwapRows
     path: ../Ampere/AmpMath/Matrix.cs
@@ -2180,7 +2180,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Flatten
     path: ../Ampere/AmpMath/Matrix.cs
@@ -2211,7 +2211,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: GetEnumerator
     path: ../Ampere/AmpMath/Matrix.cs
@@ -2244,7 +2244,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/Matrix.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
     path: ../Ampere/AmpMath/Matrix.cs

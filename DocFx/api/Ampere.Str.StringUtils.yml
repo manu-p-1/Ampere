@@ -38,7 +38,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: StringUtils
     path: ../Ampere/Str/StringUtils.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ChompAfter
     path: ../Ampere/Str/StringUtils.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsDuplicateChars
     path: ../Ampere/Str/StringUtils.cs
@@ -165,7 +165,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsDuplicateStrings
     path: ../Ampere/Str/StringUtils.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CountWords
     path: ../Ampere/Str/StringUtils.cs
@@ -257,7 +257,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsPalindrome
     path: ../Ampere/Str/StringUtils.cs
@@ -303,7 +303,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsStrictlyDecreasing
     path: ../Ampere/Str/StringUtils.cs
@@ -349,7 +349,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsStrictlyIncreasing
     path: ../Ampere/Str/StringUtils.cs
@@ -395,7 +395,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsSystemDateTime
     path: ../Ampere/Str/StringUtils.cs
@@ -443,7 +443,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsValidUri
     path: ../Ampere/Str/StringUtils.cs
@@ -486,7 +486,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveAll
     path: ../Ampere/Str/StringUtils.cs
@@ -538,7 +538,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveAll
     path: ../Ampere/Str/StringUtils.cs
@@ -590,7 +590,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ReplaceAt
     path: ../Ampere/Str/StringUtils.cs
@@ -634,7 +634,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Reverse
     path: ../Ampere/Str/StringUtils.cs
@@ -677,7 +677,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Shuffle
     path: ../Ampere/Str/StringUtils.cs
@@ -730,7 +730,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Truncate
     path: ../Ampere/Str/StringUtils.cs
@@ -782,7 +782,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsAny
     path: ../Ampere/Str/StringUtils.cs
@@ -831,7 +831,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsAll
     path: ../Ampere/Str/StringUtils.cs
@@ -880,7 +880,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Repeat
     path: ../Ampere/Str/StringUtils.cs
@@ -929,7 +929,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EqualsIgnoreCase
     path: ../Ampere/Str/StringUtils.cs
@@ -975,7 +975,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: SafeSubstring
     path: ../Ampere/Str/StringUtils.cs
@@ -1029,7 +1029,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: RemoveWhitespace
     path: ../Ampere/Str/StringUtils.cs
@@ -1072,7 +1072,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToSnakeCase
     path: ../Ampere/Str/StringUtils.cs
@@ -1115,7 +1115,7 @@ items:
   source:
     remote:
       path: Ampere/Str/StringUtils.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToKebabCase
     path: ../Ampere/Str/StringUtils.cs

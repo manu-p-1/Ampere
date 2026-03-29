@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IIndexable.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IIndexableDouble
     path: ../Ampere/Base/IIndexable.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IIndexable.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: this[]
     path: ../Ampere/Base/IIndexable.cs

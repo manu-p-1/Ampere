@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IMatrixer
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -139,7 +139,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Values
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -170,7 +170,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Rows
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Cols
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -232,7 +232,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Transpose
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -263,7 +263,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EqualDimension
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -300,7 +300,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EqualDimension
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -341,7 +341,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsRowVector
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -372,7 +372,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsColumnVector
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -403,7 +403,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsSquareVector
     path: ../Ampere/AmpMath/IMatrixer.cs
@@ -434,7 +434,7 @@ items:
   source:
     remote:
       path: Ampere/AmpMath/IMatrixer.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
     path: ../Ampere/AmpMath/IMatrixer.cs

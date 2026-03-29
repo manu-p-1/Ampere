@@ -49,7 +49,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: CronBuilder
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WithSeconds
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -142,7 +142,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WithMinutes
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -178,7 +178,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WithHours
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WithDayOfMonth
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -250,7 +250,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WithMonth
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -286,7 +286,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WithDayOfWeek
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -322,7 +322,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: WithYear
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -358,7 +358,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EveryMinute
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -388,7 +388,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EveryNMinutes
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -424,7 +424,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EveryHour
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -454,7 +454,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EveryNHours
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -490,7 +490,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: EveryNSeconds
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -526,7 +526,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AtTime
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -564,7 +564,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: AtTimes
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -600,7 +600,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: DuringHours
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -638,7 +638,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: OnDaysOfWeek
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -674,7 +674,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Weekdays
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -704,7 +704,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Weekends
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -734,7 +734,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: OnNthDayOfWeek
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -772,7 +772,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: OnLastDayOfWeek
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -805,7 +805,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: OnDaysOfMonth
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -841,7 +841,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: OnLastDayOfMonth
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -871,7 +871,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: OnLastWeekdayOfMonth
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -901,7 +901,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: OnNearestWeekday
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -937,7 +937,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: InMonths
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -973,7 +973,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: InYears
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -1009,7 +1009,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Daily
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -1039,7 +1039,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Weekly
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -1069,7 +1069,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Monthly
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -1099,7 +1099,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Yearly
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -1129,7 +1129,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Build
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -1162,7 +1162,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: TryBuild
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -1203,7 +1203,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToCronString
     path: ../Ampere/Str/Cron/CronBuilder.cs
@@ -1236,7 +1236,7 @@ items:
   source:
     remote:
       path: Ampere/Str/Cron/CronBuilder.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ToString
     path: ../Ampere/Str/Cron/CronBuilder.cs

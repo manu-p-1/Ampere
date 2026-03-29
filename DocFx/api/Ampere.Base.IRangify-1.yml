@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IRangify.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IRangify
     path: ../Ampere/Base/IRangify.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IRangify.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Minimum
     path: ../Ampere/Base/IRangify.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IRangify.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: Maximum
     path: ../Ampere/Base/IRangify.cs
@@ -126,7 +126,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IRangify.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsValid
     path: ../Ampere/Base/IRangify.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IRangify.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: ContainsValue
     path: ../Ampere/Base/IRangify.cs
@@ -196,7 +196,7 @@ items:
   source:
     remote:
       path: Ampere/Base/IRangify.cs
-      branch: upgrade-net10
+      branch: main
       repo: https://github.com/manu-p-1/Ampere.git
     id: IsInsideRange
     path: ../Ampere/Base/IRangify.cs
