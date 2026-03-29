@@ -112,10 +112,10 @@
 <h3 id="building-ampere">Building Ampere</h3>
 <p>Prerequisites:</p>
 <ul>
-<li>Visual Studio 2017 or Later OR VSCode</li>
-<li>.NET 5 (with .NET Core)</li>
+<li>Visual Studio 2022 or Later OR VSCode</li>
+<li>.NET 8 or .NET 10 SDK</li>
 </ul>
-<p>The default language setting for this project is C# 9.0. The project can be built using <code>dotnet build</code> and the output will display the <code>AssemblyPath</code>.</p>
+<p>The project multi-targets <code>net8.0</code> and <code>net10.0</code>. The project can be built using <code>dotnet build</code> and the output will display the <code>AssemblyPath</code>.</p>
 <h3 id="documentation">Documentation</h3>
 <p>There are two components to Ampere documentation:</p>
 <ol>
@@ -125,10 +125,10 @@
 <p>All Ampere methods are documented using .NET XML documentation. This is compiled using <a href="https://dotnet.github.io/docfx/">DocFX</a> with the <code>docfx.json</code> file under the <a href="https://github.com/manu-p-1/Ampere/tree/master/DocFx">DocFX folder</a>. DocFX creates static
 HTML pages which are used by <a href="https://manu-p-1.github.io/Ampere/%3E">Ampere Docs</a>. Lastly, as a fluid repository, many files change and constantly need to be documented and updated.</p>
 <h2 id="roadmap">Roadmap</h2>
-<p>There are two planned releases - the latest being by <strong>July 2021</strong>:</p>
+<p>See <a href="https://github.com/manu-p-1/Ampere/blob/main/CHANGELOG.md">CHANGELOG.md</a> for a detailed history of changes.</p>
+<p>Upcoming:</p>
 <ul>
-<li>0.1.0 - First full release of Ampere</li>
-<li>0.2.0 - Additional statistics data analysis tools.</li>
+<li>1.0.0 - Stable release with complete API documentation and full test coverage</li>
 </ul>
 <h2 id="state">State</h2>
 <p>Ampere is a very fluid project and you may encounter issues during execution, especially for preleases. To report an issue visit, <a href="https://github.com/manu-p-1/Ampere/issues">Ampere Issues</a>, or to contribute, view the contribution guidelines.</p>
