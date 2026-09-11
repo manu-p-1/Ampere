@@ -1,11 +1,13 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: Archived project
+about: Ampere is read-only and does not accept reports
 title: "[BUG]"
 labels: bug
 assignees: manu-p-1
 
 ---
+
+Ampere is archived. Bug reports are not monitored and will not receive fixes. Please consider a maintained alternative or fork the project under the GPLv3 license.
 
 **Describe the bug**
 A clear and concise description of what the bug is.

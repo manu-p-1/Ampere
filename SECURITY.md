@@ -4,20 +4,10 @@
 
 # Security Policy
 
-## Supported Versions
+## Archived Project
 
-We release patches for security vulnerabilities. Which versions are eligible
-receiving such patches depend on the Ampere Package/Release:
-
-| Ampere Version | Supported Versions          |
-| ------- | ------------------ |
-| 0.9.x   | :white_check_mark: |
-| 0.1.x   | :x:                |
+Ampere is archived and no versions are supported. It will not receive security fixes or other updates.
 
 ## Reporting a Vulnerability
-Please report (suspected) security vulnerabilities as an Ampere issue or Discussion item. You will receive a response from
-us within 48 hours. If the issue is confirmed, we will release a patch as soon
-as possible depending on complexity but historically within a few days.
 
-**Ampere does not have a dedicated security team or email address now, but plans to establish a dedicated communciations
-pipeline after the 1.0.0 release.**
+Please do not report vulnerabilities expecting a response or patch. If you use Ampere, assess the risk for your application and consider migrating to a maintained alternative. The repository remains available as-is for reference under its existing license.
