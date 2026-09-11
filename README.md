@@ -2,26 +2,6 @@
   <a href="https://github.com/manu-p-1/Ampere/" target="_blank">
     <img src="https://github.com/manu-p-1/Ampere/blob/main/assets/AmpereLogo.png" alt="Ampere Logo">
   </a>
-  <br>
-</p>
-<p align="center">
-<a href="https://github.com/manu-p-1/Ampere/releases" alt="License">
-      <img src="https://img.shields.io/nuget/dt/Ampere"/></a>
-    
-   <a href="https://github.com/manu-p-1/Ampere/pulse" alt="Activity">
-      <img src="https://img.shields.io/github/commit-activity/m/manu-p-1/Ampere?color=%20%230099ff"/></a>
-        
-   <a href="https://github.com/manu-p-1/Ampere/issues" alt="Open Issues">
-      <img src="https://img.shields.io/github/issues/manu-p-1/Ampere"/></a>
-  
-   <a href="https://github.com/manu-p-1/Ampere/actions/workflows/codeql-analysis.yml" alt="CodeQL">
-      <img src="https://github.com/manu-p-1/Ampere/actions/workflows/codeql-analysis.yml/badge.svg"/></a>
-        
-   <a href="#" alt="Repo Size">
-      <img src="https://img.shields.io/github/repo-size/manu-p-1/Ampere?label=size&color=informational"/></a>
-        
-   <a href="https://github.com/manu-p-1/Ampere/blob/main/LICENSE" alt="License">
-      <img src="https://img.shields.io/github/license/manu-p-1/Ampere?color=informational"/></a>
 </p>
 
 > ## Archived
